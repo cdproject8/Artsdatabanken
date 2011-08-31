@@ -15,6 +15,9 @@ Feel free to modify this.
 ### Source code
 
 * /src
+* /src/main
+* /src/test
+* /src/sandbox
 
 ## Coding conventions
 
