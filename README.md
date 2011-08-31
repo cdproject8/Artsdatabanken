@@ -8,13 +8,13 @@ Feel free to modify this.
 
 ### Documentation
 
-/doc/templates - Documentation templates
-/doc/meetings - Meeting notes
+* /doc/templates - Documentation templates
+* /doc/meetings - Meeting notes
 
 
 ### Source code
 
-/src
+* /src
 
 ## Coding conventions
 
