@@ -1,0 +1,11 @@
+._d/bibtex-color.sed
+._d/color_tex.sed
+._d/flatten-aux.sed
+._d/get-inputs.sed
+._d/latex-errors.sed
+._d/test.clean
+._d/test.deps
+._d/test.fls
+._d/test.log
+._d/test.purge
+test.pdf

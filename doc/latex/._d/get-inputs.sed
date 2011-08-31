@@ -1,0 +1,22 @@
+/^INPUT/!d
+s!^INPUT !!
+/^\/.*$/d
+/^[a-zA-Z]:/d
+/\.aux$/d
+/\.bbl$/d
+/\.ind$/d
+/\.gls$/d
+/\.nav$/d
+/\.toc$/d
+/\.ptc[0-9]*$/d
+/\.mtc[0-9]*$/d
+/\.stc[0-9]*$/d
+/\.lof$/d
+/\.plf[0-9]*$/d
+/\.mlf[0-9]*$/d
+/\.slf[0-9]*$/d
+/\.lot$/d
+/\.plt[0-9]*$/d
+/\.mlt[0-9]*$/d
+/\.slt[0-9]*$/d
+/\.out$/d

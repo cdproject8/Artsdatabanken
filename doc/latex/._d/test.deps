@@ -1,0 +1,2 @@
+test.pdf: templates/header.tex
+test.pdf: test.tex
