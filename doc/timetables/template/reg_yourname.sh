@@ -8,7 +8,7 @@
 #
 # If you like to separate days you can write something like this:
 #
-#	let reg_pre_study=25*20*2*1*4
+#	let reg_pre_study=25+20+2+1+4
 #
 # That would be 25 hours monday, 20 tuesday, 2 we... etc.
 #
