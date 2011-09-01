@@ -35,8 +35,18 @@ Default settings for Eclipse:
 
 Explanation
 
-	1. Let git know which files you would like to commit (. is the current folder)
-	2. Commit the files to your local repository
-	3. Push the changes into the server
+1. Let git know which files you would like to commit (. is the current folder)
+2. Commit the files to your local repository
+3. Push the changes into the server
 
+### Pull changes from server
 
+NB! Before doing a pull, commit your changes, or they can be lost forever.
+
+	git pull
+
+### Get some status informatoin
+
+This will give you information on which files will be commited next, conflicts, etc.
+
+	git status
