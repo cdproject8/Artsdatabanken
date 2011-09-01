@@ -41,7 +41,7 @@ Explanation
 
 ### Pull changes from server
 
-NB! Before doing a pull, commit your changes, or they can be lost forever.
+NB! Before doing a pull, commit your changes or they can be lost forever.
 
 	git pull
 
