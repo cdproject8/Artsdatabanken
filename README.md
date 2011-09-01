@@ -24,3 +24,19 @@ Feel free to modify this.
 Default settings for Eclipse:
 
 * Use tabs for indentation (not spaces)
+
+## Git
+
+### Commiting changes
+
+	git -A add .	
+	git commit -m "I made some change.."
+	git push
+
+Explanation
+
+	1. Let git know which files you would like to commit (. is the current folder)
+	2. Commit the files to your local repository
+	3. Push the changes into the server
+
+
