@@ -36,10 +36,10 @@ print_row() {
 }
 
 merge_rows() {
-	expected=( `eval echo '${'$1[*]'}'` )
-	actual=( `eval echo '${'$2[*]'}'` )
-	expected_sum=0
-	actual_sum=0
+	local expected=( `eval echo '${'$1[*]'}'` )
+	local actual=( `eval echo '${'$2[*]'}'` )
+	local expected_sum=0
+	local actual_sum=0
 	for i in ${!actual[*]}; do
 		if [ -z "${expected[$i]}" ]; then 
 			expected[$i]=0
