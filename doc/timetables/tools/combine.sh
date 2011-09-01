@@ -7,6 +7,9 @@ GROUP=8
 # End of config
 
 print_summary() {
+	echo \"Group no\",\"$GROUP\"
+	echo \"Date\",\"`date`\"
+
 	print_row "Activity_/_Period $weeks Activity_sums"
 
 	for row_name in `get_row_names`; do
@@ -98,11 +101,6 @@ calc_weeks () {
 	done
 }
 
-print_header() {
-	echo \"Group no\",\"$GROUP\"
-	echo \"Date\",\"`date`\"
-}
-
 get_row_names() {
 	for i in ${!w_*}; do
 		echo $i | grep -v w_period_sum | grep -v ^w_exp_ | tr "\n" " "
@@ -111,5 +109,4 @@ get_row_names() {
 }
 
 calc_weeks
-print_header
 print_summary
