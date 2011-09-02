@@ -13,6 +13,6 @@
 # That would be 25 hours monday, 20 tuesday, 2 we... etc.
 #
 
-let reg_pre_study=30
-let reg_requirement=29
+let reg_pre_study=0
+let reg_requirement=0
 let reg_implementation=0
