@@ -1,0 +1,37 @@
+There is only one actor, the generic user
+
+\begin{tabular}[t]{|l|l|}\hline
+Use Case&#1 - Create New Observation\\\hline
+Preconditions&User wants to register an observation\\\hline
+Flow&1. User taps the new observation button
+2. User selects location from list of close locations, or selects gps location
+3. User adds one species. Helped by autocomplete
+4. User saves the observation.\\\hline
+Extensions& 3a. Add more info to the species, see Use Case 2
+3b. Add more species into observation, see Use Case 3\\\hline
+Postcondtions&A new observation has been saved and the user is directed back to the main menu.\\\hline
+Complexity&Medium\\\hline
+Priority&High\\\hline
+\end{tabular}
+
+\begin{tabular}[t]{|l|l|}\hline
+Use Case&#2 - Add More Information to Species\\\hline
+Preconditions&User wants to specify more details about an observation\\\hline
+Flow&1. User taps the the species row to bring up the new detailwindow.
+2. User selects addtional info to enter from such categories as
+	\begin{itemize}
+		\item Activity (drop down?)
+		\item age
+		\item sex
+		\item date
+		\item time
+		\item enddate
+		\item endtime
+		\item comment
+	\end{itemize}
+3. User taps ok to get back to the main observation window.\\\hline
+Extensions& 1a. Add number observed to species on the frontpage\\\hline
+Postcondtions&Additonal information about an observation has been saved.\\\hline
+Complexity&Low\\\hline
+Priority&High\\\hline
+\end{tabular}
