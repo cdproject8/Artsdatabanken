@@ -6,11 +6,28 @@ We'll keep all documentation and code here..
 
 Feel free to modify this.
 
-### Documentation
+### Documentation, overall structure
 
 * /doc/templates - Documentation templates
 * /doc/meetings - Meeting notes
+* /doc/timetables - Time sheets
+* /doc/project\_report - Project report
 
+#### Project report
+
+Each section should have a separate folder in /doc/project\_report. Every
+section folder should include a "index.tex" file that will be included in the
+main report document.
+
+Example: Simplified pre-study section
+
+* /doc/project\_report/prestudy - Pre-Study folder
+* /doc/project\_report/prestudy/index.tex	- Main Pre-Study file
+* /doc/project\_report/prestudy/artsdatabanken.tex - Domain research
+* /doc/project\_report/prestudy/tech\_comparison.tex - Comparison of technologies (android, ios, etc..)
+
+index.tex will include artsdatabanken.tex and tech\_comparison.tex, the main
+report file will include index.tex.
 
 ### Source code
 
