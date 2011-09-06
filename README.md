@@ -46,7 +46,7 @@ Default settings for Eclipse:
 
 ### Commiting changes
 
-	git -A add .	
+	git add -A .	
 	git commit -m "I made some change.."
 	git push
 
