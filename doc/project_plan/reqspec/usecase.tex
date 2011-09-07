@@ -1,0 +1,131 @@
+\subsection{Use Cases}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{reqspec/UseCase.png}
+	\caption{Use case}
+	\label{fig:usecase}
+\end{figure}
+
+In the following use cases, there is only one actor: the generic user
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 1&Create New Observation\\\hline
+	Preconditions&User wants to register an observation\\\hline
+	Flow&1. User taps the new observation button\newline
+	2. User selects location from list of close locations, or selects gps location\newline
+	3. User adds one species. Helped by autocomplete\newline
+	4. User saves the observation.\\\hline
+	Extensions& 1a. Add number observed to species\newline
+	3a. Add more info to the species, see Use Case 2\newline
+	3b. Add more species into observation, see Use Case 3\\\hline
+	Postcondtions&A new observation has been saved and the user is directed back to the main menu.\\\hline
+	Complexity&Medium\\\hline
+	Priority&High\\\hline
+\end{tabular}
+
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 2&Add More Information to Species\\\hline
+	Preconditions&User wants to specify more details about an observation\\\hline
+	Flow& 1. User taps the the species row to bring up the new detailwindow.\newline
+	2. User selects addtional info to enter from such categories as \newline
+	Activity (drop down?) \newline
+	Age\newline
+	Sex\newline
+	Start Date\newline
+	Start Time\newline
+	End date \newline
+	End Time \newline
+	Comment \newline
+	Picture \newline
+	%	\begin{itemize}
+	%		\item Activity (drop down?)
+	%		\item age
+	%		\item sex
+	%		\item date
+	%		\item time
+	%		\item enddate
+	%		\item endtime	
+	%		\item commen
+	%		\item picture
+	%\end{itemize}
+	3. User taps ok to get back to the main observation window.\\\hline
+	Extensions& \\\hline
+	Postcondtions&Additonal information about an observation has been saved.\\\hline
+	Complexity&Low\\\hline
+	Priority&High\\\hline
+\end{tabular}
+
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 3&Add another species to observation\\\hline
+	Preconditions&User wants to add another species to the observation\\\hline
+	Flow&1. User taps 'Add species' button.\newline
+	2. Optionally selects another location, otherwise the same one is selected.\newline
+	3. User selects species helped by auto complete. \newline
+	4. User taps 'OK' to go back to main observation window \\\hline  
+	Extensions& \\\hline
+	Postcondtions&Additonal species has been added to the observation\\\hline
+	Complexity&Low\\\hline
+	Priority&High\\\hline
+\end{tabular}
+
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 4&Export  observations\\\hline
+	Preconditions& User wants to export their observations \\\hline
+	Flow&1. User taps the 'Export' button on the main screen\newline
+	2. User selects the observations to be exported\newline
+	3. User taps the export button\\\hline
+	Extensions& \\\hline
+	Postcondtions&Observations are exported in excel format to the user's email so they can be imported into the online system later\\\hline
+	Complexity&Low\\\hline
+	Priority&High\\\hline
+\end{tabular}
+
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 5&Take picture\\\hline
+	Preconditions&User wants to take a picture to be attached to an observation\newline
+	The device has a camera\\\hline
+	Flow&1. User taps 'Take picture' button.\newline
+	2. User takes picture \\\hline
+	Extensions& 2a. User adds a description to the picture\\\hline
+	Postcondtions&Picture is stored on the phone with an easily recognizable filename so it can be attached to an observation 	later\\\hline
+	Complexity&Low\\\hline
+	Priority&Medium\\\hline
+\end{tabular}
+	
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 6&View observations\\\hline
+	Preconditions&User wants to view locally stored observations\\\hline
+	Flow&1. User taps the 'View observations' button.\newline
+	2. User selects the observation from a list of stored observations \\\hline
+	Extensions&None \\\hline
+	Postcondtions&None\\\hline
+	Complexity&Low\\\hline
+	Priority&High\\\hline
+\end{tabular}
+
+\hspace{2em}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Use Case 7&Edit observations\\\hline
+	Preconditions&User wants to edit a previously created observations\newline 
+	There exists previously made observations\\\hline
+	Flow&1. User taps the 'View observations' button.\newline
+	2. User selects the observation from a list of stored observations\newline
+	3. User taps the 'Edit' button \newline
+	4. User makes desired changes and/or additions\newline
+	5. User taps save button\\\hline
+	Extensions& \\\hline
+	Postcondtions&Changes are stored on the device\\\hline
+	Complexity&Low\\\hline
+	Priority&High\\\hline
+\end{tabular}
