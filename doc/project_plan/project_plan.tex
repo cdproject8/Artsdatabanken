@@ -1,23 +1,32 @@
 \documentclass[a4paper]{article}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{pdflscape}
+%\usepackage{lscape}
 
 \begin{document}
 	\title{Project plan}
 	\author{Group 8}
 	\date{\today}
 	\maketitle
+	\begin{center}
+		Project Name: Artsdatabanken \\
+		Project sponsor: Artsdatabanken
+	\end{center}
 	\newpage
+
 	\tableofcontents
 	\listoffigures
 	\listoftables
-
-	Project Name: Artsdatabanken
-	Project sponsor: Artsdatabanken
-
+	
+	\newpage
 	\input{prestudy/index}
-	\pagebreak
+
+	\newpage
 	\input{reqspec/index}
+
+	\newpage
+	\input{riskanalysis}
 
 	\nocite{*}
 	\bibliographystyle{plain}
