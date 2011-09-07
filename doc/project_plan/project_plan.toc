@@ -23,4 +23,3 @@
 \contentsline {subsubsection}{\numberline {2.5.3} Security Requirements}{8}
 \contentsline {subsubsection}{\numberline {2.5.4} Software Quality Attributes}{8}
 \contentsline {subsection}{\numberline {2.6} Other Requirements}{8}
-\contentsline {section}{\numberline {3}References}{8}

@@ -1,0 +1,19 @@
+
+%
+% Allows LaTeX to place table (h)ere, (t)op of page, or (b)ottom of page.
+% Three (l)eft-aligned colums (use r for right-aligned, c for centered).
+% Vertical lines between colums.
+%
+
+\begin{table}[htb]
+	\centering
+    \begin{tabular}{| l | l | l |}
+		\hline
+		First column & Second column & Third column \\
+		\hline \hline
+		some text		& more text		& bla bla \\
+		another cell	& bla bla ...	& and some more text.. \\
+		\hline
+    \end{tabular}
+  \caption{A simple table}
+\end{table}

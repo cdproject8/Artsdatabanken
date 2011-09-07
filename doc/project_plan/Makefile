@@ -1,4 +1,4 @@
-project_plan.pdf: project_plan.tex references.bib prestudy/*
+project_plan.pdf:
 	pdflatex project_plan.tex
 	bibtex project_plan.aux
 	pdflatex project_plan.tex
@@ -6,3 +6,5 @@ project_plan.pdf: project_plan.tex references.bib prestudy/*
 
 clean:
 	rm *.aux *.log *.blg *.bbl
+
+.PHONY: project_plan.pdf
