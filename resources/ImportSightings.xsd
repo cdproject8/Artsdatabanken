@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImportSightings"
+    targetNamespace="http://artdatabanken.se/ap2/ImportSightings.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://artdatabanken.se/ap2/ImportSightings.xsd"
+    xmlns:ap2="http://artdatabanken.se/ap2/ImportSightings.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:annotation>
+    <xs:appinfo>Artportalen 2</xs:appinfo>
+    <xs:documentation xml:lang="en-us">Represents a set of sightings and related sites ready for import into Artportalen.</xs:documentation>
+  </xs:annotation>
+
+  <xs:element name="ImportSightings">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">The root element.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Sightings" type="ap2:SightingsType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en-us">Describes species observations.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="ImportUtilityToolId" type="xs:string">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A key that identifies the import utility tool with which the xml data was created. Only keys created and managed by Artdatabanken are recognized.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="SitesType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">A holder for one or many sites.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="Site" type="ap2:SiteType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SiteType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Describes a site for a species observation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Coordinates" type="ap2:CoordinatesType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The geographic coordinates of the site.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ParentSite" type="ap2:ParentSiteType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A site that this site is part of.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en-us">The common name of the site.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="ParentSiteType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Describes the parent site of another site. The difference between a parent site and a normal site is that a parent site cannot have a parent site of its own.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Coordinates" type="ap2:CoordinatesType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The geographic coordinates of the site.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en-us">The common name of the site.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="CoordinatesType">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:sequence>
+        <xs:element name="X" type="xs:int"></xs:element>
+        <xs:element name="Y" type="xs:int"></xs:element>
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="East" type="xs:int"></xs:element>
+        <xs:element name="North" type="xs:int"></xs:element>
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="Longitude" type="xs:string"></xs:element>
+        <xs:element name="Latitude" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:element name="Mgrs" type="xs:string"></xs:element>
+    </xs:choice>
+    <xs:attribute name="CoordinateSystem" type="ap2:CoordinateSystemType" default="Rt9025GonVSweref"></xs:attribute>
+    <xs:attribute name="Accuracy" type="ap2:AccuracyType" default="Meters10"></xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="CoordinateSystemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rt9025GonVSweref"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone30N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone31N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone32N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone33N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone34N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone35N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone36N"></xs:enumeration>
+      <xs:enumeration value="Ed50UtmZone37N"></xs:enumeration>
+      <xs:enumeration value="LlWgs84"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone30N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone31N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone32N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone33N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone34N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone35N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone36N"></xs:enumeration>
+      <xs:enumeration value="Wgs84UtmZone37N"></xs:enumeration>
+      <xs:enumeration value="GoogleMercator"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AccuracyType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Describes the different choices when setting the accuracy of site coordinates.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Meters5"></xs:enumeration>
+      <xs:enumeration value="Meters10"></xs:enumeration>
+      <xs:enumeration value="Meters25"></xs:enumeration>
+      <xs:enumeration value="Meters50"></xs:enumeration>
+      <xs:enumeration value="Meters100"></xs:enumeration>
+      <xs:enumeration value="Meters250"></xs:enumeration>
+      <xs:enumeration value="Meters500"></xs:enumeration>
+      <xs:enumeration value="Meters1000"></xs:enumeration>
+      <xs:enumeration value="Meters5000"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="CoObserversType">
+    <xs:sequence>
+      <xs:element name="CoObserver" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectsType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">A set of projects.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Project" type="ap2:ProjectType" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectType">
+    <xs:sequence>
+      <xs:element name="ProjectParameterValues" type="ap2:ProjectParameterValuesType" minOccurs="0" maxOccurs="1"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en-us">The name of the project.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectParameterValuesType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Project parameter values</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ProjectParameterValue" type="ProjectParameterValueType" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectParameterValueType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">The value of a project parameter</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Parameter" type="xs:string" use="required">
+          <xs:annotation>
+            <xs:documentation xml:lang="en-us">The name of the project parameter</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="SpeciesCollectionItemType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Information regarding a species item sighted in a collection</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="SpeciesCollection" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The name of the species collection where the item was sighted</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SpeciesCollector" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The name of an Artportalen user in whose species collection the item was sighted. This user has to be marked in Artportalen as to have a species collection.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Label" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The collection item label, if any.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Determiner" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The name of an Artportalen user that determined the species of the collection item.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DeterminationDate" type="xs:date" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The date of the species determination.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A free text comment.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType name="SightingsType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Describes a set of species observation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="Sighting" type="ap2:SightingType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SightingType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en-us">Describes a species observation.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="Species" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The name of the observed species. Can be either the common name or the scientific name.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Site" type="ap2:SiteType" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The plae for the observation.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StartDate" type="xs:date" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">Start date of the observation in format "YYYY-MM-DD", e.g. "2010-08-26".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StartTime" type="xs:time" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">Start time of the observation in format "HH:MM:SS", e.g. "22:50:00".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EndDate" type="xs:date" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">End date of the observation in format "YYYY-MM-DD", e.g. "2010-08-26".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EndTime" type="xs:time" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">End time of the observation in format "HH:MM:SS", e.g. "22:50:00".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UnsureDetermination" type="xs:boolean" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">Set to "true" if the species could not be surely determined.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Unspontaneous" type="xs:boolean" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Quantity" type="xs:integer" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Unit" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The unit of the "Quantity" value. Only certain unit values are valid for a species group.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="QuantityOfSubstrate" type="xs:integer" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Gender" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The gender of the observed species. Only certain values are valid for a species group.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Stage" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The stage of the observed species. Only certain values are valid for a species group.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Length" type="xs:integer" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">Length is only valid for observations of fish species.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Weight" type="xs:integer" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">Weight is only valid for observations of fish species.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Activity" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The activity of the observed species. Only certain values are valid for a species group.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DiscoveryMethod" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="NotPresent" type="xs:boolean" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="NotRecovered" type="xs:boolean" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="NoteOfInterest" type="xs:boolean" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="HiddenByProviderUntil" type="xs:dateTime" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Projects" type="ap2:ProjectsType" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="PrivateComment" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="PublicComment" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="CoObservers" type="ap2:CoObserversType" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="SpeciesCollectionItem" type="ap2:SpeciesCollectionItemType" minOccurs="0" maxOccurs="1"></xs:element>
+      <xs:element name="Biotope" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The biotope where the species was observed. Only certain values are valid.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BiotopeDescription" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A description of the biotope where the species was observed. A maximum of 100 characters is allowed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SubstrateSpecies" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A species name that describes what the observed species sits on, grows on or in, etc.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SubstrateSpeciesDescription" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A description of the substrate species. A maximum of 100 characters is allowed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Substrate" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">The substrate that observed species sits on, grows on or in, etc. Only certain values are valid.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SubstrateDescription" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en-us">A description of the substrate. A maximum of 100 characters is allowed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+</xs:schema>
