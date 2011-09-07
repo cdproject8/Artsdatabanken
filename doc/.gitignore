@@ -2,4 +2,7 @@
 *.log
 *.blg
 *.bbl
+*.lof
+*.lot
+*.toc
 *.pdf
