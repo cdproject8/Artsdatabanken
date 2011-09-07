@@ -95,7 +95,11 @@ calc_week() {
 
 calc_weeks () {
 # Populate $weeks
-	weeks=`ls | grep ^[0-9][0-9]$`
+	if [ -n "$1" ]; then 
+		weeks="$1"
+	else
+		weeks=`ls | grep ^[0-9][0-9]$`
+	fi
 	for week in $weeks ; do
 		calc_week $week
 	done
@@ -108,5 +112,5 @@ get_row_names() {
 	echo w_period_sum
 }
 
-calc_weeks
+calc_weeks "$1"
 print_summary
