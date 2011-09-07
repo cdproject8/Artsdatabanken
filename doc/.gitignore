@@ -6,3 +6,5 @@
 *.lot
 *.toc
 *.pdf
+*.dvi
+*.gz
