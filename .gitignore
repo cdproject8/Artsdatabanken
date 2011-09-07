@@ -1,4 +1,5 @@
 *.swp
 *~
 bin/
+*.pdf
 .metadata/
