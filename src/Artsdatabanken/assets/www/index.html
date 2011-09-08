@@ -1,12 +1,38 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>PhoneGap</title>
-<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<link rel="stylesheet" href="../libraries/jquery_m/jquery.mobile-1.0b2.css" />
+<script type="text/javascript" charset="utf-8" src="../libraries/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../libraries/jquery_m/jquery.mobile-1.0b2.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+
 </head>
 <body>
-	<h1>Hello World</h1>
-	
-	<p>Test document</p>
+
+	<div data-role="page" id="main">
+		<div data-role="header">
+			<h1>Hello Artsdatabanken</h1>
+		</div>
+		<div data-role="content" id="one">
+			<p>Wanna submit something?</p>
+			<p><a href="#species_select" data-role="button">New submission</a></p>
+		</div>
+		<div data-role="footer" data-theme="d"><h4>Artsies</h4></div>
+	</div>
+
+	<div data-role="page" id="species_select" data-theme="a">
+		<div data-role="header">
+			<h1>Observation</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+			<p>Which Species are you interested in?</p>
+			<p><a href="#obs_bird" data-role="button">Bird</a></p>
+			<p><a href="#obs_fish" data-role="button">Fish</a></p>
+		</div>
+		<div data-role="footer" data-theme="d"><h4>Fancy</h4></div>
+	</div>
 </body>
 </html>

@@ -8,3 +8,5 @@
 *.pdf
 *.dvi
 *.gz
+*.bak
+*.out
