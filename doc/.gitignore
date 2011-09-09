@@ -7,7 +7,7 @@
 *.toc
 *.pdf
 *.dvi
-*.gz
+*.synctex.gz*
 *.bak
 *.out
 *.pub
