@@ -70,7 +70,7 @@ better-informed testing choices when testing from the outside.
 
 Unit testing refers to tests that verify the functionality of a specific section
 of code, usually at the function level. There exist many frameworks for this
-type of testing, many are a member of the xUnit suite, where x is replaced by a
+type of testing, many are a member of the xUnit family, where x is replaced by a
 language specific prefix (jUnit for java, qUnit for jQuery and javascript, etc.).  
 This type of testing is frequently used in test-driven development, and is a
 good way to ensure that each part is working as expected. It's important to test
@@ -79,7 +79,7 @@ edge cases, and with invalid / unexpected parameters.
 Integration testing is software testing that seeks to verify the interfaces
 between components against a software design. This is typically conducted after
 the unit tests have passed. Some integration tests can also be included in the
-xUnit suite.
+xUnit family.
 
 System testing tests a completely integrated system to verify that it meets its
 requirements.
@@ -113,7 +113,63 @@ Test driven development (red-green):
 	\item Regression testing (after changes in code, refactoring, and similar)
 \end{enumerate}
 
+\subsubsection{QUnit}
+
+	Qunit is a JavaScript test suite. It's used by the jQuery project to test
+	it's code and plugins but is capable of testing any generic JavaScript code
+	(including server-side code). \cite{jquery:qunit}
+
+	QUnit is a member of the xUnit family, and provides a toolkit for automated
+	testing. It's useful for regression testing, and test-driven development in
+	general.
+
+	In addition to the traditional xUnit features, QUnit facilitates testing of
+	asynchronous functionality, which is essential if we need to make HTTP
+	requests or similar.
+
+	\textbf{Trivial example}
+
+	\begin{lstlisting}
+		module("bird observator");
+		test("should be able to set bird count", function() {
+			bird.count = 5;
+			equal(bird.count, 5);
+		});
+	\end{lstlisting}
+
+\subsubsection{jQuery Mockjax: AJAX request mocking}
+
+	The jQuery Mockjax plugin provides an interface for mocking or simulating
+	ajax requests and responses. \cite{github:jquery-mockjax} Can be useful if Artsdatabanken provides us
+	with a specification of their planned API. This will in principle allow us
+	to verify that the application is communicating correctly, even though the
+	API hasn't been published.
+
 \subsubsection{Selenium}
 
 	Selenium is a tool for automating browsers. Primarily it is for automating
-	web applications for test purposes. \cite{seleniumhq:home}
+	web applications for test purposes \cite{seleniumhq:home}. Selenium 1 relies
+	on using JavaScript in the browser. Following is a subset of the tasks that
+	can be automated using Selenium:
+
+	\begin{itemize}
+		\item Open site (i.e. index.html)
+		\item Click button (or link)
+		\item Assert that element has attribute
+		\item Type text into text field
+		\item Assert that text is present on page
+		\item And so on...
+	\end{itemize}
+
+	To build test cases Selenium offers three primary methods. Recording, adding
+	verifications and asserts with the context menu, or editing. Selenium has
+	been proven to work with PhoneGap \cite{phonegap:automatic-test-cases}.
+
+\subsection{Conclusion}
+
+	QUnit provides a basic framework for synchronous and asynchronous testing in
+	JavaScript, jquery-mockjax extends QUnit with the capability of mocking ajax
+	requests and responsens. Selenium provides a comprehensive framework for
+	automating tasks in the browser, as well as methods for inspecting the DOM.
+	Using a combination of QUnit, jquery-mockjax, and Selenium we can
+	efficiently use test-driven development in combination with PhoneGap.
