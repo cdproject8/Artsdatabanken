@@ -1,22 +1,102 @@
-\subsection{Nonfunctional Requirements}
-Non-functional requirements are listed in this section. They are meant as a short description of each requirement that is further elaborated in the use cases. Non-functional requirements are meant to specify the criteria used to judge the operation of a system, rather than specific behaviors.
+lem\subsection{Nonfunctional Requirements}
+Non-functional requirements are system quality attributes that describe how a system performs its prime functionality-functional requirements. They are characterized by having no clear cut criteria to determine or their criteria changes depending on the environment and development strategies. Non-functional requirements state a series of quality or constraints that could influence service delivery, development choice, system owner and end user needs. They are used to specify the criteria used to judge the overall operations of a system, rather than specific behaviors.  The non-functional requirements for this project are elicited in accordance with the ISO 9126 document recommendation. The ISO 9126 particularly focuses on quality in use of a software system. ISO 9126 is described in the pre study section.
+\\[0.4cm]
 
-\subsubsection{User interface}
-	This application is going to be used on the mobile phone so a couple of requirements follow.
-	\begin{itemize}
-		\item The screen size can vary from device to device, the UI must therefore be "universal" or exist in several versions. 
-		\item The buttons/fields must be simple to use in different screen sizes.
-	\end{itemize}
-\subsubsection{Performance Requirements}
-	To make this application succeed, the performance is very important. The things that this application will do, can also be done without the use of this application. By taking notes in a notebook and entering them in the database online from a computer. We will have to beat this in order for it to be useful.
-	\begin{itemize}
-		\item Must be faster than "take notes and enter them on a computer".
-		\item Needs to be easy to use, and give the user the feeling that the application is very simple.
-		\item The software needs to be fast, and have good performance without any loading times (if possible).
-	\end{itemize}
+\subsubsection{Quality of service}
+	\paragraph{Safety}
 
-\subsubsection{ Safety- and Security Requirements}
-	All the data entered in this application  is available for everyone on the internet, and it is therefore not necessary to protect the data ntered. No specific safety or security requirements are known at this time.
 	\begin{itemize}
-		\item None.
+		\item The system can be used safely by any observer.
+        \item Using the system will avoid hazard to the environment.
+        \item Using the system will avoid hazard to the observer.
+        \item Any authorized observer can use the system safely.
 	\end{itemize}
+%\subsubsection{Security, reliability and performance}
+    \paragraph{Security, reliability and performance}
+	\begin{itemize}
+		\item The system will not harvest personal data.
+        \item The system will use user provided data only for the service the user agrees to get.
+        \item The system will prevent transfer of contact details to third parties.
+        \item The system will prevent intentional disclosure of user contact details.
+        \item The system will prevent a breach of privacy of observer.
+        \item The system will respect user confidentiality.
+        \item The system will be available 24 hours a day.
+        \item The system will be available 7 days a week
+        \item The system will be as reliable as the internet connection of the observer has.
+        \item The system will speed up the manual observation process by 40 percent. //arguable, should be tested
+        \item The system will increase the productivity of an observer by 50 percent.// arguable should be tested.
+        \item The system will reduce observation cost by 50 percent.
+        \item The system will have failure rate of less than 0.2 % of operating dates. // arguable testable.
+        \item The system will connect with the database smoothly
+        \item The system will not lose offline data.
+        \item The system will make sure offline data availability.
+        \item The system will respect the integrity of offline data.
+        \item The system will prevent drainage on device battery power.
+        \item The system will uses small connection bandwidth.
+        \item The system will less live connectivity.
+        \item The system will provide seamless connectivity with offline caching.
+        \item The system will use secure communication paths.
+        \item The system will use network.
+        \item The system may access the internal storage of a handheld.
+        \item The system may have the right to use full network connectivity.
+        \item The system may collect observer location.
+        \item The system will provide full mobility to the observer.
+
+	\end{itemize}
+    \paragraph{Accuracy}
+        \begin{itemize}
+            \item The system will store data without any normalization.
+            \item They system will prevent alteration of input data during data entry processes.
+            \item The system will not approximate data during data entry processes.
+            \item The system will prevent alteration of picture quality through compression.
+            \item The system will accept only a fixed size of pictures
+            \item The system will accept a fixed number of pictures.
+            \item The system will collect high quality data.
+
+        \end{itemize}
+    \paragraph{Interface}
+        \begin{itemize}
+            \item The user interface will be clean.
+            \item The system will have small user interface.
+            \item The user interface will fit the observer device.
+            \item The user interface will have legible font type.
+            \item The user interface will have legible font size
+            \item The user interface will use only two shades of color.
+            \item The user interface will have an intuitive design //arguable
+            \item The user interface will be easy to use.
+            \item The user interface will be fast.
+            \item The user interface will operate smoothly across multiple platforms.
+
+        \end{itemize}
+\subsubsection{Compliance}
+		\begin{itemize}
+		     \item The system will prevent violation of device usage agreement.
+             \itemThe system will comply with user privacy requirement.
+             \item The system will comply with device platform recommendations.
+             \item The system will comply with security requirements of the software owners.
+             \item The system will prevent violation of international law.
+             \item The system will prevent violation of national law.
+
+	    \end{itemize}
+\subsubsection{Architectural design}
+    \begin{itemize}
+        \item The system will be built with market tested software architecture pattern.
+        \item The system will have a distributed client.
+        \item The system will have a central repository database.
+        \item The system will store observation data in a central database.
+        \item The system will have interaction with mobile client applications.
+        \item The system will have interaction with mobile handsets
+        \item The system will use reliable internet collection.
+        \item The system will have easy installation. //arguable can be tested.
+
+    \end{itemize}
+\subsubsection{Development paradigm}
+    \begin{itemize}
+        \item The system will follow a cost effective development paradigm
+        \item The system will be designed to minimize operation cost.
+        \item The system will have maintainable system components.
+        \item The system will have easily replaceable components
+        \item The system will be durable.
+        \item The system will be adaptable to new technologies.
+
+    \end{itemize}
