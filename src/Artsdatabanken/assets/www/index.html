@@ -8,6 +8,7 @@
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery_m/jquery.mobile-1.0b2.js"></script>
 <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="main.js"></script>
 
 </head>
 <body>
@@ -34,5 +35,39 @@
 		</div>
 		<div data-role="footer" data-theme="d"><h4>Fancy</h4></div>
 	</div>
+
+	<div data-role="page" id="obs_bird" data-theme="a">
+		<div data-role="header">
+			<h1>Birdobservation</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+			<p>Species  -  Ind #</p>
+			<form id="observation_form" action="form.php" method="post"> 
+				<div id="species_row">
+					<div data-role="fieldcontain">
+						<label for="species" >01</label>
+						<input type="text" name="name01" id="species" value=""  />
+						<input type="number" name="numb01" id="species" value="1"  />
+						<div class="extended_options">
+							<div data-role="fieldcontain">
+								<label for="sex01" >Sex</label>
+								<input type="text" name="sex01" id="sex01" value=""  />
+							</div>
+							<div data-role="fieldcontain">
+								<label for="age01" >Age</label>
+								<input type="number" name="age01" id="age01" value=""  />
+							</div>
+						</div>
+						<a data-role="button" href="" onClick="$('extended_options').toggle();">Additional Info</a>
+					</div>
+				</div>	
+			</form>		
+			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">+</a>	
+		</div>
+		<div data-role="footer" data-theme="d"><a href="#submit">Submit</a></div>
+	</div>
+
+
+
 </body>
 </html>
