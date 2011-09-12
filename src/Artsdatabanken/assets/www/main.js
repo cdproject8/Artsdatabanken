@@ -20,3 +20,10 @@ $("#obs_bird").live('pagecreate',function(event){
 */
 
 });
+
+//back button 
+$('.ui-btn-back').live('tap',function() {
+	history.back(); return false;
+	}).live('click',function() {
+	return false;
+});

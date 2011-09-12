@@ -5,14 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>PhoneGap</title>
 <link rel="stylesheet" href="../libraries/jquery_m/jquery.mobile-1.0b2.css" />
+<link rel="stylesheet" href="../libraries/jquery.mobile.datebox.css" />
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery_m/jquery.mobile-1.0b2.js"></script>
+<script type="text/javascript" charset="utf-8" src="../libraries/jquery.mobile.datebox.js"></script>
 <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
 <script type="text/javascript" charset="utf-8" src="main.js"></script>
 
 </head>
 <body>
-
+<!-- INDEX PAGE -->
 	<div data-role="page" id="main">
 		<div data-role="header">
 			<h1>Hello Artsdatabanken</h1>
@@ -24,9 +26,11 @@
 		<div data-role="footer" data-theme="d"><h4>ADB alpha 0.01</h4></div>
 	</div>
 
+
+<!-- SELECT SPECIES PAGE -->
 	<div data-role="page" id="species_select" data-theme="a">
 		<div data-role="header">
-			<h1>Observation</h1>
+			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Observation</h1>
 		</div>
 		<div data-role="content" data-theme="a">
 			<p>Which Species are you interested in?</p>
@@ -36,9 +40,11 @@
 		<div data-role="footer" data-theme="d"><h4>Fancy</h4></div>
 	</div>
 
+
+<!-- BIRD OBSERVATION PAGE -->
 	<div data-role="page" id="obs_bird" data-theme="a">
 		<div data-role="header">
-			<h1>Birdobservation</h1>
+			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Birdobservation</h1>
 		</div>
 		<div data-role="content" data-theme="a">
 			<p>Species  -  Ind #</p>
@@ -46,52 +52,86 @@
 				<div id="species_row">
 					<div data-role="fieldcontain">
 						<label for="species" >01</label>
-						<input type="text" name="name01" id="species" value=""  />
-						<input type="number" name="numb01" id="species" value="1"  />
+						<input type="text" name="nam01" id="spe01" value=""  />
+						<input type="number" name="num01" id="spec01" data-inline="true" value="1"  />
 					</div>
-<!-- drop down ext info 
-					<div class="extended_options">
-						<div data-role="fieldcontain">
-							<label for="sex01" >Sex</label>
-							<input type="text" name="sex01" id="sex01" value=""  />
-						</div>
-						<div data-role="fieldcontain">
-							<label for="age01" >Age</label>
-							<input type="number" name="age01" id="age01" value=""  />
-						</div>
-					</div>
--->
-					<small><a data-role="button" href="#extended_inf" class="add_info">Additional Info</a></small>
-					</div>
-				</div>	
-			</form>		
-			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">+</a>	
+					<a data-role="button" href="#extended_inf" data-inline="true" data-theme="b" class="add_info">+</a>
+					<hr/>
+				</div>
+			</form>
+			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">Add another species</a>	
 		</div>
-		<div data-role="footer" data-theme="d"><a href="#submit">Submit</a></div>
+		<div data-role="footer" data-theme="b"><a href="#submit" data-role="button" >Submit</a></div>
 	</div>
 
+
+<!-- EXTENDED INFO PAGE -->
 	<div data-role="page" id="extended_inf" data-theme="a">
 		<div data-role="header">
-			<h1>Extenden info for 'x' </h1>
+			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Extenden info for 'x' </h1>
 		</div>
 		<div data-role="content">
 			<div data-role="fieldcontain">
-				<label for="species" >01</label>
-				<input type="text" name="name01" id="species" value=""  />
-				<input type="number" name="numb01" id="species" value="1"  />
+				<label for="nam01" >Species</label>
+				<input type="text" name="nam01" id="nam01" value=""  />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="num01" >Number</label>
+				<input type="number" name="num01" id="num01" value="1"  />
 			</div>
 			<div class="extended_options">
 				<div data-role="fieldcontain">
-					<label for="sex01" >Sex</label>
-					<input type="text" name="sex01" id="sex01" value=""  />
+					<label for="sex01" class="select">Sex</label>
+					<select name="sex01" id="sex01">
+						<option value="na" >N/A</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
 				</div>
-			<div data-role="fieldcontain">
+				<div data-role="fieldcontain">
 					<label for="age01" >Age</label>
 					<input type="number" name="age01" id="age01" value=""  />
 				</div>
+				<div data-role="fieldcontain">
+					<label for="act01" class="select">Activity</label>
+					<select name="act01" id="act01">
+						<option value="rest">Resting</option>
+						<option value="nourish">Seeking Nourishment</option>
+						<option value="flying">Flying</option>
+						<option value="swim">Swimming</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="tim01" >Time Start</label>
+					<input name="tim01" id="tim01" type="date" data-role="datebox"
+					   data-options='{"mode": "timebox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dat01" >Date Start</label>
+					<input name="dat01" id="dat01" type="date" data-role="datebox"
+					   data-options='{"mode": "calbox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dae01">Date End</label>
+						<input name="dae01" type="date" data-role="datebox" id="dae01"
+    						data-options='{"mode": "calbox"}' />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="tie01" >Time End</label>
+					<input name="tie01" id="tie01" type="date" data-role="datebox"
+					   data-options='{"mode": "timebox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="com01" >Comments</label>
+					<textarea cols="40" rows="8" name="com01" id="com01"></textarea>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="pic01" >Picture</label>
+					<!--  hmm  -->
+				</div>
 			</div>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>Artsies</h4></div>
+		<div data-role="footer" data-theme="d"><h4>A fine specimen indeed</h4></div>
 	</div>
 
 
