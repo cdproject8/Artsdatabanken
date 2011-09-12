@@ -34,8 +34,13 @@
 		</div>
 		<div data-role="content" data-theme="a">
 			<p>Which Species are you interested in?</p>
-			<p><a href="#obs_bird" data-role="button">Bird</a></p>
-			<p><a href="#obs_fish" data-role="button">Fish</a></p>
+			<p>
+			<a href="#obs_bird" data-role="button" data-inline="true">Bird</a>
+			<a href="#obs_fish" data-role="button" data-inline="true">Fish</a>
+			<a href="#obs_crawler" data-role="button" data-inline="true">Crawler</a>
+			<a href="#obs_mammal" data-role="button" data-inline="true">Mammal</a>
+			<a href="#obs_plant" data-role="button" data-inline="true">Plant</a>
+			</p>
 		</div>
 		<div data-role="footer" data-theme="d"><h4>Fancy</h4></div>
 	</div>
@@ -51,8 +56,7 @@
 			<form id="observation_form" action="form.php" method="post"> 
 				<div id="species_row">
 					<div data-role="fieldcontain">
-						<label for="species" >01</label>
-						<input type="text" name="nam01" id="spe01" value=""  />
+						<input type="text" name="nam01" id="spe01" value="Blackbird"  />
 						<input type="number" name="num01" id="spec01" data-inline="true" value="1"  />
 					</div>
 					<a data-role="button" href="#extended_inf" data-inline="true" data-theme="b" class="add_info">+</a>
