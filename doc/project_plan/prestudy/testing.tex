@@ -21,8 +21,6 @@ defects may be discovered and corrected. The scope of software testing
 includes examination of code as well as execution of that code in
 various environments and conditions.
 
-\subsubsection{Functional vs non-functional testing}
-
 Functional testing verifies that the software is logically correct, 
 i.e. it does what it is suppose to do.
 
@@ -35,30 +33,22 @@ resources. We aim to develop a product that non-technical users (i.e.  bird
 watchers, etc.) can understand and use, therefore usability is also an
 important feature.
 
-\subsubsection{Finding faults early}
-
 The later a defect is detected, the more expensive it is to fix. 
 This makes test-driven development the ideal choice (where possible).
-
-\subsubsection{Compatibility}
 
 A common cause of software failure is lack of compatibility with other software,
 operation systems, or hardware devices. To achieve an acceptable level of
 compatibility we plan to test on Android devices of different sizes, with
 different versions of the operating system. 
 
-Ideally we would test on all devices that should be supported (i.e. Android,
+Ideally we would test on all supported devices (i.e. Android,
 iOs, windows mobile, ...). We only have Android phones and are dependent on the
 customer to provide other devices.
-
-\subsubsection{Static vs. dynamic testing}
 
 Reviews, walkthroughs, or inspections are considered static testing, whereas
 actually executing programmed code with a given set of test cases is referred to
 as dynamic testing. Both forms should be used to ensure that all features are
 working as expected.
-
-\subsubsection{Testing methods}
 
 Software testing methods are traditionally divided into white- and black-box
 testing, based on the point of view that a test engineer takes when designing
@@ -78,26 +68,21 @@ a users point of view (black box view), some people call it "Gray box testing".
 By knowing the underlying concepts of how the software works the tester makes
 better-informed testing choices when testing from the outside.
 
-\subsubsection{Testing levels}
-
-\paragraph{Unit testing} refers to tests that verify the functionality of a specific section
+Unit testing refers to tests that verify the functionality of a specific section
 of code, usually at the function level. There exist many frameworks for this
 type of testing, many are a member of the xUnit suite, where x is replaced by a
-language specific prefix (jUnit for java, qUnit for jQuery and javascript, etc.).
-
+language specific prefix (jUnit for java, qUnit for jQuery and javascript, etc.).  
 This type of testing is frequently used in test-driven development, and is a
 good way to ensure that each part is working as expected. It's important to test
 edge cases, and with invalid / unexpected parameters.
 
-\paragraph{Integration testing} is software testing that seeks to verify the interfaces
+Integration testing is software testing that seeks to verify the interfaces
 between components against a software design. This is typically conducted after
 the unit tests have passed. Some integration tests can also be included in the
 xUnit suite.
 
-\paragraph{System testing} tests a completely integrated system to verify that it meets its
+System testing tests a completely integrated system to verify that it meets its
 requirements.
-
-\subsubsection{Objectives of testing}
 
 Regression testing is used to ensure that the code is functional, even after big
 changes. In test-driven development this is easy to achieve using automated
@@ -108,13 +93,13 @@ developer team), to validate that the business requirements are met.
 
 \subsubsection{Testing cycle}
 
-In the spirit of agile development, we intend to use automated testing with the
+In the spirit of agile development, we intend to use automated testing, and the
 following test cycle:
 
 \begin{enumerate}
 	\item Requirements analysis
 	\item Test planning (strategy, plan, testbed, etc.)
-	\item Test-driven development
+	\item Test-driven development (see next list)
 	\item Test reporting
 	\item Test result analysis
 \end{enumerate}
