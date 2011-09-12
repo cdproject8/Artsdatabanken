@@ -9,6 +9,7 @@ $(document).ready(function() {
 }); //end doc.ready
 
 $("#obs_bird").live('pagecreate',function(event){
+/*
 	$(".extended_options").hide(); // hide by default
 	$(".add_info").toggle(
 		function(){
@@ -16,4 +17,6 @@ $("#obs_bird").live('pagecreate',function(event){
 		function(){
 			$(".extended_options",$(this).parent()).hide('slow');}
 		);
+*/
+
 });
