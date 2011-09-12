@@ -9,11 +9,11 @@ $(document).ready(function() {
 }); //end doc.ready
 
 $("#obs_bird").live('pagecreate',function(event){
-	$(".extended_options").hide();
+	$(".extended_options").hide(); // hide by default
 	$(".add_info").toggle(
 		function(){
-			$(".extended_options",$(this).parent()).hide('slow');},
+			$(".extended_options",$(this).parent()).show('slow');},
 		function(){
-			$(".extended_options",$(this).parent()).show('slow');}
+			$(".extended_options",$(this).parent()).hide('slow');}
 		);
 });
