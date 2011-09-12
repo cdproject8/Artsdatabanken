@@ -21,7 +21,7 @@
 			<p>Wanna submit something?</p>
 			<p><a href="#species_select" data-role="button">New submission</a></p>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>Artsies</h4></div>
+		<div data-role="footer" data-theme="d"><h4>ADB alpha 0.01</h4></div>
 	</div>
 
 	<div data-role="page" id="species_select" data-theme="a">
@@ -48,23 +48,50 @@
 						<label for="species" >01</label>
 						<input type="text" name="name01" id="species" value=""  />
 						<input type="number" name="numb01" id="species" value="1"  />
-						<div class="extended_options">
-							<div data-role="fieldcontain">
-								<label for="sex01" >Sex</label>
-								<input type="text" name="sex01" id="sex01" value=""  />
-							</div>
-							<div data-role="fieldcontain">
-								<label for="age01" >Age</label>
-								<input type="number" name="age01" id="age01" value=""  />
-							</div>
+					</div>
+<!-- drop down ext info 
+					<div class="extended_options">
+						<div data-role="fieldcontain">
+							<label for="sex01" >Sex</label>
+							<input type="text" name="sex01" id="sex01" value=""  />
 						</div>
-						<a data-role="button" href="" onClick="$('extended_options').toggle();">Additional Info</a>
+						<div data-role="fieldcontain">
+							<label for="age01" >Age</label>
+							<input type="number" name="age01" id="age01" value=""  />
+						</div>
+					</div>
+-->
+					<small><a data-role="button" href="#extended_inf" class="add_info">Additional Info</a></small>
 					</div>
 				</div>	
 			</form>		
 			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">+</a>	
 		</div>
 		<div data-role="footer" data-theme="d"><a href="#submit">Submit</a></div>
+	</div>
+
+	<div data-role="page" id="extended_inf" data-theme="a">
+		<div data-role="header">
+			<h1>Extenden info for 'x' </h1>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="species" >01</label>
+				<input type="text" name="name01" id="species" value=""  />
+				<input type="number" name="numb01" id="species" value="1"  />
+			</div>
+			<div class="extended_options">
+				<div data-role="fieldcontain">
+					<label for="sex01" >Sex</label>
+					<input type="text" name="sex01" id="sex01" value=""  />
+				</div>
+			<div data-role="fieldcontain">
+					<label for="age01" >Age</label>
+					<input type="number" name="age01" id="age01" value=""  />
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="d"><h4>Artsies</h4></div>
 	</div>
 
 
