@@ -1,0 +1,266 @@
+﻿h1 {
+    font-family: Georgia, Verdana, Helvetica, Arial, Sans-Serif;    
+}
+
+h1.artsdatabanken {
+    background-image: url('/images/Artsdatabanken_RGB_navn.png');
+    background-repeat:no-repeat;
+    background-position:center center;
+    /*background-attachment:fixed;*/
+    /*-o-background-size: auto 100%, auto auto;*/
+    -moz-background-size: auto 90%;
+    /*-webkit-background-size: auto 100%, auto auto;*/
+    background-size: auto 90%;
+    text-indent:99999px;
+}
+
+h1.artsdatabanken.ui-title {
+    margin:0.6em 0 0.8em;
+}
+
+a {color:#4c7d87;}
+
+form.key ul {list-style-type: none;}
+form.key li.expanded {position:relative;}
+form.key .ui-btn.ui-btn-icon-notext {position:absolute; margin-left:-10px;}
+
+a.heading {text-decoration:none;}
+h1.scientific {float:left; font-family: Georgia,Serif; margin:0; font-size:1.4em; color:#333333;}
+h2.vernacular {float:left; clear:both; font-family: Georgia,Serif; margin:0; font-size:1.3em; color:#444444;}
+
+span.numberOfSpecies {color:#9a8c7d; font-size:0.8em;}
+span.rank {color:#9a8c7d; font-style:normal;}
+
+.genus, .subgenus, .section, .species, .subspecies, .variety, .form {font-style:italic;}
+
+div.utbredelse img {max-width:100%; float:left; margin: 0 0.5em 0.5em 0;}
+div.taxon div.ui-collapsible-contain {clear:both;}
+
+div.credits {clear:both; width:100%; font-size:70%; border-top:solid 2px #9a8c7d; border-bottom:solid 1px #9a8c7d; text-align:right;}
+div.credits div.field-label {float:none; vertical-align:top; display:inline-block;}
+div.credits div.field-items {display:inline-block;}
+div.credits div.field-item {display:inline-block; margin-left:0.5em;}
+
+div.taxon div.content > div.field-name-field-taksonid {display:none;}
+div.taxon div.field-name-field-beskrivelser div.field-label {display:none;}
+div.taxon div.field-name-field-referanse div.field-label {display:none;}
+div.taxon div.node > h2 {display:none;}
+div.taxon div.node > ul.links {display:none;}
+div.taxon div.field-name-field-media {display:none;}
+
+div.taxon fieldset.collapsible > legend {display:none;}
+
+div.taxon div.field-type-taxonomy-term-reference div.field-label {display:none;}
+
+div.classification {position:relative;}
+div.classification .ui-select {font-size:70%; width:100%; margin:-0.5em 0 0.5em 0;}
+div.classification .ui-select span.ui-btn-text {text-align:left; color:#9a8c7d;}
+
+form.ui-listview-filter {clear:both;}
+
+ul.taxonlist li.ui-li {max-height:80px; overflow:hidden;}
+ul.taxonlist li a.ui-link-inherit {padding-right:35px !important;}
+ul.taxonlist img + p, ul.taxonlist div.crop + p {color:#9a8c7d; font-size:70%;}
+ul.taxonlist h2.ui-li-heading {margin-top:0.6em;}
+
+ul.taxonlist div.crop {position:absolute; left:0; top:-61px; height:200px; width:80px; overflow:hidden;}
+ul.taxonlist div.crop > div {height:200px; vertical-align:middle; display:table-cell;}
+ul.taxonlist div.crop > div > div {margin-left:-40px; text-align:center; width:160px;}
+ul.taxonlist img.maxwidth {max-width:80px;}
+ul.taxonlist img.maxheight {max-height:80px;}
+
+ul.gridlist {list-style:none; margin:1em 0; padding:0;}
+ul.gridlist li.ui-li {float:left; width:160px; max-height:100px; overflow:hidden; font-size:10px; border-radius:0.6em; margin:0.2em;}
+ul.gridlist li.ui-li.transparent {overflow:visible;}
+ul.gridlist li.transparent a.ui-link-inherit {overflow:visible;}
+ul.gridlist a.ui-link-inherit {color:#333333; text-decoration:none; padding:0 !important;}
+ul.gridlist img.ui-li-thumb {position:static;}
+ul.gridlist div.ui-li {border:0;}
+ul.gridlist h2 {display:none; position:static; margin-top:-0.6em; font-size:11px; width:160px; text-align:center;}
+ul.gridlist img + p {display:none;}
+ul.gridlist p {display:none;}
+ul.gridlist span {display:none;}
+ul.gridlist a.ui-li-link-alt {display:none;}
+
+ul.gridlist div.crop {position:static; margin-top:-50px; width:160px;}
+ul.gridlist div.crop > div > div {margin-left:0;}
+ul.gridlist img.maxwidth {max-width:160px; max-height:200px;}
+ul.gridlist img.maxheight {max-width:160px; max-height:200px; margin-left:0;}
+
+ul.gridlistsmall li {float:left; width:80px; height:80px; border-radius:0.6em; margin:0.1em;}
+ul.gridlistsmall img.ui-li-thumb {position:static;}
+ul.gridlistsmall a.ui-link-inherit {color:#333333; text-decoration:none; padding:0 !important;}
+ul.gridlistsmall h2 {display:none;}
+ul.gridlistsmall p {display:none;}
+ul.gridlistsmall span {display:none;}
+ul.gridlistsmall a.ui-li-link-alt {display:none;}
+ul.gridlistsmall div.crop {position:static; margin-top:-60px; width:80px;}
+
+/* border-radius vs. position hack */
+ul.gridlist li.ui-li {position:static;}
+ul.gridlist div.ui-btn-inner {position:static;}
+ul.gridlistsmall li.ui-li {position:static;}
+ul.gridlistsmall div.ui-btn-inner {position:static; border-top:solid 0 #ffffff;}
+
+
+.ui-icon {
+    background-color:rgb(234,101,13);
+}
+
+.ui-icon-artsdatabanken {
+    background-image: url('/images/artsdatabanken-icon.png');
+    background-size: 18px 18px;
+    background-color:transparent;
+    border-radius:0;
+}
+
+.ui-bar-b {
+	border: 1px solid 		#bbbda5;
+	background: 			#9a8c7d;
+	color: 					#ffffff;
+	text-shadow: 0 1px 0 #333333;
+	background-image: -moz-linear-gradient(top, #9a8c7d, #bbbda5);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#9a8c7d),
+		color-stop(1, 		#bbbda5));
+  	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#9a8c7d', EndColorStr='#bbbda5')";
+  	
+  	font-family: Garland, Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+/* Z
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-bar-z {
+	border: 1px solid 		#bbbda5;
+	background: 			#dfdcd3;
+	color: 					#333333;
+	text-shadow: 0 1px 0 #eeeeee;
+	background-image: -moz-linear-gradient(top, #dfdcd3, #bbbda5);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#dfdcd3),
+		color-stop(1, 		#bbbda5));
+  	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dfdcd3', EndColorStr='#bbbda5')";
+}
+.ui-bar-z,
+.ui-bar-z input,
+.ui-bar-z select,
+.ui-bar-z textarea,
+.ui-bar-z button {
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+.ui-bar-z .ui-link-inherit {
+	color: 					#333333;
+}
+.ui-bar-z .ui-link {
+	color: 					#2489CE;
+	font-weight: bold;
+}
+.ui-body-z {
+	border: 1px solid 		#ccc;
+	color: 					#333333;
+	text-shadow: 0 1px 0 	#fff;
+	background: 			#ffffff;
+}
+.ui-body-z,
+.ui-body-z input,
+.ui-body-z select,
+.ui-body-z textarea,
+.ui-body-z button {
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+.ui-body-z .ui-link-inherit {
+	color: 					#333333;
+}
+.ui-body-z .ui-link {
+	color: 					#2489CE;
+	font-weight: bold;
+}
+.ui-btn-up-z {
+	border: 1px solid 		#ccc;
+	background: 			#fff;
+	font-weight: bold;
+	color: 					#444;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #fff;
+}
+.ui-btn-up-z a.ui-link-inherit {
+	color: 					#333;
+}
+.ui-btn-hover-z {
+	border: 1px solid 		#aaa;
+	background: 			#eeeeee;
+	font-weight: bold;
+	color: 					#222;
+	cursor: pointer;
+	text-shadow: 0 1px 1px 	#fff;
+	text-decoration: none;
+	background-image: -moz-linear-gradient(top, 
+							#fdfdfd, 
+							#eeeeee);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#fdfdfd),
+		color-stop(1, 		#eeeeee));
+  	-msfilter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fdfdfd', EndColorStr='#eeeeee')";
+}
+.ui-btn-hover-z a.ui-link-inherit {
+	color: 					#222;
+}
+.ui-btn-down-z {
+	border: 1px solid 		#aaaaaa;
+	background: 			#ffffff;
+	font-weight: bold;
+	color: 					#111;
+	text-shadow: 0 1px 1px 	#ffffff;
+	background-image: -moz-linear-gradient(top, 
+							#eeeeee, 
+							#ffffff);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#eeeeee),
+		color-stop(1, 		#ffffff));
+  	-msfilter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#ffffff')";
+}
+.ui-btn-down-z a.ui-link-inherit {
+	border: 1px solid 		#808080;
+	background: 			#ced0d2;
+	font-weight: bold;
+	color: 					#111;
+	text-shadow: none;
+	background-image: -moz-linear-gradient(top, 
+							#cccccc, 
+							#eeeeee);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#cccccc),
+		color-stop(1, 		#eeeeee));
+  	-msfilter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#eeeeee')";
+}
+.ui-btn-up-z,
+.ui-btn-hover-z,
+.ui-btn-down-z {
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+/* Active class used as the "on" state across all themes
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-btn-active {
+	border: 1px solid 		#155678;
+	background: 			#4596ce;
+	font-weight: bold;
+	color: 					#fff;
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #145072;
+	text-decoration: none;
+	background-image: -moz-linear-gradient(top, 
+							#85bae4, 
+							#5393c5);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#85bae4),
+		color-stop(1, 		#5393c5));
+  	-msfilter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#85bae4', EndColorStr='#5393c5')";
+  	outline: none;
+}
+.ui-btn-active a.ui-link-inherit {
+	color: 					#fff;
+}
+

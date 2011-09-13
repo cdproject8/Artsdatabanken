@@ -4,8 +4,20 @@
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>PhoneGap</title>
+
+
+        <link href="../libraries/touch.artsdatabanken.no/jquery-ui.1.8.11.themes.base.css" rel="stylesheet" type="text/css" media="all" />
+
+
 <link rel="stylesheet" href="../libraries/jquery_m/jquery.mobile-1.0b2.css" />
 <link rel="stylesheet" href="../libraries/jquery.mobile.datebox.css" />
+
+        <link rel="stylesheet" href="../libraries/touch.artsdatabanken.no/Artsdatabanken2.css" type="text/css">
+        </style>
+        <link href="../libraries/touch.artsdatabanken.no/Artsdatabanken.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery_m/jquery.mobile-1.0b2.js"></script>
 <script type="text/javascript" charset="utf-8" src="../libraries/jquery.mobile.datebox.js"></script>
@@ -15,18 +27,20 @@
 </head>
 <body>
 <!-- INDEX PAGE -->
-	<div data-role="page" id="main">
-		<div data-role="header"  data-theme="a">
-			<h1>Artsdatabanken</h1>
+	<div data-role="page" id="main" data-theme="z">
+		<div data-role="header"  > <!-- data-theme="a" "b" "d" -->
+			<h1 class="artsdatabanken">Artsdatabanken</h1>
+			<a href="http://www.artsdatabanken.no" class="ui-btn-right" rel="external" data-icon="artsdatabanken">Om</a>
+
 		</div>
-		<div data-role="content" id="one"  data-theme="b">
+		<div data-role="content" id="one"  >
 			<p>Welcome to Artsdatabanken, we're counting on your work. So go out there and observe dat fauna!</p>
 			<p><a href="#species_select" data-role="button">New Observation</a></p>
 			<p><a href="#species_view" data-role="button">View Observations</a></p>
 			<p><a href="#photo" data-role="button">Take Picture</a></p>
 			<p><a href="#species_export" data-role="button">Export Observations</a></p>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>ADB Alpha 0.2</h4></div>
+		<div data-role="footer" ><h4>ADB Alpha 0.2</h4></div>
 	</div>
 
 
@@ -72,7 +86,7 @@
     <li><a href="#obs_reptile">
         <img src="images/reptile.jpg" title="Reptile"/>
         <h3>Reptile</h3>
-        <p>Fssssss</p>
+        <p>Claws, scales and fangs</p>
     </a></li>
     <li><a href="#obs_marine_m">
         <img src="images/marine_mammal.jpg" title="Marine Mammal"/>
@@ -87,7 +101,7 @@
     <li><a href="#obs_amphibian">
         <img src="images/amphibian.jpg" title="lichen"/>
         <h3>Amphibian</h3>
-        <p>Claws and scales</p>
+        <p>Gurgle</p>
     </a></li>
     <li><a href="#obs_lichen">
         <img src="images/lichen.jpg" title="Lichen"/>
