@@ -6,19 +6,21 @@
 	
 	<title>Artsdatabanken</title>
 	
-	<!-- External libraries -->
+	<!-- External libraries to be loaded before custom scripting -->
 	<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.0.0.js"></script>
 	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.6.2.min.js"></script>
 	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.0b2.min.css" />
-	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
 	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile.datebox.css" />
-	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile.datebox.js"></script>
 	
 	<!-- Imported from touch.artsdatabanken.no -->
 	<link rel="stylesheet" href="libs/touch.artsdatabanken.no/artsdatabanken.css" type="text/css" media="all" />
 	
 	<!-- Application specific stylesheets and scripts -->
-	<script type="text/javascript" charset="utf-8" src="main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	
+	<!--  External libraries to be loaded after custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile.datebox.js"></script>
 </head>
 
 <body>
@@ -54,9 +56,8 @@
 
 
 	<!-- SELECT SPECIES PAGE -->
-	<div data-role="page" id="species_select">
+	<div data-role="page" id="species_select" >
 		<div data-role="header" data-theme="z">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a>
 			<h1>Observation</h1>
 		</div>
 		<div data-role="content" data-theme="z">
@@ -142,9 +143,8 @@
 
 
 	<!-- BIRD OBSERVATION PAGE -->
-	<div data-role="page" id="obs_bird" data-theme="z">
+	<div data-role="page" id="obs_bird" data-theme="z" >
 		<div data-role="header" data-theme="z">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a>
 			<h1>Birdobservation</h1>
 		</div>
 		<div data-role="content" data-theme="z">
@@ -185,11 +185,9 @@
 
 
 	<!-- EXTENDED INFO PAGE -->
-	<div data-role="page" id="extended_inf">
+	<div data-role="page" id="extended_inf" >
 		<div data-role="header" data-theme="z">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a>
 			<h1>Extenden info for 'x'</h1>
-
 		</div>
 		<div data-role="content" data-theme="z">
 			<div data-role="fieldcontain">
@@ -256,9 +254,8 @@
 	</div>
 
 	<!-- SUBMITTED COMPLETE PAGE -->
-	<div data-role="page" id="submit">
+	<div data-role="page" id="submit" >
 		<div data-role="header" data-theme="z">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a>
 			<h1>Observation is saved</h1>
 		</div>
 		<div data-role="content" data-theme="z">
