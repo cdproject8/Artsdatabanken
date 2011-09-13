@@ -40,7 +40,7 @@ $(document).ready(function(){
 			if ( response.status == 'success') {
 				equal(response.fortune, "Are you a turtle?"); 
 			} 
-			start();
+			start(); // Need to start the test runner at the end of all asyncTests
 		});
 	});
 });
