@@ -113,6 +113,59 @@ Test driven development (red-green):
 	\item Regression testing (after changes in code, refactoring, and similar)
 \end{enumerate}
 
+\subsubsection{Test strategy templates}
+
+\begin{table}[htb]
+	\centering
+    \begin{tabular}{| l | l |}
+		\hline
+		Test ID & Test name \\ \hline
+		Responsible & Name \\ \hline
+		Objective &  \\ \hline
+		Test category & Functional, nfr, comm, database con,security \\ \hline
+		Set up & What has to be done before testing \\ \hline
+		Test inputs & Data, step or procedure \\ \hline
+		Expected outcome & \\ \hline
+		Pass/fail criteria & \\ \hline
+		Priority & \\ \hline
+    \end{tabular}
+  \caption{Test case design}
+\end{table}
+
+\begin{table}[htb]
+	\centering
+    \begin{tabular}{| l | l |}
+		\hline
+		Test ID & Test name \\ \hline
+		Responsible & Name \\ \hline
+		Date & \\ \hline
+		Test steps & \\ \hline
+		Expected outcome & \\ \hline
+		Outcome & \\ \hline
+		Type of defect & if failed \\ \hline
+		Priority & \\ \hline
+		Objective &  \\ \hline
+    \end{tabular}
+  \caption{Test execution}
+\end{table}
+
+\begin{table}[htb]
+	\centering
+    \begin{tabular}{| l | l | l | l | l | l | l |}
+		\hline
+		Test category / Date & & & & & & \\ \hline
+		Basic functionality & & & & & & \\ \hline
+		DB Communication & & & & & & \\ \hline
+		GUI & & & & & & \\ \hline
+		Model / architecture & & & & & & \\ \hline
+		Storage & & & & & & \\ \hline
+		Availability & & & & & & \\ \hline
+		Performance & & & & & & \\ \hline
+		etc. & & & & & & \\ \hline
+    \end{tabular}
+  \caption{Test execution}
+\end{table}
+
 \subsubsection{QUnit}
 
 	Qunit is a JavaScript test suite. It's used by the jQuery project to test
