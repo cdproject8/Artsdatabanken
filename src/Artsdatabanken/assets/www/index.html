@@ -17,7 +17,7 @@
 <!-- INDEX PAGE -->
 	<div data-role="page" id="main">
 		<div data-role="header"  data-theme="a">
-			<h1>Hello Artsdatabanken</h1>
+			<h1>Artsdatabanken</h1>
 		</div>
 		<div data-role="content" id="one"  data-theme="b">
 			<p>Welcome to Artsdatabanken, we're counting on your work. So go out there and observe dat fauna!</p>
@@ -26,7 +26,7 @@
 			<p><a href="#photo" data-role="button">Take Picture</a></p>
 			<p><a href="#species_export" data-role="button">Export Observations</a></p>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>ADB Mobile Alpha 0.01</h4></div>
+		<div data-role="footer" data-theme="d"><h4>ADB Alpha 0.2</h4></div>
 	</div>
 
 
@@ -132,13 +132,13 @@
 						<option value="nardo0">Nardo</option>
 					</select>
 			</div>
-			<p>Species  -  Ind #</p>
+			<large><p><div style="display: inline-block; width:70% !important;" >Species</div><div style="display: inline-block;"># Observed</div></p></large>
 				<div id="species_row">
 					<div data-role="fieldcontain">
-						<input type="text" name="nam01" id="spe01" value="Blackbird"  />
-						<input type="number" name="num01" id="spec01" data-inline="true" value="1"  />
+						<input type="text" name="nam01" id="spe01" class="ui-input-name-spec" value="Blackbird"  />
+						<input type="number" name="num01" id="spec01" class="ui-input-numb-spec" value="1"  />
 					</div>
-					<a data-role="button" href="#extended_inf" data-inline="true" data-theme="b" class="add_info">+</a>
+					<a href="#extended_inf" data-role="button" data-inline="true" class='ui-btn-right add_info' data-icon='arrow-r'>Add More</a>
 					<hr/>
 				</div>
 			</form>
