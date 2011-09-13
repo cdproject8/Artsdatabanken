@@ -17,6 +17,7 @@
 	
 	<!-- Application specific stylesheets and scripts -->
 	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	<link rel="stylesheet" href="styles/main.css" />
 	
 	<!--  External libraries to be loaded after custom scripting -->
 	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
@@ -158,16 +159,18 @@
 						<option value="nardo0">Nardo</option>
 					</select>
 				</div>
-				<large>
-				<p>
-				<div style="display: inline-block; width: 70% !important;">Species</div>
-				<div style="display: inline-block;"># Observed</div>
-				</p>
-				</large>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">Species</div>
+					<div class="ui-block-b"># Observed</div>
+				</div>
 				<div id="species_row">
-					<div data-role="fieldcontain">
-						<input type="text" name="nam01" id="spe01" class="ui-input-name-spec" value="Blackbird" style="width: 60% !important" />
-						<input type="number" name="num01" id="spec01" class="ui-input-numb-spec" style="width: 10% !important" value="1" />
+					<div data-role="fieldcontain" class="ui-grid-a">
+						<div class="ui-block-a">
+							<input type="text" name="nam01" id="spe01" class="ui-input-name-spec fill" value="Blackbird" />
+						</div>
+						<div class="ui-block-b">
+							<input type="number" name="num01" id="spec01" class="ui-input-numb-spec fill" />
+						</div>
 					</div>
 					<a href="#extended_inf" data-role="button" data-inline="true"
 						class='ui-btn-right add_info' data-icon='arrow-r'>Add More</a>
