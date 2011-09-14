@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Artsdatabanken</title>
+	
+	<!-- External stylesheets -->
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile.datebox.css" />
+	<link rel="stylesheet" href="libs/touch.artsdatabanken.no/artsdatabanken.css" type="text/css" media="all" />
+	
+	<!-- Application specific stylesheets -->
+	<link rel="stylesheet" href="styles/main.css" />
+	
+	<!-- External libraries to be loaded before custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.6.2.min.js"></script>
+	
+	<!-- Application specific scripts -->
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	
+	<!--  External libraries to be loaded after custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile.datebox.js"></script>
+</head>
+
+<body>
+
+	<!-- BIRD OBSERVATION PAGE -->
+	<div data-role="page" id="obs_bird" data-theme="z" >
+		<div data-role="header" data-theme="z">
+			<h1>Birdobservation</h1>
+		</div>
+		<div data-role="content" data-theme="z">
+			<form id="observation_form" action="form.html" method="post">
+				<div data-role="fieldcontain">
+					<label for="location">Location</label> <select name="location"
+						id="location">
+						<option value="nide0">Niderø</option>
+						<option value="nide1">-Artsdatabankens Hage</option>
+						<option value="nide2">-Niderø nord</option>
+						<option value="nardo0">Nardo</option>
+					</select>
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">Species</div>
+					<div class="ui-block-b"># Observed</div>
+				</div>
+				<div id="species_row">
+					<div data-role="fieldcontain" class="ui-grid-a">
+						<div class="ui-block-a">
+							<input type="text" name="nam01" id="spe01" class="ui-input-name-spec fill" value="Blackbird" />
+						</div>
+						<div class="ui-block-b">
+							<input type="number" name="num01" id="spec01" class="ui-input-numb-spec fill" />
+						</div>
+					</div>
+					<a href="extended-inf.html" data-role="button" data-inline="true"
+						class='ui-btn-right add_info' data-icon='arrow-r'>Add More Information</a>
+					<hr />
+				</div>
+			</form>
+			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">Add another species</a>
+		</div>
+		<div data-role="footer" data-theme="z">
+			<a href="submit.html" data-role="button">Submit</a>
+		</div>
+	</div>
+
+</body>
+</html>

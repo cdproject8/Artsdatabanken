@@ -27,37 +27,6 @@
 </head>
 
 <body>
-	<!-- INDEX PAGE -->
-	<div data-role="page" id="main">
-		<div data-role="header" data-theme="z">
-			<!-- data-theme="a" "b" "d" -->
-			<h1 class="artsdatabanken">Artsdatabanken</h1>
-			<a href="http://www.artsdatabanken.no" class="ui-btn-right"
-				rel="external" data-icon="artsdatabanken">Om</a>
-
-		</div>
-		<div data-role="content" id="one">
-			<p>Welcome to Artsdatabanken, we're counting on your work. So go
-				out there and observe dat fauna!</p>
-			<p>
-				<a href="#species_select" data-role="button">New Observation</a>
-			</p>
-			<p>
-				<a href="#species_view" data-role="button">View Observations</a>
-			</p>
-			<p>
-				<a href="#photo" data-role="button">Take Picture</a>
-			</p>
-			<p>
-				<a href="#species_export" data-role="button">Export Observations</a>
-			</p>
-		</div>
-		<div data-role="footer" data-theme="z">
-			<h4>ADB Alpha 0.2</h4>
-		</div>
-	</div>
-
-
 	<!-- SELECT SPECIES PAGE -->
 	<div data-role="page" id="species_select" >
 		<div data-role="header" data-theme="z">
@@ -174,7 +143,7 @@
 							<input type="number" name="num01" id="spec01" class="ui-input-numb-spec fill" />
 						</div>
 					</div>
-					<a href="#extended_inf" data-role="button" data-inline="true"
+					<a href="extended-inf.html" data-role="button" data-inline="true"
 						class='ui-btn-right add_info' data-icon='arrow-r'>Add More Information</a>
 					<hr />
 				</div>
@@ -184,7 +153,7 @@
 				another species</a>
 		</div>
 		<div data-role="footer" data-theme="z">
-			<a href="#submit" data-role="button">Submit</a>
+			<a href="submit.html" data-role="button">Submit</a>
 		</div>
 	</div>
 
@@ -264,7 +233,7 @@
 			<h1>Observation is saved</h1>
 		</div>
 		<div data-role="content" data-theme="z">
-			<a href="#main" data-role="button" data-inline="true">Return to
+			<a href="index.html" data-role="button" data-inline="true">Return to
 				start menu</a>
 		</div>
 		<div data-role="footer" data-theme="z">
