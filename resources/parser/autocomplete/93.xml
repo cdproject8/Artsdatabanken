@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<namelist xmlns:adb="http://artsdatabanken.no/Artsnavnebase">
+<name>Dermaptera</name>
+<name>saksedyr</name>
+<name>saksedyr</name>
+<name>Forficulidae</name>
+<name>bredfotsaksedyr</name>
+<name>breifotsaksedyr</name>
+<name>Forficulinae</name>
+<name>Chelidura</name>
+<name>Chelidura acanthopygia</name>
+<name>skogsaksedyr</name>
+<name>skogsaksedyr</name>
+<name>Chelidura guentheri</name>
+<name>güntherskogsaksedyr</name>
+<name>güntherskogsaksedyr</name>
+<name>Chelidurella</name>
+<name>Chelidurella acanthopygia</name>
+<name>skogsaksedyr</name>
+<name>skogsaksedyr</name>
+<name>Chelidura acanthopygia</name>
+<name>Chelidurella guentheri</name>
+<name>güntherskogsaksedyr</name>
+<name>güntherskogsaksedyr</name>
+<name>Chelidura guentheri</name>
+<name>Forficula</name>
+<name>Forficula auricularia</name>
+<name>vanlig saksedyr</name>
+<name>vanleg saksedyr</name>
+<name>Spongiphoridae</name>
+<name>dvergsaksedyr</name>
+<name>dvergsaksedyr</name>
+<name>Labiinae</name>
+<name>Labia</name>
+<name>Labia minor</name>
+<name>dvergsaksedyr</name>
+<name>dvergsaksedyr</name>
+</namelist>

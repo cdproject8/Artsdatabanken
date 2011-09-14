@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<namelist xmlns:adb="http://artsdatabanken.no/Artsnavnebase">
+<name>Mecoptera</name>
+<name>nebbfluer</name>
+<name>nebbfluger</name>
+<name>Boreidae</name>
+<name>snønebbfluer</name>
+<name>snønebbfluger</name>
+<name>Boreus</name>
+<name>Boreus hyemalis</name>
+<name>trekantsnønebbflue</name>
+<name>trekantsnønebbfluge</name>
+<name>Boreus westwoodi</name>
+<name>firkantsnønebbflue</name>
+<name>firkantsnønebbfluge</name>
+<name>Panorpidae</name>
+<name>skorpionfluer</name>
+<name>skorpionfluger</name>
+<name>Panorpa</name>
+<name>Panorpa cognata</name>
+<name>bleikskorpionflue</name>
+<name>bleikskorpionfluge</name>
+<name>Panorpa communis</name>
+<name>båndskorpionflue</name>
+<name>båndskorpionfluge</name>
+<name>Panorpa germanica</name>
+<name>flekkskorpionflue</name>
+<name>flekkskorpionfluge</name>
+</namelist>

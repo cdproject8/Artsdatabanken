@@ -1,0 +1,2512 @@
+<?xml version="1.0"?>
+<namelist xmlns:adb="http://artsdatabanken.no/Artsnavnebase">
+<name>absintsugar</name>
+<name>absintsuger</name>
+<name>Acalypta carinata</name>
+<name>Acalypta gracilis</name>
+<name>Acalypta marginata</name>
+<name>Acalypta musci</name>
+<name>Acalypta</name>
+<name>Acalypta nigrina</name>
+<name>Acalypta parvula</name>
+<name>Acalypta platycheila</name>
+<name>Acanthocixius</name>
+<name>Acanthodelphax denticauda</name>
+<name>Acanthodelphax</name>
+<name>Acanthodelphax spinosa</name>
+<name>Acanthosoma haemorrhoidale</name>
+<name>Acanthosoma</name>
+<name>Acanthosomatidae</name>
+<name>Acanthosomatinae</name>
+<name>Acanthosomatini</name>
+<name>Acericerus heydenii</name>
+<name>Acericerus</name>
+<name>Acericerus ribauti</name>
+<name>Acericerus vittifrons</name>
+<name>Acetropis gimmerthalii</name>
+<name>Acetropis</name>
+<name>Achilidae</name>
+<name>Achilinae</name>
+<name>Achilini</name>
+<name>Achorotile albosignata</name>
+<name>Achorotile longicornis</name>
+<name>Achorotile</name>
+<name>Acompocoris alpinus</name>
+<name>Acompocoris montanus</name>
+<name>Acompocoris</name>
+<name>Acompocoris pygmaeus</name>
+<name>Acompus</name>
+<name>Acompus rufipes</name>
+<name>Adarrus bellevoyei</name>
+<name>Adarrus multinotatus</name>
+<name>Adarrus</name>
+<name>Adelphocoris annulicornis</name>
+<name>Adelphocoris lineolatus</name>
+<name>Adelphocoris</name>
+<name>Adelphocoris quadripunctatus</name>
+<name>Adelphocoris seticornis</name>
+<name>Adelphocoris ticinensis</name>
+<name>Adomerus biguttatus</name>
+<name>Adomerus</name>
+<name>Aelia acuminata</name>
+<name>Aelia glebana</name>
+<name>Aelia klugii</name>
+<name>Aelia</name>
+<name>Aelia rostrata</name>
+<name>Aeliini</name>
+<name>Agallia brachyptera</name>
+<name>Agallia consobrina</name>
+<name>Agallia</name>
+<name>Agallia ribauti</name>
+<name>Agallia venosa</name>
+<name>Agalliinae</name>
+<name>Agalliini</name>
+<name>Agapelus</name>
+<name>Agnocoris</name>
+<name>Agnocoris rubicundus</name>
+<name>Agramma laetum</name>
+<name>Agramma</name>
+<name>Aguriahana germari</name>
+<name>Aguriahana</name>
+<name>Aguriahana pictilis</name>
+<name>Aguriahana stellulata</name>
+<name>Airosus</name>
+<name>Alebra albostriella</name>
+<name>Alebra</name>
+<name>Alebra neglecta</name>
+<name>Alebra wahlbergi</name>
+<name>Alebrini</name>
+<name>Alloeotomus germanicus</name>
+<name>Alloeotomus gothicus</name>
+<name>Alloeotomus</name>
+<name>Allygidius commutatus</name>
+<name>Allygidius</name>
+<name>Allygus communis</name>
+<name>Allygus maculatus</name>
+<name>Allygus mixtus</name>
+<name>Allygus modestus</name>
+<name>Allygus</name>
+<name>almebladsikade</name>
+<name>Alnetoidia alneti</name>
+<name>Alnetoidia coryli</name>
+<name>Alnetoidia mali</name>
+<name>Alnetoidia</name>
+<name>Alydidae</name>
+<name>Alydinae</name>
+<name>Alydini</name>
+<name>Alydus calcaratus</name>
+<name>Alydus</name>
+<name>Amblytylus albidus</name>
+<name>Amblytylus</name>
+<name>Amblytylus nasutus</name>
+<name>Anaceratagallia estonica</name>
+<name>Anaceratagallia lithuanica</name>
+<name>Anaceratagallia</name>
+<name>Anaceratagallia ribauti</name>
+<name>Anaceratagallia venosa</name>
+<name>Anakelisia fasciata</name>
+<name>Anakelisia</name>
+<name>Anakelisia perspicillata</name>
+<name>Anaptus</name>
+<name>Aneurinae</name>
+<name>Aneurini</name>
+<name>Aneurus avenius</name>
+<name>Aneurus laevis</name>
+<name>Aneurus</name>
+<name>Anisoscelini</name>
+<name>Anoscopus albifrons</name>
+<name>Anoscopus albiger</name>
+<name>Anoscopus flavostriatus</name>
+<name>Anoscopus histrionicus</name>
+<name>Anoscopus limicola</name>
+<name>Anoscopus</name>
+<name>Anoscopus serratulae</name>
+<name>Anthillocorini</name>
+<name>Anthocoridae</name>
+<name>Anthocorinae</name>
+<name>Anthocorini</name>
+<name>Anthocoris amplicollis</name>
+<name>Anthocoris butleri</name>
+<name>Anthocoris confusus</name>
+<name>Anthocoris gallarum-ulmi</name>
+<name>Anthocoris gallarumulmi</name>
+<name>Anthocoris limbatus</name>
+<name>Anthocoris minki</name>
+<name>Anthocoris</name>
+<name>Anthocoris nemoralis</name>
+<name>Anthocoris nemorum</name>
+<name>Anthocoris pilosus</name>
+<name>Anthocoris sarothamni</name>
+<name>Anthocoris sibiricus</name>
+<name>Anthocoris simulans</name>
+<name>Aphalara affinis</name>
+<name>Aphalara avicularis</name>
+<name>Aphalara borealis</name>
+<name>Aphalara calthae</name>
+<name>Aphalara crispicola</name>
+<name>Aphalara exilis</name>
+<name>Aphalara longicaudata</name>
+<name>Aphalara maculipennis</name>
+<name>Aphalara</name>
+<name>Aphalara pauli</name>
+<name>Aphalara polygoni</name>
+<name>Aphalara rumicicola</name>
+<name>Aphalarinae</name>
+<name>Aphanus</name>
+<name>Aphanus rolandri</name>
+<name>Aphelocheiridae</name>
+<name>Aphelocheirinae</name>
+<name>Aphelocheirini</name>
+<name>Aphelocheirus aestivalis</name>
+<name>Aphelocheirus</name>
+<name>Aphrodes bicincta</name>
+<name>Aphrodes diminuta</name>
+<name>Aphrodes makarovi</name>
+<name>Aphrodes</name>
+<name>Aphrodinae</name>
+<name>Aphrophora alni</name>
+<name>Aphrophora alpina</name>
+<name>Aphrophora corticea</name>
+<name>Aphrophora costalis</name>
+<name>Aphrophora major</name>
+<name>Aphrophora</name>
+<name>Aphrophora pectoralis</name>
+<name>Aphrophora salicina</name>
+<name>Aphrophoridae</name>
+<name>Apolygus limbatus</name>
+<name>Apolygus lucorum</name>
+<name>Apolygus</name>
+<name>Apolygus rhamnicola</name>
+<name>Apolygus spinolae</name>
+<name>Aptus</name>
+<name>Aquarius najas</name>
+<name>Aquarius</name>
+<name>Aquarius paludum</name>
+<name>Aradidae</name>
+<name>Aradinae</name>
+<name>Aradini</name>
+<name>Aradoidea</name>
+<name>Aradus angularis</name>
+<name>Aradus aterrimus</name>
+<name>Aradus betulae</name>
+<name>Aradus betulinus</name>
+<name>Aradus bimaculatus</name>
+<name>Aradus brevicollis</name>
+<name>Aradus cinnamomeus</name>
+<name>Aradus conspicuus</name>
+<name>Aradus conspicuus,</name>
+<name>Aradus corticalis</name>
+<name>Aradus crassicomis</name>
+<name>Aradus crenaticollis</name>
+<name>Aradus crenatus</name>
+<name>Aradus depressus</name>
+<name>Aradus erosus</name>
+<name>Aradus frigidus</name>
+<name>Aradus laeviusculus</name>
+<name>Aradus lugubris</name>
+<name>Aradus</name>
+<name>Aradus obtectus</name>
+<name>Aradus pictus</name>
+<name>Aradus signaticornis</name>
+<name>Aradus truncatus</name>
+<name>Arboridia erecta</name>
+<name>Arboridia</name>
+<name>Arboridia parvula</name>
+<name>Arboridia ribauti</name>
+<name>Arboridia velata</name>
+<name>Arctocorisa carinata</name>
+<name>Arctocorisa germari</name>
+<name>Arctocorisa</name>
+<name>Arheneinae</name>
+<name>Arma custos</name>
+<name>Arma</name>
+<name>Arocephalus languidus</name>
+<name>Arocephalus longiceps</name>
+<name>Arocephalus</name>
+<name>Arocephalus punctum</name>
+<name>Arthaldeus</name>
+<name>Arthaldeus pascuellus</name>
+<name>Arthaldeus striifrons</name>
+<name>Artheneini</name>
+<name>arvesugar</name>
+<name>arvesuger</name>
+<name>Arytaina genistae</name>
+<name>Arytaina</name>
+<name>Arytainilla</name>
+<name>Arytainilla spatiophila</name>
+<name>Arytaininae</name>
+<name>Asciodema</name>
+<name>Asciodema obsoleta</name>
+<name>Asiraca clavicornis</name>
+<name>Asiraca</name>
+<name>Asiracinae</name>
+<name>askegallesugar</name>
+<name>askegallesuger</name>
+<name>Asopinae</name>
+<name>Asopini</name>
+<name>Asphagidella</name>
+<name>Athysanini</name>
+<name>Athysanus argentarius</name>
+<name>Athysanus</name>
+<name>Athysanus quadrum</name>
+<name>Atractotomus kolenatii</name>
+<name>Atractotomus magnicornis</name>
+<name>Atractotomus mali</name>
+<name>Atractotomus morio</name>
+<name>Atractotomus</name>
+<name>Atractotomus parvulus</name>
+<name>Austroasca</name>
+<name>Austroasca vittata</name>
+<name>Bactericera acutipennis</name>
+<name>Bactericera albiventris</name>
+<name>Bactericera bohemica</name>
+<name>Bactericera calcarata</name>
+<name>Bactericera curvatinervis</name>
+<name>Bactericera femoralis</name>
+<name>Bactericera</name>
+<name>Bactericera nigricornis</name>
+<name>Bactericera parastriola</name>
+<name>Bactericera reuteri</name>
+<name>Bactericera salicivora</name>
+<name>Bactericera striola</name>
+<name>Bactericera substriola</name>
+<name>Baeopelma foersteri</name>
+<name>Baeopelma</name>
+<name>bakkenettege</name>
+<name>bakkestyltetege</name>
+<name>Balcanocerus larvatus</name>
+<name>Balcanocerus</name>
+<name>Balclutha arhenana</name>
+<name>Balclutha boica</name>
+<name>Balclutha calamagrostis</name>
+<name>Balclutha lineolata</name>
+<name>Balclutha</name>
+<name>Balclutha punctata</name>
+<name>Balclutha rhenana</name>
+<name>bandrovtege</name>
+<name>barksikader</name>
+<name>barkteger</name>
+<name>Bathysmatophorus</name>
+<name>Bathysmatophorus reuteri</name>
+<name>Bathysolen</name>
+<name>Bathysolen nubilus</name>
+<name>Batracomorphus allionii</name>
+<name>Batracomorphus irroratus</name>
+<name>Batracomorphus</name>
+<name>bekkeblomsugar</name>
+<name>bekkeblomsuger</name>
+<name>bekkebuksvømmer</name>
+<name>bekkeløparar</name>
+<name>bekkeløpere</name>
+<name>Beosus maritimus</name>
+<name>Beosus</name>
+<name>bergtorntege</name>
+<name>Berytinae</name>
+<name>Berytinidae</name>
+<name>Berytini</name>
+<name>Berytinini</name>
+<name>Berytinus clavipes</name>
+<name>Berytinus crassipes</name>
+<name>Berytinus minor</name>
+<name>Berytinus montivagus</name>
+<name>Berytinus</name>
+<name>Berytinus signoreti</name>
+<name>bjørkebarktege</name>
+<name>bjørkebladsikade</name>
+<name>bjørkeborktege</name>
+<name>bjørkelauvtege</name>
+<name>bjørkeløvtege</name>
+<name>bjørkesugar</name>
+<name>bjørkesuger</name>
+<name>bladsikadar</name>
+<name>bladsikader</name>
+<name>bladteger</name>
+<name>Blepharidopterus angulatus</name>
+<name>Blepharidopterus diaphanus</name>
+<name>Blepharidopterus</name>
+<name>Blissinae</name>
+<name>Blissini</name>
+<name>blodteger</name>
+<name>blåbærnettege</name>
+<name>blåbærsugar</name>
+<name>blåbærsuger</name>
+<name>Boreotettix bidentatus</name>
+<name>Boreotettix</name>
+<name>borksikadar</name>
+<name>borkteger</name>
+<name>Bothynotus</name>
+<name>Bothynotus pilosus</name>
+<name>Brachyarthrum limitatum</name>
+<name>Brachyarthrum</name>
+<name>Brachycarenus</name>
+<name>Brachycarenus tigrinus</name>
+<name>brannbarktege</name>
+<name>brannborktege</name>
+<name>breiteger</name>
+<name>bringebærbladsikade</name>
+<name>broteborktege</name>
+<name>brun geitvedsugar</name>
+<name>brun geitvedsuger</name>
+<name>brunlauvtege</name>
+<name>brunløvtege</name>
+<name>brun malurtsugar</name>
+<name>brun malurtsuger</name>
+<name>Bryocorinae</name>
+<name>Bryocorini</name>
+<name>Bryocoris</name>
+<name>Bryocoris pteridis</name>
+<name>bråtebarktege</name>
+<name>buksbomsugar</name>
+<name>buksbomsuger</name>
+<name>buksvømmere</name>
+<name>buksymjarar</name>
+<name>burotsugar</name>
+<name>burotsuger</name>
+<name>buskteger</name>
+<name>Bythoscopus</name>
+<name>bærtege</name>
+<name>bøkebarktege</name>
+<name>bøkeborktege</name>
+<name>båndrovtege</name>
+<name>Cacopsylla affinis</name>
+<name>Cacopsylla ambigua</name>
+<name>Cacopsylla brunneipennis</name>
+<name>Cacopsylla corcontum</name>
+<name>Cacopsylla costalis</name>
+<name>Cacopsylla crataegi</name>
+<name>Cacopsylla elegantula</name>
+<name>Cacopsylla hippophaes</name>
+<name>Cacopsylla ledi</name>
+<name>Cacopsylla mali</name>
+<name>Cacopsylla melanoneura</name>
+<name>Cacopsylla moscovita</name>
+<name>Cacopsylla myrtilli</name>
+<name>Cacopsylla</name>
+<name>Cacopsylla nigrita</name>
+<name>Cacopsylla palmeni</name>
+<name>Cacopsylla parvipennis</name>
+<name>Cacopsylla peregrina</name>
+<name>Cacopsylla propinqua</name>
+<name>Cacopsylla pruni</name>
+<name>Cacopsylla pulchra</name>
+<name>Cacopsylla pyricola</name>
+<name>Cacopsylla pyri</name>
+<name>Cacopsylla pyrisuga</name>
+<name>Cacopsylla rhamnicola</name>
+<name>Cacopsylla rhododendri</name>
+<name>Cacopsylla sorbi</name>
+<name>Cacopsylla ulmi</name>
+<name>Cacopsylla visci</name>
+<name>Cacopsylla zaicevi</name>
+<name>Cacopsylla zetterstedti</name>
+<name>Calacanthia alpicola</name>
+<name>Calacanthia</name>
+<name>Calamotettix</name>
+<name>Calamotettix taeniatus</name>
+<name>Caliscelidae</name>
+<name>Callicorixa</name>
+<name>Callicorixa praeusta</name>
+<name>Callicorixa producta</name>
+<name>Callicorixa wollastoni</name>
+<name>Calligypona</name>
+<name>Calligypona reyi</name>
+<name>Calocoris alpestris</name>
+<name>Calocoris</name>
+<name>Calocoris roseomaculatus</name>
+<name>Camarotoscena</name>
+<name>Camarotoscena speciosa</name>
+<name>Campocorini</name>
+<name>Camptozygum aequale</name>
+<name>Camptozygum</name>
+<name>Camptozygum pinastri</name>
+<name>Campylomma annulicorne</name>
+<name>Campylomma</name>
+<name>Campylomma verbasci</name>
+<name>Campyloneura</name>
+<name>Campyloneura virgula</name>
+<name>Campylosteira</name>
+<name>Campylosteira verna</name>
+<name>Canthophorus impressus</name>
+<name>Canthophorus</name>
+<name>Capsodes gothicus</name>
+<name>Capsodes</name>
+<name>Capsus ater</name>
+<name>Capsus</name>
+<name>Capsus wagneri</name>
+<name>Carpocoris fuscispinus</name>
+<name>Carpocoris</name>
+<name>Carpocoris purpureipennis</name>
+<name>Catoplatus fabricii</name>
+<name>Catoplatus</name>
+<name>Centrotinae</name>
+<name>Centrotus cornutus</name>
+<name>Centrotus</name>
+<name>Ceraleptus lividus</name>
+<name>Ceraleptus</name>
+<name>Ceratobombinae</name>
+<name>Ceratobombini</name>
+<name>Ceratocixius</name>
+<name>Ceratocombidae</name>
+<name>Ceratocombus brevipennis</name>
+<name>Ceratocombus coleoptratus</name>
+<name>Ceratocombus</name>
+<name>Cercopidae</name>
+<name>Chamaepsylla hartigii</name>
+<name>Chamaepsylla hartigi</name>
+<name>Chamaepsylla</name>
+<name>Charagochilus gyllenhalii</name>
+<name>Charagochilus</name>
+<name>Chartoscirta cincta</name>
+<name>Chartoscirta cocksii</name>
+<name>Chartoscirta elegantula</name>
+<name>Chartoscirta</name>
+<name>Chilacis</name>
+<name>Chilacis typhae</name>
+<name>Chiloxanthinae</name>
+<name>Chiloxanthini</name>
+<name>Chiloxanthus arcticus</name>
+<name>Chiloxanthus</name>
+<name>Chiloxanthus pilosus</name>
+<name>Chiloxanthus stellatus</name>
+<name>Chlamydatus evanescens</name>
+<name>Chlamydatus</name>
+<name>Chlamydatus opacus</name>
+<name>Chlamydatus pulicarius</name>
+<name>Chlamydatus pullus</name>
+<name>Chlamydatus saltitans</name>
+<name>Chlamydatus wilkinsoni</name>
+<name>Chloriona chinai</name>
+<name>Chloriona dorsata</name>
+<name>Chloriona glaucescens</name>
+<name>Chloriona</name>
+<name>Chloriona smaragdula</name>
+<name>Chloriona stenoptera</name>
+<name>Chloriona unicolor</name>
+<name>Chloriona vasconica</name>
+<name>Chlorita dumosa</name>
+<name>Chlorita</name>
+<name>Chlorita paolii</name>
+<name>Chlorita viridula</name>
+<name>Chlorochroa juniperina</name>
+<name>Chlorochroa</name>
+<name>Chlorochroa pinicola</name>
+<name>Chorosoma</name>
+<name>Chorosoma schillingii</name>
+<name>Chorosoma schillingi</name>
+<name>Chorosomatini</name>
+<name>Cicadella lasiocarpae</name>
+<name>Cicadella</name>
+<name>Cicadella viridis</name>
+<name>Cicadellidae</name>
+<name>Cicadellinae</name>
+<name>Cicadellini</name>
+<name>Cicadelloidea</name>
+<name>Cicadetta montana</name>
+<name>Cicadetta</name>
+<name>Cicadidae</name>
+<name>Cicadoidea</name>
+<name>Cicadomorpha</name>
+<name>Cicadula albingensis</name>
+<name>Cicadula ciliata</name>
+<name>Cicadula flori</name>
+<name>Cicadula frontalis</name>
+<name>Cicadula intermedia</name>
+<name>Cicadula</name>
+<name>Cicadula nigricornis</name>
+<name>Cicadula ornata</name>
+<name>Cicadula persimilis</name>
+<name>Cicadula quadrinotata</name>
+<name>Cicadula quinquenotata</name>
+<name>Cicadula rubroflava</name>
+<name>Cicadula saturata</name>
+<name>Cimex dissimilis</name>
+<name>Cimex lectularis</name>
+<name>Cimex lectularius</name>
+<name>Cimex</name>
+<name>Cimex pipistrelli</name>
+<name>Cimicidae</name>
+<name>Cimicinae</name>
+<name>Cimicini</name>
+<name>Cimicoidea</name>
+<name>Cimicomorpha</name>
+<name>Circulifer haematoceps</name>
+<name>Circulifer</name>
+<name>Cixida confinis</name>
+<name>Cixida</name>
+<name>Cixidia confinis</name>
+<name>Cixidia lapponica</name>
+<name>Cixidia</name>
+<name>Cixiidae</name>
+<name>Cixiini</name>
+<name>Cixius cambricus</name>
+<name>Cixius cunicularius</name>
+<name>Cixius distinguendus</name>
+<name>Cixius</name>
+<name>Cixius nervosus</name>
+<name>Cixius similis</name>
+<name>Cixius stigmaticus</name>
+<name>Clivinematini</name>
+<name>Closterotomus biclavatus</name>
+<name>Closterotomus fulvomaculatus</name>
+<name>Closterotomus</name>
+<name>Closterotomus norvegicus</name>
+<name>Closterotomus norwegicus</name>
+<name>Colladonus</name>
+<name>Colladonus torneellus</name>
+<name>Colobotettix morbillosus</name>
+<name>Colobotettix</name>
+<name>Compsidolon</name>
+<name>Compsidolon salicellus</name>
+<name>Conomelus anceps</name>
+<name>Conomelus</name>
+<name>Conosanus</name>
+<name>Conosanus obsoletus</name>
+<name>Conostethus</name>
+<name>Conostethus roseus</name>
+<name>Conostethus salinus</name>
+<name>Coranus aethiops</name>
+<name>Coranus</name>
+<name>Coranus subapterus</name>
+<name>Coreidae</name>
+<name>Coreinae</name>
+<name>Coreini</name>
+<name>Coreoidea</name>
+<name>Coreus marginatus</name>
+<name>Coreus</name>
+<name>Coriomeris denticulatus</name>
+<name>Coriomeris</name>
+<name>Coriomeris scabricornis</name>
+<name>Corixa dentipes</name>
+<name>Corixa</name>
+<name>Corixa panzeri</name>
+<name>Corixa punctata</name>
+<name>Corixidae</name>
+<name>Corixinae</name>
+<name>Corixini</name>
+<name>Corixoidea</name>
+<name>Corizus hyoscyami</name>
+<name>Corizus</name>
+<name>Coryphaelini</name>
+<name>Coryphaelus gyllenhalii</name>
+<name>Coryphaelus</name>
+<name>Cosmotettix aurantiacus</name>
+<name>Cosmotettix caudatus</name>
+<name>Cosmotettix costalis</name>
+<name>Cosmotettix edwardsi</name>
+<name>Cosmotettix evanescens</name>
+<name>Cosmotettix</name>
+<name>Cosmotettix panzeri</name>
+<name>Craspedolepta campestrella</name>
+<name>Craspedolepta latior</name>
+<name>Craspedolepta malachitica</name>
+<name>Craspedolepta</name>
+<name>Craspedolepta nebulosa</name>
+<name>Craspedolepta nervosa</name>
+<name>Craspedolepta sonchi</name>
+<name>Cremnocephalus albolineatus</name>
+<name>Cremnocephalus</name>
+<name>Criocoris crassicornis</name>
+<name>Criocoris</name>
+<name>Criocoris quadrimaculatus</name>
+<name>Criomorphus albomarginatus</name>
+<name>Criomorphus borealis</name>
+<name>Criomorphus moestus</name>
+<name>Criomorphus</name>
+<name>Cryptostemma</name>
+<name>Cryptostemma pusillimum</name>
+<name>Cryptostemma waltli</name>
+<name>Cydnidae</name>
+<name>Cydninae</name>
+<name>Cyllecoris histrionicus</name>
+<name>Cyllecoris</name>
+<name>Cymatia bonsdorffii</name>
+<name>Cymatia bonsdorffi</name>
+<name>Cymatia coleoptrata</name>
+<name>Cymatiainae</name>
+<name>Cymatiaini</name>
+<name>Cymatia</name>
+<name>Cyminae</name>
+<name>Cymini</name>
+<name>Cymus claviculus</name>
+<name>Cymus glandicolor</name>
+<name>Cymus melanocephalus</name>
+<name>Cymus</name>
+<name>Cyperana</name>
+<name>Cyphostethus</name>
+<name>Cyphostethus tristriatus</name>
+<name>Cyrtorhinus caricis</name>
+<name>Cyrtorhinus</name>
+<name>damløparar</name>
+<name>damløpere</name>
+<name>Delphacidae</name>
+<name>Delphacinae</name>
+<name>Delphacini</name>
+<name>Delphacinus mesomelas</name>
+<name>Delphacinus</name>
+<name>Delphacodes capnodes</name>
+<name>Delphacodes</name>
+<name>Delphacodes venosus</name>
+<name>Delphax crassicornis</name>
+<name>Delphax</name>
+<name>Delphax pulchellus</name>
+<name>Deltocephalinae</name>
+<name>Deltocephalini</name>
+<name>Deltocephalus bavaricus</name>
+<name>Deltocephalus maculiceps</name>
+<name>Deltocephalus</name>
+<name>Deltocephalus pulicaris</name>
+<name>Deraeocorinae</name>
+<name>Deraeocorini</name>
+<name>Deraeocoris flavolinea</name>
+<name>Deraeocoris lutescens</name>
+<name>Deraeocoris morio</name>
+<name>Deraeocoris</name>
+<name>Deraeocoris punctulatus</name>
+<name>Deraeocoris ruber</name>
+<name>Deraeocoris scutellaris</name>
+<name>Deraeocoris trifasciatus</name>
+<name>Derephysia cristata</name>
+<name>Derephysia foliacea</name>
+<name>Derephysia</name>
+<name>Diaphorininae</name>
+<name>Dichrooscytus intermedius</name>
+<name>Dichrooscytus</name>
+<name>Dichrooscytus rufipennis</name>
+<name>Dicranotropis hamata</name>
+<name>Dicranotropis</name>
+<name>Dictyla convergens</name>
+<name>Dictyla echii</name>
+<name>Dictyla</name>
+<name>Dicyphini</name>
+<name>Dicyphus constrictus</name>
+<name>Dicyphus epilobii</name>
+<name>Dicyphus errans</name>
+<name>Dicyphus globulifer</name>
+<name>Dicyphus</name>
+<name>Dicyphus pallicornis</name>
+<name>Dicyphus pallidus</name>
+<name>Dicyphus stachydis</name>
+<name>Dikraneura aridella</name>
+<name>Dikraneura</name>
+<name>Dikraneura variata</name>
+<name>Dikraneurini</name>
+<name>Dimorphopterus</name>
+<name>Dimorphopterus spinolae</name>
+<name>Diplocolenus bohemani</name>
+<name>Diplocolenus</name>
+<name>Dipsocoridae</name>
+<name>Dipsocorinae</name>
+<name>Dipsocorini</name>
+<name>Dipsocoromorpha</name>
+<name>Ditropis</name>
+<name>Ditropis pteridis</name>
+<name>Ditropsis flavipes</name>
+<name>Ditropsis</name>
+<name>Dolichonabis</name>
+<name>Doliotettix lunulatus</name>
+<name>Doliotettix</name>
+<name>Dolycoris baccarum</name>
+<name>Dolycoris</name>
+<name>Doratura exilis</name>
+<name>Doratura homophyla</name>
+<name>Doratura impudica</name>
+<name>Doratura littoralis</name>
+<name>Doratura</name>
+<name>Doratura stylata</name>
+<name>Doraturini</name>
+<name>Dorycephalini</name>
+<name>Drymini</name>
+<name>Drymus brunneus</name>
+<name>Drymus</name>
+<name>Drymus pilicornis</name>
+<name>Drymus ryeii</name>
+<name>Drymus sylvaticus</name>
+<name>Dryophilocoris flavoquadrimaculatus</name>
+<name>Dryophilocoris</name>
+<name>Dufouriellus ater</name>
+<name>Dufouriellus</name>
+<name>Duouriellini</name>
+<name>dvergbjørksugar</name>
+<name>dvergbjørksuger</name>
+<name>dvergbreitege</name>
+<name>dvergnettege</name>
+<name>dvergsvømmere</name>
+<name>dvergsymjarar</name>
+<name>dvergteger</name>
+<name>dvergtorntege</name>
+<name>dyllesugar</name>
+<name>dyllesuger</name>
+<name>Dysdercus cingulatus</name>
+<name>Dysdercus</name>
+<name>Ebarrius cognatus</name>
+<name>Ebarrius</name>
+<name>Ectrichodiinae</name>
+<name>Ederranus discolor</name>
+<name>Ederranus</name>
+<name>Ederranus sachalinensis</name>
+<name>Edwardsiana alnicola</name>
+<name>Edwardsiana ampliata</name>
+<name>Edwardsiana avellanae</name>
+<name>Edwardsiana bergmani</name>
+<name>Edwardsiana candidula</name>
+<name>Edwardsiana crataegi</name>
+<name>Edwardsiana diversa</name>
+<name>Edwardsiana flavescens</name>
+<name>Edwardsiana frustator</name>
+<name>Edwardsiana geometrica</name>
+<name>Edwardsiana gratiosa</name>
+<name>Edwardsiana hippocastani</name>
+<name>Edwardsiana ishidai</name>
+<name>Edwardsiana kemneri</name>
+<name>Edwardsiana lanternae</name>
+<name>Edwardsiana lethierryi</name>
+<name>Edwardsiana menzbieri</name>
+<name>Edwardsiana</name>
+<name>Edwardsiana nigriloba</name>
+<name>Edwardsiana plebeja</name>
+<name>Edwardsiana plurispinosa</name>
+<name>Edwardsiana prunicola</name>
+<name>Edwardsiana rosae</name>
+<name>Edwardsiana salicicola</name>
+<name>Edwardsiana sociabilis</name>
+<name>Edwardsiana soror</name>
+<name>Edwardsiana spinigera</name>
+<name>Edwardsiana staminata</name>
+<name>Edwardsiana stehliki</name>
+<name>Edwardsiana tersa</name>
+<name>Edwardsiana ulmiphagus</name>
+<name>eikebladsikade</name>
+<name>eikesugar</name>
+<name>eikesuger</name>
+<name>einerbreitege</name>
+<name>einertege</name>
+<name>Elasmostethus brevis</name>
+<name>Elasmostethus interstinctus</name>
+<name>Elasmostethus minor</name>
+<name>Elasmostethus</name>
+<name>Elasmucha ferrugata</name>
+<name>Elasmucha fieberi</name>
+<name>Elasmucha grisea</name>
+<name>Elasmucha</name>
+<name>Elatophilus</name>
+<name>Elatophilus nigrellus</name>
+<name>Elatophilus nigricornis</name>
+<name>Elatophilus stigmatellus</name>
+<name>eldteger</name>
+<name>elveteger</name>
+<name>Elymana kozhevnikovi</name>
+<name>Elymana</name>
+<name>Elymana sulphurella</name>
+<name>Emblethis denticollis</name>
+<name>Emblethis</name>
+<name>Emblethis verbasci</name>
+<name>Emelyanoviana mollicula</name>
+<name>Emelyanoviana</name>
+<name>Empicoris culiciformis</name>
+<name>Empicoris</name>
+<name>Empicoris vagabundus</name>
+<name>Empoasca abstrusus</name>
+<name>Empoasca affinis</name>
+<name>Empoasca apicalis</name>
+<name>Empoasca betulicola</name>
+<name>Empoasca butleri</name>
+<name>Empoasca decipiens</name>
+<name>Empoasca kontkaneni</name>
+<name>Empoasca lindbergi</name>
+<name>Empoasca</name>
+<name>Empoasca ossiannilssoni</name>
+<name>Empoasca populi</name>
+<name>Empoasca pteridis</name>
+<name>Empoasca rufescens</name>
+<name>Empoasca smaragdula</name>
+<name>Empoasca solani</name>
+<name>Empoasca sordidulus</name>
+<name>Empoasca strigilifer</name>
+<name>Empoasca virgator</name>
+<name>Empoasca vitis</name>
+<name>Empoasca volgensis</name>
+<name>Empoascini</name>
+<name>Endria</name>
+<name>Endria nebulosa</name>
+<name>engbreitege</name>
+<name>engkanttege</name>
+<name>engmarktege</name>
+<name>engnettege</name>
+<name>engrandtege</name>
+<name>engrøvarar</name>
+<name>engrøvere</name>
+<name>engskumsikade</name>
+<name>engstyltetege</name>
+<name>eplesugar</name>
+<name>eplesuger</name>
+<name>Eremocoris abietis</name>
+<name>Eremocoris</name>
+<name>Eremocoris plebejus</name>
+<name>Erotettix cyane</name>
+<name>Erotettix</name>
+<name>Errastunus</name>
+<name>Errastunus ocellaris</name>
+<name>Errhomenini</name>
+<name>Erythria aureola</name>
+<name>Erythria</name>
+<name>Erythroneurini</name>
+<name>Erzaleus metrius</name>
+<name>Erzaleus</name>
+<name>Euconomelus lepidus</name>
+<name>Euconomelus</name>
+<name>Euides basilinea</name>
+<name>Euides</name>
+<name>Euides speciosa</name>
+<name>Eupelix cuspidata</name>
+<name>Eupelix</name>
+<name>Eupterycyba jucunda</name>
+<name>Eupterycyba</name>
+<name>Eupteryx adspersa</name>
+<name>Eupteryx artemisiae</name>
+<name>Eupteryx atropunctata</name>
+<name>Eupteryx aurata</name>
+<name>Eupteryx calcarata</name>
+<name>Eupteryx collina</name>
+<name>Eupteryx curtisii</name>
+<name>Eupteryx cyclops</name>
+<name>Eupteryx decemnotata</name>
+<name>Eupteryx florida</name>
+<name>Eupteryx heydenii</name>
+<name>Eupteryx</name>
+<name>Eupteryx notata</name>
+<name>Eupteryx origani</name>
+<name>Eupteryx signatipennis</name>
+<name>Eupteryx stachydearum</name>
+<name>Eupteryx tenella</name>
+<name>Eupteryx thoulessi</name>
+<name>Eupteryx urticae</name>
+<name>Eupteryx vittata</name>
+<name>Eurhadina concinna</name>
+<name>Eurhadina kirschbaumi</name>
+<name>Eurhadina loewii</name>
+<name>Eurhadina</name>
+<name>Eurhadina pulchella</name>
+<name>Eurhadina ribauti</name>
+<name>Eurhadina saageri</name>
+<name>Eurhadina untica</name>
+<name>Europiella albipennis</name>
+<name>Europiella artemisiae</name>
+<name>Europiella decolor</name>
+<name>Europiella</name>
+<name>Eurybregma</name>
+<name>Eurybregma nigrolineata</name>
+<name>Eurybregma porcus</name>
+<name>Eurydema dominulus</name>
+<name>Eurydema</name>
+<name>Eurydema oleracea</name>
+<name>Eurydema oleraceum</name>
+<name>Eurydema ornata</name>
+<name>Eurydema ornatum</name>
+<name>Eurydema ventrale</name>
+<name>Eurygaster austriaca</name>
+<name>Eurygaster maura</name>
+<name>Eurygaster</name>
+<name>Eurygaster testudinaria</name>
+<name>Eurygastrinae</name>
+<name>Eurygastrini</name>
+<name>Eurysa lineata</name>
+<name>Eurysa</name>
+<name>Eurysula lurida</name>
+<name>Eurysula</name>
+<name>Euscelidius</name>
+<name>Euscelidius schenckii</name>
+<name>Euscelis distinguendus</name>
+<name>Euscelis incisus</name>
+<name>Euscelis</name>
+<name>Euscelis ohausi</name>
+<name>Euscelis venosus</name>
+<name>Evacanthini</name>
+<name>Evacanthus acuminatus</name>
+<name>Evacanthus interruptus</name>
+<name>Evacanthus</name>
+<name>Eysarcorini</name>
+<name>Eysarcoris aeneus</name>
+<name>Eysarcoris fabricii</name>
+<name>Eysarcoris</name>
+<name>Eysarcoris venustissimus</name>
+<name>Fagocyba carri</name>
+<name>Fagocyba cruenta</name>
+<name>Fagocyba douglasi</name>
+<name>Fagocyba</name>
+<name>Fieberellini</name>
+<name>Fieberiella</name>
+<name>Fieberiella septentrionalis</name>
+<name>Fieberocapsus flaveolus</name>
+<name>Fieberocapsus</name>
+<name>finnmarksporssugar</name>
+<name>finnmarksporssuger</name>
+<name>flekket askegallesugar</name>
+<name>flekket askegallesuger</name>
+<name>flekket geitramssugar</name>
+<name>flekket geitramssuger</name>
+<name>flekktorntege</name>
+<name>Florodelphax leptosoma</name>
+<name>Florodelphax</name>
+<name>Florodelphax paryphasma</name>
+<name>Forcipata citrinella</name>
+<name>Forcipata forcipata</name>
+<name>Forcipata</name>
+<name>Forcipata palustris</name>
+<name>frøteger</name>
+<name>Fulgoroidea</name>
+<name>Fulgoromorpha</name>
+<name>furubreitege</name>
+<name>Galeatus</name>
+<name>Galeatus spinifrons</name>
+<name>Gampsocorinae</name>
+<name>Gampsocorini</name>
+<name>Gampsocoris</name>
+<name>Gampsocoris punctipes</name>
+<name>Gargara genistae</name>
+<name>Gargara</name>
+<name>Gastrodes abietum</name>
+<name>Gastrodes grossipes</name>
+<name>Gastrodes</name>
+<name>geitramssugar</name>
+<name>geitramssuger</name>
+<name>geitvedblomstersugar</name>
+<name>geitvedblomstsuger</name>
+<name>Geocorinae</name>
+<name>Geocorini</name>
+<name>Geocoris ater</name>
+<name>Geocoris dispar</name>
+<name>Geocoris grylloides</name>
+<name>Geocoris lapponicus</name>
+<name>Geocoris</name>
+<name>Geotomini</name>
+<name>Gerridae</name>
+<name>Gerrinae</name>
+<name>Gerrini</name>
+<name>Gerris argentatus</name>
+<name>Gerris gibbifer</name>
+<name>Gerris lacustris</name>
+<name>Gerris lateralis</name>
+<name>Gerris</name>
+<name>Gerris odontogaster</name>
+<name>Gerris sphagnetorum</name>
+<name>Gerris thoracicus</name>
+<name>Gerroidea</name>
+<name>Gerromorpha</name>
+<name>Glaenocorisa cavifrons</name>
+<name>Glaenocorisa</name>
+<name>Glaenocorisa propinqua cavifrons</name>
+<name>Glaenocorisa propinqua</name>
+<name>Glaenocorisa propinqua propinqua</name>
+<name>Glaenocorisini</name>
+<name>glassvingesikader</name>
+<name>glasvengsikadar</name>
+<name>Globiceps flavomaculatus</name>
+<name>Globiceps fulvicollis</name>
+<name>Globiceps juniperi</name>
+<name>Globiceps</name>
+<name>Globiceps salicicola</name>
+<name>Gonianotini</name>
+<name>Gonianotus marginepunctatus</name>
+<name>Gonianotus</name>
+<name>granbarktege</name>
+<name>granborktege</name>
+<name>gransikade</name>
+<name>Graphocephala fennahi</name>
+<name>Graphocephala</name>
+<name>Graphocraerus</name>
+<name>Graphocraerus ventralis</name>
+<name>Graphosoma lineatum</name>
+<name>Graphosoma</name>
+<name>Graphosomatini</name>
+<name>Graptopeltus lynceus</name>
+<name>Graptopeltus</name>
+<name>grasbreitege</name>
+<name>grasstjerneblomsugar</name>
+<name>Gravesteiniella boldi</name>
+<name>Gravesteiniella</name>
+<name>greinflattege</name>
+<name>gressbreitege</name>
+<name>gresstjerneblomsuger</name>
+<name>Grypocoris</name>
+<name>Grypocoris sexguttatus</name>
+<name>Grypotes</name>
+<name>Grypotes puncticollis</name>
+<name>Grypotini</name>
+<name>grønbreitege</name>
+<name>grønlauvtege</name>
+<name>grønnbreitege</name>
+<name>grønnløvtege</name>
+<name>gråorsugar</name>
+<name>gråorsuger</name>
+<name>gulrotsugar</name>
+<name>gulrotsuger</name>
+<name>gyvelsugar</name>
+<name>gyvelsuger</name>
+<name>gåsemuresugar</name>
+<name>gåsemuresuger</name>
+<name>Haffnerianella</name>
+<name>hagtornsugar</name>
+<name>hagtornsuger</name>
+<name>Hallodapini</name>
+<name>Hallodapus</name>
+<name>Hallodapus rufescens</name>
+<name>Halosalda lateralis</name>
+<name>Halosalda</name>
+<name>Halticini</name>
+<name>Halticus apterus</name>
+<name>Halticus luteicollis</name>
+<name>Halticus</name>
+<name>Handianus flavovarius</name>
+<name>Handianus</name>
+<name>Hardya</name>
+<name>Hardya signifier</name>
+<name>Hardya tenuis</name>
+<name>Harpactorinae</name>
+<name>Harpactorini</name>
+<name>Harpocera</name>
+<name>Harpocera thoracica</name>
+<name>Hauptidia distinguenda</name>
+<name>Hauptidia</name>
+<name>Hebridae</name>
+<name>Hebrinae</name>
+<name>Hebrini</name>
+<name>Hebroidea</name>
+<name>Hebrus</name>
+<name>Hebrus pusillus</name>
+<name>Hebrus ruficeps</name>
+<name>heikanttege</name>
+<name>heirandtege</name>
+<name>heistyltetege</name>
+<name>Hemiptera</name>
+<name>Henriana</name>
+<name>Hepatopsylla</name>
+<name>Hephathus achilleae</name>
+<name>Hephathus</name>
+<name>Hesium domino</name>
+<name>Hesium</name>
+<name>Hesperocorixa castanea</name>
+<name>Hesperocorixa linnaei</name>
+<name>Hesperocorixa moesta</name>
+<name>Hesperocorixa</name>
+<name>Hesperocorixa sahlbergi</name>
+<name>Heterocordylus leptocerus</name>
+<name>Heterocordylus</name>
+<name>Heterocordylus tibialis</name>
+<name>Heterocordylus tumidicornis</name>
+<name>Heterogaster</name>
+<name>Heterogaster urticae</name>
+<name>Heterogastrinae</name>
+<name>Heterogastrini</name>
+<name>Heteroptera</name>
+<name>Heterotoma</name>
+<name>Heterotoma planicornis</name>
+<name>Himacerus boops</name>
+<name>Himacerus major</name>
+<name>Himacerus mirmicoides</name>
+<name>Himacerus</name>
+<name>Holcostethus</name>
+<name>Holcostethus stictus</name>
+<name>Holcostethus stictus stictus</name>
+<name>Holcostethus stictus vernalis</name>
+<name>Holcostethus vernalis</name>
+<name>Hoplomachus</name>
+<name>Hoplomachus thunbergii</name>
+<name>hornnettege</name>
+<name>hornsikadar</name>
+<name>hornsikade</name>
+<name>hornsikader</name>
+<name>humleblomsugar</name>
+<name>humleblomsuger</name>
+<name>hundekjekssugar</name>
+<name>hundekjekssuger</name>
+<name>hvitbladtistelsuger</name>
+<name>hvitrotsuger</name>
+<name>Hydarinae</name>
+<name>Hydrometra gracilenta</name>
+<name>Hydrometra</name>
+<name>Hydrometra stagnorum</name>
+<name>Hydrometridae</name>
+<name>Hydrometrinae</name>
+<name>Hydrometrini</name>
+<name>Hydrometroidea</name>
+<name>Hyledelphax elegantula</name>
+<name>Hyledelphax elegantulus</name>
+<name>Hyledelphax</name>
+<name>Iassinae</name>
+<name>Iassus lanio</name>
+<name>Iassus</name>
+<name>Idiocerinae</name>
+<name>Idiocerus fuschii</name>
+<name>Idiocerus herrichii</name>
+<name>Idiocerus lituratus</name>
+<name>Idiocerus mesopyrrhus</name>
+<name>Idiocerus</name>
+<name>Idiocerus similis</name>
+<name>Idiocerus stigmaticalis</name>
+<name>Idiocerus tremulae</name>
+<name>Idiodonus cruentatus</name>
+<name>Idiodonus</name>
+<name>Igutettix</name>
+<name>Igutettix oculatus</name>
+<name>ildteger</name>
+<name>Ilyocoris cimicoides</name>
+<name>Ilyocoris</name>
+<name>Ischnocoris angustulus</name>
+<name>Ischnocoris</name>
+<name>Ischnodemus</name>
+<name>Ischnodemus sabuleti</name>
+<name>Ischnorhynchinae</name>
+<name>Ischnorhynchini</name>
+<name>Issidae</name>
+<name>Issinae</name>
+<name>Issini</name>
+<name>Issus muscaeformis</name>
+<name>Issus</name>
+<name>Jalla dumosa</name>
+<name>Jalla</name>
+<name>Jassargus allobrogicus</name>
+<name>Jassargus alpinus</name>
+<name>Jassargus distinguendus</name>
+<name>Jassargus flori</name>
+<name>Jassargus</name>
+<name>Jassargus pseudocellaris</name>
+<name>Jassargus sursumflexus</name>
+<name>Javesella alpina</name>
+<name>Javesella bottnica</name>
+<name>Javesella discolor</name>
+<name>Javesella dubia</name>
+<name>Javesella forcipata</name>
+<name>Javesella</name>
+<name>Javesella obscurella</name>
+<name>Javesella pellucida</name>
+<name>Javesella salina</name>
+<name>Javesella simillima</name>
+<name>Javesella stali</name>
+<name>Kalama</name>
+<name>Kalama tricornis</name>
+<name>kantteger</name>
+<name>Kelisia confusa</name>
+<name>Kelisia guttula</name>
+<name>Kelisia guttulifera</name>
+<name>Kelisia monoceros</name>
+<name>Kelisia</name>
+<name>Kelisia pallidula</name>
+<name>Kelisia praecox</name>
+<name>Kelisia ribauti</name>
+<name>Kelisia sabulicola</name>
+<name>Kelisia sima</name>
+<name>Kelisia vittipennis</name>
+<name>Kelisiinae</name>
+<name>kjukebarktege</name>
+<name>kjukeborktege</name>
+<name>Kleidocerys</name>
+<name>Kleidocerys resedae</name>
+<name>kløverstyltetege</name>
+<name>korgbreitege</name>
+<name>Kosswigianella exigua</name>
+<name>Kosswigianella</name>
+<name>kurvbreitege</name>
+<name>kvitbladtistelsugar</name>
+<name>kvitrotsugar</name>
+<name>Kyboasca bipunctata</name>
+<name>Kyboasca</name>
+<name>Kybos abstrusus</name>
+<name>Kybos butleri</name>
+<name>Kybos limpidus</name>
+<name>Kybos lindbergi</name>
+<name>Kybos mucronatus</name>
+<name>Kybos</name>
+<name>Kybos populi</name>
+<name>Kybos rufescens</name>
+<name>Kybos smaragdula</name>
+<name>Kybos sordidulus</name>
+<name>Kybos strigilifer</name>
+<name>Kybos virgator</name>
+<name>Kybos volgensis</name>
+<name>kystnettege</name>
+<name>kyststyltetege</name>
+<name>kåltege</name>
+<name>Labops</name>
+<name>Labops sahlbergii</name>
+<name>Laburrus impictifrons</name>
+<name>Laburrus</name>
+<name>Lamproplax</name>
+<name>Lamproplax picea</name>
+<name>Lamprotettix</name>
+<name>Lamprotettix nitidulus</name>
+<name>Laodelphax</name>
+<name>Laodelphax striatella</name>
+<name>Laodelphax striatellus</name>
+<name>Lasiosomus enervis</name>
+<name>Lasiosomus</name>
+<name>laurbærsugar</name>
+<name>laurbærsuger</name>
+<name>lauvborktege</name>
+<name>lauvflattege</name>
+<name>lauvnettege</name>
+<name>lauvteger</name>
+<name>Lebradea flavovirens</name>
+<name>Lebradea</name>
+<name>Ledra aurita</name>
+<name>Ledra</name>
+<name>Ledrinae</name>
+<name>Legnotus limbosus</name>
+<name>Legnotus</name>
+<name>Legnotus picipes</name>
+<name>Leptoglossus</name>
+<name>Leptoglossus occidentalis </name>
+<name>Leptopodomorpha</name>
+<name>Leptopterna dolabrata</name>
+<name>Leptopterna ferrugata</name>
+<name>Leptopterna</name>
+<name>Lepyronia coleoptrata</name>
+<name>Lepyronia</name>
+<name>Liburnia fieberi</name>
+<name>Liburnia</name>
+<name>Liguropia juniperi</name>
+<name>Liguropia</name>
+<name>Ligyrocoris</name>
+<name>Ligyrocoris sylvestris</name>
+<name>Limnonabis</name>
+<name>Limnoporus</name>
+<name>Limnoporus rufoscutellatus</name>
+<name>Limotettix atricapillus</name>
+<name>Limotettix aviger</name>
+<name>Limotettix</name>
+<name>Limotettix ochrifrons</name>
+<name>Limotettix sphagneticus</name>
+<name>Limotettix striola</name>
+<name>lindebladsikade</name>
+<name>Linnavuoriana decempunctata</name>
+<name>Linnavuoriana intercedens</name>
+<name>Linnavuoriana</name>
+<name>Linnavuoriana sexmaculata</name>
+<name>Liocoris</name>
+<name>Liocoris tripustulatus</name>
+<name>Liorhyssus hyalinus</name>
+<name>Liorhyssus</name>
+<name>liten askegallesugar</name>
+<name>liten askegallesuger</name>
+<name>Livia crefeldensis</name>
+<name>Livia juncorum</name>
+<name>Livia</name>
+<name>Liviinae</name>
+<name>Lopus decolor</name>
+<name>Lopus</name>
+<name>Loricula elegantula</name>
+<name>Loricula</name>
+<name>Loricula pselaphiformis</name>
+<name>Loricula ruficeps</name>
+<name>Lyctocorinae</name>
+<name>Lyctocorini</name>
+<name>Lyctocoris campestris</name>
+<name>Lyctocoris</name>
+<name>Lygaeidae</name>
+<name>Lygaeinae</name>
+<name>Lygaeini</name>
+<name>Lygaeoidea</name>
+<name>Lygaeus equestris</name>
+<name>Lygaeus</name>
+<name>Lygocoris contaminatus</name>
+<name>Lygocoris</name>
+<name>Lygocoris pabulinus</name>
+<name>Lygocoris rugicollis</name>
+<name>Lygocoris viridis</name>
+<name>Lygus adspersus</name>
+<name>Lygus maritimus</name>
+<name>Lygus</name>
+<name>Lygus pratensis</name>
+<name>Lygus punctatus</name>
+<name>Lygus rugulipennis</name>
+<name>Lygus wagneri</name>
+<name>lyngskjoldtege</name>
+<name>lysrandtege</name>
+<name>lønnesugar</name>
+<name>lønnesuger</name>
+<name>løvbarktege</name>
+<name>løvetannsugar</name>
+<name>løvetannsuger</name>
+<name>løvflattege</name>
+<name>løvnettege</name>
+<name>løvteger</name>
+<name>Macrodema micropterum</name>
+<name>Macrodema</name>
+<name>Macrolophus melanotoma</name>
+<name>Macrolophus</name>
+<name>Macrolophus nubilus</name>
+<name>Macrolophus pygmaeus</name>
+<name>Macroplax</name>
+<name>Macroplax preyssleri</name>
+<name>Macropsidius</name>
+<name>Macropsidius sahlbergi</name>
+<name>Macropsinae</name>
+<name>Macropsis albae</name>
+<name>Macropsis cerea</name>
+<name>Macropsis flavida</name>
+<name>Macropsis fuscinervis</name>
+<name>Macropsis fuscula</name>
+<name>Macropsis glandacea</name>
+<name>Macropsis graminea</name>
+<name>Macropsis gravesteini</name>
+<name>Macropsis impura</name>
+<name>Macropsis infuscata</name>
+<name>Macropsis marginata</name>
+<name>Macropsis megerlei</name>
+<name>Macropsis</name>
+<name>Macropsis prasina</name>
+<name>Macropsis scutellata</name>
+<name>Macropsis vicina</name>
+<name>Macropsis viridinervis</name>
+<name>Macrosaldula</name>
+<name>Macrosaldula scotica</name>
+<name>Macrosteles alpinus</name>
+<name>Macrosteles cristatus</name>
+<name>Macrosteles cyane</name>
+<name>Macrosteles empetri</name>
+<name>Macrosteles fascifrons</name>
+<name>Macrosteles fieberi</name>
+<name>Macrosteles frontalis</name>
+<name>Macrosteles horvathi</name>
+<name>Macrosteles laevis</name>
+<name>Macrosteles lividus</name>
+<name>Macrosteles maculosus</name>
+<name>Macrosteles</name>
+<name>Macrosteles nubilus</name>
+<name>Macrosteles oshanini</name>
+<name>Macrosteles ossiannilssoni</name>
+<name>Macrosteles quadripunctulatus</name>
+<name>Macrosteles septemnotatus</name>
+<name>Macrosteles sexnotatus</name>
+<name>Macrosteles sordidipennis</name>
+<name>Macrosteles variatus</name>
+<name>Macrosteles viridigriseus</name>
+<name>Macrostelini</name>
+<name>Macrotylus cruciatus</name>
+<name>Macrotylus</name>
+<name>Macrotylus paykullii</name>
+<name>Macustus grisescens</name>
+<name>Macustus</name>
+<name>Magnaphalara</name>
+<name>Malacocoris chlorizans</name>
+<name>Malacocoris</name>
+<name>malurtnettege</name>
+<name>markmalurtsugar</name>
+<name>markmalurtsuger</name>
+<name>marknettege</name>
+<name>markteger</name>
+<name>maskeringstege</name>
+<name>mauresugar</name>
+<name>mauresuger</name>
+<name>maursikadar</name>
+<name>maursikader</name>
+<name>Mecomma ambulans</name>
+<name>Mecomma dispar</name>
+<name>Mecomma</name>
+<name>Megacoelum beckeri</name>
+<name>Megacoelum infusum</name>
+<name>Megacoelum</name>
+<name>Megadelphax haglundi</name>
+<name>Megadelphax</name>
+<name>Megadelphax sordidula</name>
+<name>Megaloceroea</name>
+<name>Megaloceroea recticornis</name>
+<name>Megalocoleus molliculus</name>
+<name>Megalocoleus</name>
+<name>Megalocoleus pilosus</name>
+<name>Megalocoleus tanaceti</name>
+<name>Megalonotini</name>
+<name>Megalonotus antennatus</name>
+<name>Megalonotus chiragrus</name>
+<name>Megalonotus dilitatus</name>
+<name>Megalonotus</name>
+<name>Megalonotus praetextatus</name>
+<name>Megalonotus sabulicolus</name>
+<name>Megamelodes</name>
+<name>Megamelodes quadrimaculatus</name>
+<name>Megamelus</name>
+<name>Megamelus notula</name>
+<name>Megophthalminae</name>
+<name>Megophthalmus</name>
+<name>Megophthalmus scanicus</name>
+<name>meldesugar</name>
+<name>meldesuger</name>
+<name>meldeteger</name>
+<name>Membracidae</name>
+<name>Mendrausus</name>
+<name>Mendrausus pauxillus</name>
+<name>Mesovelia furcata</name>
+<name>Mesovelia</name>
+<name>Mesoveliidae</name>
+<name>Mesoveliinae</name>
+<name>Mesoveliini</name>
+<name>Mesovelioidea</name>
+<name>Metacanthinae</name>
+<name>Metalimnus formosus</name>
+<name>Metalimnus marmoratus</name>
+<name>Metalimnus</name>
+<name>Metalimnus obtusus</name>
+<name>Metalimnus steini</name>
+<name>metallbreitege</name>
+<name>Metatropini</name>
+<name>Metatropis linnaeae</name>
+<name>Metatropis</name>
+<name>Metatropis rufescens</name>
+<name>Metidiocerus crassipes</name>
+<name>Metidiocerus elegans</name>
+<name>Metidiocerus</name>
+<name>Mezira</name>
+<name>Mezira tremulae</name>
+<name>Mezirinae</name>
+<name>Mezirini</name>
+<name>Micantulina micantula</name>
+<name>Micantulina</name>
+<name>Micantulina pseudomicantula</name>
+<name>Micracanthia fennica</name>
+<name>Micracanthia marginalis</name>
+<name>Micracanthia</name>
+<name>Micronecta griseola</name>
+<name>Micronecta minutissima</name>
+<name>Micronecta</name>
+<name>Micronecta poweri</name>
+<name>Micronectinae</name>
+<name>Micronectini</name>
+<name>Microphysidae</name>
+<name>Microphysinae</name>
+<name>Microphysini</name>
+<name>Microporus</name>
+<name>Microporus nigrita</name>
+<name>Microvelia buenoi</name>
+<name>Microvelia</name>
+<name>Microvelia reticulata</name>
+<name>Microvelia umbricola</name>
+<name>Microvelinae</name>
+<name>Microvelini</name>
+<name>Miridae</name>
+<name>Mirinae</name>
+<name>Mirini</name>
+<name>Miris</name>
+<name>Miris striatus</name>
+<name>Miroidea</name>
+<name>mistelteinsugar</name>
+<name>mistelteinsuger</name>
+<name>Mocuellus collinus</name>
+<name>Mocuellus metrius</name>
+<name>Mocuellus</name>
+<name>Mocydiopsis attenuata</name>
+<name>Mocydiopsis</name>
+<name>Mocydiopsis parvicauda</name>
+<name>Monalocoris filicis</name>
+<name>Monalocoris</name>
+<name>Mongolojassus bicuspidatus</name>
+<name>Mongolojassus</name>
+<name>Mongolojassus sibiricus</name>
+<name>Monosynamma bohemanni</name>
+<name>Monosynamma maritimum</name>
+<name>Monosynamma</name>
+<name>Monosynamma nigritula</name>
+<name>mosenettege</name>
+<name>moseteger</name>
+<name>Muellerianella brevipennis</name>
+<name>Muellerianella extrusa</name>
+<name>Muellerianella extusa</name>
+<name>Muellerianella fairmairei</name>
+<name>Muellerianella</name>
+<name>Muirodelphax aubei</name>
+<name>Muirodelphax</name>
+<name>myggrovtege</name>
+<name>Myodochini</name>
+<name>myrbreitege</name>
+<name>myrhattsugar</name>
+<name>myrhattsuger</name>
+<name>Myrmecoris gracilis</name>
+<name>Myrmecoris</name>
+<name>Myrmedobia coleoptrata</name>
+<name>Myrmedobia distinguenda</name>
+<name>Myrmedobia exilis</name>
+<name>Myrmedobia</name>
+<name>Myrmedobia tenella</name>
+<name>Myrmus miriformis</name>
+<name>Myrmus</name>
+<name>myrrovtege</name>
+<name>mørknettege</name>
+<name>mørktorntege</name>
+<name>måleteger</name>
+<name>Nabicula</name>
+<name>Nabidae</name>
+<name>Nabinae</name>
+<name>Nabini</name>
+<name>Nabis boreellus</name>
+<name>Nabis brevis</name>
+<name>Nabis ericetorum</name>
+<name>Nabis ferus</name>
+<name>Nabis flavomarginatus</name>
+<name>Nabis inscriptus</name>
+<name>Nabis limbatus</name>
+<name>Nabis lineatus</name>
+<name>Nabis</name>
+<name>Nabis pseudoferus</name>
+<name>Nabis punctatus</name>
+<name>Nabis rugosus</name>
+<name>Naucorini</name>
+<name>nebbmunnar</name>
+<name>nebbmunner</name>
+<name>nebbteger</name>
+<name>Neides</name>
+<name>Neides tipularius</name>
+<name>Nemocoris fallenii</name>
+<name>Nemocoris</name>
+<name>Neoaliturus fenestratus</name>
+<name>Neoaliturus</name>
+<name>Neocraspedolepta</name>
+<name>Neocraspedolepta subpuncata</name>
+<name>Neocraspedolepta subpunctata</name>
+<name>Neophilaenus albipennis</name>
+<name>Neophilaenus campestris</name>
+<name>Neophilaenus exclamationis</name>
+<name>Neophilaenus lineatus</name>
+<name>Neophilaenus minor</name>
+<name>Neophilaenus</name>
+<name>Neottiglossa</name>
+<name>Neottiglossa pusilla</name>
+<name>Nepa cinerea</name>
+<name>Nepa</name>
+<name>Nepa rubra</name>
+<name>Nepidae</name>
+<name>Nepinae</name>
+<name>Nepini</name>
+<name>Nepoidea</name>
+<name>Nepomorpha</name>
+<name>neslebladsikade</name>
+<name>neslesugar</name>
+<name>neslesuger</name>
+<name>netteger</name>
+<name>Neucoridae</name>
+<name>Neucorinae</name>
+<name>Neucoroidea</name>
+<name>Nezara</name>
+<name>Nezara viridula</name>
+<name>Nithecus jacobaeae</name>
+<name>Nithecus</name>
+<name>Nothodelphax albocarinata</name>
+<name>Nothodelphax distincta</name>
+<name>Nothodelphax</name>
+<name>Notocectinae</name>
+<name>Notocectini</name>
+<name>Notonecta glauca</name>
+<name>Notonecta lutea</name>
+<name>Notonecta maculata</name>
+<name>Notonecta</name>
+<name>Notonecta obliqua</name>
+<name>Notonecta reuteri</name>
+<name>Notonectidae</name>
+<name>Notonectoidea</name>
+<name>Notostira elongata</name>
+<name>Notostira erratica</name>
+<name>Notostira</name>
+<name>Notus flavipennis</name>
+<name>Notus</name>
+<name>nymferandtege</name>
+<name>nymferovtege</name>
+<name>Nysiini</name>
+<name>Nysius ericae ericae</name>
+<name>Nysius ericae groenlandicus</name>
+<name>Nysius ericae</name>
+<name>Nysius groenlandicus</name>
+<name>Nysius helveticus</name>
+<name>Nysius</name>
+<name>Nysius thymi</name>
+<name>Ochethostethus</name>
+<name>Ochethostethus opacus</name>
+<name>Ochetostethus</name>
+<name>Ochetostethus opacus</name>
+<name>Odontoscelinae</name>
+<name>Odontoscelini</name>
+<name>Odontoscelis dorsalis</name>
+<name>Odontoscelis fuliginosa</name>
+<name>Odontoscelis lineola</name>
+<name>Odontoscelis</name>
+<name>Odontotarsinae</name>
+<name>Oeciacus hirundinis</name>
+<name>Oeciacus</name>
+<name>Ommatidionotus dissimilis</name>
+<name>Ommatidionotus</name>
+<name>Ommatidiotinae</name>
+<name>Ommatidiotini</name>
+<name>Ommatidiotus dissimilis</name>
+<name>Ommatidiotus inconspicuus</name>
+<name>Ommatidiotus</name>
+<name>Oncodelphax</name>
+<name>Oncodelphax pullula</name>
+<name>Oncodelphax pullulus</name>
+<name>Oncopsis alni</name>
+<name>Oncopsis appendiculata</name>
+<name>Oncopsis avellanae</name>
+<name>Oncopsis carpini</name>
+<name>Oncopsis flavicollis</name>
+<name>Oncopsis</name>
+<name>Oncopsis planiscuta</name>
+<name>Oncopsis subangulata</name>
+<name>Oncopsis tristis</name>
+<name>Oncotylus</name>
+<name>Oncotylus punctipes</name>
+<name>Oncotylus viridiflavus</name>
+<name>Ophiola corniculus</name>
+<name>Ophiola decumanus</name>
+<name>Ophiola</name>
+<name>Ophiola paludosa</name>
+<name>Ophiola russeolus</name>
+<name>Ophiola transversus</name>
+<name>Ophiolix</name>
+<name>Ophiolix paludosa</name>
+<name>Opsiini</name>
+<name>Opsius</name>
+<name>Opsius stactogalus</name>
+<name>orebladsikade</name>
+<name>oreskumsikade</name>
+<name>oresugar</name>
+<name>oresuger</name>
+<name>Oriini</name>
+<name>Orius insidiosus</name>
+<name>Orius laevigatus</name>
+<name>Orius laticollis</name>
+<name>Orius majusculus</name>
+<name>Orius minutus</name>
+<name>Orius</name>
+<name>Orius niger</name>
+<name>Orius vicinus</name>
+<name>Orsillinae</name>
+<name>Orsillini</name>
+<name>Orthocephalus coriaceus</name>
+<name>Orthocephalus ferrarii</name>
+<name>Orthocephalus</name>
+<name>Orthocephalus saltator</name>
+<name>Orthocephalus vittipennis</name>
+<name>Ortholomus</name>
+<name>Ortholomus punctipennis</name>
+<name>Orthonotus</name>
+<name>Orthonotus rufifrons</name>
+<name>Orthops basalis</name>
+<name>Orthops campestris</name>
+<name>Orthops kalmii</name>
+<name>Orthops montanus</name>
+<name>Orthops</name>
+<name>Orthotylinae</name>
+<name>Orthotylini</name>
+<name>Orthotylus adenocarpi</name>
+<name>Orthotylus bilineatus</name>
+<name>Orthotylus boreellus</name>
+<name>Orthotylus concolor</name>
+<name>Orthotylus ericetorum</name>
+<name>Orthotylus flavinervis</name>
+<name>Orthotylus flavosparsus</name>
+<name>Orthotylus fuscescens</name>
+<name>Orthotylus marginalis</name>
+<name>Orthotylus</name>
+<name>Orthotylus nassatus</name>
+<name>Orthotylus prasinus</name>
+<name>Orthotylus rubidus</name>
+<name>Orthotylus tenellus</name>
+<name>Orthotylus virens</name>
+<name>Orthotylus virescens</name>
+<name>Orthotylus viridinervis</name>
+<name>ospebarktege</name>
+<name>ospebladsikade</name>
+<name>ospeborktege</name>
+<name>ospevedtege</name>
+<name>Ossiannilssonola callosa</name>
+<name>Ossiannilssonola</name>
+<name>Oxycareninae</name>
+<name>Oxycarenini</name>
+<name>Oxycarenus modestus</name>
+<name>Oxycarenus</name>
+<name>Pachybrachius fracticollis</name>
+<name>Pachybrachius luridus</name>
+<name>Pachybrachius</name>
+<name>Pachytomella</name>
+<name>Pachytomella parallela</name>
+<name>Palomena</name>
+<name>Palomena prasina</name>
+<name>Paluda flaveola</name>
+<name>Paluda</name>
+<name>Panaorus adspersus</name>
+<name>Panaorus</name>
+<name>Pantilius</name>
+<name>Pantilius tunicatus</name>
+<name>Paracixius</name>
+<name>Paracorixa concinna</name>
+<name>Paracorixa</name>
+<name>Paradelphacodes litoralis</name>
+<name>Paradelphacodes</name>
+<name>Paradelphacodes paludosa</name>
+<name>Paraliburnia adela</name>
+<name>Paraliburnia clypealis</name>
+<name>Paraliburnia</name>
+<name>Paralimnini</name>
+<name>Paralimnus</name>
+<name>Paralimnus phragmitis</name>
+<name>Paralimnus rotundiceps</name>
+<name>Paralimnus zachvatkini</name>
+<name>Paramesus</name>
+<name>Paramesus obtusifrons</name>
+<name>Parapiesma</name>
+<name>Parapiesma quadratum</name>
+<name>Parapiesma salsaloe</name>
+<name>Parapiesma unicolor</name>
+<name>Parapotes</name>
+<name>Parapotes reticulatus</name>
+<name>Parapsallus</name>
+<name>Parapsallus vitellinus</name>
+<name>parkalmsugar</name>
+<name>parkalmsuger</name>
+<name>Paurocephalinae</name>
+<name>Pediopsis mendax</name>
+<name>Pediopsis</name>
+<name>Pediopsis tiliae</name>
+<name>Pediopsis ulmi</name>
+<name>Pentastiridius leporinus</name>
+<name>Pentastiridius</name>
+<name>Pentastirini</name>
+<name>Pentatoma</name>
+<name>Pentatoma rufipes</name>
+<name>Pentatomidae</name>
+<name>Pentatominae</name>
+<name>Pentatomini</name>
+<name>Pentatomoidea</name>
+<name>Pentatomomorpha</name>
+<name>Peritrechus angustcollis</name>
+<name>Peritrechus angusticollis</name>
+<name>Peritrechus convivus</name>
+<name>Peritrechus distinguendus</name>
+<name>Peritrechus geniculatus</name>
+<name>Peritrechus lundii</name>
+<name>Peritrechus</name>
+<name>Peritrechus nubilus</name>
+<name>Peritrechus sylvestris</name>
+<name>Perotettix</name>
+<name>Perotettix orientalis</name>
+<name>Perotettix pictus</name>
+<name>Peuceptyelus coriaceus</name>
+<name>Peuceptyelus</name>
+<name>Philaenus</name>
+<name>Philaenus spumarius</name>
+<name>Philomyrmex insignis</name>
+<name>Philomyrmex</name>
+<name>Phimodera humeralis</name>
+<name>Phimodera lapponica</name>
+<name>Phimodera</name>
+<name>Phimoderini</name>
+<name>Phoenicocoris dissimilis</name>
+<name>Phoenicocoris modestus</name>
+<name>Phoenicocoris</name>
+<name>Phoenicocoris obscurellus</name>
+<name>Phylinae</name>
+<name>Phylini</name>
+<name>Phylus coryli</name>
+<name>Phylus melanocephalus</name>
+<name>Phylus</name>
+<name>Physatocheila costata</name>
+<name>Physatocheila forsteri</name>
+<name>Physatocheila</name>
+<name>Physatocheila smreczynskii</name>
+<name>Phytocoris dimidiatus</name>
+<name>Phytocoris intricatus</name>
+<name>Phytocoris longipennis</name>
+<name>Phytocoris</name>
+<name>Phytocoris pini</name>
+<name>Phytocoris populi</name>
+<name>Phytocoris reuteri</name>
+<name>Phytocoris tiliae</name>
+<name>Phytocoris ulmi</name>
+<name>Phytocoris varipes</name>
+<name>Picromerus bidens</name>
+<name>Picromerus</name>
+<name>Piesma capitatum</name>
+<name>Piesma maculatum</name>
+<name>Piesma</name>
+<name>Piesma quadratum</name>
+<name>Piesma salsaloe</name>
+<name>Piesmatidae</name>
+<name>Piesmatinae</name>
+<name>Piesmatini</name>
+<name>Piesma unicolor</name>
+<name>Piezodorini</name>
+<name>Piezodorus lituratus</name>
+<name>Piezodorus</name>
+<name>Pilophorini</name>
+<name>Pilophorus cinnamopterus</name>
+<name>Pilophorus clavatus</name>
+<name>Pilophorus confusus</name>
+<name>Pilophorus</name>
+<name>Pilophorus perplexus</name>
+<name>Pilophorus simulans</name>
+<name>Pinalitus atomarius</name>
+<name>Pinalitus cervinus</name>
+<name>Pinalitus</name>
+<name>Pinalitus rubricatus</name>
+<name>Pinthaeus</name>
+<name>Pinthaeus sanguinipes</name>
+<name>Pinumius areatus</name>
+<name>Pinumius</name>
+<name>Pionosomus</name>
+<name>Pionosomus trichopterus</name>
+<name>Pionosomus varius</name>
+<name>Pithanus hrabei</name>
+<name>Pithanus maerkeli</name>
+<name>Pithanus</name>
+<name>Pithyotettix abietinus</name>
+<name>Pithyotettix</name>
+<name>Placochilus</name>
+<name>Placochilus seladonicus</name>
+<name>Plagiognathus arbustorum</name>
+<name>Plagiognathus arenicola</name>
+<name>Plagiognathus chrysanthemi</name>
+<name>Plagiognathus collinus</name>
+<name>Plagiognathus litoralis</name>
+<name>Plagiognathus</name>
+<name>Planaphrodes bifasciata</name>
+<name>Planaphrodes laeva</name>
+<name>Planaphrodes</name>
+<name>Planaphrodes nigrita</name>
+<name>Planaphrodes trifasciata</name>
+<name>Platymetopius guttatus</name>
+<name>Platymetopius major</name>
+<name>Platymetopius</name>
+<name>Platymetopius undatus</name>
+<name>Plea minutissima</name>
+<name>Plea</name>
+<name>Pleidae</name>
+<name>Pleinae</name>
+<name>Pleini</name>
+<name>Pleisocoris</name>
+<name>Pleisocoris rugicollis</name>
+<name>Pleoidea</name>
+<name>Plesiodema</name>
+<name>Plesiodema pinetella</name>
+<name>Plinthisini</name>
+<name>Plinthisus brevipennis</name>
+<name>Plinthisus</name>
+<name>Plinthisus pusillus</name>
+<name>Ploiariolini</name>
+<name>plommesugar</name>
+<name>plommesuger</name>
+<name>Podopini</name>
+<name>Podops inunctus</name>
+<name>Podops</name>
+<name>Polymerus brevicornis</name>
+<name>Polymerus cognatus</name>
+<name>Polymerus lammesi</name>
+<name>Polymerus microphthalmus</name>
+<name>Polymerus</name>
+<name>Polymerus nigrita</name>
+<name>Polymerus palustris</name>
+<name>Polymerus tepastus</name>
+<name>Polymerus unifasciatus</name>
+<name>Polymerus vulneratus</name>
+<name>Populicerus albicans</name>
+<name>Populicerus confusus</name>
+<name>Populicerus laminatus</name>
+<name>Populicerus</name>
+<name>Populicerus nitidissimus</name>
+<name>Populicerus populi</name>
+<name>prakttege</name>
+<name>praktteger</name>
+<name>prestekragenettege</name>
+<name>prestekragesugar</name>
+<name>prestekragesuger</name>
+<name>Psallodema fieberi</name>
+<name>Psallodema</name>
+<name>Psallus aethiops</name>
+<name>Psallus albicinctus</name>
+<name>Psallus alnicola</name>
+<name>Psallus ambiguus</name>
+<name>Psallus assimilis</name>
+<name>Psallus betuleti</name>
+<name>Psallus confusus</name>
+<name>Psallus diminutus</name>
+<name>Psallus fallenii</name>
+<name>Psallus falleni</name>
+<name>Psallus flavellus</name>
+<name>Psallus graminicola</name>
+<name>Psallus haematodes</name>
+<name>Psallus lapponicus</name>
+<name>Psallus lepidus</name>
+<name>Psallus luridus</name>
+<name>Psallus mollis</name>
+<name>Psallus</name>
+<name>Psallus perrisi</name>
+<name>Psallus piceae</name>
+<name>Psallus quercus</name>
+<name>Psallus salicis</name>
+<name>Psallus scholtzi</name>
+<name>Psallus variabilis</name>
+<name>Psallus varians</name>
+<name>Psallus wagneri</name>
+<name>Psammotettix albomarginatus</name>
+<name>Psammotettix alienus</name>
+<name>Psammotettix cephalotes</name>
+<name>Psammotettix confinis</name>
+<name>Psammotettix dubius</name>
+<name>Psammotettix excisus</name>
+<name>Psammotettix frigidus</name>
+<name>Psammotettix koeleriae</name>
+<name>Psammotettix lapponicus</name>
+<name>Psammotettix</name>
+<name>Psammotettix nodosus</name>
+<name>Psammotettix pallidinervis</name>
+<name>Psammotettix poecilus</name>
+<name>Psammotettix putoni</name>
+<name>Psammotettix remanei</name>
+<name>Psammotettix sabulicola</name>
+<name>Psammotettix slovacus</name>
+<name>Pseudoloxops coccineus</name>
+<name>Pseudoloxops</name>
+<name>Pseudophloeini</name>
+<name>Psylla alni</name>
+<name>Psylla betulae</name>
+<name>Psylla betulaenanae</name>
+<name>Psylla buxi</name>
+<name>Psylla fusca</name>
+<name>Psylla</name>
+<name>Psyllidae</name>
+<name>Psyllinae</name>
+<name>Psylloidea</name>
+<name>Psyllopsis discrepans</name>
+<name>Psyllopsis fraxinicola</name>
+<name>Psyllopsis fraxini</name>
+<name>Psyllopsis</name>
+<name>Pterotmetus</name>
+<name>Pterotmetus staphyliniformis</name>
+<name>purpurlyngsugar</name>
+<name>purpurlyngsuger</name>
+<name>Pygolampis bidentata</name>
+<name>Pygolampis</name>
+<name>Pyrrhocoridae</name>
+<name>Pyrrhocorinae</name>
+<name>Pyrrhocorini</name>
+<name>Pyrrhocoris apterus</name>
+<name>Pyrrhocoris</name>
+<name>Pyrrhocoroidea</name>
+<name>pæresugar</name>
+<name>pæresuger</name>
+<name>Raglius alboacuminatus</name>
+<name>Raglius</name>
+<name>Ranatra linearis</name>
+<name>Ranatra</name>
+<name>Ranatrinae</name>
+<name>Ranatrini</name>
+<name>randnettege</name>
+<name>randteger</name>
+<name>rasmarktege</name>
+<name>raudbrun  rylliksugar</name>
+<name>raudbrun tindvedsugar</name>
+<name>raudfottege</name>
+<name>raudknappsugar</name>
+<name>raudrandtege</name>
+<name>Reduviidae</name>
+<name>Reduviinae</name>
+<name>Reduviini</name>
+<name>Reduvioidea</name>
+<name>Reduviolus</name>
+<name>Reduvius</name>
+<name>Reduvius personatus</name>
+<name>Rhabdomiris</name>
+<name>Rhabdomiris striatellus</name>
+<name>Rhacognatus</name>
+<name>Rhacognatus punctatus</name>
+<name>Rhinocola aceris</name>
+<name>Rhinocola</name>
+<name>Rhinocolinae</name>
+<name>Rhinocoris annulatus</name>
+<name>Rhinocoris</name>
+<name>Rhopalidae</name>
+<name>Rhopalinae</name>
+<name>Rhopalini</name>
+<name>Rhopalopyx adumbrata</name>
+<name>Rhopalopyx</name>
+<name>Rhopalopyx preyssleri</name>
+<name>Rhopalopyx vitripennis</name>
+<name>Rhopalus maculatus</name>
+<name>Rhopalus</name>
+<name>Rhopalus parumpunctatus</name>
+<name>Rhopalus subrufus</name>
+<name>Rhynocoris annulatus</name>
+<name>Rhynocoris iracundus</name>
+<name>Rhynocoris</name>
+<name>Rhyparochrominae</name>
+<name>Rhyparochromini</name>
+<name>Rhyparochromus adspersus</name>
+<name>Rhyparochromus</name>
+<name>Rhyparochromus phoeniceus</name>
+<name>Rhyparochromus phoenicus</name>
+<name>Rhyparochromus pini</name>
+<name>Rhyparochromus quadratus</name>
+<name>Rhyparochromus vulgaris</name>
+<name>Rhytidodus decimusquartus</name>
+<name>Rhytidodus</name>
+<name>Rhytistylus</name>
+<name>Rhytistylus proceps</name>
+<name>Ribautiana</name>
+<name>Ribautiana scalaris</name>
+<name>Ribautiana tenerrima</name>
+<name>Ribautiana ulmi</name>
+<name>Ribautodelphax albostriata</name>
+<name>Ribautodelphax albostriatus</name>
+<name>Ribautodelphax angulosa</name>
+<name>Ribautodelphax collina</name>
+<name>Ribautodelphax collinus</name>
+<name>Ribautodelphax</name>
+<name>Ribautodelphax pallens</name>
+<name>Ribautodelphax pungens</name>
+<name>Ribautodelphax vinealis</name>
+<name>rododendronnettege</name>
+<name>rododendronsugar</name>
+<name>rododendronsuger</name>
+<name>rognesugar</name>
+<name>rognesuger</name>
+<name>rosebladsikade</name>
+<name>Rosenus abiskoensis</name>
+<name>Rosenus laciniatus</name>
+<name>Rosenus</name>
+<name>rovteger</name>
+<name>ryggsvømmere</name>
+<name>ryggsymjarar</name>
+<name>rylliksugar</name>
+<name>rylliksuger</name>
+<name>rødbrun  rylliksuger</name>
+<name>rødbrun tindvedsuger</name>
+<name>rødfottege</name>
+<name>rødknappsuger</name>
+<name>rødrandtege</name>
+<name>røsslyngsugar</name>
+<name>røsslyngsuger</name>
+<name>Sagatus</name>
+<name>Sagatus punctifrons</name>
+<name>Sahlbergotettix</name>
+<name>Sahlbergotettix salicicola</name>
+<name>Salda henschii</name>
+<name>Salda littoralis</name>
+<name>Salda morio</name>
+<name>Salda muelleri</name>
+<name>Salda</name>
+<name>Salda sahlbergi</name>
+<name>Saldidae</name>
+<name>Saldinae</name>
+<name>Saldini</name>
+<name>Saldoidea</name>
+<name>Saldoidini</name>
+<name>Saldula arenicola</name>
+<name>Saldula c-album</name>
+<name>Saldula fucicola</name>
+<name>Saldula melanoscela</name>
+<name>Saldula</name>
+<name>Saldula opacula</name>
+<name>Saldula orthochila</name>
+<name>Saldula pallipes</name>
+<name>Saldula palustris</name>
+<name>Saldula pilosella</name>
+<name>Saldula saltatoria</name>
+<name>Salicarus</name>
+<name>Salicarus roseri</name>
+<name>sandbarktege</name>
+<name>sandborktege</name>
+<name>sandkanttege</name>
+<name>sandnettege</name>
+<name>sandskjoldtege</name>
+<name>sangsikade</name>
+<name>sangsikader</name>
+<name>Sciocorini</name>
+<name>Sciocoris cursitans</name>
+<name>Sciocoris homalonotus</name>
+<name>Sciocoris macrocephalus</name>
+<name>Sciocoris microphthalmus</name>
+<name>Sciocoris</name>
+<name>Sciocoris umbrinus</name>
+<name>Scleroracus corniculus</name>
+<name>Scleroracus decumanus</name>
+<name>Scleroracus identicus</name>
+<name>Scleroracus</name>
+<name>Scleroracus orichalceus</name>
+<name>Scleroracus russeolus</name>
+<name>Scleroracus transversus</name>
+<name>Scolopini</name>
+<name>Scoloposcelis</name>
+<name>Scoloposcelis obscurella</name>
+<name>Scoloposcelis pulchella</name>
+<name>Scolopostethus affinis</name>
+<name>Scolopostethus decoratus</name>
+<name>Scolopostethus grandis</name>
+<name>Scolopostethus</name>
+<name>Scolopostethus pictus</name>
+<name>Scolopostethus pilosus</name>
+<name>Scolopostethus puberulus</name>
+<name>Scolopostethus thomsoni</name>
+<name>Scutelleridae</name>
+<name>Sehirini</name>
+<name>Sehirus luctuosus</name>
+<name>Sehirus morio</name>
+<name>Sehirus</name>
+<name>seljeskumsikade</name>
+<name>Sigara distincta</name>
+<name>Sigara dorsalis</name>
+<name>Sigara falleni</name>
+<name>Sigara fallenoidea</name>
+<name>Sigara fossarum</name>
+<name>Sigara hellensii</name>
+<name>Sigara iactans</name>
+<name>Sigara lateralis</name>
+<name>Sigara limitata</name>
+<name>Sigara longipalis</name>
+<name>Sigara</name>
+<name>Sigara nigrolineata</name>
+<name>Sigara scotti</name>
+<name>Sigara selecta</name>
+<name>Sigara semistriata</name>
+<name>Sigara stagnalis</name>
+<name>Sigara striata</name>
+<name>sivsugar</name>
+<name>sivsuger</name>
+<name>skjoldsikadar</name>
+<name>skjoldsikader</name>
+<name>skjoldteger</name>
+<name>skogbarktege</name>
+<name>skogborktege</name>
+<name>skogbreitege</name>
+<name>skognettege</name>
+<name>skograndtege</name>
+<name>skogstyltetege</name>
+<name>skumsikadar</name>
+<name>skumsikader</name>
+<name>skvallerkålsugar</name>
+<name>skvallerkålsuger</name>
+<name>slireknesugar</name>
+<name>slireknesuger</name>
+<name>smalnettege</name>
+<name>songsikadar</name>
+<name>songsikade</name>
+<name>Sonronius anderi</name>
+<name>Sonronius binotatus</name>
+<name>Sonronius dahlbomi</name>
+<name>Sonronius</name>
+<name>Sorhoanus assimilis</name>
+<name>Sorhoanus</name>
+<name>Sorhoanus xanthoneurus</name>
+<name>Spathocera dahlmanii</name>
+<name>Spathocera</name>
+<name>Speudotettix</name>
+<name>Speudotettix subfusculus</name>
+<name>Sphragisticus</name>
+<name>Sphragisticus nebulosus</name>
+<name>Spilostethus</name>
+<name>Spilostethus pandurus</name>
+<name>sporesikadar</name>
+<name>sporesikader</name>
+<name>Stagonomus bipunctatus</name>
+<name>Stagonomus</name>
+<name>Stagonomus pusillus</name>
+<name>Stalia</name>
+<name>stankelbeinrovtege</name>
+<name>Stenidiocerus</name>
+<name>Stenidiocerus poecilus</name>
+<name>Stenocraninae</name>
+<name>Stenocranus fuscovittatus</name>
+<name>Stenocranus major</name>
+<name>Stenocranus minutus</name>
+<name>Stenocranus</name>
+<name>Stenodema calcarata</name>
+<name>Stenodema holsata</name>
+<name>Stenodema laevigata</name>
+<name>Stenodema</name>
+<name>Stenodema trispinosa</name>
+<name>Stenodema virens</name>
+<name>Stenodemini</name>
+<name>Stenopodainae</name>
+<name>Stenopodaini</name>
+<name>Stenotus binotatus</name>
+<name>Stenotus</name>
+<name>Stephanitis</name>
+<name>Stephanitis oberti</name>
+<name>Stephanitis rhododrendri</name>
+<name>Sternorrhyncha</name>
+<name>Sthenarus</name>
+<name>Sthenarus rotermundi</name>
+<name>Stictocoris</name>
+<name>Stictocoris picturatus</name>
+<name>Stictopleurus abutilon</name>
+<name>Stictopleurus crassicornis</name>
+<name>Stictopleurus</name>
+<name>Stictopleurus pictus</name>
+<name>Stictopleurus punctatonervosus</name>
+<name>Stiroma affinis</name>
+<name>Stiroma bicarinata</name>
+<name>Stiroma</name>
+<name>Stiromella</name>
+<name>Stiromella obliqua</name>
+<name>Stiromoides maculiceps</name>
+<name>Stiromoides</name>
+<name>storlauvtege</name>
+<name>storløvtege</name>
+<name>storrandtege</name>
+<name>stortorntege</name>
+<name>Strachiini</name>
+<name>strandteger</name>
+<name>Streptanus aemulans</name>
+<name>Streptanus confinis</name>
+<name>Streptanus marginatus</name>
+<name>Streptanus</name>
+<name>Streptanus okaensis</name>
+<name>Streptanus sordidus</name>
+<name>stripetege</name>
+<name>Stroggylocephalus agrestis</name>
+<name>Stroggylocephalus livens</name>
+<name>Stroggylocephalus</name>
+<name>Strongylocoris leucocephalus</name>
+<name>Strongylocoris luridus</name>
+<name>Strongylocoris</name>
+<name>Strongylocoris steganoides</name>
+<name>Strophingia cinereae</name>
+<name>Strophingia ericae</name>
+<name>Strophingia</name>
+<name>Strophingiinae</name>
+<name>Struebingianella litoralis</name>
+<name>Struebingianella lugubrina</name>
+<name>Struebingianella</name>
+<name>stråtege</name>
+<name>stubbebarktege</name>
+<name>stubbeborktege</name>
+<name>Stygnocorini</name>
+<name>Stygnocoris fuligineus</name>
+<name>Stygnocoris</name>
+<name>Stygnocoris pedestris</name>
+<name>Stygnocoris pygmaeus</name>
+<name>Stygnocoris rusticus</name>
+<name>Stygnocoris sabulosus</name>
+<name>stylteteger</name>
+<name>sugarar</name>
+<name>sugere</name>
+<name>sumprandtege</name>
+<name>sumpskjoldtege</name>
+<name>svævesugar</name>
+<name>svævesuger</name>
+<name>syrekanttege</name>
+<name>syreskotsugar</name>
+<name>syreskuddsuger</name>
+<name>syresugar</name>
+<name>syresuger</name>
+<name>Syromastes</name>
+<name>Syromastes rhombeus</name>
+<name>Systellonotus</name>
+<name>Systellonotus triguttatus</name>
+<name>Tachycixius</name>
+<name>Tachycixius pilosus</name>
+<name>taggbreitege</name>
+<name>tagglauvtege</name>
+<name>taggløvtege</name>
+<name>taigabarktege</name>
+<name>taigaborktege</name>
+<name>taigarandtege</name>
+<name>tannrovtege</name>
+<name>Taphropeltus contractus</name>
+<name>Taphropeltus hamulatus</name>
+<name>Taphropeltus</name>
+<name>teger</name>
+<name>Teloleuca bifasciata</name>
+<name>Teloleuca</name>
+<name>Teloleuca pellucens</name>
+<name>Temnostethus gracilis</name>
+<name>Temnostethus</name>
+<name>Temnostethus pusillus</name>
+<name>Teratocoris antennatus</name>
+<name>Teratocoris caricis</name>
+<name>Teratocoris longicornis</name>
+<name>Teratocoris</name>
+<name>Teratocoris paludum</name>
+<name>Teratocoris saundersi</name>
+<name>Teratocoris viridis</name>
+<name>Tetraphleps bicuspis</name>
+<name>Tetraphleps</name>
+<name>Tettigometra atra</name>
+<name>Tettigometra</name>
+<name>Tettigometridae</name>
+<name>Thamnopsylla</name>
+<name>Thamnotettix confinis</name>
+<name>Thamnotettix dilutior</name>
+<name>Thamnotettix</name>
+<name>Thyreocoridae</name>
+<name>Thyreocorinae</name>
+<name>Thyreocorini</name>
+<name>Thyreocoris</name>
+<name>Thyreocoris scarabaeoides</name>
+<name>Tibicininae</name>
+<name>tindvedsugar</name>
+<name>tindvedsuger</name>
+<name>Tingidae</name>
+<name>Tinginae</name>
+<name>Tingini</name>
+<name>Tingis cardui</name>
+<name>Tingis</name>
+<name>Tingis reticulata</name>
+<name>Tingoidea</name>
+<name>tistelnettege</name>
+<name>tistelsugar</name>
+<name>tistelsuger</name>
+<name>toprikktorntege</name>
+<name>tornkanttege</name>
+<name>tornteger</name>
+<name>torvteger</name>
+<name>Toya</name>
+<name>Toya propinqua</name>
+<name>Trapezonotus anorus</name>
+<name>Trapezonotus arenarius</name>
+<name>Trapezonotus desertus</name>
+<name>Trapezonotus dispar</name>
+<name>Trapezonotus</name>
+<name>Tremulicerus distinguendus</name>
+<name>Tremulicerus fulgidus</name>
+<name>Tremulicerus</name>
+<name>Tremulicerus tremulae</name>
+<name>Tremulicerus vitreus</name>
+<name>Trichochermes</name>
+<name>Trichochermes walkeri</name>
+<name>Trigonotylus caelestialium</name>
+<name>Trigonotylus elymi</name>
+<name>Trigonotylus fuscitarsis</name>
+<name>Trigonotylus</name>
+<name>Trigonotylus psammaecolor</name>
+<name>Trigonotylus pulchellus</name>
+<name>Trigonotylus ruficornis</name>
+<name>Trioza abdominalis</name>
+<name>Trioza agrophila</name>
+<name>Trioza alacris</name>
+<name>Trioza anthrisci</name>
+<name>Trioza apicalis</name>
+<name>Trioza centranthi</name>
+<name>Trioza cerastii</name>
+<name>Trioza chenopodii</name>
+<name>Trioza chrysanthemi</name>
+<name>Trioza cirsii</name>
+<name>Trioza dispar</name>
+<name>Trioza flavipennis</name>
+<name>Trioza galii</name>
+<name>Trioza laserpitii</name>
+<name>Trioza munda</name>
+<name>Trioza</name>
+<name>Trioza remota</name>
+<name>Trioza rhamni</name>
+<name>Trioza rotundata</name>
+<name>Trioza tatrensis</name>
+<name>Trioza urticae</name>
+<name>Trioza urtica</name>
+<name>Trioza viridula</name>
+<name>Triozidae</name>
+<name>Tritomegas bicolor</name>
+<name>Tritomegas</name>
+<name>Troilus luridus</name>
+<name>Troilus</name>
+<name>Tropidophlebia costalis</name>
+<name>Tropidophlebia</name>
+<name>Tropistethus holosericeus</name>
+<name>Tropistethus</name>
+<name>tungrassugar</name>
+<name>tungressuger</name>
+<name>Turrutus</name>
+<name>Turrutus socialis</name>
+<name>Typhlocyba barbata</name>
+<name>Typhlocyba bifasciata</name>
+<name>Typhlocyba</name>
+<name>Typhlocyba quercus</name>
+<name>Typhlocyba staminata</name>
+<name>Typhlocybinae</name>
+<name>Typhlocybini</name>
+<name>Tyrphodelphax albocarinata</name>
+<name>Tyrphodelphax distincta</name>
+<name>Tyrphodelphax distinctus</name>
+<name>Tyrphodelphax</name>
+<name>Tytthus geminus</name>
+<name>Tytthus</name>
+<name>Tytthus pubescens</name>
+<name>Tytthus pygmaeus</name>
+<name>tømmerbarktege</name>
+<name>tømmerborktege</name>
+<name>tørrmarktege</name>
+<name>Ulmicola</name>
+<name>Ulmicola spinipes</name>
+<name>Ulopa</name>
+<name>Ulopa reticulata</name>
+<name>Ulopinae</name>
+<name>Unkanodes excisa</name>
+<name>Unkanodes</name>
+<name>Utecha</name>
+<name>Utecha trivia</name>
+<name>vannløpere</name>
+<name>vannrøvere</name>
+<name>vannskorpioner</name>
+<name>vasskorpionar</name>
+<name>vassløparar</name>
+<name>vassrøvarar</name>
+<name>veggdyr</name>
+<name>Velia caprai</name>
+<name>Velia</name>
+<name>Velia saulii</name>
+<name>Veliidae</name>
+<name>Veliinae</name>
+<name>Veliini</name>
+<name>vepsetege</name>
+<name>vepseteger</name>
+<name>Verdanus abdominalis</name>
+<name>Verdanus limbatellus</name>
+<name>Verdanus</name>
+<name>vierlauvtege</name>
+<name>vierløvtege</name>
+<name>Viridicerus</name>
+<name>Viridicerus ustulatus</name>
+<name>vårbreitege</name>
+<name>Wagneriala incisa</name>
+<name>Wagneriala minima</name>
+<name>Wagneriala</name>
+<name>Wagneripteryx germari</name>
+<name>Wagneripteryx</name>
+<name>Xanthochilus</name>
+<name>Xanthochilus quadratus</name>
+<name>Xanthodelphax flaveola</name>
+<name>Xanthodelphax flaveolus</name>
+<name>Xanthodelphax</name>
+<name>Xanthodelphax straminea</name>
+<name>Xanthodelphax xantha</name>
+<name>Xylocorini</name>
+<name>Xylocoris cursitans</name>
+<name>Xylocoris flavipes</name>
+<name>Xylocoris formicetorum</name>
+<name>Xylocoris galactinus</name>
+<name>Xylocoris lativentris</name>
+<name>Xylocoris</name>
+<name>Xylocoris thomsoni</name>
+<name>Zicrona caerulea</name>
+<name>Zicrona</name>
+<name>Zonocyba bifasciata</name>
+<name>Zonocyba</name>
+<name>Zygimus</name>
+<name>Zygimus nigriceps</name>
+<name>Zygina angusta</name>
+<name>Zygina flammigera</name>
+<name>Zygina hyperici</name>
+<name>Zygina</name>
+<name>Zygina nigritarsis</name>
+<name>Zygina ordinaria</name>
+<name>Zygina rosea</name>
+<name>Zygina rosincola</name>
+<name>Zygina rubrovittata</name>
+<name>Zygina salicina</name>
+<name>Zygina schneideri</name>
+<name>Zygina suavis</name>
+<name>Zygina tiliae</name>
+<name>Zyginella</name>
+<name>Zyginella pulchra</name>
+<name>Zyginidia mocsaryi</name>
+<name>Zyginidia</name>
+<name>Zyginidia pullula</name>
+<name>Zyginidia viaduensis</name>
+<name>øresikade</name>
+<name>øyresikade</name>
+<name>åkertistelsugar</name>
+<name>åkertistelsuger</name>
+</namelist>
