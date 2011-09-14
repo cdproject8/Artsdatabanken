@@ -1,5 +1,34 @@
-\subsection{Project description}
-The project is part of the course TDT4290 Customer Driven Project. This course is mandatory for all computer science majors, and its goal is to give the students experience with customre relations, project management and group dynamics in a real project.
+\subsection{Project description (TODO)}
+The project is part of the course TDT4290 Customer Driven Project. This course is mandatory for all computer science majors, and its goal is to give the students experience with customer relations, project management and group dynamics in a real project.
 
 \subsubsection{The customer}
-Our customer is Artsdatabanken. Artsdatabanken is a company in the Norwegian Biodiversity Information Center (NBIC) body that provides the public with information on Norwegian species and ecosystems. Artsdatabanken claims to have approximately 6 million species of plants, insects, birds, large predators and of which 85\% are birds. Artsdatabanken keeps a series of database resources such as Red List, Alien Species, Species name and Habitat databases together with Species Map and Species Observations. Artsdatabanken depends on these projects and databases to fully conduct its operations and responsibilities. (needs cite)
+Our customer is Artsdatabanken. Artsdatabanken is a company in the Norwegian Biodiversity Information Center (NBIC) body that provides the public with information on Norwegian species and ecosystems. Artsdatabanken claims to have approximately 6 million species of plants, insects, birds, large predators and of which 85\% are birds. Artsdatabanken keeps a series of database resources such as Red List, Alien Species, Species name and Habitat databases together with Species Map and Species Observations. Artsdatabanken depends on these projects and databases to fully conduct its operations and responsibilities.\cite{artsdatabanken:about} 
+
+\subsubsection{People involved in the project}
+The student group consists of seven fourth year students partaking the Computer Science program at the Norwegian University of Science and Technology. Two of these students are enrolled in the International student exhange program for Computer Science. These are in alphabetical order: Anders Søbstad Rye, Andreas Berg Skomedal, Dag-Inge Aas, Muhsin Günaydin, Nikola Djoric, Stian Liknes and Yonathan Redda. The student group is advised by PhD Candidate, Muhammad Asif, at IDI.
+
+The customers representatives are Askild Olsen and Helge Sandmark. Askild Olsen will function as the product owner, and has the final word whn decisions are made about the project. They are employees of Artsdatabanken.
+
+\subsubsection{Project drivers}
+Artsdatabanken has a very skilled user base. Some of the users have for a long time requested a mobile application for gathering observation data in the field. This application would replace the old notebook method of gathering information, automate collection of some data such as GPS coordinates, and decrease the complexity involved in making observations of species, so that beginners would have an easier time learning the process. In addition, Artsdatabanken wants the application to help increase the number of observations by increasing the number of users and significantly lessen the complexity involved in registering observations.
+
+\subsubsection{Problem domain}
+In the current situation, an observer has to make the observation, write down the number of individuals and alternatively take a picture. After this is done, the observer must go home, write down everything on an online form and alternatively upload pictures separately. Because of the complexity and the lack of automation involved in this process, the smaller observations are often overlooked, and doesn't get registered. Artsdatabanken wants as many observations done as possible.
+
+In addition, being a state institution brings technical demands to the project group. Artsdatabanken needs to support as many mobile devices as possible. This means that the application must work on devices regardless of operating system and screen size.
+
+\subsubsection{Proposed solution}
+Our proposed solution involves using a cross-compiling mobile application framework, named Phonegap, that can deploy the same code on multiple platforms. This will enable us to use the same codebase, but deploy on six different platforms. The applications itself will automate a lot of the data collection involved with making observations, and exports the data in a computer-readable fashion suitable for parsing by Artsdatabanken systems. This solution will lower the barrier for making and registering observations, enabling more users to partake.
+
+\subsubsection{Project objective}
+The student group are expected to deliver a common mobile application codebase that can be deployed on many different platforms in addition to a working application demo that can export observations ready for parsing by the server. The server-side APIs will be provided by Artsdatabanken. In addition, the student group will deliver all research made into the problem domain to the customer, including research done into cross-platfor frameworks and deployment.
+
+\subsubsection{Available resources}
+Artsdatabanken will provide user testing of the application. They will also course the student group in taxonomy and hold a field study, giving the students the opportunity to learn about observations and species.
+
+The students will supply testing hardware for the Android platform, and an iPad for testing iOS applications. This gives the students the opportunity to test the application on the two most popular platforms in various screen sizes.
+
+\subsubsection{Limitations TODO}
+The project is scheduled to last from the 30th of August to the 24th of November. The budget working hours per group member is 350 hours, giving the total working hours available of 2450 person hours. This is equal to over one year worth of person hours. 
+
+As the students have no testing hardware for Symbian, Bada, BlackBerry or Windows Phone, the applications developed for these platforms will not be tested on a real device prior to launch. The students also lack hardware necessary for efficient testing of the iOS platform, having to rely on sporadic access to the hardware.
