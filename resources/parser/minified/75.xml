@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<namelist xmlns:adb="http://artsdatabanken.no/Artsnavnebase">
+<name>austkiletusenbein</name>
+<name>Brachydesmus</name>
+<name>Brachydesmus superus</name>
+<name>dvergkiletusenbein</name>
+<name>kiletusenbein</name>
+<name>Macrosternodesmidae</name>
+<name>Macrosternodesmus</name>
+<name>Macrosternodesmus palicola</name>
+<name>nordkiletusenbein</name>
+<name>Ophiodesmus albonanus</name>
+<name>Ophiodesmus</name>
+<name>Orthomorpha gracilis</name>
+<name>Orthomorpha</name>
+<name>Oxidus gracilis</name>
+<name>Oxidus</name>
+<name>Paradesmus gracilis</name>
+<name>Paradesmus</name>
+<name>Paradoxosomatidae</name>
+<name>Polydesmidae</name>
+<name>Polydesmida</name>
+<name>Polydesmus angustus</name>
+<name>Polydesmus complanatus</name>
+<name>Polydesmus coriaceus</name>
+<name>Polydesmus denticulatus</name>
+<name>Polydesmus inconstans</name>
+<name>Polydesmus</name>
+<name>Poratia digitata</name>
+<name>Poratia</name>
+<name>Pyrgodesmidae</name>
+<name>Scytonotus digitatus</name>
+<name>Scytonotus</name>
+<name>tuberkelkiletusenbein</name>
+<name>vestkiletusenbein</name>
+<name>østkiletusenbein</name>
+</namelist>
