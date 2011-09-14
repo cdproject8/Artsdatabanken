@@ -5,8 +5,8 @@ $(document).bind("mobileinit", function() {
 		// Config..
 	});
 	$.mobile.page.prototype.options.addBackBtn = true;
+	//$.mobile.page.prototype.options.domCache = true;
 	
-
 	// This will be executed when jQuery mobile is loaded,
 	// place code here..
 });

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Artsdatabanken</title>
+	
+	<!-- External stylesheets -->
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile.datebox.css" />
+	<link rel="stylesheet" href="libs/touch.artsdatabanken.no/artsdatabanken.css" type="text/css" media="all" />
+	
+	<!-- Application specific stylesheets -->
+	<link rel="stylesheet" href="styles/main.css" />
+	
+	<!-- External libraries to be loaded before custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.6.2.min.js"></script>
+	
+	<!-- Application specific scripts -->
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	
+	<!--  External libraries to be loaded after custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile.datebox.js"></script>
+</head>
+
+<body>
+
+<!-- EXTENDED INFO PAGE -->
+	<div data-role="page" id="extended_inf" >
+		<div data-role="header" data-theme="z">
+			<h1>Extenden info for 'x'</h1>
+		</div>
+		<div data-role="content" data-theme="z">
+			<div data-role="fieldcontain">
+				<label for="nam01">Species</label> <input type="text" name="nam01"
+					id="nam01" value="" />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="num01">Number</label> <input type="number" name="num01"
+					id="num01" value="1" />
+			</div>
+			<div class="extended_options">
+				<div data-role="fieldcontain">
+					<label for="sex01" class="select">Sex</label> <select name="sex01"
+						id="sex01">
+						<option value="na">N/A</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="age01">Age</label> <input type="number" name="age01"
+						id="age01" value="" />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="act01" class="select">Activity</label> <select
+						name="act01" id="act01">
+						<option value="rest">Resting</option>
+						<option value="nourish">Seeking Nourishment</option>
+						<option value="flying">Flying</option>
+						<option value="swim">Swimming</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="tim01">Time Start</label> <input name="tim01"
+						id="tim01" type="date" data-role="datebox"
+						data-options='{"mode": "timebox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dat01">Date Start</label> <input name="dat01"
+						id="dat01" type="date" data-role="datebox"
+						data-options='{"mode": "calbox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dae01">Date End</label> <input name="dae01" type="date"
+						data-role="datebox" id="dae01" data-options='{"mode": "calbox"}' />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="tie01">Time End</label> <input name="tie01" id="tie01"
+						type="date" data-role="datebox" data-options='{"mode": "timebox"}'>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="com01">Comments</label>
+					<textarea cols="40" rows="8" name="com01" id="com01"></textarea>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="pic01">Picture</label>
+					<!--  hmm  -->
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="z">
+			<h4>A fine specimen indeed</h4>
+		</div>
+	</div>
+
+</body>
+</html>
