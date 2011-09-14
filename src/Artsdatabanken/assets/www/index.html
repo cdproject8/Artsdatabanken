@@ -1,198 +1,206 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<title>PhoneGap</title>
-
-
-        <link href="../libraries/touch.artsdatabanken.no/jquery-ui.1.8.11.themes.base.css" rel="stylesheet" type="text/css" media="all" />
-
-
-<link rel="stylesheet" href="../libraries/jquery_m/jquery.mobile-1.0b2.css" />
-<link rel="stylesheet" href="../libraries/jquery.mobile.datebox.css" />
-
-        <link rel="stylesheet" href="../libraries/touch.artsdatabanken.no/Artsdatabanken2.css" type="text/css">
-        </style>
-        <link href="../libraries/touch.artsdatabanken.no/Artsdatabanken.css" rel="stylesheet" type="text/css" media="all" />
-
-
-
-<script type="text/javascript" charset="utf-8" src="../libraries/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="../libraries/jquery_m/jquery.mobile-1.0b2.js"></script>
-<script type="text/javascript" charset="utf-8" src="../libraries/jquery.mobile.datebox.js"></script>
-<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
-<script type="text/javascript" charset="utf-8" src="main.js"></script>
-
+	<title>Artsdatabanken</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" charset="utf-8" src="js/compiled.js"></script>
+	<link rel="stylesheet" href="styles/compiled.css" />
 </head>
+
 <body>
-<!-- INDEX PAGE -->
-	<div data-role="page" id="main" data-theme="z">
-		<div data-role="header"  > <!-- data-theme="a" "b" "d" -->
+	<!-- INDEX PAGE -->
+	<div data-role="page" id="main">
+		<div data-role="header" data-theme="z">
+			<!-- data-theme="a" "b" "d" -->
 			<h1 class="artsdatabanken">Artsdatabanken</h1>
-			<a href="http://www.artsdatabanken.no" class="ui-btn-right" rel="external" data-icon="artsdatabanken">Om</a>
+			<a href="http://www.artsdatabanken.no" class="ui-btn-right"
+				rel="external" data-icon="artsdatabanken">Om</a>
 
 		</div>
-		<div data-role="content" id="one"  >
-			<p>Welcome to Artsdatabanken, we're counting on your work. So go out there and observe dat fauna!</p>
-			<p><a href="#species_select" data-role="button">New Observation</a></p>
-			<p><a href="#species_view" data-role="button">View Observations</a></p>
-			<p><a href="#photo" data-role="button">Take Picture</a></p>
-			<p><a href="#species_export" data-role="button">Export Observations</a></p>
+		<div data-role="content" id="one">
+			<p>Welcome to Artsdatabanken, we're counting on your work. So go
+				out there and observe dat fauna!</p>
+			<p>
+				<a href="#species_select" data-role="button">New Observation</a>
+			</p>
+			<p>
+				<a href="#species_view" data-role="button">View Observations</a>
+			</p>
+			<p>
+				<a href="#photo" data-role="button">Take Picture</a>
+			</p>
+			<p>
+				<a href="#species_export" data-role="button">Export Observations</a>
+			</p>
 		</div>
-		<div data-role="footer" ><h4>ADB Alpha 0.2</h4></div>
+		<div data-role="footer" data-theme="z">
+			<h4>ADB Alpha 0.2</h4>
+		</div>
 	</div>
 
 
-<!-- SELECT SPECIES PAGE -->
-	<div data-role="page" id="species_select" data-theme="a">
-		<div data-role="header">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Observation</h1>
+	<!-- SELECT SPECIES PAGE -->
+	<div data-role="page" id="species_select" >
+		<div data-role="header" data-theme="z">
+			<h1>Observation</h1>
 		</div>
-		<div data-role="content" data-theme="b">
+		<div data-role="content" data-theme="z">
 			<p>Which Species are you interested in?</p>
 
-<ul data-role="listview">
-    <li><a href="#obs_bird">
-        <img src="images/bird.jpg" title="Bird"/>
-        <h3>Birds</h3>
-        <p>"Caw caw ..."</p>
-    </a></li>
-    <li><a href="#obs_fish">
-        <img src="images/fish.jpg" title="Fish"/>
-        <h3>Fish</h3>
-        <p>Mhmm fish</p>
-    </a></li>
-    <li><a href="#obs_craw">
-        <img src="images/crawler.jpg" title="Crawler"/>
-        <h3>Crawler</h3>
-        <p>Creepy...</p>
-    </a></li>
-    <li><a href="#obs_mammal">
-        <img src="images/mammal.jpg" title="Mammal"/>
-        <h3>Mammal</h3>
-        <p>Ordinary mammals, for us normal people</p>
-    </a></li>
-    <li><a href="#obs_plant">
-        <img src="images/plant.jpg" title="Plant"/>
-        <h3>Plant</h3>
-        <p>Watch plants grow</p>
-    </a></li>
-    <li><a href="#obs_fungi">
-        <img src="images/fungi.jpg" title="Fungi"/>
-        <h3>Fungi</h3>
-        <p>Why did the mushroom go to the party?</p>
-    </a></li>
-    <li><a href="#obs_reptile">
-        <img src="images/reptile.jpg" title="Reptile"/>
-        <h3>Reptile</h3>
-        <p>Claws, scales and fangs</p>
-    </a></li>
-    <li><a href="#obs_marine_m">
-        <img src="images/marine_mammal.jpg" title="Marine Mammal"/>
-        <h3>Marine Mammal</h3>
-        <p>Whaeru</p>
-    </a></li>
-    <li><a href="#obs_bat">
-        <img src="images/bat.jpg" title="Bat"/>
-        <h3>Bat</h3>
-        <p>I'm blind, not deaf</p>
-    </a></li>
-    <li><a href="#obs_amphibian">
-        <img src="images/amphibian.jpg" title="lichen"/>
-        <h3>Amphibian</h3>
-        <p>Gurgle</p>
-    </a></li>
-    <li><a href="#obs_lichen">
-        <img src="images/lichen.jpg" title="Lichen"/>
-        <h3>Lichen</h3>
-        <p>Grey</p>
-    </a></li>
-    <li><a href="#obs_moss">
-        <img src="images/moss.jpg" title="Moss"/>
-        <h3>Moss</h3>
-        <p>Green</p>
-    </a></li>
-    <li><a href="#obs_algae">
-        <img src="images/algae.jpg" title="Algae"/>
-        <h3>Algae</h3>
-        <p>Bright green?</p>
-    </a></li>
-    <li><a href="#obs_mollusca">
-        <img src="images/mollusca.jpg" title="Mollusca"/>
-        <h3>Mollusca</h3>
-        <p>...</p>
-    </a></li>
-</ul>
+			<ul data-role="listview">
+				<li><a href="#obs_bird"> <img src="images/bird.jpg"
+						title="Bird" />
+						<h3>Birds</h3>
+						<p>"Caw caw ..."</p> </a></li>
+				<li><a href="#obs_fish"> <img src="images/fish.jpg"
+						title="Fish" />
+						<h3>Fish</h3>
+						<p>Mhmm fish</p> </a>
+				</li>
+				<li><a href="#obs_craw"> <img src="images/crawler.jpg"
+						title="Crawler" />
+						<h3>Crawler</h3>
+						<p>Creepy...</p> </a>
+				</li>
+				<li><a href="#obs_mammal"> <img src="images/mammal.jpg"
+						title="Mammal" />
+						<h3>Mammal</h3>
+						<p>Ordinary mammals, for us normal people</p> </a>
+				</li>
+				<li><a href="#obs_plant"> <img src="images/plant.jpg"
+						title="Plant" />
+						<h3>Plant</h3>
+						<p>Watch plants grow</p> </a>
+				</li>
+				<li><a href="#obs_fungi"> <img src="images/fungi.jpg"
+						title="Fungi" />
+						<h3>Fungi</h3>
+						<p>Why did the mushroom go to the party?</p> </a>
+				</li>
+				<li><a href="#obs_reptile"> <img src="images/reptile.jpg"
+						title="Reptile" />
+						<h3>Reptile</h3>
+						<p>Claws, scales and fangs</p> </a>
+				</li>
+				<li><a href="#obs_marine_m"> <img
+						src="images/marine_mammal.jpg" title="Marine Mammal" />
+						<h3>Marine Mammal</h3>
+						<p>Whaeru</p> </a>
+				</li>
+				<li><a href="#obs_bat"> <img src="images/bat.jpg"
+						title="Bat" />
+						<h3>Bat</h3>
+						<p>I'm blind, not deaf</p> </a>
+				</li>
+				<li><a href="#obs_amphibian"> <img
+						src="images/amphibian.jpg" title="lichen" />
+						<h3>Amphibian</h3>
+						<p>Gurgle</p> </a>
+				</li>
+				<li><a href="#obs_lichen"> <img src="images/lichen.jpg"
+						title="Lichen" />
+						<h3>Lichen</h3>
+						<p>Grey</p> </a>
+				</li>
+				<li><a href="#obs_moss"> <img src="images/moss.jpg"
+						title="Moss" />
+						<h3>Moss</h3>
+						<p>Green</p> </a>
+				</li>
+				<li><a href="#obs_algae"> <img src="images/algae.jpg"
+						title="Algae" />
+						<h3>Algae</h3>
+						<p>Bright green?</p> </a>
+				</li>
+				<li><a href="#obs_mollusca"> <img src="images/mollusca.jpg"
+						title="Mollusca" />
+						<h3>Mollusca</h3>
+						<p>...</p> </a>
+				</li>
+			</ul>
 
 		</div>
-		<div data-role="footer" data-theme="d"><h4>Fancy</h4></div>
+		<div data-role="footer" data-theme="z">
+			<h4>Fancy</h4>
+		</div>
 	</div>
 
 
-<!-- BIRD OBSERVATION PAGE -->
-	<div data-role="page" id="obs_bird" data-theme="a">
-		<div data-role="header">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Birdobservation</h1>
+	<!-- BIRD OBSERVATION PAGE -->
+	<div data-role="page" id="obs_bird" data-theme="z" >
+		<div data-role="header" data-theme="z">
+			<h1>Birdobservation</h1>
 		</div>
-		<div data-role="content" data-theme="b">
-			<form id="observation_form" action="form.html" method="post"> 
-			<div data-role="fieldcontain">
-				<label for="location" >Location</label>
-					<select name="location" id="location">
+		<div data-role="content" data-theme="z">
+			<form id="observation_form" action="form.html" method="post">
+				<div data-role="fieldcontain">
+					<label for="location">Location</label> <select name="location"
+						id="location">
 						<option value="nide0">Niderø</option>
 						<option value="nide1">-Artsdatabankens Hage</option>
 						<option value="nide2">-Niderø nord</option>
 						<option value="nardo0">Nardo</option>
 					</select>
-			</div>
-			<large><p><div style="display: inline-block; width:70% !important;" >Species</div><div style="display: inline-block;"># Observed</div></p></large>
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">Species</div>
+					<div class="ui-block-b"># Observed</div>
+				</div>
 				<div id="species_row">
-					<div data-role="fieldcontain">
-						<input type="text" name="nam01" id="spe01" class="ui-input-name-spec" value="Blackbird"  />
-						<input type="number" name="num01" id="spec01" class="ui-input-numb-spec" value="1"  />
+					<div data-role="fieldcontain" class="ui-grid-a">
+						<div class="ui-block-a">
+							<input type="text" name="nam01" id="spe01" class="ui-input-name-spec fill" value="Blackbird" />
+						</div>
+						<div class="ui-block-b">
+							<input type="number" name="num01" id="spec01" class="ui-input-numb-spec fill" />
+						</div>
 					</div>
-					<a href="#extended_inf" data-role="button" data-inline="true" class='ui-btn-right add_info' data-icon='arrow-r'>Add More</a>
-					<hr/>
+					<a href="#extended_inf" data-role="button" data-inline="true"
+						class='ui-btn-right add_info' data-icon='arrow-r'>Add More</a>
+					<hr />
 				</div>
 			</form>
-			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">Add another species</a>	
+			<a data-role="button" href=""
+				onClick="$('#species_row').clone().appendTo('#observation_form');">Add
+				another species</a>
 		</div>
-		<div data-role="footer" data-theme="d"><a href="#submit" data-role="button" >Submit</a></div>
+		<div data-role="footer" data-theme="z">
+			<a href="#submit" data-role="button">Submit</a>
+		</div>
 	</div>
 
 
-<!-- EXTENDED INFO PAGE -->
-	<div data-role="page" id="extended_inf">
-		<div data-role="header"  data-theme="a">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Extenden info for 'x' </h1>
-
+	<!-- EXTENDED INFO PAGE -->
+	<div data-role="page" id="extended_inf" >
+		<div data-role="header" data-theme="z">
+			<h1>Extenden info for 'x'</h1>
 		</div>
-		<div data-role="content"  data-theme="b">
+		<div data-role="content" data-theme="z">
 			<div data-role="fieldcontain">
-				<label for="nam01" >Species</label>
-				<input type="text" name="nam01" id="nam01" value=""  />
+				<label for="nam01">Species</label> <input type="text" name="nam01"
+					id="nam01" value="" />
 			</div>
 			<div data-role="fieldcontain">
-				<label for="num01" >Number</label>
-				<input type="number" name="num01" id="num01" value="1"  />
+				<label for="num01">Number</label> <input type="number" name="num01"
+					id="num01" value="1" />
 			</div>
 			<div class="extended_options">
 				<div data-role="fieldcontain">
-					<label for="sex01" class="select">Sex</label>
-					<select name="sex01" id="sex01">
-						<option value="na" >N/A</option>
+					<label for="sex01" class="select">Sex</label> <select name="sex01"
+						id="sex01">
+						<option value="na">N/A</option>
 						<option value="male">Male</option>
 						<option value="female">Female</option>
 					</select>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="age01" >Age</label>
-					<input type="number" name="age01" id="age01" value=""  />
+					<label for="age01">Age</label> <input type="number" name="age01"
+						id="age01" value="" />
 				</div>
 				<div data-role="fieldcontain">
-					<label for="act01" class="select">Activity</label>
-					<select name="act01" id="act01">
+					<label for="act01" class="select">Activity</label> <select
+						name="act01" id="act01">
 						<option value="rest">Resting</option>
 						<option value="nourish">Seeking Nourishment</option>
 						<option value="flying">Flying</option>
@@ -200,51 +208,50 @@
 					</select>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="tim01" >Time Start</label>
-					<input name="tim01" id="tim01" type="date" data-role="datebox"
-					   data-options='{"mode": "timebox"}'>
+					<label for="tim01">Time Start</label> <input name="tim01"
+						id="tim01" type="date" data-role="datebox"
+						data-options='{"mode": "timebox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="dat01" >Date Start</label>
-					<input name="dat01" id="dat01" type="date" data-role="datebox"
-					   data-options='{"mode": "calbox"}'>
+					<label for="dat01">Date Start</label> <input name="dat01"
+						id="dat01" type="date" data-role="datebox"
+						data-options='{"mode": "calbox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="dae01">Date End</label>
-						<input name="dae01" type="date" data-role="datebox" id="dae01"
-    						data-options='{"mode": "calbox"}' />
+					<label for="dae01">Date End</label> <input name="dae01" type="date"
+						data-role="datebox" id="dae01" data-options='{"mode": "calbox"}' />
 				</div>
 				<div data-role="fieldcontain">
-					<label for="tie01" >Time End</label>
-					<input name="tie01" id="tie01" type="date" data-role="datebox"
-					   data-options='{"mode": "timebox"}'>
+					<label for="tie01">Time End</label> <input name="tie01" id="tie01"
+						type="date" data-role="datebox" data-options='{"mode": "timebox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="com01" >Comments</label>
+					<label for="com01">Comments</label>
 					<textarea cols="40" rows="8" name="com01" id="com01"></textarea>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="pic01" >Picture</label>
+					<label for="pic01">Picture</label>
 					<!--  hmm  -->
 				</div>
 			</div>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>A fine specimen indeed</h4></div>
+		<div data-role="footer" data-theme="z">
+			<h4>A fine specimen indeed</h4>
+		</div>
 	</div>
 
-<!-- SUBMITTED COMPLETE PAGE -->
-	<div data-role="page" id="submit" data-theme="a">
-		<div data-role="header">
-			<a href='#' class='ui-btn-left ui-btn-back' data-icon='arrow-l'>Back</a><h1>Observation is saved</h1>
+	<!-- SUBMITTED COMPLETE PAGE -->
+	<div data-role="page" id="submit" >
+		<div data-role="header" data-theme="z">
+			<h1>Observation is saved</h1>
 		</div>
-		<div data-role="content" data-theme="b">
-			<a href="#main" data-role="button" data-inline="true">Return to start menu</a>
-			</p>
+		<div data-role="content" data-theme="z">
+			<a href="#main" data-role="button" data-inline="true">Return to
+				start menu</a>
 		</div>
-		<div data-role="footer" data-theme="d"><h4>Score!</h4></div>
+		<div data-role="footer" data-theme="z">
+			<h4>Score!</h4>
+		</div>
 	</div>
-
-
-
 </body>
 </html>

@@ -1,3 +1,16 @@
+// Init jQuery mobile
+$(document).bind("mobileinit", function() {
+	// jQuery mobile configuration
+	$.extend($.mobile, {
+		// Config..
+	});
+	$.mobile.page.prototype.options.addBackBtn = true;
+	
+
+	// This will be executed when jQuery mobile is loaded,
+	// place code here..
+});
+
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady(){
