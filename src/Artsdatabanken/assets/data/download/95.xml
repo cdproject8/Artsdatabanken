@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Artstre xmlns="http://artsdatabanken.no/Artsnavnebase">
+  <LatinskNavn LatinskNavnID="95" OverordnaLatinskNavnID="89" Kategori="Orden" KategoriID="11" Hovedstatus="Gyldig">
+    <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+    <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+    <Klasse KategoriID="6" LatinskNavnID="89" TypeEksID="89">Insecta</Klasse>
+    <Orden>Embiidina</Orden>
+    <VitenskapligNavn>Embiidina</VitenskapligNavn>
+    <Takson TaksonID="95" TypeEksID="95" />
+  </LatinskNavn>
+</Artstre>

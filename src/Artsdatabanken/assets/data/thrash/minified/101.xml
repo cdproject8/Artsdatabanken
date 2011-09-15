@@ -1,0 +1,6351 @@
+<?xml version="1.0"?>
+<namelist xmlns:adb="http://artsdatabanken.no/Artsnavnebase">
+<name>Abraxas grossulariata</name>
+<name>Abraxas</name>
+<name>Abraxas sylvata</name>
+<name>Abrostola</name>
+<name>Abrostola trigemina</name>
+<name>Abrostola tripartita</name>
+<name>Abrostola triplasia</name>
+<name>Acanthopsyche atra</name>
+<name>Acanthopsyche</name>
+<name>Acasis appensata</name>
+<name>Acasis</name>
+<name>Acasis viretata</name>
+<name>Acentria ephemerella</name>
+<name>Acentria</name>
+<name>Acentropinae</name>
+<name>Acerbia alpina</name>
+<name>Acerbia</name>
+<name>Acherontia atropos</name>
+<name>Acherontia</name>
+<name>Achlya flavicornis</name>
+<name>Achlya</name>
+<name>Achroia grisella</name>
+<name>Achroia</name>
+<name>Acleris abietana</name>
+<name>Acleris arcticana</name>
+<name>Acleris aspersana</name>
+<name>Acleris bergmanniana</name>
+<name>Acleris comariana</name>
+<name>Acleris cristana</name>
+<name>Acleris effractana</name>
+<name>Acleris emargana</name>
+<name>Acleris ferrugana</name>
+<name>Acleris fimbriana</name>
+<name>Acleris forsskaleana</name>
+<name>Acleris hastiana</name>
+<name>Acleris holmiana</name>
+<name>Acleris hyemana</name>
+<name>Acleris implexana</name>
+<name>Acleris laterana</name>
+<name>Acleris lipsiana</name>
+<name>Acleris literana</name>
+<name>Acleris logiana</name>
+<name>Acleris maccana</name>
+<name>Acleris</name>
+<name>Acleris notana</name>
+<name>Acleris obtusana</name>
+<name>Acleris rhombana</name>
+<name>Acleris roscidana</name>
+<name>Acleris rufana</name>
+<name>Acleris schalleriana</name>
+<name>Acleris shepherdana</name>
+<name>Acleris sparsana</name>
+<name>Acleris umbrana</name>
+<name>Acleris variegana</name>
+<name>Acompsia cinerella</name>
+<name>Acompsia</name>
+<name>Acontia</name>
+<name>Acontia trabealis</name>
+<name>Acontiinae</name>
+<name>Acossus</name>
+<name>Acossus terebra</name>
+<name>Acrobasis advenella</name>
+<name>Acrobasis consociella</name>
+<name>Acrobasis marmorea</name>
+<name>Acrobasis</name>
+<name>Acrobasis repandana</name>
+<name>Acrobasis sodalella</name>
+<name>Acrobasis tumidana</name>
+<name>Acrocercops brongniardella</name>
+<name>Acrocercops</name>
+<name>Acrolepiinae</name>
+<name>Acrolepiopsis assectella</name>
+<name>Acrolepiopsis betulella</name>
+<name>Acrolepiopsis</name>
+<name>Acronicta aceris</name>
+<name>Acronicta alni</name>
+<name>Acronicta auricoma</name>
+<name>Acronicta cinerea</name>
+<name>Acronicta euphorbiae</name>
+<name>Acronicta leporina</name>
+<name>Acronicta megacephala</name>
+<name>Acronicta menyanthidis</name>
+<name>Acronicta</name>
+<name>Acronicta psi</name>
+<name>Acronicta rumicis</name>
+<name>Acronicta tridens</name>
+<name>Acronictinae</name>
+<name>Actebia fennica</name>
+<name>Actebia</name>
+<name>Actebia praecox</name>
+<name>Actinotia</name>
+<name>Actinotia polyodon</name>
+<name>Adaina microdactyla</name>
+<name>Adaina</name>
+<name>Adela croesella</name>
+<name>Adela cuprella</name>
+<name>Adela</name>
+<name>Adela reaumurella</name>
+<name>Adelidae</name>
+<name>Adelinae</name>
+<name>Adeloidea</name>
+<name>adippeperlemorveng</name>
+<name>adippeperlemorvinge</name>
+<name>admiral</name>
+<name>Adoxophyes</name>
+<name>Adoxophyes orana</name>
+<name>Adscita</name>
+<name>Adscita statices</name>
+<name>Aethalura</name>
+<name>Aethalura punctulata</name>
+<name>Aethes cnicana</name>
+<name>Aethes deutschiana</name>
+<name>Aethes dilucidana</name>
+<name>Aethes hartmanniana</name>
+<name>Aethes kindermanniana</name>
+<name>Aethes margaritana</name>
+<name>Aethes</name>
+<name>Aethes rubigana</name>
+<name>Aethes rutilana</name>
+<name>Aethes smeathmanniana</name>
+<name>Aethes triangulana</name>
+<name>Agapeta hamana</name>
+<name>Agapeta</name>
+<name>Agapeta zoegana</name>
+<name>Aglais io</name>
+<name>Aglais</name>
+<name>Aglais urticae</name>
+<name>aglajaperlemorveng</name>
+<name>aglajaperlemorvinge</name>
+<name>Aglia</name>
+<name>Aglia tau</name>
+<name>Agliinae</name>
+<name>Aglossa</name>
+<name>Aglossa pinguinalis</name>
+<name>Agnathosia mendicella</name>
+<name>Agnathosia</name>
+<name>agnbøkmott</name>
+<name>Agonopterix alstromeriana</name>
+<name>Agonopterix angelicella</name>
+<name>Agonopterix arctica</name>
+<name>Agonopterix arenella</name>
+<name>Agonopterix assimilella</name>
+<name>Agonopterix astrantiae</name>
+<name>Agonopterix broennoeensis</name>
+<name>Agonopterix capreolella</name>
+<name>Agonopterix ciliella</name>
+<name>Agonopterix conterminella</name>
+<name>Agonopterix curvipunctosa</name>
+<name>Agonopterix heracliana</name>
+<name>Agonopterix hypericella</name>
+<name>Agonopterix kaekeritziana</name>
+<name>Agonopterix liturosa</name>
+<name>Agonopterix</name>
+<name>Agonopterix nervosa</name>
+<name>Agonopterix ocellana</name>
+<name>Agonopterix pallorella</name>
+<name>Agonopterix propinquella</name>
+<name>Agonopterix quadripunctata</name>
+<name>Agonopterix scopariella</name>
+<name>Agonopterix selini</name>
+<name>Agonopterix subpropinquella</name>
+<name>Agonoxenidae</name>
+<name>Agriades aquilo</name>
+<name>Agriades glandon</name>
+<name>Agriades</name>
+<name>Agriopis aurantiaria</name>
+<name>Agriopis leucophaearia</name>
+<name>Agriopis marginaria</name>
+<name>Agriopis</name>
+<name>Agriphila biarmicus</name>
+<name>Agriphila deliella</name>
+<name>Agriphila geniculea</name>
+<name>Agriphila inquinatella</name>
+<name>Agriphila latistria</name>
+<name>Agriphila</name>
+<name>Agriphila selasella</name>
+<name>Agriphila straminella</name>
+<name>Agriphila tristella</name>
+<name>Agrius convolvuli</name>
+<name>Agrius</name>
+<name>Agrochola circellaris</name>
+<name>Agrochola helvola</name>
+<name>Agrochola litura</name>
+<name>Agrochola lota</name>
+<name>Agrochola lunosa</name>
+<name>Agrochola macilenta</name>
+<name>Agrochola</name>
+<name>Agrochola nitida</name>
+<name>Agrotera</name>
+<name>Agrotera nemoralis</name>
+<name>Agrotis cinerea</name>
+<name>Agrotis clavis</name>
+<name>Agrotis exclamationis</name>
+<name>Agrotis ipsilon</name>
+<name>Agrotis luehri</name>
+<name>Agrotis</name>
+<name>Agrotis ripae</name>
+<name>Agrotis segetum</name>
+<name>Agrotis vestigialis</name>
+<name>alantfjærmøll</name>
+<name>alantfjørmøll</name>
+<name>alantstengelviklar</name>
+<name>alantstengelvikler</name>
+<name>Albulina</name>
+<name>Albulina optilete</name>
+<name>Albulina orbitulus</name>
+<name>Alcis jubata</name>
+<name>Alcis</name>
+<name>Alcis repandata</name>
+<name>Aleimma loeflingiana</name>
+<name>Aleimma</name>
+<name>Algedonia</name>
+<name>Algedonia terrealis</name>
+<name>Alloclemensia mesospilella</name>
+<name>Alloclemensia</name>
+<name>Allophyes</name>
+<name>Allophyes oxyacanthae</name>
+<name>almegulfly</name>
+<name>almekveldviklar</name>
+<name>almekveldvikler</name>
+<name>almemålar</name>
+<name>almemåler</name>
+<name>almepraktmålar</name>
+<name>almepraktmåler</name>
+<name>almesmalmott</name>
+<name>almesolviklar</name>
+<name>almesolvikler</name>
+<name>almestjertveng</name>
+<name>almestjertvinge</name>
+<name>Alsophila aescularia</name>
+<name>Alsophila</name>
+<name>Alsophilinae</name>
+<name>altasmalmott</name>
+<name>Altenia</name>
+<name>Altenia perspersella</name>
+<name>Altenia scriptella</name>
+<name>Alucita hexadactyla</name>
+<name>Alucita</name>
+<name>Alucitidae</name>
+<name>Alucitoidea</name>
+<name>alvesmygar</name>
+<name>alvesmyger</name>
+<name>Amblyptilia acanthadactyla</name>
+<name>Amblyptilia</name>
+<name>Amblyptilia punctidactyla</name>
+<name>Ammoconia caecimacula</name>
+<name>Ammoconia</name>
+<name>Amphipoea crinanensis</name>
+<name>Amphipoea fucosa</name>
+<name>Amphipoea lucens</name>
+<name>Amphipoea</name>
+<name>Amphipoea oculea</name>
+<name>Amphipyra</name>
+<name>Amphipyra perflua</name>
+<name>Amphipyra pyramidea</name>
+<name>Amphipyra tragopoginis</name>
+<name>Amphipyrinae</name>
+<name>Amphisbatidae</name>
+<name>Amphisbatis incongruella</name>
+<name>Amphisbatis</name>
+<name>Anacampsis blattariella</name>
+<name>Anacampsis</name>
+<name>Anacampsis populella</name>
+<name>Anacampsis temerella</name>
+<name>Anania coronata</name>
+<name>Anania funebris</name>
+<name>Anania fuscalis</name>
+<name>Anania hortulata</name>
+<name>Anania</name>
+<name>Anania perlucidalis</name>
+<name>Anania terrealis</name>
+<name>Anania verbascalis</name>
+<name>Anaplectoides</name>
+<name>Anaplectoides prasina</name>
+<name>Anarta colletti</name>
+<name>Anarta melanopa</name>
+<name>Anarta myrtilli</name>
+<name>Anarta</name>
+<name>Anarta trifolii</name>
+<name>Anartomima</name>
+<name>Anartomima secedens</name>
+<name>Anchinia daphnella</name>
+<name>Anchinia</name>
+<name>Ancylis achatana</name>
+<name>Ancylis apicella</name>
+<name>Ancylis badiana</name>
+<name>Ancylis comptana</name>
+<name>Ancylis diminutana</name>
+<name>Ancylis geminana</name>
+<name>Ancylis laetana</name>
+<name>Ancylis mitterbacheriana</name>
+<name>Ancylis myrtillana</name>
+<name>Ancylis</name>
+<name>Ancylis subarcuana</name>
+<name>Ancylis tineana</name>
+<name>Ancylis uncella</name>
+<name>Ancylis unculana</name>
+<name>Ancylis unguicella</name>
+<name>Ancylis upupana</name>
+<name>Ancylosis cinnamomella</name>
+<name>Ancylosis</name>
+<name>andematdammott</name>
+<name>Anerastia lotella</name>
+<name>Anerastia</name>
+<name>Angerona</name>
+<name>Angerona prunaria</name>
+<name>Anorthoa munda</name>
+<name>Anorthoa</name>
+<name>Antequerinae</name>
+<name>Anthocharis cardamines</name>
+<name>Anthocharis</name>
+<name>Anthophila fabriciana</name>
+<name>Anthophila</name>
+<name>Anticlea badiata</name>
+<name>Anticlea derivata</name>
+<name>Anticlea</name>
+<name>Anticollix</name>
+<name>Anticollix sparsata</name>
+<name>Antispila metallella</name>
+<name>Antispila</name>
+<name>Antitype chi</name>
+<name>Antitype</name>
+<name>Apamea anceps</name>
+<name>Apamea crenata</name>
+<name>Apamea exulis</name>
+<name>Apamea furva</name>
+<name>Apamea illyria</name>
+<name>Apamea lateritia</name>
+<name>Apamea lithoxylaea</name>
+<name>Apamea maillardi</name>
+<name>Apamea monoglypha</name>
+<name>Apamea</name>
+<name>Apamea oblonga</name>
+<name>Apamea ophiogramma</name>
+<name>Apamea remissa</name>
+<name>Apamea rubrirena</name>
+<name>Apamea schildei</name>
+<name>Apamea scolopacina</name>
+<name>Apamea sordens</name>
+<name>Apamea sublustris</name>
+<name>Apamea unanimis</name>
+<name>Apamea zeta</name>
+<name>Apeira</name>
+<name>Apeira syringaria</name>
+<name>Aphantopus hyperantus</name>
+<name>Aphantopus</name>
+<name>Aphelia</name>
+<name>Aphelia paleana</name>
+<name>Aphelia unitana</name>
+<name>Aphelia viburnana</name>
+<name>Aphelia viburniana</name>
+<name>Aphomia</name>
+<name>Aphomia sociella</name>
+<name>Aphomia zelleri</name>
+<name>Aplocera efformata</name>
+<name>Aplocera</name>
+<name>Aplocera plagiata</name>
+<name>Aplota</name>
+<name>Aplota palpella</name>
+<name>Aplota palpellus</name>
+<name>Apocheima</name>
+<name>Apocheima pilosaria</name>
+<name>Apoda limacodes</name>
+<name>Apoda</name>
+<name>apollosommarfugl</name>
+<name>apollosommerfugl</name>
+<name>Apomyelois bistriatella</name>
+<name>Apomyelois</name>
+<name>Aporia crataegi</name>
+<name>Aporia</name>
+<name>Aporophyla lueneburgensis</name>
+<name>Aporophyla lutulenta</name>
+<name>Aporophyla</name>
+<name>Aporophyla nigra</name>
+<name>Apotomis algidana</name>
+<name>Apotomis betuletana</name>
+<name>Apotomis capreana</name>
+<name>Apotomis demissana</name>
+<name>Apotomis fraterculana</name>
+<name>Apotomis infida</name>
+<name>Apotomis inundana</name>
+<name>Apotomis lemniscatana</name>
+<name>Apotomis moestana</name>
+<name>Apotomis</name>
+<name>Apotomis sauciana</name>
+<name>Apotomis semifasciana</name>
+<name>Apotomis sororculana</name>
+<name>Apotomis turbidana</name>
+<name>Aproaerema anthyllidella</name>
+<name>Aproaerema</name>
+<name>Apterogenum</name>
+<name>Apterogenum ypsillon</name>
+<name>Archanara algae</name>
+<name>Archanara dissoluta</name>
+<name>Archanara</name>
+<name>Archanara sparganii</name>
+<name>Archiearinae</name>
+<name>Archiearis</name>
+<name>Archiearis notha</name>
+<name>Archiearis parthenias</name>
+<name>Archinemapogon</name>
+<name>Archinemapogon yildizae</name>
+<name>Archips betulana</name>
+<name>Archips crataegana</name>
+<name>Archips</name>
+<name>Archips oporana</name>
+<name>Archips podana</name>
+<name>Archips rosana</name>
+<name>Archips xylosteana</name>
+<name>Arctia caja</name>
+<name>Arctia</name>
+<name>Arctiinae</name>
+<name>Arenostola</name>
+<name>Arenostola phragmitidis</name>
+<name>Argolamprotes micella</name>
+<name>Argolamprotes</name>
+<name>argusblåveng</name>
+<name>argusblåvinge</name>
+<name>Argynnis adippe</name>
+<name>Argynnis aglaja</name>
+<name>Argynnis</name>
+<name>Argynnis niobe</name>
+<name>Argynnis paphia</name>
+<name>Argyresthia abdominalis</name>
+<name>Argyresthia albistria</name>
+<name>Argyresthia arceuthina</name>
+<name>Argyresthia aurulentella</name>
+<name>Argyresthia bergiella</name>
+<name>Argyresthia bonnetella</name>
+<name>Argyresthia brockeella</name>
+<name>Argyresthia conjugella</name>
+<name>Argyresthia curvella</name>
+<name>Argyresthia dilectella</name>
+<name>Argyresthia fundella</name>
+<name>Argyresthia glabratella</name>
+<name>Argyresthia glaucinella</name>
+<name>Argyresthia goedartella</name>
+<name>Argyresthia ivella</name>
+<name>Argyresthia laevigatella</name>
+<name>Argyresthia</name>
+<name>Argyresthia praecocella</name>
+<name>Argyresthia pruniella</name>
+<name>Argyresthia pulchella</name>
+<name>Argyresthia pygmaeella</name>
+<name>Argyresthia retinella</name>
+<name>Argyresthia semifusca</name>
+<name>Argyresthia semitestacella</name>
+<name>Argyresthia sorbiella</name>
+<name>Argyresthia spinosella</name>
+<name>Argyresthia trifasciata</name>
+<name>Argyresthiidae</name>
+<name>Argyroploce aquilonana</name>
+<name>Argyroploce arbutella</name>
+<name>Argyroploce concretana</name>
+<name>Argyroploce dalecarliana</name>
+<name>Argyroploce externa</name>
+<name>Argyroploce lediana</name>
+<name>Argyroploce</name>
+<name>Argyroploce noricana</name>
+<name>Argyroploce roseomaculana</name>
+<name>Argyrotaenia ljungiana</name>
+<name>Argyrotaenia</name>
+<name>Arichanna melanaria</name>
+<name>Arichanna</name>
+<name>Aricia artaxerxes</name>
+<name>Aricia eumedon</name>
+<name>Aricia</name>
+<name>Aricia nicias</name>
+<name>Aristotelia brizella</name>
+<name>Aristotelia ericinella</name>
+<name>Aristotelia heliacella</name>
+<name>Aristotelia</name>
+<name>arktisk perlemorveng</name>
+<name>arktisk perlemorvinge</name>
+<name>Aroga</name>
+<name>Aroga velocella</name>
+<name>arvedvergmålar</name>
+<name>arvedvergmåler</name>
+<name>askeflikmålar</name>
+<name>askeflikmåler</name>
+<name>askekveldfly</name>
+<name>askesmalmott</name>
+<name>askesolviklar</name>
+<name>askesolvikler</name>
+<name>askeviklar</name>
+<name>askevikler</name>
+<name>Aspilapteryx</name>
+<name>Aspilapteryx tringipennella</name>
+<name>Assara</name>
+<name>Assara terebrella</name>
+<name>Asthena albulata</name>
+<name>Asthena</name>
+<name>Atemelia</name>
+<name>Atemelia torquatella</name>
+<name>Athetis gluteosa</name>
+<name>Athetis</name>
+<name>Athetis pallustris</name>
+<name>Athrips mouffetella</name>
+<name>Athrips</name>
+<name>Athrips pruinosella</name>
+<name>Athrips tetrapunctella</name>
+<name>Atolmis</name>
+<name>Atolmis rubricollis</name>
+<name>augehalvspinnar</name>
+<name>augekveldviklar</name>
+<name>augemålar</name>
+<name>augustdvergmålar</name>
+<name>augustdvergmåler</name>
+<name>augustkveldviklar</name>
+<name>augustkveldvikler</name>
+<name>augustteglfly</name>
+<name>augustvikkefly</name>
+<name>aurorasommarfugl</name>
+<name>aurorasommerfugl</name>
+<name>austleg bladviklar</name>
+<name>austleg bloddropesvermar</name>
+<name>austleg bogemålar</name>
+<name>austleg langvengfly</name>
+<name>austleg olivenmålar</name>
+<name>austleg skotviklar</name>
+<name>austleg stengelfly</name>
+<name>austleg viklarfly</name>
+<name>Autographa bractea</name>
+<name>Autographa buraetica</name>
+<name>Autographa gamma</name>
+<name>Autographa jota</name>
+<name>Autographa macrogamma</name>
+<name>Autographa mandarina</name>
+<name>Autographa</name>
+<name>Autographa pulchrina</name>
+<name>Autostichidae</name>
+<name>Aventiinae</name>
+<name>Axylia</name>
+<name>Axylia putris</name>
+<name>Bactra furfurana</name>
+<name>Bactra lacteana</name>
+<name>Bactra lancealana</name>
+<name>Bactra</name>
+<name>Bactra robustana</name>
+<name>bakkegråviklar</name>
+<name>bakkegråvikler</name>
+<name>bakkesmalmott</name>
+<name>bakkesmygar</name>
+<name>bakkesmyger</name>
+<name>bakkestjernefjærmøll</name>
+<name>bakkestjernefjørmøll</name>
+<name>bakkestjernepraktviklar</name>
+<name>bakkestjernepraktvikler</name>
+<name>bakkeurtefly</name>
+<name>bandbjølleviklar</name>
+<name>bandbloddropesvermar</name>
+<name>bandborkmålar</name>
+<name>bandduskfly</name>
+<name>banddvergmålar</name>
+<name>bandengmott</name>
+<name>bandet vårtannspinnar</name>
+<name>bandfjellfly</name>
+<name>bandgråviklar</name>
+<name>bandhalmmott</name>
+<name>bandhermelinmålar</name>
+<name>bandlauvviklar</name>
+<name>bandmosemott</name>
+<name>bandolivenmålar</name>
+<name>bandprydviklar</name>
+<name>bandringspinnar</name>
+<name>bandsmalmott</name>
+<name>bandsolviklar</name>
+<name>bandsumpviklar</name>
+<name>Baptria</name>
+<name>Baptria tibiale</name>
+<name>barkmosemott</name>
+<name>barkvikler</name>
+<name>barlavspinnar</name>
+<name>barlavspinner</name>
+<name>barskogfly</name>
+<name>barskogglansviklar</name>
+<name>barskogglansvikler</name>
+<name>barskogmålar</name>
+<name>barskogmåler</name>
+<name>barskognonne</name>
+<name>bartreglansviklar</name>
+<name>bartreglansvikler</name>
+<name>bartrekveldviklar</name>
+<name>bartrekveldvikler</name>
+<name>bartremunkefly</name>
+<name>bartreviklar</name>
+<name>bartrevikler</name>
+<name>Batia internella</name>
+<name>Batia</name>
+<name>Batia unitella</name>
+<name>Batrachedra</name>
+<name>Batrachedra pinicolella</name>
+<name>Batrachedra praeangusta</name>
+<name>Batrachedridae</name>
+<name>Bedellia</name>
+<name>Bedellia somnulentella</name>
+<name>Bedelliidae</name>
+<name>beinvedspinnmøll</name>
+<name>beiteengmott</name>
+<name>beitenebbmott</name>
+<name>Bembecia ichneumoniformis</name>
+<name>Bembecia</name>
+<name>Bena bicolorana</name>
+<name>Bena</name>
+<name>berberisbladviklar</name>
+<name>berberisbladvikler</name>
+<name>berberisduskmålar</name>
+<name>berberisduskmåler</name>
+<name>bergknappsmalmott</name>
+<name>bergmosemott</name>
+<name>bergmyntefjærmøll</name>
+<name>bergmyntefjørmøll</name>
+<name>bergprydviklar</name>
+<name>bergprydvikler</name>
+<name>bergringveng</name>
+<name>bergringvinge</name>
+<name>bergurtemålar</name>
+<name>bergurtemåler</name>
+<name>Biston betularia</name>
+<name>Biston</name>
+<name>Biston strataria</name>
+<name>bjørkebredmøll</name>
+<name>bjørkebreimøll</name>
+<name>bjørkeflatviklar</name>
+<name>bjørkeflatvikler</name>
+<name>bjørkeglassvinge</name>
+<name>bjørkeglasveng</name>
+<name>bjørkehalvspinnar</name>
+<name>bjørkehalvspinner</name>
+<name>bjørkekveldfly</name>
+<name>bjørkekveldviklar</name>
+<name>bjørkekveldvikler</name>
+<name>bjørkelauvmålar</name>
+<name>bjørkelauvviklar</name>
+<name>bjørkelurvemålar</name>
+<name>bjørkelurvemåler</name>
+<name>bjørkeløvmåler</name>
+<name>bjørkeløvvikler</name>
+<name>bjørkesekkspinnar</name>
+<name>bjørke-sekkspinner</name>
+<name>bjørkesigdveng</name>
+<name>bjørkesigdviklar</name>
+<name>bjørkesigdvikler</name>
+<name>bjørkesigdvinge</name>
+<name>bjørkesmalmott</name>
+<name>bjørkesolviklar</name>
+<name>bjørkesolvikler</name>
+<name>bjørkespinnar</name>
+<name>bjørkespinner</name>
+<name>bjørketannspinnar</name>
+<name>bjørketannspinner</name>
+<name>bjørketungemålar</name>
+<name>bjørketungemåler</name>
+<name>bjørkevårmålar</name>
+<name>bjørkevårmåler</name>
+<name>bjørnebærbladviklar</name>
+<name>bjørnebærbladvikler</name>
+<name>Blastobasidae</name>
+<name>Blastodacna atra</name>
+<name>Blastodacna</name>
+<name>bleik bladmålar</name>
+<name>bleik dvergmålar</name>
+<name>bleik engmott</name>
+<name>bleik engmålar</name>
+<name>bleik gullrisfjørmøll</name>
+<name>bleik haustmålar</name>
+<name>bleik knoppurtflatmøll</name>
+<name>bleik kålmott</name>
+<name>bleik mosemott</name>
+<name>bleik månemålar</name>
+<name>bleik nebbmott</name>
+<name>bleik ringmålar</name>
+<name>bleik roseviklar</name>
+<name>bleik smalmott</name>
+<name>bleik stråsekkspinnar</name>
+<name>bleikt gulfly</name>
+<name>bleikt stengelfly</name>
+<name>bleik urtemålar</name>
+<name>blek bladmåler</name>
+<name>blek dvergmåler</name>
+<name>blek engmott</name>
+<name>blek engmåler</name>
+<name>blek gullrisfjærmøll</name>
+<name>blek høstmåler</name>
+<name>blek knoppurtflatmøll</name>
+<name>blek kålmott</name>
+<name>blek mosemott</name>
+<name>blek månemåler</name>
+<name>blek nebbmott</name>
+<name>blek ringmåler</name>
+<name>blek rosevikler</name>
+<name>blek smalmott</name>
+<name>blek stråsekkspinner</name>
+<name>blekt gulfly</name>
+<name>blekt stengelfly</name>
+<name>blek urtemåler</name>
+<name>Blepharita</name>
+<name>Blepharita satura</name>
+<name>blodengmott</name>
+<name>blodtoppraktviklar</name>
+<name>blodtoppraktvikler</name>
+<name>blokkebærkveldviklar</name>
+<name>blokkebærkveldvikler</name>
+<name>blokkebærsmalmott</name>
+<name>blokkebærsolviklar</name>
+<name>blokkebærsolvikler</name>
+<name>blybladviklar</name>
+<name>blybladvikler</name>
+<name>blygrå lavspinnar</name>
+<name>blygrå lavspinner</name>
+<name>blåbærbladmålar</name>
+<name>blåbærbladmåler</name>
+<name>blåbærblomstermålar</name>
+<name>blåbærblomstmåler</name>
+<name>blåbærflatviklar</name>
+<name>blåbærflatvikler</name>
+<name>blåbærfly</name>
+<name>blåbærhakeviklar</name>
+<name>blåbærhakevikler</name>
+<name>blåbærmålar</name>
+<name>blåbærmåler</name>
+<name>blåbærnebbfly</name>
+<name>blåbærsigdviklar</name>
+<name>blåbærsigdvikler</name>
+<name>blåbærurtemålar</name>
+<name>blåbærurtemåler</name>
+<name>blåfjærfly</name>
+<name>blåfjørfly</name>
+<name>blåflekket fugleskittvikler</name>
+<name>blåflekket fugleskitviklar</name>
+<name>blågrått haustfly</name>
+<name>blågrått høstfly</name>
+<name>blågrått kveldfly</name>
+<name>blåhodefly</name>
+<name>blåhovudfly</name>
+<name>blåleg nebbmott</name>
+<name>blålig nebbmott</name>
+<name>blåmunkepraktviklar</name>
+<name>blåmunkepraktvikler</name>
+<name>blåmunkesmalmott</name>
+<name>blåsvart solviklar</name>
+<name>blåsvart solvikler</name>
+<name>blått ordensband</name>
+<name>blått ordensbånd</name>
+<name>bogeengmålar</name>
+<name>bogehakefly</name>
+<name>bogelinja engfly</name>
+<name>bogelinja viftefly</name>
+<name>bogemerkt seljefly</name>
+<name>bogeskogmålar</name>
+<name>bogeskuggeviklar</name>
+<name>Bohemannia</name>
+<name>Bohemannia pulverosella</name>
+<name>Bohemannia quadrimaculella</name>
+<name>Boletobiinae</name>
+<name>Boloria aquilonaris</name>
+<name>Boloria chariclea</name>
+<name>Boloria eunomia</name>
+<name>Boloria euphrosyne</name>
+<name>Boloria freija</name>
+<name>Boloria frigga</name>
+<name>Boloria improba</name>
+<name>Boloria</name>
+<name>Boloria napaea</name>
+<name>Boloria polaris</name>
+<name>Boloria selene</name>
+<name>Boloria thore</name>
+<name>Bombycoidea</name>
+<name>bordengmålar</name>
+<name>bordengmåler</name>
+<name>Borkhausenia fuscescens</name>
+<name>Borkhausenia luridicomella</name>
+<name>Borkhausenia minutella</name>
+<name>Borkhausenia</name>
+<name>borkmosemott</name>
+<name>borkviklar</name>
+<name>borrepraktviklar</name>
+<name>borrepraktvikler</name>
+<name>Brachionycha</name>
+<name>Brachionycha nubeculosa</name>
+<name>Brachmia blandella</name>
+<name>Brachmia dimidiella</name>
+<name>Brachmia</name>
+<name>Brachylomia</name>
+<name>Brachylomia viminalis</name>
+<name>bredbåndet gulfly</name>
+<name>bredbåndfly</name>
+<name>bredbåndpraktvikler</name>
+<name>bredkantet humlesvermer</name>
+<name>brednebbmott</name>
+<name>bred skumringsmåler</name>
+<name>bregneengmott</name>
+<name>bregnemålar</name>
+<name>bregnemåler</name>
+<name>bregnerotetar</name>
+<name>bregneroteter</name>
+<name>breibanda gulfly</name>
+<name>breibandfly</name>
+<name>breibandpraktviklar</name>
+<name>breibåndfly</name>
+<name>breikanta humlesvermar</name>
+<name>breinebbmott</name>
+<name>brei skumringsmålar</name>
+<name>bremkålmott</name>
+<name>bremlauvviklar</name>
+<name>bremløvvikler</name>
+<name>bremsolviklar</name>
+<name>bremsolvikler</name>
+<name>bremstilkviklar</name>
+<name>bremstilkvikler</name>
+<name>Brenthis ino</name>
+<name>Brenthis</name>
+<name>bringebærglassvinge</name>
+<name>bringebærglasveng</name>
+<name>bringebærmålar</name>
+<name>bringebærspinnar</name>
+<name>bringebærspinner</name>
+<name>bringebærteglfly</name>
+<name>broket dagfly</name>
+<name>broket fjellviddefly</name>
+<name>broket kveldfly</name>
+<name>broket lundfly</name>
+<name>broket seljefly</name>
+<name>brun bakkemålar</name>
+<name>brun bakkemåler</name>
+<name>brun bandmålar</name>
+<name>brunbandseljefly</name>
+<name>brun bjellevikler</name>
+<name>brun bjølleviklar</name>
+<name>brun bjørnespinnar</name>
+<name>brun bjørnespinner</name>
+<name>brun blåveng</name>
+<name>brun blåvinge</name>
+<name>brun bogemålar</name>
+<name>brun bredmøll</name>
+<name>brun breimøll</name>
+<name>brun buemåler</name>
+<name>brun båndmåler</name>
+<name>brunbåndseljefly</name>
+<name>brun dvergmålar</name>
+<name>brun dvergmåler</name>
+<name>brun einerbarmålar</name>
+<name>brun einerbarmåler</name>
+<name>brun engmott</name>
+<name>brun engmålar</name>
+<name>brun engmåler</name>
+<name>brunflekket perlemorveng</name>
+<name>brunflekket perlemorvinge</name>
+<name>brun fugleskittvikler</name>
+<name>brun fugleskitviklar</name>
+<name>brun furuskotviklar</name>
+<name>brun furuskuddvikler</name>
+<name>brungrått haustfly</name>
+<name>brungrått høstfly</name>
+<name>brungult grasfly</name>
+<name>brungult gressfly</name>
+<name>brungult neslefly</name>
+<name>brun halmmott</name>
+<name>brunhalsjordfly</name>
+<name>brun haustmålar</name>
+<name>brun høstmåler</name>
+<name>brun knoppurtflatmøll</name>
+<name>brun kveldviklar</name>
+<name>brun kveldvikler</name>
+<name>brun malurtpraktviklar</name>
+<name>brun malurtpraktvikler</name>
+<name>brun mauremålar</name>
+<name>brun mauremåler</name>
+<name>brun ospetannspinnar</name>
+<name>brun ospetannspinner</name>
+<name>brunpudra jordfly</name>
+<name>brunpudra taigafly</name>
+<name>brunpudret jordfly</name>
+<name>brunpudret taigafly</name>
+<name>brun rosemålar</name>
+<name>brun rosemåler</name>
+<name>brun sigdviklar</name>
+<name>brun sigdvikler</name>
+<name>brun stråsekkspinnar</name>
+<name>brun stråsekkspinner</name>
+<name>brun svevefjærmøll</name>
+<name>brun svævefjørmøll</name>
+<name>brunt bandfly</name>
+<name>brunt båndfly</name>
+<name>brunt kappefly</name>
+<name>brunt kilefly</name>
+<name>brunt langvengfly</name>
+<name>brunt langvingefly</name>
+<name>brunt lêrfly</name>
+<name>brunt lundfly</name>
+<name>brunt lærfly</name>
+<name>brunt nellikfly</name>
+<name>brunt ringfly</name>
+<name>brunt rørfly</name>
+<name>brunt røyrfly</name>
+<name>brunt slåttefly</name>
+<name>brunt stengelfly</name>
+<name>brunt sumpfly</name>
+<name>brunt urtefly</name>
+<name>brunt vårfly</name>
+<name>brun vårtannspinnar</name>
+<name>brun vårtannspinner</name>
+<name>Bryophila domestica</name>
+<name>Bryophila</name>
+<name>Bryophila raptricula</name>
+<name>Bryophilinae</name>
+<name>Bryotropha affinis</name>
+<name>Bryotropha desertella</name>
+<name>Bryotropha galbanella</name>
+<name>Bryotropha</name>
+<name>Bryotropha plantariella</name>
+<name>Bryotropha purpurella</name>
+<name>Bryotropha senectella</name>
+<name>Bryotropha similis</name>
+<name>Bryotropha terrella</name>
+<name>Bryotropha umbrosella</name>
+<name>Bucculatricidae</name>
+<name>Bucculatrix albedinella</name>
+<name>Bucculatrix bechsteinella</name>
+<name>Bucculatrix cidarella</name>
+<name>Bucculatrix cristatella</name>
+<name>Bucculatrix demaryella</name>
+<name>Bucculatrix frangutella</name>
+<name>Bucculatrix humiliella</name>
+<name>Bucculatrix latviaella</name>
+<name>Bucculatrix maritima</name>
+<name>Bucculatrix</name>
+<name>Bucculatrix nigricomella</name>
+<name>Bucculatrix ratisbonensis</name>
+<name>Bucculatrix thoracella</name>
+<name>Bucculatrix ulmella</name>
+<name>Buckleria</name>
+<name>Buckleria paludum</name>
+<name>bueengmåler</name>
+<name>buehakefly</name>
+<name>buelinjet engfly</name>
+<name>buelinjet viftefly</name>
+<name>buemerket seljefly</name>
+<name>bueskogmåler</name>
+<name>bueskyggevikler</name>
+<name>Bupalus</name>
+<name>Bupalus piniaria</name>
+<name>burotdvergmålar</name>
+<name>burotdvergmåler</name>
+<name>burotfjærmøll</name>
+<name>burotfjørmøll</name>
+<name>burothettefly</name>
+<name>burotpraktviklar</name>
+<name>burotpraktvikler</name>
+<name>burotstengelviklar</name>
+<name>burotstengelvikler</name>
+<name>burotviklar</name>
+<name>burotvikler</name>
+<name>buskbladviklar</name>
+<name>buskbladvikler</name>
+<name>buskengmott</name>
+<name>buskflatviklar</name>
+<name>buskflatvikler</name>
+<name>busklundfly</name>
+<name>Buvatina</name>
+<name>Buvatina obscurella</name>
+<name>Buvatina stroemella</name>
+<name>bøkeflikmålar</name>
+<name>bøkeflikmåler</name>
+<name>bøkeglansviklar</name>
+<name>bøkeglansvikler</name>
+<name>bøkelauvmålar</name>
+<name>bøkelavspinnar</name>
+<name>bøkelavspinner</name>
+<name>bøkeløvmåler</name>
+<name>bøkesigdveng</name>
+<name>bøkesigdvinge</name>
+<name>bøkesmalviklar</name>
+<name>bøkesmalvikler</name>
+<name>bølgeduskmåler</name>
+<name>bølgefly</name>
+<name>bølgelinjet høstfly</name>
+<name>bølgemåler</name>
+<name>bølgjeduskmålar</name>
+<name>bølgjefly</name>
+<name>bølgjelinja haustfly</name>
+<name>bølgjemålar</name>
+<name>båndbarkmåler</name>
+<name>båndbjellevikler</name>
+<name>båndbloddråpesvermer</name>
+<name>båndduskfly</name>
+<name>bånddvergmåler</name>
+<name>båndengmott</name>
+<name>båndet vårtannspinner</name>
+<name>båndfjellfly</name>
+<name>båndgråvikler</name>
+<name>båndhalmmott</name>
+<name>båndhermelinmåler</name>
+<name>båndløvvikler</name>
+<name>båndmosemott</name>
+<name>båndolivenmåler</name>
+<name>båndprydvikler</name>
+<name>båndringspinner</name>
+<name>båndsmalmott</name>
+<name>båndsolvikler</name>
+<name>båndsumpvikler</name>
+<name>Cabera exanthemata</name>
+<name>Cabera</name>
+<name>Cabera pusaria</name>
+<name>Cadra cautella</name>
+<name>Cadra</name>
+<name>Calamia</name>
+<name>Calamia tridens</name>
+<name>Calamotropha</name>
+<name>Calamotropha paludella</name>
+<name>Callimorpha dominula</name>
+<name>Callimorpha</name>
+<name>Callistege mi</name>
+<name>Callistege</name>
+<name>Callisto coffeella</name>
+<name>Callisto denticulella</name>
+<name>Callisto insperatella</name>
+<name>Callisto</name>
+<name>Calliteara abietis</name>
+<name>Calliteara</name>
+<name>Callophrys</name>
+<name>Callophrys rubi</name>
+<name>Calophasia lunula</name>
+<name>Calophasia</name>
+<name>Caloptilia alchimiella</name>
+<name>Caloptilia azaleella</name>
+<name>Caloptilia betulicola</name>
+<name>Caloptilia cuculipennella</name>
+<name>Caloptilia elongella</name>
+<name>Caloptilia falconipennella</name>
+<name>Caloptilia hemidactylella</name>
+<name>Caloptilia jurateae</name>
+<name>Caloptilia</name>
+<name>Caloptilia populetorum</name>
+<name>Caloptilia robustella</name>
+<name>Caloptilia rufipennella</name>
+<name>Caloptilia semifascia</name>
+<name>Caloptilia stigmatella</name>
+<name>Caloptilia suberinella</name>
+<name>Calpinae</name>
+<name>Calybites</name>
+<name>Calybites phasianipennella</name>
+<name>Calyciphora albodactylus</name>
+<name>Calyciphora</name>
+<name>Campaea margaritata</name>
+<name>Campaea</name>
+<name>Camptogramma bilineata</name>
+<name>Camptogramma</name>
+<name>Canephora hirsuta</name>
+<name>Canephora</name>
+<name>Capperia britanniodactylus</name>
+<name>Capperia</name>
+<name>Capsula algae</name>
+<name>Capsula</name>
+<name>Capsula sparganii</name>
+<name>Capua</name>
+<name>Capua vulgana</name>
+<name>Caradrina clavipalpis</name>
+<name>Caradrina montana</name>
+<name>Caradrina morpheus</name>
+<name>Caradrina</name>
+<name>Caradrina selini</name>
+<name>Carcina</name>
+<name>Carcina quercana</name>
+<name>Carcinidae</name>
+<name>Carpatolechia alburnella</name>
+<name>Carpatolechia decorella</name>
+<name>Carpatolechia epomidella</name>
+<name>Carpatolechia fugitivella</name>
+<name>Carpatolechia</name>
+<name>Carpatolechia notatella</name>
+<name>Carpatolechia proximella</name>
+<name>Carsia</name>
+<name>Carsia sororiata</name>
+<name>Carterocephalus</name>
+<name>Carterocephalus palaemon</name>
+<name>Carterocephalus silvicola</name>
+<name>Caryocolum amaurella</name>
+<name>Caryocolum blandella</name>
+<name>Caryocolum blandelloides</name>
+<name>Caryocolum cassella</name>
+<name>Caryocolum fraternella</name>
+<name>Caryocolum junctella</name>
+<name>Caryocolum marmorea</name>
+<name>Caryocolum</name>
+<name>Caryocolum petrophila</name>
+<name>Caryocolum pullatella</name>
+<name>Caryocolum tischeriella</name>
+<name>Caryocolum vicinella</name>
+<name>Caryocolum viscariella</name>
+<name>Cataclysta lemnata</name>
+<name>Cataclysta</name>
+<name>Catarhoe cuculata</name>
+<name>Catarhoe</name>
+<name>Catarhoe rubidata</name>
+<name>Catastia kistrandella</name>
+<name>Catastia marginea</name>
+<name>Catastia</name>
+<name>Catocala fraxini</name>
+<name>Catocala</name>
+<name>Catocala nupta</name>
+<name>Catocala promissa</name>
+<name>Catocala sponsa</name>
+<name>Catocalinae</name>
+<name>Catoptria falsella</name>
+<name>Catoptria fulgidella</name>
+<name>Catoptria furcatellus</name>
+<name>Catoptria lythargyrella</name>
+<name>Catoptria maculalis</name>
+<name>Catoptria margaritella</name>
+<name>Catoptria</name>
+<name>Catoptria osthelderi</name>
+<name>Catoptria permutatellus</name>
+<name>Catoptria pinella</name>
+<name>Cauchas fibulella</name>
+<name>Cauchas</name>
+<name>Cauchas rufimitrella</name>
+<name>Cedestis gysseleniella</name>
+<name>Cedestis</name>
+<name>Cedestis subfasciella</name>
+<name>Celaena haworthii</name>
+<name>Celaena leucostigma</name>
+<name>Celaena</name>
+<name>Celastrina argiolus</name>
+<name>Celastrina</name>
+<name>Cemiostominae</name>
+<name>Cepphis advenaria</name>
+<name>Cepphis</name>
+<name>Ceramica</name>
+<name>Ceramica pisi</name>
+<name>Cerapteryx graminis</name>
+<name>Cerapteryx</name>
+<name>Cerastis leucographa</name>
+<name>Cerastis</name>
+<name>Cerastis rubricosa</name>
+<name>Cerura</name>
+<name>Cerura vinula</name>
+<name>Charanyca ferruginea</name>
+<name>Charanyca</name>
+<name>Charanyca trigrammica</name>
+<name>Charissa</name>
+<name>Charissa obscurata</name>
+<name>Chersotis cuprea</name>
+<name>Chersotis</name>
+<name>Chesias legatella</name>
+<name>Chesias</name>
+<name>Chiasmia clathrata</name>
+<name>Chiasmia</name>
+<name>chifly</name>
+<name>Chilodes maritima</name>
+<name>Chilodes</name>
+<name>Chilo</name>
+<name>Chilo phragmitella</name>
+<name>Chimabachidae</name>
+<name>Chionodes continuella</name>
+<name>Chionodes distinctella</name>
+<name>Chionodes electella</name>
+<name>Chionodes fumatella</name>
+<name>Chionodes holosericella</name>
+<name>Chionodes ignorantella</name>
+<name>Chionodes luctuella</name>
+<name>Chionodes lugubrella</name>
+<name>Chionodes</name>
+<name>Chionodes nubilella</name>
+<name>Chionodes viduella</name>
+<name>Chionodes violacea</name>
+<name>Chlidanotinae</name>
+<name>Chloantha hyperici</name>
+<name>Chloantha</name>
+<name>Chlorissa</name>
+<name>Chlorissa viridata</name>
+<name>Chloroclysta miata</name>
+<name>Chloroclysta</name>
+<name>Chloroclysta siterata</name>
+<name>Chloroclystis</name>
+<name>Chloroclystis v-ata</name>
+<name>Choreutidae</name>
+<name>Choreutinae</name>
+<name>Choreutis diana</name>
+<name>Choreutis</name>
+<name>Choreutis pariana</name>
+<name>Choreutoidea</name>
+<name>Choristoneura albaniana</name>
+<name>Choristoneura diversana</name>
+<name>Choristoneura hebenstreitella</name>
+<name>Choristoneura</name>
+<name>Chortodes elymi</name>
+<name>Chortodes fluxa</name>
+<name>Chortodes minima</name>
+<name>Chortodes</name>
+<name>Chortodes pygmina</name>
+<name>christys bjørkemålar</name>
+<name>christys bjørkemåler</name>
+<name>Chrysoclista lathamella</name>
+<name>Chrysoclista linneella</name>
+<name>Chrysoclista</name>
+<name>Chrysodeixis chalcites</name>
+<name>Chrysodeixis</name>
+<name>Chrysoesthia drurella</name>
+<name>Chrysoesthia</name>
+<name>Chrysoesthia sexguttella</name>
+<name>Chrysopeleiinae</name>
+<name>Chrysoteuchia culmella</name>
+<name>Chrysoteuchia</name>
+<name>Cidaria fulvata</name>
+<name>Cidaria</name>
+<name>Cilix glaucata</name>
+<name>Cilix</name>
+<name>Cirrhia gilvago</name>
+<name>Cirrhia icteritia</name>
+<name>Cirrhia</name>
+<name>Clavigesta</name>
+<name>Clavigesta purdeyi</name>
+<name>Cleora cinctaria</name>
+<name>Cleora</name>
+<name>Cleorodes lichenaria</name>
+<name>Cleorodes</name>
+<name>Clepsis mehli</name>
+<name>Clepsis</name>
+<name>Clepsis rurinana</name>
+<name>Clepsis senecionana</name>
+<name>Clepsis spectrana</name>
+<name>Clostera anachoreta</name>
+<name>Clostera curtula</name>
+<name>Clostera</name>
+<name>Clostera pigra</name>
+<name>Cnaemidophorus</name>
+<name>Cnaemidophorus rhododactyla</name>
+<name>Cnephasia asseclana</name>
+<name>Cnephasia communana</name>
+<name>Cnephasia genitalana</name>
+<name>Cnephasia incertana</name>
+<name>Cnephasia</name>
+<name>Cnephasia pasiuana</name>
+<name>Cnephasia stephensiana</name>
+<name>Cochylidia heydeniana</name>
+<name>Cochylidia implicitana</name>
+<name>Cochylidia</name>
+<name>Cochylidia richteriana</name>
+<name>Cochylidia subroseana</name>
+<name>Cochylimorpha alternana</name>
+<name>Cochylimorpha</name>
+<name>Cochylis atricapitana</name>
+<name>Cochylis dubitana</name>
+<name>Cochylis flaviciliana</name>
+<name>Cochylis</name>
+<name>Cochylis nana</name>
+<name>Cochylis pallidana</name>
+<name>Coenobia</name>
+<name>Coenobia rufa</name>
+<name>Coenocalpe lapidata</name>
+<name>Coenocalpe</name>
+<name>Coenonympha arcania</name>
+<name>Coenonympha hero</name>
+<name>Coenonympha</name>
+<name>Coenonympha pamphilus</name>
+<name>Coenonympha tullia</name>
+<name>Coenophila</name>
+<name>Coenophila subrosea</name>
+<name>Coleophora adelogrammella</name>
+<name>Coleophora adjectella</name>
+<name>Coleophora adjunctella</name>
+<name>Coleophora adspersella</name>
+<name>Coleophora ahenella</name>
+<name>Coleophora albella</name>
+<name>Coleophora albicans</name>
+<name>Coleophora albidella</name>
+<name>Coleophora albitarsella</name>
+<name>Coleophora alcyonipennella</name>
+<name>Coleophora algidella</name>
+<name>Coleophora alnifoliae</name>
+<name>Coleophora alticolella</name>
+<name>Coleophora anatipennella</name>
+<name>Coleophora antennariella</name>
+<name>Coleophora arctostaphyli</name>
+<name>Coleophora argentula</name>
+<name>Coleophora artemisicolella</name>
+<name>Coleophora artemisiella</name>
+<name>Coleophora asteris</name>
+<name>Coleophora atriplicis</name>
+<name>Coleophora badiipennella</name>
+<name>Coleophora betulella</name>
+<name>Coleophora binderella</name>
+<name>Coleophora boreella</name>
+<name>Coleophora brevipalpella</name>
+<name>Coleophora caelebipennella</name>
+<name>Coleophora caespititiella</name>
+<name>Coleophora clypeiferella</name>
+<name>Coleophora colutella</name>
+<name>Coleophora conspicuella</name>
+<name>Coleophora cornutella</name>
+<name>Coleophora currucipennella</name>
+<name>Coleophora deauratella</name>
+<name>Coleophora directella</name>
+<name>Coleophora discordella</name>
+<name>Coleophora expressella</name>
+<name>Coleophora flavipennella</name>
+<name>Coleophora frischella</name>
+<name>Coleophora gallipennella</name>
+<name>Coleophora glaucicolella</name>
+<name>Coleophora glitzella</name>
+<name>Coleophora graminicolella</name>
+<name>Coleophora granulatella</name>
+<name>Coleophora gryphipennella</name>
+<name>Coleophora hackmani</name>
+<name>Coleophora hemerobiella</name>
+<name>Coleophora hydrolapathella</name>
+<name>Coleophora ibipennella</name>
+<name>Coleophora idaeella</name>
+<name>Coleophora juncicolella</name>
+<name>Coleophora kuehnella</name>
+<name>Coleophora laricella</name>
+<name>Coleophora lassella</name>
+<name>Coleophora limosipennella</name>
+<name>Coleophora lithargyrinella</name>
+<name>Coleophora lusciniaepennella</name>
+<name>Coleophora lutipennella</name>
+<name>Coleophora mayrella</name>
+<name>Coleophora millefolii</name>
+<name>Coleophora milvipennis</name>
+<name>Coleophora murinella</name>
+<name>Coleophora</name>
+<name>Coleophora nutantella</name>
+<name>Coleophora obscenella</name>
+<name>Coleophora orbitella</name>
+<name>Coleophora otidipenella</name>
+<name>Coleophora pappiferella</name>
+<name>Coleophora paripennella</name>
+<name>Coleophora partitella</name>
+<name>Coleophora peribenanderi</name>
+<name>Coleophora plumbella</name>
+<name>Coleophora potentillae</name>
+<name>Coleophora prunifoliae</name>
+<name>Coleophora pyrrhulipennella</name>
+<name>Coleophora ramosella</name>
+<name>Coleophora salicorniae</name>
+<name>Coleophora saxicolella</name>
+<name>Coleophora serratella</name>
+<name>Coleophora siccifolia</name>
+<name>Coleophora spinella</name>
+<name>Coleophora sp. nr. virgaureae</name>
+<name>Coleophora squalorella</name>
+<name>Coleophora squamosella</name>
+<name>Coleophora sternipennella</name>
+<name>Coleophora striatipennella</name>
+<name>Coleophora svenssoni</name>
+<name>Coleophora sylvaticella</name>
+<name>Coleophora taeniipennella</name>
+<name>Coleophora tamesis</name>
+<name>Coleophora tanaceti</name>
+<name>Coleophora therinella</name>
+<name>Coleophora thulea</name>
+<name>Coleophora trifolii</name>
+<name>Coleophora trigeminella</name>
+<name>Coleophora trochilella</name>
+<name>Coleophora uliginosella</name>
+<name>Coleophora unigenella</name>
+<name>Coleophora vacciniella</name>
+<name>Coleophora versurella</name>
+<name>Coleophora vestianella</name>
+<name>Coleophora violacea</name>
+<name>Coleophora virgaureae</name>
+<name>Coleophora vitisella</name>
+<name>Coleophora vulnerariae</name>
+<name>Coleophoridae</name>
+<name>Coliadinae</name>
+<name>Colias croceus</name>
+<name>Colias hecla</name>
+<name>Colias</name>
+<name>Colias nastes</name>
+<name>Colias palaeno</name>
+<name>Colias werdandi</name>
+<name>Colocasia coryli</name>
+<name>Colocasia</name>
+<name>Colostygia</name>
+<name>Colostygia olivata</name>
+<name>Colostygia pectinataria</name>
+<name>Colostygia turbata</name>
+<name>Colotois</name>
+<name>Colotois pennaria</name>
+<name>Condicinae</name>
+<name>Conistra erythrocephala</name>
+<name>Conistra</name>
+<name>Conistra rubiginea</name>
+<name>Conistra rubiginosa</name>
+<name>Conistra vaccinii</name>
+<name>Conobathra</name>
+<name>Conobathra repandana</name>
+<name>Conobathra tumidana</name>
+<name>Coptotriche angusticollella</name>
+<name>Coptotriche heinemanni</name>
+<name>Coptotriche</name>
+<name>Coranarta cordigera</name>
+<name>Coranarta</name>
+<name>Corticivora</name>
+<name>Corticivora piniana</name>
+<name>Coscinia cribraria</name>
+<name>Coscinia</name>
+<name>Cosmardia moritzella</name>
+<name>Cosmardia</name>
+<name>Cosmia</name>
+<name>Cosmia pyralina</name>
+<name>Cosmia trapezina</name>
+<name>Cosmopterigidae</name>
+<name>Cosmopteriginae</name>
+<name>Cosmopterix lienigiella</name>
+<name>Cosmopterix</name>
+<name>Cosmorhoe</name>
+<name>Cosmorhoe ocellata</name>
+<name>Cosmotriche lobulina</name>
+<name>Cosmotriche</name>
+<name>Cossidae</name>
+<name>Cossinae</name>
+<name>Cossoidea</name>
+<name>Cossus cossus</name>
+<name>Cossus</name>
+<name>Crambidae</name>
+<name>Crambinae</name>
+<name>Crambus alienellus</name>
+<name>Crambus ericella</name>
+<name>Crambus hamella</name>
+<name>Crambus heringiellus</name>
+<name>Crambus lathoniellus</name>
+<name>Crambus</name>
+<name>Crambus pascuella</name>
+<name>Crambus perlella</name>
+<name>Crambus pratella</name>
+<name>Crambus silvella</name>
+<name>Crambus uliginosellus</name>
+<name>Craniophora ligustri</name>
+<name>Craniophora</name>
+<name>Crassa</name>
+<name>Crassa tinctella</name>
+<name>Crocallis elinguaria</name>
+<name>Crocallis</name>
+<name>Crombrugghia distans</name>
+<name>Crombrugghia</name>
+<name>Cryphia domestica</name>
+<name>Cryphia</name>
+<name>Cryphia raptricula</name>
+<name>Crypsedra gemmea</name>
+<name>Crypsedra</name>
+<name>Cryptoblabes bistriga</name>
+<name>Cryptoblabes</name>
+<name>Cryptolechiidae</name>
+<name>Cryptolechiinae</name>
+<name>c-tegnet bakkefly</name>
+<name>c-teikna bakkefly</name>
+<name>Cucullia absinthii</name>
+<name>Cucullia asteris</name>
+<name>Cucullia chamomillae</name>
+<name>Cucullia gnaphalii</name>
+<name>Cucullia lactucae</name>
+<name>Cucullia lucifuga</name>
+<name>Cucullia</name>
+<name>Cucullia umbratica</name>
+<name>Cuculliinae</name>
+<name>Cupido minimus</name>
+<name>Cupido</name>
+<name>Cyaniris</name>
+<name>Cyaniris semiargus</name>
+<name>Cybosia mesomella</name>
+<name>Cybosia</name>
+<name>Cyclophora albipunctata</name>
+<name>Cyclophora linearia</name>
+<name>Cyclophora</name>
+<name>Cyclophora pendularia</name>
+<name>Cyclophora punctaria</name>
+<name>Cyclophora quercimontaria</name>
+<name>Cydia albipicta</name>
+<name>Cydia amplana</name>
+<name>Cydia cognatana</name>
+<name>Cydia coniferana</name>
+<name>Cydia corollana</name>
+<name>Cydia cosmophorana</name>
+<name>Cydia duplicana</name>
+<name>Cydia fagiglandana</name>
+<name>Cydia illutana</name>
+<name>Cydia indivisa</name>
+<name>Cydia inquinatana</name>
+<name>Cydia</name>
+<name>Cydia nigricana</name>
+<name>Cydia pactolana</name>
+<name>Cydia pomonella</name>
+<name>Cydia servillana</name>
+<name>Cydia splendana</name>
+<name>Cydia strobilella</name>
+<name>Cydia succedana</name>
+<name>Cydia triangulella</name>
+<name>Cymatophorima diluta</name>
+<name>Cymatophorima</name>
+<name>Cymolomia hartigiana</name>
+<name>Cymolomia</name>
+<name>daddelsmalmott</name>
+<name>dagpåfuglauge</name>
+<name>dagpåfugløye</name>
+<name>dagsvermar</name>
+<name>dagsvermer</name>
+<name>Dahlica charlottae</name>
+<name>Dahlica lazuri</name>
+<name>Dahlica</name>
+<name>Daphnis</name>
+<name>Daphnis nerii</name>
+<name>Dasypolia</name>
+<name>Dasypolia templi</name>
+<name>daudinghovud</name>
+<name>Decantha borkhausenii</name>
+<name>Decantha</name>
+<name>Deilephila elpenor</name>
+<name>Deilephila</name>
+<name>Deilephila porcellus</name>
+<name>Deileptenia</name>
+<name>Deileptenia ribeata</name>
+<name>Deltote</name>
+<name>Deltote pygarga</name>
+<name>Deltote uncula</name>
+<name>Dendrolimus</name>
+<name>Dendrolimus pini</name>
+<name>Denisia</name>
+<name>Denisia obscurella</name>
+<name>Denisia similella</name>
+<name>Denisia stipella</name>
+<name>Denisia stroemella</name>
+<name>Denticucullus</name>
+<name>Denticucullus pygmina</name>
+<name>Depressaria albipunctella</name>
+<name>Depressaria artemisiae</name>
+<name>Depressaria badiella</name>
+<name>Depressaria daucella</name>
+<name>Depressaria depressana</name>
+<name>Depressaria emeritella</name>
+<name>Depressaria leucocephala</name>
+<name>Depressaria</name>
+<name>Depressaria olerella</name>
+<name>Depressaria pastinacella</name>
+<name>Depressaria pimpinellae</name>
+<name>Depressaria pulcherrimella</name>
+<name>Depressaria radiella</name>
+<name>Depressaria silesiaca</name>
+<name>Depressaria sordidatella</name>
+<name>Depressariidae</name>
+<name>Depressariinae</name>
+<name>Desmobathrinae</name>
+<name>Diachrysia chrysitis</name>
+<name>Diachrysia</name>
+<name>Diachrysia stenochrysis</name>
+<name>Diacrisia</name>
+<name>Diacrisia sannio</name>
+<name>Diaphora mendica</name>
+<name>Diaphora</name>
+<name>Diarsia brunnea</name>
+<name>Diarsia dahlii</name>
+<name>Diarsia florida</name>
+<name>Diarsia mendica</name>
+<name>Diarsia</name>
+<name>Diarsia rubi</name>
+<name>Diasemia</name>
+<name>Diasemia reticularis</name>
+<name>Dicallomera fascelina</name>
+<name>Dicallomera</name>
+<name>Dichelia histrionana</name>
+<name>Dichelia</name>
+<name>Dichomeridinae</name>
+<name>Dichomeris alacella</name>
+<name>Dichomeris juniperella</name>
+<name>Dichomeris latipennella</name>
+<name>Dichomeris</name>
+<name>Dichonia aprilina</name>
+<name>Dichonia</name>
+<name>Dichrorampha acuminatana</name>
+<name>Dichrorampha aeratana</name>
+<name>Dichrorampha agilana</name>
+<name>Dichrorampha alpinana</name>
+<name>Dichrorampha consortana</name>
+<name>Dichrorampha flavidorsana</name>
+<name>Dichrorampha gueneeana</name>
+<name>Dichrorampha</name>
+<name>Dichrorampha obscuratana</name>
+<name>Dichrorampha petiverella</name>
+<name>Dichrorampha plumbagana</name>
+<name>Dichrorampha plumbana</name>
+<name>Dichrorampha sedatana</name>
+<name>Dichrorampha simpliciana</name>
+<name>Dichrorampha sylvicolana</name>
+<name>Dichrorampha vancouverana</name>
+<name>Digitivalva arnicella</name>
+<name>Digitivalva</name>
+<name>Digitivalva reticulella</name>
+<name>Diloba caeruleocephala</name>
+<name>Diloba</name>
+<name>Dilobinae</name>
+<name>Dioryctria abietella</name>
+<name>Dioryctria</name>
+<name>Dioryctria schuetzeella</name>
+<name>Dioryctria simplicella</name>
+<name>Dioryctria sylvestrella</name>
+<name>Dipleurina lacustrata</name>
+<name>Dipleurina</name>
+<name>Diplodoma laichartingella</name>
+<name>Diplodoma</name>
+<name>disas ringveng</name>
+<name>disas ringvinge</name>
+<name>Discoloxia blomeri</name>
+<name>Discoloxia</name>
+<name>Dismorphiinae</name>
+<name>Diurnea fagella</name>
+<name>Diurnea lipsiella</name>
+<name>Diurnea</name>
+<name>dobbeltlinja viklarfly</name>
+<name>dobbeltlinjet viklerfly</name>
+<name>dobbeltpunktfly</name>
+<name>Donacaula forficella</name>
+<name>Donacaula mucronella</name>
+<name>Donacaula</name>
+<name>Douglasiidae</name>
+<name>dovrefjellmott</name>
+<name>dovrejordfly</name>
+<name>Drepana curvatula</name>
+<name>Drepana falcataria</name>
+<name>Drepana</name>
+<name>Drepanidae</name>
+<name>Drepaninae</name>
+<name>Drepanoidea</name>
+<name>dromedartannspinnar</name>
+<name>dromedartannspinner</name>
+<name>dropemetallfly</name>
+<name>Drymonia dodonaea</name>
+<name>Drymonia</name>
+<name>Drymonia ruficornis</name>
+<name>Dryobotodes eremita</name>
+<name>Dryobotodes</name>
+<name>dråpemetallfly</name>
+<name>dunkjevlefly</name>
+<name>dunkjevleglansmøll</name>
+<name>dunkjevlenebbmott</name>
+<name>Duponchelia fovealis</name>
+<name>Duponchelia</name>
+<name>dvergbjørkfjellfly</name>
+<name>dvergbjørkkveldviklar</name>
+<name>dvergbjørkkveldvikler</name>
+<name>dvergbjørkmetallfly</name>
+<name>dvergbjørkrotetar</name>
+<name>dvergbjørkroteter</name>
+<name>dvergbjørksolviklar</name>
+<name>dvergbjørksolvikler</name>
+<name>dvergbjørkspinnar</name>
+<name>dvergbjørkspinner</name>
+<name>dvergblåveng</name>
+<name>dvergblåvinge</name>
+<name>dvergbåtfly</name>
+<name>dvergfuruviklar</name>
+<name>dvergfuruvikler</name>
+<name>dvergkveldviklar</name>
+<name>dvergkveldvikler</name>
+<name>dverglavspinnar</name>
+<name>dverglavspinner</name>
+<name>dvergnebbfly</name>
+<name>dvergnebbmott</name>
+<name>dvergperlemorveng</name>
+<name>dvergperlemorvinge</name>
+<name>dvergpraktviklar</name>
+<name>dvergpraktvikler</name>
+<name>dvergrotetar</name>
+<name>dvergroteter</name>
+<name>dvergrotviklar</name>
+<name>dvergrotvikler</name>
+<name>dvergsigdviklar</name>
+<name>dvergsigdvikler</name>
+<name>dvergsneglespinner</name>
+<name>dvergsniglespinnar</name>
+<name>dvergstjertspinnar</name>
+<name>dvergstjertspinner</name>
+<name>dylleengviklar</name>
+<name>dylleengvikler</name>
+<name>Dypterygia</name>
+<name>Dypterygia scabriuscula</name>
+<name>Dyscia fagaria</name>
+<name>Dyscia</name>
+<name>Dysstroma citrata</name>
+<name>Dysstroma infuscata</name>
+<name>Dysstroma latefasciata</name>
+<name>Dysstroma</name>
+<name>Dysstroma truncata</name>
+<name>dødninghode</name>
+<name>dålundmålar</name>
+<name>dålundmåler</name>
+<name>Eana argentana</name>
+<name>Eana incanana</name>
+<name>Eana</name>
+<name>Eana osseana</name>
+<name>Eana penziana</name>
+<name>Earias clorana</name>
+<name>Earias</name>
+<name>Ecliptopera capitata</name>
+<name>Ecliptopera</name>
+<name>Ecliptopera silaceata</name>
+<name>Ectoedemia agrimoniae</name>
+<name>Ectoedemia albibimaculella</name>
+<name>Ectoedemia albifasciella</name>
+<name>Ectoedemia amani</name>
+<name>Ectoedemia angulifasciella</name>
+<name>Ectoedemia arcuatella</name>
+<name>Ectoedemia argyropeza</name>
+<name>Ectoedemia atricollis</name>
+<name>Ectoedemia atrifrontella</name>
+<name>Ectoedemia intimella</name>
+<name>Ectoedemia liebwerdella</name>
+<name>Ectoedemia longicaudella</name>
+<name>Ectoedemia minimella</name>
+<name>Ectoedemia</name>
+<name>Ectoedemia occultella</name>
+<name>Ectoedemia rubivora</name>
+<name>Ectoedemia septembrella</name>
+<name>Ectoedemia sericopeza</name>
+<name>Ectoedemia sp. nr. hexapetalae</name>
+<name>Ectoedemia subbimaculella</name>
+<name>Ectoedemia weaveri</name>
+<name>Ectropis crepuscularia</name>
+<name>Ectropis</name>
+<name>edelgranbarmålar</name>
+<name>edelgranbarmåler</name>
+<name>edelgrankveldviklar</name>
+<name>edelgrankveldvikler</name>
+<name>Eidophasia messingiella</name>
+<name>Eidophasia</name>
+<name>eikebarkmåler</name>
+<name>eikebladspinnar</name>
+<name>eikebladspinner</name>
+<name>eikeborkmålar</name>
+<name>eikebåtfly</name>
+<name>eikeduskfly</name>
+<name>eikedvergmålar</name>
+<name>eikedvergmåler</name>
+<name>eikeflatviklar</name>
+<name>eikeflatvikler</name>
+<name>eikeflikmålar</name>
+<name>eikeflikmåler</name>
+<name>eikefrostmålar</name>
+<name>eikefrostmåler</name>
+<name>eikeglansviklar</name>
+<name>eikeglansvikler</name>
+<name>eikehalvspinnar</name>
+<name>eikehalvspinner</name>
+<name>eikekveldviklar</name>
+<name>eikekveldvikler</name>
+<name>eikekvistviklar</name>
+<name>eikekvistvikler</name>
+<name>eikelauvmålar</name>
+<name>eikelurvemålar</name>
+<name>eikelurvemåler</name>
+<name>eikeløvmåler</name>
+<name>eikerullviklar</name>
+<name>eikerullvikler</name>
+<name>eikesigdviklar</name>
+<name>eikesigdvikler</name>
+<name>eikeskogsmosemott</name>
+<name>eikeskotviklar</name>
+<name>eikeskuddvikler</name>
+<name>eikesmalviklar</name>
+<name>eikesmalvikler</name>
+<name>eikesneglespinner</name>
+<name>eikesniglespinnar</name>
+<name>eikespinnar</name>
+<name>eikespinner</name>
+<name>eikestjertveng</name>
+<name>eikestjertvinge</name>
+<name>eikeviftefly</name>
+<name>eikeviklarfly</name>
+<name>eikeviklerfly</name>
+<name>Eilema complana</name>
+<name>Eilema depressa</name>
+<name>Eilema lurideola</name>
+<name>Eilema lutarella</name>
+<name>Eilema</name>
+<name>Eilema sororcula</name>
+<name>einerdvergmålar</name>
+<name>einerdvergmåler</name>
+<name>einerglansviklar</name>
+<name>einerglansvikler</name>
+<name>einerlavspinnar</name>
+<name>einerlavspinner</name>
+<name>einerpraktviklar</name>
+<name>einerpraktvikler</name>
+<name>eirfly</name>
+<name>ekorntannspinnar</name>
+<name>ekorntannspinner</name>
+<name>Elachista adscitella</name>
+<name>Elachista albidella</name>
+<name>Elachista albifrontella</name>
+<name>Elachista alpinella</name>
+<name>Elachista anserinella</name>
+<name>Elachista apicipunctella</name>
+<name>Elachista argentella</name>
+<name>Elachista atricomella</name>
+<name>Elachista baltica</name>
+<name>Elachista bedellella</name>
+<name>Elachista bisulcella</name>
+<name>Elachista canapennella</name>
+<name>Elachista cinereopunctella</name>
+<name>Elachista cingillella</name>
+<name>Elachista compsa</name>
+<name>Elachista consortella</name>
+<name>Elachista diederichsiella</name>
+<name>Elachista dispilella</name>
+<name>Elachista elegans</name>
+<name>Elachista eleochariella</name>
+<name>Elachista eskoi</name>
+<name>Elachista exactella</name>
+<name>Elachista excelsicola</name>
+<name>Elachista freyerella</name>
+<name>Elachista gleichenella</name>
+<name>Elachista humilis</name>
+<name>Elachista juliensis</name>
+<name>Elachista kilmunella</name>
+<name>Elachista krogeri</name>
+<name>Elachista luticomella</name>
+<name>Elachista maculicerusella</name>
+<name>Elachista</name>
+<name>Elachista nielswolffi</name>
+<name>Elachista nobilella</name>
+<name>Elachista occidentalis</name>
+<name>Elachista pomerana</name>
+<name>Elachista pullicomella</name>
+<name>Elachista quadripunctella</name>
+<name>Elachista regificella</name>
+<name>Elachista scirpi</name>
+<name>Elachista serricornis</name>
+<name>Elachista stabilella</name>
+<name>Elachista subalbidella</name>
+<name>Elachista subnigrella</name>
+<name>Elachista tanaella</name>
+<name>Elachista tengstromi</name>
+<name>Elachista trapeziella</name>
+<name>Elachista triatomea</name>
+<name>Elachista utonella</name>
+<name>Elachista zernyi</name>
+<name>Elachistidae</name>
+<name>Elatobia fuliginosella</name>
+<name>Elatobia</name>
+<name>eldgullveng</name>
+<name>Electrophaes corylata</name>
+<name>Electrophaes</name>
+<name>Elegia</name>
+<name>Elegia similella</name>
+<name>Elophila</name>
+<name>Elophila nymphaeata</name>
+<name>Elophos</name>
+<name>Elophos vittaria</name>
+<name>Ematurga atomaria</name>
+<name>Ematurga</name>
+<name>emblas ringveng</name>
+<name>emblas ringvinge</name>
+<name>Emmelia</name>
+<name>Emmelia trabealis</name>
+<name>Emmelina monodactyla</name>
+<name>Emmelina</name>
+<name>Enargia</name>
+<name>Enargia paleacea</name>
+<name>Enarmonia formosana</name>
+<name>Enarmonia</name>
+<name>Endothenia ericetana</name>
+<name>Endothenia hebesana</name>
+<name>Endothenia marginana</name>
+<name>Endothenia</name>
+<name>Endothenia oblongana</name>
+<name>Endothenia quadrimaculana</name>
+<name>Endothenia ustulana</name>
+<name>Endromidae</name>
+<name>Endromis</name>
+<name>Endromis versicolora</name>
+<name>Endrosis</name>
+<name>Endrosis sarcitrella</name>
+<name>engblåveng</name>
+<name>engblåvinge</name>
+<name>engdvergmålar</name>
+<name>engdvergmåler</name>
+<name>engglansvikler</name>
+<name>engglassvinge</name>
+<name>engglasveng</name>
+<name>enggråviklar</name>
+<name>enggråvikler</name>
+<name>enghakeviklar</name>
+<name>enghakevikler</name>
+<name>enghvitvinge</name>
+<name>engkvitveng</name>
+<name>englundmålar</name>
+<name>englundmåler</name>
+<name>engmauremålar</name>
+<name>engmauremåler</name>
+<name>engmosemott</name>
+<name>engnebbmott</name>
+<name>engperlemorveng</name>
+<name>engperlemorvinge</name>
+<name>engprydviklar</name>
+<name>engprydvikler</name>
+<name>engringveng</name>
+<name>engringvinge</name>
+<name>engsmellefly</name>
+<name>engsmygar</name>
+<name>engsmyger</name>
+<name>engteglfly</name>
+<name>engurtefly</name>
+<name>engurtemålar</name>
+<name>engurtemåler</name>
+<name>engvikkefly</name>
+<name>Ennominae</name>
+<name>Ennomos alniaria</name>
+<name>Ennomos autumnaria</name>
+<name>Ennomos erosaria</name>
+<name>Ennomos fuscantaria</name>
+<name>Ennomos</name>
+<name>Ennomos quercinaria</name>
+<name>Entephria byssata</name>
+<name>Entephria caesiata</name>
+<name>Entephria flavicinctata</name>
+<name>Entephria</name>
+<name>Entephria nobilaria</name>
+<name>Entephria polata</name>
+<name>Entephria punctipes</name>
+<name>Epagoge grotiana</name>
+<name>Epagoge</name>
+<name>Epermenia aequidentellus</name>
+<name>Epermenia chaerophyllella</name>
+<name>Epermenia falciformis</name>
+<name>Epermenia illigerella</name>
+<name>Epermenia</name>
+<name>Epermenia profugella</name>
+<name>Epermeniidae</name>
+<name>Epermenioidea</name>
+<name>Ephestia elutella</name>
+<name>Ephestia kuehniella</name>
+<name>Ephestia mistralella</name>
+<name>Ephestia</name>
+<name>Epiblema cirsiana</name>
+<name>Epiblema foenella</name>
+<name>Epiblema grandaevana</name>
+<name>Epiblema graphana</name>
+<name>Epiblema</name>
+<name>Epiblema obscurana</name>
+<name>Epiblema scutulana</name>
+<name>Epiblema simploniana</name>
+<name>Epiblema sticticana</name>
+<name>Epilecta linogrisea</name>
+<name>Epilecta</name>
+<name>Epinotia abbreviana</name>
+<name>Epinotia bilunana</name>
+<name>Epinotia brunnichana</name>
+<name>Epinotia caprana</name>
+<name>Epinotia crenana</name>
+<name>Epinotia cruciana</name>
+<name>Epinotia demarniana</name>
+<name>Epinotia fraternana</name>
+<name>Epinotia gimmerthaliana</name>
+<name>Epinotia granitana</name>
+<name>Epinotia immundana</name>
+<name>Epinotia indecorana</name>
+<name>Epinotia maculana</name>
+<name>Epinotia mercuriana</name>
+<name>Epinotia</name>
+<name>Epinotia nanana</name>
+<name>Epinotia nemorivaga</name>
+<name>Epinotia nigricana</name>
+<name>Epinotia nisella</name>
+<name>Epinotia pygmaeana</name>
+<name>Epinotia ramella</name>
+<name>Epinotia rhomboidella</name>
+<name>Epinotia rubiginosana</name>
+<name>Epinotia signatana</name>
+<name>Epinotia solandriana</name>
+<name>Epinotia sordidana</name>
+<name>Epinotia subocellana</name>
+<name>Epinotia subsequana</name>
+<name>Epinotia tedella</name>
+<name>Epinotia tenerana</name>
+<name>Epinotia tetraquetrana</name>
+<name>Epinotia trigonella</name>
+<name>Epione</name>
+<name>Epione repandaria</name>
+<name>Epione vespertaria</name>
+<name>Epipsilia grisescens</name>
+<name>Epipsilia</name>
+<name>Epirranthis diversata</name>
+<name>Epirranthis</name>
+<name>Epirrhoe alternata</name>
+<name>Epirrhoe galiata</name>
+<name>Epirrhoe hastulata</name>
+<name>Epirrhoe</name>
+<name>Epirrhoe pupillata</name>
+<name>Epirrhoe rivata</name>
+<name>Epirrhoe tristata</name>
+<name>Epirrita autumnata</name>
+<name>Epirrita christyi</name>
+<name>Epirrita dilutata</name>
+<name>Epirrita</name>
+<name>Episcythrastis</name>
+<name>Episcythrastis tetricella</name>
+<name>eplebladviklar</name>
+<name>eplebladvikler</name>
+<name>epleblomstermålar</name>
+<name>epleblomstmåler</name>
+<name>eplebredmøll</name>
+<name>eplebreimøll</name>
+<name>epleglansviklar</name>
+<name>epleglansvikler</name>
+<name>epleglassvinge</name>
+<name>epleglasveng</name>
+<name>epleknoppviklar</name>
+<name>epleknoppvikler</name>
+<name>eplekrattmøll</name>
+<name>eplespinnmøll</name>
+<name>epleviklar</name>
+<name>eplevikler</name>
+<name>Erannis defoliaria</name>
+<name>Erannis</name>
+<name>Erebia disa</name>
+<name>Erebia embla</name>
+<name>Erebia ligea</name>
+<name>Erebia</name>
+<name>Erebia pandrose</name>
+<name>Erebia polaris</name>
+<name>eremittfly</name>
+<name>Eremobia</name>
+<name>Eremobia ochroleuca</name>
+<name>Eremobina</name>
+<name>Eremobina pabulatricula</name>
+<name>Eriocrania cicatricella</name>
+<name>Eriocrania haworthi</name>
+<name>Eriocrania</name>
+<name>Eriocrania salopiella</name>
+<name>Eriocrania sangii</name>
+<name>Eriocrania semipurpurella</name>
+<name>Eriocrania sparrmannella</name>
+<name>Eriocrania subpurpurella</name>
+<name>Eriocrania unimaculella</name>
+<name>Eriocraniidae</name>
+<name>Eriocranioidea</name>
+<name>Eriogaster arbusculae</name>
+<name>Eriogaster lanestris</name>
+<name>Eriogaster</name>
+<name>Eriopsela</name>
+<name>Eriopsela quadrana</name>
+<name>Eriopygodes imbecilla</name>
+<name>Eriopygodes</name>
+<name>erteglansviklar</name>
+<name>erteglansvikler</name>
+<name>erteknappfrøviklar</name>
+<name>erteknappfrøvikler</name>
+<name>erteviklar</name>
+<name>ertevikler</name>
+<name>Erynnis</name>
+<name>Erynnis tages</name>
+<name>Ethmia bipunctella</name>
+<name>Ethmia</name>
+<name>Ethmia pusiella</name>
+<name>Ethmia quadrillella</name>
+<name>Ethmiidae</name>
+<name>Eublemma minutata</name>
+<name>Eublemma</name>
+<name>Eublemminae</name>
+<name>Eucarta</name>
+<name>Eucarta virgo</name>
+<name>Euchoeca</name>
+<name>Euchoeca nebulata</name>
+<name>Euchromius</name>
+<name>Euchromius ocellea</name>
+<name>Euclidia glyphica</name>
+<name>Euclidia mi</name>
+<name>Euclidia</name>
+<name>Eucosma aemulana</name>
+<name>Eucosma aspidiscana</name>
+<name>Eucosma campoliliana</name>
+<name>Eucosma cana</name>
+<name>Eucosma conterminana</name>
+<name>Eucosma fulvana</name>
+<name>Eucosma guentheri</name>
+<name>Eucosma hohenwartiana</name>
+<name>Eucosma lacteana</name>
+<name>Eucosma</name>
+<name>Eucosma obumbratana</name>
+<name>Eucosma pupillana</name>
+<name>Eucosma saussureana</name>
+<name>Eucosma scorzonerana</name>
+<name>Eucosma suomiana</name>
+<name>Eucosma tripoliana</name>
+<name>Eucosmomorpha albersana</name>
+<name>Eucosmomorpha</name>
+<name>Eudemis</name>
+<name>Eudemis porphyrana</name>
+<name>Eudemis profundana</name>
+<name>Eudonia alpina</name>
+<name>Eudonia lacustrata</name>
+<name>Eudonia laetella</name>
+<name>Eudonia mercurella</name>
+<name>Eudonia murana</name>
+<name>Eudonia</name>
+<name>Eudonia pallida</name>
+<name>Eudonia sudetica</name>
+<name>Eudonia truncicolella</name>
+<name>Eugnorisma depuncta</name>
+<name>Eugnorisma glareosa</name>
+<name>Eugnorisma</name>
+<name>Eugraphe</name>
+<name>Eugraphe sigma</name>
+<name>Euhyponomeuta</name>
+<name>Euhyponomeuta stannella</name>
+<name>Euhyponomeutoides albithoracellus</name>
+<name>Euhyponomeutoides</name>
+<name>Euhyponomeutoides ribesiella</name>
+<name>Eulamprotes atrella</name>
+<name>Eulamprotes</name>
+<name>Eulamprotes unicolorella</name>
+<name>Eulamprotes wilkella</name>
+<name>Eulia ministrana</name>
+<name>Eulia</name>
+<name>Eulithis mellinata</name>
+<name>Eulithis</name>
+<name>Eulithis populata</name>
+<name>Eulithis prunata</name>
+<name>Eulithis pyraliata</name>
+<name>Eulithis testata</name>
+<name>Euphydryas iduna</name>
+<name>Euphydryas</name>
+<name>Euphyia</name>
+<name>Euphyia unangulata</name>
+<name>Eupithecia abbreviata</name>
+<name>Eupithecia abietaria</name>
+<name>Eupithecia absinthiata</name>
+<name>Eupithecia actaeata</name>
+<name>Eupithecia analoga</name>
+<name>Eupithecia assimilata</name>
+<name>Eupithecia cauchiata</name>
+<name>Eupithecia centaureata</name>
+<name>Eupithecia conterminata</name>
+<name>Eupithecia denotata</name>
+<name>Eupithecia dodoneata</name>
+<name>Eupithecia egenaria</name>
+<name>Eupithecia exiguata</name>
+<name>Eupithecia expallidata</name>
+<name>Eupithecia fennoscandica</name>
+<name>Eupithecia gelidata</name>
+<name>Eupithecia groenblomi</name>
+<name>Eupithecia icterata</name>
+<name>Eupithecia immundata</name>
+<name>Eupithecia indigata</name>
+<name>Eupithecia innotata</name>
+<name>Eupithecia intricata</name>
+<name>Eupithecia inturbata</name>
+<name>Eupithecia irriguata</name>
+<name>Eupithecia lanceata</name>
+<name>Eupithecia lariciata</name>
+<name>Eupithecia linariata</name>
+<name>Eupithecia millefoliata</name>
+<name>Eupithecia</name>
+<name>Eupithecia nanata</name>
+<name>Eupithecia ochridata</name>
+<name>Eupithecia pimpinellata</name>
+<name>Eupithecia plumbeolata</name>
+<name>Eupithecia pulchellata</name>
+<name>Eupithecia pusillata</name>
+<name>Eupithecia pygmaeata</name>
+<name>Eupithecia satyrata</name>
+<name>Eupithecia simpliciata</name>
+<name>Eupithecia sinuosaria</name>
+<name>Eupithecia subfuscata</name>
+<name>Eupithecia subumbrata</name>
+<name>Eupithecia succenturiata</name>
+<name>Eupithecia tantillaria</name>
+<name>Eupithecia tenuiata</name>
+<name>Eupithecia tripunctaria</name>
+<name>Eupithecia trisignaria</name>
+<name>Eupithecia valerianata</name>
+<name>Eupithecia venosata</name>
+<name>Eupithecia veratraria</name>
+<name>Eupithecia virgaureata</name>
+<name>Eupithecia vulgata</name>
+<name>Euplexia lucipara</name>
+<name>Euplexia</name>
+<name>Eupoecilia ambiguella</name>
+<name>Eupoecilia angustana</name>
+<name>Eupoecilia</name>
+<name>Eupoecilia sanguisorbana</name>
+<name>Euproctis</name>
+<name>Euproctis similis</name>
+<name>Eupsilia</name>
+<name>Eupsilia transversa</name>
+<name>Eurois</name>
+<name>Eurois occulta</name>
+<name>Eurrhypara hortulata</name>
+<name>Eurrhypara</name>
+<name>Euspilapteryx auroguttella</name>
+<name>Euspilapteryx</name>
+<name>Eustroma</name>
+<name>Eustroma reticulata</name>
+<name>Eustrotiinae</name>
+<name>Euthrix</name>
+<name>Euthrix potatoria</name>
+<name>Euxoa adumbrata</name>
+<name>Euxoa cursoria</name>
+<name>Euxoa eruta</name>
+<name>Euxoa</name>
+<name>Euxoa nigricans</name>
+<name>Euxoa obelisca</name>
+<name>Euxoa recussa</name>
+<name>Euxoa tritici</name>
+<name>Euzophera cinerosella</name>
+<name>Euzophera</name>
+<name>Euzophera pinguis</name>
+<name>Evergestinae</name>
+<name>Evergestis aenealis</name>
+<name>Evergestis extimalis</name>
+<name>Evergestis forficalis</name>
+<name>Evergestis limbata</name>
+<name>Evergestis</name>
+<name>Evergestis pallidata</name>
+<name>Exaeretia allisella</name>
+<name>Exaeretia ciniflonella</name>
+<name>Exaeretia</name>
+<name>Exapate congelatella</name>
+<name>Exapate</name>
+<name>Exoteleia dodecella</name>
+<name>Exoteleia</name>
+<name>Fabula</name>
+<name>Fabula zollikoferi</name>
+<name>fagerjordfly</name>
+<name>fagerklokkemøll</name>
+<name>fagerlêrfly</name>
+<name>fagerlærfly</name>
+<name>fagermålar</name>
+<name>fagermåler</name>
+<name>Fagivorina arenaria</name>
+<name>Fagivorina</name>
+<name>Falcaria lacertinaria</name>
+<name>Falcaria</name>
+<name>Falseuncaria degreyana</name>
+<name>Falseuncaria</name>
+<name>Falseuncaria ruficiliana</name>
+<name>Favonius</name>
+<name>Favonius quercus</name>
+<name>Filatima incomptella</name>
+<name>Filatima</name>
+<name>finnmarksbladviklar</name>
+<name>finnmarksbladvikler</name>
+<name>finnmarksprydviklar</name>
+<name>finnmarksprydvikler</name>
+<name>fiolettbanda gulfly</name>
+<name>fiolett bandfly</name>
+<name>fiolett bandmålar</name>
+<name>fiolettbrunt bakkefly</name>
+<name>fiolettbrunt jordfly</name>
+<name>fiolettbrunt metallfly</name>
+<name>fiolettbåndet gulfly</name>
+<name>fiolett båndfly</name>
+<name>fiolett båndmåler</name>
+<name>fiolett gullveng</name>
+<name>fiolett gullvinge</name>
+<name>fiolett heifly</name>
+<name>fiolett nellikfly</name>
+<name>fiolett rosemålar</name>
+<name>fiolett rosemåler</name>
+<name>fiolett vårfly</name>
+<name>fiolglansmøll</name>
+<name>firtannfjærmøll</name>
+<name>firtannfjørmøll</name>
+<name>fjellauvviklar</name>
+<name>fjellbjørkemålar</name>
+<name>fjellbjørkemåler</name>
+<name>fjellbloddropesvermar</name>
+<name>fjellbloddråpesvermer</name>
+<name>fjellblåveng</name>
+<name>fjellblåvinge</name>
+<name>fjellengmott</name>
+<name>fjellengpraktviklar</name>
+<name>fjellengpraktvikler</name>
+<name>fjellengviklar</name>
+<name>fjellengvikler</name>
+<name>fjellfjærmøll</name>
+<name>fjellfjørmøll</name>
+<name>fjellflatviklar</name>
+<name>fjellflatvikler</name>
+<name>fjellglassvinge</name>
+<name>fjellglasveng</name>
+<name>fjellhakefly</name>
+<name>fjelljordfly</name>
+<name>fjellkveldviklar</name>
+<name>fjellkveldvikler</name>
+<name>fjellmetallfly</name>
+<name>fjellmosemott</name>
+<name>fjellmålar</name>
+<name>fjellmåler</name>
+<name>fjellnebbmott</name>
+<name>fjellnebbviklar</name>
+<name>fjellnebbvikler</name>
+<name>fjellperlemorveng</name>
+<name>fjellperlemorvinge</name>
+<name>fjellpraktviklar</name>
+<name>fjellpraktvikler</name>
+<name>fjellprydviklar</name>
+<name>fjellprydvikler</name>
+<name>fjellringveng</name>
+<name>fjellringvinge</name>
+<name>fjellstengelviklar</name>
+<name>fjellstengelvikler</name>
+<name>fjelltoppringveng</name>
+<name>fjelltoppringvinge</name>
+<name>fjellurvemålar</name>
+<name>fjellurvemåler</name>
+<name>fjellvierfly</name>
+<name>fjelløvvikler</name>
+<name>fjærbarkmåler</name>
+<name>fjærbarmåler</name>
+<name>fjærbåndvikler</name>
+<name>fjærepraktvikler</name>
+<name>fjærfly</name>
+<name>fjærtannspinner</name>
+<name>fjørbandviklar</name>
+<name>fjørbarmålar</name>
+<name>fjørborkmålar</name>
+<name>fjørepraktviklar</name>
+<name>fjørfly</name>
+<name>fjørtannspinnar</name>
+<name>flekkbandmålar</name>
+<name>flekkbjørnespinnar</name>
+<name>flekkbjørnespinner</name>
+<name>flekkbåndmåler</name>
+<name>flekkdammott</name>
+<name>flekkdvergmålar</name>
+<name>flekkdvergmåler</name>
+<name>flekkengmott</name>
+<name>flekkengmålar</name>
+<name>flekkengmåler</name>
+<name>flekket bjørnespinnar</name>
+<name>flekket bjørnespinner</name>
+<name>flekket flatfly</name>
+<name>flekket halvspinnar</name>
+<name>flekket halvspinner</name>
+<name>flekket stengelfly</name>
+<name>flekkfagerfly</name>
+<name>flekkflatfly</name>
+<name>flekkfly</name>
+<name>flekkhalvspinnar</name>
+<name>flekkhalvspinner</name>
+<name>flekklundmålar</name>
+<name>flekklundmåler</name>
+<name>flekkmålar</name>
+<name>flekkmåler</name>
+<name>flekkringveng</name>
+<name>flekkringvinge</name>
+<name>flekksivmott</name>
+<name>flekkskogmålar</name>
+<name>flekkskogmåler</name>
+<name>flekkstengelfly</name>
+<name>flikengmålar</name>
+<name>flikengmåler</name>
+<name>flikfly</name>
+<name>flikmånemålar</name>
+<name>flikmånemåler</name>
+<name>fliksigdveng</name>
+<name>fliksigdvinge</name>
+<name>fløyelsringveng</name>
+<name>fløyelsringvinge</name>
+<name>forrådshalmmott</name>
+<name>forveksla engfly</name>
+<name>forvekslet engfly</name>
+<name>fredlausmålar</name>
+<name>fredløsmåler</name>
+<name>friggs perlemorveng</name>
+<name>friggs perlemorvinge</name>
+<name>frostviklar</name>
+<name>frostvikler</name>
+<name>fruktsolviklar</name>
+<name>fruktsolvikler</name>
+<name>frømøll</name>
+<name>frøyas perlemorveng</name>
+<name>frøyas perlemorvinge</name>
+<name>frøys perlemorveng</name>
+<name>frøys perlemorvinge</name>
+<name>Furcula bicuspis</name>
+<name>Furcula bifida</name>
+<name>Furcula furcula</name>
+<name>Furcula</name>
+<name>furubarkglansvikler</name>
+<name>furubarksmalmott</name>
+<name>furubarmålar</name>
+<name>furubarmåler</name>
+<name>furubjellevikler</name>
+<name>furubjølleviklar</name>
+<name>furublomstersmalmott</name>
+<name>furublomsterviklar</name>
+<name>furublomstsmalmott</name>
+<name>furublomstvikler</name>
+<name>furubogemålar</name>
+<name>furuborkglansviklar</name>
+<name>furuborksmalmott</name>
+<name>furubuemåler</name>
+<name>furudvergmålar</name>
+<name>furudvergmåler</name>
+<name>furufly</name>
+<name>furuglansviklar</name>
+<name>furuglansvikler</name>
+<name>furukonglesmalmott</name>
+<name>furukveldviklar</name>
+<name>furukveldvikler</name>
+<name>furumålar</name>
+<name>furumåler</name>
+<name>furuskogsnebbmott</name>
+<name>furuskotsmalmott</name>
+<name>furuskuddsmalmott</name>
+<name>furuspinnar</name>
+<name>furuspinner</name>
+<name>furusvermar</name>
+<name>furusvermer</name>
+<name>gaffelkappefly</name>
+<name>Galleria mellonella</name>
+<name>Galleria</name>
+<name>Galleriinae</name>
+<name>gallesolviklar</name>
+<name>gallesolvikler</name>
+<name>gammafly</name>
+<name>Gastropacha</name>
+<name>Gastropacha quercifolia</name>
+<name>Gazoryctra fuscoargenteus</name>
+<name>Gazoryctra</name>
+<name>Geina didactyla</name>
+<name>Geina</name>
+<name>geitramsdropemålar</name>
+<name>geitramsdråpemåler</name>
+<name>geitramsmålar</name>
+<name>geitramsmåler</name>
+<name>geitvedmålar</name>
+<name>geitvedmåler</name>
+<name>Gelechia cuneatella</name>
+<name>Gelechia hippophaella</name>
+<name>Gelechia muscosella</name>
+<name>Gelechia</name>
+<name>Gelechia nigra</name>
+<name>Gelechia rhombella</name>
+<name>Gelechia sabinellus</name>
+<name>Gelechia sestertiella</name>
+<name>Gelechia sororculella</name>
+<name>Gelechiidae</name>
+<name>Gelechiinae</name>
+<name>Gelechioidea</name>
+<name>Geometra</name>
+<name>Geometra papilionaria</name>
+<name>Geometridae</name>
+<name>Geometrinae</name>
+<name>Geometroidea</name>
+<name>Gesneria centuriella</name>
+<name>Gesneria</name>
+<name>Gibberifera</name>
+<name>Gibberifera simplana</name>
+<name>Gillmeria</name>
+<name>Gillmeria ochrodactyla</name>
+<name>Gillmeria pallidactyla</name>
+<name>Gillmeria tetradactyla</name>
+<name>gjeldkarvedvergmålar</name>
+<name>gjeldkarvedvergmåler</name>
+<name>gjeldkarvetannmøll</name>
+<name>Glacies coracina</name>
+<name>Glacies</name>
+<name>glansbergmålar</name>
+<name>glansbergmåler</name>
+<name>glanshaustfly</name>
+<name>glanshøstfly</name>
+<name>glanskrattmålar</name>
+<name>glanskrattmåler</name>
+<name>glansnebbmott</name>
+<name>glansrørfly</name>
+<name>glansrøyrfly</name>
+<name>glanssmalmott</name>
+<name>glansspinnar</name>
+<name>glansspinner</name>
+<name>Glaucopsyche alexis</name>
+<name>Glaucopsyche</name>
+<name>glennemålar</name>
+<name>glennemåler</name>
+<name>Globia algae</name>
+<name>Globia</name>
+<name>Globia sparganii</name>
+<name>Gluphisia crenata</name>
+<name>Gluphisia</name>
+<name>Glyphipterigidae</name>
+<name>Glyphipteriginae</name>
+<name>Glyphipterix bergstraesserella</name>
+<name>Glyphipterix equitella</name>
+<name>Glyphipterix forsterella</name>
+<name>Glyphipterix haworthana</name>
+<name>Glyphipterix</name>
+<name>Glyphipterix schoenicolella</name>
+<name>Glyphipterix simpliciella</name>
+<name>Glyphipterix thrasonella</name>
+<name>gneistedagfly</name>
+<name>gnistdagfly</name>
+<name>Gnophos</name>
+<name>Gnophos obfuscata</name>
+<name>Gnorimoschema epithymella</name>
+<name>Gnorimoschema herbichii</name>
+<name>Gnorimoschema</name>
+<name>Gnorimoschema nordlandicolella</name>
+<name>Gnorimoschema streliciella</name>
+<name>Gnorimoschema valesiella</name>
+<name>Gonepteryx</name>
+<name>Gonepteryx rhamni</name>
+<name>Gortyna flavago</name>
+<name>Gortyna</name>
+<name>Gracillaria loriolella</name>
+<name>Gracillaria</name>
+<name>Gracillaria syringella</name>
+<name>Gracillariidae</name>
+<name>Gracillariinae</name>
+<name>Gracillarioidea</name>
+<name>Grammia</name>
+<name>Grammia quenseli</name>
+<name>Grammia qvenseli</name>
+<name>granbarkglansvikler</name>
+<name>granbarkmåler</name>
+<name>granbarmålar</name>
+<name>granbarmåler</name>
+<name>granbarviklar</name>
+<name>granbarvikler</name>
+<name>granbogemålar</name>
+<name>granborkglansviklar</name>
+<name>granborkmålar</name>
+<name>granbuemåler</name>
+<name>granbørstespinnar</name>
+<name>granbørstespinner</name>
+<name>grandvergmålar</name>
+<name>grandvergmåler</name>
+<name>granflatviklar</name>
+<name>granflatvikler</name>
+<name>granfrøsmalmott</name>
+<name>grankonglesmalmott</name>
+<name>granlundmålar</name>
+<name>granlundmåler</name>
+<name>granmålar</name>
+<name>granmåler</name>
+<name>grannålviklar</name>
+<name>grannålvikler</name>
+<name>gransolviklar</name>
+<name>gransolvikler</name>
+<name>Graphiphora augur</name>
+<name>Graphiphora</name>
+<name>Grapholita aureolana</name>
+<name>Grapholita compositella</name>
+<name>Grapholita discretana</name>
+<name>Grapholita funebrana</name>
+<name>Grapholita janthinana</name>
+<name>Grapholita jungiella</name>
+<name>Grapholita lunulana</name>
+<name>Grapholita</name>
+<name>Grapholita orobana</name>
+<name>Grapholita pallifrontana</name>
+<name>Grapholita tenebrosana</name>
+<name>grasmarkfly</name>
+<name>grassekkspinnar</name>
+<name>grassekkspinner</name>
+<name>grassmalmott</name>
+<name>grasspinnar</name>
+<name>grasspinner</name>
+<name>greindrepar</name>
+<name>greindreper</name>
+<name>gressekkspinner</name>
+<name>gressmalmott</name>
+<name>gressmarkfly</name>
+<name>gresspinner</name>
+<name>Griposia aprilina</name>
+<name>Griposia</name>
+<name>grisøreengvikler</name>
+<name>grisøyreengviklar</name>
+<name>grobladengmott</name>
+<name>grumset dvergmålar</name>
+<name>grumset dvergmåler</name>
+<name>grønbanda rotfly</name>
+<name>grøn borkmålar</name>
+<name>grøn eikeviklar</name>
+<name>grøn engmott</name>
+<name>grønfagerfly</name>
+<name>grøn flatviklar</name>
+<name>grøn metallsvermar</name>
+<name>grønn barkmåler</name>
+<name>grønnbåndet rotfly</name>
+<name>grønn eikevikler</name>
+<name>grønn engmott</name>
+<name>grønnfagerfly</name>
+<name>grønn flatvikler</name>
+<name>grønn metallsvermer</name>
+<name>grønnstjertvinge</name>
+<name>grønn tungemåler</name>
+<name>grønnvinge</name>
+<name>grønstjertveng</name>
+<name>grønt eikefly</name>
+<name>grønt kveldfly</name>
+<name>grønt langvengfly</name>
+<name>grønt langvingefly</name>
+<name>grønt rotfly</name>
+<name>grønt skogfly</name>
+<name>grøn tungemålar</name>
+<name>grønveng</name>
+<name>grå barkmåler</name>
+<name>grå bergmålar</name>
+<name>grå bergmåler</name>
+<name>grå bladviklar</name>
+<name>grå bladvikler</name>
+<name>grå bogemålar</name>
+<name>grå borkmålar</name>
+<name>gråbrun tigerspinnar</name>
+<name>gråbrun tigerspinner</name>
+<name>gråbrunt metallfly</name>
+<name>gråbrunt sandjordfly</name>
+<name>gråbrunt urtefly</name>
+<name>gråbrunt viftefly</name>
+<name>grå buemåler</name>
+<name>grå dvergmålar</name>
+<name>grå dvergmåler</name>
+<name>grå einerbarmålar</name>
+<name>grå einerbarmåler</name>
+<name>grå engmålar</name>
+<name>grå engmåler</name>
+<name>grå engviklar</name>
+<name>grå engvikler</name>
+<name>grå flatviklar</name>
+<name>grå flatvikler</name>
+<name>gråflekksigdviklar</name>
+<name>gråflekksigdvikler</name>
+<name>grå fugleskittvikler</name>
+<name>grå fugleskitviklar</name>
+<name>grå furuskotviklar</name>
+<name>grå furuskuddvikler</name>
+<name>grå gaffelstjert</name>
+<name>grå kjerrmålar</name>
+<name>grå kjerrmåler</name>
+<name>grå knoppviklar</name>
+<name>grå knoppvikler</name>
+<name>grå kveldviklar</name>
+<name>grå kveldvikler</name>
+<name>grå kvistviklar</name>
+<name>grå kvistvikler</name>
+<name>grå lauvviklar</name>
+<name>grå lundmålar</name>
+<name>grå lundmåler</name>
+<name>grå løvvikler</name>
+<name>grå mauremålar</name>
+<name>grå mauremåler</name>
+<name>grå mosemott</name>
+<name>grå ospetannspinnar</name>
+<name>grå ospetannspinner</name>
+<name>grå prestekragerotviklar</name>
+<name>grå prestekragerotvikler</name>
+<name>gråpudra jordfly</name>
+<name>gråpudra taigafly</name>
+<name>gråpudret jordfly</name>
+<name>gråpudret taigafly</name>
+<name>grå rotviklar</name>
+<name>grå rotvikler</name>
+<name>grå skogmålar</name>
+<name>grå skogmåler</name>
+<name>grå stengelviklar</name>
+<name>grå stengelvikler</name>
+<name>grå svevefjærmøll</name>
+<name>grå svævefjørmøll</name>
+<name>grå syremålar</name>
+<name>grå syremåler</name>
+<name>grått eikefly</name>
+<name>grått fjellbakkefly</name>
+<name>grått fjellengfly</name>
+<name>grått fjellviddefly</name>
+<name>grått hakefly</name>
+<name>grått kappefly</name>
+<name>grått kilefly</name>
+<name>grått lavfly</name>
+<name>grått lyngheifly</name>
+<name>grått neslefly</name>
+<name>grått pyramidefly</name>
+<name>grått sandfly</name>
+<name>grått slåttefly</name>
+<name>grått taigafly</name>
+<name>grått urtefly</name>
+<name>grått viklarfly</name>
+<name>grått viklerfly</name>
+<name>grå tungemålar</name>
+<name>grå tungemåler</name>
+<name>grå vårkveldviklar</name>
+<name>grå vårkveldvikler</name>
+<name>gul bandviklar</name>
+<name>gul bogemålar</name>
+<name>gulbrunt engfly</name>
+<name>gulbrunt urtefly</name>
+<name>gulbrunt viftefly</name>
+<name>gul buemåler</name>
+<name>gul bærmålar</name>
+<name>gul bærmåler</name>
+<name>gul båndvikler</name>
+<name>guldusksmalmott</name>
+<name>gul eikeviklar</name>
+<name>gul eikevikler</name>
+<name>gulflekkbakkefly</name>
+<name>gulflekkfly</name>
+<name>gulflekksmygar</name>
+<name>gulflekksmyger</name>
+<name>gulflekktannmøll</name>
+<name>gul frostmålar</name>
+<name>gul frostmåler</name>
+<name>gul fugleskittvikler</name>
+<name>gul fugleskitviklar</name>
+<name>gulhodefly</name>
+<name>gulhodekålmott</name>
+<name>gulhovudfly</name>
+<name>gulhovudkålmott</name>
+<name>gul jonsokmålar</name>
+<name>gul kjerrmålar</name>
+<name>gul kjerrmåler</name>
+<name>gul knoppurtflatmøll</name>
+<name>gulkrageglassvinge</name>
+<name>gulkrageglasveng</name>
+<name>gul krattmøll</name>
+<name>gul kålmott</name>
+<name>gul lavspinnar</name>
+<name>gul lavspinner</name>
+<name>gullfagerfly</name>
+<name>gullkantengmott</name>
+<name>gullmetallfly</name>
+<name>gullmålar</name>
+<name>gullmåler</name>
+<name>gullpraktviklar</name>
+<name>gullpraktvikler</name>
+<name>gullprydviklar</name>
+<name>gullprydvikler</name>
+<name>gullringveng</name>
+<name>gullringvinge</name>
+<name>gullrisdvergmålar</name>
+<name>gullrisdvergmåler</name>
+<name>gullrisengmott</name>
+<name>gullrisengviklar</name>
+<name>gullrisengvikler</name>
+<name>gullrisfjærmøll</name>
+<name>gullrisfjørmøll</name>
+<name>gullrishettefly</name>
+<name>gul lundmålar</name>
+<name>gul lundmåler</name>
+<name>gul malurtpraktviklar</name>
+<name>gul malurtpraktvikler</name>
+<name>gul nebbmott</name>
+<name>gul prestekragerotviklar</name>
+<name>gul prestekragerotvikler</name>
+<name>gulpudra rotviklar</name>
+<name>gulpudret rotvikler</name>
+<name>gulrandsivmott</name>
+<name>gulrandsmalmott</name>
+<name>gulrandviklar</name>
+<name>gulrandvikler</name>
+<name>gulringa åkerfly</name>
+<name>gulringet åkerfly</name>
+<name>gul sankthansmåler</name>
+<name>gul skuggeviklar</name>
+<name>gul skyggevikler</name>
+<name>gul syremålar</name>
+<name>gul syremåler</name>
+<name>gult flatfly</name>
+<name>gul tigerspinnar</name>
+<name>gul tigerspinner</name>
+<name>gult nebbfly</name>
+<name>gult rovfly</name>
+<name>gult seljefly</name>
+<name>gylden gullrispraktvikler</name>
+<name>gyllenbrunt metallfly</name>
+<name>gyllen gullrispraktviklar</name>
+<name>Gymnoscelis</name>
+<name>Gymnoscelis rufifasciata</name>
+<name>Gynnidomorpha alismana</name>
+<name>Gynnidomorpha minimana</name>
+<name>Gynnidomorpha</name>
+<name>Gynnidomorpha vectisana</name>
+<name>Gypsonoma aceriana</name>
+<name>Gypsonoma dealbana</name>
+<name>Gypsonoma</name>
+<name>Gypsonoma nitidulana</name>
+<name>Gypsonoma sociana</name>
+<name>gyvelmålar</name>
+<name>gyvelmåler</name>
+<name>Habrosyne</name>
+<name>Habrosyne pyritoides</name>
+<name>Hada</name>
+<name>Hada plebeja</name>
+<name>Hadena albimacula</name>
+<name>Hadena bicruris</name>
+<name>Hadena caesia</name>
+<name>Hadena compta</name>
+<name>Hadena confusa</name>
+<name>Hadena</name>
+<name>Hadena perplexa</name>
+<name>Hadeninae</name>
+<name>Hadula colletti</name>
+<name>Hadula melanopa</name>
+<name>Hadula</name>
+<name>Hadula trifolii</name>
+<name>hagebandfly</name>
+<name>hagebjellevikler</name>
+<name>hagebjølleviklar</name>
+<name>hagebærmålar</name>
+<name>hagebærmåler</name>
+<name>hagebåndfly</name>
+<name>hagefly</name>
+<name>hagelundfly</name>
+<name>hagemålar</name>
+<name>hagemåler</name>
+<name>hageroseviklar</name>
+<name>hagerosevikler</name>
+<name>hagtornfrøviklar</name>
+<name>hagtornfrøvikler</name>
+<name>hagtornsigdviklar</name>
+<name>hagtornsigdvikler</name>
+<name>hagtornsommarfugl</name>
+<name>hagtornsommerfugl</name>
+<name>hagtornspinnar</name>
+<name>hagtornspinner</name>
+<name>hagtornspinnmøll</name>
+<name>halmgult grasfly</name>
+<name>halmgult gressfly</name>
+<name>Haplotinea insectella</name>
+<name>Haplotinea</name>
+<name>Harpella forficella</name>
+<name>Harpella</name>
+<name>hasselbladviklar</name>
+<name>hasselbladvikler</name>
+<name>hasselmunkefly</name>
+<name>hasselmålar</name>
+<name>hasselmåler</name>
+<name>haukeskjeggfjærmøll</name>
+<name>haukeskjeggfjørmøll</name>
+<name>haustbørstespinnar</name>
+<name>haustdorskmøll</name>
+<name>hausthalvspinnar</name>
+<name>haustkveldviklar</name>
+<name>haustlêrfly</name>
+<name>haustspinnar</name>
+<name>Hecatera bicolorata</name>
+<name>Hecatera</name>
+<name>hedemåler</name>
+<name>Hedya atropunctana</name>
+<name>Hedya dimidiana</name>
+<name>Hedya</name>
+<name>Hedya nubiferana</name>
+<name>Hedya ochroleucana</name>
+<name>Hedya pruniana</name>
+<name>Hedya salicella</name>
+<name>heggekveldviklar</name>
+<name>heggekveldvikler</name>
+<name>heggerullviklar</name>
+<name>heggerullvikler</name>
+<name>heggflatviklar</name>
+<name>heggflatvikler</name>
+<name>heggspinnmøll</name>
+<name>heibjørnespinnar</name>
+<name>heibjørnespinner</name>
+<name>heibladmålar</name>
+<name>heibladmåler</name>
+<name>heibladviklar</name>
+<name>heibladvikler</name>
+<name>heibørstespinnar</name>
+<name>heibørstespinner</name>
+<name>heiduskfly</name>
+<name>heifjellfly</name>
+<name>heilundmålar</name>
+<name>heilundmåler</name>
+<name>heimosemott</name>
+<name>heimålar</name>
+<name>heimåler</name>
+<name>Heinemannia laspeyrella</name>
+<name>Heinemannia</name>
+<name>heklagulveng</name>
+<name>heklagulvinge</name>
+<name>Helcystogramma lineolella</name>
+<name>Helcystogramma lutatella</name>
+<name>Helcystogramma</name>
+<name>Helcystogramma rufescens</name>
+<name>Heliconiinae</name>
+<name>Helicoverpa armigera</name>
+<name>Helicoverpa</name>
+<name>Heliophobus</name>
+<name>Heliophobus reticulata</name>
+<name>Heliothinae</name>
+<name>Heliothis</name>
+<name>Heliothis peltigera</name>
+<name>Heliothis viriplaca</name>
+<name>Heliozela hammoniella</name>
+<name>Heliozela</name>
+<name>Heliozela resplendella</name>
+<name>Heliozela sericiella</name>
+<name>Heliozelidae</name>
+<name>Hellinsia didactylites</name>
+<name>Hellinsia distinctus</name>
+<name>Hellinsia lienigianus</name>
+<name>Hellinsia</name>
+<name>Hellinsia osteodactylus</name>
+<name>Hellinsia tephradactyla</name>
+<name>Helotropha leucostigma</name>
+<name>Helotropha</name>
+<name>Hemaris fuciformis</name>
+<name>Hemaris</name>
+<name>Hemaris tityus</name>
+<name>Hemithea aestivaria</name>
+<name>Hemithea</name>
+<name>Hepialidae</name>
+<name>Hepialioidea</name>
+<name>Hepialus humuli</name>
+<name>Hepialus</name>
+<name>Herminia grisealis</name>
+<name>Herminia</name>
+<name>Herminia tarsipennalis</name>
+<name>Herminiinae</name>
+<name>heroringveng</name>
+<name>heroringvinge</name>
+<name>Hesperia comma</name>
+<name>Hesperia</name>
+<name>Hesperiidae</name>
+<name>Hesperiinae</name>
+<name>Hesperioidea</name>
+<name>hestehovfjærmøll</name>
+<name>hestehovfjørmøll</name>
+<name>hestehovstengelviklar</name>
+<name>hestehovstengelvikler</name>
+<name>hesteskorotviklar</name>
+<name>hesteskorotvikler</name>
+<name>Heterocampinae</name>
+<name>Heterogenea asella</name>
+<name>Heterogenea</name>
+<name>Heteropterinae</name>
+<name>Heterothera firmata</name>
+<name>Heterothera</name>
+<name>Heterothera serraria</name>
+<name>Hillia iris</name>
+<name>Hillia</name>
+<name>Hipparchia alcyone</name>
+<name>Hipparchia</name>
+<name>Hipparchia semele</name>
+<name>hjorterotflatmøll</name>
+<name>hjortetrøstfjærmøll</name>
+<name>hjortetrøstfjørmøll</name>
+<name>Hofmannophila</name>
+<name>Hofmannophila pseudospretella</name>
+<name>Holoarctia</name>
+<name>Holoarctia puengeleri</name>
+<name>Homoeosoma</name>
+<name>Homoeosoma nebulella</name>
+<name>Homoeosoma nimbella</name>
+<name>Hoplodrina blanda</name>
+<name>Hoplodrina</name>
+<name>Hoplodrina octogenaria</name>
+<name>Horisme</name>
+<name>Horisme tersata</name>
+<name>humleblomfjærmøll</name>
+<name>humleblomfjørmøll</name>
+<name>humlebolsmalmott</name>
+<name>humlebolvoksmott</name>
+<name>humledvergmålar</name>
+<name>humledvergmåler</name>
+<name>humlenebbfly</name>
+<name>humleviklar</name>
+<name>humlevikler</name>
+<name>husfly</name>
+<name>hvit bjørkeflatvikler</name>
+<name>hvitbladtistelfjærmøll</name>
+<name>hvitbåndet nellikfly</name>
+<name>hvit båndmåler</name>
+<name>hvitbåndnellikfly</name>
+<name>hvit båndvikler</name>
+<name>hvit c</name>
+<name>hvit dammott</name>
+<name>hvit dvergmåler</name>
+<name>hvit engmott</name>
+<name>hvit engvikler</name>
+<name>hvit flaggmåler</name>
+<name>hvit flatvikler</name>
+<name>hvitflekkdvergmåler</name>
+<name>hvitflekket grasfly</name>
+<name>hvitflekket kveldvikler</name>
+<name>hvitflekket løvvikler</name>
+<name>hvitflekket nellikfly</name>
+<name>hvitflekkgressfly</name>
+<name>hvitflekknellikfly</name>
+<name>hvit gaffelstjert</name>
+<name>hvithodebladvikler</name>
+<name>hvithodesmalmott</name>
+<name>hvithodevikler</name>
+<name>hvitkantet glansfly</name>
+<name>hvitkantfly</name>
+<name>hvitkantglansfly</name>
+<name>hvit kveldvikler</name>
+<name>hvit praktvikler</name>
+<name>hvitpunktnellikfly</name>
+<name>hvitribbet mauresvermer</name>
+<name>hvitribbet vandresvermer</name>
+<name>hvitribbet åkerfly</name>
+<name>hvit sankthansmåler</name>
+<name>hvit tannspinner</name>
+<name>hvit tigerspinner</name>
+<name>hvitt kveldfly</name>
+<name>hvitt sandjordfly</name>
+<name>hvitt strandengfly</name>
+<name>hvitveislundmåler</name>
+<name>hvitveismåler</name>
+<name>hvitvinget høstfly</name>
+<name>hvit vårkveldvikler</name>
+<name>Hydraecia micacea</name>
+<name>Hydraecia</name>
+<name>Hydraecia ultima</name>
+<name>Hydrelia flammeolaria</name>
+<name>Hydrelia</name>
+<name>Hydrelia sylvata</name>
+<name>Hydriomena furcata</name>
+<name>Hydriomena impluviata</name>
+<name>Hydriomena</name>
+<name>Hydriomena ruberata</name>
+<name>Hylaea fasciaria</name>
+<name>Hylaea</name>
+<name>Hyles gallii</name>
+<name>Hyles livornica</name>
+<name>Hyles</name>
+<name>hyllengmott</name>
+<name>Hypatima</name>
+<name>Hypatima rhomboidella</name>
+<name>Hypatopa binotella</name>
+<name>Hypatopa</name>
+<name>Hypatopa segnella</name>
+<name>Hypena crassalis</name>
+<name>Hypena</name>
+<name>Hypena proboscidalis</name>
+<name>Hypena rostralis</name>
+<name>Hypeninae</name>
+<name>Hypenodes humidalis</name>
+<name>Hypenodes</name>
+<name>Hypenodinae</name>
+<name>Hypercallia citrinalis</name>
+<name>Hypercallia</name>
+<name>Hypercalliinae</name>
+<name>Hypertrophidae</name>
+<name>Hypochalcia ahenella</name>
+<name>Hypochalcia</name>
+<name>Hypomecis</name>
+<name>Hypomecis roboraria</name>
+<name>Hyppa</name>
+<name>Hyppa rectilinea</name>
+<name>Hypsopygia costalis</name>
+<name>Hypsopygia glaucinalis</name>
+<name>Hypsopygia</name>
+<name>høgfjellbakkefly</name>
+<name>høstbørstespinner</name>
+<name>høstdorskmøll</name>
+<name>høsthalvspinner</name>
+<name>høstkveldvikler</name>
+<name>høstlærfly</name>
+<name>høstspinner</name>
+<name>høyfjellsbakkefly</name>
+<name>hårsvevefjærmøll</name>
+<name>hårsvævefjørmøll</name>
+<name>Idaea aversata</name>
+<name>Idaea biselata</name>
+<name>Idaea deversaria</name>
+<name>Idaea dimidiata</name>
+<name>Idaea emarginata</name>
+<name>Idaea humiliata</name>
+<name>Idaea maritimaria</name>
+<name>Idaea muricata</name>
+<name>Idaea</name>
+<name>Idaea pallidata</name>
+<name>Idaea seriata</name>
+<name>Idaea serpentata</name>
+<name>Idaea straminata</name>
+<name>Idaea sylvestraria</name>
+<name>idasblåveng</name>
+<name>idasblåvinge</name>
+<name>iduns ruteveng</name>
+<name>iduns rutevinge</name>
+<name>ildgullvinge</name>
+<name>Inachis io</name>
+<name>Inachis</name>
+<name>Incurvaria circulella</name>
+<name>Incurvaria masculella</name>
+<name>Incurvaria</name>
+<name>Incurvaria oehlmanniella</name>
+<name>Incurvaria pectinea</name>
+<name>Incurvaria praelatella</name>
+<name>Incurvaria vetulella</name>
+<name>Incurvariidae</name>
+<name>Incurvarioidea</name>
+<name>Infurcitinea argentimaculella</name>
+<name>Infurcitinea ignicomella</name>
+<name>Infurcitinea</name>
+<name>Ipimorpha contusa</name>
+<name>Ipimorpha</name>
+<name>Ipimorpha retusa</name>
+<name>Ipimorpha subtusa</name>
+<name>irisrørfly</name>
+<name>irisrøyrfly</name>
+<name>irrfly</name>
+<name>islandsk fjærmøll</name>
+<name>islandsk fjørmøll</name>
+<name>Isophrictis</name>
+<name>Isophrictis striatella</name>
+<name>Issoria lathonia</name>
+<name>Issoria</name>
+<name>Jodis lactearia</name>
+<name>Jodis</name>
+<name>Jodis putata</name>
+<name>jonsokblåveng</name>
+<name>jonsokkollstilkviklar</name>
+<name>jonsokkollstilkvikler</name>
+<name>jordbærflatviklar</name>
+<name>jordbærflatvikler</name>
+<name>jordengmott</name>
+<name>jordfly</name>
+<name>julibakkemålar</name>
+<name>julibakkemåler</name>
+<name>junigråviklar</name>
+<name>junigråvikler</name>
+<name>junikveldviklar</name>
+<name>junikveldvikler</name>
+<name>junimosemott</name>
+<name>juttas ringveng</name>
+<name>juttas ringvinge</name>
+<name>kakaosmalmott</name>
+<name>kalkvikkefly</name>
+<name>kameltannspinnar</name>
+<name>kameltannspinner</name>
+<name>kantplettbakkefly</name>
+<name>kaprifolfingermøll</name>
+<name>karminmålar</name>
+<name>karminmåler</name>
+<name>karminpraktviklar</name>
+<name>karminpraktvikler</name>
+<name>karminprydviklar</name>
+<name>karminprydvikler</name>
+<name>karminspinnar</name>
+<name>karminspinner</name>
+<name>Karsholtia marianii</name>
+<name>Karsholtia</name>
+<name>kattefotfjærmøll</name>
+<name>kattefotfjørmøll</name>
+<name>kattostmålar</name>
+<name>kattostmåler</name>
+<name>keisarkåpe</name>
+<name>keiserkåpe</name>
+<name>Kessleria fasciapennella</name>
+<name>Kessleria</name>
+<name>kileblåveng</name>
+<name>kileblåvinge</name>
+<name>kileengfly</name>
+<name>kirsebærmøll</name>
+<name>kirsebærsommarfugl</name>
+<name>kirsebærsommerfugl</name>
+<name>kjempebarkmåler</name>
+<name>kjempebladmålar</name>
+<name>kjempebladmåler</name>
+<name>kjempeborkmålar</name>
+<name>kjempeengmott</name>
+<name>kjempelavspinnar</name>
+<name>kjempelavspinner</name>
+<name>kjempesivmott</name>
+<name>kjerrnebbmott</name>
+<name>kjukefly</name>
+<name>kjukesmalmott</name>
+<name>kjølfly</name>
+<name>klesmøll</name>
+<name>Klimeschiopsis kiningerella</name>
+<name>Klimeschiopsis</name>
+<name>klippeblåveng</name>
+<name>klippeblåvinge</name>
+<name>klippefjellfly</name>
+<name>klippelavfly</name>
+<name>klippenebbmott</name>
+<name>klipperingmålar</name>
+<name>klipperingmåler</name>
+<name>klipperingveng</name>
+<name>klipperingvinge</name>
+<name>klistermøll</name>
+<name>klokkedvergmålar</name>
+<name>klokkedvergmåler</name>
+<name>klokkeengmott</name>
+<name>kløverblåveng</name>
+<name>kløverblåvinge</name>
+<name>kløverfrøviklar</name>
+<name>kløverfrøvikler</name>
+<name>kløverheifly</name>
+<name>kløversekkmøll</name>
+<name>kløverspinnar</name>
+<name>kløverspinner</name>
+<name>knoppmålar</name>
+<name>knoppmåler</name>
+<name>knoppurtengelviklar</name>
+<name>knoppurtengelvikler</name>
+<name>knoppurtengmott</name>
+<name>knoppurtpraktviklar</name>
+<name>knoppurtpraktvikler</name>
+<name>knoppurtstilkviklar</name>
+<name>knoppurtstilkvikler</name>
+<name>kobberfly</name>
+<name>kobberkveldvikler</name>
+<name>kobbermåler</name>
+<name>kommagrasfly</name>
+<name>kommagressfly</name>
+<name>kommasmygar</name>
+<name>kommasmyger</name>
+<name>kongleglansviklar</name>
+<name>kongleglansvikler</name>
+<name>kongslysengmott</name>
+<name>konkavflatviklar</name>
+<name>konkavflatvikler</name>
+<name>konvallrotetar</name>
+<name>konvallroteter</name>
+<name>koparfly</name>
+<name>koparkveldviklar</name>
+<name>koparmålar</name>
+<name>Korscheltellus lupulina</name>
+<name>Korscheltellus</name>
+<name>kortstreka metallfly</name>
+<name>kortstreket metallfly</name>
+<name>krattbladmålar</name>
+<name>krattbladmåler</name>
+<name>krattbogemålar</name>
+<name>krattbuemåler</name>
+<name>krattbærmålar</name>
+<name>krattbærmåler</name>
+<name>krattengmålar</name>
+<name>krattengmåler</name>
+<name>krattfly</name>
+<name>krattlauvviklar</name>
+<name>krattløvvikler</name>
+<name>krattroseviklar</name>
+<name>krattrosevikler</name>
+<name>kreklingsmalmott</name>
+<name>kronemålar</name>
+<name>kronemåler</name>
+<name>krossvedflatviklar</name>
+<name>krossvedflatvikler</name>
+<name>krypvierfly</name>
+<name>kvaeglansviklar</name>
+<name>kvaeglansvikler</name>
+<name>kvaeviklar</name>
+<name>kvaevikler</name>
+<name>kvannpraktviklar</name>
+<name>kvannpraktvikler</name>
+<name>kvanntannmøll</name>
+<name>kveldpåfuglauge</name>
+<name>kveldpåfugløye</name>
+<name>kvitbanda nellikfly</name>
+<name>kvit bandmålar</name>
+<name>kvitbandnellikfly</name>
+<name>kvit bandviklar</name>
+<name>kvit bjørkeflatviklar</name>
+<name>kvitbladtistelfjørmøll</name>
+<name>kvit c</name>
+<name>kvit dammott</name>
+<name>kvit dvergmålar</name>
+<name>kvit engmott</name>
+<name>kvit engviklar</name>
+<name>kvit flaggmålar</name>
+<name>kvit flatviklar</name>
+<name>kvitflekkdvergmålar</name>
+<name>kvitflekket grasfly</name>
+<name>kvitflekket kveldviklar</name>
+<name>kvitflekket lauvviklar</name>
+<name>kvitflekket nellikfly</name>
+<name>kvitflekkgrasfly</name>
+<name>kvitflekknellikfly</name>
+<name>kvit gaffelstjert</name>
+<name>kvithovudbladviklar</name>
+<name>kvithovudsmalmott</name>
+<name>kvithovudviklar</name>
+<name>kvit jonsokmålar</name>
+<name>kvitkanta glansfly</name>
+<name>kvitkantfly</name>
+<name>kvitkantglansfly</name>
+<name>kvit kveldviklar</name>
+<name>kvit praktviklar</name>
+<name>kvitpunktnellikfly</name>
+<name>kvitribba mauresvermar</name>
+<name>kvitribba vandresvermar</name>
+<name>kvitribba åkerfly</name>
+<name>kvitsymrelundmålar</name>
+<name>kvitsymremålar</name>
+<name>kvit tannspinnar</name>
+<name>kvit tigerspinnar</name>
+<name>kvitt kveldfly</name>
+<name>kvitt sandjordfly</name>
+<name>kvitt strandengfly</name>
+<name>kvitvengja haustfly</name>
+<name>kvit vårkveldviklar</name>
+<name>kystbjørkemålar</name>
+<name>kystbjørkemåler</name>
+<name>kystdvergmålar</name>
+<name>kystdvergmåler</name>
+<name>kystflatviklar</name>
+<name>kystflatvikler</name>
+<name>kystfly</name>
+<name>kysthalmmott</name>
+<name>kystmauremålar</name>
+<name>kystmauremåler</name>
+<name>kystnebbmott</name>
+<name>kystnellikfly</name>
+<name>kystperikumfly</name>
+<name>kystpraktviklar</name>
+<name>kystpraktvikler</name>
+<name>kystringveng</name>
+<name>kystringvinge</name>
+<name>kystsmalmott</name>
+<name>kyststengelfly</name>
+<name>kystsumpviklar</name>
+<name>kystsumpvikler</name>
+<name>kålfly</name>
+<name>kålmøll</name>
+<name>kålpyralide</name>
+<name>Lacanobia contigua</name>
+<name>Lacanobia</name>
+<name>Lacanobia oleracea</name>
+<name>Lacanobia suasa</name>
+<name>Lacanobia thalassina</name>
+<name>lakrismjeltblåveng</name>
+<name>lakrismjeltblåvinge</name>
+<name>lakrismjeltfrøviklar</name>
+<name>lakrismjeltfrøvikler</name>
+<name>Lamellocossus</name>
+<name>Lamellocossus terebra</name>
+<name>Lampronia capitella</name>
+<name>Lampronia corticella</name>
+<name>Lampronia flavimitrella</name>
+<name>Lampronia fuscatella</name>
+<name>Lampronia luzella</name>
+<name>Lampronia morosa</name>
+<name>Lampronia</name>
+<name>Lampronia redimitella</name>
+<name>Lampronia rupella</name>
+<name>Lampropteryx</name>
+<name>Lampropteryx otregiata</name>
+<name>Lampropteryx suffumata</name>
+<name>landøydaengvikler</name>
+<name>landøydafjærmøll</name>
+<name>landøydapraktvikler</name>
+<name>landøydeengviklar</name>
+<name>landøydefjørmøll</name>
+<name>landøydepraktviklar</name>
+<name>langstreka metallfly</name>
+<name>langstreket metallfly</name>
+<name>langvengjordfly</name>
+<name>langvingejordfly</name>
+<name>lansettmøll</name>
+<name>Laothoe</name>
+<name>Laothoe populi</name>
+<name>Larentia clavaria</name>
+<name>Larentia</name>
+<name>Larentiinae</name>
+<name>Lasiocampa</name>
+<name>Lasiocampa quercus</name>
+<name>Lasiocampa trifolii</name>
+<name>Lasiocampidae</name>
+<name>Lasiocampinae</name>
+<name>Lasiocampoidea</name>
+<name>Lasiommata maera</name>
+<name>Lasiommata megera</name>
+<name>Lasiommata</name>
+<name>Lasiommata petropolitana</name>
+<name>Lasionycta imbecilla</name>
+<name>Lasionycta leucocycla</name>
+<name>Lasionycta</name>
+<name>Lasionycta proxima</name>
+<name>Lasionycta secedens</name>
+<name>Lasionycta skraelingia</name>
+<name>Lasionycta staudingeri</name>
+<name>Laspeyria flexula</name>
+<name>Laspeyria</name>
+<name>Lateroligia</name>
+<name>Lateroligia ophiogramma</name>
+<name>Lathronympha</name>
+<name>Lathronympha strigana</name>
+<name>lauvflikmålar</name>
+<name>lauvskogmålar</name>
+<name>lauvtredrepar</name>
+<name>lavbarkmåler</name>
+<name>lavborkmålar</name>
+<name>lavprydviklar</name>
+<name>lavprydvikler</name>
+<name>leddvedfingermøll</name>
+<name>leddvedtungemålar</name>
+<name>leddvedtungemåler</name>
+<name>Lepidoptera</name>
+<name>Leptidea juvernica</name>
+<name>Leptidea</name>
+<name>Leptidea reali</name>
+<name>Leptidea sinapis</name>
+<name>lêrbrun bladviklar</name>
+<name>lerkedvergmålar</name>
+<name>lerkedvergmåler</name>
+<name>lerkeknoppviklar</name>
+<name>lerkeknoppvikler</name>
+<name>lerkesekkmøll</name>
+<name>lerkeviklar</name>
+<name>lerkevikler</name>
+<name>Leucania comma</name>
+<name>Leucania</name>
+<name>Leucania obsoleta</name>
+<name>Leucapamea</name>
+<name>Leucapamea ophiogramma</name>
+<name>Leucodonta bicoloria</name>
+<name>Leucodonta</name>
+<name>Leucoma</name>
+<name>Leucoma salicis</name>
+<name>Leucoptera laburnella</name>
+<name>Leucoptera lathyrifoliella</name>
+<name>Leucoptera malifoliella</name>
+<name>Leucoptera</name>
+<name>Leucoptera orobi</name>
+<name>Leucoptera sinuella</name>
+<name>Levipalpus hepatariella</name>
+<name>Levipalpus</name>
+<name>ligustersvermar</name>
+<name>ligustersvermer</name>
+<name>Limacodidae</name>
+<name>Limenitinae</name>
+<name>Limenitis</name>
+<name>Limenitis populi</name>
+<name>Limnaecia</name>
+<name>Limnaecia phragmitella</name>
+<name>lindedvergmålar</name>
+<name>lindedvergmåler</name>
+<name>lindegulfly</name>
+<name>lindekrattmøll</name>
+<name>lindesigdveng</name>
+<name>lindesigdvinge</name>
+<name>lindesmalmott</name>
+<name>lindesvermar</name>
+<name>lindesvermer</name>
+<name>linjefly</name>
+<name>linjegrasfly</name>
+<name>linjegressfly</name>
+<name>linjekålmott</name>
+<name>linjelundmålar</name>
+<name>linjelundmåler</name>
+<name>lite bandmetallfly</name>
+<name>lite båndmetallfly</name>
+<name>lite båtfly</name>
+<name>lite eikeordensband</name>
+<name>lite eikeordensbånd</name>
+<name>lite lyngheifly</name>
+<name>liten bivoksmott</name>
+<name>liten bjørkeglassvinge</name>
+<name>liten bjørkeglasveng</name>
+<name>liten bloddropesvermar</name>
+<name>liten bloddråpesvermer</name>
+<name>liten eikelauvmålar</name>
+<name>liten eikeløvmåler</name>
+<name>liten eikesmalmott</name>
+<name>liten engviklar</name>
+<name>liten engvikler</name>
+<name>liten fjellpraktviklar</name>
+<name>liten fjellpraktvikler</name>
+<name>liten frostmålar</name>
+<name>liten frostmåler</name>
+<name>liten fruktviklar</name>
+<name>liten fruktvikler</name>
+<name>liten fugleskittvikler</name>
+<name>liten fugleskitviklar</name>
+<name>liten furuknoppviklar</name>
+<name>liten furuknoppvikler</name>
+<name>liten gaffelstjert</name>
+<name>liten grankveldviklar</name>
+<name>liten grankveldvikler</name>
+<name>liten gullrispraktviklar</name>
+<name>liten gullrispraktvikler</name>
+<name>liten haustmålar</name>
+<name>liten høstmåler</name>
+<name>liten kongledvergmålar</name>
+<name>liten kongledvergmåler</name>
+<name>liten krattmålar</name>
+<name>liten krattmåler</name>
+<name>liten kålsommarfugl</name>
+<name>liten kålsommerfugl</name>
+<name>liten lakrismjeltsekkmøll</name>
+<name>liten malurtpraktviklar</name>
+<name>liten malurtpraktvikler</name>
+<name>liten ospeflatviklar</name>
+<name>liten ospeflatvikler</name>
+<name>liten ospetannspinnar</name>
+<name>liten ospetannspinner</name>
+<name>liten perikummålar</name>
+<name>liten perikummåler</name>
+<name>liten rotetar</name>
+<name>liten roteter</name>
+<name>liten seljeglassvinge</name>
+<name>liten seljeglasveng</name>
+<name>liten seljesigdviklar</name>
+<name>liten seljesigdvikler</name>
+<name>liten snabelsvermar</name>
+<name>liten snabelsvermer</name>
+<name>liten sneglespinner</name>
+<name>liten sniglespinnar</name>
+<name>liten stjertspinnar</name>
+<name>liten stjertspinner</name>
+<name>liten stråsekkspinnar</name>
+<name>liten stråsekkspinner</name>
+<name>liten svevefjærmøll</name>
+<name>liten svævefjørmøll</name>
+<name>liten tistelsmalmott</name>
+<name>lite seljefly</name>
+<name>lite stengelfly</name>
+<name>lite strandengfly</name>
+<name>lite takrørfly</name>
+<name>lite takrøyrfly</name>
+<name>lite viftefly</name>
+<name>Lithocolletinae</name>
+<name>Lithomoia</name>
+<name>Lithomoia solidaginis</name>
+<name>Lithophane consocia</name>
+<name>Lithophane furcifera</name>
+<name>Lithophane lamda</name>
+<name>Lithophane</name>
+<name>Lithophane socia</name>
+<name>Lithosia</name>
+<name>Lithosia quadra</name>
+<name>Litoligia literosa</name>
+<name>Litoligia</name>
+<name>Lobesia abscisana</name>
+<name>Lobesia bicinctana</name>
+<name>Lobesia littoralis</name>
+<name>Lobesia</name>
+<name>Lobesia reliquana</name>
+<name>Lobesia virulenta</name>
+<name>Lobophora halterata</name>
+<name>Lobophora</name>
+<name>Lomaspilis marginata</name>
+<name>Lomaspilis</name>
+<name>Lomographa bimaculata</name>
+<name>Lomographa</name>
+<name>Lomographa temerata</name>
+<name>Longalatedes elymi</name>
+<name>Longalatedes</name>
+<name>Loxostege commixtalis</name>
+<name>Loxostege ephippialis</name>
+<name>Loxostege</name>
+<name>Loxostege sticticalis</name>
+<name>Lozotaenia forsterana</name>
+<name>Lozotaenia</name>
+<name>lundengfly</name>
+<name>lundviklar</name>
+<name>lundvikler</name>
+<name>Luperina</name>
+<name>Luperina testacea</name>
+<name>Luperina zollikoferi</name>
+<name>Luquetia lobella</name>
+<name>Luquetia</name>
+<name>lurvefly</name>
+<name>Lycaena helle</name>
+<name>Lycaena hippothoe</name>
+<name>Lycaena</name>
+<name>Lycaena phlaeas</name>
+<name>Lycaena virgaureae</name>
+<name>Lycaenidae</name>
+<name>Lycaeninae</name>
+<name>Lycia hirtaria</name>
+<name>Lycia lapponaria</name>
+<name>Lycia</name>
+<name>Lycia pomonaria</name>
+<name>Lycophotia</name>
+<name>Lycophotia porphyrea</name>
+<name>Lygephila craccae</name>
+<name>Lygephila</name>
+<name>Lygephila pastinum</name>
+<name>Lygephila viciae</name>
+<name>lykteberarfly</name>
+<name>lyktebærerfly</name>
+<name>Lymantria monacha</name>
+<name>Lymantria</name>
+<name>Lymantriinae</name>
+<name>lyngbakkefly</name>
+<name>lyngbørstespinnar</name>
+<name>lyngbørstespinner</name>
+<name>lyngdvergmålar</name>
+<name>lyngdvergmåler</name>
+<name>lyngfjærmøll</name>
+<name>lyngfjørmøll</name>
+<name>lyngflatviklar</name>
+<name>lyngflatvikler</name>
+<name>lyngheimålar</name>
+<name>lyngheimåler</name>
+<name>lyngheinebbmott</name>
+<name>lyngheipraktviklar</name>
+<name>lyngheipraktvikler</name>
+<name>lyngmålar</name>
+<name>lyngmåler</name>
+<name>lyngprydviklar</name>
+<name>lyngprydvikler</name>
+<name>lyngsmalmott</name>
+<name>Lyonetia clerkella</name>
+<name>Lyonetia ledi</name>
+<name>Lyonetia</name>
+<name>Lyonetia prunifoliella</name>
+<name>Lyonetia pulverulentella</name>
+<name>Lyonetiidae</name>
+<name>Lyonetiinae</name>
+<name>Lypusa maurella</name>
+<name>Lypusa</name>
+<name>Lypusidae</name>
+<name>lys eiketannspinnar</name>
+<name>lys eiketannspinner</name>
+<name>lys eirmålar</name>
+<name>lys geitvedmålar</name>
+<name>lys geitvedmåler</name>
+<name>lys gullrisengviklar</name>
+<name>lys gullrisengvikler</name>
+<name>lys irrmåler</name>
+<name>lys knoppurtengviklar</name>
+<name>lys knoppurtengvikler</name>
+<name>lys ospeflatviklar</name>
+<name>lys ospeflatvikler</name>
+<name>lyst hettefly</name>
+<name>lyst klippefly</name>
+<name>lyst ringurtefly</name>
+<name>lyst sandengfly</name>
+<name>lyst taigafly</name>
+<name>lyst urtefly</name>
+<name>Lythria cruentaria</name>
+<name>Lythria</name>
+<name>lærbrun bladvikler</name>
+<name>lønnebladflatviklar</name>
+<name>lønnebladflatvikler</name>
+<name>lønneblomsterflatviklar</name>
+<name>lønneblomstflatvikler</name>
+<name>lønnedvergmålar</name>
+<name>lønnedvergmåler</name>
+<name>lønneglansviklar</name>
+<name>lønneglansvikler</name>
+<name>lønnekveldfly</name>
+<name>løvetannprydviklar</name>
+<name>løvetannprydvikler</name>
+<name>løvflikmåler</name>
+<name>løvskogmåler</name>
+<name>løvtredreper</name>
+<name>Macaria alternata</name>
+<name>Macaria brunneata</name>
+<name>Macaria carbonaria</name>
+<name>Macaria fusca</name>
+<name>Macaria liturata</name>
+<name>Macaria loricaria</name>
+<name>Macaria</name>
+<name>Macaria notata</name>
+<name>Macaria signaria</name>
+<name>Macaria wauaria</name>
+<name>Macdunnoughia confusa</name>
+<name>Macdunnoughia</name>
+<name>Macrochilo cribrumalis</name>
+<name>Macrochilo</name>
+<name>Macroglossinae</name>
+<name>Macroglossum</name>
+<name>Macroglossum stellatarum</name>
+<name>Macrothylacia</name>
+<name>Macrothylacia rubi</name>
+<name>maisengmott</name>
+<name>maispyralide</name>
+<name>Malacodea</name>
+<name>Malacodea regelaria</name>
+<name>Malacosoma castrensis</name>
+<name>Malacosoma</name>
+<name>Malacosoma neustria</name>
+<name>malurtdvergmålar</name>
+<name>malurtdvergmåler</name>
+<name>malurtengviklar</name>
+<name>malurtengvikler</name>
+<name>malurtfjærmøll</name>
+<name>malurtfjørmøll</name>
+<name>malurtsmalmott</name>
+<name>Mamestra brassicae</name>
+<name>Mamestra</name>
+<name>mandarinmetallfly</name>
+<name>Maniola jurtina</name>
+<name>Maniola</name>
+<name>marehalmfly</name>
+<name>marimjelledvergmålar</name>
+<name>marimjelledvergmåler</name>
+<name>marimjelleengmott</name>
+<name>marimjelleruteveng</name>
+<name>marimjellerutevinge</name>
+<name>marmordvergmålar</name>
+<name>marmordvergmåler</name>
+<name>marmorflatviklar</name>
+<name>marmorflatvikler</name>
+<name>marsmålar</name>
+<name>marsmåler</name>
+<name>Martania</name>
+<name>Martania taeniata</name>
+<name>Matilella fusca</name>
+<name>Matilella</name>
+<name>mauresvermar</name>
+<name>mauresvermer</name>
+<name>Meessiinae</name>
+<name>Meganola</name>
+<name>Meganola strigula</name>
+<name>Melanchra</name>
+<name>Melanchra persicariae</name>
+<name>Melanchra pisi</name>
+<name>melbærkveldvikler</name>
+<name>melbærprydvikler</name>
+<name>meldedvergmålar</name>
+<name>meldedvergmåler</name>
+<name>meldefly</name>
+<name>meldemålar</name>
+<name>meldemåler</name>
+<name>Melitaea athalia</name>
+<name>Melitaea cinxia</name>
+<name>Melitaea diamina</name>
+<name>Melitaea</name>
+<name>melsmalmott</name>
+<name>Merrifeldia baliodactylus</name>
+<name>Merrifeldia leucodactyla</name>
+<name>Merrifeldia</name>
+<name>Mesapamea didyma</name>
+<name>Mesapamea</name>
+<name>Mesapamea secalella</name>
+<name>Mesapamea secalis</name>
+<name>Mesogona</name>
+<name>Mesogona oxalina</name>
+<name>Mesoleuca albicillata</name>
+<name>Mesoleuca</name>
+<name>Mesoligia furuncula</name>
+<name>Mesoligia literosa</name>
+<name>Mesoligia</name>
+<name>Mesotype didymata</name>
+<name>Mesotype</name>
+<name>Mesotype parallelolineata</name>
+<name>Metalampra cinnamomea</name>
+<name>Metalampra</name>
+<name>Metaxmeste</name>
+<name>Metaxmeste phrygialis</name>
+<name>Metaxmeste schrankiana</name>
+<name>Metzneria lappella</name>
+<name>Metzneria metzneriella</name>
+<name>Metzneria</name>
+<name>Metzneria neuropterella</name>
+<name>Micropterigidae</name>
+<name>Micropterigoidea</name>
+<name>Micropterix aruncella</name>
+<name>Micropterix aureatella</name>
+<name>Micropterix calthella</name>
+<name>Micropterix mansuetella</name>
+<name>Micropterix</name>
+<name>Micropterix tunbergella</name>
+<name>Micrurapteryx gradatella</name>
+<name>Micrurapteryx</name>
+<name>Mimas</name>
+<name>Mimas tiliae</name>
+<name>mindre bandmetallfly</name>
+<name>mindre båndmetallfly</name>
+<name>mindre eikeordensband</name>
+<name>mindre eikeordensbånd</name>
+<name>mindre grasengfly</name>
+<name>mindre gressengfly</name>
+<name>Mirificarma mulinella</name>
+<name>Mirificarma</name>
+<name>mjeltfrøviklar</name>
+<name>mjeltfrøvikler</name>
+<name>mjeltgulveng</name>
+<name>mjeltgulvinge</name>
+<name>mjødurtflatviklar</name>
+<name>mjødurtflatvikler</name>
+<name>mjølbærkveldviklar</name>
+<name>mjølbærprydviklar</name>
+<name>mjølsmalmott</name>
+<name>mnemosynesommarfugl</name>
+<name>mnemosynesommerfugl</name>
+<name>Mniotype adusta</name>
+<name>Mniotype</name>
+<name>Mniotype satura</name>
+<name>moltesmygar</name>
+<name>moltesmyger</name>
+<name>Moma alpium</name>
+<name>Moma</name>
+<name>Mompha conturbatella</name>
+<name>Mompha divisella</name>
+<name>Mompha epilobiella</name>
+<name>Mompha idaei</name>
+<name>Mompha lacteella</name>
+<name>Mompha langiella</name>
+<name>Mompha locupletella</name>
+<name>Mompha</name>
+<name>Mompha raschkiella</name>
+<name>Mompha sturnipennella</name>
+<name>Mompha subbistrigella</name>
+<name>Momphidae</name>
+<name>Monochroa arundinetella</name>
+<name>Monochroa cytisella</name>
+<name>Monochroa elongella</name>
+<name>Monochroa ferrea</name>
+<name>Monochroa hornigi</name>
+<name>Monochroa lucidella</name>
+<name>Monochroa lutulentella</name>
+<name>Monochroa</name>
+<name>Monochroa rumicetella</name>
+<name>Monochroa saltenella</name>
+<name>Monochroa sepicolella</name>
+<name>Monochroa suffusella</name>
+<name>Monochroa tenebrella</name>
+<name>Monochroa tetragonella</name>
+<name>Monopis laevigella</name>
+<name>Monopis monachella</name>
+<name>Monopis</name>
+<name>Monopis obviella</name>
+<name>Monopis spilotella</name>
+<name>Monopis weaverella</name>
+<name>Montescardia</name>
+<name>Montescardia tessulatellus</name>
+<name>Morophaga choragella</name>
+<name>Morophaga</name>
+<name>moseprydviklar</name>
+<name>moseprydvikler</name>
+<name>Myelois circumvoluta</name>
+<name>Myelois</name>
+<name>mynteengmott</name>
+<name>myntepraktviklar</name>
+<name>myntepraktvikler</name>
+<name>myntestilkviklar</name>
+<name>myntestilkvikler</name>
+<name>myrbjørnespinnar</name>
+<name>myrbjørnespinner</name>
+<name>myrbladviklar</name>
+<name>myrbladvikler</name>
+<name>myrblåveng</name>
+<name>myrblåvinge</name>
+<name>myrbogemålar</name>
+<name>myrbuemåler</name>
+<name>myrdagfly</name>
+<name>myrduskfly</name>
+<name>myrdvergmålar</name>
+<name>myrdvergmåler</name>
+<name>myrengmott</name>
+<name>myrfly</name>
+<name>myrgulveng</name>
+<name>myrgulvinge</name>
+<name>myrhattflatviklar</name>
+<name>myrhattflatvikler</name>
+<name>myrkleggpraktviklar</name>
+<name>myrkleggpraktvikler</name>
+<name>myrkorsmåler</name>
+<name>myrkrossmålar</name>
+<name>myrkveldfly</name>
+<name>myrlurvemålar</name>
+<name>myrlurvemåler</name>
+<name>Myrmecozela</name>
+<name>Myrmecozela ochraceella</name>
+<name>Myrmecozelinae</name>
+<name>myrmetallfly</name>
+<name>myrmosemott</name>
+<name>myrnebbmott</name>
+<name>myrperlemorveng</name>
+<name>myrperlemorvinge</name>
+<name>myrprydviklar</name>
+<name>myrprydvikler</name>
+<name>myrringveng</name>
+<name>myrringvinge</name>
+<name>myrstengelfly</name>
+<name>Mythimna comma</name>
+<name>Mythimna conigera</name>
+<name>Mythimna ferrago</name>
+<name>Mythimna impura</name>
+<name>Mythimna</name>
+<name>Mythimna obsoleta</name>
+<name>Mythimna pallens</name>
+<name>Mythimna pudorina</name>
+<name>Mythimna straminea</name>
+<name>Mythimna unipuncta</name>
+<name>Mythimna vitellina</name>
+<name>mørk eiketannspinnar</name>
+<name>mørk eiketannspinner</name>
+<name>mørk eirmålar</name>
+<name>mørk gullrisengviklar</name>
+<name>mørk gullrisengvikler</name>
+<name>mørk irrmåler</name>
+<name>mørk knoppurtengviklar</name>
+<name>mørk knoppurtengvikler</name>
+<name>mørk kveldviklar</name>
+<name>mørk kveldvikler</name>
+<name>mørk lauvviklar</name>
+<name>mørk løvvikler</name>
+<name>mørk ospeflatviklar</name>
+<name>mørk ospeflatvikler</name>
+<name>mørk prestekragerotviklar</name>
+<name>mørk prestekragerotvikler</name>
+<name>mørk roseviklar</name>
+<name>mørk rosevikler</name>
+<name>mørk ruteveng</name>
+<name>mørk rutevinge</name>
+<name>mørk skotviklar</name>
+<name>mørk skuddvikler</name>
+<name>mørkt engfly</name>
+<name>mørkt klippefly</name>
+<name>mørkt nellikfly</name>
+<name>mørkt ringurtefly</name>
+<name>mørkt sandengfly</name>
+<name>mørkt skogfly</name>
+<name>mørkt viklarfly</name>
+<name>mørkt viklerfly</name>
+<name>måneviklar</name>
+<name>månevikler</name>
+<name>Naenia</name>
+<name>Naenia typica</name>
+<name>naglespinnar</name>
+<name>naglespinner</name>
+<name>nakenspinnar</name>
+<name>nakenspinner</name>
+<name>Narycia duplicella</name>
+<name>Narycia</name>
+<name>Naryciinae</name>
+<name>nattpåfuglauge</name>
+<name>nattpåfugløye</name>
+<name>nebbspinnar</name>
+<name>nebbspinner</name>
+<name>nebbviftefly</name>
+<name>nelliklundmålar</name>
+<name>nelliklundmåler</name>
+<name>Nemapogon clematella</name>
+<name>Nemapogon cloacella</name>
+<name>Nemapogon fungivorella</name>
+<name>Nemapogon granella</name>
+<name>Nemapogoninae</name>
+<name>Nemapogon</name>
+<name>Nemapogon nigralbella</name>
+<name>Nemapogon picarella</name>
+<name>Nemapogon variatella</name>
+<name>Nemapogon wolffiella</name>
+<name>Nematopogoninae</name>
+<name>Nematopogon magna</name>
+<name>Nematopogon metaxella</name>
+<name>Nematopogon</name>
+<name>Nematopogon pilella</name>
+<name>Nematopogon robertella</name>
+<name>Nematopogon schwarziellus</name>
+<name>Nematopogon swammerdamella</name>
+<name>Nemaxera betulinella</name>
+<name>Nemaxera</name>
+<name>Nemophora belella</name>
+<name>Nemophora bellella</name>
+<name>Nemophora degeerella</name>
+<name>Nemophora minimella</name>
+<name>Nemophora</name>
+<name>Neofaculta ericetella</name>
+<name>Neofaculta infernella</name>
+<name>Neofaculta</name>
+<name>Neofriseria</name>
+<name>Neofriseria peliella</name>
+<name>Neosphaleroptera</name>
+<name>Neosphaleroptera nubilana</name>
+<name>Neozephyrus</name>
+<name>Neozephyrus quercus</name>
+<name>Nephopterix angustella</name>
+<name>Nephopterix</name>
+<name>Nepticulidae</name>
+<name>Nepticuloidea</name>
+<name>neslebredmøll</name>
+<name>neslebreimøll</name>
+<name>nesleengmott</name>
+<name>neslenebbfly</name>
+<name>neslesommarfugl</name>
+<name>neslesommerfugl</name>
+<name>nettflatviklar</name>
+<name>nettflatvikler</name>
+<name>nettfly</name>
+<name>nettlauvviklar</name>
+<name>nettløvvikler</name>
+<name>nettmålar</name>
+<name>nettmåler</name>
+<name>nettnellikfly</name>
+<name>Niditinea fuscella</name>
+<name>Niditinea</name>
+<name>Niditinea striolella</name>
+<name>Niditinea truncicolella</name>
+<name>niobeperlemorveng</name>
+<name>niobeperlemorvinge</name>
+<name>Noctua comes</name>
+<name>Noctua fimbriata</name>
+<name>Noctua interjecta</name>
+<name>Noctua janthe</name>
+<name>Noctua</name>
+<name>Noctua orbona</name>
+<name>Noctua pronuba</name>
+<name>Noctuidae</name>
+<name>Noctuinae</name>
+<name>Noctuoidea</name>
+<name>Nola aerugula</name>
+<name>Nola confusalis</name>
+<name>Nola cucullatella</name>
+<name>Nola karelica</name>
+<name>Nola</name>
+<name>Nolinae</name>
+<name>Nomophila</name>
+<name>Nomophila noctuella</name>
+<name>Nonagria</name>
+<name>Nonagria typhae</name>
+<name>nordleg bjørnespinnar</name>
+<name>nordleg gulbladviklar</name>
+<name>nordleg halmmott</name>
+<name>nordleg prydviklar</name>
+<name>nordlig bjørnespinner</name>
+<name>nordlig gulbladvikler</name>
+<name>nordlig halmmott</name>
+<name>nordlig prydvikler</name>
+<name>nornas ringveng</name>
+<name>nornens ringvinge</name>
+<name>norsk stråsekkspinnar</name>
+<name>norsk stråsekkspinner</name>
+<name>Nothris</name>
+<name>Nothris verbascella</name>
+<name>Notocelia aquana</name>
+<name>Notocelia cynosbatella</name>
+<name>Notocelia incarnatana</name>
+<name>Notocelia</name>
+<name>Notocelia roborana</name>
+<name>Notocelia rosaecolana</name>
+<name>Notocelia tetragonana</name>
+<name>Notocelia trimaculana</name>
+<name>Notocelia uddmanniana</name>
+<name>Notodonta dromedarius</name>
+<name>Notodonta</name>
+<name>Notodonta torva</name>
+<name>Notodonta tritophus</name>
+<name>Notodonta ziczac</name>
+<name>Notodontidae</name>
+<name>Notodontinae</name>
+<name>Nudaria mundana</name>
+<name>Nudaria</name>
+<name>Nyctegretis lineana</name>
+<name>Nyctegretis</name>
+<name>Nycteola asiatica</name>
+<name>Nycteola degenerana</name>
+<name>Nycteola</name>
+<name>Nycteola revayana</name>
+<name>Nycteola siculana</name>
+<name>Nycteola svecicus</name>
+<name>Nymphalidae</name>
+<name>Nymphalinae</name>
+<name>Nymphalis antiopa</name>
+<name>Nymphalis c-album</name>
+<name>Nymphalis io</name>
+<name>Nymphalis</name>
+<name>Nymphalis polychloros</name>
+<name>Nymphalis urticae</name>
+<name>Nymphula</name>
+<name>Nymphula nitidulata</name>
+<name>nypefrøviklar</name>
+<name>nypefrøvikler</name>
+<name>nyresildrefjærmøll</name>
+<name>nyresildrefjørmøll</name>
+<name>nyserotdvergmålar</name>
+<name>nyserotdvergmåler</name>
+<name>nyseryllikrotviklar</name>
+<name>nyseryllikrotvikler</name>
+<name>obeliskjordfly</name>
+<name>Ochlodes</name>
+<name>Ochlodes sylvanus</name>
+<name>Ochlodes venata</name>
+<name>Ochropacha duplaris</name>
+<name>Ochropacha</name>
+<name>Ochropleura</name>
+<name>Ochropleura plecta</name>
+<name>Ochsenheimeria</name>
+<name>Ochsenheimeria urella</name>
+<name>Ochsenheimeriinae</name>
+<name>Ocnerostoma friesei</name>
+<name>Ocnerostoma</name>
+<name>Ocnerostoma piniariella</name>
+<name>Odezia atrata</name>
+<name>Odezia</name>
+<name>Odontiinae</name>
+<name>Odontopera bidentata</name>
+<name>Odontopera</name>
+<name>Odontosia carmelita</name>
+<name>Odontosia</name>
+<name>Odontosia sieversii</name>
+<name>Oecophora bractella</name>
+<name>Oecophora</name>
+<name>Oecophoridae</name>
+<name>Oecophorinae</name>
+<name>Oegoconia deauratella</name>
+<name>Oegoconia</name>
+<name>Oeneis bore</name>
+<name>Oeneis jutta</name>
+<name>Oeneis</name>
+<name>Oeneis norna</name>
+<name>Oidaematophorus lithodactyla</name>
+<name>Oidaematophorus</name>
+<name>Oidaematophorus rogenhoferi</name>
+<name>Oiketicinae</name>
+<name>okerdvergmålar</name>
+<name>okerdvergmåler</name>
+<name>oker eikeglansvikler</name>
+<name>okerengmott</name>
+<name>okerfagerfly</name>
+<name>okerfly</name>
+<name>oker gullrisengviklar</name>
+<name>oker gullrisengvikler</name>
+<name>okergul ringspinnar</name>
+<name>okergul ringspinner</name>
+<name>okernebbmott</name>
+<name>okerprydviklar</name>
+<name>okerprydvikler</name>
+<name>oker rotviklar</name>
+<name>oker rotvikler</name>
+<name>oksehodespinner</name>
+<name>oksehovudspinnar</name>
+<name>oleandersvermar</name>
+<name>oleandersvermer</name>
+<name>Olethreutes arcuella</name>
+<name>Olethreutes</name>
+<name>Olethreutinae</name>
+<name>Oligia fasciuncula</name>
+<name>Oligia latruncula</name>
+<name>Oligia</name>
+<name>Oligia strigilis</name>
+<name>Oligia versicolor</name>
+<name>Olindia</name>
+<name>Olindia schumacherana</name>
+<name>olivenbjørkemålar</name>
+<name>olivenbjørkemåler</name>
+<name>olivenbrun bladviklar</name>
+<name>olivenbrun bladvikler</name>
+<name>olivenengmott</name>
+<name>olivenfjellmott</name>
+<name>olivenfly</name>
+<name>olivenlurvemålar</name>
+<name>olivenlurvemåler</name>
+<name>olivenprydviklar</name>
+<name>olivenprydvikler</name>
+<name>olivenrotviklar</name>
+<name>olivenrotvikler</name>
+<name>oliventannspinnar</name>
+<name>oliventannspinner</name>
+<name>olivenviklar</name>
+<name>olivenvikler</name>
+<name>Omphaloscelis lunosa</name>
+<name>Omphaloscelis</name>
+<name>Oncocera faecella</name>
+<name>Oncocera</name>
+<name>Oncocera semirubella</name>
+<name>Oncocnemidinae</name>
+<name>Operophtera brumata</name>
+<name>Operophtera fagata</name>
+<name>Operophtera</name>
+<name>Opigena</name>
+<name>Opigena polygona</name>
+<name>Opisthograptis luteolata</name>
+<name>Opisthograptis</name>
+<name>Opostega</name>
+<name>Opostega salaciella</name>
+<name>Opostegidae</name>
+<name>Opsibotys fuscalis</name>
+<name>Opsibotys</name>
+<name>oransjegullveng</name>
+<name>oransjegullvinge</name>
+<name>orebuskmålar</name>
+<name>orebuskmåler</name>
+<name>oreflikmålar</name>
+<name>oreflikmåler</name>
+<name>oreglassvinge</name>
+<name>oreglasveng</name>
+<name>orekveldfly</name>
+<name>orekveldviklar</name>
+<name>orekveldvikler</name>
+<name>oremålar</name>
+<name>oremåler</name>
+<name>oresigdveng</name>
+<name>oresigdvinge</name>
+<name>oresmalmott</name>
+<name>Orgyia antiqua</name>
+<name>Orgyia antiquoides</name>
+<name>Orgyia</name>
+<name>Orophia ferrugella</name>
+<name>Orophia</name>
+<name>Ortholepis betulae</name>
+<name>Ortholepis</name>
+<name>Ortholepis vacciniella</name>
+<name>Orthonama</name>
+<name>Orthonama obstipata</name>
+<name>Orthonama vittata</name>
+<name>Orthopygia glaucinalis</name>
+<name>Orthopygia</name>
+<name>Orthosia cerasi</name>
+<name>Orthosia cruda</name>
+<name>Orthosia gothica</name>
+<name>Orthosia gracilis</name>
+<name>Orthosia incerta</name>
+<name>Orthosia miniosa</name>
+<name>Orthosia</name>
+<name>Orthosia opima</name>
+<name>Orthosia populeti</name>
+<name>Orthotaenia</name>
+<name>Orthotaenia undulana</name>
+<name>Orthotelia</name>
+<name>Orthotelia sparganella</name>
+<name>Orthoteliinae</name>
+<name>ospebrannmålar</name>
+<name>ospebrannmåler</name>
+<name>ospeglansviklar</name>
+<name>ospeglansvikler</name>
+<name>ospeglassvinge</name>
+<name>ospeglasveng</name>
+<name>ospehalvspinnar</name>
+<name>ospehalvspinner</name>
+<name>ospekveldfly</name>
+<name>ospekveldviklar</name>
+<name>ospekveldvikler</name>
+<name>ospekvistviklar</name>
+<name>ospekvistvikler</name>
+<name>ospelauvviklar</name>
+<name>ospeløvvikler</name>
+<name>ospeminermøll</name>
+<name>ospeminérmøll</name>
+<name>ospemålar</name>
+<name>ospemåler</name>
+<name>osperingfly</name>
+<name>ospesigdviklar</name>
+<name>ospesigdvikler</name>
+<name>ospesmalmott</name>
+<name>ospesommarfugl</name>
+<name>ospesommerfugl</name>
+<name>ospesvermar</name>
+<name>ospesvermer</name>
+<name>ospetredrepar</name>
+<name>ospetredreper</name>
+<name>ospetungemålar</name>
+<name>ospetungemåler</name>
+<name>ospeviklar</name>
+<name>ospevikler</name>
+<name>ospevårmålar</name>
+<name>ospevårmåler</name>
+<name>Ostrinia</name>
+<name>Ostrinia nubilalis</name>
+<name>Ostrinia quadripunctalis</name>
+<name>Ourapteryx</name>
+<name>Ourapteryx sambucaria</name>
+<name>Oxyptilus chrysodactyla</name>
+<name>Oxyptilus ericetorum</name>
+<name>Oxyptilus</name>
+<name>Oxyptilus parvidactyla</name>
+<name>Oxyptilus pilosellae</name>
+<name>Pabulatrix</name>
+<name>Pabulatrix pabulatricula</name>
+<name>Pachetra</name>
+<name>Pachetra sagittigera</name>
+<name>Pachycnemia hippocastanaria</name>
+<name>Pachycnemia</name>
+<name>Pachythelia</name>
+<name>Pachythelia villosella</name>
+<name>Palpita</name>
+<name>Palpita vitrealis</name>
+<name>Pammene albuginana</name>
+<name>Pammene argyrana</name>
+<name>Pammene clanculana</name>
+<name>Pammene fasciana</name>
+<name>Pammene gallicana</name>
+<name>Pammene giganteana</name>
+<name>Pammene ignorata</name>
+<name>Pammene insulana</name>
+<name>Pammene luedersiana</name>
+<name>Pammene</name>
+<name>Pammene obscurana</name>
+<name>Pammene ochsenheimeriana</name>
+<name>Pammene populana</name>
+<name>Pammene regiana</name>
+<name>Pammene rhediella</name>
+<name>Pammene splendidulana</name>
+<name>Pammene suspectana</name>
+<name>Pancalia</name>
+<name>Pancalia schwarzella</name>
+<name>Pandemis cerasana</name>
+<name>Pandemis cinnamomeana</name>
+<name>Pandemis corylana</name>
+<name>Pandemis dumetana</name>
+<name>Pandemis heparana</name>
+<name>Pandemis</name>
+<name>Panolis flammea</name>
+<name>Panolis</name>
+<name>pantermålar</name>
+<name>pantermåler</name>
+<name>panterspinnar</name>
+<name>panterspinner</name>
+<name>Panthea coenobita</name>
+<name>Panthea</name>
+<name>Pantheinae</name>
+<name>Papestra biren</name>
+<name>Papestra</name>
+<name>Papilio machaon</name>
+<name>Papilio</name>
+<name>Papilionidae</name>
+<name>Papilioninae</name>
+<name>Papilionoidea</name>
+<name>Parachronistis albiceps</name>
+<name>Parachronistis</name>
+<name>Paracolax</name>
+<name>Paracolax tristalis</name>
+<name>Paradarisa consonaria</name>
+<name>Paradarisa</name>
+<name>Paradrina clavipalpis</name>
+<name>Paradrina</name>
+<name>Paradrina selini</name>
+<name>Paramesia gnomana</name>
+<name>Paramesia</name>
+<name>Paranthrene</name>
+<name>Paranthrene tabaniformis</name>
+<name>Parapoynx</name>
+<name>Parapoynx stratiotata</name>
+<name>Pararctia lapponica</name>
+<name>Pararctia</name>
+<name>Pararge aegeria</name>
+<name>Pararge</name>
+<name>Parascotia fuliginaria</name>
+<name>Parascotia</name>
+<name>Parasemia</name>
+<name>Parasemia plantaginis</name>
+<name>Parastichtis</name>
+<name>Parastichtis suspecta</name>
+<name>Parastichtis ypsillon</name>
+<name>Paraswammerdamia albicapitella</name>
+<name>Paraswammerdamia conspersella</name>
+<name>Paraswammerdamia lapponica</name>
+<name>Paraswammerdamia</name>
+<name>Paraswammerdamia nebulella</name>
+<name>Paratalanta hyalinalis</name>
+<name>Paratalanta</name>
+<name>Paratalanta pandalis</name>
+<name>Parectopa</name>
+<name>Parectopa ononidis</name>
+<name>Parnassiinae</name>
+<name>Parnassius apollo</name>
+<name>Parnassius mnemosyne</name>
+<name>Parnassius</name>
+<name>Parornix anglicella</name>
+<name>Parornix betulae</name>
+<name>Parornix devoniella</name>
+<name>Parornix finitimella</name>
+<name>Parornix loganella</name>
+<name>Parornix</name>
+<name>Parornix polygrammella</name>
+<name>Parornix scoticella</name>
+<name>Parornix torquillella</name>
+<name>Pasiphila chloerata</name>
+<name>Pasiphila debiliata</name>
+<name>Pasiphila</name>
+<name>Pasiphila rectangulata</name>
+<name>Pechipogo</name>
+<name>Pechipogo strigilata</name>
+<name>Pediasia aridella</name>
+<name>Pediasia contaminella</name>
+<name>Pediasia fascelinella</name>
+<name>Pediasia</name>
+<name>Pediasia truncatellus</name>
+<name>Peleopodidae</name>
+<name>Pelochrista caecimaculana</name>
+<name>Pelochrista infidana</name>
+<name>Pelochrista</name>
+<name>Pelosia muscerda</name>
+<name>Pelosia</name>
+<name>pelsmøll</name>
+<name>Pelurga comitata</name>
+<name>Pelurga</name>
+<name>Pempelia formosa</name>
+<name>Pempelia</name>
+<name>Pempelia palumbella</name>
+<name>Pennisetia hylaeiformis</name>
+<name>Pennisetia</name>
+<name>Perconia</name>
+<name>Perconia strigillaria</name>
+<name>Peribatodes</name>
+<name>Peribatodes rhomboidaria</name>
+<name>Peribatodes secundaria</name>
+<name>Periclepsis cinctana</name>
+<name>Periclepsis</name>
+<name>Peridea anceps</name>
+<name>Peridea</name>
+<name>Peridroma</name>
+<name>Peridroma saucia</name>
+<name>Perigrapha munda</name>
+<name>Perigrapha</name>
+<name>perikumviklar</name>
+<name>perikumvikler</name>
+<name>Perizoma affinitata</name>
+<name>Perizoma albulata</name>
+<name>Perizoma alchemillata</name>
+<name>Perizoma bifaciata</name>
+<name>Perizoma blandiata</name>
+<name>Perizoma didymata</name>
+<name>Perizoma flavofasciata</name>
+<name>Perizoma hydrata</name>
+<name>Perizoma minorata</name>
+<name>Perizoma</name>
+<name>Perizoma parallelolineata</name>
+<name>Perizoma taeniata</name>
+<name>perlemornebbmott</name>
+<name>perleringveng</name>
+<name>perleringvinge</name>
+<name>pestfagerfly</name>
+<name>Petrophora chlorosata</name>
+<name>Petrophora</name>
+<name>Pexicopia malvella</name>
+<name>Pexicopia</name>
+<name>Pexicopiinae</name>
+<name>Phalacropterix graslinella</name>
+<name>Phalacropterix</name>
+<name>Phalera bucephala</name>
+<name>Phalera</name>
+<name>Phalerinae</name>
+<name>Phalonidia affinitana</name>
+<name>Phalonidia curvistrigana</name>
+<name>Phalonidia gilvicomana</name>
+<name>Phalonidia manniana</name>
+<name>Phalonidia</name>
+<name>Pharmacis fusconebulosa</name>
+<name>Pharmacis</name>
+<name>Phaulernis fulviguttella</name>
+<name>Phaulernis</name>
+<name>Pheosia gnoma</name>
+<name>Pheosia</name>
+<name>Pheosia tremula</name>
+<name>Phiaris aurofasciana</name>
+<name>Phiaris bipunctana</name>
+<name>Phiaris cespitana</name>
+<name>Phiaris dissolutana</name>
+<name>Phiaris heinrichana</name>
+<name>Phiaris lacunana</name>
+<name>Phiaris metallicana</name>
+<name>Phiaris micana</name>
+<name>Phiaris</name>
+<name>Phiaris obsoletana</name>
+<name>Phiaris palustrana</name>
+<name>Phiaris rivulana</name>
+<name>Phiaris rosaceana</name>
+<name>Phiaris rufana</name>
+<name>Phiaris rurestrana</name>
+<name>Phiaris schulziana</name>
+<name>Phiaris septentrionana</name>
+<name>Phiaris siderana</name>
+<name>Phiaris striana</name>
+<name>Phiaris tiedemanniana</name>
+<name>Phiaris turfosana</name>
+<name>Phibalapteryx</name>
+<name>Phibalapteryx virgata</name>
+<name>Phigalia</name>
+<name>Phigalia pilosaria</name>
+<name>Philedone gerningana</name>
+<name>Philedone</name>
+<name>Philedonides lunana</name>
+<name>Philedonides</name>
+<name>Philereme</name>
+<name>Philereme vetulata</name>
+<name>Philobotinae</name>
+<name>Phlogophora meticulosa</name>
+<name>Phlogophora</name>
+<name>Phlyctaenia coronata</name>
+<name>Phlyctaenia</name>
+<name>Phlyctaenia perlucidalis</name>
+<name>Phlyctaenia stachydalis</name>
+<name>Photedes fluxa</name>
+<name>Photedes minima</name>
+<name>Photedes</name>
+<name>Phragmatobia fuliginosa</name>
+<name>Phragmatobia</name>
+<name>Phtheochroa inopiana</name>
+<name>Phtheochroa</name>
+<name>Phtheochroa sodaliana</name>
+<name>Phtheochroa vulneratana</name>
+<name>Phycita</name>
+<name>Phycita roborella</name>
+<name>Phycitinae</name>
+<name>Phycitodes albatella</name>
+<name>Phycitodes binaevella</name>
+<name>Phycitodes maritima</name>
+<name>Phycitodes</name>
+<name>Phycitodes saxicola</name>
+<name>Phyllocnistinae</name>
+<name>Phyllocnistis labyrinthella</name>
+<name>Phyllocnistis</name>
+<name>Phyllocnistis unipunctella</name>
+<name>Phyllodesma ilicifolia</name>
+<name>Phyllodesma</name>
+<name>Phyllonorycter anderidae</name>
+<name>Phyllonorycter apparella</name>
+<name>Phyllonorycter blancardella</name>
+<name>Phyllonorycter cavella</name>
+<name>Phyllonorycter cerasicolella</name>
+<name>Phyllonorycter corylifoliella</name>
+<name>Phyllonorycter coryli</name>
+<name>Phyllonorycter cydoniella</name>
+<name>Phyllonorycter dubitella</name>
+<name>Phyllonorycter emberizaepennella</name>
+<name>Phyllonorycter froelichiella</name>
+<name>Phyllonorycter harrisella</name>
+<name>Phyllonorycter heegeriella</name>
+<name>Phyllonorycter hilarella</name>
+<name>Phyllonorycter hostis</name>
+<name>Phyllonorycter insignitella</name>
+<name>Phyllonorycter junoniella</name>
+<name>Phyllonorycter kleemannella</name>
+<name>Phyllonorycter lautella</name>
+<name>Phyllonorycter maestingella</name>
+<name>Phyllonorycter</name>
+<name>Phyllonorycter nicellii</name>
+<name>Phyllonorycter nigrescentella</name>
+<name>Phyllonorycter oxyacanthae</name>
+<name>Phyllonorycter platanoidella</name>
+<name>Phyllonorycter populifoliella</name>
+<name>Phyllonorycter quercifoliella</name>
+<name>Phyllonorycter quinqueguttella</name>
+<name>Phyllonorycter rajella</name>
+<name>Phyllonorycter roboris</name>
+<name>Phyllonorycter rolandi</name>
+<name>Phyllonorycter sagitella</name>
+<name>Phyllonorycter salicicolella</name>
+<name>Phyllonorycter salictella</name>
+<name>Phyllonorycter sorbi</name>
+<name>Phyllonorycter spinicolella</name>
+<name>Phyllonorycter stettinensis</name>
+<name>Phyllonorycter strigulatella</name>
+<name>Phyllonorycter trifasciella</name>
+<name>Phyllonorycter tristrigella</name>
+<name>Phyllonorycter ulmifoliella</name>
+<name>Phylloporia bistrigella</name>
+<name>Phylloporia</name>
+<name>Phymatopus hecta</name>
+<name>Phymatopus</name>
+<name>Phytometra</name>
+<name>Phytometra viridaria</name>
+<name>Phytometrinae</name>
+<name>Pieridae</name>
+<name>Pierinae</name>
+<name>Pieris brassicae</name>
+<name>Pieris</name>
+<name>Pieris napi</name>
+<name>Pieris rapae</name>
+<name>piggknopprørfly</name>
+<name>piggknopprøyrfly</name>
+<name>piggsvinspinnar</name>
+<name>piggsvinspinner</name>
+<name>pileordensband</name>
+<name>pileordensbånd</name>
+<name>Pima boisduvaliella</name>
+<name>Pima</name>
+<name>Piniphila bifasciana</name>
+<name>Piniphila</name>
+<name>pinnsvinspinnar</name>
+<name>pinnsvinspinner</name>
+<name>pjuskemålar</name>
+<name>pjuskemåler</name>
+<name>Plagodis dolabraria</name>
+<name>Plagodis</name>
+<name>Plagodis pulveraria</name>
+<name>platanlønnsolviklar</name>
+<name>platanlønnsolvikler</name>
+<name>Platyperigea montana</name>
+<name>Platyperigea</name>
+<name>Platyptilia calodactyla</name>
+<name>Platyptilia gonodactyla</name>
+<name>Platyptilia isodactylus</name>
+<name>Platyptilia</name>
+<name>Platyptilia tesseradactyla</name>
+<name>Platytes alpinella</name>
+<name>Platytes cerussella</name>
+<name>Platytes</name>
+<name>Plebeius argus</name>
+<name>Plebeius</name>
+<name>Plebejus aquilo</name>
+<name>Plebejus argus</name>
+<name>Plebejus argyrognomon</name>
+<name>Plebejus idas</name>
+<name>Plebejus</name>
+<name>Plebejus optilete</name>
+<name>Plebejus orbitulus</name>
+<name>plektafly</name>
+<name>Plemyria</name>
+<name>Plemyria rubiginata</name>
+<name>plettbandfly</name>
+<name>plettbåndfly</name>
+<name>plettseljefly</name>
+<name>Pleuroptya</name>
+<name>Pleuroptya ruralis</name>
+<name>Pleurota bicostella</name>
+<name>Pleurota</name>
+<name>Plodia interpunctella</name>
+<name>Plodia</name>
+<name>plommefrøviklar</name>
+<name>plommefrøvikler</name>
+<name>plommeviklar</name>
+<name>plommevikler</name>
+<name>Plusia festucae</name>
+<name>Plusia</name>
+<name>Plusia putnami</name>
+<name>Plusiinae</name>
+<name>Plutella hyperboreella</name>
+<name>Plutella haasi</name>
+<name>Plutella</name>
+<name>Plutella porrectella</name>
+<name>Plutella xylostella</name>
+<name>Plutellidae</name>
+<name>Poecilocampa</name>
+<name>Poecilocampa populi</name>
+<name>Poecilocampinae</name>
+<name>polarbandmålar</name>
+<name>polarbergmålar</name>
+<name>polarbergmåler</name>
+<name>polarbjørnespinnar</name>
+<name>polarbjørnespinner</name>
+<name>Polarblåveng</name>
+<name>polarblåveng</name>
+<name>Polarblåvinge</name>
+<name>polarblåvinge</name>
+<name>polarbåndmåler</name>
+<name>polardvergmålar</name>
+<name>polardvergmåler</name>
+<name>polarflatviklar</name>
+<name>polarflatvikler</name>
+<name>polargulveng</name>
+<name>polargulvinge</name>
+<name>polarlauvviklar</name>
+<name>polarløvvikler</name>
+<name>polarmetallfly</name>
+<name>polarmålar</name>
+<name>polarmåler</name>
+<name>polarnebbviklar</name>
+<name>polarnebbvikler</name>
+<name>polarperlemorveng</name>
+<name>polarperlemorvinge</name>
+<name>polarprydviklar</name>
+<name>polarprydvikler</name>
+<name>polarringveng</name>
+<name>polarringvinge</name>
+<name>polarsmalmott</name>
+<name>polarsmygar</name>
+<name>polarsmyger</name>
+<name>polarurtemålar</name>
+<name>polarurtemåler</name>
+<name>Polia bombycina</name>
+<name>Polia hepatica</name>
+<name>Polia</name>
+<name>Polia nebulosa</name>
+<name>Polia richardsoni</name>
+<name>Polia sagittigera</name>
+<name>Polopeustis altensis</name>
+<name>Polopeustis</name>
+<name>Polychrysia moneta</name>
+<name>Polychrysia</name>
+<name>Polygonia c-album</name>
+<name>Polygonia</name>
+<name>Polymixis gemmea</name>
+<name>Polymixis</name>
+<name>Polymixis polymita</name>
+<name>Polyommatus amandus</name>
+<name>Polyommatus icarus</name>
+<name>Polyommatus</name>
+<name>Polyommatus semiargus</name>
+<name>Polyploca</name>
+<name>Polyploca ridens</name>
+<name>Polypogon</name>
+<name>Polypogon tentacularia</name>
+<name>Pontia daplidice</name>
+<name>Pontia</name>
+<name>poppelkvistviklar</name>
+<name>poppelkvistvikler</name>
+<name>poppelminermøll</name>
+<name>poppelminérmøll</name>
+<name>porfyrengmott</name>
+<name>porsbjellevikler</name>
+<name>porsbjølleviklar</name>
+<name>porselensdammott</name>
+<name>porskappefly</name>
+<name>Povolnya leucapennella</name>
+<name>Povolnya</name>
+<name>praktengfly</name>
+<name>praktfuruskotviklar</name>
+<name>praktfuruskuddvikler</name>
+<name>prakthalvspinnar</name>
+<name>prakthalvspinner</name>
+<name>praktkorsmåler</name>
+<name>praktkrossmålar</name>
+<name>praktmånemålar</name>
+<name>praktmånemåler</name>
+<name>praktskuggeviklar</name>
+<name>praktskyggevikler</name>
+<name>prakttannspinnar</name>
+<name>prakttannspinner</name>
+<name>Praydidae</name>
+<name>Prays fraxinella</name>
+<name>Prays</name>
+<name>prikket gullrisfjærmøll</name>
+<name>prikket gullrisfjørmøll</name>
+<name>prikkfjærmøll</name>
+<name>prikkfjørmøll</name>
+<name>prikkruteveng</name>
+<name>prikkrutevinge</name>
+<name>prikksmalmott</name>
+<name>Pristerognatha</name>
+<name>Pristerognatha penthinana</name>
+<name>Prochoreutis argentinetta</name>
+<name>Prochoreutis myllerana</name>
+<name>Prochoreutis</name>
+<name>Prochoreutis sehestediana</name>
+<name>Procridinae</name>
+<name>Prodoxidae</name>
+<name>Prolita</name>
+<name>Prolita sexpunctella</name>
+<name>Protodeltote</name>
+<name>Protodeltote pygarga</name>
+<name>Protolampra</name>
+<name>Protolampra sobrina</name>
+<name>Protoschinia</name>
+<name>Protoschinia scutosa</name>
+<name>Proutia</name>
+<name>Proutia norvegica</name>
+<name>prydmosemott</name>
+<name>prydroseviklar</name>
+<name>prydrosevikler</name>
+<name>Psammotis</name>
+<name>Psammotis pulveralis</name>
+<name>Psaphidinae</name>
+<name>Pselnophorus heterodactyla</name>
+<name>Pselnophorus</name>
+<name>Pseudargyrotoza conwagana</name>
+<name>Pseudargyrotoza</name>
+<name>Pseudatemelia elsae</name>
+<name>Pseudatemelia flavifrontella</name>
+<name>Pseudatemelia josephinae</name>
+<name>Pseudatemelia</name>
+<name>Pseudococcyx</name>
+<name>Pseudococcyx posticana</name>
+<name>Pseudococcyx turionella</name>
+<name>Pseudohermenias abietana</name>
+<name>Pseudohermenias</name>
+<name>Pseudoips</name>
+<name>Pseudoips prasinana</name>
+<name>Pseudopanthera macularia</name>
+<name>Pseudopanthera</name>
+<name>Pseudopostega crepusculella</name>
+<name>Pseudopostega</name>
+<name>Pseudosciaphila branderiana</name>
+<name>Pseudosciaphila</name>
+<name>Pseudoswammerdamia combinella</name>
+<name>Pseudoswammerdamia</name>
+<name>Pseudotelphusa</name>
+<name>Pseudotelphusa paripunctella</name>
+<name>psikveldfly</name>
+<name>Psoricoptera gibbosella</name>
+<name>Psoricoptera</name>
+<name>Psoricoptera speciosella</name>
+<name>Psyche casta</name>
+<name>Psyche crassiorella</name>
+<name>Psyche</name>
+<name>Psychidae</name>
+<name>Psychinae</name>
+<name>Psychoides</name>
+<name>Psychoides verhuella</name>
+<name>Psychophora</name>
+<name>Psychophora sabini</name>
+<name>Pterapherapteryx</name>
+<name>Pterapherapteryx sexalata</name>
+<name>Pterophoridae</name>
+<name>Pterophorinae</name>
+<name>Pterophoroidea</name>
+<name>Pterophorus</name>
+<name>Pterophorus pentadactyla</name>
+<name>Pterostoma</name>
+<name>Pterostoma palpina</name>
+<name>Pterotopteryx dodecadactyla</name>
+<name>Pterotopteryx</name>
+<name>Ptilodon capucina</name>
+<name>Ptilodon</name>
+<name>Ptilophora</name>
+<name>Ptilophora plumigera</name>
+<name>Ptycholoma lecheana</name>
+<name>Ptycholoma</name>
+<name>Ptycholomoides aeriferana</name>
+<name>Ptycholomoides</name>
+<name>pudderengmott</name>
+<name>pudderfly</name>
+<name>punktbarkmåler</name>
+<name>punktborkmålar</name>
+<name>punktengmålar</name>
+<name>punktengmåler</name>
+<name>punktflatviklar</name>
+<name>punktflatvikler</name>
+<name>punktgrasfly</name>
+<name>punktgressfly</name>
+<name>punktgråviklar</name>
+<name>punktgråvikler</name>
+<name>punkthalvspinnar</name>
+<name>punkthalvspinner</name>
+<name>punktlauvmålar</name>
+<name>punktlavspinnar</name>
+<name>punktlavspinner</name>
+<name>punktløvmåler</name>
+<name>punktseljefly</name>
+<name>punkttigerspinnar</name>
+<name>punkttigerspinner</name>
+<name>punktviftefly</name>
+<name>purpurengmott</name>
+<name>purpurengmålar</name>
+<name>purpurengmåler</name>
+<name>purpurgullveng</name>
+<name>purpurgullvinge</name>
+<name>purpurhalmmott</name>
+<name>purpurmålar</name>
+<name>purpurmåler</name>
+<name>purpurprydviklar</name>
+<name>purpurprydvikler</name>
+<name>purremøll</name>
+<name>Pygaerinae</name>
+<name>Pygmaena fusca</name>
+<name>Pygmaena</name>
+<name>Pyla fusca</name>
+<name>Pyla</name>
+<name>Pyralidae</name>
+<name>Pyralinae</name>
+<name>Pyralis farinalis</name>
+<name>Pyralis lienigialis</name>
+<name>Pyralis</name>
+<name>Pyraloidea</name>
+<name>Pyrausta aurata</name>
+<name>Pyrausta despicata</name>
+<name>Pyrausta</name>
+<name>Pyrausta porphyralis</name>
+<name>Pyrausta purpuralis</name>
+<name>Pyrausta sanguinalis</name>
+<name>Pyraustinae</name>
+<name>Pyrginae</name>
+<name>Pyrgus alveus</name>
+<name>Pyrgus andromedae</name>
+<name>Pyrgus centaureae</name>
+<name>Pyrgus malvae</name>
+<name>Pyrgus</name>
+<name>Pyrrhia</name>
+<name>Pyrrhia umbra</name>
+<name>raggfly</name>
+<name>raggsekkspinnar</name>
+<name>raggsekkspinner</name>
+<name>raklekveldviklar</name>
+<name>raklekveldvikler</name>
+<name>randbladmålar</name>
+<name>randbladmåler</name>
+<name>randdvergmålar</name>
+<name>randdvergmåler</name>
+<name>randengmålar</name>
+<name>randengmåler</name>
+<name>randmålar</name>
+<name>randmåler</name>
+<name>rappnebbmott</name>
+<name>rappringveng</name>
+<name>rappringvinge</name>
+<name>rapssommarfugl</name>
+<name>rapssommerfugl</name>
+<name>raudbrun bladspinnar</name>
+<name>raudbrun bladviklar</name>
+<name>raudbrun svævefjørmøll</name>
+<name>raudbrunt metallfly</name>
+<name>raudduska engfly</name>
+<name>raud flaggmålar</name>
+<name>raud flatviklar</name>
+<name>raudflekket blåveng</name>
+<name>raudflekket kveldviklar</name>
+<name>raudflekket perlemorveng</name>
+<name>raudflekket stjertspinnar</name>
+<name>raudflekkglasveng</name>
+<name>raudflekkstjertspinnar</name>
+<name>raudfrynset bjørnespinnar</name>
+<name>raudfrynset båtfly</name>
+<name>raudfrynset teglfly</name>
+<name>raud furuskotviklar</name>
+<name>raudgult engfly</name>
+<name>raudgumpspinnar</name>
+<name>raudhalsa lavspinnar</name>
+<name>raudhalslavspinnar</name>
+<name>raudkantfly</name>
+<name>raudkantglasveng</name>
+<name>raudknappfjørmøll</name>
+<name>raudknappfly</name>
+<name>raudknappraktviklar</name>
+<name>raudknappviklar</name>
+<name>raudleg flatfly</name>
+<name>raudleg lauvfly</name>
+<name>raudleg rovfly</name>
+<name>raudleg smalmott</name>
+<name>raudleg strandengfly</name>
+<name>raud rotetar</name>
+<name>raudt fjellbakkefly</name>
+<name>raudt fjellengfly</name>
+<name>raudt hagefly</name>
+<name>raudt haustfly</name>
+<name>raudt heifly</name>
+<name>raudtopplundmålar</name>
+<name>raudt pyramidefly</name>
+<name>Recurvaria leucatella</name>
+<name>Recurvaria</name>
+<name>reinfannfjærmøll</name>
+<name>reinfannfjørmøll</name>
+<name>reinfannrotviklar</name>
+<name>reinfannrotvikler</name>
+<name>reinfannsmalmott</name>
+<name>reinroseprydviklar</name>
+<name>reinroseprydvikler</name>
+<name>Retinia</name>
+<name>Retinia resinella</name>
+<name>rettlinja engfly</name>
+<name>rettlinja haustfly</name>
+<name>rettlinjet engfly</name>
+<name>rettlinjet høstfly</name>
+<name>revebjelledvergmåler</name>
+<name>revebjølledvergmålar</name>
+<name>Rheumaptera cervinalis</name>
+<name>Rheumaptera hastata</name>
+<name>Rheumaptera</name>
+<name>Rheumaptera subhastata</name>
+<name>Rheumaptera undulata</name>
+<name>Rhigognostis annulatella</name>
+<name>Rhigognostis incarnatella</name>
+<name>Rhigognostis kuusamoensis</name>
+<name>Rhigognostis</name>
+<name>Rhigognostis schmaltzella</name>
+<name>Rhigognostis senilella</name>
+<name>Rhizedra lutosa</name>
+<name>Rhizedra</name>
+<name>Rhodometra</name>
+<name>Rhodometra sacraria</name>
+<name>Rhodostrophia</name>
+<name>Rhodostrophia vibicaria</name>
+<name>Rhopobota myrtillana</name>
+<name>Rhopobota naevana</name>
+<name>Rhopobota</name>
+<name>Rhopobota stagnana</name>
+<name>Rhopobota ustomaculana</name>
+<name>Rhyacia</name>
+<name>Rhyacia simulans</name>
+<name>Rhyacionia buoliana</name>
+<name>Rhyacionia duplana</name>
+<name>Rhyacionia logaea</name>
+<name>Rhyacionia</name>
+<name>Rhyacionia piniana</name>
+<name>Rhyacionia pinicolana</name>
+<name>Rhyacionia pinivorana</name>
+<name>ribbemålar</name>
+<name>ribbemåler</name>
+<name>ringkvistfly</name>
+<name>ringperlemorveng</name>
+<name>ringperlemorvinge</name>
+<name>ringpraktviklar</name>
+<name>ringpraktvikler</name>
+<name>ripsbogemålar</name>
+<name>ripsbuemåler</name>
+<name>ripsglassvinge</name>
+<name>ripsglasveng</name>
+<name>Rivula</name>
+<name>Rivula sericealis</name>
+<name>Rivulinae</name>
+<name>Roeslerstammia erxlebella</name>
+<name>Roeslerstammia</name>
+<name>Roeslerstammiidae</name>
+<name>rognebærmøll</name>
+<name>rognemålar</name>
+<name>rognemåler</name>
+<name>rognesmalmott</name>
+<name>rognespinnmøll</name>
+<name>rosa bandmålar</name>
+<name>rosa båndmåler</name>
+<name>rosa fugleskittvikler</name>
+<name>rosa fugleskitviklar</name>
+<name>rosa gullrispraktviklar</name>
+<name>rosa gullrispraktvikler</name>
+<name>rosefjærmøll</name>
+<name>rosefjørmøll</name>
+<name>roseflatviklar</name>
+<name>roseflatvikler</name>
+<name>rosenprydviklar</name>
+<name>rosenprydvikler</name>
+<name>rotstrekmosemott</name>
+<name>rotstrekvierfly</name>
+<name>rubinmålar</name>
+<name>rubinmåler</name>
+<name>Rusina ferruginea</name>
+<name>Rusina</name>
+<name>rustbandviklar</name>
+<name>rustbladviklar</name>
+<name>rustbladvikler</name>
+<name>rustbuskmålar</name>
+<name>rustbuskmåler</name>
+<name>rustbåndvikler</name>
+<name>rustdvergmålar</name>
+<name>rustdvergmåler</name>
+<name>rustflatviklar</name>
+<name>rustflatvikler</name>
+<name>rustkveldviklar</name>
+<name>rustkveldvikler</name>
+<name>rustprydviklar</name>
+<name>rustprydvikler</name>
+<name>rustraud roseviklar</name>
+<name>rustrød rosevikler</name>
+<name>rustvengspinnar</name>
+<name>rustvingespinner</name>
+<name>rutemålar</name>
+<name>rutemåler</name>
+<name>ryllikdvergmålar</name>
+<name>ryllikdvergmåler</name>
+<name>ryllikfjærmøll</name>
+<name>ryllikfjørmøll</name>
+<name>ryllikpraktviklar</name>
+<name>ryllikpraktvikler</name>
+<name>ryllikrotviklar</name>
+<name>ryllikrotvikler</name>
+<name>ryllikstengelviklar</name>
+<name>ryllikstengelvikler</name>
+<name>rødbrun bladspinner</name>
+<name>rødbrun bladvikler</name>
+<name>rødbrun svevefjærmøll</name>
+<name>rødbrunt metallfly</name>
+<name>røddusket engfly</name>
+<name>rød flaggmåler</name>
+<name>rød flatvikler</name>
+<name>rødflekket blåvinge</name>
+<name>rødflekket kveldvikler</name>
+<name>rødflekket perlemorvinge</name>
+<name>rødflekket stjertspinner</name>
+<name>rødflekkglassvinge</name>
+<name>rødflekkstjertspinner</name>
+<name>rødfrynset bjørnespinner</name>
+<name>rødfrynset båtfly</name>
+<name>rødfrynset teglfly</name>
+<name>rød furuskuddvikler</name>
+<name>rødgult engfly</name>
+<name>rødgumpspinner</name>
+<name>rødhalset lavspinner</name>
+<name>rødhalslavspinner</name>
+<name>rødkantfly</name>
+<name>rødkantglassvinge</name>
+<name>rødknappfjærmøll</name>
+<name>rødknappfly</name>
+<name>rødknappraktvikler</name>
+<name>rødknappvikler</name>
+<name>rødlig flatfly</name>
+<name>rødlig furunålvikler</name>
+<name>rødlig løvfly</name>
+<name>rødlig rovfly</name>
+<name>rødlig smalmott</name>
+<name>rødlig strandengfly</name>
+<name>rød roteter</name>
+<name>rødt fjellbakkefly</name>
+<name>rødt fjellengfly</name>
+<name>rødt hagefly</name>
+<name>rødt heifly</name>
+<name>rødt høstfly</name>
+<name>rødtopplundmåler</name>
+<name>rødt pyramidefly</name>
+<name>rørengfly</name>
+<name>rørgrasfly</name>
+<name>rørgressfly</name>
+<name>rørkveinfly</name>
+<name>røsslyngfly</name>
+<name>røsslyngmålar</name>
+<name>røsslyngmåler</name>
+<name>røsslyngsigdviklar</name>
+<name>røsslyngsigdvikler</name>
+<name>røyrengfly</name>
+<name>røyrgrasfly</name>
+<name>røyrkveinfly</name>
+<name>Sabra harpagula</name>
+<name>Sabra</name>
+<name>Salebriopsis albicilla</name>
+<name>Salebriopsis</name>
+<name>saltgrasnebbmott</name>
+<name>sanddvergfly</name>
+<name>sanddynenebbmott</name>
+<name>sandmarkfly</name>
+<name>sandnebbmott</name>
+<name>sandsmalmott</name>
+<name>sandstrandfly</name>
+<name>sandvoksmott</name>
+<name>sankthansblåvinge</name>
+<name>Saturnia</name>
+<name>Saturnia pavonia</name>
+<name>Saturniidae</name>
+<name>Saturniinae</name>
+<name>Satyrinae</name>
+<name>Satyrium</name>
+<name>Satyrium w-album</name>
+<name>Sauterina hofmanniella</name>
+<name>Sauterina</name>
+<name>Scardia boletella</name>
+<name>Scardia</name>
+<name>Scardiinae</name>
+<name>Schinia</name>
+<name>Schinia scutosa</name>
+<name>Schoenobiinae</name>
+<name>Schoenobius gigantella</name>
+<name>Schoenobius</name>
+<name>Schrankia costaestrigalis</name>
+<name>Schrankia</name>
+<name>Schreckensteinia festaliella</name>
+<name>Schreckensteinia</name>
+<name>Schreckensteiniidae</name>
+<name>Schreckensteinioidea</name>
+<name>Sciota hostilis</name>
+<name>Sciota</name>
+<name>Scoliopteryx libatrix</name>
+<name>Scoliopteryx</name>
+<name>Scolitantides</name>
+<name>Scolitantides orion</name>
+<name>Scoparia ambigualis</name>
+<name>Scoparia ancipitella</name>
+<name>Scoparia basistrigalis</name>
+<name>Scoparia</name>
+<name>Scoparia pyralella</name>
+<name>Scoparia subfusca</name>
+<name>Scopariinae</name>
+<name>Scopula floslactata</name>
+<name>Scopula frigidaria</name>
+<name>Scopula immorata</name>
+<name>Scopula immutata</name>
+<name>Scopula incanata</name>
+<name>Scopula</name>
+<name>Scopula ternata</name>
+<name>Scotopteryx chenopodiata</name>
+<name>Scotopteryx luridata</name>
+<name>Scotopteryx</name>
+<name>Scrobipalpa acuminatella</name>
+<name>Scrobipalpa atriplicella</name>
+<name>Scrobipalpa clintoni</name>
+<name>Scrobipalpa murinella</name>
+<name>Scrobipalpa</name>
+<name>Scrobipalpa nitentella</name>
+<name>Scrobipalpa obsoletella</name>
+<name>Scrobipalpa reiprichi</name>
+<name>Scrobipalpa samadensis</name>
+<name>Scrobipalpa stangei</name>
+<name>Scrobipalpopsis</name>
+<name>Scrobipalpopsis petasitis</name>
+<name>Scrobipalpula diffluella</name>
+<name>Scrobipalpula</name>
+<name>Scrobipalpula psilella</name>
+<name>Scythrididae</name>
+<name>Scythris cicadella</name>
+<name>Scythris disparella</name>
+<name>Scythris empetrella</name>
+<name>Scythris inspersella</name>
+<name>Scythris laminella</name>
+<name>Scythris limbella</name>
+<name>Scythris</name>
+<name>Scythris noricella</name>
+<name>Scythris picaepennis</name>
+<name>Scythris potentillella</name>
+<name>Scythropia crataegella</name>
+<name>Scythropia</name>
+<name>Scythropiinae</name>
+<name>seksflekka bloddropesvermar</name>
+<name>seksflekket bloddråpesvermer</name>
+<name>Selagia</name>
+<name>Selagia spadicella</name>
+<name>Selenia dentaria</name>
+<name>Selenia lunularia</name>
+<name>Selenia</name>
+<name>Selenia tetralunaria</name>
+<name>Selenodes karelica</name>
+<name>Selenodes</name>
+<name>Selidosema brunnearia</name>
+<name>Selidosema</name>
+<name>seljebrannmålar</name>
+<name>seljebrannmåler</name>
+<name>seljebuskmålar</name>
+<name>seljebuskmåler</name>
+<name>seljebørstespinnar</name>
+<name>seljebørstespinner</name>
+<name>seljedvergmålar</name>
+<name>seljedvergmåler</name>
+<name>seljeflatviklar</name>
+<name>seljeflatvikler</name>
+<name>seljeglansviklar</name>
+<name>seljeglansvikler</name>
+<name>seljekrattmøll</name>
+<name>seljekveldviklar</name>
+<name>seljekveldvikler</name>
+<name>seljelauvfly</name>
+<name>seljelauvmålar</name>
+<name>seljelauvviklar</name>
+<name>seljeløvfly</name>
+<name>seljeløvmåler</name>
+<name>seljeløvvikler</name>
+<name>seljesolviklar</name>
+<name>seljesolvikler</name>
+<name>seljetannspinnar</name>
+<name>seljetannspinner</name>
+<name>seljetungemålar</name>
+<name>seljetungemåler</name>
+<name>seljeviklarfly</name>
+<name>seljeviklefly</name>
+<name>Semioscopis avellanella</name>
+<name>Semioscopis</name>
+<name>Semioscopis oculella</name>
+<name>Semioscopis steinkellneriana</name>
+<name>Semioscopis strigulana</name>
+<name>serpentinprydviklar</name>
+<name>serpentinprydvikler</name>
+<name>Sesia apiformis</name>
+<name>Sesia bembeciformis</name>
+<name>Sesia melanocephala</name>
+<name>Sesia</name>
+<name>Sesiidae</name>
+<name>Sesiinae</name>
+<name>Sesioidea</name>
+<name>Setema cereola</name>
+<name>Setema</name>
+<name>Setina irrorella</name>
+<name>Setina</name>
+<name>Sideridis albicolon</name>
+<name>Sideridis</name>
+<name>Sideridis reticulata</name>
+<name>Sideridis rivularis</name>
+<name>Sideridis turbida</name>
+<name>Siederia listerella</name>
+<name>Siederia</name>
+<name>Siederia rupicolella</name>
+<name>sigarsekkspinnar</name>
+<name>sigarsekkspinner</name>
+<name>sigdfly</name>
+<name>sikksakktannspinnar</name>
+<name>sikksakktannspinner</name>
+<name>siksaktannspinner</name>
+<name>sildrebergmålar</name>
+<name>sildrebergmåler</name>
+<name>Siona lineata</name>
+<name>Siona</name>
+<name>Sitochroa</name>
+<name>Sitochroa palealis</name>
+<name>Sitochroa verticalis</name>
+<name>sitronmålar</name>
+<name>sitronmåler</name>
+<name>sitronsommarfugl</name>
+<name>sitronsommerfugl</name>
+<name>sitronviklar</name>
+<name>sitronvikler</name>
+<name>sivfly</name>
+<name>sivsumpviklar</name>
+<name>sivsumpvikler</name>
+<name>skiferbakkefly</name>
+<name>skifernellikfly</name>
+<name>skjegglavfly</name>
+<name>skjermsvevefjærmøll</name>
+<name>skjermsvævefjørmøll</name>
+<name>skjoldberarbreimøll</name>
+<name>skjoldbærerbreimøll</name>
+<name>skogbakkefly</name>
+<name>skogbandmålar</name>
+<name>skogbandviklar</name>
+<name>skogbarkmåler</name>
+<name>skogbladviklar</name>
+<name>skogbladvikler</name>
+<name>skogborkmålar</name>
+<name>skogbåndmåler</name>
+<name>skogbåndvikler</name>
+<name>skogengfly</name>
+<name>skoghvitvinge</name>
+<name>skogkappefly</name>
+<name>skogkvistfly</name>
+<name>skogkvitveng</name>
+<name>skogmetallfly</name>
+<name>skogmosemott</name>
+<name>skognebbmott</name>
+<name>skogolivenmålar</name>
+<name>skogolivenmåler</name>
+<name>skogprydviklar</name>
+<name>skogprydvikler</name>
+<name>skogringveng</name>
+<name>skogringvinge</name>
+<name>skogsalatengviklar</name>
+<name>skogsalatengvikler</name>
+<name>skogsalatfjærmøll</name>
+<name>skogsalatfjørmøll</name>
+<name>skogsalathettefly</name>
+<name>skogsalatpraktviklar</name>
+<name>skogsalatpraktvikler</name>
+<name>skogsmygar</name>
+<name>skogsmyger</name>
+<name>skogteglfly</name>
+<name>skogviftefly</name>
+<name>skuggefly</name>
+<name>skumringsviklar</name>
+<name>skumringsvikler</name>
+<name>skvallerkåltannmøll</name>
+<name>skyggefly</name>
+<name>slyngminermøll</name>
+<name>slyngminérmøll</name>
+<name>sløyfemålar</name>
+<name>sløyfemåler</name>
+<name>slåpetornblomstermålar</name>
+<name>slåpetornblomstmåler</name>
+<name>slåpetornflatviklar</name>
+<name>slåpetornflatvikler</name>
+<name>slåpetornsigdveng</name>
+<name>slåpetornsigdvinge</name>
+<name>slåpetornsmalmott</name>
+<name>slåpetornstjertveng</name>
+<name>slåpetornstjertvinge</name>
+<name>slåpetornviklar</name>
+<name>slåpetornvikler</name>
+<name>slåttengfly</name>
+<name>slåttengrotviklar</name>
+<name>slåttengrotvikler</name>
+<name>smalbandpraktviklar</name>
+<name>smalbåndpraktvikler</name>
+<name>smalengmott</name>
+<name>smalkanta humlesvermar</name>
+<name>smalkantet humlesvermer</name>
+<name>smal kveldviklar</name>
+<name>smal kveldvikler</name>
+<name>smalnebbmott</name>
+<name>smalringrørfly</name>
+<name>smalringrøyrfly</name>
+<name>smal skumringsmålar</name>
+<name>smal skumringsmåler</name>
+<name>smalstreknebbmott</name>
+<name>smaltannmøll</name>
+<name>smalvengfly</name>
+<name>smalvengja nebbmott</name>
+<name>smalvengmålar</name>
+<name>smalvingefly</name>
+<name>smalvingemåler</name>
+<name>smalvinget nebbmott</name>
+<name>smaragdbladmålar</name>
+<name>smaragdbladmåler</name>
+<name>smellefjellfly</name>
+<name>Smerinthinae</name>
+<name>Smerinthus</name>
+<name>Smerinthus ocellata</name>
+<name>smørbukkskotviklar</name>
+<name>smørbukkskuddvikler</name>
+<name>smørbukkspinnmøll</name>
+<name>snelleprydviklar</name>
+<name>snelleprydvikler</name>
+<name>solblomengmøll</name>
+<name>soldoggfjærmøll</name>
+<name>soldoggfjørmøll</name>
+<name>sommarfuglar</name>
+<name>sommerfugler</name>
+<name>Sophronia chilonella</name>
+<name>Sophronia gelidella</name>
+<name>Sophronia</name>
+<name>Sophronia semicostella</name>
+<name>Sophronia sicariellus</name>
+<name>Sorhagenia janiszewskae</name>
+<name>Sorhagenia lophyrella</name>
+<name>Sorhagenia</name>
+<name>Sorhagenia rhamniella</name>
+<name>sotdagfly</name>
+<name>sotglassvinge</name>
+<name>sotglasveng</name>
+<name>sotmålar</name>
+<name>sotmåler</name>
+<name>sotsmalmott</name>
+<name>Spaelotis</name>
+<name>Spaelotis ravida</name>
+<name>Spaelotis suecica</name>
+<name>Spargania luctuata</name>
+<name>Spargania</name>
+<name>Sparganothis</name>
+<name>Sparganothis praecana</name>
+<name>Sparganothis rubicundana</name>
+<name>Spatalistis bifasciana</name>
+<name>Spatalistis</name>
+<name>Sphingidae</name>
+<name>Sphinginae</name>
+<name>Sphinx ligustri</name>
+<name>Sphinx</name>
+<name>Sphinx pinastri</name>
+<name>Spilomelinae</name>
+<name>Spilonota laricana</name>
+<name>Spilonota</name>
+<name>Spilonota ocellana</name>
+<name>Spilosoma lubricipeda</name>
+<name>Spilosoma lutea</name>
+<name>Spilosoma</name>
+<name>Spilosoma urticae</name>
+<name>spinkelt engfly</name>
+<name>spinkelt taigafly</name>
+<name>spinnarmålar</name>
+<name>spinnermåler</name>
+<name>spireaprydviklar</name>
+<name>spireaprydvikler</name>
+<name>spissvengdvergmålar</name>
+<name>spissvengja rotviklar</name>
+<name>spissvengringfly</name>
+<name>spissvingedvergmåler</name>
+<name>spissvingeringfly</name>
+<name>spissvinget rotvikler</name>
+<name>Spodoptera exigua</name>
+<name>Spodoptera</name>
+<name>spolebusksmalmott</name>
+<name>spraglet bjellevikler</name>
+<name>spraglet bjølleviklar</name>
+<name>spraglet gråviklar</name>
+<name>spraglet gråvikler</name>
+<name>springfrøbandmålar</name>
+<name>springfrøbåndmåler</name>
+<name>springfrødropemålar</name>
+<name>springfrødråpemåler</name>
+<name>springfrøviklar</name>
+<name>springfrøvikler</name>
+<name>spøkelsesroteter</name>
+<name>spøkjelsesrotetar</name>
+<name>Standfussiana lucernea</name>
+<name>Standfussiana</name>
+<name>starrfly</name>
+<name>starrglansfly</name>
+<name>starrnebbmott</name>
+<name>starrsumpvikler</name>
+<name>Stathmopoda</name>
+<name>Stathmopoda pedella</name>
+<name>Stathmopodidae</name>
+<name>staudingers fjellfly</name>
+<name>Staurophora celsia</name>
+<name>Staurophora</name>
+<name>Stauropus fagi</name>
+<name>Stauropus</name>
+<name>Stenolechia gemmella</name>
+<name>Stenolechia</name>
+<name>Stenoptilia bipunctidactyla</name>
+<name>Stenoptilia islandicus</name>
+<name>Stenoptilia</name>
+<name>Stenoptilia pelidnodactyla</name>
+<name>Stenoptilia pterodactyla</name>
+<name>Stenoptilia veronicae</name>
+<name>Stenoptinea cyaneimarmorella</name>
+<name>Stenoptinea</name>
+<name>Stephensia brunnichella</name>
+<name>Stephensia</name>
+<name>steppestengelfly</name>
+<name>Sterrhinae</name>
+<name>Sterrhopterix fusca</name>
+<name>Sterrhopterix</name>
+<name>Sterrhopterix standfussi</name>
+<name>Stictea mygindiana</name>
+<name>Stictea</name>
+<name>Stigmella aceris</name>
+<name>Stigmella aeneofasciella</name>
+<name>Stigmella alnetella</name>
+<name>Stigmella anomalella</name>
+<name>Stigmella assimilella</name>
+<name>Stigmella atricapitella</name>
+<name>Stigmella auromarginella</name>
+<name>Stigmella basiguttella</name>
+<name>Stigmella benanderella</name>
+<name>Stigmella betulicola</name>
+<name>Stigmella catharticella</name>
+<name>Stigmella centifoliella</name>
+<name>Stigmella confusella</name>
+<name>Stigmella continuella</name>
+<name>Stigmella dryadella</name>
+<name>Stigmella floslactella</name>
+<name>Stigmella glutinosae</name>
+<name>Stigmella hybnerella</name>
+<name>Stigmella lapponica</name>
+<name>Stigmella lemniscella</name>
+<name>Stigmella luteella</name>
+<name>Stigmella magdalenae</name>
+<name>Stigmella microtheriella</name>
+<name>Stigmella myrtillella</name>
+<name>Stigmella</name>
+<name>Stigmella nylandriella</name>
+<name>Stigmella obliquella</name>
+<name>Stigmella oxyacanthella</name>
+<name>Stigmella perpygmaeella</name>
+<name>Stigmella poterii</name>
+<name>Stigmella pretiosa</name>
+<name>Stigmella roborella</name>
+<name>Stigmella ruficapitella</name>
+<name>Stigmella sakhalinella</name>
+<name>Stigmella salicis</name>
+<name>Stigmella samiatella</name>
+<name>Stigmella sorbi</name>
+<name>Stigmella splendidissimella</name>
+<name>Stigmella svenssoni</name>
+<name>Stigmella tiliae</name>
+<name>Stigmella tityrella</name>
+<name>Stigmella trimaculella</name>
+<name>Stigmella tristis</name>
+<name>Stigmella ulmivora</name>
+<name>Stigmella vimineticola</name>
+<name>Stigmella zelleriella</name>
+<name>stikkelsbærmålar</name>
+<name>stikkelsbærmåler</name>
+<name>stikkelsbærpraktmålar</name>
+<name>stikkelsbærpraktmåler</name>
+<name>stikkelsbærpyralide</name>
+<name>stikkelsbærsmalmott</name>
+<name>Stilbia anomala</name>
+<name>Stilbia</name>
+<name>stjertmålar</name>
+<name>stjertmåler</name>
+<name>stor barkmåler</name>
+<name>stor bivoksmott</name>
+<name>stor bjørkeglassvinge</name>
+<name>stor bjørkeglasveng</name>
+<name>stor bjørnespinnar</name>
+<name>stor bjørnespinner</name>
+<name>stor bladviklar</name>
+<name>stor bladvikler</name>
+<name>stor bloddropesvermar</name>
+<name>stor bloddråpesvermer</name>
+<name>stor borkmålar</name>
+<name>stor dammott</name>
+<name>stor dvergmålar</name>
+<name>stor dvergmåler</name>
+<name>stor eikelauvmålar</name>
+<name>stor eikeløvmåler</name>
+<name>stor eikesmalmott</name>
+<name>stor eiketannspinnar</name>
+<name>stor eiketannspinner</name>
+<name>stor fjellpraktviklar</name>
+<name>stor fjellpraktvikler</name>
+<name>storflekket metallfly</name>
+<name>stor flikmålar</name>
+<name>stor flikmåler</name>
+<name>stor frostmålar</name>
+<name>stor frostmåler</name>
+<name>stor fruktviklar</name>
+<name>stor fruktvikler</name>
+<name>stor fugleskittvikler</name>
+<name>stor fugleskitviklar</name>
+<name>stor furuknoppviklar</name>
+<name>stor furuknoppvikler</name>
+<name>stor gaffelstjert</name>
+<name>stor gråviklar</name>
+<name>stor gråvikler</name>
+<name>stor haustmålar</name>
+<name>stor høstmåler</name>
+<name>stor kongledvergmålar</name>
+<name>stor kongledvergmåler</name>
+<name>stor korsmåler</name>
+<name>stor krattmålar</name>
+<name>stor krattmåler</name>
+<name>stor krossmålar</name>
+<name>stor kålsommarfugl</name>
+<name>stor kålsommerfugl</name>
+<name>stor lakrismjeltsekkmøll</name>
+<name>stor lavspinnar</name>
+<name>stor lavspinner</name>
+<name>stor lurvemålar</name>
+<name>stor lurvemåler</name>
+<name>stor malurtpraktviklar</name>
+<name>stor malurtpraktvikler</name>
+<name>stor mauremålar</name>
+<name>stor mauremåler</name>
+<name>stor mosemott</name>
+<name>stor nebbmott</name>
+<name>stor ospeflatviklar</name>
+<name>stor ospeflatvikler</name>
+<name>stor ospeglassvinge</name>
+<name>stor ospeglasveng</name>
+<name>stor ospetannspinnar</name>
+<name>stor ospetannspinner</name>
+<name>stor perikummålar</name>
+<name>stor perikummåler</name>
+<name>storrfly</name>
+<name>storrglansfly</name>
+<name>storrnebbmott</name>
+<name>stor roseviklar</name>
+<name>stor rosevikler</name>
+<name>stor rotviklar</name>
+<name>stor rotvikler</name>
+<name>storrsumpviklar</name>
+<name>stor seljeglassvinge</name>
+<name>stor seljeglasveng</name>
+<name>stor seljesigdviklar</name>
+<name>stor seljesigdvikler</name>
+<name>stor snabelsvermar</name>
+<name>stor snabelsvermer</name>
+<name>stor sneglespinner</name>
+<name>stor sniglespinnar</name>
+<name>stor stengelviklar</name>
+<name>stor stengelvikler</name>
+<name>stort båtfly</name>
+<name>stort eikeordensband</name>
+<name>stort eikeordensbånd</name>
+<name>stort engfly</name>
+<name>stort flatfly</name>
+<name>stor tistelsmalmott</name>
+<name>stort jordfly</name>
+<name>stort lauvfly</name>
+<name>stort lyngheifly</name>
+<name>stort løvfly</name>
+<name>stort seljefly</name>
+<name>stort skogfly</name>
+<name>stort stengelfly</name>
+<name>stort takrørfly</name>
+<name>stort takrøyrfly</name>
+<name>storveronikafjærmøll</name>
+<name>storveronikafjørmøll</name>
+<name>strandengmålar</name>
+<name>strandengmåler</name>
+<name>strandengviklar</name>
+<name>strandengvikler</name>
+<name>strandfly</name>
+<name>strandmålar</name>
+<name>strandmåler</name>
+<name>strandnebbmott</name>
+<name>strandskotviklar</name>
+<name>strandskuddvikler</name>
+<name>strandsmalmott</name>
+<name>strandsolviklar</name>
+<name>strandsolvikler</name>
+<name>strandstjerneengviklar</name>
+<name>strandstjerneengvikler</name>
+<name>strandstjernehettefly</name>
+<name>strandstjernepraktviklar</name>
+<name>strandstjernepraktvikler</name>
+<name>strekdvergmålar</name>
+<name>strekdvergmåler</name>
+<name>streket eikesmalmott</name>
+<name>strekmålar</name>
+<name>strekmåler</name>
+<name>streknebbfly</name>
+<name>streksandfly</name>
+<name>stripebjørnespinnar</name>
+<name>stripebjørnespinner</name>
+<name>stripeengviklar</name>
+<name>stripeengvikler</name>
+<name>stripemålar</name>
+<name>stripemåler</name>
+<name>stripenebbmott</name>
+<name>stripesigdviklar</name>
+<name>stripesigdvikler</name>
+<name>stripet bjørnespinnar</name>
+<name>stripet bjørnespinner</name>
+<name>stripet grankveldviklar</name>
+<name>stripet grankveldvikler</name>
+<name>Strophedra</name>
+<name>Strophedra nitidana</name>
+<name>Strophedra weirana</name>
+<name>strybarkmåler</name>
+<name>stryborkmålar</name>
+<name>større bandmetallfly</name>
+<name>større båndmetallfly</name>
+<name>større eikeordensband</name>
+<name>større eikeordensbånd</name>
+<name>større grasengfly</name>
+<name>større gressengfly</name>
+<name>sumpbladviklar</name>
+<name>sumpbladvikler</name>
+<name>sumpengfly</name>
+<name>sumpengmott</name>
+<name>sumpflatviklar</name>
+<name>sumpflatvikler</name>
+<name>sumpgrasfly</name>
+<name>sumpgressfly</name>
+<name>sumplinjemålar</name>
+<name>sumplinjemåler</name>
+<name>sumpnebbmott</name>
+<name>sumpurtemålar</name>
+<name>sumpurtemåler</name>
+<name>svabergringveng</name>
+<name>svabergringvinge</name>
+<name>svalestjert</name>
+<name>svart bredmøll</name>
+<name>svart breimøll</name>
+<name>svart fjellmott</name>
+<name>svartflekket hakeviklar</name>
+<name>svartflekket hakevikler</name>
+<name>svartflekket heifly</name>
+<name>svartflekket kveldviklar</name>
+<name>svartflekket kveldvikler</name>
+<name>svartflekket olivenmålar</name>
+<name>svartflekket olivenmåler</name>
+<name>svartflekket stjertspinnar</name>
+<name>svartflekket stjertspinner</name>
+<name>svartflekkheifly</name>
+<name>svartflekksmygar</name>
+<name>svartflekksmyger</name>
+<name>svartflekkstjertspinnar</name>
+<name>svartflekkstjertspinner</name>
+<name>svart hagefly</name>
+<name>svart heifly</name>
+<name>svart jordfly</name>
+<name>svartkantkvistfly</name>
+<name>svart mauremålar</name>
+<name>svart mauremåler</name>
+<name>svart nebbmott</name>
+<name>svartranda bandmålar</name>
+<name>svartrandet båndmåler</name>
+<name>svart roseviklar</name>
+<name>svart rosevikler</name>
+<name>svart stråsekkspinnar</name>
+<name>svart stråsekkspinner</name>
+<name>svart sumpfly</name>
+<name>svevehettefly</name>
+<name>svevepraktvikler</name>
+<name>sveveprydvikler</name>
+<name>svinerotfjærmøll</name>
+<name>svinerotfjørmøll</name>
+<name>svinerotstilkviklar</name>
+<name>svinerotstilkvikler</name>
+<name>svovelfjærmøll</name>
+<name>svovelfjørmøll</name>
+<name>svovelmålar</name>
+<name>svovelmåler</name>
+<name>svævehettefly</name>
+<name>svævepraktviklar</name>
+<name>svæveprydviklar</name>
+<name>Swammerdamia caesiella</name>
+<name>Swammerdamia compunctella</name>
+<name>Swammerdamia</name>
+<name>Swammerdamia passerella</name>
+<name>sydlig ringvinge</name>
+<name>Symmocinae</name>
+<name>Sympistis funebris</name>
+<name>Sympistis heliophila</name>
+<name>Sympistis lapponica</name>
+<name>Sympistis</name>
+<name>Sympistis nigrita</name>
+<name>Synanthedon culiciformis</name>
+<name>Synanthedon formicaeformis</name>
+<name>Synanthedon myopaeformis</name>
+<name>Synanthedon</name>
+<name>Synanthedon polaris</name>
+<name>Synanthedon scoliaeformis</name>
+<name>Synanthedon spheciformis</name>
+<name>Synanthedon tipuliformis</name>
+<name>Synaphe</name>
+<name>Synaphe punctalis</name>
+<name>Syncopacma cinctella</name>
+<name>Syncopacma karvoneni</name>
+<name>Syncopacma larseniella</name>
+<name>Syncopacma</name>
+<name>Syncopacma sangiella</name>
+<name>Syncopacma suecicella</name>
+<name>Syncopacma taeniolella</name>
+<name>Syndemis musculana</name>
+<name>Syndemis</name>
+<name>Syngrapha diasema</name>
+<name>Syngrapha hochenwarthi</name>
+<name>Syngrapha interrogationis</name>
+<name>Syngrapha microgamma</name>
+<name>Syngrapha</name>
+<name>Syngrapha parilis</name>
+<name>syrefly</name>
+<name>syrekveldfly</name>
+<name>syrinminermøll</name>
+<name>syrinminérmøll</name>
+<name>sølvblåveng</name>
+<name>sølvblåvinge</name>
+<name>sølvbunkefly</name>
+<name>sølvfjærmøll</name>
+<name>sølvfjørmøll</name>
+<name>sølvgrå lavspinnar</name>
+<name>sølvgrå lavspinner</name>
+<name>sølvkåpe</name>
+<name>sølvnebbmott</name>
+<name>sølvprydviklar</name>
+<name>sølvprydvikler</name>
+<name>sølvskuggeviklar</name>
+<name>sølvskyggevikler</name>
+<name>sølvsolviklar</name>
+<name>sølvsolvikler</name>
+<name>sørgekåpe</name>
+<name>sørgjekåpe</name>
+<name>sørleg gulbladviklar</name>
+<name>sørleg ringveng</name>
+<name>sørlig gulbladvikler</name>
+<name>sørringveng</name>
+<name>sørringvinge</name>
+<name>taggvengfly</name>
+<name>taggvingefly</name>
+<name>taigabarmålar</name>
+<name>taigabarmåler</name>
+<name>taigabladviklar</name>
+<name>taigabladvikler</name>
+<name>taigadvergmålar</name>
+<name>taigadvergmåler</name>
+<name>taigaspinnar</name>
+<name>taigaspinner</name>
+<name>takrørfly</name>
+<name>takrørglansmøll</name>
+<name>takrørnebbmott</name>
+<name>takrøyrfly</name>
+<name>takrøyrglansmøll</name>
+<name>takrøyrnebbmott</name>
+<name>Taleporia</name>
+<name>Taleporia tubulosa</name>
+<name>Taleporiinae</name>
+<name>tannebbmott</name>
+<name>tannet perikumfly</name>
+<name>tannmålar</name>
+<name>tannmåler</name>
+<name>tannringmålar</name>
+<name>tannringmåler</name>
+<name>tapetmøll</name>
+<name>teglraudt engfly</name>
+<name>teglraudt grasfly</name>
+<name>teglrødt engfly</name>
+<name>teglrødt grasfly</name>
+<name>teglrødt gressfly</name>
+<name>Teichobiinae</name>
+<name>Telechrysidinae</name>
+<name>Telechrysis</name>
+<name>Telechrysis tripuncta</name>
+<name>Teleiodes flavimaculella</name>
+<name>Teleiodes luculella</name>
+<name>Teleiodes</name>
+<name>Teleiodes saltuum</name>
+<name>Teleiodes vulgella</name>
+<name>Teleiopsis diffinis</name>
+<name>Teleiopsis</name>
+<name>tempelfly</name>
+<name>Tethea</name>
+<name>Tethea ocularis</name>
+<name>Tethea or</name>
+<name>Tetheella fluctuosa</name>
+<name>Tetheella</name>
+<name>Thalera fimbrialis</name>
+<name>Thalera</name>
+<name>Thalpophila matura</name>
+<name>Thalpophila</name>
+<name>Thecla betulae</name>
+<name>Thecla</name>
+<name>Thera britannica</name>
+<name>Thera cognata</name>
+<name>Thera firmata</name>
+<name>Thera juniperata</name>
+<name>Thera</name>
+<name>Thera obeliscata</name>
+<name>Thera variata</name>
+<name>Thetidia</name>
+<name>Thetidia smaragdaria</name>
+<name>Thiodia citrana</name>
+<name>Thiodia</name>
+<name>Thiotricha</name>
+<name>Thiotricha subocellea</name>
+<name>Tholera cespitis</name>
+<name>Tholera decimalis</name>
+<name>Tholera</name>
+<name>Thumatha</name>
+<name>Thumatha senex</name>
+<name>Thyatira batis</name>
+<name>Thyatira</name>
+<name>Thyatirinae</name>
+<name>Thymelicus lineola</name>
+<name>Thymelicus</name>
+<name>Tiliacea aurago</name>
+<name>Tiliacea citrago</name>
+<name>Tiliacea</name>
+<name>Timandra comae</name>
+<name>Timandra griseata</name>
+<name>Timandra</name>
+<name>timoteismygar</name>
+<name>timoteismyger</name>
+<name>Tinagma dryadis</name>
+<name>Tinagma</name>
+<name>Tinagma ocnerostomella</name>
+<name>Tinagma perdicella</name>
+<name>Tinea bothniella</name>
+<name>Tinea columbariella</name>
+<name>Tinea</name>
+<name>Tinea pallescentella</name>
+<name>Tinea pellionella</name>
+<name>Tinea semifulvella</name>
+<name>Tinea svenssoni</name>
+<name>Tinea trinotella</name>
+<name>Tineidae</name>
+<name>Tineinae</name>
+<name>Tineoidea</name>
+<name>Tineola bisselliella</name>
+<name>Tineola</name>
+<name>Tinthiinae</name>
+<name>tiriltungeblåveng</name>
+<name>tiriltungeblåvinge</name>
+<name>tiriltungeglansviklar</name>
+<name>tiriltungeglansvikler</name>
+<name>tiriltungesmalmott</name>
+<name>tiriltungesmygar</name>
+<name>tiriltungesmyger</name>
+<name>Tischeria dodonaea</name>
+<name>Tischeria ekebladella</name>
+<name>Tischeria</name>
+<name>Tischeriidae</name>
+<name>Tischerioidea</name>
+<name>tistelengmott</name>
+<name>tistelengviklar</name>
+<name>tistelengvikler</name>
+<name>tistelpraktviklar</name>
+<name>tistelpraktvikler</name>
+<name>tistelskotviklar</name>
+<name>tistelskuddvikler</name>
+<name>tistelsmalmott</name>
+<name>tistelsommarfugl</name>
+<name>tistelsommerfugl</name>
+<name>tistelstengelfly</name>
+<name>tistelstengelviklar</name>
+<name>tistelstengelvikler</name>
+<name>tofarga pyramidefly</name>
+<name>tofargefly</name>
+<name>tofarget pyramidefly</name>
+<name>toflekka hermelinmålar</name>
+<name>toflekka nebbmott</name>
+<name>toflekket hermelinmåler</name>
+<name>toflekket nebbmott</name>
+<name>toprikka lavspinnar</name>
+<name>toprikket lavspinner</name>
+<name>torskemunndvergmålar</name>
+<name>torskemunndvergmåler</name>
+<name>torskemunnfly</name>
+<name>tors perlemorveng</name>
+<name>tors perlemorvinge</name>
+<name>Tortricidae</name>
+<name>Tortricinae</name>
+<name>Tortricodes alternella</name>
+<name>Tortricodes</name>
+<name>Tortricoidea</name>
+<name>Tortrix</name>
+<name>Tortrix viridana</name>
+<name>Trachea atriplicis</name>
+<name>Trachea</name>
+<name>Trachycera advenella</name>
+<name>Trachycera marmorea</name>
+<name>Trachycera</name>
+<name>tranebærmålar</name>
+<name>tranebærmåler</name>
+<name>trapesfly</name>
+<name>treflekka nebbmott</name>
+<name>treflekket nebbmott</name>
+<name>trepunktdvergmålar</name>
+<name>trepunktdvergmåler</name>
+<name>triangelbakkefly</name>
+<name>Triaxomasia caprimulgella</name>
+<name>Triaxomasia</name>
+<name>Triaxomera fulvimitrella</name>
+<name>Triaxomera</name>
+<name>Triaxomera parasitella</name>
+<name>Trichiura crataegi</name>
+<name>Trichiura</name>
+<name>Trichophaga</name>
+<name>Trichophaga scandinaviella</name>
+<name>Trichophaga tapetzella</name>
+<name>Trichoplusia</name>
+<name>Trichoplusia ni</name>
+<name>Trichopteryx carpinata</name>
+<name>Trichopteryx</name>
+<name>Trichopteryx polycommata</name>
+<name>Trifurcula cryptella</name>
+<name>Trifurcula eurema</name>
+<name>Trifurcula</name>
+<name>Trifurcula subnitidella</name>
+<name>Triodia</name>
+<name>Triodia sylvina</name>
+<name>Triphosa dubitata</name>
+<name>Triphosa</name>
+<name>Trisateles emortualis</name>
+<name>Trisateles</name>
+<name>trollbærdvergmålar</name>
+<name>trollbærdvergmåler</name>
+<name>trollbærmålar</name>
+<name>trollbærmåler</name>
+<name>trollheggpraktviklar</name>
+<name>trollheggpraktvikler</name>
+<name>trollheggsigdviklar</name>
+<name>trollheggsigdvikler</name>
+<name>tropeengmott</name>
+<name>tundraringveng</name>
+<name>tundraringvinge</name>
+<name>tverrlinja bakkefly</name>
+<name>tverrlinja seljefly</name>
+<name>tverrlinjet bakkefly</name>
+<name>tverrlinjet seljefly</name>
+<name>tveskjeggveronikafjærmøll</name>
+<name>tvillingplettseljefly</name>
+<name>tviskjeggveronikafjørmøll</name>
+<name>Tyria jacobaeae</name>
+<name>Tyria</name>
+<name>tyrihjelmfly</name>
+<name>tyrihjelmstilkviklar</name>
+<name>tyrihjelmstilkvikler</name>
+<name>tyttebærhakeviklar</name>
+<name>tyttebærhakevikler</name>
+<name>tyttebærprydviklar</name>
+<name>tyttebærprydvikler</name>
+<name>tørrfiskmøll</name>
+<name>tørrfruktsmalmott</name>
+<name>Udea decrepitalis</name>
+<name>Udea ferrugalis</name>
+<name>Udea hamalis</name>
+<name>Udea inquinatalis</name>
+<name>Udea lutealis</name>
+<name>Udea</name>
+<name>Udea nebulalis</name>
+<name>Udea olivalis</name>
+<name>Udea prunalis</name>
+<name>u-tegnet metallfly</name>
+<name>u-teikna metallfly</name>
+<name>vandreengmott</name>
+<name>vandrefly</name>
+<name>vandregrasfly</name>
+<name>vandregressfly</name>
+<name>vandregulveng</name>
+<name>vandregulvinge</name>
+<name>vandrehvitvinge</name>
+<name>vandrekvitveng</name>
+<name>vandrelinjemålar</name>
+<name>vandrelinjemåler</name>
+<name>vandremålar</name>
+<name>vandremåler</name>
+<name>vandrenebbmott</name>
+<name>vandresmalmott</name>
+<name>vandrestengelfly</name>
+<name>vandresteppefly</name>
+<name>vandreurtefly</name>
+<name>Vanessa atalanta</name>
+<name>Vanessa cardui</name>
+<name>Vanessa</name>
+<name>vanleg bakkefly</name>
+<name>vanleg bakkemålar</name>
+<name>vanleg bandfly</name>
+<name>vanleg bandmetallfly</name>
+<name>vanleg bergmålar</name>
+<name>vanleg bjølleviklar</name>
+<name>vanleg bjørkeflatviklar</name>
+<name>vanleg blåveng</name>
+<name>vanleg borkmålar</name>
+<name>vanleg dvergmålar</name>
+<name>vanleg eikesmalmott</name>
+<name>vanleg engfly</name>
+<name>vanleg fjellbakkefly</name>
+<name>vanleg fjellmott</name>
+<name>vanleg flatfly</name>
+<name>vanleg frostmålar</name>
+<name>vanleg fugleskitviklar</name>
+<name>vanleg furuskotviklar</name>
+<name>vanleg grankveldviklar</name>
+<name>vanleg grasengfly</name>
+<name>vanleg grasfly</name>
+<name>vanleg gråviklar</name>
+<name>vanleg gulbladviklar</name>
+<name>vanleg gullrisfjørmøll</name>
+<name>vanleg hakeviklar</name>
+<name>vanleg hermelinmålar</name>
+<name>vanleg hettefly</name>
+<name>vanleg jordbærviklar</name>
+<name>vanleg knoppviklar</name>
+<name>vanleg kveldfly</name>
+<name>vanleg kveldviklar</name>
+<name>vanleg kvistfly</name>
+<name>vanleg kålmott</name>
+<name>vanleg lavfly</name>
+<name>vanleg lêrfly</name>
+<name>vanleg lundfly</name>
+<name>vanleg mauremålar</name>
+<name>vanleg mauresvermar</name>
+<name>vanleg mosemott</name>
+<name>vanleg månemålar</name>
+<name>vanleg nebbmott</name>
+<name>vanleg nellikfly</name>
+<name>vanleg neslefly</name>
+<name>vanleg prydviklar</name>
+<name>vanleg ringfly</name>
+<name>vanleg roseviklar</name>
+<name>vanleg rotetar</name>
+<name>vanleg rotviklar</name>
+<name>vanleg rovfly</name>
+<name>vanleg ruteveng</name>
+<name>vanleg seljefly</name>
+<name>vanleg skotviklar</name>
+<name>vanleg stengelfly</name>
+<name>vanleg stråsekkspinnar</name>
+<name>vanleg sumpviklar</name>
+<name>vanleg svævefjørmøll</name>
+<name>vanleg taigafly</name>
+<name>vanleg teglfly</name>
+<name>vanleg tigerspinnar</name>
+<name>vanleg tredrepar</name>
+<name>vanleg urtefly</name>
+<name>vanleg vierfly</name>
+<name>vanleg viftefly</name>
+<name>vanleg vikkefly</name>
+<name>vanleg viklarfly</name>
+<name>vanleg vårkveldviklar</name>
+<name>vanleg vårtannspinnar</name>
+<name>vanlig bakkefly</name>
+<name>vanlig bakkemåler</name>
+<name>vanlig barkmåler</name>
+<name>vanlig bergmåler</name>
+<name>vanlig bjellevikler</name>
+<name>vanlig bjørkeflatvikler</name>
+<name>vanlig blåvinge</name>
+<name>vanlig båndfly</name>
+<name>vanlig båndmetallfly</name>
+<name>vanlig dvergmåler</name>
+<name>vanlig eikesmalmott</name>
+<name>vanlig engfly</name>
+<name>vanlig fjellbakkefly</name>
+<name>vanlig fjellmott</name>
+<name>vanlig flatfly</name>
+<name>vanlig frostmåler</name>
+<name>vanlig fugleskittvikler</name>
+<name>vanlig furuskuddvikler</name>
+<name>vanlig grankveldvikler</name>
+<name>vanlig grasengfly</name>
+<name>vanlig grasfly</name>
+<name>vanlig gråvikler</name>
+<name>vanlig gulbladvikler</name>
+<name>vanlig gullrisfjærmøll</name>
+<name>vanlig hakevikler</name>
+<name>vanlig hermelinmåler</name>
+<name>vanlig hettefly</name>
+<name>vanlig jordbærvikler</name>
+<name>vanlig knoppvikler</name>
+<name>vanlig kveldfly</name>
+<name>vanlig kveldvikler</name>
+<name>vanlig kvistfly</name>
+<name>vanlig kålmott</name>
+<name>vanlig lavfly</name>
+<name>vanlig lundfly</name>
+<name>vanlig lærfly</name>
+<name>vanlig mauremåler</name>
+<name>vanlig mauresvermer</name>
+<name>vanlig mosemott</name>
+<name>vanlig månemåler</name>
+<name>vanlig nebbmott</name>
+<name>vanlig nellikfly</name>
+<name>vanlig neslefly</name>
+<name>vanlig prydvikler</name>
+<name>vanlig ringfly</name>
+<name>vanlig rosevikler</name>
+<name>vanlig roteter</name>
+<name>vanlig rotvikler</name>
+<name>vanlig rovfly</name>
+<name>vanlig rutevinge</name>
+<name>vanlig seljefly</name>
+<name>vanlig skuddvikler</name>
+<name>vanlig stengelfly</name>
+<name>vanlig stråsekkspinner</name>
+<name>vanlig sumpvikler</name>
+<name>vanlig svevefjærmøll</name>
+<name>vanlig taigafly</name>
+<name>vanlig teglfly</name>
+<name>vanlig tigerspinner</name>
+<name>vanlig tredreper</name>
+<name>vanlig urtefly</name>
+<name>vanlig vierfly</name>
+<name>vanlig viftefly</name>
+<name>vanlig vikkefly</name>
+<name>vanlig viklerfly</name>
+<name>vanlig vårkveldvikler</name>
+<name>vanlig vårtannspinner</name>
+<name>variabelt bandfly</name>
+<name>variabelt båndfly</name>
+<name>variabelt flatfly</name>
+<name>variabelt sandjordfly</name>
+<name>variabelt seljefly</name>
+<name>variabelt stengelfly</name>
+<name>vassarvmålar</name>
+<name>vassarvmåler</name>
+<name>vassgropraktviklar</name>
+<name>vassgropraktvikler</name>
+<name>vasspestdammott</name>
+<name>vendelrotdvergmålar</name>
+<name>vendelrotdvergmåler</name>
+<name>Venusia blomeri</name>
+<name>Venusia cambrica</name>
+<name>Venusia</name>
+<name>vepseglassvinge</name>
+<name>vepseglasveng</name>
+<name>veronikapraktviklar</name>
+<name>veronikapraktvikler</name>
+<name>Victrix</name>
+<name>Victrix umovii</name>
+<name>viddebergmålar</name>
+<name>viddebergmåler</name>
+<name>vierlauvviklar</name>
+<name>vierløvvikler</name>
+<name>viersigdviklar</name>
+<name>viersigdvikler</name>
+<name>vikkefrøviklar</name>
+<name>vikkefrøvikler</name>
+<name>vikkesigdviklar</name>
+<name>vikkesigdvikler</name>
+<name>vindelfjærmøll</name>
+<name>vindelfjørmøll</name>
+<name>vindelfly</name>
+<name>vindelsvermar</name>
+<name>vindelsvermer</name>
+<name>vinkeldvergmålar</name>
+<name>vinkeldvergmåler</name>
+<name>vinkelengmålar</name>
+<name>vinkelengmåler</name>
+<name>vinkelfly</name>
+<name>vinkelhakefly</name>
+<name>vinkelmålar</name>
+<name>vinkelmåler</name>
+<name>vinkelpraktviklar</name>
+<name>vinkelpraktvikler</name>
+<name>vinkelskogmålar</name>
+<name>vinkelskogmåler</name>
+<name>vintereiksmalmott</name>
+<name>vintergrønnprydvikler</name>
+<name>vintergrønprydviklar</name>
+<name>vintermålar</name>
+<name>vintermåler</name>
+<name>Vitula biviella</name>
+<name>Vitula edmandsii</name>
+<name>Vitula</name>
+<name>vivendelfly</name>
+<name>vivendelviklar</name>
+<name>vivendelvikler</name>
+<name>vårbandmålar</name>
+<name>vårbandviklar</name>
+<name>vårbarkmåler</name>
+<name>vårblåveng</name>
+<name>vårblåvinge</name>
+<name>vårborkmålar</name>
+<name>vårbåndmåler</name>
+<name>vårbåndvikler</name>
+<name>vårdorskmøll</name>
+<name>vårduskfly</name>
+<name>vårdvergmålar</name>
+<name>vårdvergmåler</name>
+<name>vårfrostmålar</name>
+<name>vårfrostmåler</name>
+<name>vårfrøviklar</name>
+<name>vårfrøvikler</name>
+<name>vårfuruskotviklar</name>
+<name>vårfuruskuddvikler</name>
+<name>vårhalvspinnar</name>
+<name>vårhalvspinner</name>
+<name>vårhettefly</name>
+<name>vårkrattmålar</name>
+<name>vårkrattmåler</name>
+<name>vårsolviklar</name>
+<name>vårsolvikler</name>
+<name>vårspinnar</name>
+<name>vårspinner</name>
+<name>vårtannmøll</name>
+<name>vårviklar</name>
+<name>vårvikler</name>
+<name>Watsonalla cultraria</name>
+<name>Watsonalla</name>
+<name>Witlesia</name>
+<name>Witlesia pallida</name>
+<name>Xanthia aurago</name>
+<name>Xanthia citrago</name>
+<name>Xanthia gilvago</name>
+<name>Xanthia</name>
+<name>Xanthia togata</name>
+<name>Xanthorhoe abrasaria</name>
+<name>Xanthorhoe annotinata</name>
+<name>Xanthorhoe biriviata</name>
+<name>Xanthorhoe decoloraria</name>
+<name>Xanthorhoe designata</name>
+<name>Xanthorhoe ferrugata</name>
+<name>Xanthorhoe fluctuata</name>
+<name>Xanthorhoe montanata</name>
+<name>Xanthorhoe</name>
+<name>Xanthorhoe quadrifasiata</name>
+<name>Xanthorhoe spadicearia</name>
+<name>Xestia alpicola</name>
+<name>Xestia ashworthii</name>
+<name>Xestia baja</name>
+<name>Xestia castanea</name>
+<name>Xestia c-nigrum</name>
+<name>Xestia collina</name>
+<name>Xestia fennica</name>
+<name>Xestia gelida</name>
+<name>Xestia laetabilis</name>
+<name>Xestia lorezi</name>
+<name>Xestia lyngei</name>
+<name>Xestia</name>
+<name>Xestia quieta</name>
+<name>Xestia rhaetica</name>
+<name>Xestia sexstrigata</name>
+<name>Xestia sextrigata</name>
+<name>Xestia sincera</name>
+<name>Xestia speciosa</name>
+<name>Xestia stigmatica</name>
+<name>Xestia tecta</name>
+<name>Xestia triangulum</name>
+<name>Xestia xanthographa</name>
+<name>Xylena exsoleta</name>
+<name>Xylena</name>
+<name>Xylena solidaginis</name>
+<name>Xylena vetusta</name>
+<name>Xyleninae</name>
+<name>Xylocampa areola</name>
+<name>Xylocampa</name>
+<name>Xystophora</name>
+<name>Xystophora pulveratella</name>
+<name>Yponomeuta cagnagella</name>
+<name>Yponomeuta evonymella</name>
+<name>Yponomeuta malinellus</name>
+<name>Yponomeuta</name>
+<name>Yponomeuta padella</name>
+<name>Yponomeuta sedella</name>
+<name>Yponomeutidae</name>
+<name>Yponomeutinae</name>
+<name>Yponomeutoidea</name>
+<name>Ypsolopha alpella</name>
+<name>Ypsolopha asperella</name>
+<name>Ypsolopha dentella</name>
+<name>Ypsolopha falcella</name>
+<name>Ypsolopha horridella</name>
+<name>Ypsolopha lucella</name>
+<name>Ypsolopha</name>
+<name>Ypsolopha nemorella</name>
+<name>Ypsolopha parenthesella</name>
+<name>Ypsolopha scabrella</name>
+<name>Ypsolopha sequella</name>
+<name>Ypsolopha sylvella</name>
+<name>Ypsolopha ustella</name>
+<name>Ypsolopha vittella</name>
+<name>Ypsolophidae</name>
+<name>Ypsolophinae</name>
+<name>Zanclognatha lunalis</name>
+<name>Zanclognatha</name>
+<name>Zanclognatha tarsipennalis</name>
+<name>Zeiraphera griseana</name>
+<name>Zeiraphera isertana</name>
+<name>Zeiraphera</name>
+<name>Zeiraphera ratzeburgiana</name>
+<name>Zeiraphera rufimitrana</name>
+<name>Zelleria hepariella</name>
+<name>Zelleria</name>
+<name>Zeuzera</name>
+<name>Zeuzera pyrina</name>
+<name>Zeuzerinae</name>
+<name>Zophodia grossulariella</name>
+<name>Zophodia</name>
+<name>Zygaena exulans</name>
+<name>Zygaena filipendulae</name>
+<name>Zygaena lonicerae</name>
+<name>Zygaena</name>
+<name>Zygaena osterodensis</name>
+<name>Zygaena viciae</name>
+<name>Zygaenidae</name>
+<name>Zygaeninae</name>
+<name>Zygaenoidea</name>
+<name>østlig bladvikler</name>
+<name>østlig bloddråpesvermer</name>
+<name>østlig buemåler</name>
+<name>østlig langvingefly</name>
+<name>østlig olivenmåler</name>
+<name>østlig skuddvikler</name>
+<name>østlig stengelfly</name>
+<name>østlig viklerfly</name>
+<name>øyehalvspinner</name>
+<name>øyekveldvikler</name>
+<name>øyemåler</name>
+<name>åkerengfly</name>
+<name>åkerjordfly</name>
+<name>årenebbmott</name>
+</namelist>
