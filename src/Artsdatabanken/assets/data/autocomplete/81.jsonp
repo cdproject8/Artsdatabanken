@@ -1,1 +1,1 @@
-function autocompleteData() {return [  "Sphaerotheriida" ];}
+var autocompleteData = function() {return [  "Sphaerotheriida" ];}
