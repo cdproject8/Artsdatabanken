@@ -27,5 +27,5 @@ done
 
 # Minify and make into array
 for file in `ls tmp`; do
-	echo "[ `minify "tmp/$file"` ]" > "autocomplete/$file"
+	echo "[ `minify "tmp/$file"` ]" > "autocomplete/`echo $file | sed 's/\.xml/.json/'`"
 done
