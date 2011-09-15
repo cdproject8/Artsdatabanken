@@ -1,1 +1,6 @@
-var autocompleteData = function() {return [  "børstetusenbein", "Polyxenida", "Polyxenidae", "Polyxenus", "Polyxenus lagurus" ];}
+var autocompleteData = function() {return [ 
+'børstetusenbein', 
+'Polyxenida', 
+'Polyxenidae', 
+'Polyxenus', 
+'Polyxenus lagurus',  '' ];}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Artstre xmlns="http://artsdatabanken.no/Artsnavnebase">
+  <LatinskNavn LatinskNavnID="105" OverordnaLatinskNavnID="89" Kategori="Orden" KategoriID="11" Hovedstatus="Gyldig">
+    <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+    <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+    <Klasse KategoriID="6" LatinskNavnID="89" TypeEksID="89">Insecta</Klasse>
+    <Orden>Megaloptera</Orden>
+    <VitenskapligNavn>Megaloptera</VitenskapligNavn>
+    <Gruppe GruppeID="13">Nebbfluer, kamelhalsfluer, mudderfluer, nettvinger</Gruppe>
+    <Gruppe GruppeID="87">Nebbfluer, kamelhalsfluer, mudderfluer, nettvinger</Gruppe>
+    <Takson TaksonID="105" TypeEksID="105" />
+    <LatinskNavn LatinskNavnID="51551" OverordnaLatinskNavnID="105" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Sialidae</Familie>
+      <VitenskapligNavn>Sialidae</VitenskapligNavn>
+      <Takson TaksonID="34438" TypeEksID="44555">
+        <Popularnavn Spraak="Bokmål">
+          <Navn Anbefalt="true">mudderfluer</Navn>
+        </Popularnavn>
+        <Popularnavn Spraak="Nynorsk">
+          <Navn Anbefalt="true">gjørmefluger</Navn>
+        </Popularnavn>
+      </Takson>
+      <LatinskNavn LatinskNavnID="51552" OverordnaLatinskNavnID="51551" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Sialis</Slekt>
+        <VitenskapligNavn>Sialis</VitenskapligNavn>
+        <Takson TaksonID="34439" TypeEksID="44556" />
+        <LatinskNavn LatinskNavnID="51553" OverordnaLatinskNavnID="51552" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>fuliginosa</Art>
+          <VitenskapligNavn>Sialis fuliginosa</VitenskapligNavn>
+          <Autorstreng>Pictet, 1836</Autorstreng>
+          <Takson TaksonID="34440" TypeEksID="44557" FinnesINorge="true" />
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="51554" OverordnaLatinskNavnID="51552" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>lutaria</Art>
+          <VitenskapligNavn>Sialis lutaria</VitenskapligNavn>
+          <Autorstreng>(L.,1758)</Autorstreng>
+          <Takson TaksonID="34441" TypeEksID="44558" FinnesINorge="true" />
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="51555" OverordnaLatinskNavnID="51552" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>morio</Art>
+          <VitenskapligNavn>Sialis morio</VitenskapligNavn>
+          <Autorstreng>Klingstedt, 1931</Autorstreng>
+          <Takson TaksonID="34442" TypeEksID="44559" FinnesINorge="true" />
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="51556" OverordnaLatinskNavnID="51552" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>sibirica</Art>
+          <VitenskapligNavn>Sialis sibirica</VitenskapligNavn>
+          <Autorstreng>McLachlan, 1872</Autorstreng>
+          <Takson TaksonID="34443" TypeEksID="44560" FinnesINorge="true" />
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="51557" OverordnaLatinskNavnID="51552" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>sordida</Art>
+          <VitenskapligNavn>Sialis sordida</VitenskapligNavn>
+          <Autorstreng>Klingstedt, 1931</Autorstreng>
+          <Takson TaksonID="34444" TypeEksID="44561" FinnesINorge="true" />
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+  </LatinskNavn>
+</Artstre>

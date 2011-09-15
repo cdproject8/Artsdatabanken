@@ -1,1 +1,9 @@
-var autocompleteData = function() {return [  "kobbertusenbein", "kopartusenbein", "Polyzoniida", "Polyzoniidae", "Polyzonium", "Polyzonium germanicum", "spisshodetusenbein", "spisshovudtusenbein" ];}
+var autocompleteData = function() {return [ 
+'kobbertusenbein', 
+'kopartusenbein', 
+'Polyzoniida', 
+'Polyzoniidae', 
+'Polyzonium', 
+'Polyzonium germanicum', 
+'spisshodetusenbein', 
+'spisshovudtusenbein',  '' ];}

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Artstre xmlns="http://artsdatabanken.no/Artsnavnebase">
+  <LatinskNavn LatinskNavnID="75" OverordnaLatinskNavnID="68" Kategori="Orden" KategoriID="11" Hovedstatus="Gyldig">
+    <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+    <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+    <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+    <Orden>Polydesmida</Orden>
+    <VitenskapligNavn>Polydesmida</VitenskapligNavn>
+    <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+    <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+    <Takson TaksonID="75" TypeEksID="75" />
+    <LatinskNavn LatinskNavnID="48378" OverordnaLatinskNavnID="75" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Macrosternodesmidae</Familie>
+      <VitenskapligNavn>Macrosternodesmidae</VitenskapligNavn>
+      <Takson TaksonID="31478" TypeEksID="41517" />
+      <LatinskNavn LatinskNavnID="48379" OverordnaLatinskNavnID="48378" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Macrosternodesmus</Slekt>
+        <VitenskapligNavn>Macrosternodesmus</VitenskapligNavn>
+        <Takson TaksonID="31479" TypeEksID="41518" />
+        <LatinskNavn LatinskNavnID="48380" OverordnaLatinskNavnID="48379" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>palicola</Art>
+          <VitenskapligNavn>Macrosternodesmus palicola</VitenskapligNavn>
+          <Autorstreng>Brölemann, 1908</Autorstreng>
+          <Takson TaksonID="31480" TypeEksID="41519" FinnesINorge="true" />
+        </LatinskNavn>
+      </LatinskNavn>
+      <LatinskNavn LatinskNavnID="120053" OverordnaLatinskNavnID="48378" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Ophiodesmus</Slekt>
+        <VitenskapligNavn>Ophiodesmus</VitenskapligNavn>
+        <Takson TaksonID="78295" TypeEksID="111310" />
+        <LatinskNavn LatinskNavnID="120054" OverordnaLatinskNavnID="120053" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>albonanus</Art>
+          <VitenskapligNavn>Ophiodesmus albonanus</VitenskapligNavn>
+          <Autorstreng>(Latzel, 1895)</Autorstreng>
+          <Takson TaksonID="78296" TypeEksID="111311" FinnesINorge="true" />
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+    <LatinskNavn LatinskNavnID="48362" OverordnaLatinskNavnID="75" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Paradoxosomatidae</Familie>
+      <VitenskapligNavn>Paradoxosomatidae</VitenskapligNavn>
+      <Takson TaksonID="31465" TypeEksID="41501" />
+      <LatinskNavn LatinskNavnID="48367" OverordnaLatinskNavnID="48362" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Orthomorpha</Slekt>
+        <VitenskapligNavn>Orthomorpha</VitenskapligNavn>
+        <Takson TaksonID="31469" TypeEksID="41506" />
+        <LatinskNavn LatinskNavnID="48368" OverordnaLatinskNavnID="48367" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+          <Art>gracilis</Art>
+          <VitenskapligNavn>Orthomorpha gracilis</VitenskapligNavn>
+          <Autorstreng>(C. L. Koch, 1847)</Autorstreng>
+          <Takson TaksonID="31467" TypeEksID="41507" FinnesINorge="true">
+            <LatinskNavn LatinskNavnID="48364" OverordnaLatinskNavnID="48363" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+              <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+              <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+              <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+              <Orden KategoriID="11" LatinskNavnID="75" TypeEksID="75">Polydesmida</Orden>
+              <Familie KategoriID="15" LatinskNavnID="48362" TypeEksID="41501">Paradoxosomatidae</Familie>
+              <Slekt KategoriID="19" LatinskNavnID="48363" TypeEksID="41502">Oxidus</Slekt>
+              <Art>gracilis</Art>
+              <VitenskapligNavn>Oxidus gracilis</VitenskapligNavn>
+              <Autorstreng>(C. L. Koch, 1847)</Autorstreng>
+              <Gruppe GruppeID="52">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+              <Takson TaksonID="31467" TypeEksID="41503" FinnesINorge="true" />
+            </LatinskNavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+      <LatinskNavn LatinskNavnID="48363" OverordnaLatinskNavnID="48362" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Oxidus</Slekt>
+        <VitenskapligNavn>Oxidus</VitenskapligNavn>
+        <Takson TaksonID="31466" TypeEksID="41502" />
+        <LatinskNavn LatinskNavnID="48364" OverordnaLatinskNavnID="48363" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>gracilis</Art>
+          <VitenskapligNavn>Oxidus gracilis</VitenskapligNavn>
+          <Autorstreng>(C. L. Koch, 1847)</Autorstreng>
+          <Gruppe GruppeID="52">Mangeføttinger</Gruppe>
+          <Takson TaksonID="31467" TypeEksID="41503" FinnesINorge="true" />
+        </LatinskNavn>
+      </LatinskNavn>
+      <LatinskNavn LatinskNavnID="48365" OverordnaLatinskNavnID="48362" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Paradesmus</Slekt>
+        <VitenskapligNavn>Paradesmus</VitenskapligNavn>
+        <Takson TaksonID="31468" TypeEksID="41504" />
+        <LatinskNavn LatinskNavnID="48366" OverordnaLatinskNavnID="48365" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+          <Art>gracilis</Art>
+          <VitenskapligNavn>Paradesmus gracilis</VitenskapligNavn>
+          <Autorstreng>(C. L. Koch, 1847)</Autorstreng>
+          <Takson TaksonID="31467" TypeEksID="41505" FinnesINorge="true">
+            <LatinskNavn LatinskNavnID="48364" OverordnaLatinskNavnID="48363" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+              <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+              <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+              <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+              <Orden KategoriID="11" LatinskNavnID="75" TypeEksID="75">Polydesmida</Orden>
+              <Familie KategoriID="15" LatinskNavnID="48362" TypeEksID="41501">Paradoxosomatidae</Familie>
+              <Slekt KategoriID="19" LatinskNavnID="48363" TypeEksID="41502">Oxidus</Slekt>
+              <Art>gracilis</Art>
+              <VitenskapligNavn>Oxidus gracilis</VitenskapligNavn>
+              <Autorstreng>(C. L. Koch, 1847)</Autorstreng>
+              <Gruppe GruppeID="52">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+              <Takson TaksonID="31467" TypeEksID="41503" FinnesINorge="true" />
+            </LatinskNavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+    <LatinskNavn LatinskNavnID="48369" OverordnaLatinskNavnID="75" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Polydesmidae</Familie>
+      <VitenskapligNavn>Polydesmidae</VitenskapligNavn>
+      <Takson TaksonID="31470" TypeEksID="41508">
+        <Popularnavn Spraak="Bokmål">
+          <Navn Anbefalt="true">kiletusenbein</Navn>
+        </Popularnavn>
+        <Popularnavn Spraak="Nynorsk">
+          <Navn Anbefalt="true">kiletusenbein</Navn>
+        </Popularnavn>
+      </Takson>
+      <LatinskNavn LatinskNavnID="48370" OverordnaLatinskNavnID="48369" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Brachydesmus</Slekt>
+        <VitenskapligNavn>Brachydesmus</VitenskapligNavn>
+        <Takson TaksonID="31471" TypeEksID="41509" />
+        <LatinskNavn LatinskNavnID="48371" OverordnaLatinskNavnID="48370" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>superus</Art>
+          <VitenskapligNavn>Brachydesmus superus</VitenskapligNavn>
+          <Autorstreng>Latzel, 1884</Autorstreng>
+          <Takson TaksonID="31472" TypeEksID="41510" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">dvergkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">dvergkiletusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+      <LatinskNavn LatinskNavnID="48372" OverordnaLatinskNavnID="48369" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Polydesmus</Slekt>
+        <VitenskapligNavn>Polydesmus</VitenskapligNavn>
+        <Takson TaksonID="31473" TypeEksID="41511" />
+        <LatinskNavn LatinskNavnID="48374" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>angustus</Art>
+          <VitenskapligNavn>Polydesmus angustus</VitenskapligNavn>
+          <Autorstreng>Latzel, 1884</Autorstreng>
+          <Takson TaksonID="31475" TypeEksID="41513" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">vestkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">vestkiletusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="48373" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>complanatus</Art>
+          <VitenskapligNavn>Polydesmus complanatus</VitenskapligNavn>
+          <Autorstreng>(Linnaeus, 1761)</Autorstreng>
+          <Takson TaksonID="31474" TypeEksID="41512" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">østkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">austkiletusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="48377" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+          <Art>coriaceus</Art>
+          <VitenskapligNavn>Polydesmus coriaceus</VitenskapligNavn>
+          <Autorstreng>von Porat, 1870</Autorstreng>
+          <Takson TaksonID="31477" TypeEksID="41516" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">tuberkelkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">tuberkelkiletusenbein</Navn>
+            </Popularnavn>
+            <LatinskNavn LatinskNavnID="48376" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+              <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+              <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+              <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+              <Orden KategoriID="11" LatinskNavnID="75" TypeEksID="75">Polydesmida</Orden>
+              <Familie KategoriID="15" LatinskNavnID="48369" TypeEksID="41508">Polydesmidae</Familie>
+              <Slekt KategoriID="19" LatinskNavnID="48372" TypeEksID="41511">Polydesmus</Slekt>
+              <Art>inconstans</Art>
+              <VitenskapligNavn>Polydesmus inconstans</VitenskapligNavn>
+              <Autorstreng>Latzel, 1884</Autorstreng>
+              <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+              <Takson TaksonID="31477" TypeEksID="41515" FinnesINorge="true" />
+            </LatinskNavn>
+          </Takson>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="48375" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>denticulatus</Art>
+          <VitenskapligNavn>Polydesmus denticulatus</VitenskapligNavn>
+          <Autorstreng>C. L. Koch, 1847</Autorstreng>
+          <Takson TaksonID="31476" TypeEksID="41514" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">nordkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">nordkiletusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="48376" OverordnaLatinskNavnID="48372" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>inconstans</Art>
+          <VitenskapligNavn>Polydesmus inconstans</VitenskapligNavn>
+          <Autorstreng>Latzel, 1884</Autorstreng>
+          <Takson TaksonID="31477" TypeEksID="41515" FinnesINorge="true">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">tuberkelkiletusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">tuberkelkiletusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+    <LatinskNavn LatinskNavnID="48381" OverordnaLatinskNavnID="75" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Pyrgodesmidae</Familie>
+      <VitenskapligNavn>Pyrgodesmidae</VitenskapligNavn>
+      <Takson TaksonID="31481" TypeEksID="41520" />
+      <LatinskNavn LatinskNavnID="48382" OverordnaLatinskNavnID="48381" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Poratia</Slekt>
+        <VitenskapligNavn>Poratia</VitenskapligNavn>
+        <Takson TaksonID="31482" TypeEksID="41521" />
+        <LatinskNavn LatinskNavnID="48383" OverordnaLatinskNavnID="48382" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>digitata</Art>
+          <VitenskapligNavn>Poratia digitata</VitenskapligNavn>
+          <Autorstreng>(von Porat, 1889)</Autorstreng>
+          <Gruppe GruppeID="52">Mangeføttinger</Gruppe>
+          <Takson TaksonID="31483" TypeEksID="41522" FinnesINorge="true" />
+        </LatinskNavn>
+      </LatinskNavn>
+      <LatinskNavn LatinskNavnID="48384" OverordnaLatinskNavnID="48381" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Scytonotus</Slekt>
+        <VitenskapligNavn>Scytonotus</VitenskapligNavn>
+        <Takson TaksonID="31484" TypeEksID="41523" />
+        <LatinskNavn LatinskNavnID="48385" OverordnaLatinskNavnID="48384" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+          <Art>digitatus</Art>
+          <VitenskapligNavn>Scytonotus digitatus</VitenskapligNavn>
+          <Autorstreng>von Porat, 1889</Autorstreng>
+          <Takson TaksonID="31483" TypeEksID="41524" FinnesINorge="true">
+            <LatinskNavn LatinskNavnID="48383" OverordnaLatinskNavnID="48382" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+              <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+              <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+              <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+              <Orden KategoriID="11" LatinskNavnID="75" TypeEksID="75">Polydesmida</Orden>
+              <Familie KategoriID="15" LatinskNavnID="48381" TypeEksID="41520">Pyrgodesmidae</Familie>
+              <Slekt KategoriID="19" LatinskNavnID="48382" TypeEksID="41521">Poratia</Slekt>
+              <Art>digitata</Art>
+              <VitenskapligNavn>Poratia digitata</VitenskapligNavn>
+              <Autorstreng>(von Porat, 1889)</Autorstreng>
+              <Gruppe GruppeID="52">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+              <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+              <Takson TaksonID="31483" TypeEksID="41522" FinnesINorge="true" />
+            </LatinskNavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+  </LatinskNavn>
+</Artstre>

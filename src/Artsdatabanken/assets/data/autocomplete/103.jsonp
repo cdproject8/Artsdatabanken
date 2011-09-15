@@ -1,1 +1,2 @@
-var autocompleteData = function() {return [  "Mantophasmatodea" ];}
+var autocompleteData = function() {return [ 
+'Mantophasmatodea',  '' ];}
