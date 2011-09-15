@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Artsdatabanken</title>
+	
+	<!-- External stylesheets -->
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile.datebox.css" />
+	<link rel="stylesheet" href="libs/touch.artsdatabanken.no/artsdatabanken.css" type="text/css" media="all" />
+	<link type="text/css" href="libs/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+	
+	<!-- Application specific stylesheets -->
+	<link rel="stylesheet" href="styles/main.css" />
+	
+	<!-- External libraries to be loaded before custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui-1.8.16.custom.min.js"></script>
+	
+	<!-- Application specific scripts -->
+	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../data/autocomplete/99.jsonp"></script>
+	
+	
+	<!--  External libraries to be loaded after custom scripting -->
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile.datebox.js"></script>
+<!-- 	<style> -->
+<!-- 	.ui-autocomplete { -->
+<!-- 		max-height:200px; -->
+<!-- 		overflow-x: auto; -->
+<!-- 		overflow-y: auto; -->
+<!-- 		padding-x: 20px;} -->
+<!-- 	</style> -->
+	</head>
+	<body>
+
+
+	<script type="text/javascript">
+	$(function() {
+		var data = autocompleteData();
+		$( "#species-autocomplete" ).autocomplete({
+			 source: function(req, responseFn) {
+			        var re = $.ui.autocomplete.escapeRegex(req.term);
+			        var matcher = new RegExp( "^" + re, "i" );
+			        var count = 0;
+			        var a = $.grep( data, function(item,index){
+			        	if (count > 5) return false;
+			        	var res = matcher.test(item)
+			        	if (res) count++;
+			            return res;
+			        });
+			        responseFn( a );
+			    }
+		});
+	});
+	</script>
+
+	
+<!-- <div data-role="page" id="ac_test_page" data-theme="z" data-dom-cache="true"> -->
+<!-- 		<div data-role="header" data-theme="z"> -->
+<!-- 			<h1>Autocomplete Test</h1> -->
+<!-- 		</div> -->
+		<div data-role="fieldcontain">
+				<label for="species-autocomplete">Species</label> <input type="text" name="species" value="" id="species-autocomplete"/>
+			</div>
+<!-- 	<div data-role="footer" data-theme="z"> -->
+<!-- 		<h1> End</h1> -->
+<!-- 	</div> -->
+<!-- </div> -->
+<!-- <div class="ui-widget"> -->
+<!-- 	<label for="species-autocomplete">Species: </label> -->
+<!-- 	<input id="species-autocomplete"> -->
+	
+<!-- </div> -->
+
+	</body>
+	</html>
