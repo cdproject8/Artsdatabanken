@@ -12,7 +12,7 @@ download_one() {
 }
 
 minify() { 
-	sort $1 | uniq | tr '\n' ' ' | sed 's/,[^,]*$//g'
+	sort $1 | uniq
 }
 
 # Download all files
@@ -27,5 +27,5 @@ done
 
 # Minify and make into array
 for file in `ls tmp`; do
-	echo "var autocompleteData = function() {return [ `minify "tmp/$file"` ];}" > "autocomplete/`echo $file | sed 's/\.xml/.jsonp/'`"
+	echo "var autocompleteData = function() {return [ `minify "tmp/$file"` '' ];}" > "autocomplete/`echo $file | sed 's/\.xml/.jsonp/'`"
 done

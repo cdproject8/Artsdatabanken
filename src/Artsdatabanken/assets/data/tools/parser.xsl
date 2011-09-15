@@ -9,6 +9,7 @@
 	<xsl:apply-templates select="//adb:Navn | //adb:VitenskapligNavn" />
 </xsl:template>
 
-<xsl:template match="//adb:Navn | //adb:VitenskapligNavn">"<xsl:value-of select="." />",</xsl:template>
+<xsl:template match="//adb:Navn | //adb:VitenskapligNavn">'<xsl:value-of select="." />', 
+</xsl:template>
 
 </xsl:stylesheet>
