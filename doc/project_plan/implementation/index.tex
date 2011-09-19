@@ -2,6 +2,37 @@
 
 \subsection{Autocomplete}
 
-Artsdatabanken provided us with an XML API. To get a subset of the species names,
-we needed to download an XML document containing loads of information (~40 MB for
-butterflies).
+	\subsubsection{Introduction}
+	The customer wanted the application to autocomplete species names as they were typed in. 
+	That means that when someone wants to enter an observation for a species and starts typing in it's name, the application will suggest species based on what the user has typed in so far. 
+	This will help speed up the use of the application and also help with reducing typographical errors (typoes).
+
+	Artsdatabanken provided us with an XML API on our customer meeting on September 13th. 
+	To get obtain the list of names for all the species to be used with autocomplete. 
+	We needed to download XML documents separately for each species group containing loads of information (~40 MB for butterflies).
+	Amongst these documents two were massive, with one containing over half a million lines of xml data. 
+	Three were quite big, another three fairly small with the rest almost empty. With a total of 30 categories at the time, several of which will most likely not be used.
+
+	The API could not be used as is because the application needs to use this feature while offline. Because of this these generated XML files would have to be downloaded for use offline.
+
+	\subsubsection{Processing}
+	The files collected from the Artsdatabanken were quite extensive, containing a lot more information than needed, and in their raw form would take up unreasonably large space on the phones memory. 
+	Because of this we had to parse the xml files into other a more usable format, at first we created a new xml file with just the information needed. 
+	This was slightly tweaked by making json files instead.
+
+	All the data was downloaded from "http://webtjenester.artsdatabanken.no/Artsnavnebase.asmx/Artstre?LatinskNavnID=<species id>&Dybde=-1".
+	where <species id> ranges from 75 to 105. "Dybde" or depth in english, signifies that the fetched xml file should contain all species in the entire subtree.
+	The API interface used generates a species list organized in a tree structure, based on subgroups of species with a lot of additional information.
+	But the only information we needed to use were the norwegian and scientific names, therefore we created an xml parser using a php script that generated an XSLT (Extensible Stylesheet Language Transformation) of the xml file to be transformed into whatever format we liked.\cite{W3:XSLT} 
+
+	\subsubsection{Processeing impact}
+	The API 
+
+	Crashed the ntnu server hosting artsdatabanken while downloading species lists and parsing them
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{preperation/ntnu_server_artsdatabanken.png}
+	\caption{Artsdatabanken after downloading some the xml}
+	\label{fig:latex}
+\end{figure}
