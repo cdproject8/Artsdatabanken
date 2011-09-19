@@ -45,6 +45,39 @@
 	\end{figure}
 
 	\subsubsection{implementation}
-		TODO Stian take a look here.
+		To download, and transform the data into a suitable format we used the
+		following algorithm:
 
+		\begin{enumerate}
+			\item Download XML data from Artsdatabanken, one file per species category
+			\item Pull relevant names from each XML file and store in flat text files (comma separated)
+			\item Sort flat files
+			\item Remove duplicate entries
+			\item Enclose list structures in a JavaScript functions (var
+			funcname = function() \{return [ ... list items ... ]; \}
+		\end{enumerate}
+
+		Step 5 is included to follow the JSONP standard, i.e. data
+		that can be included in a normal script tag.
+
+		Initially we planned on doing all the processing using PHP. This worked
+		well for smaller data sets but we encountered problems as the file
+		sizes grew. While trying to download big files PHP timed out due to the
+		long waiting time (slow server response). This could probably be
+		amended by changing some configurations, but that would not give a
+		portable solution. Instead we decided to take advantage of the great
+		linux terminal, bash.
+
+		The final solution consists of a shell script, PHP, XSLT and a makefile
+		to pull it all together.  Downloading, sorting, and removal of
+		duplicate entries are done by a shell script (using wget, sort and
+		uniq). An XSLT file defines how the XML files should be translated, and
+		PHP drives the XSLT transformation.
+
+		To update the autocomplete base, all we need to do is to run the
+		following commands (download and parse XML, remove temporary files):
+\begin{lstlisting}
+make
+make clean
+\end{lstlisting}
 
