@@ -9,10 +9,12 @@ $(document).bind("mobileinit", function() {
 	
 	// This will be executed when jQuery mobile is loaded,
 	// place code here..
+	
+	console.log("mobileinit");
 });
 
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-
+	console.log("deviceready");
 }
