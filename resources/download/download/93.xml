@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Artstre xmlns="http://artsdatabanken.no/Artsnavnebase">
+  <LatinskNavn LatinskNavnID="93" OverordnaLatinskNavnID="89" Kategori="Orden" KategoriID="11" Hovedstatus="Gyldig">
+    <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+    <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+    <Klasse KategoriID="6" LatinskNavnID="89" TypeEksID="89">Insecta</Klasse>
+    <Orden>Dermaptera</Orden>
+    <VitenskapligNavn>Dermaptera</VitenskapligNavn>
+    <Gruppe GruppeID="11">Rettvinger, kakerlakker, saksedyr</Gruppe>
+    <Gruppe GruppeID="85">Rettvinger, kakerlakker, saksedyr</Gruppe>
+    <Takson TaksonID="93" TypeEksID="93">
+      <Popularnavn Spraak="Bokmål">
+        <Navn Anbefalt="true">saksedyr</Navn>
+      </Popularnavn>
+      <Popularnavn Spraak="Nynorsk">
+        <Navn Anbefalt="true">saksedyr</Navn>
+      </Popularnavn>
+    </Takson>
+    <LatinskNavn LatinskNavnID="112696" OverordnaLatinskNavnID="93" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Forficulidae</Familie>
+      <VitenskapligNavn>Forficulidae</VitenskapligNavn>
+      <Takson TaksonID="71794" TypeEksID="104003">
+        <Popularnavn Spraak="Bokmål">
+          <Navn Anbefalt="true">bredfotsaksedyr</Navn>
+        </Popularnavn>
+        <Popularnavn Spraak="Nynorsk">
+          <Navn Anbefalt="true">breifotsaksedyr</Navn>
+        </Popularnavn>
+      </Takson>
+      <LatinskNavn LatinskNavnID="112697" OverordnaLatinskNavnID="112696" Kategori="Underfamilie" KategoriID="16" Hovedstatus="Gyldig">
+        <Underfamilie>Forficulinae</Underfamilie>
+        <VitenskapligNavn>Forficulinae</VitenskapligNavn>
+        <Takson TaksonID="71795" TypeEksID="104004" />
+        <LatinskNavn LatinskNavnID="112700" OverordnaLatinskNavnID="112697" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+          <Slekt>Chelidura</Slekt>
+          <VitenskapligNavn>Chelidura</VitenskapligNavn>
+          <Takson TaksonID="71798" TypeEksID="104007" />
+          <LatinskNavn LatinskNavnID="112701" OverordnaLatinskNavnID="112700" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+            <Art>acanthopygia</Art>
+            <VitenskapligNavn>Chelidura acanthopygia</VitenskapligNavn>
+            <Autorstreng>(Géné, 1832)</Autorstreng>
+            <Takson TaksonID="71799" TypeEksID="104008" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">skogsaksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">skogsaksedyr</Navn>
+              </Popularnavn>
+            </Takson>
+          </LatinskNavn>
+          <LatinskNavn LatinskNavnID="112702" OverordnaLatinskNavnID="112700" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+            <Art>guentheri</Art>
+            <VitenskapligNavn>Chelidura guentheri</VitenskapligNavn>
+            <Autorstreng>(Galvagni, 1994)</Autorstreng>
+            <Takson TaksonID="71800" TypeEksID="104009" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">güntherskogsaksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">güntherskogsaksedyr</Navn>
+              </Popularnavn>
+            </Takson>
+          </LatinskNavn>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="112703" OverordnaLatinskNavnID="112697" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+          <Slekt>Chelidurella</Slekt>
+          <VitenskapligNavn>Chelidurella</VitenskapligNavn>
+          <Takson TaksonID="71801" TypeEksID="104010" />
+          <LatinskNavn LatinskNavnID="112704" OverordnaLatinskNavnID="112703" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+            <Art>acanthopygia</Art>
+            <VitenskapligNavn>Chelidurella acanthopygia</VitenskapligNavn>
+            <Autorstreng>(Géné, 1832)</Autorstreng>
+            <Takson TaksonID="71799" TypeEksID="104011" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">skogsaksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">skogsaksedyr</Navn>
+              </Popularnavn>
+              <LatinskNavn LatinskNavnID="112701" OverordnaLatinskNavnID="112700" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+                <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+                <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+                <Klasse KategoriID="6" LatinskNavnID="89" TypeEksID="89">Insecta</Klasse>
+                <Orden KategoriID="11" LatinskNavnID="93" TypeEksID="93">Dermaptera</Orden>
+                <Familie KategoriID="15" LatinskNavnID="112696" TypeEksID="104003">Forficulidae</Familie>
+                <Underfamilie KategoriID="16" LatinskNavnID="112697" TypeEksID="104004">Forficulinae</Underfamilie>
+                <Slekt KategoriID="19" LatinskNavnID="112700" TypeEksID="104007">Chelidura</Slekt>
+                <Art>acanthopygia</Art>
+                <VitenskapligNavn>Chelidura acanthopygia</VitenskapligNavn>
+                <Autorstreng>(Géné, 1832)</Autorstreng>
+                <Gruppe GruppeID="11">Rettvinger, kakerlakker, saksedyr</Gruppe>
+                <Gruppe GruppeID="85">Rettvinger, kakerlakker, saksedyr</Gruppe>
+                <Takson TaksonID="71799" TypeEksID="104008" FinnesINorge="true" />
+              </LatinskNavn>
+            </Takson>
+          </LatinskNavn>
+          <LatinskNavn LatinskNavnID="112705" OverordnaLatinskNavnID="112703" Kategori="Art" KategoriID="22" Hovedstatus="Synonym" Bistatus="Illegitimt">
+            <Art>guentheri</Art>
+            <VitenskapligNavn>Chelidurella guentheri</VitenskapligNavn>
+            <Autorstreng>Galvagni, 1994</Autorstreng>
+            <Takson TaksonID="71800" TypeEksID="104012" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">güntherskogsaksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">güntherskogsaksedyr</Navn>
+              </Popularnavn>
+              <LatinskNavn LatinskNavnID="112702" OverordnaLatinskNavnID="112700" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+                <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+                <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+                <Klasse KategoriID="6" LatinskNavnID="89" TypeEksID="89">Insecta</Klasse>
+                <Orden KategoriID="11" LatinskNavnID="93" TypeEksID="93">Dermaptera</Orden>
+                <Familie KategoriID="15" LatinskNavnID="112696" TypeEksID="104003">Forficulidae</Familie>
+                <Underfamilie KategoriID="16" LatinskNavnID="112697" TypeEksID="104004">Forficulinae</Underfamilie>
+                <Slekt KategoriID="19" LatinskNavnID="112700" TypeEksID="104007">Chelidura</Slekt>
+                <Art>guentheri</Art>
+                <VitenskapligNavn>Chelidura guentheri</VitenskapligNavn>
+                <Autorstreng>(Galvagni, 1994)</Autorstreng>
+                <Gruppe GruppeID="11">Rettvinger, kakerlakker, saksedyr</Gruppe>
+                <Gruppe GruppeID="85">Rettvinger, kakerlakker, saksedyr</Gruppe>
+                <Takson TaksonID="71800" TypeEksID="104009" FinnesINorge="true" />
+              </LatinskNavn>
+            </Takson>
+          </LatinskNavn>
+        </LatinskNavn>
+        <LatinskNavn LatinskNavnID="112698" OverordnaLatinskNavnID="112697" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+          <Slekt>Forficula</Slekt>
+          <VitenskapligNavn>Forficula</VitenskapligNavn>
+          <Takson TaksonID="71796" TypeEksID="104005" />
+          <LatinskNavn LatinskNavnID="112699" OverordnaLatinskNavnID="112698" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+            <Art>auricularia</Art>
+            <VitenskapligNavn>Forficula auricularia</VitenskapligNavn>
+            <Autorstreng>Linnaeus, 1758</Autorstreng>
+            <Takson TaksonID="71797" TypeEksID="104006" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">vanlig saksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">vanleg saksedyr</Navn>
+              </Popularnavn>
+            </Takson>
+          </LatinskNavn>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+    <LatinskNavn LatinskNavnID="112692" OverordnaLatinskNavnID="93" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Spongiphoridae</Familie>
+      <VitenskapligNavn>Spongiphoridae</VitenskapligNavn>
+      <Takson TaksonID="71790" TypeEksID="103999">
+        <Popularnavn Spraak="Bokmål">
+          <Navn Anbefalt="true">dvergsaksedyr</Navn>
+        </Popularnavn>
+        <Popularnavn Spraak="Nynorsk">
+          <Navn Anbefalt="true">dvergsaksedyr</Navn>
+        </Popularnavn>
+      </Takson>
+      <LatinskNavn LatinskNavnID="112693" OverordnaLatinskNavnID="112692" Kategori="Underfamilie" KategoriID="16" Hovedstatus="Gyldig">
+        <Underfamilie>Labiinae</Underfamilie>
+        <VitenskapligNavn>Labiinae</VitenskapligNavn>
+        <Takson TaksonID="71791" TypeEksID="104000" />
+        <LatinskNavn LatinskNavnID="112694" OverordnaLatinskNavnID="112693" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+          <Slekt>Labia</Slekt>
+          <VitenskapligNavn>Labia</VitenskapligNavn>
+          <Takson TaksonID="71792" TypeEksID="104001" />
+          <LatinskNavn LatinskNavnID="112695" OverordnaLatinskNavnID="112694" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+            <Art>minor</Art>
+            <VitenskapligNavn>Labia minor</VitenskapligNavn>
+            <Autorstreng>(Linnaeus, 1758)</Autorstreng>
+            <Takson TaksonID="71793" TypeEksID="104002" FinnesINorge="true">
+              <Popularnavn Spraak="Bokmål">
+                <Navn Anbefalt="true">dvergsaksedyr</Navn>
+              </Popularnavn>
+              <Popularnavn Spraak="Nynorsk">
+                <Navn Anbefalt="true">dvergsaksedyr</Navn>
+              </Popularnavn>
+            </Takson>
+          </LatinskNavn>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+  </LatinskNavn>
+</Artstre>
