@@ -51,10 +51,10 @@
 				<div id="species_row">
 					<div data-role="fieldcontain" class="ui-grid-a">
 						<div class="ui-block-a">
-							<input type="text" name="nam01" id="spe01" class="ui-input-name-spec fill" value="Blackbird" />
+							<input type="text" name="name" id="spe01" class="ui-input-name-spec fill" value="Blackbird" />
 						</div>
 						<div class="ui-block-b">
-							<input type="number" name="num01" id="spec01" class="ui-input-numb-spec fill" />
+							<input type="number" name="number" id="spc01" class="ui-input-numb-spec fill" />
 						</div>
 					</div>
 					<a href="extended-inf.html" data-role="button" data-inline="true"
@@ -62,7 +62,7 @@
 					<hr />
 				</div>
 			</form>
-			<a data-role="button" href="" onClick="$('#species_row').clone().appendTo('#observation_form');">Add another species</a>
+			<a data-role="button" href="javascript: add_species();" >Add another species</a>
 		</div>
 		<div data-role="footer" data-theme="z">
 			<a href="submit.html" data-role="button">Submit</a>
