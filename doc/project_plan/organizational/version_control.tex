@@ -1,20 +1,16 @@
 \subsection{Version control system}
 
 \subsubsection{Apache Subversion}
+Apache Subversion (often abbreviated SVN, after the command name svn) is a software versioning and a revision control system distributed under a free license. Developers use Subversion to maintain current and historical versions of files such as source code, web pages, and documentation.\cite{wiki:svn}
 
-Apache Subversion (often abbreviated SVN, after the command name svn) is a software versioning and a revision control system distributed under a free license. Developers use Subversion to maintain current and historical versions of files such as source code, web pages, and documentation. Its goal is to be a mostly-compatible successor to the widely used Concurrent Versions System (CVS).\newline
+Subversion repositories can be hosted by Google Code or at IDI through Gurutjenesten. SVN has good tools for eclipse, making it easy for developers to use its powerful features.
 
-The open source community has used Subversion widely: for example in projects such as Apache Software Foundation, Free Pascal, FreeBSD, GCC, Django, Ruby, Mono, SourceForge, PHP and MediaWiki. Google Code also provides Subversion hosting for their open source projects. BountySource systems use it exclusively. CodePlex offers access to Subversion as well as to other types of clients.\newline
+\subsubsection{Git}
+Git is a distributed revision control system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development. Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server. Git is free software distributed under the terms of the GNU General Public License version 2.\cite{wiki:git}
 
-The corporate world has also started to adopt Subversion. A 2007 report by Forrester Research recognized Subversion as the sole leader in the Standalone Software Configuration Management (SCM) category and as a strong performer in the Software Configuration and Change Management (SCCM) category.\newline
+For developers, git is better at merging branches, and merging in general. Being a command-line focused tool makes it a bit harder to use for inexperienced developers, or developers unfamiliar with the command-line. Some GUI clients do exists, but they do not always implement the entire rich features of git. 
 
-Subversion was created by CollabNet Inc in 2000 and is now a top-level Apache project being built and used by a global community of contributors.
-
-\subsubsection{GitHub}
-
-GitHub is a web-based hosting service for software development projects that use the Git revision control system. GitHub offers both commercial plans and free accounts for open source projects.\newline
-
-Collaboration on Github is not complicated but also not intuitively clear for beginners because not all parts of the workflow are incorporated into the Github user interface. This description describes the structure of collaboration between the contributors and the maintainers of a project that is hosted on github. For every step in the workflow the respective git commands are given for reference.\newline
+The biggest asset of Git is GitHub. GitHub is a web-based hosting service for software development projects that use the Git revision control system. The site provides social networking functionality such as feeds, followers and the network graph to display how developers work on their versions of a repository.\cite{wiki:github} In addition, GitHub now features one of the best issue trackers available, making it a powerful tool for any developer team.
 
 \begin{figure}[htb]
 	\centering
@@ -23,4 +19,5 @@ Collaboration on Github is not complicated but also not intuitively clear for be
 	\label{fig:github}
 \end{figure}
 
-For this project, it is decided that version control system will be GitHub.
+\subsubsection{Conclusion}
+Because the project requires issue trackers and a rich commit history, the team has decided that using git is the right approach. The group has previous experience in using git, and we could get it up and running fairly quickly after project launch. The project is also Open Source, so having it as such on GitHub is not a problem.
