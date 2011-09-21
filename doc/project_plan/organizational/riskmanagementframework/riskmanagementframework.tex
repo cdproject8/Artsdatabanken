@@ -1,24 +1,29 @@
-Risk is an inherent part of any project. Risk can come in several forms such as projects violating budget or schedule, losing track of goal, missing the essence of the task on hand. TDT4290's risk management will be inclusive of the project management risks, technical difficulties, shortage of man power, unplanned events and security risk to the system being built.\cite{wiki:rmf1} Risk, in a project, increases as the size and complexity of the project grows.
-\\[0.5cm]
-Risk management is one of the most key processes in a project that will ensures there exists a systematic documentation  of potentially unwanted events and draw up a procedure to minimize their effects on the overall work progress, if they happen.
-\\[0.5cm]
-There are four key tasks in of risk management planning\cite{wiki:rmf2}
-\begin{itemize}
-    \item{Identification}
-	\item{Quantification}
-	\item{Response}
-    \item{Risk Monitoring and Control assessment}
-\end{itemize}
+%todo fix references..
 
-\paragraph{Risk quantification}
-Risk quantification is the process of quantifying the likelihood of a risk and its impact should it happen. Quantifying the risks in terms of likelihood of occurring and their impact systematically will provide a considerable support in mapping out the mitigation options and the prioritization of mitigation plans.
+Risk is an inherent part of any project. Risk can come in several forms such as
+projects violating budget or schedule, losing track of goal, missing the
+essence of the task on hand, etc. In our analysis, we will consider project
+management , technical difficulties, shortage of man power, unplanned events
+and application security .\cite{wiki:rmf1}
+
+There are four key tasks of risk management planning\cite{wiki:rmf2}
+\begin{enumerate}
+    \item{Identify risks}
+	\item{Quantify risks}
+	\item{Develop counter-measures}
+    \item{Regularily review risk analysis}
+\end{enumerate}
+
+Risks will be quantified by likelihood and impact, this can later be used for
+prioritizing. We use definitions listed in table \ref{tab:risk-likelihood} and
+\ref{tab:risk-impact} in the quantification step.
 
 \begin{center}
-    \begin{table}
+    \begin{table}[htb]
     \begin{tabular}{ | l | p{10cm} |}
 
     \hline
-    Title & Description  \\ \hline
+    Title & Description  \\ \hline \hline
     Very Low & Highly unlikely to occur; however, still needs to be monitored as certain circumstances could result
     in this risk becoming more likely to occur during the project. \\ \hline
     Low & Based on current information unlikely to occur, and the circumstances likely to trigger the risk are also unlikely to occur. \\ \hline
@@ -27,13 +32,13 @@ Risk quantification is the process of quantifying the likelihood of a risk and i
     Very High & Some events indicate that it some the risk is highly likely to occur and measures might not stop it from materializing.\\ \hline
     \end{tabular}
     \caption{Risk likelihood measurement parameters}
-    \label{tab:xyz}
+    \label{tab:risk-likelihood}
     \end{table}
     
-    \begin{table}
+    \begin{table}[htb]
     \begin{tabular}{|l|p{10cm}|}
     \hline
-    Title & Description \\ \hline
+    Title & Description \\ \hline \hline
     Very Low & Insignificant impact on the project. Minor dicomfort. \\ \hline
     Low & Minor impact on the project, less significant milestones not met. \\ \hline
     Medium & Project could be delayed, a lot of work to meet deadlines but manageable with a mitigation plan. \\ \hline
@@ -41,7 +46,7 @@ Risk quantification is the process of quantifying the likelihood of a risk and i
     Very Hight & Over budget and over schedule. Total collapse of the project. \\ \hline
     \end{tabular}
     \caption{Risk impact measurement parameters}
-    \label{tab:xyz}
+    \label{tab:risk-impact}
     \end{table}
         
 \end{center}
