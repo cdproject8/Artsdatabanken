@@ -1,1 +1,16 @@
 \section{Discussion}
+
+\subsection{XML API}
+
+The customer provided an XML API for queries with regards to species. The
+format was problematic to use for a mobile application due to processing and
+bandwidth limitations. To circumvent this problem we implemented a build script
+that downloaded and parsed relevant data into a suitable format (JSON). This data
+was included in the app itself.
+
+\subsection{Supporting multiple platforms}
+
+To accommodate multiple platforms we decided on PhoneGap, a framework that make
+use of the built-in browsers in mobile devices. PhoneGap relies scripting
+languages like JavaScript which is less efficient than native code. This can
+result in excluding users with less expensive devices.
