@@ -2,18 +2,36 @@
 var species_count=1;
 
 // Init jQuery mobile
-$(document).bind("mobileinit", function() {
-	// jQuery mobile configuration
-	$.extend($.mobile, {
-		// Config..
+$(document).ready(function() {
+	$(document).bind("mobileinit", function() {
+		// jQuery mobile configuration
+		$.extend($.mobile, {
+			// Config..
+		});
+		$.mobile.page.prototype.options.addBackBtn = true;
+		//$.mobile.page.prototype.options.domCache = true;
+		
+		// This will be executed when jQuery mobile is loaded,
+		// place code here..
+		
+		console.log("mobileinit");
+	
+		var data = autocompleteData();
+		$("#species-autocomplete").autocomplete({
+			 source: function(request, response) {
+			        var currentText = $.ui.autocomplete.escapeRegex(request.term);
+			        var matcher = new RegExp( "^" + currentText, "i" );
+			        var count = 0;
+			        var suggestions = $.grep( data, function(item,index){
+			        	if (count > 5) return false;
+			        	var res = matcher.test(item)
+			        	if (res) count++;
+			            return res;
+			        });
+			        response(suggestions);
+			    }
+		});
 	});
-	$.mobile.page.prototype.options.addBackBtn = true;
-	//$.mobile.page.prototype.options.domCache = true;
-	
-	// This will be executed when jQuery mobile is loaded,
-	// place code here..
-	
-	console.log("mobileinit");
 });
 
 //phonegap replacement function for $(document).ready
@@ -37,21 +55,3 @@ function add_species(){
 	
 	new_spec.appendTo('#observation_form');
 }
-
-$(document).ready(function() {
-	var data = autocompleteData();
-	$("#species-autocomplete").autocomplete({
-		 source: function(request, response) {
-		        var currentText = $.ui.autocomplete.escapeRegex(request.term);
-		        var matcher = new RegExp( "^" + currentText, "i" );
-		        var count = 0;
-		        var suggestions = $.grep( data, function(item,index){
-		        	if (count > 5) return false;
-		        	var res = matcher.test(item)
-		        	if (res) count++;
-		            return res;
-		        });
-		        response(suggestions);
-		    }
-	});
-});
