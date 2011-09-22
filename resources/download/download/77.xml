@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Artstre xmlns="http://artsdatabanken.no/Artsnavnebase">
+  <LatinskNavn LatinskNavnID="77" OverordnaLatinskNavnID="68" Kategori="Orden" KategoriID="11" Hovedstatus="Gyldig">
+    <Rike KategoriID="1" LatinskNavnID="1" TypeEksID="1">Animalia</Rike>
+    <Rekke KategoriID="3" LatinskNavnID="39" TypeEksID="39">Arthropoda</Rekke>
+    <Klasse KategoriID="6" LatinskNavnID="68" TypeEksID="68">Diplopoda</Klasse>
+    <Orden>Polyzoniida</Orden>
+    <VitenskapligNavn>Polyzoniida</VitenskapligNavn>
+    <Gruppe GruppeID="9">Mangeføttinger</Gruppe>
+    <Gruppe GruppeID="83">Mangeføttinger</Gruppe>
+    <Takson TaksonID="77" TypeEksID="77" />
+    <LatinskNavn LatinskNavnID="48343" OverordnaLatinskNavnID="77" Kategori="Familie" KategoriID="15" Hovedstatus="Gyldig">
+      <Familie>Polyzoniidae</Familie>
+      <VitenskapligNavn>Polyzoniidae</VitenskapligNavn>
+      <Takson TaksonID="31449" TypeEksID="41482">
+        <Popularnavn Spraak="Bokmål">
+          <Navn Anbefalt="true">spisshodetusenbein</Navn>
+        </Popularnavn>
+        <Popularnavn Spraak="Nynorsk">
+          <Navn Anbefalt="true">spisshovudtusenbein</Navn>
+        </Popularnavn>
+      </Takson>
+      <LatinskNavn LatinskNavnID="48344" OverordnaLatinskNavnID="48343" Kategori="Slekt" KategoriID="19" Hovedstatus="Gyldig">
+        <Slekt>Polyzonium</Slekt>
+        <VitenskapligNavn>Polyzonium</VitenskapligNavn>
+        <Takson TaksonID="31450" TypeEksID="41483" />
+        <LatinskNavn LatinskNavnID="48345" OverordnaLatinskNavnID="48344" Kategori="Art" KategoriID="22" Hovedstatus="Gyldig">
+          <Art>germanicum</Art>
+          <VitenskapligNavn>Polyzonium germanicum</VitenskapligNavn>
+          <Autorstreng>Brandt, 1837</Autorstreng>
+          <Takson TaksonID="31451" TypeEksID="41484">
+            <Popularnavn Spraak="Bokmål">
+              <Navn Anbefalt="true">kobbertusenbein</Navn>
+            </Popularnavn>
+            <Popularnavn Spraak="Nynorsk">
+              <Navn Anbefalt="true">kopartusenbein</Navn>
+            </Popularnavn>
+          </Takson>
+        </LatinskNavn>
+      </LatinskNavn>
+    </LatinskNavn>
+  </LatinskNavn>
+</Artstre>

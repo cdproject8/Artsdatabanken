@@ -8,13 +8,19 @@
 %\usepackage{lscape}
 \usepackage{listings}
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
 
 \begin{document}
-	\title{Cross-platform mobile development using Phonegap}
+	\title{Cross-platform mobile development using PhoneGap}
 	\author{Group 8}
 	\date{\today}
 	\maketitle
+	\thispagestyle{empty}
 	\pagebreak
+
+	\pagestyle{empty}
 	\begin{center}
 		Project Name: Artsdatabanken \\
 		Project sponsor: Artsdatabanken
@@ -34,16 +40,33 @@
 	\listoftables
 
 	\newpage
+	\pagestyle{plain}
+	\setcounter{page}{1}
 	\input{introduction/index}
 
 	\newpage
 	\input{prestudy/index}
 
 	\newpage
-	\input{reqspec/index}
+	\input{organizational/index}
 
 	\newpage
 	\input{riskanalysis}
+
+	\newpage
+	\input{reqspec/index}
+
+	\newpage
+	\input{sprints/index}
+
+	\newpage
+	\input{discussion/index}
+
+	%\newpage
+	%\input{riskmanagementframework/riskanalysis}
+
+%	\newpage
+%	\input{implementation/index}
 
 	\nocite{*}
 	\bibliographystyle{plain}

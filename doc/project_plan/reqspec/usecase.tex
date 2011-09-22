@@ -1,14 +1,18 @@
 \subsection{Use Cases}
+\label{sec:usecases}
+
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\textwidth]{reqspec/UseCase.png}
-	\caption{Use case}
+	\includegraphics[width=0.9\textwidth]{reqspec/mainusecase.jpg}
+	%\caption{Use Case Diagram}
 	\label{fig:usecase}
 \end{figure}
 
 In the following use cases, there is only one actor: the generic user
+\hspace{2em}
 
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/cno.png} \\\hline
 	Use Case 1&Create New Observation\\\hline
 	Requirement(s)&F1\\\hline
 	Preconditions&User wants to register an observation\\\hline
@@ -25,9 +29,10 @@ In the following use cases, there is only one actor: the generic user
 	Priority&High\\\hline
 \end{tabular}
 
-\hspace{2em}
+\hspace{4em}
 
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/addinfo.png} \\\hline
 	Use Case 2&Add More Information to Species\\\hline
 	Requirement(s)&F2\\\hline
 	Preconditions&User wants to specify more details about an observation\\\hline
@@ -62,14 +67,16 @@ In the following use cases, there is only one actor: the generic user
 
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/entermore.png} \\\hline
 	Use Case 3&Add another species to observation\\\hline
 	Requirement(s)&F3\\\hline
 	Preconditions&User wants to add another species to the observation\\\hline
 	Flow&1. User taps 'Add species' button.\newline
 	2. Optionally selects another location, otherwise the same one is selected.\newline
 	3. User selects species helped by auto complete. \newline
-	4. User taps 'OK' to go back to main observation window \\\hline  
+	4. User taps 'OK' to go back to main observation window \\\hline
 	Extensions& \\\hline
 	Postcondtions&Additonal species has been added to the observation\\\hline
 	Complexity&Low\\\hline
@@ -78,7 +85,9 @@ In the following use cases, there is only one actor: the generic user
 
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/export.png} \\\hline
 	Use Case 4&Export  observations\\\hline
 	Requirement(s)&F4\\\hline
 	Preconditions& User wants to export their observations \\\hline
@@ -93,7 +102,9 @@ In the following use cases, there is only one actor: the generic user
 
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/takepicture.png} \\\hline
 	Use Case 5&Take picture\\\hline
 	Requirement(s)&F5\\\hline
 	Preconditions&User wants to take a picture to be attached to an observation\newline
@@ -108,7 +119,9 @@ In the following use cases, there is only one actor: the generic user
 	
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/viewobs.png} \\\hline
 	Use Case 6&View observations\\\hline
 	Requirement(s)&F6\\\hline
 	Preconditions&User wants to view locally stored observations\\\hline
@@ -122,10 +135,12 @@ In the following use cases, there is only one actor: the generic user
 
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/editobs.png} \\\hline
 	Use Case 7&Edit observations\\\hline
 	Requirement(s)&F7\\\hline
-	Preconditions&User wants to edit a previously created observations\newline 
+	Preconditions&User wants to edit a previously created observations\newline
 	There exists previously made observations\\\hline
 	Flow&1. User taps the 'View observations' button.\newline
 	2. User selects the observation from a list of stored observations\newline
@@ -140,10 +155,12 @@ In the following use cases, there is only one actor: the generic user
 
 \hspace{2em}
 
+
 \begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
+	Image&\includegraphics[width=0.5\textwidth]{reqspec/uc/updatedb.png} \\\hline
 	Use Case 8&Update Database\\\hline
 	Requirement(s)&F8\\\hline
-	Preconditions&User wants to update the database because new species or 
+	Preconditions&User wants to update the database because new species or
 	locations have been added to the website\\\hline
 	Flow&1. User taps options button\newline
 	2. User selects the option to update the database\\\hline

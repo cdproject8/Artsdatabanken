@@ -7,6 +7,7 @@
 	<title>Artsdatabanken</title>
 	
 	<!-- External stylesheets -->
+	<link type="text/css" href="libs/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
 	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.0b2.min.css" />
 	<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile.datebox.css" />
 	<link rel="stylesheet" href="libs/touch.artsdatabanken.no/artsdatabanken.css" type="text/css" media="all" />
@@ -17,9 +18,12 @@
 	<!-- External libraries to be loaded before custom scripting -->
 	<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.0.0.js"></script>
 	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui-1.8.16.custom.min.js"></script>
 	
 	<!-- Application specific scripts -->
+	<script type="text/javascript" charset="utf-8" src="../data/autocomplete/99.jsonp"></script>
 	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+	
 	
 	<!--  External libraries to be loaded after custom scripting -->
 	<script type="text/javascript" charset="utf-8" src="libs/jquerymobile/jquery.mobile-1.0b2.min.js"></script>
@@ -51,6 +55,15 @@
 		<p>
 			<a href="species-export.html" data-role="button">Export Observations</a>
 		</p>
+		<div data-role="collapsible" data-collapsed="true">
+			<h3>Debug</h3>
+			<p>
+				<a href="sandbox/index.html" data-role="button">Sandbox</a>
+			</p>
+			<p>
+				<a href="tests/qunit-mob.html" data-role="button">Qunit</a>
+			</p>
+		</div>
 	</div>
 	<div data-role="footer" data-theme="z">
 		<h4>ADB Alpha 0.2</h4>
