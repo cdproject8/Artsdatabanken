@@ -1,18 +1,18 @@
 \subsection{Summary}
 
 	Sprint 1 saw the beginning of actual development. The customer wanted us to focus on getting file I/O and autocomplete working for the first sprint. This would allow us to get the basic functionality of the app working as soon as possible.
-	TODO: needs more?
+	TODO: 
 
 \subsection{Requirements}
 
 	Relevant requirements for this sprint are F1 (Creating an observation) and F10 (Autocomplete). See section \ref{sec:usecases} for details.
-	TODO: and here?
+	TODO: 
 
 \subsection{Implementation}
 
 	\subsubsection{Autocomplete}
 
-		\paragraph{Introduction}
+		\paragraph{Introduction} \hspace{1mm}\\
 		The customer wanted the application to autocomplete species names as they were typed in. 
 		That means that when someone wants to enter an observation for a species and starts typing in it's name, the application will suggest species based on what the user has typed in so far. 
 		This will help speed up the use of the application and also help with reducing typographical errors (typoes).
@@ -25,7 +25,7 @@
 
 		The API could not be used as is because the application needs to use this feature while offline. Because of this these generated XML files would have to be downloaded for use offline.
 
-		\paragraph{Processing}
+		\paragraph{Processing} \hspace{1mm}\\
 		The files collected from the Artsdatabanken were quite extensive, containing a lot more information than needed, and in their raw form would take up unreasonably large space on the phones memory. 
 		Because of this we had to parse the xml files into other a more usable format, at first we created a new xml file with just the information needed. 
 		This was slightly tweaked by making json files instead.
@@ -39,7 +39,7 @@
 		Because many names are the same in both norwegian bokmål and norwegian nynorsk and for other reasons there were duplicates.
 		The file was sorted, duplicates removed and json code inserted to make it ready for use.
 
-		\paragraph{Processing impact}
+		\paragraph{Processing impact} \hspace{1mm}\\
 		The API used to generate this data seems to be very heavy on the server, only to generate a file of a few megabytes required up to 20 seconds. 
 		And with the largest file passing 40 megabytes and minutes to generate this functionality does not at this point seem like something you want the user to do regularly, or even at all. 
 		For the time being we will include the parsed files with the aplication and update the data by rolling out a new version of the application.
@@ -54,7 +54,7 @@
 			\label{fig:artsdatabanken_api}
 		\end{figure}
 
-		\paragraph{Implementation}
+		\paragraph{Implementation} \hspace{1mm}\\
 			To download, and transform the data into a suitable format we used the
 			following algorithm:
 

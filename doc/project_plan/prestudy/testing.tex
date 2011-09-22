@@ -1,104 +1,51 @@
+% todo remove some of the general stuff
+
 \subsection{Testing}
 
-Software testing is an investigation conducted to provide stakeholders with
-information about the quality of the product or service under
-test.\cite{wiki:software-testing}
+This document will focus on agile development and including test driven
+development (i.e. testing early in the development process).  The scope of
+software testing includes examination of code as well as execution of that code
+in various environments and conditions.
 
-The following is verified during testing:
+The following should be verified during testing: \cite{wiki:software-testing}
 \begin{enumerate}
 	\item Product meets the agreed upon requirements (validation)
 	\item Product Works as expected (verification)
 	\item Product can be implemented with the agreed upon characteristics
 \end{enumerate}
-\subsubsection{Stakeholders}
-In software testing, each stakeholders has its own angle from which one wants to test.\cite{wiki:software-testing2}
 
-\paragraph{Test leader}
-The test leader is the commander of the software testing process, coordinating the resources, defining what is to be tested, allocating test tasks to fellow testers and monitoring whether the system is moving closer to the desired quality level after each test. The test leader defines the tests, documents the test results, analyzes test results, and redefines test strategies as the test progresses.
-
-\paragraph{Developers}
-Developers, including system architects, system designers, programmers, are involved to test the technical aspects of the system. Code inspections and review and a general walk thorough of the algorithms of the code. They also test both the functionality of the system using black box and the internal components of the system using white box, debugging or a combination both methods called in a test type called grey box testing.
-
-\paragraph{Designated Testers}
-Testes can be any individuals who know how to use the final product of the software developments or technical people who are capable of prodding and poking the system in line with the test plan, priority and goals of the actual test being conducted.
-
-\paragraph{End Users}
-End users or often times customers are mainly interested in the system being able to do what they set as a requirement or better. Acceptance testing can also be conducted through end users.
-\subsubsection{Test types}
-Different software development models focus the test effort at different
-points in the development process. This document will focus on agile
-development, including test driven development (i.e. testing early in
-the development process).
-
-A primary purpose of testing is to detect software failures so that
-defects may be discovered and corrected. The scope of software testing
-includes examination of code as well as execution of that code in
-various environments and conditions.
-
-\paragraph{Functional testing} verifies that the software is logically correct,
+Functional testing verifies that the software is logically correct, 
 i.e. it does what it is suppose to do.
 
-\paragraph{Non-functional testing} refers to other aspects of the software that
-may not be related to a specific function or user action, such as
-scalability, performance, security, usability, etc. Performance is important in mobile devices because of restricted amount of
-resources. We aim to develop a product that non-technical users (i.e.  bird
-watchers, etc.) can understand and use, therefore usability is also an
-important feature.
+Non-functional testing refers to other aspects of the software that may not be
+related to a specific function or user action, such as scalability,
+performance, security, usability, etc.  We aim to develop a product that
+non-technical users (i.e.  bird watchers, etc.) can understand and use,
+therefore usability tests need to be prioritized.
 
-\paragraph{Test Driven Testing}The later a defect is detected, the more expensive it is to fix.
-This makes test-driven development the ideal choice (where possible).
+To achieve an acceptable level of device / operating system compatibility we
+plan to test on Android devices of different sizes with different versions of
+the operating system.  Ideally we would test on all supported devices (i.e.
+Android, iOs, windows mobile, ...).
 
-A common cause of software failure is lack of compatibility with other software,
-operation systems, or hardware devices. To achieve an acceptable level of
-compatibility we plan to test on Android devices of different sizes, with
-different versions of the operating system.
+Unit testing refers to tests that verify the functionality of a specific
+section of code, usually at the function level. There exist many frameworks for
+this type of testing, many are a member of the xUnit family, where x is
+replaced by a language specific prefix (jUnit for java, qUnit for jQuery and
+javascript, etc.).  This type of testing is frequently used in test-driven
+development, and is a good way to ensure that each part is working as expected.
+It's important to test edge cases, and with invalid / unexpected parameters.
 
-Ideally we would test on all supported devices (i.e. Android,
-iOs, windows mobile, ...). We only have Android phones and are dependent on the
-customer to provide other devices.
-
-\paragraph{Reviews, walkthroughs, or inspections} are considered static testing, whereas
-actually executing programmed code with a given set of test cases is referred to
-as dynamic testing. Both forms should be used to ensure that all features are
-working as expected.
-\newline
-Software testing methods are traditionally divided into white- and black-box
-testing, based on the point of view that a test engineer takes when designing
-test cases.
-
-\paragraph{White box testing} occurs when the tester has access to the internal data
-structures and algorithms including the code that implements these. Typically
-used in unit testing with mock objects.
-
-\paragraph{Black box testing} is used when the tester has no knowledge of the internals, or
-simply ignore the internals of the system. The purpose is to test the
-abstractions provided (i.e. test a function as a whole with
-pre-defined / -calculated input and output parameters). When the coder has knowledge of the internals, but choose to do the testing from
-a users point of view (black box view), some people call it "Gray box testing".
-By knowing the underlying concepts of how the software works the tester makes
-better-informed testing choices when testing from the outside.
-
-\paragraph{Unit testing} refers to tests that verify the functionality of a specific section
-of code, usually at the function level. There exist many frameworks for this
-type of testing, many are a member of the xUnit family, where x is replaced by a
-language specific prefix (jUnit for java, qUnit for jQuery and javascript, etc.).
-This type of testing is frequently used in test-driven development, and is a
-good way to ensure that each part is working as expected. It's important to test
-edge cases, and with invalid / unexpected parameters.
-
-\paragraph{Integration testing} is software testing that seeks to verify the interfaces
+Integration testing is software testing that seeks to verify the interfaces
 between components against a software design. This is typically conducted after
 the unit tests have passed. Some integration tests can also be included in the
 xUnit family.
 
-\paragraph{System testing} tests a completely integrated system to verify that it meets its
-requirements.
-
-\paragraph{Regression testing} is used to ensure that the code is functional, even after big
-changes. In test-driven development this is easy to achieve using automated
+Regression testing is used to ensure that the code is functional, even after
+big changes. In test-driven development this is easy to achieve using automated
 testing (xUnit).
 
-\paragraph{Acceptance testing} is performed by the customer (often in cooperation with the
+Acceptance testing is performed by the customer (often in cooperation with the
 developer team), to validate that the business requirements are met.
 
 \subsubsection{Testing cycle}
@@ -123,63 +70,9 @@ Test driven development (red-green):
 	\item Regression testing (after changes in code, refactoring, and similar)
 \end{enumerate}
 
-\subsubsection{Test strategy templates}
-\begin{table}[htb]
-	\centering
-    \begin{tabular}{| l | l | l | l | l | l | l |}
-		\hline
-		\textbf{Test category \(\downarrow\) / Date \(\rightarrow\)} & & & & & & \\ \hline
-		\textbf{Basic functionality} & & & & & & \\ \hline
-		\textbf{DB Communication} & & & & & & \\ \hline
-		\textbf{GUI} & & & & & & \\ \hline
-		\textbf{Model / architecture} & & & & & & \\ \hline
-		\textbf{Storage} & & & & & & \\ \hline
-		\textbf{Availability} & & & & & & \\ \hline
-		\textbf{Performance} & & & & & & \\ \hline
-		\textbf{etc.} & & & & & & \\ \hline
-    \end{tabular}
-  \caption{Test schedule}
-\end{table}
+\subsubsection{QUnit}
 
-\begin{table}[htb]
-	\centering
-    \begin{tabular}{| l | l |}
-		\hline
-		\textbf{Test ID} & Test name \\ \hline
-		\textbf{Responsible} & Name \\ \hline
-		\textbf{Objective} &  \\ \hline
-		\textbf{Test category} & Functional, nfr, comm, database con,security \\ \hline
-		\textbf{Set up} & What has to be done before testing \\ \hline
-		\textbf{Test inputs} & Data, step or procedure \\ \hline
-		\textbf{Expected outcome} & \\ \hline
-		\textbf{Pass/fail criteria} & \\ \hline
-		\textbf{Priority} & \\ \hline
-    \end{tabular}
-  \caption{Test case design}
-\end{table}
-
-\begin{table}[htb]
-	\centering
-    \begin{tabular}{| l | l |}
-		\hline
-		\textbf{Test ID} & Test name \\ \hline
-		\textbf{Responsible} & Name \\ \hline
-		\textbf{Date} & \\ \hline
-		\textbf{Test steps} & \\ \hline
-		\textbf{Expected outcome} & \\ \hline
-		\textbf{Outcome} & \\ \hline
-		\textbf{Type of defect} & if failed \\ \hline
-		\textbf{Priority} & \\ \hline
-		\textbf{Objective} &  \\ \hline
-    \end{tabular}
-  \caption{Test execution}
-\end{table}
-
-
-
-\subsubsection{Testing suite and tools}
-
-	\paragraph{Qunit} is a JavaScript test suite. It's used by the jQuery project to test
+	Qunit is a JavaScript test suite. It's used by the jQuery project to test
 	it's code and plugins but is capable of testing any generic JavaScript code
 	(including server-side code). \cite{jquery:qunit}
 
@@ -193,24 +86,24 @@ Test driven development (red-green):
 
 	\textbf{Trivial example}
 
-	\begin{lstlisting}
-		module("bird observator");
-		test("should be able to set bird count", function() {
-			bird.count = 5;
-			equal(bird.count, 5);
-		});
-	\end{lstlisting}
+\begin{lstlisting}
+	module("bird observator");
+	test("should be able to set bird count", function() {
+		bird.count = 5;
+		equal(bird.count, 5);
+	});
+\end{lstlisting}
 
-%\subsubsection{jQuery Mockjax: AJAX request mocking}
-    \paragraph{jQuery Mockjax: AJAX request mocking}
+\subsubsection{jQuery Mockjax: AJAX request mocking}
+
 	The jQuery Mockjax plugin provides an interface for mocking or simulating
 	ajax requests and responses. \cite{github:jquery-mockjax} Can be useful if Artsdatabanken provides us
 	with a specification of their planned API. This will in principle allow us
 	to verify that the application is communicating correctly, even though the
 	API hasn't been published.
 
-%\subsubsection{Selenium}
-    \paragraph{Selenium}
+\subsubsection{Selenium}
+
 	Selenium is a tool for automating browsers. Primarily it is for automating
 	web applications for test purposes \cite{seleniumhq:home}. Selenium 1 relies
 	on using JavaScript in the browser. Following is a subset of the tasks that
@@ -227,8 +120,9 @@ Test driven development (red-green):
 
 	To build test cases Selenium offers three primary methods. Recording, adding
 	verifications and asserts with the context menu, or editing. Selenium has
-	been proven to work with PhoneGap \cite{phonegap:automatic-test-cases}.\newline\newline
+	been proven to work with PhoneGap \cite{phonegap:automatic-test-cases}.
 
+\subsubsection{Conclusion}
 
 	QUnit provides a basic framework for synchronous and asynchronous testing in
 	JavaScript, jquery-mockjax extends QUnit with the capability of mocking ajax

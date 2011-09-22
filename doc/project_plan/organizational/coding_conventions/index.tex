@@ -1,0 +1,69 @@
+\subsection{Code conventions}
+
+\subsubsection{JavaScript}
+
+JavaScript code should never be embedded in HTML files. Script tags should be
+placed as late in the body as possible. \cite{crockford:code}
+
+\paragraph{Line length and indentation}
+
+Use tabs for indentation. 
+
+Lines should not be longer than 80 characters.
+
+\paragraph{Comments and variable names}
+
+Keep comments at a minimum, they are disruptive to the code and
+usually outdated. Write good code instead.
+
+Variables should have descriptive names. If you feel the need to add comments
+it is an indication that you broke the preceding rule.
+
+To indicate that a variable refers to jQuery objects people sometimes prefix it
+with \$, do not use this convention, it makes it hard to spot actual jQuery
+calls.
+
+\paragraph{Declarations}
+
+Variables should always be declared, this will prevent conflicts with globals.
+
+Functions should be decleared as follows:
+
+\begin{lstlisting}
+	function somename(...) {
+		...
+	}
+
+	var somename = function(...) {
+		...
+	}
+\end{lstlisting}
+
+Never place a space between the function name and the first paranthesis.
+
+\paragraph{Statements}
+
+If statements should have the following form (notice that the else statement is
+not on the same line as the closing curly brace):
+
+\begin{lstlisting}
+	if (condition) {
+		statements
+	}
+	else {
+		statements
+	}
+\end{lstlisting}
+
+A switch statement should have the following form:
+
+\begin{lstlisting}
+	switch (expression) {
+		case condition:
+			statements
+			break;
+		... more case ...
+		default:
+			statements
+	}
+\end{lstlisting}

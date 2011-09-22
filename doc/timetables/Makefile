@@ -1,3 +1,4 @@
+WEEKS=38
 timetable:
 	tools/combine.sh "$(WEEKS)" > timetable.csv
 	tools/texify.sh timetable.csv > timetable.tex
