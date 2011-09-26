@@ -2,7 +2,7 @@
 var species_count=1;
 
 // Init jQuery mobile
-$(document).ready(function() {
+
 	$(document).bind("mobileinit", function() {
 		// jQuery mobile configuration
 		$.extend($.mobile, {
@@ -15,24 +15,63 @@ $(document).ready(function() {
 		// place code here..
 		
 		console.log("mobileinit");
-	
-		var data = autocompleteData();
-		$("#species-autocomplete").autocomplete({
-			 source: function(request, response) {
-			        var currentText = $.ui.autocomplete.escapeRegex(request.term);
-			        var matcher = new RegExp( "^" + currentText, "i" );
-			        var count = 0;
-			        var suggestions = $.grep( data, function(item,index){
-			        	if (count > 5) return false;
-			        	var res = matcher.test(item)
-			        	if (res) count++;
-			            return res;
-			        });
-			        response(suggestions);
-			    }
-		});
+//		function search(reqest, response) {
+//			
+//		}
+		
+		$(document).ready(function() {
+			$('#obs_bird').live('pagecreate',function(event){
+				var data = autocompleteData();
+				  $("#spcac-bird1").autocomplete({
+					  source: function(request, response) {
+						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
+						  var matcher = new RegExp( "^" + currentText, "i" );
+						  var count = 0;
+						  var suggestions = $.grep( data, function(item,index){
+							  if (count > 5) return false;
+							  var res = matcher.test(item)
+							  if (res) count++;
+							  return res;
+						  });
+						  response(suggestions);
+					  }
+				  });
+			});
+			$('#ac_test_page').live('pagecreate',function(event){
+				var data = autocompleteData();
+				  $("#spcac-sandbox1").autocomplete({
+					  source: function(request, response) {
+						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
+						  var matcher = new RegExp( "^" + currentText, "i" );
+						  var count = 0;
+						  var suggestions = $.grep( data, function(item,index){
+							  if (count > 5) return false;
+							  var res = matcher.test(item)
+							  if (res) count++;
+							  return res;
+						  });
+						  response(suggestions);
+					  }
+				  });
+				  $("#spcac-sandbox2").autocomplete({
+					  source: function(request, response) {
+						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
+						  var matcher = new RegExp( "^" + currentText, "i" );
+						  var count = 0;
+						  var suggestions = $.grep( data, function(item,index){
+							  if (count > 5) return false;
+							  var res = matcher.test(item)
+							  if (res) count++;
+							  return res;
+						  });
+						  response(suggestions);
+					  }
+				  });
+				});
+				});
+		
 	});
-});
+	
 
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
