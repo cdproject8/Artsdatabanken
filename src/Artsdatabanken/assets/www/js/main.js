@@ -15,62 +15,17 @@ var species_count=1;
 		// place code here..
 		
 		console.log("mobileinit");
-//		function search(reqest, response) {
-//			
-//		}
-		
+
 		$(document).ready(function() {
 			$('#obs_bird').live('pagecreate',function(event){
-				var data = autocompleteData();
-				  $("#spcac-bird1").autocomplete({
-					  source: function(request, response) {
-						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
-						  var matcher = new RegExp( "^" + currentText, "i" );
-						  var count = 0;
-						  var suggestions = $.grep( data, function(item,index){
-							  if (count > 5) return false;
-							  var res = matcher.test(item)
-							  if (res) count++;
-							  return res;
-						  });
-						  response(suggestions);
-					  }
-				  });
+				add_autocomplete("#spcac-bird1")
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
-				var data = autocompleteData();
-				  $("#spcac-sandbox1").autocomplete({
-					  source: function(request, response) {
-						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
-						  var matcher = new RegExp( "^" + currentText, "i" );
-						  var count = 0;
-						  var suggestions = $.grep( data, function(item,index){
-							  if (count > 5) return false;
-							  var res = matcher.test(item)
-							  if (res) count++;
-							  return res;
-						  });
-						  response(suggestions);
-					  }
-				  });
-				  $("#spcac-sandbox2").autocomplete({
-					  source: function(request, response) {
-						  var currentText = $.ui.autocomplete.escapeRegex(request.term);
-						  var matcher = new RegExp( "^" + currentText, "i" );
-						  var count = 0;
-						  var suggestions = $.grep( data, function(item,index){
-							  if (count > 5) return false;
-							  var res = matcher.test(item)
-							  if (res) count++;
-							  return res;
-						  });
-						  response(suggestions);
-					  }
-				  });
-				});
-				});
-		
-	});
+				add_autocomplete("#spcac-sandbox1")
+				add_autocomplete("#spcac-sandbox2")
+			});
+		});		
+});
 	
 
 //phonegap replacement function for $(document).ready
@@ -93,4 +48,22 @@ function add_species(){
 	$('input[id=spc01]', new_spec).attr("id","spc"+zero_pad(species_count,2));
 	
 	new_spec.appendTo('#observation_form');
+}
+
+function add_autocomplete(inputid) {
+	var data = autocompleteData();
+	$(inputid).autocomplete({
+		source: function(request, response) {
+			var currentText = $.ui.autocomplete.escapeRegex(request.term);
+			var matcher = new RegExp( "^" + currentText, "i" );
+			var count = 0;
+			var suggestions = $.grep(data, function(item, index){
+				if (count > 5) return false;
+				var res = matcher.test(item)
+				if (res) count++;
+				return res;
+			});
+			response(suggestions);
+		}
+	});
 }
