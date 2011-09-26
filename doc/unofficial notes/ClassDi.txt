@@ -1,0 +1,6 @@
+we can keep coordinates in location
+we can consider picture as an object
+
+this is somewhat how we are going about it if we were to build the full system
+
+We could put data into it and test it.
