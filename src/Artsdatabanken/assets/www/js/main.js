@@ -20,11 +20,10 @@ var observation;
 			$('#obs_bird').live('pagecreate',function(event){
 			
 				observation = new Observation();
-				initSpec(observation.newSpecies());			
-
+				observation.newSpecies();
 			});
 			$('#extended_inf').live('pagecreate',function(event){
-				//	add_autocomplete("#spe001");
+				add_autocomplete(".name");
 				// make dynamic
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
@@ -38,11 +37,6 @@ var observation;
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-}
-
-function initSpec(species){
-	$('#observation_form').append(species.shortPrint());
-	add_autocomplete("#spe"+species.id);
 }
 
 function zero_pad(number, len) {
@@ -60,7 +54,7 @@ function add_species(){
 		return;
 	}
 	
-	initSpec(observation.newSpecies());	
+	observation.newSpecies();	
 
 /*	var new_spec = $('#species_row').clone()
 	var zeropad = zero_pad(species_count,3);
@@ -72,6 +66,7 @@ function add_species(){
 */
 }
 
+/*
 //from http://blog.imaginea.com/deep-copy-in-javascript/ comments, deep copy code
 function cloneObj(srcInstance)
 {
@@ -82,6 +77,7 @@ function cloneObj(srcInstance)
 		newInstance[i] = clone(srcInstance[i]);
 	return newInstance;
 }
+*/
 
 function add_autocomplete(inputid) {
 	var data = autocompleteData();
