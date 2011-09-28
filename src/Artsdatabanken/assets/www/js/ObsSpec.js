@@ -12,7 +12,7 @@ function ObsSpec(id){
 	this.comment;
 	this.picture;
 
-	this.shortPrint = function(){
+	this.speciesListHtml = function(){
 		return $(	
 		 '<div class="species_row">'
 		+'	<div data-role="fieldcontain" class="ui-grid-a">'
@@ -27,5 +27,8 @@ function ObsSpec(id){
 		+'		class="ui-btn-right add_info" data-icon="arrow-r">Add More Information</a>'
 		+'	<hr />'
 		+'</div>');
+	}
+	
+	this.extended = function() {
 	}
 }

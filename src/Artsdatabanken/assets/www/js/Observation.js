@@ -4,6 +4,8 @@ function Observation(){
 
 	this.gpsloc;
 	this.location;
+	
+	this.activeExtended;
 
 /*
 	this.addSpecies = function(newSpecies) {
@@ -14,7 +16,8 @@ function Observation(){
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.len());
 		this.species.push(newSpec);
-		return newSpec;
+		$('#observation_form').append(newSpec.speciesListHtml().trigger('create'));
+		add_autocomplete("#spe"+newSpec.id);
 	}
 	
 	this.len = function() {
