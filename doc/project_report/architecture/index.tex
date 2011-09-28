@@ -10,14 +10,14 @@ We use a layered architecture, platform-specific issues are avoided using
 PhoneGap as a platform-independent layer above the operating system. Following
 is a detailed description of each layer, starting at the bottom.
 
-\subsection{Layer 0 - Native operating system}
+\subsection{Layer 1 - Native operating system}
 
 This layer represents the native operating system for each device (Android, iOs,
 blackberry, etc.). Services provided by this layer includes data input/output
 operations, geolocation (for some devices), and so on. The operating system is 
 our interface to the hardware.
 
-\subsection{Layer 1 - Cross-platform framework}
+\subsection{Layer 2 - Cross-platform framework}
 
 Layer 1 provides device independent abstractions for file operations, camera
 access, geolocation, etc. The primary purpose of this layer is to allow us to
@@ -25,7 +25,7 @@ make portable code that can be used on Android, iOs, and other operating systems
 with minimal (or no) changes to the code. PhoneGap provides an HTML5,
 JavaScript, and CSS interface for the layer above.
 
-\subsection{Layer 2 - Mobile app}
+\subsection{Layer 3 - Mobile app}
 
 Layer 2 is the actual app, this is where our implementation will be placed.
 This layer is split into an internal structure, we use the MVC pattern combined
