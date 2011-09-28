@@ -1,4 +1,5 @@
-function ObservationDao() {
+function ObservationDao(obsId) {
+	this.obsId = obsId;
 	this.readFile(filename) {
 		var reader = new FileReader();
 		reader.onloadend = function(evt) {
@@ -7,7 +8,10 @@ function ObservationDao() {
 		reader.readAsDataURL(file);
 	}
 
-	this.write(filename, data) {
+	this.createObsFile() {
 		
+	}
+	
+	this.write(){
 	}
 }

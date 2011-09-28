@@ -18,7 +18,7 @@ var species_count=1;
 
 		$(document).ready(function() {
 			$('#obs_bird').live('pagecreate',function(event){
-				add_autocomplete("#spcac-bird1")
+				add_autocomplete("#spe001")
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
 				add_autocomplete("#spcac-sandbox1")
@@ -43,11 +43,18 @@ function zero_pad(number, length) {
 
 function add_species(){
 	species_count++;
+	if (species_count == 999) {
+		alert("You have reached the maximum amount of species for one observation, please create a new observation instead");
+		return;
+	}
 	var new_spec = $('#species_row').clone()
-	$('input[id=spe01]', new_spec).attr("id","spe"+zero_pad(species_count,2));
-	$('input[id=spc01]', new_spec).attr("id","spc"+zero_pad(species_count,2));
+	var zeropad = zero_pad(species_count,3);
+	$('input[id=spe001]', new_spec).attr("id","spe"+zeropad);
+	$('input[id=spc001]', new_spec).attr("id","spc"+zeropad);
 	
 	new_spec.appendTo('#observation_form');
+	
+	add_autocomplete("#spe"+zeropad);
 }
 
 function add_autocomplete(inputid) {
