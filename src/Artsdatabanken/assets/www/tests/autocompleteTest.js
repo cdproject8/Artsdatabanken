@@ -28,11 +28,16 @@ $(document).ready(function(){
 		expectSuggestion("t", data, expected);
 	});
 
-	test("should return 6 ordered suggestions on 6 or more matches", function() {
-		data = [ "taa", "t", "te", "tes", "testing", "trap", "tee" ];
+	test("should return 6 ordered suggestions on exactly 6 matches", function() {
+		data = [ "taa", "t", "te", "tes", "testing", "trap" ];
 		expected = [ "t", "taa", "te", "tee", "tes", "testing" ];
 		expectSuggestion("t", data, expected);
-		data.shift();
+		expectSuggestion("t", data, expected);
+	});
+	
+	test("should return 6 ordered suggestions on more than 6 matches", function() {
+		data = [ "taa", "t", "te", "tes", "testing", "trap", "tee" ];
+		expected = [ "t", "taa", "te", "tee", "tes", "testing" ];
 		expectSuggestion("t", data, expected);
 	});
 });
