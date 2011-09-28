@@ -1,0 +1,77 @@
+Field Study notes for Andreas Berg Skomedal 05/09-2011 - CDProj08
+---------------------------------------------------------------------------------
+
+Group species in several layers;
+	birds vs fish
+		seagull vs crow
+			Herring Gull vs Black Legged Kittiwake
+			
+-Effiency of the application is important, it is to replace writing down into an observation diary and then enter in
+ that information on the computer back home.
+ 
+Information Section:
+---------------------------
+
+Emphasis on pictureinformation, tricky in an offline setting. (the bumblebee example in addition)
+
+Report Section:
+---------------------------
+Fairly certain:
+--
+Location: GPS, note location of the observed species and not your own location if it differs notably
+	Each person has predefined locations which some are linked in a hierarchy. This might not be needed on the app
+Species:
+	One observation is limited by [location, specie, time, age, sex]
+	number: how many of the said species, estimate if not sure. 
+		(method start with total number of individuals, start counting the species
+		with fewest individuals and continously subtract from total)
+	activity: resting/seeking food/flying/swimming etc (predefined on web)
+	sex
+	age
+	date
+	time
+	(end date/time)
+	comment
+
+Less certain
+--
+Picture within the native application
+	-originally not important, can be added online after. But the actual project
+	customer really wanted this.
+	-geotag/gps in metatag?
+	-timetags
+	-option to give a name to the image right away.
+	
+
+coobserver (max 8) (possibly just add this online)
+project (possibly just add this online)
+
+
+
+Quicknote Layout as in the diary:
+---------------------------
+> location <
+date and time
+name1 number
+name2 number
+name3 number
+name4 number
+
+activity, comment, etc... as specified in previous section
+	perhaps as a secondary screen (or small "popup", think image in gallery) when clicking a species?
+
+
+
+
+Own thoughts: (Some of which were brought up in the meeting by others as well)
+---------------------------
+suggest species based on selected location and/or the species allready selected.
+autocomplete names
+
+sync:
+-used locations (in the past or "synced")?
+-species
+	-all names
+	-more info on a select few or group of species?
+-coobservers?
+-projects?
