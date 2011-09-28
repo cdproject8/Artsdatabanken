@@ -14,6 +14,10 @@ function ObsSpec(id){
 
 	this.speciesListHtml = function(){
 		return $(	
+			// TODO Could we use ..class="species_row" id="species_row+this.id".. instead of 
+			// specifying the IDs in multiple input elements? Using this method we can access
+			// input elements like this: $('.species', '#species_row34'), assuming
+			// id=..spe+this.id.. is replaced by class="species".
 		 '<div class="species_row">'
 		+'	<div data-role="fieldcontain" class="ui-grid-a">'
 		+'		<div class="ui-block-a">'

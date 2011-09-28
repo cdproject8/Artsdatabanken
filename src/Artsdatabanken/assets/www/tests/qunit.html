@@ -5,15 +5,22 @@
 	<script src="../libs/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="libs/qunit/qunit.js"></script>
 	<script type="text/javascript" src="libs/jquery.mockjax.js"></script>
+	
+	<!-- Bootstrap (files that should be included in all tests) -->
+	
 	<script type="text/javascript" src="../js/main.js"></script>
 
-	<!-- Add test suites here -->
+	<!-- Add test suites here prefixed by "Test: Name of suite" (including dependencies) -->
 
-	<script type="text/javascript" src="autocompleteTest.js"></script>
+	<!-- Test: Auto-complete -->
+	<script type="text/javascript" src="../libs/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="../js/Autocomplete.js"></script>
+	<script type="text/javascript" src="AutocompleteTest.js"></script>
+
+	<!-- Test: Observations -->		
 	<script type="text/javascript" src="observationsTest.js"></script>
 
 	<!-- end of test suites -->
-
 </head>
 
 <body>
