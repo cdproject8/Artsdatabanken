@@ -28,4 +28,7 @@ function ObsSpec(id){
 		+'	<hr />'
 		+'</div>');
 	}
+	
+	this.extended = function() {
+	}
 }

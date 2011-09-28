@@ -4,6 +4,8 @@ function Observation(){
 
 	this.gpsloc;
 	this.location;
+	
+	this.activeExtended;
 
 /*
 	this.addSpecies = function(newSpecies) {
