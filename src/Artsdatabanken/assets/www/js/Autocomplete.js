@@ -5,6 +5,8 @@
  */
 function Autocomplete(data, callback, errorCallback) {
 	var me = this;
+	this.prefixFiles = [];
+	this.data = [];
 	
 	this.callback = function(request, response) {
 		var currentText = $.ui.autocomplete.escapeRegex(request.term);
@@ -26,9 +28,13 @@ function Autocomplete(data, callback, errorCallback) {
 	};
 	
 	this.prefixFile = function(term) {
+		// TODO Change this to use regex..
 		for (var i = 0; i < me.prefixFiles.length; i++) {
-			if (me.prefixFiles[i][0] == term.charAt(0)) {
-				return me.prefixFiles[i][1];
+			var prefixes = me.prefixFiles[i][0].split("|");
+			for (var j = 0; j < prefixes.length; j++) {
+				if (prefixes[j] == term.charAt(0)) {
+					return me.prefixFiles[i][1];
+				}
 			}
 		}
 	};

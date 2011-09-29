@@ -124,11 +124,32 @@ $(document).ready(function(){
 		var ac = new Autocomplete("resources/autocomplete/32/index.js", function(textStatus) {
 			equals(textStatus, "success");
 			equals(ac.prefixFile("a"), "a.json");
-			equals(ac.prefixFile("b"), "b.json");
+			equals(ac.prefixFile("bee"), "b.json");
 			start();
 		}, function(a,b,c) {
 			console.log(c);
 			start();
 		});
+	});
+	
+	test("should consider prefix specifications like d|e|f as d or e or f", function() {
+		var ac = new Autocomplete();
+		ac.prefixFiles =  [
+    		[ "d|e|f", "d_e_f.json"]
+    	];
+		equals(ac.prefixFile("det"), "d_e_f.json");
+		equals(ac.prefixFile("ee"), "d_e_f.json");
+		equals(ac.prefixFile("f"), "d_e_f.json");
+		ok(ac.prefixFile("r") == undefined);
+	});
+	
+	test("should consider prefix specifications like a-c as a or b or c", function() {
+		var ac = new Autocomplete();
+		ac.prefixFiles =  [
+    		[ "a-c", "a-c.json"]
+    	];
+		equals(ac.prefixFile("archie"), "a-c.json");
+		equals(ac.prefixFile("blarg"), "a-c.json");
+		equals(ac.prefixFile("car"), "a-c.json");
 	});
 });
