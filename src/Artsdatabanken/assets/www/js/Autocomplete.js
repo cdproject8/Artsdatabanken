@@ -21,12 +21,20 @@ function Autocomplete(data, callback, errorCallback) {
 		response(suggestions);
 	};
 	
-	this.activate = function(inputElement) {
-		$(inputElement).autocomplete({
+	
+	/**
+	 * @param selector jQuery selector for input element to be auto-completed
+	 */
+	this.activate = function(selector) {
+		$(selector).autocomplete({
 			source: this.callback
 		});
 	};
 	
+	/**
+	 * @param term Search term
+	 * @return Name of file that contains suggestions for term
+	 */
 	this.prefixFile = function(term) {
 		for (var i = 0; i < me.prefixFiles.length; i++) {
 			var pattern = new RegExp("^" + me.prefixFiles[i][0], "i");
