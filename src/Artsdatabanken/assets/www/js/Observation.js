@@ -8,7 +8,7 @@ function Observation(){
 	this.activeExtended;
 	
  	$('#observation_form').click(function(e) {
-  		var tar = $(e.target;
+  		var tar = $(e.target);
   		if (tar.is('a, .add_info')) {
 			this.activeExtended = tar.parent().attr("id").substr(11);
 			alert(this.activeExtended)
