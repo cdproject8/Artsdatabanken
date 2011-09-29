@@ -23,12 +23,12 @@ var observation;
 				observation.newSpecies();
 			});
 			$('#extended_inf').live('pagecreate',function(event){
-				add_autocomplete(".name");
+				//add_autocomplete(".name");
 				// make dynamic
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
-				add_autocomplete("#spcac-sandbox1");
-				add_autocomplete("#spcac-sandbox2");
+				//add_autocomplete("#spcac-sandbox1");
+				//add_autocomplete("#spcac-sandbox2");
 			});
 		});
 });
