@@ -7,17 +7,15 @@ function Observation(){
 	
 	this.activeExtended;
 	
+	
+	// Set activeExtended to the species_row selected to fill in correct values in the
+	// extended information window
  	$('#observation_form').click(function(e) {
- 		console.log("clicked inside form");
   		var tar = $(e.target);
- 		
   		if (tar.is('.ui-btn-text')) {
-  			console.log("clicked button");
-  			console.log(tar);
-  			if (tar.is(".add_info")) {
-  				console.log("correct link");
-				this.activeExtended = tar.parent().attr("id").substr(11);
-				console.log(this.activeExtended);
+  			var anchor = tar.parent().parent();
+  			if (anchor.is(".add_info")) {
+				this.activeExtended = anchor.parent().attr("id").substr(11);
 				}
 		}
    	});
