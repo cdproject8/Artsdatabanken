@@ -8,15 +8,22 @@ function Observation(){
 	this.activeExtended;
 	
  	$('#observation_form').click(function(e) {
+ 		console.log("clicked inside form");
   		var tar = $(e.target);
-  		if (tar.is('a, .add_info')) {
-			this.activeExtended = tar.parent().attr("id").substr(11);
-			console.log(this.activeExtended);
+ 		
+  		if (tar.is('.ui-btn-text')) {
+  			console.log("clicked button");
+  			console.log(tar);
+  			if (tar.is(".add_info")) {
+  				console.log("correct link");
+				this.activeExtended = tar.parent().attr("id").substr(11);
+				console.log(this.activeExtended);
+				}
 		}
    	});
 	
 	// TODO make dynamic for each
-	var ac = new Autocomplete("data/autocomplete/89.jsonp");
+	var ac = new Autocomplete("data/autocomplete/91.jsonp");
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.len());
 		this.species.push(newSpec);
