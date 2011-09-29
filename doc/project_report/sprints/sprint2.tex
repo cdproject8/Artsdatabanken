@@ -1,0 +1,42 @@
+\section{Sprint 2}
+
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item Auto-complete should be able to load data based on species category
+\end{enumerate}
+
+\subsection{Implementation}
+
+
+	\subsubsection{Auto-complete}
+
+	Auto-complete has been extended to read files based on species category.
+	Initially each category was included in a separate file, this caused some
+	performance issues due to the large amount of data (browser freeze while reading
+	files). To circumvent this issue, we decided to split the categories into
+	multiple files, keeping one folder per category and one file per prefix see.
+
+	To achieve this, we will use the following conventions / specifications:
+
+	\begin{itemize}
+		\item Auto-Complete data is rooted in the directory WEBROOT/data/autocomplete
+		\item Each species category get a sub-folder in under the auto-complete
+		root, this will be named after the category id (an integer)., this will
+		be named after the category id (an integer).
+		\item Each category directory should contain one index.js file that
+		keeps an overview of all the prefix-files for the category.
+		\item Files in the category directory are named by the following rules:
+			\begin{itemize}
+				\item a.json contains only entries prefixed by a
+				\item a\_b.json contains entries prefixed by a or b (can be
+				extended with more entries)
+				\item a-z.json contains entries prefixed by a, b, c, ..., or z
+				\item a\_c-e\_q\_t contains entries prefixed by a, c, d, e, q, or t
+			\end{itemize}
+	\end{itemize}
+
+\subsection{Testing}
+
+Auto-complete functionality was extended using test driven development, unit
+tests were written before functionality was implemented (red-green).
