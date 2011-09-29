@@ -28,13 +28,10 @@ function Autocomplete(data, callback, errorCallback) {
 	};
 	
 	this.prefixFile = function(term) {
-		// TODO Change this to use regex..
 		for (var i = 0; i < me.prefixFiles.length; i++) {
-			var prefixes = me.prefixFiles[i][0].split("|");
-			for (var j = 0; j < prefixes.length; j++) {
-				if (prefixes[j] == term.charAt(0)) {
-					return me.prefixFiles[i][1];
-				}
+			var pattern = new RegExp("^" + me.prefixFiles[i][0], "i");
+			if (pattern.test(term)) {
+				return me.prefixFiles[i][1];
 			}
 		}
 	};

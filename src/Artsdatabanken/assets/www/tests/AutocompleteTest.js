@@ -143,10 +143,10 @@ $(document).ready(function(){
 		ok(ac.prefixFile("r") == undefined);
 	});
 	
-	test("should consider prefix specifications like a-c as a or b or c", function() {
+	test("should consider prefix specifications like [a-c] as a or b or c", function() {
 		var ac = new Autocomplete();
 		ac.prefixFiles =  [
-    		[ "a-c", "a-c.json"]
+    		[ "[a-c]", "a-c.json"]
     	];
 		equals(ac.prefixFile("archie"), "a-c.json");
 		equals(ac.prefixFile("blarg"), "a-c.json");
