@@ -140,16 +140,17 @@ $(document).ready(function(){
 		equals(ac.prefixFile("det"), "d_e_f.json");
 		equals(ac.prefixFile("ee"), "d_e_f.json");
 		equals(ac.prefixFile("f"), "d_e_f.json");
-		ok(ac.prefixFile("r") == undefined);
+		equals(ac.prefixFile("r"), undefined);
 	});
 	
-	test("should consider prefix specifications like a-c as a or b or c", function() {
+	test("should consider prefix specifications like [a-c] as a or b or c", function() {
 		var ac = new Autocomplete();
 		ac.prefixFiles =  [
-    		[ "a-c", "a-c.json"]
+    		[ "[a-c]", "a-c.json"]
     	];
 		equals(ac.prefixFile("archie"), "a-c.json");
 		equals(ac.prefixFile("blarg"), "a-c.json");
 		equals(ac.prefixFile("car"), "a-c.json");
+		equals(ac.prefixFile("dar"), undefined);
 	});
 });
