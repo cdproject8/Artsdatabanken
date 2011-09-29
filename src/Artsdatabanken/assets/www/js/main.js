@@ -54,34 +54,5 @@ function add_species(){
 		return;
 	}
 	
-	observation.newSpecies();	
-
-/*	var new_spec = $('#species_row').clone()
-	var zeropad = zero_pad(species_count,3);
-	$('input[id=spe001]', new_spec).attr("id","spe"+zeropad);
-	$('input[id=spc001]', new_spec).attr("id","spc"+zeropad);
-	
-	new_spec.appendTo('#observation_form');
-	add_autocomplete("#spe"+zeropad);
-*/
-}
-
-/*
-//from http://blog.imaginea.com/deep-copy-in-javascript/ comments, deep copy code
-function cloneObj(srcInstance)
-{
-	if(typeof(srcInstance) != 'object' || srcInstance == null)
-		return srcInstance;
-	var newInstance = srcInstance.constructor();
-	for(var i in srcInstance)
-		newInstance[i] = clone(srcInstance[i]);
-	return newInstance;
-}
-*/
-
-function add_autocomplete(inputid) {
-	var callback = new Autocomplete(autocompleteData());
-	$(inputid).autocomplete({
-		source: callback
-	});
+	observation.newSpecies();
 }
