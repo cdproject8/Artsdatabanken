@@ -7,14 +7,14 @@ var glSuccess = function(position) {
 	document.getElementById("alt").value = position.coords.altitude;
 	document.getElementById("acc").value = position.coords.altitudeAccuracy;
 	document.getElementById("time").value = new Date(position.timestamp);
-}
+};
 
 var glError = function(error) {
 	alert(error.message);
-}
+};
 
 function getPosition() {
-	navigator.geolocation.getCurrentPosition(glSuccess, glError, {enableHighAccuracy: true});
+	navigator.geolocation.getCurrentPosition(glSuccess, glError, {maximumAge: 2000, enableHighAccuracy: true});
 }
 
 function watchPosition() {
