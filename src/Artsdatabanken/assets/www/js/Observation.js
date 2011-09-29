@@ -26,8 +26,8 @@ function Observation(){
 				
 				// Saving values for the row in the objects.
 				// .change() event did not always trigger for autocomplete etc.
-				var nameInput = $("input[id=specname]", speciesRow);
-				var numInput = $("input[id=specnum]", speciesRow);
+				var nameInput = $("input[id=spec-name]", speciesRow);
+				var numInput = $("input[id=spec-number]", speciesRow);
 				// console.log(nameInput.val() + numInput.val());
 				obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
 				obs.getSpecies(idOfSpeciesRow).number = numInput.val();
@@ -62,8 +62,8 @@ function Observation(){
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtendedValues = function() {
 		var currentSpecies = this.getSpecies(this.activeExtended);
-		$("input[id=spec-name]").val(currentSpecies.sname);
-		$("input[id=spec-number]").val(currentSpecies.num);
+		$("#extended_inf input[id=spec-name]").val(currentSpecies.sname);
+		$("#extended_inf input[id=spec-number]").val(currentSpecies.number);
 		for (i in currentSpecies) {
 			//console.log(i);
 			

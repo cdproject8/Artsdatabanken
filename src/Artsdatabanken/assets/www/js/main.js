@@ -27,6 +27,10 @@ $(document).bind("mobileinit", function() {
 			observation.fillExtendedValues();
 			//console.log(observation.activeExtended);
 		});
+		$('#extended_inf').live('pagehide',function(event){
+			console.log("left Extended Info");
+			// TODO add code to save info entered on this page
+		});
 		$('#ac_test_page').live('pagecreate',function(event){
 			//add_autocomplete("#spcac-sandbox1");
 			//add_autocomplete("#spcac-sandbox2");
