@@ -23,14 +23,19 @@ var observation;
 				observation.newSpecies();
 			});
 			$('#extended_inf').live('pagecreate',function(event){
-				//add_autocomplete(".name");
-				// make dynamic
+				observation.ac.activate(".name");
+				//observation.fillExtendedValues();
+				
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
 				//add_autocomplete("#spcac-sandbox1");
 				//add_autocomplete("#spcac-sandbox2");
 			});
 		});
+		/*$(document).live('pagebeforechange', function(e,data) {
+			console.log(e);
+			console.log(data);
+		});*/
 });
 	
 
