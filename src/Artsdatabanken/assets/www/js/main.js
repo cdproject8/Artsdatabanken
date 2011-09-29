@@ -56,8 +56,3 @@ function add_species(){
 	
 	observation.newSpecies();
 }
-
-function add_autocomplete(inputid) {
-	var ac = new Autocomplete(autocompleteData());
-	ac.activate(inputid);
-}

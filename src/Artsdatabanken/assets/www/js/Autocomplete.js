@@ -1,3 +1,8 @@
+/**
+ * Autocomplete.load(data, callback) is run during initialization.
+ * 
+ * @returns {Autocomplete}
+ */
 function Autocomplete(data, callback) {
 	var me = this;
 	
@@ -20,6 +25,10 @@ function Autocomplete(data, callback) {
 		});
 	};
 	
+	/**
+	 * @param data Filename or array of autocompletion values
+	 * @param callback Called when file has been loaded, argument with "success" if all is OK
+	 */
 	this.load = function(data, callback) {
 		if (data instanceof Array) {
 			me.data = data;
