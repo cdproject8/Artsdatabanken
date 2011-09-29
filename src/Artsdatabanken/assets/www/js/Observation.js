@@ -11,12 +11,15 @@ function Observation(){
   		var tar = $(e.target);
   		if (tar.is('a, .add_info')) {
 			this.activeExtended = tar.parent().attr("id").substr(11);
-			alert(this.activeExtended)
+			console.log(this.activeExtended);
 		}
    	});
 	
 	// TODO make dynamic for each
-	var ac = new Autocomplete("../data/autocomplete/89.json");
+			//console.log("../data/autocomplete/89.json" instanceof Array);
+	var ac = new Autocomplete("../../data/autocomplete/89.json", function(f) {
+	console.log( f)
+	});
 	
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.len());

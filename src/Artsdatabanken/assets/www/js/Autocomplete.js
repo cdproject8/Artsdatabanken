@@ -21,14 +21,19 @@ function Autocomplete(data, callback) {
 	};
 	
 	this.load = function(data, callback) {
+		console.log(data);
+		console.log(data instanceof Array);
 		if (data instanceof Array) {
+			console.log("isarray");
 			me.data = data;
 			if (callback instanceof Function) {
 				callback("success");
 			}
 		}
 		else {
+			console.log("notarray");
 			$.getScript(data, function(data, textStatus) {
+
 				eval(data);
 				me.data = autocompleteData();
 				if (textStatus == "success") {
