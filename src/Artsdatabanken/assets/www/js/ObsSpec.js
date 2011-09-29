@@ -5,10 +5,10 @@ function ObsSpec(id){
 	this.sex;
 	this.age;
 	this.action;
-	this.time-start
-	this.date-start;
-	this.time-end;
-	this.date-end;
+	this.time_start;
+	this.date_start;
+	this.time_end;
+	this.date_end;
 	this.comment;
 	this.picture;
 
