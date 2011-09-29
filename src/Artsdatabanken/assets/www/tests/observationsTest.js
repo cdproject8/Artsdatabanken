@@ -13,6 +13,16 @@ $(document).ready(function(){
 	test("pad 1,3 to 001", function() {
 		equal("001", zero_pad(1,3));
 	});
+	
+	module("species observation");
+	
+	test("new species", function() {
+		var id = 4;
+		var spec = new ObsSpec(id);
+		equal("004", spec.id);
+	});
+	
+	module("observation");
 
 
 });

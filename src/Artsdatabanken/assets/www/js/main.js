@@ -23,12 +23,12 @@ var observation;
 				observation.newSpecies();
 			});
 			$('#extended_inf').live('pagecreate',function(event){
-				add_autocomplete(".name");
+				//add_autocomplete(".name");
 				// make dynamic
 			});
 			$('#ac_test_page').live('pagecreate',function(event){
-				add_autocomplete("#spcac-sandbox1");
-				add_autocomplete("#spcac-sandbox2");
+				//add_autocomplete("#spcac-sandbox1");
+				//add_autocomplete("#spcac-sandbox2");
 			});
 		});
 });
@@ -54,34 +54,5 @@ function add_species(){
 		return;
 	}
 	
-	observation.newSpecies();	
-
-/*	var new_spec = $('#species_row').clone()
-	var zeropad = zero_pad(species_count,3);
-	$('input[id=spe001]', new_spec).attr("id","spe"+zeropad);
-	$('input[id=spc001]', new_spec).attr("id","spc"+zeropad);
-	
-	new_spec.appendTo('#observation_form');
-	add_autocomplete("#spe"+zeropad);
-*/
-}
-
-/*
-//from http://blog.imaginea.com/deep-copy-in-javascript/ comments, deep copy code
-function cloneObj(srcInstance)
-{
-	if(typeof(srcInstance) != 'object' || srcInstance == null)
-		return srcInstance;
-	var newInstance = srcInstance.constructor();
-	for(var i in srcInstance)
-		newInstance[i] = clone(srcInstance[i]);
-	return newInstance;
-}
-*/
-
-function add_autocomplete(inputid) {
-	var callback = new Autocomplete(autocompleteData());
-	$(inputid).autocomplete({
-		source: callback
-	});
+	observation.newSpecies();
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	
+	<body>	
+		<div data-role="page" id="geoloc_test_page" data-theme="z" data-dom-cache="true">
+			<div data-role="header" data-theme="z">
+				<h1>Geolocation Test</h1>
+			</div>
+			<p>
+			<a href="javascript: getPosition();" data-role="button">Get position</a>
+		</p>
+				<div data-role="fieldcontain">
+					<label for="time">Timestamp</label> <input type="text" name="time" value="" id="time"/>
+					<label for="lat">Latitude</label> <input type="text" name="lat" value="" id="lat"/>
+					<label for="long">Longitude</label> <input type="text" name="long" value="" id="long"/>
+					<label for="alt">Altitude</label> <input type="text" name="alt" value="" id="alt"/>
+					<label for="acc">AltAccuracy</label> <input type="text" name="acc" value="" id="acc"/>
+				</div>
+	
+			<div data-role="footer" data-theme="z">
+				<h1> End</h1>
+			</div>
+		</div>
+		<div class="ui-widget">
+			<label for="species-autocomplete">Species: </label>
+			<input id="species-autocomplete">
+			
+		</div>
+
+	</body>
+	</html>
