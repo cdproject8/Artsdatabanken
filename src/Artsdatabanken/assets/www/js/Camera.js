@@ -1,9 +1,8 @@
 
 var camSuccess = function(uri) {
 	//do something real here, for now just replaces the image on the page
-	img = document.getElementById('testimg');
-//	img.src = "data:image/jpeg;base64," + image;
-	img.src = uri;
+//	$("#testimg").attr("src", "data:image/jpeg;base64," + image);
+	$("#testimg").attr("src", uri);
 };
 
 var camError = function(error) {
