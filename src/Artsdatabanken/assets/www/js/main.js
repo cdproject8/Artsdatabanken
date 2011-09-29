@@ -80,8 +80,6 @@ function cloneObj(srcInstance)
 */
 
 function add_autocomplete(inputid) {
-	var callback = new Autocomplete(autocompleteData());
-	$(inputid).autocomplete({
-		source: callback
-	});
+	var ac = new Autocomplete(autocompleteData());
+	ac.activate(inputid);
 }
