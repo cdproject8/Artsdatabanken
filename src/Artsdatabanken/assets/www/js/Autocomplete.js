@@ -21,20 +21,25 @@ function Autocomplete(data, callback, errorCallback) {
 		response(suggestions);
 	};
 	
-	this.activate = function(inputElement) {
-		$(inputElement).autocomplete({
+	
+	/**
+	 * @param selector jQuery selector for input element to be auto-completed
+	 */
+	this.activate = function(selector) {
+		$(selector).autocomplete({
 			source: this.callback
 		});
 	};
 	
+	/**
+	 * @param term Search term
+	 * @return Name of file that contains suggestions for term
+	 */
 	this.prefixFile = function(term) {
-		// TODO Change this to use regex..
 		for (var i = 0; i < me.prefixFiles.length; i++) {
-			var prefixes = me.prefixFiles[i][0].split("|");
-			for (var j = 0; j < prefixes.length; j++) {
-				if (prefixes[j] == term.charAt(0)) {
-					return me.prefixFiles[i][1];
-				}
+			var pattern = new RegExp("^" + me.prefixFiles[i][0], "i");
+			if (pattern.test(term)) {
+				return me.prefixFiles[i][1];
 			}
 		}
 	};

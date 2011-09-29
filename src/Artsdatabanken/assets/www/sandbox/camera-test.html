@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	
+	<body>	
+		<div data-role="page" id="camera_test_page" data-theme="z" data-dom-cache="true">
+			<div data-role="header" data-theme="z">
+				<h1>Camera Test</h1>
+			</div>
+			<p>
+			<a href="javascript: takePictureAsURI();" data-role="button">Take picture</a>
+		</p>
+			<p>
+			<a href="javascript: retrievePicture();" data-role="button">Fetch picture</a>
+		</p>
+				<p>
+					Picture will hopefully show up below afterwards:</br>
+					<img id="testimg" width="100%"/>
+				</p>
+	
+			<div data-role="footer" data-theme="z">
+				<h1> End</h1>
+			</div>
+		</div>
+		<div class="ui-widget">
+			<label for="species-autocomplete">Species: </label>
+			<input id="species-autocomplete">
+			
+		</div>
+
+	</body>
+	</html>
