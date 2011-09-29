@@ -11,13 +11,12 @@ function Observation(){
   		var tar = $(e.target);
   		if (tar.is('a, .add_info')) {
 			this.activeExtended = tar.parent().attr("id").substr(11);
-			alert(this.activeExtended)
+			console.log(this.activeExtended);
 		}
    	});
 	
 	// TODO make dynamic for each
 	var ac = new Autocomplete("data/autocomplete/89.jsonp");
-	
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.len());
 		this.species.push(newSpec);

@@ -31,6 +31,7 @@ function Autocomplete(data, callback, errorCallback) {
 	 */
 	this.load = function(data, callback, errorCallback) {
 		if (data instanceof Array) {
+			console.log("isarray");
 			me.data = data;
 			if (callback instanceof Function) {
 				callback("success");
