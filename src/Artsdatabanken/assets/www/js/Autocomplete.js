@@ -25,13 +25,26 @@ function Autocomplete(data, callback, errorCallback) {
 		});
 	};
 	
+	this.prefixFile = function(term) {
+		for (var i = 0; i < me.prefixFiles.length; i++) {
+			if (me.prefixFiles[i][0] == term.charAt(0)) {
+				return me.prefixFiles[i][1];
+			}
+		}
+	};
+	
+	this.isMetafile = function(filename) {
+		var pattern = /index\.js$/i;
+		return pattern.test(filename);
+	}
+	
 	/**
 	 * @param data Filename or array of autocompletion values
 	 * @param callback Called when file has been loaded, argument with "success" if all is OK
+	 * @param callback Called if file can't be loaded (see jQuery.ajax())
 	 */
 	this.load = function(data, callback, errorCallback) {
 		if (data instanceof Array) {
-			console.log("isarray");
 			me.data = data;
 			if (callback instanceof Function) {
 				callback("success");
@@ -41,9 +54,14 @@ function Autocomplete(data, callback, errorCallback) {
 			$.ajax({
 				url: data, 
 				dataType: "script",
-				success: function(data, textStatus) {
-					eval(data);
-					me.data = autocompleteData();
+				success: function(fileData, textStatus) {
+					eval(fileData);
+					if (me.isMetafile(data)) {
+						me.prefixFiles = autocompleteData();
+					}
+					else {
+						me.data = autocompleteData();
+					}
 					if (textStatus == "success") {
 						me.data = autocompleteData();
 					}
@@ -58,5 +76,5 @@ function Autocomplete(data, callback, errorCallback) {
 	
 	// Construct
 	
-	this.load(data, callback);
+	this.load(data, callback, errorCallback);
 };

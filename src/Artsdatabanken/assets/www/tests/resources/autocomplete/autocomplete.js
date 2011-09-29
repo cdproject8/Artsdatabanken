@@ -1,3 +1,3 @@
 var autocompleteData = function() {
-	return [ "test", "testie" ];
-}
+	return [ "a", "b", "c" ];
+};

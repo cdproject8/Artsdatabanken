@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	module("Autocomplete");
 	
 	var expectSuggestion = function (term, data, expected) {
@@ -59,14 +60,21 @@ $(document).ready(function(){
 		equals(ac.data, data);
 	});
 	
+	/*
+	 * File access
+	 */
+	
 	asyncTest("should be able to load data from file", function() {
 		expect(4);
 		var ac = new Autocomplete([]);
-		ac.load("resources/autocomplete.js", function(textStatus) {
+		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
 			equals(ac.data[0], "a");
 			equals(ac.data[1], "b");
 			equals(ac.data[2], "c");
+			start();
+		}, function(a,b,c) {
+			console.log(c);
 			start();
 		});
 	});
@@ -74,13 +82,13 @@ $(document).ready(function(){
 	asyncTest("should be able to load data from file multiple times", function() {
 		expect(7);
 		var ac = new Autocomplete([]);
-		ac.load("resources/autocomplete.js", function(textStatus) {
+		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
 			equals(ac.data[0], "a");
 			equals(ac.data[1], "b");
 			equals(ac.data[2], "c");
 			
-			ac.load("resources/autocomplete2.js", function(textStatus) {
+			ac.load("resources/autocomplete/autocomplete2.js", function(textStatus) {
 				equals(textStatus, "success");
 				equals(ac.data[0], "test");
 				equals(ac.data[1], "testie");
@@ -91,11 +99,35 @@ $(document).ready(function(){
 	
 	asyncTest("should load data from file if constructed with string", function() {
 		expect(4);
-		var ac = new Autocomplete("resources/autocomplete.js", function(textStatus) {
+		var ac = new Autocomplete("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
 			equals(ac.data[0], "a");
 			equals(ac.data[1], "b");
 			equals(ac.data[2], "c");
+			start();
+		});
+	});
+	
+	test("should regard files not ending with index.js as regular data", function() {
+		var ac = new Autocomplete();
+		ok(ac.isMetafile("test") == false);
+	});
+	
+	test("should regard files ending with index.js as meta data", function() {
+		ok(new Autocomplete().isMetafile("index.js"));
+		ok(new Autocomplete().isMetafile("22/index.js"));
+		ok(new Autocomplete().isMetafile("data/22/index.js"));
+	});
+	
+	asyncTest("should load metadata if filename ends with index.js", function() {
+		expect(3);
+		var ac = new Autocomplete("resources/autocomplete/32/index.js", function(textStatus) {
+			equals(textStatus, "success");
+			equals(ac.prefixFile("a"), "a.json");
+			equals(ac.prefixFile("b"), "b.json");
+			start();
+		}, function(a,b,c) {
+			console.log(c);
 			start();
 		});
 	});
