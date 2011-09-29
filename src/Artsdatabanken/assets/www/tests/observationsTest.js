@@ -13,6 +13,10 @@ $(document).ready(function(){
 	test("pad 1,3 to 001", function() {
 		equal("001", zero_pad(1,3));
 	});
+	
+	module("species observation");
+	
+	module("observation");
 
 
 });
