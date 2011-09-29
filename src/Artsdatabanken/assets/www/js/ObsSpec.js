@@ -5,10 +5,10 @@ function ObsSpec(id){
 	this.sex;
 	this.age;
 	this.action;
-	this.timeStart
-	this.dateStart;
-	this.timeEnd;
-	this.dateEnd;
+	this.time-start
+	this.date-start;
+	this.time-end;
+	this.date-end;
 	this.comment;
 	this.picture;
 
@@ -20,7 +20,7 @@ function ObsSpec(id){
 		+'			<input type="text" name="name" id="specname" class="ui-input-name-spec fill" value="" />'
 		+'		</div>'
 		+'		<div class="ui-block-b">'
-		+'			<input type="number" name="number" id="specid" class="ui-input-numb-spec fill" />'
+		+'			<input type="number" name="number" id="specnum" class="ui-input-numb-spec fill" />'
 		+'		</div>'
 		+'	</div>'
 		+'	<a href="extended-inf.html" data-role="button" data-inline="true"'
