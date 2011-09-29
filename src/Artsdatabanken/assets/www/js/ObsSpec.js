@@ -1,7 +1,7 @@
 function ObsSpec(id){
 	this.id = zero_pad(id,3);
-	this.sname;
-	this.num;
+	this.sname = "";
+	this.number = 1;
 	this.sex;
 	this.age;
 	this.action;
