@@ -1,9 +1,9 @@
 /**
- * Autocomplete.load(data, callback) is run during initialization.
+ * Autocomplete.load(data, callback, errorCallback) is run during initialization.
  * 
  * @returns {Autocomplete}
  */
-function Autocomplete(data, callback) {
+function Autocomplete(data, callback, errorCallback) {
 	var me = this;
 	
 	this.callback = function(request, response) {
@@ -29,7 +29,7 @@ function Autocomplete(data, callback) {
 	 * @param data Filename or array of autocompletion values
 	 * @param callback Called when file has been loaded, argument with "success" if all is OK
 	 */
-	this.load = function(data, callback) {
+	this.load = function(data, callback, errorCallback) {
 		if (data instanceof Array) {
 			me.data = data;
 			if (callback instanceof Function) {
@@ -37,15 +37,20 @@ function Autocomplete(data, callback) {
 			}
 		}
 		else {
-			$.getScript(data, function(data, textStatus) {
-				eval(data);
-				me.data = autocompleteData();
-				if (textStatus == "success") {
+			$.ajax({
+				url: data, 
+				dataType: "script",
+				success: function(data, textStatus) {
+					eval(data);
 					me.data = autocompleteData();
-				}
-				if (callback instanceof Function) {
-					callback(textStatus);
-				}
+					if (textStatus == "success") {
+						me.data = autocompleteData();
+					}
+					if (callback instanceof Function) {
+						callback(textStatus);
+					}
+				},
+				error: errorCallback
 			});
 		}
 	};

@@ -16,7 +16,7 @@ function Observation(){
    	});
 	
 	// TODO make dynamic for each
-	var ac = new Autocomplete("../data/autocomplete/89.json");
+	var ac = new Autocomplete("data/autocomplete/89.jsonp");
 	
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.len());
