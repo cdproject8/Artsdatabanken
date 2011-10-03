@@ -8,15 +8,19 @@
  */
 function Autocomplete(data, success, error) {
 	var me = this;
-	this.prefixFiles = [];
-	this.data = [];
-	this.dCategoryRoot = null;
+	
+	var state = {
+		suggestions: [],
+		prefixMap: [],
+		currentPrefix: '',
+		categoryRoot: null
+	};
 	
 	this.callback = function(request, response) {
 		var currentText = $.ui.autocomplete.escapeRegex(request.term);
 		var matcher = new RegExp( "^" + currentText, "i" );
 		var count = 0;
-		var suggestions = $.grep(me.data, function(item, index){
+		var suggestions = $.grep(state.suggestions, function(item, index){
 			if (count > 5) return false;
 			var res = matcher.test(item)
 			if (res) count++;
@@ -32,20 +36,46 @@ function Autocomplete(data, success, error) {
 		$(selector).autocomplete({
 			source: me.callback
 		});
+		return me;
+	};
+	
+	this.suggestions = function(data) {
+		if (data != null) {
+			state.suggestions = data;
+			return me;
+		};
+		return state.suggestions;
+	};
+	
+	this.prefixMap = function(data) {
+		if (data != null) {
+			state.prefixMap = data;
+			return me;
+		}
+		return state.suggestions;
+	};
+	
+	this.currentPrefix = function(data) {
+		if (data != null) {
+			state.currentPrefix = data;
+			return me;
+		}
+		return state.currentPrefix;
 	};
 	
 	/**
 	 * @param term Search term
+	 * @param setPrefix if true this instance's current prefix is set
 	 * @return Name of file that contains suggestions for term
 	 */
 	this.prefixFile = function(term, setPrefix) {
-		for (var i = 0; i < me.prefixFiles.length; i++) {
-			var pattern = new RegExp("^" + me.prefixFiles[i][0], "i");
+		for (var i = 0; i < state.prefixMap.length; i++) {
+			var pattern = new RegExp("^" + state.prefixMap[i][0], "i");
 			if (pattern.test(term)) {
 				if (setPrefix) {
-					me.currentPrefix = me.prefixFiles[i][0];
+					state.currentPrefix = state.prefixMap[i][0];
 				}
-				return me.prefixFiles[i][1];
+				return state.prefixMap[i][1];
 			}
 		}
 	};
@@ -57,9 +87,10 @@ function Autocomplete(data, success, error) {
 	
 	this.categoryRoot = function(filename) {
 		if (filename != null) {
-			me.dCategoryRoot = filename.substring(0, filename.length - "/index.js".length);
+			state.categoryRoot = filename.substring(0, filename.length - "/index.js".length);
+			return me;
 		}
-		return me.dCategoryRoot;
+		return state.categoryRoot;
 	};
 	
 	this.loadByTerm = function(term, success, error) {
@@ -74,7 +105,7 @@ function Autocomplete(data, success, error) {
 	 */
 	this.load = function(data, success, error) {
 		if (data instanceof Array) {
-			me.data = data;
+			state.suggestions = data;
 			if (success instanceof Function) {
 				success("success");
 			}
@@ -91,14 +122,14 @@ function Autocomplete(data, success, error) {
 				success: function(fileData, textStatus) {
 					eval(fileData);
 					if (me.isMetafile(data)) {
-						me.prefixFiles = autocompleteData();
+						state.prefixMap = autocompleteData();
 						me.categoryRoot(data);
 					}
 					else {
-						me.data = autocompleteData();
+						state.suggestions = autocompleteData();
 					}
 					if (textStatus == "success") {
-						me.data = autocompleteData();
+						state.suggestions = autocompleteData();
 					}
  					if (success instanceof Function) {
 						success(textStatus);
