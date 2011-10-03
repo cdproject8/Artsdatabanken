@@ -1,0 +1,22 @@
+Corona
+Corona enables to develop graphically rich multimedia applications based on a programming 
+language Lua [1]. Corona supports both the iOS and Android platforms. Corona focuses on 
+applications with a lot of graphical animation. Corona is not open source, currently a developer 
+has to pay $99 yearly to maintain membership and be able to build applications for App Store.
+
+Titanium
+Titanium is a cross-platform mobile applications development framework that uses web 
+development technologies to develop applications for the Android and iOS mobile platform. 
+Titanium is an open source framework that uses JavaScript and JSON as application language; 
+it can also use Python, Ruby and PHP scripts. [2]
+
+
+The group chose PhoneGap over Titanium and Corona because it supports 5 mobile platforms 
+which was the main requirements of the customer, it uses a well known web technology standards
+ that will later be compiled to native mobile applications and it is open source which is free. 
+While Titanium is a cross platform framework, it only supports Android and iOS. Corona supports 
+only Android and iOS, it is not free and its focus is multimedia rich content.
+
+
+[1]www.anscamobile.com
+[2]www.appcelerator.com
