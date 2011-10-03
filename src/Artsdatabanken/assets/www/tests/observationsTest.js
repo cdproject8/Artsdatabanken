@@ -15,14 +15,21 @@ $(document).ready(function(){
 	});
 	
 	module("species observation");
+
+	var id = 4;
+	var spec = new ObsSpec(id);
 	
 	test("new species", function() {
-		var id = 4;
-		var spec = new ObsSpec(id);
 		equal("004", spec.id);
 	});
 	
-	module("observation");
 
+	module("observation");
+	var obs = new Observation();	
+	
+	obs.addSpecies(spec);
+	test("get species", function() {
+		equal(spec.id, obs.getSpecies(spec.id).id);
+	});
 
 });
