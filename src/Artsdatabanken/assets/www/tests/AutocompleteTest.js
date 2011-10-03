@@ -55,9 +55,9 @@ $(document).ready(function(){
 	
 	test("should be able to load data from array", function() {
 		var ac = new Autocomplete();
-		var data = ["one", "two"];
+		var data = [ "one", "two" ];
 		ac.load(data);
-		equals(ac.data, data);
+		equals(ac.suggestions(), data);
 	});
 	
 	/*
@@ -69,9 +69,9 @@ $(document).ready(function(){
 		var ac = new Autocomplete([]);
 		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
-			equals(ac.data[0], "a");
-			equals(ac.data[1], "b");
-			equals(ac.data[2], "c");
+			equals(ac.suggestions()[0], "a");
+			equals(ac.suggestions()[1], "b");
+			equals(ac.suggestions()[2], "c");
 			start();
 		}, function(a,b,c) {
 			console.log(c);
@@ -84,14 +84,14 @@ $(document).ready(function(){
 		var ac = new Autocomplete([]);
 		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
-			equals(ac.data[0], "a");
-			equals(ac.data[1], "b");
-			equals(ac.data[2], "c");
+			equals(ac.suggestions()[0], "a");
+			equals(ac.suggestions()[1], "b");
+			equals(ac.suggestions()[2], "c");
 			
 			ac.load("resources/autocomplete/autocomplete2.js", function(textStatus) {
 				equals(textStatus, "success");
-				equals(ac.data[0], "test");
-				equals(ac.data[1], "testie");
+				equals(ac.suggestions()[0], "test");
+				equals(ac.suggestions()[1], "testie");
 				start();
 			});
 		});
@@ -101,9 +101,9 @@ $(document).ready(function(){
 		expect(4);
 		var ac = new Autocomplete("resources/autocomplete/autocomplete.js", function(textStatus) {
 			equals(textStatus, "success");
-			equals(ac.data[0], "a");
-			equals(ac.data[1], "b");
-			equals(ac.data[2], "c");
+			equals(ac.suggestions()[0], "a");
+			equals(ac.suggestions()[1], "b");
+			equals(ac.suggestions()[2], "c");
 			start();
 		});
 	});
@@ -134,9 +134,9 @@ $(document).ready(function(){
 	
 	test("should consider prefix specifications like d|e|f as d or e or f", function() {
 		var ac = new Autocomplete();
-		ac.prefixFiles =  [
+		ac.prefixMap([
     		[ "d|e|f", "d_e_f.json"]
-    	];
+    	]);
 		equals(ac.prefixFile("det"), "d_e_f.json");
 		equals(ac.prefixFile("ee"), "d_e_f.json");
 		equals(ac.prefixFile("f"), "d_e_f.json");
@@ -145,12 +145,57 @@ $(document).ready(function(){
 	
 	test("should consider prefix specifications like [a-c] as a or b or c", function() {
 		var ac = new Autocomplete();
-		ac.prefixFiles =  [
+		ac.prefixMap([
     		[ "[a-c]", "a-c.json"]
-    	];
+    	])
 		equals(ac.prefixFile("archie"), "a-c.json");
 		equals(ac.prefixFile("blarg"), "a-c.json");
 		equals(ac.prefixFile("car"), "a-c.json");
 		equals(ac.prefixFile("dar"), undefined);
+	});
+	
+	asyncTest("should set categoryRoot to directory above index.js when loaded", function() {
+		expect(1);
+		var ac = new Autocomplete();
+		ac.load('resources/autocomplete/35/index.js', function() {
+			equals("resources/autocomplete/35", ac.categoryRoot());
+			start();
+		});
+	});
+	
+	asyncTest("should fail gracefully if loading file by category fails", function() {
+		expect(1);
+		var ac = new Autocomplete();
+		ac.categoryFolder = 'resources/autocomplete/35';
+		ac.load('resources/autocomplete/35/index.js', function() {
+			ac.loadByTerm('no', function() {
+			}, function(a, b, c) {
+				ok(true);
+				start();
+			});
+		});
+	});
+	
+	asyncTest("should be able to load file based on prefix", function() {
+		expect(6);
+		var ac = new Autocomplete();
+		
+		ac.categoryFolder = 'resources/autocomplete/35';
+		ac.load('resources/autocomplete/35/index.js', function() {
+			ac.loadByTerm('aterm', function() {
+				equals(ac.currentPrefix(), '[a-c]');
+				equals(ac.suggestions()[0], 'archie');
+				equals(ac.suggestions()[1], 'berkley');
+				equals(ac.suggestions()[2], 'cab');
+				ac.loadByTerm('ge', function() {
+					equals(ac.suggestions()[0], 'grape');
+					equals(ac.suggestions()[1], 'grep');
+				});
+				start();
+			}, function(a, b, c) {
+				console.log(c);
+				start();
+			});
+		});
 	});
 });
