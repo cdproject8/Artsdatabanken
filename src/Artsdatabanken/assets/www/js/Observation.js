@@ -13,7 +13,6 @@ function Observation(){
 	this.ac = new Autocomplete("data/autocomplete/91.jsonp");	
 	
 	// Set activeExtended to the species_row selected when clicking "Add More Information" button
-	// TODO for some reason this event is not always triggered
  	$('#observation_form').click(function(e) {
   		var tar = $(e.target);
   		//console.log(tar);
@@ -32,14 +31,14 @@ function Observation(){
   		if (trigg && anchor.is(".add_info")) {
 			var speciesRow = anchor.parent();
 			var idOfSpeciesRow = speciesRow.attr("id").substr(11);
-			obs.activeExtended = idOfSpeciesRow;
-			console.log("saved " + obs.activeExtended + " to active extended");
+			obs.activeExtended = obs.getSpecies(idOfSpeciesRow);
+			//console.log("saved " + obs.activeExtended + " to active extended");
 		
 			// Saving values for the row in the objects.
 			// .change() event did not always trigger for autocomplete etc.
-			var nameInput = $("input[id=spec-name]", speciesRow);
+			var nameInput = $(":input[id=spec-name]", speciesRow);
 			if (nameInput == null) nameInput = " ";
-			var numInput = $("input[id=spec-number]", speciesRow);
+			var numInput = $(":input[id=spec-number]", speciesRow);
 			if (nameInput == null) nameInput = "1";
 			// console.log(nameInput.val() + numInput.val());
 			obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
@@ -73,65 +72,58 @@ function Observation(){
 	
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtendedValues = function() {
-		var currentSpecies = this.getSpecies(this.activeExtended);
-		$("#extended_inf input[id=spec-name]").val(currentSpecies.sname);
-		$("#extended_inf input[id=spec-number]").val(currentSpecies.number);
-		$("#extended_inf input[id=spec-sex]").val(currentSpecies.sex);
-		$("#extended_inf input[id=spec-age]").val(currentSpecies.age);
-		$("#extended_inf input[id=spec-activity]").val(currentSpecies.activity);
-		$("#extended_inf input[id=spec-date_start]").val(currentSpecies.date_start.getFullYear() + "-" + zero_pad(currentSpecies.date_start.getMonth()+1,2) + "-" + zero_pad(currentSpecies.date_start.getDate(),2) );
-		$("#extended_inf input[id=spec-time_start]").val(zero_pad(currentSpecies.date_start.getHours(),2) + ":" + zero_pad(currentSpecies.date_start.getMinutes(),2) );
-		$("#extended_inf input[id=spec-date_end]").val(currentSpecies.date_end.getFullYear() + "-" + zero_pad(currentSpecies.date_end.getMonth()+1,2) + "-" + zero_pad(currentSpecies.date_end.getDate(),2) );
-		$("#extended_inf input[id=spec-time_end]").val(zero_pad(currentSpecies.date_end.getHours(),2) + ":" + zero_pad(currentSpecies.date_end.getMinutes(),2) );
-		$("#extended_inf input[id=spec-comment]").val(currentSpecies.comment);
+		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname);
+		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number);
+		$("#extended_inf :input[id=spec-sex]").val(this.activeExtended.sex);
+		$("#extended_inf :input[id=spec-age]").val(this.activeExtended.age);
+		$("#extended_inf :input[id=spec-activity]").val(this.activeExtended.activity);
+		$("#extended_inf :input[id=spec-date_start]").val(this.activeExtended.date_start.getFullYear() + "-" + zero_pad(this.activeExtended.date_start.getMonth()+1,2) + "-" + zero_pad(this.activeExtended.date_start.getDate(),2) );
+		$("#extended_inf :input[id=spec-time_start]").val(zero_pad(this.activeExtended.date_start.getHours(),2) + ":" + zero_pad(this.activeExtended.date_start.getMinutes(),2) );
+		$("#extended_inf :input[id=spec-date_end]").val(this.activeExtended.date_end.getFullYear() + "-" + zero_pad(this.activeExtended.date_end.getMonth()+1,2) + "-" + zero_pad(this.activeExtended.date_end.getDate(),2) );
+		$("#extended_inf :input[id=spec-time_end]").val(zero_pad(this.activeExtended.date_end.getHours(),2) + ":" + zero_pad(this.activeExtended.date_end.getMinutes(),2) );
+		$("#extended_inf :input[id=spec-comment]").val(this.activeExtended.comment);
 
 		//	 TODO if picture
 		
 	}
+	// Save information written on the extended page
 	this.saveExtended = function() {
-		console.log("saving "+ this.activeExtended);
-		var currentSpecies = this.getSpecies(this.activeExtended);
-//		console.log($('#extended_inf input'))
-		currentSpecies.sname = $("#extended_inf input[id=spec-name]").val();
-		currentSpecies.number = $("#extended_inf input[id=spec-number]").val();
-		currentSpecies.sex = $("#extended_inf input[id=spec-sex]").val();
-		currentSpecies.age = $("#extended_inf input[id=spec-age]").val();
-		currentSpecies.activity = $("#extended_inf input[id=spec-activity]").val();
-
-		var ds = $("#extended_inf input[id=spec-date_start]").val();
-		var ts = $("#extended_inf input[id=spec-time_start]").val();
-		var dateS = "";
-		
-		console.log(ds);
-		console.log(ts);
-
+		console.log("start saving");
+		this.activeExtended.sname = $("#extended_inf :input[id=spec-name]").val();
+		this.activeExtended.number = $("#extended_inf :input[id=spec-number]").val();
+		this.activeExtended.sex = $("#extended_inf :input[id=spec-sex]").val();
+		this.activeExtended.age = $("#extended_inf :input[id=spec-age]").val();
+		this.activeExtended.activity = $("#extended_inf :input[id=spec-activity]").val();
+		var ds = $("#extended_inf :input[id=spec-date_start]").val();
+		var ts = $("#extended_inf :input[id=spec-time_start]").val();
 		if (ds != null) {
-			dateS = ds;
 			if (ts != null) {
-				dateS += " " + ts;
-				currentSpecies.date_start = new Date(dateS.substr(0,4), dateS.substr(5,7), dateS.substr(8,10), dateS.substr(11,13), dateS.substr(14,16));
+				this.activeExtended.date_start = new Date(ds.substr(0,2), ds.substr(5,2), ds.substr(8,2), ts.substr(0,2), ts.substr(3,2));
 			}
 			else {
-				currentSpecies.date_start = new Date(dateS.substr(0,4),dateS.substr(5,7),dateS.substr(8,10));
+				this.activeExtended.date_start = new Date(ds.substr(0,4),ds.substr(5,2),ds.substr(8,2));
 			}
-		}
-		
-		var de = $("#extended_inf input[id=spec-date_end]").val();
-		var te = $("#extended_inf input[id=spec-time_end]").val();
-		dateS = "";
+		}		
+		var de = $("#extended_inf :input[id=spec-date_end]").val();
+		var te = $("#extended_inf :input[id=spec-time_end]").val();
 		if (de != null) {
-			dateS = de;
 			if (te != null) {
-				dateS += " " + te;
-				currentSpecies.date_end = new Date(dateS.substr(0,4), dateS.substr(5,7), dateS.substr(8,10), dateS.substr(11,13), dateS.substr(14,16));
+				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2), de.substr(8,2), te.substr(0,2), te.substr(3,2));
 			}
 			else {
-				currentSpecies.date_end = new Date(dateS.substr(0,4),dateS.substr(5,7),dateS.substr(8,10));
+				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2), de.substr(8,2));
 			}
 		}
-		
-		currentSpecies.comment = $("#extended_inf input[id=spec-comment]").val();
-		
+		this.activeExtended.comment = $("#extended_inf :input[id=spec-comment]").val();
+		console.log("end saving");
+	}
+	
+	//TODO these DOM elements aren't found to be updated >_>
+	this.updateMainPage = function() {
+		console.log($("#observation_form"));
+		console.log($(".species_row" + this.activeExtended.id + " :input[id=spec-name]"));
+		$(".species_row" + this.activeExtended.id + " :input[id=spec-name]").val(this.activeExtended.sname);
+		$(".species_row" + this.activeExtended.id + " :input[id=spec-number]").val(this.activeExtended.number);
 	}
 	
 }

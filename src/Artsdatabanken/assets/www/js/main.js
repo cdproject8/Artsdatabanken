@@ -22,25 +22,18 @@ $(document).bind("mobileinit", function() {
 			observation = new Observation();
 			observation.newSpecies();
 		});
+		$('#obs_bird').live('pageshow',function(event){
+			// update info on the row that was edited in extended info
+			if (observation.activeExtended != null) observation.updateMainPage();
+		});
 		$('#extended_inf').live('pagecreate',function(event){
 			observation.ac.activate(".name");
 			observation.fillExtendedValues();
-			//console.log(observation.activeExtended);
 		});
 		$('#extended_inf').live('pagebeforehide',function(event){
-			console.log("left Extended Info");
 			observation.saveExtended();
-			// TODO add code to save info entered on this page
-		});
-		$('#ac_test_page').live('pagecreate',function(event){
-			//add_autocomplete("#spcac-sandbox1");
-			//add_autocomplete("#spcac-sandbox2");
 		});
 	});
-	/*$(document).live('pagebeforechange', function(e,data) {
-		console.log(e);
-		console.log(data);
-	});*/
 });
 	
 
@@ -58,7 +51,6 @@ function zero_pad(number, len) {
 }
 
 function add_species(){
-	//species_count++;
 	if (observation.len() == 999) {
 		alert("You have reached the maximum amount of species for one observation, please create a new observation instead");
 		return;
