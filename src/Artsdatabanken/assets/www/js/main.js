@@ -3,34 +3,43 @@ var observation;
 
 // Init jQuery mobile
 
-	$(document).bind("mobileinit", function() {
-		// jQuery mobile configuration
-		$.extend($.mobile, {
-			// Config..
-		});
-		$.mobile.page.prototype.options.addBackBtn = true;
-		//$.mobile.page.prototype.options.domCache = true;
-		
-		// This will be executed when jQuery mobile is loaded,
-		// place code here..
-		
-		console.log("mobileinit");
+$(document).bind("mobileinit", function() {
+	// jQuery mobile configuration
+	$.extend($.mobile, {
+		// Config..
+	});
+	$.mobile.page.prototype.options.addBackBtn = true;
+	//$.mobile.page.prototype.options.domCache = true;
+	
+	// This will be executed when jQuery mobile is loaded,
+	// place code here..
+	
+	console.log("mobileinit");
 
-		$(document).ready(function() {
-			$('#obs_bird').live('pagecreate',function(event){
-			
-				observation = new Observation();
-				observation.newSpecies();
-			});
-			$('#extended_inf').live('pagecreate',function(event){
-				add_autocomplete(".name");
-				// make dynamic
-			});
-			$('#ac_test_page').live('pagecreate',function(event){
-				add_autocomplete("#spcac-sandbox1");
-				add_autocomplete("#spcac-sandbox2");
-			});
+	$(document).ready(function() {
+		$('#obs_bird').live('pagecreate',function(event){
+		
+			observation = new Observation();
+			observation.newSpecies();
 		});
+		$('#extended_inf').live('pagecreate',function(event){
+			observation.ac.activate(".name");
+			observation.fillExtendedValues();
+			//console.log(observation.activeExtended);
+		});
+		$('#extended_inf').live('pagehide',function(event){
+			console.log("left Extended Info");
+			// TODO add code to save info entered on this page
+		});
+		$('#ac_test_page').live('pagecreate',function(event){
+			//add_autocomplete("#spcac-sandbox1");
+			//add_autocomplete("#spcac-sandbox2");
+		});
+	});
+	/*$(document).live('pagebeforechange', function(e,data) {
+		console.log(e);
+		console.log(data);
+	});*/
 });
 	
 
@@ -54,34 +63,5 @@ function add_species(){
 		return;
 	}
 	
-	observation.newSpecies();	
-
-/*	var new_spec = $('#species_row').clone()
-	var zeropad = zero_pad(species_count,3);
-	$('input[id=spe001]', new_spec).attr("id","spe"+zeropad);
-	$('input[id=spc001]', new_spec).attr("id","spc"+zeropad);
-	
-	new_spec.appendTo('#observation_form');
-	add_autocomplete("#spe"+zeropad);
-*/
-}
-
-/*
-//from http://blog.imaginea.com/deep-copy-in-javascript/ comments, deep copy code
-function cloneObj(srcInstance)
-{
-	if(typeof(srcInstance) != 'object' || srcInstance == null)
-		return srcInstance;
-	var newInstance = srcInstance.constructor();
-	for(var i in srcInstance)
-		newInstance[i] = clone(srcInstance[i]);
-	return newInstance;
-}
-*/
-
-function add_autocomplete(inputid) {
-	var callback = new Autocomplete(autocompleteData());
-	$(inputid).autocomplete({
-		source: callback
-	});
+	observation.newSpecies();
 }

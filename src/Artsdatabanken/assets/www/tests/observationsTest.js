@@ -13,6 +13,23 @@ $(document).ready(function(){
 	test("pad 1,3 to 001", function() {
 		equal("001", zero_pad(1,3));
 	});
+	
+	module("species observation");
 
+	var id = 4;
+	var spec = new ObsSpec(id);
+	
+	test("new species", function() {
+		equal("004", spec.id);
+	});
+	
+
+	module("observation");
+	var obs = new Observation();	
+	
+	obs.addSpecies(spec);
+	test("get species", function() {
+		equal(spec.id, obs.getSpecies(spec.id).id);
+	});
 
 });

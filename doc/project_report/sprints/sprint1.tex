@@ -24,8 +24,17 @@
 	Relevant requirements for this sprint are F1 (Creating an observation) and F10 (Autocomplete). See section \ref{sec:usecases} for details.
 
 
-\subsection{Tests TODO}
-	Dring this sprint we familiarised ourselves with QUnit (See section \ref{sec:qunit}) and started writing QUnit tests for the implemented modules. However, no real testing was performed.
+\subsection{Testing}
+
+	Most of the test related effort in this sprint was used to prepare the
+	testing framework, consisting of QUnit for unit testing and mockjax for
+	mocking AJAX requests / responses. See \ref{sec:qunit}. We decided to run
+	the tests on normal (desktop / laptop) computers as it was problematic to
+	run directly on mobile devices. Using techniques like mocking we should
+	still be able to generate a good test coverage.
+
+	We implemented unit tests for the filtering mechanism involved in our custom
+	auto-complete function. All tests passed (see \ref{sec:unit-tests}).
 
 \subsection{Evaluation TODO}
 	//what did and did not go well etc. goals achieved?
