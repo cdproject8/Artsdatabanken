@@ -1,12 +1,13 @@
 /**
- * Autocomplete.load(data, callback, errorCallback) is run during initialization.
+ * Autocomplete.load(data, callback, error) is run during initialization.
  * 
  * @returns {Autocomplete}
  */
-function Autocomplete(data, callback, errorCallback) {
+function Autocomplete(data, success, error) {
 	var me = this;
 	this.prefixFiles = [];
 	this.data = [];
+	this.dCategoryRoot = null;
 	
 	this.callback = function(request, response) {
 		var currentText = $.ui.autocomplete.escapeRegex(request.term);
@@ -21,13 +22,12 @@ function Autocomplete(data, callback, errorCallback) {
 		response(suggestions);
 	};
 	
-	
 	/**
 	 * @param selector jQuery selector for input element to be auto-completed
 	 */
 	this.activate = function(selector) {
 		$(selector).autocomplete({
-			source: this.callback
+			source: me.callback
 		});
 	};
 	
@@ -35,10 +35,13 @@ function Autocomplete(data, callback, errorCallback) {
 	 * @param term Search term
 	 * @return Name of file that contains suggestions for term
 	 */
-	this.prefixFile = function(term) {
+	this.prefixFile = function(term, setPrefix) {
 		for (var i = 0; i < me.prefixFiles.length; i++) {
 			var pattern = new RegExp("^" + me.prefixFiles[i][0], "i");
 			if (pattern.test(term)) {
+				if (setPrefix) {
+					me.currentPrefix = me.prefixFiles[i][0];
+				}
 				return me.prefixFiles[i][1];
 			}
 		}
@@ -47,21 +50,38 @@ function Autocomplete(data, callback, errorCallback) {
 	this.isMetafile = function(filename) {
 		var pattern = /index\.js$/i;
 		return pattern.test(filename);
-	}
+	};
+	
+	this.categoryRoot = function(filename) {
+		if (filename != null) {
+			me.dCategoryRoot = filename.substring(0, filename.length - "/index.js".length);
+		}
+		return me.dCategoryRoot;
+	};
+	
+	this.loadByTerm = function(term, success, error) {
+		var filename = me.prefixFile(term, true);
+		me.load(filename, success, error);
+	};
 	
 	/**
 	 * @param data Filename or array of autocompletion values
-	 * @param callback Called when file has been loaded, argument with "success" if all is OK
-	 * @param callback Called if file can't be loaded (see jQuery.ajax())
+	 * @param success Called when file has been loaded, argument with "success" if all is OK
+	 * @param error Called if file can't be loaded (see jQuery.ajax())
 	 */
-	this.load = function(data, callback, errorCallback) {
+	this.load = function(data, success, error) {
 		if (data instanceof Array) {
 			me.data = data;
-			if (callback instanceof Function) {
-				callback("success");
+			if (success instanceof Function) {
+				success("success");
 			}
 		}
 		else {
+			var cr = me.categoryRoot();
+			if (cr != null) {
+				data = cr + "/" + data;
+			}
+			
 			$.ajax({
 				url: data, 
 				dataType: "script",
@@ -69,6 +89,7 @@ function Autocomplete(data, callback, errorCallback) {
 					eval(fileData);
 					if (me.isMetafile(data)) {
 						me.prefixFiles = autocompleteData();
+						me.categoryRoot(data);
 					}
 					else {
 						me.data = autocompleteData();
@@ -76,16 +97,16 @@ function Autocomplete(data, callback, errorCallback) {
 					if (textStatus == "success") {
 						me.data = autocompleteData();
 					}
-					if (callback instanceof Function) {
-						callback(textStatus);
+ 					if (success instanceof Function) {
+						success(textStatus);
 					}
 				},
-				error: errorCallback
+				error: error
 			});
 		}
 	};
 	
 	// Construct
 	
-	this.load(data, callback, errorCallback);
+	this.load(data, success, error);
 };

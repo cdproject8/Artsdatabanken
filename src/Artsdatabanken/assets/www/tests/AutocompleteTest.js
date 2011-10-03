@@ -153,4 +153,49 @@ $(document).ready(function(){
 		equals(ac.prefixFile("car"), "a-c.json");
 		equals(ac.prefixFile("dar"), undefined);
 	});
+	
+	asyncTest("should set categoryRoot to directory above index.js when loaded", function() {
+		expect(1);
+		var ac = new Autocomplete();
+		ac.load('resources/autocomplete/35/index.js', function() {
+			equals("resources/autocomplete/35", ac.categoryRoot());
+			start();
+		});
+	});
+	
+	asyncTest("should fail gracefully if loading file by category fails", function() {
+		expect(1);
+		var ac = new Autocomplete();
+		ac.categoryFolder = 'resources/autocomplete/35';
+		ac.load('resources/autocomplete/35/index.js', function() {
+			ac.loadByTerm('no', function() {
+			}, function(a, b, c) {
+				ok(true);
+				start();
+			});
+		});
+	});
+	
+	asyncTest("should be able to load file based on prefix", function() {
+		expect(6);
+		var ac = new Autocomplete();
+		
+		ac.categoryFolder = 'resources/autocomplete/35';
+		ac.load('resources/autocomplete/35/index.js', function() {
+			ac.loadByTerm('aterm', function() {
+				equals(ac.currentPrefix, '[a-c]');
+				equals(ac.data[0], 'archie');
+				equals(ac.data[1], 'berkley');
+				equals(ac.data[2], 'cab');
+				ac.loadByTerm('ge', function() {
+					equals(ac.data[0], 'grape');
+					equals(ac.data[1], 'grep');
+				});
+				start();
+			}, function(a, b, c) {
+				console.log(c);
+				start();
+			});
+		});
+	});
 });
