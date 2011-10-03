@@ -27,8 +27,9 @@ $(document).bind("mobileinit", function() {
 			observation.fillExtendedValues();
 			//console.log(observation.activeExtended);
 		});
-		$('#extended_inf').live('pagehide',function(event){
+		$('#extended_inf').live('pagebeforehide',function(event){
 			console.log("left Extended Info");
+			observation.saveExtended();
 			// TODO add code to save info entered on this page
 		});
 		$('#ac_test_page').live('pagecreate',function(event){

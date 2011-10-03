@@ -1,16 +1,14 @@
 function ObsSpec(id){
 	this.id = zero_pad(id,3);
-	this.sname = "";
+	this.sname = "s";
 	this.number = 1;
-	this.sex;
-	this.age;
-	this.action;
-	this.time_start;
-	this.date_start;
-	this.time_end;
-	this.date_end;
-	this.comment;
-	this.picture;
+	this.sex = " ";
+	this.age = " ";
+	this.action = " ";
+	this.date_start = new Date();
+	this.date_end = new Date();
+	this.comment = " ";
+	this.picture = " ";
 
 	this.speciesListHtml = function(){
 		return $(
