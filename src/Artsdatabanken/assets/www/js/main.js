@@ -33,6 +33,9 @@ $(document).bind("mobileinit", function() {
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
 		});
+		$('#storage_test_page').live('pagecreate',function(event){
+			dbInit();
+		});
 	});
 });
 	
