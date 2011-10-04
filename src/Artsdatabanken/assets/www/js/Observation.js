@@ -51,12 +51,19 @@ function Observation(){
 	}
 	
 	this.newSpecies = function() {
-		newSpec = new ObsSpec(this.len());
+		newSpec = new ObsSpec(this.newId());
 		this.species.push(newSpec);
 		//Adding the html to the DOM and triggering the jquerymobile to style it
 		$('#observation_form').append(newSpec.speciesListHtml().trigger('create'));
    		//Adding autocomplete to the namefield
 		this.ac.activate("#species_row"+newSpec.id +" .ui-input-name-spec");
+	}
+	
+	// Added this instead of just length for use later when you're able to 
+	// delete a species from an observation
+	this.newId = function() {
+		if (this.species.length==0) return 0;
+		return parseInt(this.species[this.species.length-1].id)+1;
 	}
 	
 	this.len = function() {
@@ -72,8 +79,9 @@ function Observation(){
 	
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtendedValues = function() {
-		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname);
-		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number);
+		// Disabled due to inconsistencies with pageshow event
+		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname).attr("disabled", true);
+		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number).attr("disabled", true);
 		$("#extended_inf :input[id=spec-sex]").val(this.activeExtended.sex);
 		$("#extended_inf :input[id=spec-age]").val(this.activeExtended.age);
 		$("#extended_inf :input[id=spec-activity]").val(this.activeExtended.activity);
@@ -89,8 +97,8 @@ function Observation(){
 	// Save information written on the extended page
 	this.saveExtended = function() {
 		console.log("start saving");
-		this.activeExtended.sname = $("#extended_inf :input[id=spec-name]").val();
-		this.activeExtended.number = $("#extended_inf :input[id=spec-number]").val();
+		//this.activeExtended.sname = $("#extended_inf :input[id=spec-name]").val();
+		//this.activeExtended.number = $("#extended_inf :input[id=spec-number]").val();
 		this.activeExtended.sex = $("#extended_inf :input[id=spec-sex]").val();
 		this.activeExtended.age = $("#extended_inf :input[id=spec-age]").val();
 		this.activeExtended.activity = $("#extended_inf :input[id=spec-activity]").val();
@@ -118,10 +126,11 @@ function Observation(){
 		console.log("end saving");
 	}
 	
-	//TODO these DOM elements aren't found to be updated >_>
+	// TODO these DOM elements aren't found to be updated >_>
+	// not used for now
 	this.updateMainPage = function() {
 		console.log($("#observation_form"));
-		console.log($(".species_row" + this.activeExtended.id + " :input[id=spec-name]"));
+		console.log($("#observation_form .species_row" + this.activeExtended.id + " :input[id=spec-name]"));
 		$(".species_row" + this.activeExtended.id + " :input[id=spec-name]").val(this.activeExtended.sname);
 		$(".species_row" + this.activeExtended.id + " :input[id=spec-number]").val(this.activeExtended.number);
 	}
