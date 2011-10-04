@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	
+	<body>	
+		<div data-role="page" id="storage_test_page" data-theme="z" data-dom-cache="true">
+			<div data-role="header" data-theme="z">
+				<h1>Camera Test</h1>
+			</div>
+				<div data-role="fieldcontain">
+					<label for="testwrite">Write</label> <input type="text" name="testwrite" value="" id="testwrite"/>
+				</div>
+			<p>
+			<a href="javascript: testWrite();" data-role="button">Write</a>
+		</p>
+				<div data-role="fieldcontain">
+					<label for="testread">Read</label> <input type="text" name="testread" value="" id="testread"/>
+				</div>
+			<p>
+			<a href="javascript: testRead();" data-role="button">Read</a>
+		</p>
+	
+			<div data-role="footer" data-theme="z">
+				<h1> End</h1>
+			</div>
+		</div>
+		<div class="ui-widget">
+			<label for="species-autocomplete">Species: </label>
+			<input id="species-autocomplete">
+			
+		</div>
+
+	</body>
+	</html>

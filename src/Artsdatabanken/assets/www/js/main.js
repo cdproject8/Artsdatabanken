@@ -35,6 +35,9 @@ $(document).bind("mobileinit", function() {
 			//add_autocomplete("#spcac-sandbox1");
 			//add_autocomplete("#spcac-sandbox2");
 		});
+		$('#storage_test_page').live('pagecreate',function(event){
+			dbInit();
+		});
 	});
 	/*$(document).live('pagebeforechange', function(e,data) {
 		console.log(e);
