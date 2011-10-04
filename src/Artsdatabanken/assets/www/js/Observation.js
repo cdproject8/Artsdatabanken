@@ -80,14 +80,8 @@ function Observation(){
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtendedValues = function() {
 		// Disabled due to inconsistencies with pageshow event
-		var sname =$("#extended_inf :input[id=spec-name]");
-		sname.val(this.activeExtended.sname)
-		sname.attr("disabled", "disabled");
-//		sname.show();
-		var number = $("#extended_inf :input[id=spec-number]");
-		number.val(this.activeExtended.number);
-		number.attr("disabled", true);
-//		number.show();
+		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname).attr("disabled", true);
+		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number).attr("disabled", true);
 		$("#extended_inf :input[id=spec-sex]").val(this.activeExtended.sex);
 		$("#extended_inf :input[id=spec-age]").val(this.activeExtended.age);
 		$("#extended_inf :input[id=spec-activity]").val(this.activeExtended.activity);
@@ -132,7 +126,8 @@ function Observation(){
 		console.log("end saving");
 	}
 	
-	//TODO these DOM elements aren't found to be updated >_>
+	// TODO these DOM elements aren't found to be updated >_>
+	// not used for now
 	this.updateMainPage = function() {
 		console.log($("#observation_form"));
 		console.log($("#observation_form .species_row" + this.activeExtended.id + " :input[id=spec-name]"));
