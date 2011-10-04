@@ -8,8 +8,8 @@ function dbInit() {
 
 function createDB(tx) {
 	
-	tx.executeSql('DROP TABLE observations');
-	tx.executeSql('DROP TABLE test');
+//	tx.executeSql('DROP TABLE observations');
+//	tx.executeSql('DROP TABLE test');
 	tx.executeSql('CREATE TABLE IF NOT EXISTS observations (observation_id, observation_row, species, number, location, sex, age, activity, time_start, time_end, date_start, date_end, comments)');
 	tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 //	alert('database hopefully created?');
