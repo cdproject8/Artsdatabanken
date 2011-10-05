@@ -4,18 +4,18 @@ var db = null
 function dbInit() {
 	db = window.openDatabase("testDB", "0.1", "adb testdb", 1048576);
 	db.transaction(function(tx) {
-		tx.executeSql('DROP TABLE observations');
-		tx.executeSql('DROP TABLE test');
+//		tx.executeSql('DROP TABLE observations');
+//		tx.executeSql('DROP TABLE test');
 		tx.executeSql('CREATE TABLE IF NOT EXISTS observations (observation_id, observation_row, species, number, location TEXT, sex, age, activity, time_start, time_end, date_start, date_end, comments)');
 		tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 	}, dbError);
 	
 	//testdata:
-	insertObservation(0, 1, 'en fugl', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	insertObservation(0, 2, 'en fisk', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	insertObservation(1, 1, 'pikachu', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	insertObservation(1, 2, 'charmander', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	insertObservation(1, 3, 'squirtle', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
+//	insertObservation(0, 1, 'en fugl', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
+//	insertObservation(0, 2, 'en fisk', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
+//	insertObservation(1, 1, 'pikachu', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
+//	insertObservation(1, 2, 'charmander', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
+//	insertObservation(1, 3, 'squirtle', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
 	
 }
 
@@ -34,6 +34,7 @@ function executeQuery(q) {
 	}
 	
 	function qSuccess(tx, results) {
+		console.log('rows affected: ' + results.rowsAffected)
 	}
 	
 	function qError(error) {
@@ -76,13 +77,18 @@ function insertObservation(observation_id, observation_row, species, number, loc
 }
 
 function updateObservation(observation_id, observation_row, field, value) {
-	executeQuery('UPDATE observations SET ' + field + '=' + value + ' WHERE observation_id=' + observation_id + ' AND observation_row=' + observation_row, function(tx, results) {
+	var q = 'UPDATE observations SET ' + field + '=' + value + ' WHERE observation_id=' + observation_id + ' AND observation_row=' + observation_row
+	executeQuery(q, function(tx, results) {
 		console.log('rows affected: ' + results.rowsAffected)
 	});
 }
 
 function populateObservationList() {
 	executeQuery('SELECT * FROM observations', function(tx, results) {
+		if(results.rows.length == 0) {
+			$('#observation_list').append('<p>Nothing here!</p>');
+			return;
+		}
 		for(i = 0; i < results.rows.length; i++){
 			htmlstring =  '<li>';
 			htmlstring += '<a href="">';
@@ -93,6 +99,13 @@ function populateObservationList() {
 		}
 		$("#observation_list").listview("refresh");
 	});
+}
+
+function storeObservation(obs) {
+	console.log(obs);
+	for(i = 0; i < obs.species.length; i++) {
+		insertObservation(0, i, obs.species[i].sname, obs.species[i].number, obs.species[i].location, obs.species[i].sex, obs.species[i].age, obs.species[i].activity, 0, 0, obs.species[i].date_start, obs.species[i].date_end, obs.species[i].comment)		
+	}
 }
 function testWrite() {
 	string = $("#testwrite").val();
@@ -111,4 +124,9 @@ function testRead() {
 //		alert(results.rows.length);
 	}
 	db.transaction(read, dbError, dbSuccess);
+}
+
+function testClear(){
+	executeQuery('DELETE FROM test');
+	executeQuery('DELETE FROM observations');
 }
