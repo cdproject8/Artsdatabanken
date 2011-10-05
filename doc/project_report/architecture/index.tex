@@ -19,7 +19,7 @@ our interface to the hardware.
 
 \subsection{Layer 2 - Cross-platform framework}
 
-Layer 1 provides device independent abstractions for file operations, camera
+Layer 2 provides device independent abstractions for file operations, camera
 access, geolocation, etc. The primary purpose of this layer is to allow us to
 make portable code that can be used on Android, iOs, and other operating systems
 with minimal (or no) changes to the code. PhoneGap provides an HTML5,
@@ -27,9 +27,9 @@ JavaScript, and CSS interface for the layer above.
 
 \subsection{Layer 3 - Mobile app}
 
-Layer 2 is the actual app, this is where our implementation will be placed.
-This layer is split into an internal structure, we use the MVC pattern combined
-with some layering. In addition to the componets shown in the diagram, the
+Layer 3 is the actual app, this is where our implementation will be placed.
+This layer is split into an internal structure where we use the MVC pattern combined
+with some layering. In addition to the components shown in the diagram, the
 jQuery-family of frameworks/utilities is used by model, view and controller.
 
 	\subsubsection{Data access}
@@ -47,13 +47,13 @@ jQuery-family of frameworks/utilities is used by model, view and controller.
 
 	\subsubsection{Controller}
 
-	The controller is responsible coordinating different parts of the system,
+	The controller is responsible for coordinating different parts of the system,
 	like handling (binding) events.
 
 	\subsubsection{View}
 
 	This component represents the graphical user interface, it entails code for
-	generating visual effects, and updating the screen. To save work, we will be
+	generating visual effects, and updating the screen. To save work and reduce potential typing erros, we will be
 	utilizing functionality (like auto-complete, and common mobile UI
 	functionality) from the jQuery-family.
 
