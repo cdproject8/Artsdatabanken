@@ -17,6 +17,7 @@ $(document).bind("mobileinit", function() {
 	console.log("mobileinit");
 
 	$(document).ready(function() {
+		dbInit();
 		$('#obs_bird').live('pagecreate',function(event){
 		
 			observation = new Observation();
@@ -33,8 +34,8 @@ $(document).bind("mobileinit", function() {
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
 		});
-		$('#storage_test_page').live('pagecreate',function(event){
-			dbInit();
+		$('#view_observations').live('pagebeforeshow',function(event){
+			populateObservationList();
 		});
 	});
 });
