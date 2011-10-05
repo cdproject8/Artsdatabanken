@@ -1,7 +1,7 @@
 \section{System architecture}
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=1.0\textwidth]{architecture/architecture3.png}
+	\includegraphics[width=1.0\textwidth]{architecture/architecture.png}
 	\caption{Overall system architecture}
 	\label{fig:architecture}
 \end{figure}
@@ -10,9 +10,13 @@ We use a layered architecture, platform-specific issues are avoided using
 PhoneGap as a platform-independent layer above the operating system. Following
 is a detailed description of each layer, starting at the bottom.
 
-The app will be shipped with auto-complete data downloaded from Artsdatabanken's
-web services to allow for convenient typing in offline mode. It will also
-communicate directly with Arts
+The app will be shipped with auto-complete data (primarily species names)
+downloaded from Artsdatabanken's web services to allow for convenient typing in
+offline mode. It will also be prepared to communicate directly with
+Artsdatabanken's web services with the purpose of uploading observations and
+downloading species information (for the prototype we will use a communication
+format specified by Artsdatabanken, the actual communication will not be
+prioritized as the API for uploading observations is not yet available).
 
 \subsection{Layer 1 - Native platform}
 
