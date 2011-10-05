@@ -90,10 +90,11 @@ function populateObservationList() {
 			return;
 		}
 		for(i = 0; i < results.rows.length; i++){
+			item = results.rows.item(i)
 			htmlstring =  '<li>';
-			htmlstring += '<a href="">';
-			htmlstring += '<h3>' + results.rows.item(i).species + '</h3>';
-			htmlstring += '<p>' + results.rows.item(i).location + ', ' + results.rows.item(i).date_start + ' ' + results.rows.item(i).time_start + '</p>';
+			htmlstring += '<a href="view-observation.html?id=' + item.observation_id + '&row=' + item.observation_row + '">';
+			htmlstring += '<h3>' + item.species + '</h3>';
+			htmlstring += '<p>' + item.location + ', ' + item.date_start + ' ' + item.time_start + '</p>';
 			htmlstring += '</a></li>';
 			$('#observation_list').append(htmlstring);			
 		}
