@@ -12,7 +12,9 @@ $(document).ready(function(){
 			}
 			testRun = true;
 		};
-		var autocomplete = new Autocomplete(data).callback;
+		var ac = new Autocomplete();
+		ac.suggestions(data);
+		var autocomplete = ac.callback;
 		autocomplete(request, response);
 		ok(testRun);
 	};
@@ -56,146 +58,53 @@ $(document).ready(function(){
 	test("should be able to load data from array", function() {
 		var ac = new Autocomplete();
 		var data = [ "one", "two" ];
-		ac.load(data);
+		ac.suggestions(data);
 		equals(ac.suggestions(), data);
 	});
 	
-	/*
-	 * File access
-	 */
-	
-	asyncTest("should be able to load data from file", function() {
-		expect(4);
-		var ac = new Autocomplete([]);
-		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
-			equals(textStatus, "success");
-			equals(ac.suggestions()[0], "a");
-			equals(ac.suggestions()[1], "b");
-			equals(ac.suggestions()[2], "c");
-			start();
-		}, function(a,b,c) {
-			console.log(c);
-			start();
-		});
-	});
-	
-	asyncTest("should be able to load data from file multiple times", function() {
-		expect(7);
-		var ac = new Autocomplete([]);
-		ac.load("resources/autocomplete/autocomplete.js", function(textStatus) {
-			equals(textStatus, "success");
-			equals(ac.suggestions()[0], "a");
-			equals(ac.suggestions()[1], "b");
-			equals(ac.suggestions()[2], "c");
-			
-			ac.load("resources/autocomplete/autocomplete2.js", function(textStatus) {
-				equals(textStatus, "success");
-				equals(ac.suggestions()[0], "test");
-				equals(ac.suggestions()[1], "testie");
-				start();
-			});
-		});
-	});
-	
-	asyncTest("should load data from file if constructed with string", function() {
-		expect(4);
-		var ac = new Autocomplete("resources/autocomplete/autocomplete.js", function(textStatus) {
-			equals(textStatus, "success");
-			equals(ac.suggestions()[0], "a");
-			equals(ac.suggestions()[1], "b");
-			equals(ac.suggestions()[2], "c");
-			start();
-		});
-	});
-	
-	test("should regard files not ending with index.js as regular data", function() {
-		var ac = new Autocomplete();
-		ok(ac.isMetafile("test") == false);
-	});
-	
-	test("should regard files ending with index.js as meta data", function() {
-		ok(new Autocomplete().isMetafile("index.js"));
-		ok(new Autocomplete().isMetafile("22/index.js"));
-		ok(new Autocomplete().isMetafile("data/22/index.js"));
-	});
-	
-	asyncTest("should load metadata if filename ends with index.js", function() {
+	asyncTest("should load data from file when constructed with string", function() {
 		expect(3);
-		var ac = new Autocomplete("resources/autocomplete/32/index.js", function(textStatus) {
-			equals(textStatus, "success");
-			equals(ac.prefixFile("a"), "a.json");
-			equals(ac.prefixFile("bee"), "b.json");
-			start();
-		}, function(a,b,c) {
-			console.log(c);
+		var ac = new Autocomplete("resources/autocomplete/autocomplete.js", function(textStatus) {
+			equals(ac.suggestions()[0], "a");
+			equals(ac.suggestions()[1], "b");
+			equals(ac.suggestions()[2], "c");
 			start();
 		});
 	});
 	
-	test("should consider prefix specifications like d|e|f as d or e or f", function() {
+	test("should be able to determine if term can be completed with current prefix", function() {
 		var ac = new Autocomplete();
-		ac.prefixMap([
-    		[ "d|e|f", "d_e_f.json"]
-    	]);
-		equals(ac.prefixFile("det"), "d_e_f.json");
-		equals(ac.prefixFile("ee"), "d_e_f.json");
-		equals(ac.prefixFile("f"), "d_e_f.json");
-		equals(ac.prefixFile("r"), undefined);
+		ok(ac.prefixMatch("ar"));
+		ok(ac.prefixMatch("hei"));
+		ok(ac.prefixMatch("23"));
+		ac.currentPrefix("[c-d]")
+		ok(ac.prefixMatch("Derp"));
+		equals(ac.prefixMatch("arp"), false);
 	});
 	
-	test("should consider prefix specifications like [a-c] as a or b or c", function() {
+	test("should load new prefix file if term can't be matched", function() {
 		var ac = new Autocomplete();
-		ac.prefixMap([
-    		[ "[a-c]", "a-c.json"]
-    	])
-		equals(ac.prefixFile("archie"), "a-c.json");
-		equals(ac.prefixFile("blarg"), "a-c.json");
-		equals(ac.prefixFile("car"), "a-c.json");
-		equals(ac.prefixFile("dar"), undefined);
-	});
-	
-	asyncTest("should set categoryRoot to directory above index.js when loaded", function() {
-		expect(1);
-		var ac = new Autocomplete();
-		ac.load('resources/autocomplete/35/index.js', function() {
-			equals("resources/autocomplete/35", ac.categoryRoot());
-			start();
-		});
-	});
-	
-	asyncTest("should fail gracefully if loading file by category fails", function() {
-		expect(1);
-		var ac = new Autocomplete();
-		ac.categoryFolder = 'resources/autocomplete/35';
-		ac.load('resources/autocomplete/35/index.js', function() {
-			ac.loadByTerm('no', function() {
-			}, function(a, b, c) {
-				ok(true);
-				start();
-			});
-		});
-	});
-	
-	asyncTest("should be able to load file based on prefix", function() {
-		expect(6);
-		var ac = new Autocomplete();
+		ac.currentPrefix("foobar");
+//		expectSuggestion("t", data, expected);
+		ok(false); // TODO Write test..
 		
-		ac.categoryFolder = 'resources/autocomplete/35';
 		ac.load('resources/autocomplete/35/index.js', function() {
-			ac.loadByTerm('aterm', function() {
-				equals(ac.currentPrefix(), '[a-c]');
-				equals(ac.suggestions()[0], 'archie');
-				equals(ac.suggestions()[1], 'berkley');
-				equals(ac.suggestions()[2], 'cab');
-				ac.loadByTerm('ge', function() {
-					equals(ac.suggestions()[0], 'grape');
-					equals(ac.suggestions()[1], 'grep');
+			/*
+			ac.loadByTerm('aterm', function(data) {
+				equals(data.prefix, '[a-c]');
+				equals(data.suggestions[0], 'archie');
+				equals(data.suggestions[1], 'berkley');
+				equals(data.suggestions[2], 'cab');
+				ac.loadByTerm('ge', function(data) {
+					equals(data.suggestions[0], 'grape');
+					equals(data.suggestions[1], 'grep');
 				});
 				start();
 			}, function(a, b, c) {
 				console.log(c);
 				start();
 			});
+			*/
 		});
 	});
 });

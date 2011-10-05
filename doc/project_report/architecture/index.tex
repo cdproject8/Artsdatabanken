@@ -1,25 +1,25 @@
-\section{Architecture}
+\section{System architecture}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=1.0\textwidth]{architecture/architecture.png}
-	\caption{Architecture}
+	\caption{Overall system architecture}
 	\label{fig:architecture}
 \end{figure}
 
-We use a layered architecture, platform-specific issues are avoided using
+We use a layered architecture, platform-specific issues are handled using
 PhoneGap as a platform-independent layer above the operating system. Following
 is a detailed description of each layer, starting at the bottom.
 
-\subsection{Layer 1 - Native operating system}
+\subsection{Layer 1 - Native platform}
 
 This layer represents the native operating system for each device (Android, iOs,
 blackberry, etc.). Services provided by this layer includes data input/output
-operations, geolocation (for some devices), and so on. The operating system is 
+operations, geolocation (for some devices), and so on. The operating system is
 our interface to the hardware.
 
 \subsection{Layer 2 - Cross-platform framework}
 
-Layer 1 provides device independent abstractions for file operations, camera
+Layer 2 provides device independent abstractions for file operations, camera
 access, geolocation, etc. The primary purpose of this layer is to allow us to
 make portable code that can be used on Android, iOs, and other operating systems
 with minimal (or no) changes to the code. PhoneGap provides an HTML5,
@@ -27,15 +27,15 @@ JavaScript, and CSS interface for the layer above.
 
 \subsection{Layer 3 - Mobile app}
 
-Layer 2 is the actual app, this is where our implementation will be placed.
-This layer is split into an internal structure, we use the MVC pattern combined
-with some layering. In addition to the componets shown in the diagram, the
+Layer 3 is the actual app, this is where our implementation will be placed.
+This layer is split into an internal structure where we use the MVC pattern combined
+with some layering. In addition to the components shown in the diagram, the
 jQuery-family of frameworks/utilities is used by model, view and controller.
 
 	\subsubsection{Data access}
 	
 	The data access sub-layer is responsible for all I/O-operations. This is
-	where we access local- and remove storage. The data access layer provides
+	where we access local- and remote storage. The data access layer provides
 	domain centric functions for accessing common data sources. E.g.
 	ObservationDAO is used to store/retrieve observations to/from local storage.
 
@@ -47,12 +47,22 @@ jQuery-family of frameworks/utilities is used by model, view and controller.
 
 	\subsubsection{Controller}
 
-	The controller is responsible coordinating different parts of the system,
+	The controller is responsible for coordinating different parts of the system,
 	like handling (binding) events.
 
 	\subsubsection{View}
 
 	This component represents the graphical user interface, it entails code for
-	generating visual effects, and updating the screen. To save work, we will be
+	generating visual effects, and updating the screen. To save work and reduce potential typing erros, we will be
 	utilizing functionality (like auto-complete, and common mobile UI
 	functionality) from the jQuery-family.
+
+\subsection{Communication}
+
+The app will be shipped with auto-complete data (primarily species names)
+downloaded from Artsdatabanken's web services to allow for convenient typing in
+offline mode. It will also be prepared to communicate directly with
+Artsdatabanken's web services with the purpose of uploading observations and
+downloading species information (for the prototype we will use a communication
+format specified by Artsdatabanken, the actual communication will not be
+prioritized as the API for uploading observations is not yet available).
