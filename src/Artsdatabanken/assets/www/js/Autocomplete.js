@@ -8,11 +8,12 @@
  */
 function Autocomplete(data, success, error) {
 	var me = this;
+	var dao = new AutocompleteDao();
 	
 	var state = {
 		suggestions: [],
 		prefixMap: [],
-		currentPrefix: '',
+		currentPrefix: '[a-z0-9]',
 		categoryRoot: null
 	};
 	
@@ -27,6 +28,11 @@ function Autocomplete(data, success, error) {
 			return res;
 		});
 		response(suggestions);
+	};
+	
+	this.prefixMatch = function(term) {
+		var pattern = new RegExp("^"+state.currentPrefix, "i");
+		return pattern.test(term);
 	};
 	
 	/**
@@ -47,14 +53,6 @@ function Autocomplete(data, success, error) {
 		return state.suggestions;
 	};
 	
-	this.prefixMap = function(data) {
-		if (data != null) {
-			state.prefixMap = data;
-			return me;
-		}
-		return state.suggestions;
-	};
-	
 	this.currentPrefix = function(data) {
 		if (data != null) {
 			state.currentPrefix = data;
@@ -62,29 +60,7 @@ function Autocomplete(data, success, error) {
 		}
 		return state.currentPrefix;
 	};
-	
-	/**
-	 * @param term Search term
-	 * @param setPrefix if true this instance's current prefix is set
-	 * @return Name of file that contains suggestions for term
-	 */
-	this.prefixFile = function(term, setPrefix) {
-		for (var i = 0; i < state.prefixMap.length; i++) {
-			var pattern = new RegExp("^" + state.prefixMap[i][0], "i");
-			if (pattern.test(term)) {
-				if (setPrefix) {
-					state.currentPrefix = state.prefixMap[i][0];
-				}
-				return state.prefixMap[i][1];
-			}
-		}
-	};
-	
-	this.isMetafile = function(filename) {
-		var pattern = /index\.js$/i;
-		return pattern.test(filename);
-	};
-	
+
 	this.categoryRoot = function(filename) {
 		if (filename != null) {
 			state.categoryRoot = filename.substring(0, filename.length - "/index.js".length);
@@ -93,54 +69,18 @@ function Autocomplete(data, success, error) {
 		return state.categoryRoot;
 	};
 	
-	this.loadByTerm = function(term, success, error) {
-		var filename = me.prefixFile(term, true);
-		me.load(filename, success, error);
-	};
-	
-	/**
-	 * @param data Filename or array of autocompletion values
-	 * @param success Called when file has been loaded, argument with "success" if all is OK
-	 * @param error Called if file can't be loaded (see jQuery.ajax())
-	 */
 	this.load = function(data, success, error) {
-		if (data instanceof Array) {
-			state.suggestions = data;
+		dao.load(data, function(data) {
+			me.suggestions(data);
 			if (success instanceof Function) {
-				success("success");
+				success(data);
 			}
-		}
-		else {
-			var cr = me.categoryRoot();
-			if (cr != null) {
-				data = cr + "/" + data;
-			}
-			
-			$.ajax({
-				url: data, 
-				dataType: "script",
-				success: function(fileData, textStatus) {
-					eval(fileData);
-					if (me.isMetafile(data)) {
-						state.prefixMap = autocompleteData();
-						me.categoryRoot(data);
-					}
-					else {
-						state.suggestions = autocompleteData();
-					}
-					if (textStatus == "success") {
-						state.suggestions = autocompleteData();
-					}
- 					if (success instanceof Function) {
-						success(textStatus);
-					}
-				},
-				error: error
-			});
-		}
+		}, error);
 	};
 	
 	// Construct
 	
-	this.load(data, success, error);
+	if (data != null) {
+		me.load(data, success, error);
+	}
 };
