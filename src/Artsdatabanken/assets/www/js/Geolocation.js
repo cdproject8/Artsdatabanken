@@ -1,7 +1,7 @@
 var glPosition = null
 
 var glSuccess = function(position) {
-	gposition = position
+	glPosition = position
 	$("#lat").attr("value", position.coords.latitude)
 	$("#long").attr("value", position.coords.longitude)
 	$("#alt").attr("value", position.coords.altitude)
