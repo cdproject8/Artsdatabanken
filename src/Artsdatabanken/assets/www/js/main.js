@@ -24,7 +24,7 @@ $(document).bind("mobileinit", function() {
 		});
 		$('#obs_bird').live('pageshow',function(event){
 			// update info on the row that was edited in extended info
-			//if (observation.activeExtended != null) observation.updateMainPage();
+			if (observation.activeExtended != null) observation.updateMainPage();
 		});
 		$('#extended_inf').live('pagecreate',function(event){
 			observation.ac.activate(".name");

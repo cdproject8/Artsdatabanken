@@ -23,6 +23,7 @@ function ObsSpec(id){
 		+'	</div>'
 		+'	<a href="extended-inf.html" data-role="button" data-inline="true"'
 		+'		class="ui-btn-right add_info" data-icon="arrow-r">Add More Information</a>'
+		+'	<a href="" data-inline="true" data-role="button" class="delete_entry" data-icon="delete">Delete</a>'
 		+'	<hr />'
 		+'</div>');
 	}

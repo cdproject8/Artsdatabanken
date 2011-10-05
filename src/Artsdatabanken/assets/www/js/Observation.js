@@ -28,23 +28,36 @@ function Observation(){
 			trigg = true;
 			anchor = tar.parent();
 		}
-  		if (trigg && anchor.is(".add_info")) {
+  		if (trigg) {
 			var speciesRow = anchor.parent();
-			var idOfSpeciesRow = speciesRow.attr("id").substr(11);
-			obs.activeExtended = obs.getSpecies(idOfSpeciesRow);
-			//console.log("saved " + obs.activeExtended + " to active extended");
+			var idOfSpeciesRow = speciesRow.attr("id").substr(11)
+  			if (anchor.is(".add_info")) {;
+				obs.activeExtended = obs.getSpecies(idOfSpeciesRow);
 		
-			// Saving values for the row in the objects.
-			// .change() event did not always trigger for autocomplete etc.
-			var nameInput = $(":input[id=spec-name]", speciesRow);
-			if (nameInput == null) nameInput = " ";
-			var numInput = $(":input[id=spec-number]", speciesRow);
-			if (nameInput == null) nameInput = "1";
-			// console.log(nameInput.val() + numInput.val());
-			obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
-			obs.getSpecies(idOfSpeciesRow).number = numInput.val();
+				// Saving values for the row in the objects.
+				// .change() event did not always trigger for autocomplete etc.
+				var nameInput = $(":input[id=spec-name]", speciesRow);
+				if (nameInput == null) nameInput = " ";
+				var numInput = $(":input[id=spec-number]", speciesRow);
+				if (nameInput == null) nameInput = "1";
+				// console.log(nameInput.val() + numInput.val());
+				obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
+				obs.getSpecies(idOfSpeciesRow).number = numInput.val();
+			}
+			if (anchor.is(".delete_entry")) {
+				if ( confirm("Are you sure you want to delete "+obs.getSpecies(idOfSpeciesRow).sname + "from the observation")) {
+					obs.removeSpecies(idOfSpeciesRow);
+				}
+			}
 		}
    	});
+	
+	this.removeSpecies = function(specnum) {
+		$("#species_row"+specnum).remove();
+		var spec = this.getSpecies(specnum);
+		this.species.splice(this.species.indexOf(spec),1);
+		delete spec;
+	}
 	
 	this.addSpecies = function(newSpec) {	
 		this.species.push(newSpec);
@@ -130,7 +143,7 @@ function Observation(){
 	// not used for now
 	this.updateMainPage = function() {
 		console.log($("#observation_form"));
-		console.log($("#observation_form .species_row" + this.activeExtended.id + " :input[id=spec-name]"));
+		console.log($("#observation_form #species_row" + this.activeExtended.id + " :input[id=spec-name]"));
 		$(".species_row" + this.activeExtended.id + " :input[id=spec-name]").val(this.activeExtended.sname);
 		$(".species_row" + this.activeExtended.id + " :input[id=spec-number]").val(this.activeExtended.number);
 	}
