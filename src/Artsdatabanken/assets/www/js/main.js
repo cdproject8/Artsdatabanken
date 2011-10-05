@@ -27,12 +27,16 @@ $(document).bind("mobileinit", function() {
 			// update info on the row that was edited in extended info
 			if (observation.activeExtended != null) observation.updateMainPage();
 		});
+		$('#submit').live('pagebeforeshow',function(event){
+			storeObservation(observation);
+		});
 		$('#extended_inf').live('pagecreate',function(event){
 			observation.ac.activate(".name");
 			observation.fillExtendedValues();
 		});
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
+			
 		});
 		$('#view_observations').live('pagebeforeshow',function(event){
 			populateObservationList();
