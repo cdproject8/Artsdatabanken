@@ -36,9 +36,9 @@ function Observation(){
 		
 				// Saving values for the row in the objects.
 				// .change() event did not always trigger for autocomplete etc.
-				var nameInput = $(":input[class=ui-input-name-spec]", speciesRow);
+				var nameInput = $(".ui-input-name-spec", speciesRow);
 				if (nameInput == null) nameInput = " ";
-				var numInput = $(":input[class=ui-input-numb-spec]", speciesRow);
+				var numInput = $(".ui-input-numb-spec", speciesRow);
 				if (nameInput == null) nameInput = "1";
 				// console.log(nameInput.val() + numInput.val());
 				obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
@@ -92,9 +92,8 @@ function Observation(){
 	
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtendedValues = function() {
-		// Disabled due to inconsistencies with pageshow event
-		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname).attr("disabled", true);
-		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number).attr("disabled", true);
+		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname);
+		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number);
 		$("#extended_inf :input[id=spec-sex]").val(this.activeExtended.sex);
 		$("#extended_inf :input[id=spec-age]").val(this.activeExtended.age);
 		$("#extended_inf :input[id=spec-activity]").val(this.activeExtended.activity);
@@ -139,13 +138,9 @@ function Observation(){
 		console.log("end saving");
 	}
 	
-	// TODO these DOM elements aren't found to be updated >_>
-	// not used for now
 	this.updateMainPage = function() {
-//		console.log($("#observation_form"));
-//		console.log($("#observation_form #species_row" + this.activeExtended.id + " :input[id=spec-name]"));
-		$("#species_row" + this.activeExtended.id + " :input[class=ui-input-name-spec]").val(this.activeExtended.sname);
-		$("#species_row" + this.activeExtended.id + " :input[class=ui-input-numb-spec]").val(this.activeExtended.number);
+		$("#species_row" + this.activeExtended.id + " .ui-input-name-spec").val(this.activeExtended.sname);
+		$("#species_row" + this.activeExtended.id + " .ui-input-numb-spec").val(this.activeExtended.number);
 	}
 	
 }
