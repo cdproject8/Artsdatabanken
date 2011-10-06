@@ -15,9 +15,15 @@ $(document).bind("mobileinit", function() {
 	// place code here..
 	
 	console.log("mobileinit");
-
-	$(document).ready(function() {
+	document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady() {
+		//PhoneGap ready
 		dbInit();
+	}
+
+	$(document).ready(function() { 
+		//JQuery ready
+		
 		$('#obs_bird').live('pagecreate',function(event){
 		
 			observation = new Observation();
@@ -41,6 +47,10 @@ $(document).bind("mobileinit", function() {
 		$('#view_observations').live('pagebeforeshow',function(event){
 			populateObservationList();
 		});
+		$('#storage_test_page').live('pagebeforeshow',function(event){
+			testStart();
+		});
+		
 	});
 });
 	
