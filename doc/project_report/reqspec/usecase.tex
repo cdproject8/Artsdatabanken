@@ -9,11 +9,16 @@
 \end{figure}
 
 In the following use cases, there is only one actor: the generic user
-\hspace{2em}
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/cno.png}}\\\hline
-	Use Case 1&Create New Observation\\\hline
+
+
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/cno.png}
+		\caption{Create New Observation}
+		\label{fig:cno}
+
+\begin{tabular}{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F1\\\hline
 	Preconditions&User wants to register an observation\\\hline
 	Flow&1. User taps the new observation button\newline
@@ -28,17 +33,23 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Medium\\\hline
 	Priority&High\\\hline
 \end{tabular}
+\end{figure}
 
-\hspace{4em}
+\hspace{2em}
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/addinfo.png}}\\\hline
-	Use Case 2&Add More Information to Species\\\hline
+
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/addinfo.png}
+		\caption{Add More Information to Species}
+		\label{fig:addmore}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F2\\\hline
 	Preconditions&User wants to specify more details about an observation\\\hline
 	Flow& 1. User taps the the species row to bring up the new detail window.\newline
 	2. User selects additional info to enter from such categories as \newline
-	Activity (drop down?) \newline
+	Activity \newline
 	Age\newline
 	Sex\newline
 	Start Date\newline
@@ -64,13 +75,17 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Low\\\hline
 	Priority&High\\\hline
 \end{tabular}
+\end{figure}
 
 \hspace{2em}
 
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/entermore.png}
+		\caption{Add another species to observation}
+		\label{fig:addanother}
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/entermore.png}}\\\hline
-	Use Case 3&Add another species to observation\\\hline
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F3\\\hline
 	Preconditions&User wants to add another species to the observation\\\hline
 	Flow&1. User taps 'Add species' button.\newline
@@ -82,13 +97,18 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Low\\\hline
 	Priority&High\\\hline
 \end{tabular}
+\end{figure}
 
 \hspace{2em}
 
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/export.png}}\\\hline
-	Use Case 4&Export  observations\\\hline
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/export.png}
+		\caption{Export  observations}
+		\label{fig:export}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F4\\\hline
 	Preconditions& User wants to export their observations \\\hline
 	Flow&1. User taps the 'Export' button on the main screen\newline
@@ -99,13 +119,19 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&High\\\hline
 	Priority&Medium\\\hline
 \end{tabular}
+\end{figure}
+
 
 \hspace{2em}
 
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/takepicture.png}}\\\hline
-	Use Case 5&Take picture\\\hline
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/takepicture.png}
+		\caption{Take picture}
+		\label{fig:takepicture}
+
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F5\\\hline
 	Preconditions&User wants to take a picture to be attached to an observation\newline
 	The device has a camera\\\hline
@@ -116,13 +142,19 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Medium\\\hline
 	Priority&Low\\\hline
 \end{tabular}
-	
+\end{figure}
+
+
 \hspace{2em}
 
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/viewobs.png}}\\\hline
-	Use Case 6&View observations\\\hline
+
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/viewobs.png}
+		\caption{View observations}
+		\label{fig:viewobs}
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F6\\\hline
 	Preconditions&User wants to view locally stored observations\\\hline
 	Flow&1. User taps the 'View observations' button.\newline
@@ -132,13 +164,17 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Medium\\\hline
 	Priority&Low\\\hline
 \end{tabular}
+\end{figure}
 
 \hspace{2em}
 
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/editobs.png}}\\\hline
-	Use Case 7&Edit observations\\\hline
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/editobs.png}
+		\caption{Edit observations}
+		\label{fig:editobs}
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F7\\\hline
 	Preconditions&User wants to edit a previously created observations\newline
 	There exists previously made observations\\\hline
@@ -152,13 +188,17 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Low\\\hline
 	Priority&Low\\\hline
 \end{tabular}
+\end{figure}
 
 \hspace{2em}
 
 
-\begin{tabular}[t]{|l|p{0.8\textwidth}|}
-	\multicolumn{2}{c}{\includegraphics[width=0.8\textwidth]{reqspec/uc/viewobs.png}}\\\hline
-	Use Case 8&Update Database\\\hline
+\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{reqspec/uc/viewobs.png}
+		\caption{Update Database}
+		\label{fig:updateobs}
+\begin{tabular}[t]{|l|p{0.8\textwidth}|}\hline
 	Requirement(s)&F8\\\hline
 	Preconditions&User wants to update the database because new species or
 	locations have been added to the website\\\hline
@@ -170,3 +210,4 @@ In the following use cases, there is only one actor: the generic user
 	Complexity&Medium\\\hline
 	Priority&Low\\\hline
 \end{tabular}
+\end{figure}
