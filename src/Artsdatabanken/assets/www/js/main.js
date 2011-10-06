@@ -19,9 +19,12 @@ $(document).bind("mobileinit", function() {
 	function onDeviceReady() {
 		//PhoneGap ready
 		dbInit();
+//		alert('phonegap ready')
 	}
 
 	$(document).ready(function() { 
+		//uncomment to test in chrome
+//		dbInit();
 		//JQuery ready
 		
 		$('#obs_bird').live('pagecreate',function(event){
@@ -46,11 +49,7 @@ $(document).bind("mobileinit", function() {
 		});
 		$('#view_observations').live('pagebeforeshow',function(event){
 			populateObservationList();
-		});
-		$('#storage_test_page').live('pagebeforeshow',function(event){
-			testStart();
-		});
-		
+		});		
 	});
 });
 	
