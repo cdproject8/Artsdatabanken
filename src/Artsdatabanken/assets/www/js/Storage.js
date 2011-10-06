@@ -2,13 +2,8 @@
 var db = null
 
 function dbInit() {
-	db = window.openDatabase("testDB", "0.1", "adb testdb", 1048576);
-	db.transaction(function(tx) {
-//		tx.executeSql('DROP TABLE observations');
-//		tx.executeSql('DROP TABLE test');
-		tx.executeSql('CREATE TABLE IF NOT EXISTS observations (observation_id, observation_row, species, number, location TEXT, sex, age, activity, time_start, time_end, date_start, date_end, comments)');
-		tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
-	}, dbError);
+	db = window.openDatabase("observations", "0.2", "ObservationsDB", 1048576);
+	db.transaction(createDB, dbError);
 	
 	//testdata:
 //	insertObservation(0, 1, 'en fugl', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
@@ -17,6 +12,13 @@ function dbInit() {
 //	insertObservation(1, 2, 'charmander', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
 //	insertObservation(1, 3, 'squirtle', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
 	
+}
+
+function createDB(tx) {
+	tx.executeSql('DROP TABLE IF EXISTS observations');
+	tx.executeSql('DROP TABLE IF EXISTS test');
+	tx.executeSql('CREATE TABLE IF NOT EXISTS observations (observation_id, observation_row, species, number, location TEXT, sex, age, activity, time_start, time_end, date_start, date_end, comments)');
+	tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 }
 
 function dbError(error) {
