@@ -1,5 +1,6 @@
 //GLOBAL VARS
 var observation;
+var observationId;
 
 // Init jQuery mobile
 
@@ -23,8 +24,8 @@ $(document).bind("mobileinit", function() {
 	}
 
 	$(document).ready(function() { 
-		//uncomment to test in chrome
-//		dbInit();
+		//uncomment to test in chrome, comment to test on phone
+		dbInit();
 		//JQuery ready
 		
 		$('#obs_bird').live('pagecreate',function(event){
@@ -47,8 +48,14 @@ $(document).bind("mobileinit", function() {
 			observation.saveExtended();
 			
 		});
-		$('#view_observations').live('pagebeforeshow',function(event){
+		$('#list_observations').live('pagebeforeshow',function(event){
 			populateObservationList();
+		});		
+		$('#view_observation').live('pagebeforeshow',function(event){
+			populateSpeciesList();
+		});		
+		$('#view_species').live('pagebeforeshow',function(event){
+			viewSpecies();
 		});		
 	});
 });
@@ -75,3 +82,21 @@ function add_species(){
 	
 	observation.newSpecies();
 }
+
+//this code is stolen and probably temporary if i find a better solution
+$.extend({
+	  getUrlVars: function(){
+	    var vars = [], hash;
+	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+	    for(var i = 0; i < hashes.length; i++)
+	    {
+	      hash = hashes[i].split('=');
+	      vars.push(hash[0]);
+	      vars[hash[0]] = hash[1];
+	    }
+	    return vars;
+	  },
+	  getUrlVar: function(name){
+	    return $.getUrlVars()[name];
+	  }
+});

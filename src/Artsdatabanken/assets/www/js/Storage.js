@@ -113,7 +113,7 @@ function populateObservationList() {
 		function htmlstr(id, species) {
 
 			htmlstring =  '<li>';
-			htmlstring += '<a href="view-observation.html?id=' + 0 + '&row=' + 0 + '">';
+			htmlstring += '<a href="view-observation.html?id=' + id + '">';
 			htmlstring += '<h3>Observation ' + id + '</h3>';
 			htmlstring += '<p>' + species + '</p>';
 			htmlstring += '</a></li>';
@@ -121,6 +121,44 @@ function populateObservationList() {
 		}
 	});
 }
+function populateSpeciesList() {
+	var obsId = $.getUrlVar('id');
+	$('#species_list_header').append('Observation ' + obsId);
+	executeQuery('SELECT species, number, observation_id, spcid FROM species WHERE observation_id=' + obsId, function(tx, results) {
+		for(i = 0; i < results.rows.length; i++) {
+			var item = results.rows.item(i);
+			htmlstring =  '<li>';
+			htmlstring += '<a href="view-species.html?id=' + item.observation_id + '&row=' + item.spcid + '">';
+			htmlstring += '<h3>' + item.species + '</h3>';
+			htmlstring += '<p>' + item.number + '</p>';
+			htmlstring += '</a></li>';
+			$('#species_list').append(htmlstring);
+		}
+		$("#species_list").listview("refresh");
+	});
+}
+
+function viewSpecies() {
+	var obsId = $.getUrlVar('id');
+	var spcId = $.getUrlVar('row');
+	executeQuery('SELECT * FROM species WHERE spcid=' + spcId, function(tx, results) {
+		var item = results.rows.item(0);
+		console.log(item);
+		htmlstring =  '<p>';
+		htmlstring += 'Species: ' + item.species + '</p>';
+		htmlstring += '<p>Number: ' + item.number + '</p>';
+		htmlstring += '<p>Sex: ' + item.sex + '</p>';
+		htmlstring += '<p>Age: ' + item.age + '</p>';
+		htmlstring += '<p>Activity: ' + item.activity + '</p>';
+		htmlstring += '<p>Date start: ' + item.date_start + '</p>';
+		htmlstring += '<p>Date end: ' + item.date_end + '</p>';
+		htmlstring += '<p>Comment: ' + item.comment + '</p>';
+
+		$('#view_species_header').append(item.species)
+		$('#view_species_content').append(htmlstring);
+	});
+}
+
 //function populateObservationList() {
 //	executeQuery('SELECT * FROM observations', function(tx, results) {
 //		if(results.rows.length == 0) {
