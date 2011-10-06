@@ -7,23 +7,22 @@ placed as late in the body as possible. \cite{crockford:code}
 
 \paragraph{Line length and indentation} \hspace{1mm}
 
-Use tabs for indentation. 
-
+Tabs should be used for indentation.
 Lines should not be longer than 80 characters.
 
 \paragraph{Comments and variable names} \hspace{1mm}
 
-Keep comments at a minimum, they are disruptive to the code and
-usually outdated. Write good code instead. Comments can be used to
+Comments should be kept at a minimum. They are disruptive to the code and
+usually outdated. Focus should be on writing good code instead of writing comments. Comments can be used to
 clarify code that is not self-explanatory or to warn about issues like
-framework bugs or weak code. Keep in mind that the code should already
-be documented by tests you wrote before you implemented the feature.
+framework bugs or weak code. All developers should have on mind that the code should already
+be documented by written tests, before implementing the feature.
 
-Variables should have descriptive names. Try to find good names before
+Variables should have descriptive names. It is better to try to find good names before
 resorting to comments.
 
-To indicate that a variable refers to jQuery objects people sometimes
-prefix it with \$, do not use this convention, it makes it hard to
+To indicate that a variable refers to jQuery objects developers sometimes
+prefix it with \$. This team will not use this convention, it makes it hard to
 spot actual jQuery calls.
 
 \paragraph{Declarations} \hspace{1mm}
@@ -42,7 +41,7 @@ Functions should be declared as follows:
 	}
 \end{lstlisting}
 
-Never place a space between the function name and the first parenthesis.
+Space should never be placed between the function name and the first parenthesis.
 
 \paragraph{Statements} \hspace{1mm}
 
