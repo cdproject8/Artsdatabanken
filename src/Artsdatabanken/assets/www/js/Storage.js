@@ -4,14 +4,6 @@ var db = null
 function dbInit() {
 	db = window.openDatabase("observations", "0.2", "ObservationsDB", 1048576);
 	db.transaction(createDB, dbError);
-	
-	//testdata: //nevermind! old.
-//	insertObservation(0, 0, 'en fugl', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(0, 1, 'en fisk', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 0, 'pikachu', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 1, 'charmander', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 2, 'squirtle', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	
 }
 
 function createDB(tx) {
@@ -27,7 +19,7 @@ function dbError(error) {
 	alert('Error: ' + error.message);
 }
 
-var dbSuccess = function(tx, results) {
+function dbSuccess(tx, results) {
 
 //	alert('success?');
 }
@@ -55,7 +47,7 @@ function executeQuery(q, success) {
 	}
 
 	function qError(error) {
-		alert(error.message + ', ' + error);
+		alert(error.message + ', ' + error.code);
 	}
 	
 	db.transaction(query, dbError, dbSuccess);
@@ -144,18 +136,33 @@ function viewSpecies() {
 	executeQuery('SELECT * FROM species WHERE spcid=' + spcId, function(tx, results) {
 		var item = results.rows.item(0);
 		console.log(item);
-		htmlstring =  '<p>';
-		htmlstring += 'Species: ' + item.species + '</p>';
-		htmlstring += '<p>Number: ' + item.number + '</p>';
-		htmlstring += '<p>Sex: ' + item.sex + '</p>';
-		htmlstring += '<p>Age: ' + item.age + '</p>';
-		htmlstring += '<p>Activity: ' + item.activity + '</p>';
-		htmlstring += '<p>Date start: ' + item.date_start + '</p>';
-		htmlstring += '<p>Date end: ' + item.date_end + '</p>';
-		htmlstring += '<p>Comment: ' + item.comment + '</p>';
+		$("#spv-name").val(item.species);
+		$("#spv-number").val(item.number);
+		$("#spv-sex").val(item.sex);
+		console.log(item.sex)
+		$("#spv-age").val(item.age);
+		$("#spv-activity").val(item.activity);
+		$("#spv-date_start").val(item.date_start);
+		$("#spv-date_end").val(item.date_end);
+		$("#spv-comment").val(item.comment);
 
 		$('#view_species_header').append(item.species)
-		$('#view_species_content').append(htmlstring);
+	});
+}
+
+function updateSpecies() {
+	q = 'UPDATE species SET';
+	q += ' species="' + $("#spv-name").val() + '"';
+	q += ' number="' + $("#spv-spv-number").val() + '"';
+	q += ' sex="' + $("#spv-sex").val() + '"';
+	q += ' age="' + $("#spv-age").val() + '"';
+	q += ' activity="' + $("#spv-activity").val() + '"';
+	q += ' date_start="' + $("#spv-date_start").val() + '"';
+	q += ' date_end="' + $("#spv-date_end").val() + '"';
+	q += ' comment="' + $("#spv-comment").val() + '"';
+	q += ' WHERE spcid=' + $.getUrlVar('row');
+	executeQuery(q, function(tx, results) {
+		alert('updated!')
 	});
 }
 
