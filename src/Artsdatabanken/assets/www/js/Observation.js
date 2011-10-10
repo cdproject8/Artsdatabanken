@@ -66,10 +66,7 @@ function Observation(){
 	this.newSpecies = function() {
 		newSpec = new ObsSpec(this.newId());
 		this.species.push(newSpec);
-		//Adding the html to the DOM and triggering the jquerymobile to style it
-		$('#observation_form').append(newSpec.speciesListHtml().trigger('create'));
-   		//Adding autocomplete to the namefield
-		this.ac.activate("#species_row"+newSpec.id +" .ui-input-name-spec");
+		newSpec.addHTML();
 	}
 	
 	// Added this instead of just length for use later when you're able to 
