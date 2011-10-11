@@ -1,4 +1,4 @@
-function Observation(){
+function Observation(specGroupId){
 
 	//pointer for jquery functions
 	var obs = this;
@@ -11,6 +11,7 @@ function Observation(){
 	this.activeExtended;
 
 	// TODO make autocomplete loading dynamic for each species group
+	// this.ac = new Autocomplete("data/autocomplete/"+specGroupId+"/index.js");
 	this.ac = new Autocomplete("data/autocomplete/91.jsonp");	
 	
 	// Set activeExtended to the species_row selected when clicking "Add More Information" button
