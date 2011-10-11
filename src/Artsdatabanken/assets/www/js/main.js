@@ -38,7 +38,7 @@ $(document).bind("mobileinit", function() {
 			storeObservation(observation);
 		});
 		$('#extended_inf').live('pagecreate',function(event){
-			observation.ac.activate(".name");
+			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
 			observation.fillExtendedValues();
 		});
 		$('#extended_inf').live('pagebeforehide',function(event){

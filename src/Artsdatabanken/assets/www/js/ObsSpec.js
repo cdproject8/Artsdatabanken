@@ -34,6 +34,6 @@ function ObsSpec(id){
 		//Adding the html to the DOM and triggering the jquerymobile to style it
 		$('#observation_form').append(this.speciesListHtml().trigger('create'));
    		//Adding autocomplete to the namefield
-		observation.ac.activate("#species_row"+this.id +" .ui-input-name-spec");
+		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile})
 	}
 }

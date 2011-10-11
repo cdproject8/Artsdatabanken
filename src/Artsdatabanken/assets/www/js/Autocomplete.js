@@ -90,3 +90,11 @@ function Autocomplete(data, success, error) {
 		me.load(data, success, error);
 	}
 };
+
+(function($) {
+	$.fn.speciesAutocomplete = function(options) {
+		var ac = new Autocomplete(options.data, options.success, options.error);
+		ac.activate(this);
+		return this;
+	};
+}(jQuery));
