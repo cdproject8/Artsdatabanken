@@ -1,9 +1,6 @@
 /**
  * Autocomplete.load(data, success, error) is run during initialization.
  * 
- * @todo Separate data access into DAO class
- * @todo Read new file if prefix is missing (in callback function)
- * 
  * @returns {Autocomplete}
  */
 function Autocomplete(data, success, error) {
@@ -12,12 +9,31 @@ function Autocomplete(data, success, error) {
 	
 	var state = {
 		suggestions: [],
-		prefixMap: [],
-		currentPrefix: '[a-z0-9]',
 		categoryRoot: null
 	};
 	
 	this.callback = function(request, response) {
+		if (!dao.prefixMatch(request.term, dao.currentPrefix())) {
+			$(dao.prefixMap()).each(function() {
+				if (dao.prefixMatch(request.term, this[0])) {
+					dao.loadByTerm(request.term, function(data) {
+							me.suggestions(data.suggestions);
+							state.prefix = data.prefix;
+							me.callbackWithoutFileLoading(request, response);
+						},
+						function() {
+							me.callbackWithoutFileLoading(request, response);
+						}
+					);
+				}
+			});
+		}
+		else {
+			me.callbackWithoutFileLoading(request, response);
+		}
+	};
+	
+	this.callbackWithoutFileLoading = function(request, response) {
 		var currentText = $.ui.autocomplete.escapeRegex(request.term);
 		var matcher = new RegExp( "^" + currentText, "i" );
 		var count = 0;
@@ -28,11 +44,6 @@ function Autocomplete(data, success, error) {
 			return res;
 		});
 		response(suggestions);
-	};
-	
-	this.prefixMatch = function(term) {
-		var pattern = new RegExp("^"+state.currentPrefix, "i");
-		return pattern.test(term);
 	};
 	
 	/**
@@ -52,14 +63,6 @@ function Autocomplete(data, success, error) {
 		};
 		return state.suggestions;
 	};
-	
-	this.currentPrefix = function(data) {
-		if (data != null) {
-			state.currentPrefix = data;
-			return me;
-		}
-		return state.currentPrefix;
-	};
 
 	this.categoryRoot = function(filename) {
 		if (filename != null) {
@@ -69,9 +72,17 @@ function Autocomplete(data, success, error) {
 		return state.categoryRoot;
 	};
 	
-	this.load = function(data, success, error) {
-		dao.load(data, function(data) {
+	this.load = function(inData, success, error) {
+		if (inData instanceof Array) {
+			this.suggestions(data);
+			return;
+		}
+		
+		dao.load(inData, function(data) {
 			me.suggestions(data);
+			if (dao.isMetafile(inData)) {
+				dao.currentPrefix("$");
+			}
 			if (success instanceof Function) {
 				success(data);
 			}
@@ -84,3 +95,17 @@ function Autocomplete(data, success, error) {
 		me.load(data, success, error);
 	}
 };
+
+(function($) {
+	$.fn.speciesAutocomplete = function(optionsArg) {
+		var options = {
+			data: [ ], // Array or filename
+			success: function(data) {},
+			error: function(data) {},
+		};
+		$.extend(options, optionsArg);
+		var ac = new Autocomplete(options.data, options.success, options.error);
+		ac.activate(this);
+		return this;
+	};
+}(jQuery));

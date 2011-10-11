@@ -10,6 +10,8 @@ function ObsSpec(id){
 	this.comment = " ";
 	this.picture = " ";
 
+
+	// the html for the observation list
 	this.speciesListHtml = function(){
 		return $(
 		 '<div class="species_row" id="species_row'+this.id+'">'
@@ -32,9 +34,6 @@ function ObsSpec(id){
 		//Adding the html to the DOM and triggering the jquerymobile to style it
 		$('#observation_form').append(this.speciesListHtml().trigger('create'));
    		//Adding autocomplete to the namefield
-		observation.ac.activate("#species_row"+newSpec.id +" .ui-input-name-spec");
-	}
-	
-	this.extended = function() {
+		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile})
 	}
 }

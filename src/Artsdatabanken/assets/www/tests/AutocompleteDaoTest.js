@@ -124,4 +124,14 @@ $(document).ready(function(){
 			});
 		});
 	});
+	
+	test("should be able to determine if term can be completed with current prefix", function() {
+		var ac = new AutocompleteDao();
+		ok(ac.prefixMatch("ar"));
+		ok(ac.prefixMatch("hei"));
+		ok(ac.prefixMatch("23"));
+		ac.currentPrefix("[c-d]")
+		ok(ac.prefixMatch("Derp"));
+		equals(ac.prefixMatch("arp"), false);
+	});
 });

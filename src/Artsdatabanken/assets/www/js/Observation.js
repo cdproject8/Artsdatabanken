@@ -1,5 +1,6 @@
-function Observation(){
+function Observation(specGroupId){
 
+	//pointer for jquery functions
 	var obs = this;
 	
 	this.species = new Array();
@@ -10,9 +11,10 @@ function Observation(){
 	this.activeExtended;
 
 	// TODO make autocomplete loading dynamic for each species group
-	this.ac = new Autocomplete("data/autocomplete/91.jsonp");	
+	this.autocompleteFile = "data/autocomplete/89/index.js";
 	
 	// Set activeExtended to the species_row selected when clicking "Add More Information" button
+	// TODO save this information on other events than just editing it's extended information
  	$('#observation_form').click(function(e) {
   		var tar = $(e.target);
   		//console.log(tar);
@@ -64,8 +66,13 @@ function Observation(){
 	}
 	
 	this.newSpecies = function() {
-		newSpec = new ObsSpec(this.newId());
+		var prevSpec = this.species[this.len()-1];
+		var newSpec = new ObsSpec(this.newId());
 		this.species.push(newSpec);
+		if (this.len() > 1) {
+			newSpec.date_start.setTime(prevSpec.date_start.getTime());
+			newSpec.date_end.setTime(prevSpec.date_end.getTime());
+		}
 		newSpec.addHTML();
 	}
 	
@@ -115,20 +122,20 @@ function Observation(){
 		var ts = $("#extended_inf :input[id=spec-time_start]").val();
 		if (ds != null) {
 			if (ts != null) {
-				this.activeExtended.date_start = new Date(ds.substr(0,2), ds.substr(5,2), ds.substr(8,2), ts.substr(0,2), ts.substr(3,2));
+				this.activeExtended.date_start = new Date(ds.substr(0,4), ds.substr(5,2)-1, ds.substr(8,2), ts.substr(0,2), ts.substr(3,2));
 			}
 			else {
-				this.activeExtended.date_start = new Date(ds.substr(0,4),ds.substr(5,2),ds.substr(8,2));
+				this.activeExtended.date_start = new Date(ds.substr(0,4), ds.substr(5,2)-1, ds.substr(8,2));
 			}
 		}		
 		var de = $("#extended_inf :input[id=spec-date_end]").val();
 		var te = $("#extended_inf :input[id=spec-time_end]").val();
 		if (de != null) {
 			if (te != null) {
-				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2), de.substr(8,2), te.substr(0,2), te.substr(3,2));
+				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2)-1, de.substr(8,2), te.substr(0,2), te.substr(3,2));
 			}
 			else {
-				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2), de.substr(8,2));
+				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2)-1, de.substr(8,2));
 			}
 		}
 		this.activeExtended.comment = $("#extended_inf :input[id=spec-comment]").val();

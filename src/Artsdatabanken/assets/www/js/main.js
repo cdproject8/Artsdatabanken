@@ -1,4 +1,5 @@
 //GLOBAL VARS
+var specGroupId;
 var observation;
 var observationId;
 
@@ -24,12 +25,12 @@ $(document).bind("mobileinit", function() {
 
 		//JQuery ready
 		
-		$('#obs_bird').live('pagecreate',function(event){
+		$('#observation').live('pagecreate',function(event){
 		
-			observation = new Observation();
+			observation = new Observation(specGroupId);
 			observation.newSpecies();
 		});
-		$('#obs_bird').live('pageshow',function(event){
+		$('#observation').live('pageshow',function(event){
 			// update info on the row that was edited in extended info
 			if (observation.activeExtended != null) observation.updateMainPage();
 		});
@@ -37,7 +38,7 @@ $(document).bind("mobileinit", function() {
 			storeObservation(observation);
 		});
 		$('#extended_inf').live('pagecreate',function(event){
-			observation.ac.activate(".name");
+			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
 			observation.fillExtendedValues();
 		});
 		$('#extended_inf').live('pagebeforehide',function(event){
