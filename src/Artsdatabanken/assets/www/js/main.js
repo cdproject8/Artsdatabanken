@@ -16,16 +16,12 @@ $(document).bind("mobileinit", function() {
 	// place code here..
 	
 	console.log("mobileinit");
-	document.addEventListener("deviceready", onDeviceReady, false);
-	function onDeviceReady() {
-		//PhoneGap ready
-		dbInit();
-//		alert('phonegap ready')
-	}
+
 
 	$(document).ready(function() { 
-		//uncomment to test in chrome, comment to test on phone
-		dbInit();
+
+		dbInit();			
+
 		//JQuery ready
 		
 		$('#obs_bird').live('pagecreate',function(event){
@@ -64,6 +60,9 @@ $(document).bind("mobileinit", function() {
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
+	//PhoneGap ready
+	dbInit();
+//	alert('phonegap ready')
 }
 
 function zero_pad(number, len) {

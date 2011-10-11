@@ -3,38 +3,26 @@ var db = null
 
 function dbInit() {
 	db = window.openDatabase("observations", "0.2", "ObservationsDB", 1048576);
-	db.transaction(createDB, dbError);
-	
-	//testdata: //nevermind! old.
-//	insertObservation(0, 0, 'en fugl', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(0, 1, 'en fisk', 3, 'artsdatabankens hage', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 0, 'pikachu', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 1, 'charmander', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-//	insertObservation(1, 2, 'squirtle', 3, 'nidar\u00F8', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	
-}
-
-function createDB(tx) {
-//	tx.executeSql('DROP TABLE IF EXISTS observations');
-//	tx.executeSql('DROP TABLE IF EXISTS species');
-//	tx.executeSql('DROP TABLE IF EXISTS test');
-	tx.executeSql('CREATE TABLE IF NOT EXISTS observations (obsid INTEGER PRIMARY KEY AUTOINCREMENT, location)');	
-	tx.executeSql('CREATE TABLE IF NOT EXISTS species (spcid INTEGER PRIMARY KEY AUTOINCREMENT, observation_id, species, number, sex, age, activity, time_start, time_end, date_start, date_end, comments)');	
-	tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
+	db.transaction(function(tx) {
+		tx.executeSql('CREATE TABLE IF NOT EXISTS observations (obsid INTEGER PRIMARY KEY AUTOINCREMENT, location)');	
+		tx.executeSql('CREATE TABLE IF NOT EXISTS species (spcid INTEGER PRIMARY KEY AUTOINCREMENT, observation_id, species, number, sex, age, activity, time_start INTEGER, time_end INTEGER, comments)');	
+		tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
+		
+	}, dbError);
 }
 
 function dbError(error) {
 	alert('Error: ' + error.message);
 }
 
-var dbSuccess = function(tx, results) {
+function dbSuccess(tx, results) {
 
 //	alert('success?');
 }
 
 function executeQuery(q) {
 	function query(tx) {
-		tx.executeSql(q, [], qSuccess, qError);
+		tx.executeSql(q, [], qSuccess, dbError);
 	}
 	
 	function qSuccess(tx, results) {
@@ -51,29 +39,28 @@ function executeQuery(q) {
 
 function executeQuery(q, success) {
 	function query(tx) {
-		tx.executeSql(q, [], success, qError);
+		tx.executeSql(q, [], success,dbError);
 	}
 
 	function qError(error) {
-		alert(error.message + ', ' + error);
+		console.log(error)
+		alert(error.message + ', ' + error.code);
 	}
 	
 	db.transaction(query, dbError, dbSuccess);
 	console.log(q);
 }
 
-function insertSpecies(observation_id, species, number, sex, age, activity, time_start, time_end, date_start, date_end, comments) {
+function insertSpecies(observation_id, species, number, sex, age, activity, time_start, time_end, comments) {
 	var v = '';
 	v += observation_id + ', "';
 	v += species + '", "';
 	v += number + '", "';
 	v += sex + '", "';
 	v += age + '", "';
-	v += activity + '", "';
-	v += time_start + '", "';
-	v += time_end + '", "';
-	v += date_start + '", "';
-	v += date_end + '", "';
+	v += activity + '", ';
+	v += time_start + ', ';
+	v += time_end + ', "';
 	v += comments + '"';
 	executeQuery('INSERT INTO species VALUES (NULL,' + v + ')');
 }
@@ -144,18 +131,36 @@ function viewSpecies() {
 	executeQuery('SELECT * FROM species WHERE spcid=' + spcId, function(tx, results) {
 		var item = results.rows.item(0);
 		console.log(item);
-		htmlstring =  '<p>';
-		htmlstring += 'Species: ' + item.species + '</p>';
-		htmlstring += '<p>Number: ' + item.number + '</p>';
-		htmlstring += '<p>Sex: ' + item.sex + '</p>';
-		htmlstring += '<p>Age: ' + item.age + '</p>';
-		htmlstring += '<p>Activity: ' + item.activity + '</p>';
-		htmlstring += '<p>Date start: ' + item.date_start + '</p>';
-		htmlstring += '<p>Date end: ' + item.date_end + '</p>';
-		htmlstring += '<p>Comment: ' + item.comment + '</p>';
+		$("#spv-name").val(item.species);
+		$("#spv-number").val(item.number);
+		$("#spv-sex").val(item.sex);
+		$("#spv-age").val(item.age);
+		$("#spv-activity").val(item.activity);
+		var ds = new Date(item.time_start)
+		$("#spv-date_start").val(ds.getFullYear() + "-" + zero_pad(ds.getMonth()+1,2) + "-" + zero_pad(ds.getDate(),2));
+		$("#spv-time_start").val(zero_pad(ds.getHours(),2) + ":" + zero_pad(ds.getMinutes(),2) );
+		var de = new Date(item.time_end)
+		$("#spv-date_end").val(de.getFullYear() + "-" + zero_pad(de.getMonth()+1,2) + "-" + zero_pad(de.getDate(),2));
+		$("#spv-time_end").val(zero_pad(de.getHours(),2) + ":" + zero_pad(de.getMinutes(),2) );
+		$("#spv-comment").val(item.comments);
 
 		$('#view_species_header').append(item.species)
-		$('#view_species_content').append(htmlstring);
+	});
+}
+
+function updateSpecies() {
+	q = 'UPDATE species SET'
+	+ ' species="' + $("#spv-name").val() + '",'
+	+ ' number="' + $("#spv-number").val() + '",'
+	+ ' sex="' + $("#spv-sex").val() + '",'
+	+ ' age="' + $("#spv-age").val() + '",'
+	+ ' activity="' + $("#spv-activity").val() + '",'
+	+ ' time_start="' + $("#spv-date_start").val() + '",'
+	+ ' time_end="' + $("#spv-date_end").val() + '",'
+	+ ' comments="' + $("#spv-comment").val() + '"'
+	+ ' WHERE spcid=' + $.getUrlVar('row');
+	executeQuery(q, function(tx, results) {
+		alert('Saved!')
 	});
 }
 
@@ -199,15 +204,14 @@ function storeObservation(obs) {
 		obsId = results.rows.length+1
 		insertObservation('"location here"');
 		for(i = 0; i < obs.species.length; i++) {
-			insertSpecies(obsId, obs.species[i].sname, obs.species[i].number, obs.species[i].sex, obs.species[i].age, obs.species[i].activity, 0, 0, obs.species[i].date_start, obs.species[i].date_end, obs.species[i].comment)		
+			insertSpecies(obsId, obs.species[i].sname, obs.species[i].number, obs.species[i].sex, obs.species[i].age, obs.species[i].activity, obs.species[i].date_start.getTime(), obs.species[i].date_end.getTime(), obs.species[i].comment)		
 		}
 	})
 }
 function testWrite() {
 	string = $("#testwrite").val();
 	executeQuery('INSERT INTO test VALUES ("' + string + '")');
-	insertObservation(0, 1, 'en fugl', 3, 'nidarø', 'F', 3, 'spiser', 12356543, 23479879, 783947, 73894789, 'hallo');
-	updateObservation(0, 1, 'species', '"en fisk"');
+	insertSpecies(1, "hallo", 3, "male", 3, "nourish", 123123, 123123, "hallo");
 
 }
 
@@ -226,4 +230,10 @@ function testClear(){
 	executeQuery('DELETE FROM test');
 	executeQuery('DELETE FROM observations');
 	executeQuery('DELETE FROM species');
+}
+
+function testDrop() {
+	executeQuery('DROP TABLE IF EXISTS observations');
+	executeQuery('DROP TABLE IF EXISTS species');
+	executeQuery('DROP TABLE IF EXISTS test');
 }
