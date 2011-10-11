@@ -7,10 +7,10 @@
 			<h1>Observasjon</h1>
 		</div>
 		<div data-role="content" data-theme="z">
-			<form id="observation_form" action="form.html" method="post">
+			<form id="observation_form" action="form.html" onsubmit="return false;" data-ajax="false" method="post">
 				<div data-role="fieldcontain">
-					<label for="location">Location</label> <select name="location"
-						id="location">
+					<label for="location">Location</label>
+					<select name="location"	id="location">
 						<option value="nide0">Niderø</option>
 						<option value="nide1">-Artsdatabankens Hage</option>
 						<option value="nide2">-Niderø nord</option>
