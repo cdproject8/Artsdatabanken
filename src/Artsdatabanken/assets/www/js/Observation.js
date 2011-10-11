@@ -1,4 +1,4 @@
-function Observation(){
+function Observation(specGroupId){
 
 	//pointer for jquery functions
 	var obs = this;

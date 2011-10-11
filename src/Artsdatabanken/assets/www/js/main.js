@@ -1,4 +1,5 @@
 //GLOBAL VARS
+var specGroupId;
 var observation;
 var observationId;
 
@@ -26,7 +27,7 @@ $(document).bind("mobileinit", function() {
 		
 		$('#obs_bird').live('pagecreate',function(event){
 		
-			observation = new Observation();
+			observation = new Observation(specGroupId);
 			observation.newSpecies();
 		});
 		$('#obs_bird').live('pageshow',function(event){
