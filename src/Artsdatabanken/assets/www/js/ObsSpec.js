@@ -1,4 +1,4 @@
-function ObsSpec(id){
+function ObsSpec(id, observation){
 	this.id = zero_pad(id,3);
 	this.sname = "s";
 	this.number = 1;
@@ -9,7 +9,6 @@ function ObsSpec(id){
 	this.date_end = new Date();
 	this.comment = " ";
 	this.picture = " ";
-
 
 	// the html for the observation list
 	this.speciesListHtml = function(){

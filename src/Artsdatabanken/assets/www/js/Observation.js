@@ -67,7 +67,7 @@ function Observation(specGroupId){
 	
 	this.newSpecies = function() {
 		var prevSpec = this.species[this.len()-1];
-		var newSpec = new ObsSpec(this.newId());
+		var newSpec = new ObsSpec(this.newId(), this);
 		this.species.push(newSpec);
 		if (this.len() > 1) {
 			newSpec.date_start.setTime(prevSpec.date_start.getTime());
