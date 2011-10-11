@@ -155,13 +155,18 @@ function updateSpecies() {
 	+ ' sex="' + $("#spv-sex").val() + '",'
 	+ ' age="' + $("#spv-age").val() + '",'
 	+ ' activity="' + $("#spv-activity").val() + '",'
-	+ ' time_start="' + $("#spv-date_start").val() + '",'
-	+ ' time_end="' + $("#spv-date_end").val() + '",'
+	+ ' time_start="' + timestamp($("#spv-date_start").val(),$("#spv-time_start").val()) + '",'
+	+ ' time_end="' + timestamp($("#spv-date_end").val(),$("#spv-time_end").val()) + '",'
 	+ ' comments="' + $("#spv-comment").val() + '"'
 	+ ' WHERE spcid=' + $.getUrlVar('row');
 	executeQuery(q, function(tx, results) {
 		alert('Saved!')
 	});
+}
+
+function timestamp(date, time) {
+	d = new Date(date.substr(0,4), date.substr(5,2)-1, date.substr(8,2), time.substr(0,2), time.substr(3,2));
+	return d.getTime();
 }
 
 //function populateObservationList() {
