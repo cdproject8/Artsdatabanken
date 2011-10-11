@@ -1,9 +1,6 @@
 /**
  * Autocomplete.load(data, success, error) is run during initialization.
  * 
- * @todo Separate data access into DAO class
- * @todo Read new file if prefix is missing (in callback function)
- * 
  * @returns {Autocomplete}
  */
 function Autocomplete(data, success, error) {
