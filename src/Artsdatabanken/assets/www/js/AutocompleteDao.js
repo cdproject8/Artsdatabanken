@@ -26,6 +26,7 @@ function AutocompleteDao() {
 				eval(fileData);
 				if (me.isMetafile(data)) {
 					state.prefixMap = autocompleteData();
+					me.prefixMap(state.prefixMap);
 					me.categoryRoot(data);
 					success([]);
 				}
@@ -70,6 +71,6 @@ function AutocompleteDao() {
 			state.prefixMap = data;
 			return me;
 		}
-		return state.suggestions;
+		return state.prefixMap;
 	};
 };
