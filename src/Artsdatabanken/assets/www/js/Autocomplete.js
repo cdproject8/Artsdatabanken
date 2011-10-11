@@ -73,6 +73,11 @@ function Autocomplete(data, success, error) {
 	};
 	
 	this.load = function(inData, success, error) {
+		if (inData instanceof Array) {
+			this.suggestions(data);
+			return;
+		}
+		
 		dao.load(inData, function(data) {
 			me.suggestions(data);
 			if (dao.isMetafile(inData)) {
@@ -92,7 +97,13 @@ function Autocomplete(data, success, error) {
 };
 
 (function($) {
-	$.fn.speciesAutocomplete = function(options) {
+	$.fn.speciesAutocomplete = function(optionsArg) {
+		var options = {
+			data: [ ], // Array or filename
+			success: function(data) {},
+			error: function(data) {},
+		};
+		$.extend(options, optionsArg);
 		var ac = new Autocomplete(options.data, options.success, options.error);
 		ac.activate(this);
 		return this;
