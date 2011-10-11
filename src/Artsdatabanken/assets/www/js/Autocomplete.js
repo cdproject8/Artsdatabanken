@@ -12,12 +12,19 @@ function Autocomplete(data, success, error) {
 	
 	var state = {
 		suggestions: [],
-		prefixMap: [],
 		currentPrefix: '[a-z0-9]',
 		categoryRoot: null
 	};
 	
-	this.callback = function(request, response) {
+	this.prefixMatch = function(term, currentPrefix) {
+		if (currentPrefix == null) {
+			currentPrefix = state.currentPrefix;
+		}
+		var pattern = new RegExp("^" + currentPrefix, "i");
+		return pattern.test(term);
+	};
+	
+	this.callbackWithoutFileLoading = function(request, response) {
 		var currentText = $.ui.autocomplete.escapeRegex(request.term);
 		var matcher = new RegExp( "^" + currentText, "i" );
 		var count = 0;
@@ -30,9 +37,25 @@ function Autocomplete(data, success, error) {
 		response(suggestions);
 	};
 	
-	this.prefixMatch = function(term) {
-		var pattern = new RegExp("^"+state.currentPrefix, "i");
-		return pattern.test(term);
+	this.callback = function(request, response) {
+		if (!me.prefixMatch(request.term, state.currentPrefix)) {
+			$(dao.prefixMap()).each(function() {
+				if (me.prefixMatch(request.term, this[0])) {
+					dao.loadByTerm(request.term, function(data) {
+							me.suggestions(data.suggestions);
+							state.prefix = data.prefix;
+							me.callbackWithoutFileLoading(request, response);
+						},
+						function() {
+							me.callbackWithoutFileLoading(request, response);
+						}
+					);
+				}
+			});
+		}
+		else {
+			me.callbackWithoutFileLoading(request, response);
+		}
 	};
 	
 	/**
@@ -69,9 +92,12 @@ function Autocomplete(data, success, error) {
 		return state.categoryRoot;
 	};
 	
-	this.load = function(data, success, error) {
-		dao.load(data, function(data) {
+	this.load = function(inData, success, error) {
+		dao.load(inData, function(data) {
 			me.suggestions(data);
+			if (dao.isMetafile(inData)) {
+				state.currentPrefix = "$";
+			}
 			if (success instanceof Function) {
 				success(data);
 			}
