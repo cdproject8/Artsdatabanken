@@ -66,10 +66,10 @@ function Observation(){
 	}
 	
 	this.newSpecies = function() {
-		var prevSpec = (this.len() != 0) ? this.species[this.len-1] : null;
+		var prevSpec = this.species[this.len()-1];
 		var newSpec = new ObsSpec(this.newId());
 		this.species.push(newSpec);
-		if (prevSpec != null) {
+		if (this.len() > 1) {
 			newSpec.date_start.setTime(prevSpec.date_start.getTime());
 			newSpec.date_end.setTime(prevSpec.date_end.getTime());
 		}
