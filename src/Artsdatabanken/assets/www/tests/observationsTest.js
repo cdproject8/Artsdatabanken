@@ -31,5 +31,17 @@ $(document).ready(function(){
 	test("get species", function() {
 		equal(spec.id, obs.getSpecies(spec.id).id);
 	});
+	
+	obs.newSpecies();
+	var newestSpecies = obs.species[obs.len()-1];
+	
+	test("new species id", function() {
+		equal(newestSpecies.id, "005");
+	});
+	
+	test("new species dates equal to previous", function() {
+		equal(newestSpecies.date_start.getTime(), spec.date_start.getTime());
+		equal(newestSpecies.date_end.getTime(), spec.date_end.getTime());
+	});
 
 });
