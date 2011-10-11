@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	module("ObservationDao");
 
-	test("first test within module", function() {
-		ok( true, "all pass" );
+	test("should be able to connect to database", function() {
+		var dao = new ObservationDao();
+		ok(dao.connect().version, "Database has version property");
 	});
 });
