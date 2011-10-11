@@ -3,7 +3,24 @@ function AutocompleteDao() {
 	
 	var state = {
 		prefixMap: [],
+		currentPrefix: '[a-z0-9]',
 		categoryRoot: null
+	};
+	
+	this.currentPrefix = function(data) {
+		if (data != null) {
+			state.currentPrefix = data;
+			return me;
+		}
+		return state.currentPrefix;
+	};
+	
+	this.prefixMatch = function(term, currentPrefix) {
+		if (currentPrefix == null) {
+			currentPrefix = me.currentPrefix();
+		}
+		var pattern = new RegExp("^" + currentPrefix, "i");
+		return pattern.test(term);
 	};
 
 	this.loadByTerm = function(term, success, error) {
