@@ -72,39 +72,20 @@ $(document).ready(function(){
 		});
 	});
 	
-	test("should be able to determine if term can be completed with current prefix", function() {
+	asyncTest("should load new prefix file if term can't be matched", function() {
 		var ac = new Autocomplete();
-		ok(ac.prefixMatch("ar"));
-		ok(ac.prefixMatch("hei"));
-		ok(ac.prefixMatch("23"));
-		ac.currentPrefix("[c-d]")
-		ok(ac.prefixMatch("Derp"));
-		equals(ac.prefixMatch("arp"), false);
-	});
-	
-	test("should load new prefix file if term can't be matched", function() {
-		var ac = new Autocomplete();
-		ac.currentPrefix("foobar");
-//		expectSuggestion("t", data, expected);
-		ok(false); // TODO Write test..
-		
+		expect(3);
 		ac.load('resources/autocomplete/35/index.js', function() {
-			/*
-			ac.loadByTerm('aterm', function(data) {
-				equals(data.prefix, '[a-c]');
-				equals(data.suggestions[0], 'archie');
-				equals(data.suggestions[1], 'berkley');
-				equals(data.suggestions[2], 'cab');
-				ac.loadByTerm('ge', function(data) {
-					equals(data.suggestions[0], 'grape');
-					equals(data.suggestions[1], 'grep');
-				});
-				start();
-			}, function(a, b, c) {
-				console.log(c);
-				start();
-			});
-			*/
+			var response = function(suggestions) {
+				equals(suggestions[0], "berkley");
+				var response2 = function(suggestions) {
+					equals(suggestions[0],"grape");
+					equals(suggestions[1],"grep");
+					start();
+				};
+				ac.callback({term: "gr" }, response2);
+			};
+			ac.callback({term: "be" }, response);
 		});
 	});
 });

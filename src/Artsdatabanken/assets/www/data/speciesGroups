@@ -1,0 +1,31 @@
+// API http://meis.artsdatabanken.no/webtjenesterbeta/databank.asmx?op=TaxonPropertySearch
+// med søk: speciesGrouping="<group>" 
+
+fugler = ["fugl"]
+
+planter = ["karplanter", "moser", "alger", "lav"]
+//(+ "sopp" but this returns an error atm)
+
+fisk = ["fisk"]
+
+småkryp = [
+	"Svamper, koralldyr",
+	"Leddormer",
+	"Krepsdyr",
+	"Mangeføttinger",
+	"Døgnfluer, øyenstikkere, steinfluer, vårfluer",
+	"Rettvinger, kakerlakker, saksedyr",
+	"Nebbmunner",
+	"Nebbfluer, kamelhalsfluer, mudderfluer, nettvinger",
+	"Biller",
+	"Sommerfugler",
+	"Tovinger",
+	"Veps",
+	"Spretthaler",
+	"Edderkoppdyr", 
+	"Mosdyr",
+	"Armfotinger, pigghuder, kappedyr",
+	"Bløtdyr"
+	]
+
+virvel = ["Amfibier, reptiler", "pattedyr"]
