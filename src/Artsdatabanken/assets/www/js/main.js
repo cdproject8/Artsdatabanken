@@ -34,17 +34,37 @@ $(document).bind("mobileinit", function() {
 			// update info on the row that was edited in extended info
 			if (observation.activeExtended != null) observation.updateMainPage();
 		});
+		
+		$('#observation').live('pagebeforechange', function(event, data){
+			console.log("changing from observation");
+			if (confirm("Are you sure you want to leave the observation page, unsaved information will be lost")) { 
+				console.log("leaving obs");
+			}
+			else {
+				event.preventDefault();
+			}
+		});
+		// Disable caching of observation page, so that when clicking
+		// new observation, the previous one is not opened and pagecreate is 	
+		// triggered again
+		$('#observation').live('pagehide',function(event, data){
+			jQuery(event.target).remove();
+			
+		});
+
 		$('#submit').live('pagebeforeshow',function(event){
 			storeObservation(observation);
 		});
+
 		$('#extended_inf').live('pagecreate',function(event){
 			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
 			observation.fillExtendedValues();
-		});
+		});	
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
 			
 		});
+		
 		$('#list_observations').live('pagebeforeshow',function(event){
 			populateObservationList();
 		});		
