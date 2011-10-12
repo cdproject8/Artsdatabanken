@@ -37,7 +37,7 @@ $(document).bind("mobileinit", function() {
 		
 		$('#observation').live('pagebeforechange', function(event, data){
 			console.log("changing from observation");
-			if (confirm("Are you sure you want to leave the observation page, unsaved information will be lost")) { 
+			if ( !observation.saved && confirm("Are you sure you want to leave the observation page, unsaved information will be lost")) { 
 				console.log("leaving obs");
 			}
 			else {

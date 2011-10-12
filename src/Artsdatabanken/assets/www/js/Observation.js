@@ -7,6 +7,7 @@ function Observation(specGroupId){
 
 	this.gpsloc;
 	this.location;
+	this.saved = false;
 	
 	this.activeExtended;
 
