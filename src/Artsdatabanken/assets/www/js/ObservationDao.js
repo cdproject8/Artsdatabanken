@@ -14,7 +14,7 @@ function ObservationDao() {
 
 	this.install = function(errorCallback) {
 		db.transaction(function(tx) {
-			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (obsid INTEGER PRIMARY KEY AUTOINCREMENT, location)');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, location)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (spcid, observation_id, species, number, sex, age, activity, time_start INTEGER, time_end INTEGER, comments, PRIMARY KEY (spcid, observation_id))');	
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 		}, errorCallback);
@@ -38,17 +38,6 @@ function ObservationDao() {
 	};
 	
 	this.saveEntry = function(entry, success, error) {
-//		var v = '';
-//		v += observation_id + ', "';
-//		v += species + '", "';
-//		v += number + '", "';
-//		v += sex + '", "';
-//		v += age + '", "';
-//		v += activity + '", ';
-//		v += time_start + ', ';
-//		v += time_end + ', "';
-//		v += comments + '"';
-//		executeQuery('INSERT INTO species VALUES (NULL,' + v + ')');
 		var query = "INSERT INTO SPECIES VALUES (?,?,?,?,?,?,?,?,?,?)";
 		var values = [
 		    entry.id,
@@ -75,7 +64,6 @@ function ObservationDao() {
 				success({species_name: results.rows.item(0).species});
 			}, null)
 		}, error)
-//		success({species_name: "Big dog"});
 	};
 
 	// Constructor
