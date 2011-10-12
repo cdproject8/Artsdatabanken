@@ -5,7 +5,7 @@ var App = {
 
 function ObservationDao() {
 	var me = this;
-	db = null;
+	var db = null;
 	
 	this.connect = function() {
 		db = window.openDatabase("observations", App.VERSION, "ObservationsDB", 1048576);
