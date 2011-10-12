@@ -48,8 +48,8 @@ $(document).bind("mobileinit", function() {
 		// new observation, the previous one is not opened and pagecreate is 	
 		// triggered again
 		$('#observation').live('pagehide',function(event, data){
-			jQuery(event.target).remove();
-			
+			if (!data.nextPage.is("#extended_inf"))
+				jQuery(event.target).remove();
 		});
 
 		$('#submit').live('pagebeforeshow',function(event){
