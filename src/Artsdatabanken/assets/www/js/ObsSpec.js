@@ -37,7 +37,7 @@ function ObsSpec(id, observation){
 	}
 	
 	this.fillObsListValues = function() {
-		$("#species_row" + this.id + " .ui-input-name-spec").val(this.activeExtended.sname);
-		$("#species_row" + this.id + " .ui-input-numb-spec").val(this.activeExtended.number);
+		$("#species_row" + this.id + " .ui-input-name-spec").val(this.sname);
+		$("#species_row" + this.id + " .ui-input-numb-spec").val(this.number);
 	}
 }
