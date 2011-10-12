@@ -75,19 +75,29 @@ function ObservationDao() {
 		];
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
-				success(results.insertId);
+				success(entry.id);
 			}, function(errorArg) {
 				me.updateEntry(entry, success, error);
 			});
 		}, error);
 	};
 	
-	this.findEntry = function(id, success, error) {
+	this.findEntry = function(id, observation_id, success, error) {
 		db.transaction(function(tx) {
-			tx.executeSql('SELECT * FROM species WHERE id=' + id, [], function(tx, results) {
+			tx.executeSql('SELECT * FROM species WHERE id = ? AND observation_id = ?', [ id, observation_id ], function(tx, results) {
+				if (results.rows.length == 0) {
+					success(null);
+					return;
+				} 
 				success(results.rows.item(0));
 			}, null)
 		}, error)
+	};
+	
+	this.removeEntry = function(id, observation_id, success, error) {
+		db.transaction(function(tx) {
+			tx.executeSql('DELETE FROM species WHERE id = ? AND observation_id = ?', [id, observation_id], success, error);
+		}, null);
 	};
 	
 	this.updateObservation = function(observation, success, error) {
@@ -112,12 +122,19 @@ function ObservationDao() {
 	
 	this.findObservation = function(id, success, error) {
 		db.transaction(function(tx) {
-			tx.executeSql('SELECT * FROM observations WHERE id=' + id, [], function(tx, results) {
+			tx.executeSql('SELECT * FROM observations WHERE id = ?', [ id ], function(tx, results) {
 				success(results.rows.item(0));
 			}, null)
 		}, error)
 	};
-
+	
+	this.removeObservation = function(observation_id, success, error) {
+		db.transaction(function(tx) {
+			tx.executeSql('DELETE FROM species WHERE observation_id = ?', [ observation_id ], success, error);
+			tx.executeSql('DELETE FROM observations WHERE id = ?', [ observation_id ], success, error);
+		}, null);
+	};
+	
 	// Constructor
 	this.connect();
 	this.install();

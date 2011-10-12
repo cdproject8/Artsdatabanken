@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	module("ObservationDao");
 
+	/*
+	 * Helper functions
+	 */
+	
 	function getDao() {
 		var daoa = new ObservationDao();
 		daoa.uninstall();
@@ -20,6 +24,30 @@ $(document).ready(function(){
 			});
 		});
 	}
+	
+	function error(err) {
+		console.log(err);
+		start();
+	}
+
+	function getEntry() {
+		return {
+			observation: {id: 1},
+			id: 2,
+			species_name: "Big dog",
+			count: 12,
+			sex: "Male",
+			age: 11,
+			activity: "Sleeping",
+			date_start: new Date(1234), 
+			date_end: new Date(4321),
+			comment: "This is a comment"
+		};
+	};
+	
+	/*
+	 * Tests
+	 */
 
 	test("should be able to connect to database", function() {
 		var dao = new ObservationDao();
@@ -39,30 +67,18 @@ $(document).ready(function(){
 		expect(2);
 		
 		var dao = getDao();
-		
-		var entry = {
-			observation: {id: 1},
-			id: 2,
-			species_name: "Big dog",
-			count: 12,
-			sex: "Male",
-			age: 11,
-			activity: "Sleeping",
-			date_start: new Date(1234), 
-			date_end: new Date(4321),
-			comment: "This is a comment"
-		};
+		var entry = getEntry();
 		
 		// Add entry nr 1
 		dao.saveEntry(entry, function(result) {
-			dao.findEntry(entry.id, function(result) {
+			dao.findEntry(entry.id, entry.observation.id, function(result) {
 				equals(result.species_name, entry.species_name);
 				
 				// Add entry nr 2
 				entry.id = 32;
 				entry.species_name = "Small dog";
 				dao.saveEntry(entry, function(result) {
-					dao.findEntry(entry.id, function(result) {
+					dao.findEntry(entry.id, entry.observation.id, function(result) {
 						equals(result.species_name, entry.species_name);
 						start();
 					});
@@ -78,31 +94,15 @@ $(document).ready(function(){
 	
 	asyncTest("should update entry if it exists", function() {
 		expect(3);
-		var entry = {
-				observation: {id: 1},
-				id: 2,
-				species_name: "Big dog",
-				count: 12,
-				sex: "Male",
-				age: 11,
-				activity: "Sleeping",
-				date_start: new Date(1234), 
-				date_end: new Date(4321),
-				comment: "This is a comment"
-		};
-		var error = function(error) {
-			console.log(error);
-			start();
-		};
+		var entry = getEntry();
 		theDao = getDao();
 		theDao.saveEntry(entry, function(id) {
 			ok(true, "entry inserted");
-			
-			theDao.findEntry(entry.id, function(result) {
+			theDao.findEntry(entry.id, entry.observation.id, function(result) {
 				equals(result.species_name, entry.species_name);
 				entry.species_name = "Small dog";
 				theDao.saveEntry(entry, function(id) {
-					theDao.findEntry(entry.id, function(result) {
+					theDao.findEntry(entry.id, entry.observation.id, function(result) {
 						equals(result.species_name, entry.species_name);
 						start();
 					}, error);
@@ -141,11 +141,6 @@ $(document).ready(function(){
 			latitude: 85.31
 		};
 		
-		function error(err) {
-			console.log(err);
-			start();
-		}
-		
 		var theDao = getDao();
 		theDao.saveObservation(obs, function(id) {
 			theDao.findObservation(id, function(result) {
@@ -163,5 +158,30 @@ $(document).ready(function(){
 				}, error);
 			}, error);
 		});
+	});
+	
+	asyncTest("should be able to delete entries", function() {
+		expect(2);
+		var dao = getDao();
+		var entry = getEntry();
+		
+		dao.saveEntry(entry, function(id) {
+			dao.findEntry(id, entry.observation.id, function(result) {
+				console.log(result);
+				equals(result.id, id);
+				
+				dao.removeEntry(id, entry.observation.id, function() {
+					dao.findEntry(id, entry.observation.id, function(result) {
+						ok(result == null, "id should be null");
+						start();
+					}, error)
+				});
+			}, error)
+		}, error);
+	});
+	
+	asyncTest("should delete all entries for observation when it's removed", function() {
+		ok(false, "test this functionality");
+		start();
 	});
 });
