@@ -114,7 +114,6 @@ function Observation(specGroupId){
 	}
 	// Save information written on the extended page
 	this.saveExtended = function() {
-		console.log("start saving");
 		this.activeExtended.sname = $("#extended_inf :input[id=spec-name]").val();
 		this.activeExtended.number = $("#extended_inf :input[id=spec-number]").val();
 		this.activeExtended.sex = $("#extended_inf :input[id=spec-sex]").val();
@@ -141,7 +140,6 @@ function Observation(specGroupId){
 			}
 		}
 		this.activeExtended.comment = $("#extended_inf :input[id=spec-comment]").val();
-		console.log("end saving");
 	}
 	
 	this.updateMainPage = function() {
@@ -151,7 +149,6 @@ function Observation(specGroupId){
 	this.saveAll = function() {
 		$('#observation_form .species_row').each(function(i, row){
 			var sRow = $(row);
-			console.log(sRow);
 			var idOfSpeciesRow = sRow.attr("id").substr(11);			
 			obs.getSpecies(idOfSpeciesRow).sname = $(".ui-input-name-spec", sRow).val();
 			obs.getSpecies(idOfSpeciesRow).number = $(".ui-input-numb-spec", sRow).val();
