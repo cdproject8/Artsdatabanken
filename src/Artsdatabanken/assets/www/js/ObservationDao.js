@@ -90,7 +90,19 @@ function ObservationDao() {
 		}, error)
 	};
 	
+	this.updateObservation = function(observation, success, error) {
+		db.transaction(function(tx) {
+			tx.executeSql('UPDATE observations SET longitude = ?, latitude = ? WHERE id = ?', [observation.longitude, observation.latitude, observation.id], function(tx, results) {
+				success(observation.id);
+			}, error);
+		}, null);
+	};
+	
 	this.saveObservation = function(observation, success, error) {
+		if (observation.id != null) {
+			me.updateObservation(observation, success, error);
+			return;
+		}
 		db.transaction(function(tx) {
 			tx.executeSql('INSERT INTO observations (id, longitude, latitude) VALUES (NULL, ?, ?)', [observation.longitude, observation.latitude], function(tx, results) {
 				success(results.insertId);

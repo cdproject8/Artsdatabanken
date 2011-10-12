@@ -89,7 +89,7 @@ $(document).ready(function(){
 				date_start: new Date(1234), 
 				date_end: new Date(4321),
 				comment: "This is a comment"
-			};
+		};
 		var error = function(error) {
 			console.log(error);
 			start();
@@ -109,7 +109,6 @@ $(document).ready(function(){
 				}, error);
 			}, error);
 		}, error)
-		
 	});
 	
 	asyncTest("should be able to save and retrieve observations", function() {
@@ -130,6 +129,39 @@ $(document).ready(function(){
 				console.log(error);
 				start();
 			});
+		});
+	});
+	
+	asyncTest("should update observation if it exists", function() {
+		expect(5);
+		
+		var obs = {
+			id: null,
+			longitude: 34.42,
+			latitude: 85.31
+		};
+		
+		function error(err) {
+			console.log(err);
+			start();
+		}
+		
+		var theDao = getDao();
+		theDao.saveObservation(obs, function(id) {
+			theDao.findObservation(id, function(result) {
+				ok(id > 0, "observation inserted");
+				equals(result.longitude, obs.longitude);
+				equals(result.latitude, obs.latitude);
+				obs.latitude = 11.0;
+				obs.id = id;
+				theDao.saveObservation(obs, function(id) {
+					theDao.findObservation(obs.id, function(result) {
+						equals(result.longitude, obs.longitude);
+						equals(result.latitude, obs.latitude);
+						start();
+					}, error);
+				}, error);
+			}, error);
 		});
 	});
 });
