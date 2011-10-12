@@ -96,51 +96,9 @@ function Observation(specGroupId){
 		return null;
 	}
 	
-	// Fill in values in the extended valus form when that window is opened for a species
-	this.fillExtendedValues = function() {
-		$("#extended_inf :input[id=spec-name]").val(this.activeExtended.sname);
-		$("#extended_inf :input[id=spec-number]").val(this.activeExtended.number);
-		$("#extended_inf :input[id=spec-sex]").val(this.activeExtended.sex);
-		$("#extended_inf :input[id=spec-age]").val(this.activeExtended.age);
-		$("#extended_inf :input[id=spec-activity]").val(this.activeExtended.activity);
-		$("#extended_inf :input[id=spec-date_start]").val(this.activeExtended.date_start.getFullYear() + "-" + zero_pad(this.activeExtended.date_start.getMonth()+1,2) + "-" + zero_pad(this.activeExtended.date_start.getDate(),2) );
-		$("#extended_inf :input[id=spec-time_start]").val(zero_pad(this.activeExtended.date_start.getHours(),2) + ":" + zero_pad(this.activeExtended.date_start.getMinutes(),2) );
-		$("#extended_inf :input[id=spec-date_end]").val(this.activeExtended.date_end.getFullYear() + "-" + zero_pad(this.activeExtended.date_end.getMonth()+1,2) + "-" + zero_pad(this.activeExtended.date_end.getDate(),2) );
-		$("#extended_inf :input[id=spec-time_end]").val(zero_pad(this.activeExtended.date_end.getHours(),2) + ":" + zero_pad(this.activeExtended.date_end.getMinutes(),2) );
-		$("#extended_inf :input[id=spec-comment]").val(this.activeExtended.comment);
-
-		//	 TODO if picture
-		
-	}
-	// Save information written on the extended page
-	this.saveExtended = function() {
-		this.activeExtended.sname = $("#extended_inf :input[id=spec-name]").val();
-		this.activeExtended.number = $("#extended_inf :input[id=spec-number]").val();
-		this.activeExtended.sex = $("#extended_inf :input[id=spec-sex]").val();
-		this.activeExtended.age = $("#extended_inf :input[id=spec-age]").val();
-		this.activeExtended.activity = $("#extended_inf :input[id=spec-activity]").val();
-		var ds = $("#extended_inf :input[id=spec-date_start]").val();
-		var ts = $("#extended_inf :input[id=spec-time_start]").val();
-		if (ds != null) {
-			if (ts != null) {
-				this.activeExtended.date_start = new Date(ds.substr(0,4), ds.substr(5,2)-1, ds.substr(8,2), ts.substr(0,2), ts.substr(3,2));
-			}
-			else {
-				this.activeExtended.date_start = new Date(ds.substr(0,4), ds.substr(5,2)-1, ds.substr(8,2));
-			}
-		}		
-		var de = $("#extended_inf :input[id=spec-date_end]").val();
-		var te = $("#extended_inf :input[id=spec-time_end]").val();
-		if (de != null) {
-			if (te != null) {
-				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2)-1, de.substr(8,2), te.substr(0,2), te.substr(3,2));
-			}
-			else {
-				this.activeExtended.date_end = new Date(de.substr(0,4), de.substr(5,2)-1, de.substr(8,2));
-			}
-		}
-		this.activeExtended.comment = $("#extended_inf :input[id=spec-comment]").val();
-	}
+	// Redirect function calls
+	this.fillExtended = function() { this.activeExtended.fillExtended(); }
+	this.saveExtended = function() { this.activeExtended.saveExtended(); }
 	
 	this.updateMainPage = function() {
 		this.activeExtended.fillObsListValues();

@@ -58,7 +58,7 @@ $(document).bind("mobileinit", function() {
 
 		$('#extended_inf').live('pagecreate',function(event){
 			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
-			observation.fillExtendedValues();
+			observation.fillExtended();
 		});	
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
