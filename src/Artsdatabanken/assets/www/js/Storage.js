@@ -20,23 +20,6 @@ function dbSuccess(tx, results) {
 //	alert('success?');
 }
 
-function executeQuery(q) {
-	function query(tx) {
-		tx.executeSql(q, [], qSuccess, dbError);
-	}
-	
-	function qSuccess(tx, results) {
-		console.log('rows affected: ' + results.rowsAffected)
-	}
-	
-	function qError(error) {
-		alert(error.message);
-	}
-	
-	db.transaction(query, dbError, dbSuccess);
-	console.log(q);
-}
-
 function executeQuery(q, success) {
 	function query(tx) {
 		tx.executeSql(q, [], success,dbError);
@@ -62,7 +45,11 @@ function insertSpecies(observation_id, species, number, sex, age, activity, time
 	v += time_start + ', ';
 	v += time_end + ', "';
 	v += comments + '"';
-	executeQuery('INSERT INTO species VALUES (NULL,' + v + ')');
+	function query(tx) {
+		tx.executeSql('INSERT INTO species (spcid, observation_id, species, number, sex, age, activity, time_start, time_end, comments) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [observation_id, species, number, sex, age, activity, time_start, time_end, comments], dbSuccess, dbError);
+	}
+	db.transaction(query, dbError)
+//	executeQuery('INSERT INTO species VALUES (NULL,' + v + ')');
 }
 
 function insertObservation(location) {
@@ -215,8 +202,11 @@ function storeObservation(obs) {
 }
 function testWrite() {
 	string = $("#testwrite").val();
-	executeQuery('INSERT INTO test VALUES ("' + string + '")');
-	insertSpecies(1, "hallo", 3, "male", 3, "nourish", 123123, 123123, "hallo");
+//	executeQuery('INSERT INTO test VALUES ("' + string + '")');
+	db.transaction(function(tx) {
+		tx.executeSql('INSERT INTO test VALUES (?)', [string], dbSuccess, dbError);
+	}, dbError)
+//	insertSpecies(1, "hallo", 3, "male", 3, "nourish", 123123, 123123, "hallo");
 
 }
 
