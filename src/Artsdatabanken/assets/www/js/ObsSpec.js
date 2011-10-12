@@ -1,5 +1,5 @@
 function ObsSpec(id, observation){
-	this.id = zero_pad(id,3);
+	this.id = id;
 	this.sname = "s";
 	this.number = 1;
 	this.sex = " ";
@@ -23,8 +23,8 @@ function ObsSpec(id, observation){
 		+'		</div>'
 		+'	</div>'
 		+'	<a href="extended-inf.html" data-role="button" data-inline="true"'
-		+'		class="ui-btn-right add_info" data-icon="arrow-r">Add More Information</a>'
-		+'	<a href="" data-inline="true" data-role="button" class="delete_entry" data-icon="delete">Delete</a>'
+		+'		class="ui-btn-right add_info" data-icon="arrow-r">Detaljer</a>'
+		+'	<a href="" data-inline="true" data-role="button" class="delete_entry" data-icon="delete">Slett</a>'
 		+'	<hr />'
 		+'</div>');
 	}

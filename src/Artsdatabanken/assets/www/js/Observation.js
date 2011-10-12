@@ -2,11 +2,12 @@ function Observation(specGroupId){
 
 	//pointer for jquery functions
 	var obs = this;
-	
+	this.id = -1;	
 	this.species = new Array();
 
 	this.gpsloc;
 	this.location;
+	this.saved = false;
 	
 	this.activeExtended;
 
@@ -41,7 +42,7 @@ function Observation(specGroupId){
 				var nameInput = $(".ui-input-name-spec", speciesRow);
 				if (nameInput == null) nameInput = " ";
 				var numInput = $(".ui-input-numb-spec", speciesRow);
-				if (nameInput == null) nameInput = "1";
+				if (numInput == null) numInput = "1";
 				// console.log(nameInput.val() + numInput.val());
 				obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
 				obs.getSpecies(idOfSpeciesRow).number = numInput.val();
@@ -80,7 +81,7 @@ function Observation(specGroupId){
 	// delete a species from an observation
 	this.newId = function() {
 		if (this.species.length==0) return 0;
-		return parseInt(this.species[this.species.length-1].id)+1;
+		return this.species[this.species.length-1].id+1;
 	}
 	
 	this.len = function() {

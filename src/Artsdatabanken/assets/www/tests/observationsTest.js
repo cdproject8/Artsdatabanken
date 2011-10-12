@@ -21,7 +21,7 @@ $(document).ready(function(){
 	var spec = new ObsSpec(id, observation);
 	
 	test("new species", function() {
-		equal("004", spec.id);
+		equal(4, spec.id);
 	});
 
 	module("observation");
@@ -35,7 +35,7 @@ $(document).ready(function(){
 	var newestSpecies = observation.species[observation.len()-1];
 	
 	test("new species id", function() {
-		equal(newestSpecies.id, "005");
+		equal(newestSpecies.id, 5);
 	});
 	
 	test("new species dates equal to previous", function() {
