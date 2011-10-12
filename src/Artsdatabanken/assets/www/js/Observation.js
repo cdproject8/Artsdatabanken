@@ -104,6 +104,7 @@ function Observation(specGroupId){
 		this.activeExtended.fillObsListValues();
 	}
 	
+	// Run this before saving the observation
 	this.saveAll = function() {
 		$('#observation_form .species_row').each(function(i, row){
 			var sRow = $(row);
