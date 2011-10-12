@@ -144,8 +144,7 @@ function Observation(specGroupId){
 	}
 	
 	this.updateMainPage = function() {
-		$("#species_row" + this.activeExtended.id + " .ui-input-name-spec").val(this.activeExtended.sname);
-		$("#species_row" + this.activeExtended.id + " .ui-input-numb-spec").val(this.activeExtended.number);
+		this.activeExtended.fillObsListValues();
 	}
 	
 }

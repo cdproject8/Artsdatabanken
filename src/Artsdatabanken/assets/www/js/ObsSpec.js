@@ -35,4 +35,9 @@ function ObsSpec(id, observation){
    		//Adding autocomplete to the namefield
 		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile})
 	}
+	
+	this.fillObsListValues = function() {
+		$("#species_row" + this.id + " .ui-input-name-spec").val(this.activeExtended.sname);
+		$("#species_row" + this.id + " .ui-input-numb-spec").val(this.activeExtended.number);
+	}
 }
