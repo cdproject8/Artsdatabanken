@@ -1,9 +1,13 @@
-VERSION = 0.2;
+// TODO App class into separate file
+var App = {
+	VERSION: 0.2
+};
+
 function ObservationDao() {
 	db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", VERSION, "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", App.VERSION, "ObservationsDB", 1048576);
 		return this;
 	};
 
@@ -12,7 +16,6 @@ function ObservationDao() {
 			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (obsid INTEGER PRIMARY KEY AUTOINCREMENT, location)');	
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (spcid INTEGER PRIMARY KEY AUTOINCREMENT, observation_id, species, number, sex, age, activity, time_start INTEGER, time_end INTEGER, comments)');	
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
-			
 		}, errorCallback);
 	};
 
@@ -23,6 +26,8 @@ function ObservationDao() {
 		return db;
 	}
 
+	// Constructor
+	
 	this.connect();
 	this.install();
 }
