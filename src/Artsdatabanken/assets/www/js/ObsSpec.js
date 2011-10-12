@@ -1,5 +1,5 @@
 function ObsSpec(id, observation){
-	this.id = zero_pad(id,3);
+	this.id = id;
 	this.sname = "s";
 	this.number = 1;
 	this.sex = " ";
