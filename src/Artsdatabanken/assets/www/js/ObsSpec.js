@@ -1,7 +1,7 @@
 function ObsSpec(id, observation){
 	this.id = id;
-	this.sname = "s";
-	this.number = 1;
+	this.species_name = "s";
+	this.count = 1;
 	this.sex = " ";
 	this.age = " ";
 	this.action = " ";
@@ -19,7 +19,7 @@ function ObsSpec(id, observation){
 		+'			<input type="text" name="name" class="ui-input-name-spec fill" value="" />'
 		+'		</div>'
 		+'		<div class="ui-block-b">'
-		+'			<input type="number" name="number" class="ui-input-numb-spec fill" />'
+		+'			<input type="number" name="count" class="ui-input-numb-spec fill" />'
 		+'		</div>'
 		+'	</div>'
 		+'	<a href="extended-inf.html" data-role="button" data-inline="true"'
@@ -33,19 +33,23 @@ function ObsSpec(id, observation){
 		//Adding the html to the DOM and triggering the jquerymobile to style it
 		$('#observation_form').append(this.speciesListHtml().trigger('create'));
    		//Adding autocomplete to the namefield
-		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile})
+		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile});
+		$(".ui-input-name-spec").bind('autocompleteselect', function(e, ui){
+			console.log(e);
+			console.log(ui);
+		});
 	}
 	
 	this.fillObsListValues = function() {
-		$("#species_row" + this.id + " .ui-input-name-spec").val(this.sname);
-		$("#species_row" + this.id + " .ui-input-numb-spec").val(this.number);
+		$("#species_row" + this.id + " .ui-input-name-spec").val(this.species_name);
+		$("#species_row" + this.id + " .ui-input-numb-spec").val(this.count);
 	}
 	
 	
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtended = function() {
-		$("#extended_inf :input[id=spec-name]").val(this.sname);
-		$("#extended_inf :input[id=spec-number]").val(this.number);
+		$("#extended_inf :input[id=spec-name]").val(this.species_name);
+		$("#extended_inf :input[id=spec-count]").val(this.count);
 		$("#extended_inf :input[id=spec-sex]").val(this.sex);
 		$("#extended_inf :input[id=spec-age]").val(this.age);
 		$("#extended_inf :input[id=spec-activity]").val(this.activity);
@@ -60,8 +64,8 @@ function ObsSpec(id, observation){
 	}
 	// Save information written on the extended page
 	this.saveExtended = function() {
-		this.sname = $("#extended_inf :input[id=spec-name]").val();
-		this.number = $("#extended_inf :input[id=spec-number]").val();
+		this.species_name = $("#extended_inf :input[id=spec-name]").val();
+		this.count = $("#extended_inf :input[id=spec-count]").val();
 		this.sex = $("#extended_inf :input[id=spec-sex]").val();
 		this.age = $("#extended_inf :input[id=spec-age]").val();
 		this.activity = $("#extended_inf :input[id=spec-activity]").val();
