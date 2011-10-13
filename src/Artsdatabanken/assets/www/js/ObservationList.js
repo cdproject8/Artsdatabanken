@@ -6,12 +6,8 @@ function ObservationList(dao) {
 	this.populateList = function(){
 		dao.findAllObservations( function(result) {
 			for (var i = 0; i < result.length; i++){
-				var obsId = result.item(0).observation_id;
-				var date;
-				// Note: requires an observation to have at least one entry !!
-				dao.findAllEntries({observation_id: result.item(0).id, limit: 1}, function(results){
-					date = new Date(results.item(0));
-				}, error);
+				var obsId = result.item(i).observation_id;
+				var date = result.item(i).create_date;
 				var htmlstring = '<li>'
 							   + '	<a href="observation.html" onClick= observationId='+obsId+'>'
 							   + '		<h3>'+result.item(i)+'</h3>'
