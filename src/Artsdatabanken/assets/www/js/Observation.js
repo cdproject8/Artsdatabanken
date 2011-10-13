@@ -58,6 +58,9 @@ function Observation(specGroupId, obsId){
 	this.removeSpecies = function(specnum) {
 		$("#species_row"+specnum).remove();
 		var spec = this.getSpecies(specnum);
+		dao.removeEntry(specnum, obs.id, function(){
+			console.log("deleting " + specnum + " from " + obs.id);
+		}, null);
 		this.species.splice(this.species.indexOf(spec),1);
 		delete spec;
 	}
@@ -127,10 +130,8 @@ function Observation(specGroupId, obsId){
 		this.id = obsId;
 		App.dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
-				console.log("loading "+i);
-				var newSpec = new ObsSpec(result.item(i).id, this);
+				var newSpec = new ObsSpec(result.item(i).id, obs);
 				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).action, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
-				console.log(newSpec);
 				newSpec.addHTML();
 				newSpec.fillObsListValues();
 				obs.addSpecies(newSpec);
