@@ -21,7 +21,7 @@ $(document).bind("mobileinit", function() {
 
 	$(document).ready(function() { 
 
-		dbInit();			
+		//dbInit();			
 
 		//JQuery ready
 		
@@ -66,13 +66,15 @@ $(document).bind("mobileinit", function() {
 		});
 		
 		$('#list_observations').live('pagebeforeshow',function(event){
-			populateObservationList();
+			//populateObservationList();
+			var ObservationList = new ObservationList();
+			ObservationList.populateList();
 		});		
 		$('#view_observation').live('pagebeforeshow',function(event){
-			populateSpeciesList();
+			//populateSpeciesList();
 		});		
 		$('#view_species').live('pagebeforeshow',function(event){
-			viewSpecies();
+			//viewSpecies();
 		});		
 	});
 });
