@@ -113,6 +113,7 @@ $(document).ready(function(){
 	});
 	
 	asyncTest("should be able to find multiple entries based on criteria", function() {
+		expect(30);
 		var dao = getDao();
 		var entry = getEntry();
 		entry.id = 3;
@@ -121,9 +122,20 @@ $(document).ready(function(){
 			entry.id = 5;
 			entry.observation.id = 7;
 			dao.saveEntry(entry, function(id) {
-				dao.findAllEntries({observation_id: 7}, function() {
-					start();
-				}, error)
+				dao.findAllEntries({observation_id: 7}, function(result) {
+					equals(result.length, 2);
+					entryEquals(result.item(1), entry);
+					entry.id = 2;
+					entryEquals(result.item(0), entry);
+					dao.findAllEntries({observation_id: 7, limit: 1}, function(result) {
+						equals(result.length, 1);
+						entryEquals(result.item(0), entry);
+						dao.findAllEntries({observation_id: 2}, function(result) {
+							equals(result.length, 0);
+						}, error);
+						start();
+					}, error)
+				}, error);
 			});
 		}, error);
 	});
@@ -188,6 +200,39 @@ $(document).ready(function(){
 				}, error);
 			}, error);
 		});
+	});
+	
+	asyncTest("should be able to find multiple observations based on criteria", function() {
+		expect(30);
+		start();
+//		var obs = {
+//			id: null,
+//			longitude: 34.42,
+//			latitude: 85.31
+//		};
+//		var entry = getEntry();
+//		entry.id = 3;
+//		entry.observation.id = 7;
+//		dao.saveEntry(entry, function(id) {
+//			entry.id = 5;
+//			entry.observation.id = 7;
+//			dao.saveEntry(entry, function(id) {
+//				dao.findAllEntries({observation_id: 7}, function(result) {
+//					equals(result.length, 2);
+//					entryEquals(result.item(1), entry);
+//					entry.id = 2;
+//					entryEquals(result.item(0), entry);
+//					dao.findAllEntries({observation_id: 7, limit: 1}, function(result) {
+//						equals(result.length, 1);
+//						entryEquals(result.item(0), entry);
+//						dao.findAllEntries({observation_id: 2}, function(result) {
+//							equals(result.length, 0);
+//						}, error);
+//						start();
+//					}, error)
+//				}, error);
+//			});
+//		}, error);
 	});
 	
 	asyncTest("should delete all entries for observation when it's removed", function() {

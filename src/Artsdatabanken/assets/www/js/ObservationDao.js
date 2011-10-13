@@ -67,35 +67,22 @@ function ObservationDao() {
 				} 
 				success(results.rows.item(0));
 			}, null)
-		}, error)
+		}, error);
 	};
 	
 	this.findAllEntries = function(criteria, success, error) {
-		if (criteria.observation_id < 0) {
-			alert("criteria.observation_id invalid");
+		var sql = 'SELECT * FROM species WHERE observation_id = ?';
+		var values = [ criteria.observation_id ];
+		if (criteria.limit != null) {
+			sql = sql + ' LIMIT ?';
+			values[1] = criteria.limit;
 		}
-		var mockEntry = {
-			observation: {id: 1},
-			id: 2,
-			species_name: "Big dog",
-			count: 12,
-			sex: "Male",
-			age: 11,
-			activity: "Sleeping",
-			date_start: new Date(1234), 
-			date_end: new Date(4321),
-			comment: "This is a comment"
-		};
 		
-		var mock = function() {
-			var items = [ mockEntry, mockEntry, mockEntry ];
-			this.length = 3;
-			this.item = function(i) {
-				return items[i];
-			};
-		};
-		
-		success(new mock());
+		db.transaction(function(tx) {
+			tx.executeSql(sql, values, function(tx, results) {
+				success(results.rows);
+			}, null)
+		}, error);
 	};
 	
 	this.removeEntry = function(id, observation_id, success, error) {
@@ -130,6 +117,21 @@ function ObservationDao() {
 				success(results.rows.item(0));
 			}, null)
 		}, error)
+	};
+	
+	this.findAllObservations = function(criteria, success, error) {
+		var mock = function() {
+			this.length = 3;
+			var items = [
+			         {id: 1, latitude: 25, longitude: 33},
+			         {id: 2, latitude: 11, longitude: 1},
+			         {id: 6, latitude: 22, longitude: 23}
+	        ];
+			function item(i) {
+				return items[i];
+			};
+		};
+		success(new mock());
 	};
 	
 	this.removeObservation = function(observation_id, success, error) {
