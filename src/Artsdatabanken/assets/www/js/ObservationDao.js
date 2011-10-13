@@ -3,6 +3,7 @@ var App = {
 	VERSION: 0.2
 };
 
+// TODO add create_date to observation
 function ObservationDao() {
 	var me = this;
 	var db = null;
@@ -14,7 +15,7 @@ function ObservationDao() {
 
 	this.install = function(errorCallback) {
 		db.transaction(function(tx) {
-			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude)');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, create_date)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');	
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 		}, errorCallback);
@@ -105,7 +106,7 @@ function ObservationDao() {
 			return;
 		}
 		db.transaction(function(tx) {
-			tx.executeSql('INSERT INTO observations (id, longitude, latitude) VALUES (NULL, ?, ?)', [observation.longitude, observation.latitude], function(tx, results) {
+			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date], function(tx, results) {
 				success(results.insertId);
 			}, error);
 		}, null);
@@ -116,22 +117,15 @@ function ObservationDao() {
 			tx.executeSql('SELECT * FROM observations WHERE id = ?', [ id ], function(tx, results) {
 				success(results.rows.item(0));
 			}, null)
-		}, error)
+		}, error);
 	};
 	
 	this.findAllObservations = function(criteria, success, error) {
-		var mock = function() {
-			this.length = 3;
-			var items = [
-			         {id: 1, latitude: 25, longitude: 33, create_date: 2342},
-			         {id: 2, latitude: 11, longitude: 1, create_date: 1234},
-			         {id: 6, latitude: 22, longitude: 23, create_date: 11}
-	        ];
-			this.item = function(i) {
-				return items[i];
-			};
-		};
-		success(new mock());
+		db.transaction(function(tx) {
+			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
+				success(results.rows);
+			}, null)
+		}, error);
 	};
 	
 	this.removeObservation = function(observation_id, success, error) {
