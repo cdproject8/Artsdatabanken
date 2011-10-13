@@ -1,9 +1,10 @@
 //GLOBAL VARS
 var specGroupId;
 var observation;
-var observationId;
+var observationId = -1;
 var observationList;
-
+// the ObservationDao object, available to every class
+var dao;
 // Init jQuery mobile
 
 $(document).bind("mobileinit", function() {
@@ -23,13 +24,13 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 
 		//dbInit();
-		var observationDao = new ObservationDao();
+		dao = new ObservationDao();
 
 		//JQuery ready
 		
 		$('#observation').live('pagecreate',function(event){
 		
-			observation = new Observation(specGroupId);
+			observation = new Observation(specGroupId, observationId);
 			observation.newSpecies();
 		});
 		$('#observation').live('pageshow',function(event){
@@ -66,10 +67,14 @@ $(document).bind("mobileinit", function() {
 			observation.saveExtended();
 			
 		});
+		// If observationId < 0 then a new observation is created
+		$('#species_select').live('pagebeforeshow',function(event){
+			observationId = -1;
+		});
 		
 		$('#list_observations').live('pagecreate',function(event){
 			//populateObservationList();
-			observationList = new ObservationList(observationDao);
+			observationList = new ObservationList();
 			observationList.populateList();
 		});		
 		$('#view_observation').live('pagebeforeshow',function(event){

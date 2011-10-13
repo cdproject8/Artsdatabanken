@@ -1,4 +1,4 @@
-function Observation(specGroupId){
+function Observation(specGroupId, obsId){
 
 	//pointer for jquery functions
 	var obs = this;
@@ -11,6 +11,10 @@ function Observation(specGroupId){
 	
 	this.activeExtended;
 
+	if (obsId >= 0) {
+		this.loadFromDao();
+	}
+		
 	// TODO make autocomplete loading dynamic for each species group based on specGroupId
 	this.autocompleteFile = "data/autocomplete/89/index.js";
 	
@@ -111,6 +115,15 @@ function Observation(specGroupId){
 			obs.getSpecies(idOfSpeciesRow).species_name = $(".ui-input-name-spec", sRow).val();
 			obs.getSpecies(idOfSpeciesRow).count = $(".ui-input-numb-spec", sRow).val();
 		});
+	}
+	
+	this.loadFromDao = function() {
+		dao.findAllEntries(function(result){
+			for (var i=0; i < result.length;i++){
+				console.log("found"+result.items(i).id);
+			}
+		
+		},error);
 	}
 	
 }
