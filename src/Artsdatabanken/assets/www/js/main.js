@@ -56,7 +56,7 @@ $(document).bind("mobileinit", function() {
 		});
 
 		$('#submit').live('pagebeforeshow',function(event){
-			storeObservation(observation);
+			observation.saveToDao();
 		});
 
 		$('#extended_inf').live('pagecreate',function(event){

@@ -1,4 +1,5 @@
 function ObsSpec(id, observation){
+	this.observation = observation;
 	this.id = id;
 	this.species_name = "s";
 	this.count = 1;

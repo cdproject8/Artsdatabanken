@@ -1,6 +1,5 @@
-function ObservationList(dao) {
-	console.log("init obs");
-	
+function ObservationList() {
+	$("#observation_list").listview();
 	var error;
 	
 	this.populateList = function(){
@@ -15,10 +14,10 @@ function ObservationList(dao) {
 							   + '	</a>'
 							   + '</li>';
 		   		$('#observation_list').append(htmlstring);
-		   		console.log(htmlstring);
 			}
+			$("#observation_list").listview("refresh");
 		}, error);
-//		$("#observation_list").listview("refresh");
 	}
+	
 	
 }
