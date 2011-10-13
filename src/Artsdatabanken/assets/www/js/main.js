@@ -21,7 +21,7 @@ $(document).bind("mobileinit", function() {
 
 	$(document).ready(function() { 
 
-		dbInit();			
+		//dbInit();			
 
 		//JQuery ready
 		
