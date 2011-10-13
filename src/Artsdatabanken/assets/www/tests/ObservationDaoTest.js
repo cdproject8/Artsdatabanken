@@ -25,15 +25,6 @@ $(document).ready(function(){
 		});
 	}
 	
-	function createExpectRemovedCallback(dao, result, entry_id, observation_id) {
-		return function() {
-			dao.findEntry(entry_id, observation_id, function(result) {
-				ok(result == null, "id should be null");
-				start();
-			}, error)
-		}
-	}
-	
 	function error(err) {
 		console.log(err);
 		start();
@@ -53,6 +44,15 @@ $(document).ready(function(){
 			comment: "This is a comment"
 		};
 	};
+	
+	function getObservation() {
+		return {
+			id: null,
+			longitude: 34.42,
+			latitude: 85.31,
+			create_date: 1234
+		};
+	}
 	
 	function entryEquals(actual, expected) {
 		equals(actual.activity, expected.activity);
@@ -148,18 +148,19 @@ $(document).ready(function(){
 		dao.saveEntry(entry, function(id) {
 			dao.findEntry(id, entry.observation.id, function(result) {
 				entryEquals(result, entry);
-				dao.removeEntry(id, entry.observation.id, createExpectRemovedCallback(dao, result, id, entry.observation.id));
+				dao.removeEntry(id, entry.observation.id, function() {
+					dao.findEntry(entry.id, entry.observation.id, function(result) {
+						equals(result, null);
+						start();
+					}, error)
+				});
 			}, error)
 		}, error);
 	});
 	
 	asyncTest("should be able to save and retrieve observations", function() {
 		expect(3);
-		var obs = {
-			id: null,
-			longitude: 34.42,
-			latitude: 85.31
-		};
+		var obs = getObservation();
 		var theDao = getDao();
 		theDao.saveObservation(obs, function(id) {
 			theDao.findObservation(id, function(result) {
@@ -176,13 +177,7 @@ $(document).ready(function(){
 	
 	asyncTest("should update observation if it exists", function() {
 		expect(5);
-		
-		var obs = {
-			id: null,
-			longitude: 34.42,
-			latitude: 85.31
-		};
-		
+		var obs = getObservation();
 		var theDao = getDao();
 		theDao.saveObservation(obs, function(id) {
 			theDao.findObservation(id, function(result) {
@@ -204,12 +199,7 @@ $(document).ready(function(){
 	
 	asyncTest("should be able to find multiple observations based on criteria", function() {
 		expect(4);
-		var obs = {
-			id: null,
-			longitude: 34.42,
-			latitude: 85.31,
-			create_date: 1234
-		};
+		var obs = getObservation();
 		var dao = getDao();
 		dao.saveObservation(obs, function(id) {
 			dao.saveObservation(obs, function(id) {
@@ -225,7 +215,18 @@ $(document).ready(function(){
 	});
 	
 	asyncTest("should delete all entries for observation when it's removed", function() {
-		ok(false, "test this functionality");
-		start();
+		var obs = getObservation();
+		var dao = getDao();
+		dao.saveObservation(obs, function(id) {
+			dao.removeObservation(id, function() {
+				dao.findObservation(id, function(result) {
+					equals(result, null);
+					dao.findAllEntries(id, function(result) {
+						equals(result.length, 0);
+						start();	
+					}, error)
+				}, error)
+			}, error)
+		});
 	});
 });

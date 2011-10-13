@@ -115,6 +115,10 @@ function ObservationDao() {
 	this.findObservation = function(id, success, error) {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations WHERE id = ?', [ id ], function(tx, results) {
+				if (results.rows.length == 0) {
+					success(null);
+					return;
+				} 
 				success(results.rows.item(0));
 			}, null)
 		}, error);
