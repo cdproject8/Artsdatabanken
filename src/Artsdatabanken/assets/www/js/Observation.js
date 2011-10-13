@@ -120,7 +120,7 @@ function Observation(specGroupId, obsId){
 	this.saveToDao = function() {
 		this.saveAll();
 		$.each(this.species, function(i, val){
-			dao.saveEntry(val, null, null);
+			dao.saveEntry(val, function(){}, null);
 		});
 	}
 	
