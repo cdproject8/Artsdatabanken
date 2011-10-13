@@ -70,6 +70,31 @@ function ObservationDao() {
 		}, error)
 	};
 	
+	this.findAllEntries = function(observation_id, success, error) {
+		var mockEntry = {
+			observation: {id: 1},
+			id: 2,
+			species_name: "Big dog",
+			count: 12,
+			sex: "Male",
+			age: 11,
+			activity: "Sleeping",
+			date_start: new Date(1234), 
+			date_end: new Date(4321),
+			comment: "This is a comment"
+		};
+		
+		var mock = function() {
+			var items = [ mockEntry, mockEntry, mockEntry ];
+			this.length = 3;
+			this.item = function(i) {
+				return items[i];
+			};
+		};
+		
+		return new mock();
+	};
+	
 	this.removeEntry = function(id, observation_id, success, error) {
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE id = ? AND observation_id = ?', [id, observation_id], success, error);
