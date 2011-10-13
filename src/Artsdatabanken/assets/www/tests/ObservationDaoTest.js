@@ -205,11 +205,11 @@ $(document).ready(function(){
 	asyncTest("should be able to find multiple observations based on criteria", function() {
 		expect(30);
 		start();
-//		var obs = {
-//			id: null,
-//			longitude: 34.42,
-//			latitude: 85.31
-//		};
+		var obs = {
+			id: null,
+			longitude: 34.42,
+			latitude: 85.31
+		};
 //		var entry = getEntry();
 //		entry.id = 3;
 //		entry.observation.id = 7;
