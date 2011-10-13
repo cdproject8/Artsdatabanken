@@ -58,7 +58,7 @@ function Observation(specGroupId, obsId){
 	this.removeSpecies = function(specnum) {
 		$("#species_row"+specnum).remove();
 		var spec = this.getSpecies(specnum);
-		dao.removeEntry(specnum, obs.id, function(){
+		dao.removeEntry(new Number(specnum).valueOf(), new Number(obs.id).valueOf(), function() {
 			console.log("deleting " + specnum + " from " + obs.id);
 		}, null);
 		this.species.splice(this.species.indexOf(spec),1);
