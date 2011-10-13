@@ -203,36 +203,25 @@ $(document).ready(function(){
 	});
 	
 	asyncTest("should be able to find multiple observations based on criteria", function() {
-		expect(30);
-		start();
+		expect(4);
 		var obs = {
 			id: null,
 			longitude: 34.42,
-			latitude: 85.31
+			latitude: 85.31,
+			create_date: 1234
 		};
-//		var entry = getEntry();
-//		entry.id = 3;
-//		entry.observation.id = 7;
-//		dao.saveEntry(entry, function(id) {
-//			entry.id = 5;
-//			entry.observation.id = 7;
-//			dao.saveEntry(entry, function(id) {
-//				dao.findAllEntries({observation_id: 7}, function(result) {
-//					equals(result.length, 2);
-//					entryEquals(result.item(1), entry);
-//					entry.id = 2;
-//					entryEquals(result.item(0), entry);
-//					dao.findAllEntries({observation_id: 7, limit: 1}, function(result) {
-//						equals(result.length, 1);
-//						entryEquals(result.item(0), entry);
-//						dao.findAllEntries({observation_id: 2}, function(result) {
-//							equals(result.length, 0);
-//						}, error);
-//						start();
-//					}, error)
-//				}, error);
-//			});
-//		}, error);
+		var dao = getDao();
+		dao.saveObservation(obs, function(id) {
+			dao.saveObservation(obs, function(id) {
+				dao.findAllObservations(null, function(result) {
+					equals(result.length, 2);
+					equals(result.item(0).longitude, 34.42);
+					equals(result.item(1).latitude, 85.31);
+					equals(result.item(0).create_date, 1234);
+					start();
+				}, error);
+			});
+		}, error);
 	});
 	
 	asyncTest("should delete all entries for observation when it's removed", function() {
