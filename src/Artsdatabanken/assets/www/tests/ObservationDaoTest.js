@@ -50,7 +50,7 @@ $(document).ready(function(){
 			id: null,
 			longitude: 34.42,
 			latitude: 85.31,
-			create_date: 1234
+			create_date: new Date(1234)
 		};
 	}
 	

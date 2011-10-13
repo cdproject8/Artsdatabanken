@@ -105,8 +105,9 @@ function ObservationDao() {
 			me.updateObservation(observation, success, error);
 			return;
 		}
+		
 		db.transaction(function(tx) {
-			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date], function(tx, results) {
+			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date.getTime()], function(tx, results) {
 				success(results.insertId);
 			}, error);
 		}, null);
