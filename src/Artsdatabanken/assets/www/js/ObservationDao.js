@@ -95,7 +95,7 @@ function ObservationDao() {
 			};
 		};
 		
-		return new mock();
+		success(new mock());
 	};
 	
 	this.removeEntry = function(id, observation_id, success, error) {
