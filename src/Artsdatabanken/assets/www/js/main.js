@@ -22,6 +22,8 @@ $(document).bind("mobileinit", function() {
 
 
 	$(document).ready(function() { 
+		
+		App.init();
 
 		//dbInit();
 		dao = new ObservationDao();

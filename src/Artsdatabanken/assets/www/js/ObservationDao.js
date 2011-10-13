@@ -3,9 +3,22 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", App.VERSION, "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "", "ObservationsDB", 1048576);
 		return me;
 	};
+	
+	this.migrate = function(error) {
+		if (db.version == "") {
+			db.changeVersion("", "0.3", function(t) {
+				me.install();
+			});
+		}
+		else if (db.version == "0.2") {
+			db.changeVersion("0.2", "0.3", function(t) {
+				me.install();
+			});
+		}
+	}
 
 	this.install = function(errorCallback) {
 		db.transaction(function(tx) {
@@ -72,6 +85,7 @@ function ObservationDao() {
 			sql = sql + ' LIMIT ?';
 			values[1] = criteria.limit;
 		}
+		sql += ' ORDER BY id';
 		
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {
