@@ -7,17 +7,18 @@ function ObservationList(dao) {
 		dao.findAllObservations( {}, function(result) {
 			for (var i = 0; i < result.length; i++){
 				var obsId = result.item(i).id;
-				var date = result.item(i).create_date;
+				var date = new Date(result.item(i).create_date);
 				var htmlstring = '<li>'
-							   + '	<a href="observation.html" onClick= observationId='+obsId+'>'
-							   + '		<h3>'+result.item(i)+'</h3>'
+							   + '	<a href="observation.html" onClick=" observationId='+obsId+'">'
+							   + '		<h3>Observation '+obsId+'</h3>'
 							   + '		<p>'+date+'</p>'
 							   + '	</a>'
 							   + '</li>';
-		   		$('#species_list').append(htmlstring);
+		   		$('#observation_list').append(htmlstring);
+		   		console.log(htmlstring);
 			}
 		}, error);
-		$("#species_list").listview("refresh");
+//		$("#observation_list").listview("refresh");
 	}
 	
 }
