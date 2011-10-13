@@ -43,11 +43,11 @@ function Observation(specGroupId){
 				var numInput = $(".ui-input-numb-spec", speciesRow);
 				if (numInput == null) numInput = "1";
 				// console.log(nameInput.val() + numInput.val());
-				obs.getSpecies(idOfSpeciesRow).sname = nameInput.val();
-				obs.getSpecies(idOfSpeciesRow).number = numInput.val();
+				obs.getSpecies(idOfSpeciesRow).species_name = nameInput.val();
+				obs.getSpecies(idOfSpeciesRow).count = numInput.val();
 			}
 			if (anchor.is(".delete_entry")) {
-				if ( confirm("Are you sure you want to delete "+obs.getSpecies(idOfSpeciesRow).sname + "from the observation")) {
+				if ( confirm("Are you sure you want to delete "+obs.getSpecies(idOfSpeciesRow).species_name + "from the observation")) {
 					obs.removeSpecies(idOfSpeciesRow);
 				}
 			}
@@ -108,8 +108,8 @@ function Observation(specGroupId){
 		$('#observation_form .species_row').each(function(i, row){
 			var sRow = $(row);
 			var idOfSpeciesRow = sRow.attr("id").substr(11);			
-			obs.getSpecies(idOfSpeciesRow).sname = $(".ui-input-name-spec", sRow).val();
-			obs.getSpecies(idOfSpeciesRow).number = $(".ui-input-numb-spec", sRow).val();
+			obs.getSpecies(idOfSpeciesRow).species_name = $(".ui-input-name-spec", sRow).val();
+			obs.getSpecies(idOfSpeciesRow).count = $(".ui-input-numb-spec", sRow).val();
 		});
 	}
 	
