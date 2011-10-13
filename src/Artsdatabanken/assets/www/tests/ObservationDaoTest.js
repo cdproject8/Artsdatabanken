@@ -132,8 +132,8 @@ $(document).ready(function(){
 						entryEquals(result.item(0), entry);
 						dao.findAllEntries({observation_id: 2}, function(result) {
 							equals(result.length, 0);
+							start();
 						}, error);
-						start();
 					}, error)
 				}, error);
 			});

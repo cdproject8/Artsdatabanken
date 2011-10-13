@@ -117,7 +117,7 @@ function Observation(specGroupId, obsId){
 	this.saveToDao = function() {
 		this.saveAll();
 		$.each(this.species, function(i, val){
-			dao.saveEntry(val, function(){
+			App.dao.saveEntry(val, function(){
 //				console.log("saving "+i);
 			}, null);
 		});
@@ -125,7 +125,7 @@ function Observation(specGroupId, obsId){
 	
 	this.loadFromDao = function() {
 		this.id = obsId;
-		dao.findAllEntries({observation_id: this.id }, function(result){
+		App.dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
 				console.log("loading "+i);
 				var newSpec = new ObsSpec(result.item(i).id, this);
@@ -145,7 +145,7 @@ function Observation(specGroupId, obsId){
 		this.loadFromDao();
 	} // Else then request a new id from the Dao
 	else {
-		dao.saveObservation(this, function(newId){
+		App.dao.saveObservation(this, function(newId){
 			obs.id = newId;
 			console.log("created new obs "+newId);
 		}, null);

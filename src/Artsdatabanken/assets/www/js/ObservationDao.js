@@ -81,13 +81,12 @@ function ObservationDao() {
 	};
 	
 	this.findAllEntries = function(criteria, success, error) {
-		var sql = 'SELECT * FROM species WHERE observation_id = ?';
+		var sql = 'SELECT * FROM species WHERE observation_id = ? ORDER BY id';
 		var values = [ criteria.observation_id ];
 		if (criteria.limit != null) {
 			sql = sql + ' LIMIT ?';
 			values[1] = criteria.limit;
 		}
-		sql += ' ORDER BY id';
 		
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {

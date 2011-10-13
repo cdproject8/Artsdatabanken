@@ -1,6 +1,8 @@
 $(document).ready(function(){
+	App.init();
+	
 	module("Module zeroPadding");
-
+	
 	test("pad 1,2 to 01", function() {
 		equal("01", zero_pad(1,2));
 	});
