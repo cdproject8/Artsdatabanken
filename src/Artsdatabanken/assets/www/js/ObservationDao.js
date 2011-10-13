@@ -10,14 +10,14 @@ function ObservationDao() {
 	this.migrate = function(error) {
 		if (db.version == "") {
 			db.changeVersion("", "0.3", function(t) {
-				me.uninstall();
-				me.install();
+				me.uninstall(error);
+				me.install(error);
 			});
 		}
 		else if (db.version == "0.2") {
 			db.changeVersion("0.2", "0.3", function(t) {
-				me.uninstall();
-				me.install();
+				me.uninstall(error);
+				me.install(error);
 			});
 		}
 	}
