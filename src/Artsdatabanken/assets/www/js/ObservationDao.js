@@ -127,7 +127,7 @@ function ObservationDao() {
 			         {id: 2, latitude: 11, longitude: 1, create_date: 1234},
 			         {id: 6, latitude: 22, longitude: 23, create_date: 11}
 	        ];
-			function item(i) {
+			this.item = function(i) {
 				return items[i];
 			};
 		};
