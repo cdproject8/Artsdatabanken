@@ -6,10 +6,10 @@ $(document).ready(function(){
 	 */
 	
 	function getDao() {
-		var daoa = new ObservationDao();
-		daoa.uninstall();
-		daoa.install();
-		return daoa;
+		var dao = new ObservationDao();
+		dao.uninstall();
+		dao.install();
+		return dao;
 	}
 	
 	function expectTable(tableName, callback) {
@@ -45,6 +45,25 @@ $(document).ready(function(){
 		};
 	};
 	
+	function saveAndRetrieveEntry(dao, entry, startAsync) {
+		dao.saveEntry(entry, function(result) {
+			dao.findEntry(entry.id, entry.observation.id, function(result) {
+				equals(result.activity, entry.activity);
+				equals(result.age, entry.age);
+				equals(result.comments, entry.comments);
+				equals(result.count, entry.count);
+				equals(result.observation_id, entry.observation.id);
+				equals(result.sex, entry.sex);
+				equals(result.species_name, entry.species_name);
+				equals(result.date_start, entry.date_start.getTime());
+				equals(result.date_end, entry.date_end.getTime());
+				if (startAsync) {
+					start();
+				}
+			});
+		}, error);
+	};
+	
 	/*
 	 * Tests
 	 */
@@ -64,36 +83,16 @@ $(document).ready(function(){
 	});
 
 	asyncTest("should be able to save and retrieve observation entry", function() {
-		expect(2);
+		expect(9);
 		
 		var dao = getDao();
 		var entry = getEntry();
 		
-		// Add entry nr 1
-		dao.saveEntry(entry, function(result) {
-			dao.findEntry(entry.id, entry.observation.id, function(result) {
-				equals(result.species_name, entry.species_name);
-				
-				// Add entry nr 2
-				entry.id = 32;
-				entry.species_name = "Small dog";
-				dao.saveEntry(entry, function(result) {
-					dao.findEntry(entry.id, entry.observation.id, function(result) {
-						equals(result.species_name, entry.species_name);
-						start();
-					});
-				}, function(error) {
-					start();
-				});
-			});
-		}, function(error) {
-			console.log(error);
-			start();
-		});
+		saveAndRetrieveEntry(dao, entry, true);
 	});
 	
 	asyncTest("should update entry if it exists", function() {
-		expect(3);
+		expect(11);
 		var entry = getEntry();
 		theDao = getDao();
 		theDao.saveEntry(entry, function(id) {
@@ -101,12 +100,7 @@ $(document).ready(function(){
 			theDao.findEntry(entry.id, entry.observation.id, function(result) {
 				equals(result.species_name, entry.species_name);
 				entry.species_name = "Small dog";
-				theDao.saveEntry(entry, function(id) {
-					theDao.findEntry(entry.id, entry.observation.id, function(result) {
-						equals(result.species_name, entry.species_name);
-						start();
-					}, error);
-				}, error);
+				saveAndRetrieveEntry(theDao, entry, true);
 			}, error);
 		}, error)
 	});
