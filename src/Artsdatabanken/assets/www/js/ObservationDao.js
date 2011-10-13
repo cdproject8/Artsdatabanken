@@ -1,9 +1,3 @@
-// TODO App class into separate file
-var App = {
-	VERSION: 0.2
-};
-
-// TODO add create_date to observation
 function ObservationDao() {
 	var me = this;
 	var db = null;
@@ -105,8 +99,9 @@ function ObservationDao() {
 			me.updateObservation(observation, success, error);
 			return;
 		}
+		
 		db.transaction(function(tx) {
-			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date], function(tx, results) {
+			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date.getTime()], function(tx, results) {
 				success(results.insertId);
 			}, error);
 		}, null);
@@ -115,6 +110,10 @@ function ObservationDao() {
 	this.findObservation = function(id, success, error) {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations WHERE id = ?', [ id ], function(tx, results) {
+				if (results.rows.length == 0) {
+					success(null);
+					return;
+				} 
 				success(results.rows.item(0));
 			}, null)
 		}, error);
