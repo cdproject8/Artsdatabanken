@@ -6,16 +6,16 @@
 <!-- EXTENDED INFO PAGE -->
 	<div data-role="page" id="extended_inf" >
 		<div data-role="header" data-theme="z">
-			<h1>Extenden Info</h1>
+			<h1>Detaljer</h1>
 		</div>
 		<div data-role="content" data-theme="z">
 			<div data-role="fieldcontain">
-				<label for="spec-name">Species</label>
+				<label for="spec-name">Art</label>
 				<input class="name spec" type="text" name="spec-name"
 					id="spec-name" value="" />
 			</div>
 			<div data-role="fieldcontain">
-				<label for="spec-count">Number</label>
+				<label for="spec-count">Antall</label>
 				<input class="spec" type="number" name="spec-count"
 					id="spec-count" value="1" />
 			</div>
@@ -30,53 +30,53 @@
 					</select>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-age">Age</label> 
+					<label for="spec-age">Alder</label> 
 					<input class="spec" type="number" name="spec-age"
 						id="spec-age" value="" />
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-activity" class="select">Activity</label> 						<select class="spec" 
+					<label for="spec-activity" class="select">Aktivitet</label> 						<select class="spec" 
 						name="spec-activity" id="spec-activity">
-						<option value="rest">Resting</option>
-						<option value="nourish">Seeking Nourishment</option>
-						<option value="flying">Flying</option>
-						<option value="swim">Swimming</option>
+						<option value="rest">Hviler</option>
+						<option value="nourish">Søker næring</option>
+						<option value="flying">Flyr</option>
+						<option value="swim">Svømmer</option>
+						<!-- TODO add more options etc -->
 					</select>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-date_start">Date Start</label> 
+					<label for="spec-date_start">Start dato</label> 
 					<input class="spec" name="spec-date_start"
 						id="spec-date_start" type="date" data-role="datebox"
 						data-options='{"mode": "calbox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-time_start">Time Start</label> 
+					<label for="spec-time_start">Start tid</label> 
 					<input class="spec" name="spec-time_start"
 						id="spec-time_start" type="date" data-role="datebox"
 						data-options='{"mode": "timebox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-date_end">Date End</label> 
+					<label for="spec-date_end">Slutt dato</label> 
 					<input class="spec" name="spec-date_end" type="date"
 						data-role="datebox" id="spec-date_end" data-options='{"mode": "calbox"}' />
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-time_end">Time End</label> 
+					<label for="spec-time_end">Slutt tid</label> 
 					<input class="spec" name="spec-time_end" id="spec-time_end"
 						type="date" data-role="datebox" data-options='{"mode": "timebox"}'>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-comment">Comments</label>
+					<label for="spec-comment">Kommentar</label>
 					<textarea class="spec" cols="40" rows="8" name="spec-comment" id="spec-comment"></textarea>
 				</div>
 				<div data-role="fieldcontain">
-					<label for="spec-picture">Picture</label>
-					<!--  hmm  -->
+					<a href="" data-role="button" data-icon="arrow-r" onClick="console.log(' picture include NYI'); return false;">Legg til bilde</a>
 				</div>
 			</div>
 		</div>
 		<div data-role="footer" data-theme="z">
-			<h4>A fine specimen indeed</h4>
+			<h4></h4>
 		</div>
 	</div>
 
