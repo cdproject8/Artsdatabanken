@@ -3,8 +3,6 @@ var specGroupId;
 var observation;
 var observationId = null;
 var observationList;
-// the ObservationDao object, available to every class
-var dao;
 // Init jQuery mobile
 
 $(document).bind("mobileinit", function() {
@@ -13,6 +11,7 @@ $(document).bind("mobileinit", function() {
 		// Config..
 	});
 	$.mobile.page.prototype.options.addBackBtn = true;
+	$.mobile.page.prototype.options.backBtnText = "Tilbake";
 	//$.mobile.page.prototype.options.domCache = true;
 	
 	// This will be executed when jQuery mobile is loaded,
@@ -26,8 +25,6 @@ $(document).bind("mobileinit", function() {
 		App.init();
 		
 		//dbInit();
-		dao = new ObservationDao();
-
 		//JQuery ready
 		
 		$('#observation').live('pagecreate',function(event){
@@ -93,7 +90,7 @@ $(document).bind("mobileinit", function() {
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	//PhoneGap ready
-	dbInit();
+	App.init();
 //	alert('phonegap ready')
 }
 

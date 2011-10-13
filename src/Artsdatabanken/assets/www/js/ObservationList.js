@@ -3,7 +3,7 @@ function ObservationList() {
 	var error;
 	
 	this.populateList = function(){
-		dao.findAllObservations( {}, function(result) {
+		App.dao.findAllObservations( {}, function(result) {
 			for (var i = 0; i < result.length; i++){
 				var obsId = result.item(i).id;
 				var date = new Date(result.item(i).create_date);

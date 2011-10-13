@@ -9,27 +9,28 @@
 		<div data-role="content" data-theme="z">
 			<form id="observation_form" action="form.html" onsubmit="return false;" data-ajax="false" method="post">
 				<div data-role="fieldcontain">
-					<label for="location">Location</label>
+					<label for="location">Lokasjon</label>
 					<select name="location"	id="location">
 						<option value="nide0">Niderø</option>
 						<option value="nide1">-Artsdatabankens Hage</option>
 						<option value="nide2">-Niderø nord</option>
 						<option value="nardo0">Nardo</option>
 					</select>
+					<a href="" data-role="button" onClick="console.log('geoloc NYI'); return false;">Finn GPS koordinater</a>
 				</div>
 				<div class="ui-grid-a">
-					<div class="ui-block-a">Species</div>
-					<div class="ui-block-b"># Observed</div>
+					<div class="ui-block-a">Art</div>
+					<div class="ui-block-b">Antall</div>
 				</div>
 				<!--
 					Genererated HTML containing rows of
 					<div id="species_row"></div>
 				-->
 			</form>
-			<a data-role="button" href="" onClick="add_species(); return false;" >Add another species</a>
+			<a data-role="button" href="" onClick="add_species(); return false;" >Legg til ny art</a>
 		</div>
 		<div data-role="footer" data-theme="z">
-			<a href="submit.html" data-role="button">Lagre</a>
+			<a href="submit.html" data-icon="check">Lagre</a>
 		</div>
 	</div>
 
