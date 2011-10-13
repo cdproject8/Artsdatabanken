@@ -22,9 +22,9 @@ $(document).bind("mobileinit", function() {
 
 	$(document).ready(function() { 
 		
+		//kommenter bort linja under før du laster den opp på telefonen, ellers kræsjer alt.
 		App.init();
 		
-		//dbInit();
 		//JQuery ready
 		
 		$('#observation').live('pagecreate',function(event){
