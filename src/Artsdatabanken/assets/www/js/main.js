@@ -1,7 +1,7 @@
 //GLOBAL VARS
 var specGroupId;
 var observation;
-var observationId = -1;
+var observationId = null;
 var observationList;
 // the ObservationDao object, available to every class
 var dao;
@@ -31,7 +31,7 @@ $(document).bind("mobileinit", function() {
 		$('#observation').live('pagecreate',function(event){
 		
 			observation = new Observation(specGroupId, observationId);
-			observation.newSpecies();
+			if (observationId == null) observation.newSpecies();
 		});
 		$('#observation').live('pageshow',function(event){
 			// update info on the row that was edited in extended info
@@ -67,9 +67,9 @@ $(document).bind("mobileinit", function() {
 			observation.saveExtended();
 			
 		});
-		// If observationId < 0 then a new observation is created
+		// If observationId is null then a new observation is created
 		$('#species_select').live('pagebeforeshow',function(event){
-			observationId = -1;
+			observationId = null;
 		});
 		
 		$('#list_observations').live('pagecreate',function(event){

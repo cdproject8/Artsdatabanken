@@ -2,12 +2,13 @@ function Observation(specGroupId, obsId){
 
 	//pointer for jquery functions
 	var obs = this;
-	this.id = -1;
+	this.id = null;
 	this.species = new Array();
 
 	this.gpsloc;
 	this.location;
 	this.saved = false;
+	this.create_date = new Date();
 	
 	this.activeExtended;
 		
@@ -117,29 +118,36 @@ function Observation(specGroupId, obsId){
 		this.saveAll();
 		$.each(this.species, function(i, val){
 			dao.saveEntry(val, function(){
-				console.log("saving "+i);
+//				console.log("saving "+i);
 			}, null);
 		});
 	}
 	
 	this.loadFromDao = function() {
 		this.id = obsId;
-		dao.findAllEntries({}, function(result){
+		dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
-				console.log("found"+result.items(i).id);
-				//TODO
+				console.log("loading "+i);
+				var newSpec = new ObsSpec(result.item(i).id, this);
+				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).action, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
+				console.log(newSpec);
+				newSpec.addHTML();
+				newSpec.fillObsListValues();
+				obs.addSpecies(newSpec);
 			}
 		
 		}, null);
 	}
 	
 	// if id specified then read observation from Dao
-	if (this.Id >= 0) {
+	if (obsId != null) {
+		console.log("loading "+obsId +" from db");
 		this.loadFromDao();
 	} // Else then request a new id from the Dao
-	else { 
-		dao.saveObservation(this, function(id){
-		obs.id = id;
+	else {
+		dao.saveObservation(this, function(newId){
+			obs.id = newId;
+			console.log("created new obs "+newId);
 		}, null);
 	}
 	

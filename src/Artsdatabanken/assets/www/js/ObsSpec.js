@@ -35,10 +35,6 @@ function ObsSpec(id, observation){
 		$('#observation_form').append(this.speciesListHtml().trigger('create'));
    		//Adding autocomplete to the namefield
 		$("#species_row"+this.id +" .ui-input-name-spec").speciesAutocomplete({data: observation.autocompleteFile});
-		$(".ui-input-name-spec").bind('autocompleteselect', function(e, ui){
-			console.log(e);
-			console.log(ui);
-		});
 	}
 	
 	this.fillObsListValues = function() {
@@ -91,6 +87,17 @@ function ObsSpec(id, observation){
 			}
 		}
 		this.comment = $("#extended_inf :input[id=spec-comment]").val();
+	}
+	
+	this.init = function(s, c, sx, a, ac, ds, de, co) {
+		this.species_name = s;
+		this.count = c;
+		this.sex = sx;
+		this.age = a;
+		this.action = ac;
+		this.date_start = ds;
+		this.date_end = de;
+		this.comment = co;
 	}
 
 }
