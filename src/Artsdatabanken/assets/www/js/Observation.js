@@ -2,7 +2,7 @@ function Observation(specGroupId, obsId){
 
 	//pointer for jquery functions
 	var obs = this;
-	this.id = -1;	
+	this.id = -1;
 	this.species = new Array();
 
 	this.gpsloc;
@@ -10,10 +10,6 @@ function Observation(specGroupId, obsId){
 	this.saved = false;
 	
 	this.activeExtended;
-
-	if (obsId >= 0) {
-		this.loadFromDao();
-	}
 		
 	// TODO make autocomplete loading dynamic for each species group based on specGroupId
 	this.autocompleteFile = "data/autocomplete/89/index.js";
@@ -117,13 +113,34 @@ function Observation(specGroupId, obsId){
 		});
 	}
 	
+	this.saveToDao = function() {
+		this.saveAll();
+		$.each(this.species, function(i, val){
+			dao.saveEntry(val, function(){
+				console.log("saving "+i);
+			}, null);
+		});
+	}
+	
 	this.loadFromDao = function() {
-		dao.findAllEntries(function(result){
+		this.id = obsId;
+		dao.findAllEntries({}, function(result){
 			for (var i=0; i < result.length;i++){
 				console.log("found"+result.items(i).id);
+				//TODO
 			}
 		
-		},error);
+		}, null);
+	}
+	
+	// if id specified then read observation from Dao
+	if (this.Id >= 0) {
+		this.loadFromDao();
+	} // Else then request a new id from the Dao
+	else { 
+		dao.saveObservation(this, function(id){
+		obs.id = id;
+		}, null);
 	}
 	
 }
