@@ -1,9 +1,3 @@
-// TODO App class into separate file
-var App = {
-	VERSION: 0.2
-};
-
-// TODO add create_date to observation
 function ObservationDao() {
 	var me = this;
 	var db = null;
