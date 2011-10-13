@@ -123,9 +123,9 @@ function ObservationDao() {
 		var mock = function() {
 			this.length = 3;
 			var items = [
-			         {id: 1, latitude: 25, longitude: 33},
-			         {id: 2, latitude: 11, longitude: 1},
-			         {id: 6, latitude: 22, longitude: 23}
+			         {id: 1, latitude: 25, longitude: 33, create_date: 2342},
+			         {id: 2, latitude: 11, longitude: 1, create_date: 1234},
+			         {id: 6, latitude: 22, longitude: 23, create_date: 11}
 	        ];
 			function item(i) {
 				return items[i];
