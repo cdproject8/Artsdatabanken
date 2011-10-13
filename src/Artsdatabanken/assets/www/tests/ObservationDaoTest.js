@@ -25,6 +25,15 @@ $(document).ready(function(){
 		});
 	}
 	
+	function createExpectRemovedCallback(dao, result, entry_id, observation_id) {
+		return function() {
+			dao.findEntry(entry_id, observation_id, function(result) {
+				ok(result == null, "id should be null");
+				start();
+			}, error)
+		}
+	}
+	
 	function error(err) {
 		console.log(err);
 		start();
@@ -45,18 +54,22 @@ $(document).ready(function(){
 		};
 	};
 	
+	function entryEquals(actual, expected) {
+		equals(actual.activity, expected.activity);
+		equals(actual.age, expected.age);
+		equals(actual.comments, expected.comments);
+		equals(actual.count, expected.count);
+		equals(actual.observation_id, expected.observation.id);
+		equals(actual.sex, expected.sex);
+		equals(actual.species_name, expected.species_name);
+		equals(actual.date_start, expected.date_start.getTime());
+		equals(actual.date_end, expected.date_end.getTime());
+	}
+	
 	function saveAndRetrieveEntry(dao, entry, startAsync) {
 		dao.saveEntry(entry, function(result) {
 			dao.findEntry(entry.id, entry.observation.id, function(result) {
-				equals(result.activity, entry.activity);
-				equals(result.age, entry.age);
-				equals(result.comments, entry.comments);
-				equals(result.count, entry.count);
-				equals(result.observation_id, entry.observation.id);
-				equals(result.sex, entry.sex);
-				equals(result.species_name, entry.species_name);
-				equals(result.date_start, entry.date_start.getTime());
-				equals(result.date_end, entry.date_end.getTime());
+				entryEquals(result, entry);
 				if (startAsync) {
 					start();
 				}
@@ -84,25 +97,48 @@ $(document).ready(function(){
 
 	asyncTest("should be able to save and retrieve observation entry", function() {
 		expect(9);
-		
-		var dao = getDao();
-		var entry = getEntry();
-		
-		saveAndRetrieveEntry(dao, entry, true);
+		saveAndRetrieveEntry(getDao(), getEntry(), true);
 	});
 	
 	asyncTest("should update entry if it exists", function() {
-		expect(11);
+		expect(18);
 		var entry = getEntry();
-		theDao = getDao();
+		var theDao = getDao();
 		theDao.saveEntry(entry, function(id) {
-			ok(true, "entry inserted");
 			theDao.findEntry(entry.id, entry.observation.id, function(result) {
-				equals(result.species_name, entry.species_name);
-				entry.species_name = "Small dog";
+				entryEquals(result, entry);
 				saveAndRetrieveEntry(theDao, entry, true);
 			}, error);
 		}, error)
+	});
+	
+	asyncTest("should be able to find multiple entries based on criteria", function() {
+		var dao = getDao();
+		var entry = getEntry();
+		entry.id = 3;
+		entry.observation.id = 7;
+		dao.saveEntry(entry, function(id) {
+			entry.id = 5;
+			entry.observation.id = 7;
+			dao.saveEntry(entry, function(id) {
+				dao.findAllEntries({observation_id: 7}, function() {
+					start();
+				}, error)
+			});
+		}, error);
+	});
+	
+	asyncTest("should be able to delete entries", function() {
+		expect(10);
+		var dao = getDao();
+		var entry = getEntry();
+		
+		dao.saveEntry(entry, function(id) {
+			dao.findEntry(id, entry.observation.id, function(result) {
+				entryEquals(result, entry);
+				dao.removeEntry(id, entry.observation.id, createExpectRemovedCallback(dao, result, id, entry.observation.id));
+			}, error)
+		}, error);
 	});
 	
 	asyncTest("should be able to save and retrieve observations", function() {
@@ -152,26 +188,6 @@ $(document).ready(function(){
 				}, error);
 			}, error);
 		});
-	});
-	
-	asyncTest("should be able to delete entries", function() {
-		expect(2);
-		var dao = getDao();
-		var entry = getEntry();
-		
-		dao.saveEntry(entry, function(id) {
-			dao.findEntry(id, entry.observation.id, function(result) {
-				console.log(result);
-				equals(result.id, id);
-				
-				dao.removeEntry(id, entry.observation.id, function() {
-					dao.findEntry(id, entry.observation.id, function(result) {
-						ok(result == null, "id should be null");
-						start();
-					}, error)
-				});
-			}, error)
-		}, error);
 	});
 	
 	asyncTest("should delete all entries for observation when it's removed", function() {
