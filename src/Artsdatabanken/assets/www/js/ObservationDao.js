@@ -152,5 +152,5 @@ function ObservationDao() {
 	
 	// Constructor
 	this.connect();
-	this.install();
+	this.migrate();
 }
