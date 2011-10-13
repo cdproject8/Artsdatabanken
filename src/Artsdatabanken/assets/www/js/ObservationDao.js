@@ -70,7 +70,10 @@ function ObservationDao() {
 		}, error)
 	};
 	
-	this.findAllEntries = function(observation_id, success, error) {
+	this.findAllEntries = function(criteria, success, error) {
+		if (criteria.observation_id < 0) {
+			alert("criteria.observation_id invalid");
+		}
 		var mockEntry = {
 			observation: {id: 1},
 			id: 2,
