@@ -2,6 +2,7 @@
 var specGroupId;
 var observation;
 var observationId;
+var observationList;
 
 // Init jQuery mobile
 
@@ -21,7 +22,8 @@ $(document).bind("mobileinit", function() {
 
 	$(document).ready(function() { 
 
-		//dbInit();			
+		//dbInit();
+		var observationDao = new ObservationDao();
 
 		//JQuery ready
 		
@@ -65,10 +67,10 @@ $(document).bind("mobileinit", function() {
 			
 		});
 		
-		$('#list_observations').live('pagebeforeshow',function(event){
+		$('#list_observations').live('pagecreate',function(event){
 			//populateObservationList();
-			var ObservationList = new ObservationList();
-			ObservationList.populateList();
+			observationList = new ObservationList(observationDao);
+			observationList.populateList();
 		});		
 		$('#view_observation').live('pagebeforeshow',function(event){
 			//populateSpeciesList();
