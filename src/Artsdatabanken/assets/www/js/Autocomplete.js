@@ -14,6 +14,9 @@ function Autocomplete(data, success, error) {
 	
 	this.callback = function(request, response) {
 		if (!dao.prefixMatch(request.term, dao.currentPrefix())) {
+			console.log("loading file");
+			console.log(request.term);
+			console.log(dao.currentPrefix());
 			$(dao.prefixMap()).each(function() {
 				if (dao.prefixMatch(request.term, this[0])) {
 					dao.loadByTerm(request.term, function(data) {
@@ -80,9 +83,6 @@ function Autocomplete(data, success, error) {
 		
 		dao.load(inData, function(data) {
 			me.suggestions(data);
-			if (dao.isMetafile(inData)) {
-				dao.currentPrefix("$");
-			}
 			if (success instanceof Function) {
 				success(data);
 			}
@@ -101,7 +101,7 @@ function Autocomplete(data, success, error) {
 		var options = {
 			data: [ ], // Array or filename
 			success: function(data) {},
-			error: function(data) {},
+			error: function(data) {}
 		};
 		$.extend(options, optionsArg);
 		var ac = new Autocomplete(options.data, options.success, options.error);
