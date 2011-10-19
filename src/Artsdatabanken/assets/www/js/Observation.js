@@ -58,11 +58,20 @@ function Observation(specGroupId, obsId){
 	this.removeSpecies = function(specnum) {
 		$("#species_row"+specnum).remove();
 		var spec = this.getSpecies(specnum);
-		dao.removeEntry(parseInt(specnum), obs.id, function() {
+		App.dao.removeEntry(parseInt(specnum), obs.id, function() {
 			console.log("deleting " + specnum + " from " + obs.id);
 		}, null);
 		this.species.splice(this.species.indexOf(spec),1);
 		delete spec;
+	}
+	
+	this.deleteObs = function(){
+		if ( confirm("Are you sure you want to delete this observation?")){
+			var obsid = this.id;
+			App.dao.removeObservation(this.id, function(result) {
+				console.log("deleted observation "+obsid);
+			},null);
+		}
 	}
 	
 	// For use together with loading from database and unit testing

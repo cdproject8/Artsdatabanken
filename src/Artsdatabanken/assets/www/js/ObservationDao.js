@@ -95,6 +95,16 @@ function ObservationDao() {
 		}, error);
 	};
 	
+	this.countObservation = function(obsId, success, error) {
+		var sql = 'SELECT count(*) AS num FROM species WHERE observation_id = ?';
+		var values = [ obsId ];		
+		db.transaction(function(tx) {
+			tx.executeSql(sql, values, function(tx, results) {
+				success(results.rows);
+			}, null)
+		}, error);
+	};
+	
 	this.removeEntry = function(id, observation_id, success, error) {
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE id = ? AND observation_id = ?', [id, observation_id], success, error);
