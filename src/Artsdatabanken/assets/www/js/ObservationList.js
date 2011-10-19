@@ -1,8 +1,10 @@
 function ObservationList() {
 	$("#observation_list").listview();
-	var error;
+	var error = function() {
+		$("#observation_list").append("<li>Could not load observations from database</li>");
+	};
 	
-	this.populateList = function(){
+	this.populateList = function() {
 		App.dao.findAllObservations( {}, function(result) {
 			for (var i = 0; i < result.length; i++){
 				var obsId = result.item(i).id;
@@ -17,7 +19,7 @@ function ObservationList() {
 			}
 			$("#observation_list").listview("refresh");
 		}, error);
-	}
+	};
 	
 	
 }
