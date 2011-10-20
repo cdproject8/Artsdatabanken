@@ -10,6 +10,8 @@ function ObsSpec(id, observation){
 	this.date_end = new Date();
 	this.comment = " ";
 	this.picture = " ";
+	
+	this.fields = [this.species_name, this.count, this.age, this.sex, this.action, this.date_start, this.date_end, this.comment]
 
 	// the html for the observation list
 	this.speciesListHtml = function(){
