@@ -5,13 +5,15 @@ function ObsSpec(id, observation){
 	this.count = 1;
 	this.sex = " ";
 	this.age = " ";
-	this.action = " ";
+	this.activity = " ";
 	this.date_start = new Date();
 	this.date_end = new Date();
 	this.comment = " ";
 	this.picture = " ";
 	
-	this.fields = [this.species_name, this.count, this.age, this.sex, this.action, this.date_start, this.date_end, this.comment]
+	this.fields = function(){
+		return [this.species_name, this.count, this.age, this.sex, this.activity, this.date_start, this.date_end, this.comment];
+	 }
 
 	// the html for the observation list
 	this.speciesListHtml = function(){
@@ -96,7 +98,7 @@ function ObsSpec(id, observation){
 		this.count = c;
 		this.sex = sx;
 		this.age = a;
-		this.action = ac;
+		this.activity = ac;
 		this.date_start = ds;
 		this.date_end = de;
 		this.comment = co;

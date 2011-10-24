@@ -8,4 +8,4 @@ function AppClass() {
 	};
 }
 
-App = new AppClass();
+var App = new AppClass();

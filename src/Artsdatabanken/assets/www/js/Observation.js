@@ -8,6 +8,7 @@ function Observation(specGroupId, obsId){
 	this.gpsloc;
 	this.location;
 	this.saved = false;
+	this.deleted = false;
 	this.create_date = new Date();
 	
 	this.activeExtended;
@@ -66,11 +67,14 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.deleteObs = function(){
-		if ( confirm("Are you sure you want to delete this observation?")){
+		if ( this.deleted == false && confirm("Are you sure you want to delete this observation?")){
+			//console.log(this.deleted == false);
 			var obsid = this.id;
+			this.deleted = true;
 			App.dao.removeObservation(this.id, function(result) {
 				console.log("deleted observation "+obsid);
 			},null);
+			$.mobile.changePage( "index.html");
 		}
 	}
 	
@@ -140,7 +144,7 @@ function Observation(specGroupId, obsId){
 		App.dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
 				var newSpec = new ObsSpec(result.item(i).id, obs);
-				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).action, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
+				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).activity, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
 				newSpec.addHTML();
 				newSpec.fillObsListValues();
 				obs.addSpecies(newSpec);
@@ -155,14 +159,17 @@ function Observation(specGroupId, obsId){
 			var date = zero_pad(this.getDate(),2) + "." + zero_pad(this.getMonth()+1,2) + "." + this.getFullYear();
 			date += "\t"+ zero_pad(this.getHours(),2) + ":" + zero_pad(this.getMinutes(),2);
 			return date;
-		}	
+		};
 		
 		// Fields to tell the import tool which fields are included
-		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
+		var string = "Art;Antall;Alder;Kjønn;Aktivitet;Startdato;Starttid;Sluttdato;Sluttid;Kommentar\n";
 		
 		$.each(this.species, function(i, val){
-			$.each(val.fields, function(j, fval){
-				string += fval.toString() +"\t"
+			var fields = val.fields();
+			console.log(val.fields());
+			$.each(fields, function(j, fval){
+				console.log(j + " " + fval);
+				string += fval.toString() +";"
 			});
 			string += "\n";
 		});
@@ -171,7 +178,9 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.exportObservation = function() {
-		this.exportDataString();
+		this.saveAll();
+		var datastring = this.exportDataString();
+		Android.sendEmail("Observation "+this.id, datastring);
 	}
 	// if id specified then read observation from Dao
 	if (obsId != null) {
