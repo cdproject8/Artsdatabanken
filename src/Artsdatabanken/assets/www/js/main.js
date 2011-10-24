@@ -137,6 +137,7 @@ $.extend({
 	  }
 });
 
+/*
 Android.sendEmail = function(subject, body) { 
   var extras = {};
   extras[WebIntent.EXTRA_SUBJECT] = subject;
@@ -152,3 +153,4 @@ Android.sendEmail = function(subject, body) {
     }
   ); 
 };
+*/

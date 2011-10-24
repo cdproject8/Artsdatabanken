@@ -3,11 +3,13 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", "0.3", "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "0.4", "ObservationsDB", 1048576);
 		return me;
 	};
 	
 	this.migrate = function(error) {
+		me.install(error);
+		return;
 		if (db.version == "") {
 			db.changeVersion("", "0.3", function(t) {
 				me.uninstall(error);
