@@ -67,7 +67,8 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.deleteObs = function(){
-		if ( confirm("Are you sure you want to delete this observation?") && this.deleted == false ){
+		if ( this.deleted == false && confirm("Are you sure you want to delete this observation?")){
+			//console.log(this.deleted == false);
 			var obsid = this.id;
 			this.deleted = true;
 			App.dao.removeObservation(this.id, function(result) {
@@ -174,7 +175,9 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.exportObservation = function() {
-		this.exportDataString();
+		this.saveAll();
+		var datastring = this.exportDataString();
+		Android.sendEmail("Observation "+this.id, datastring);
 	}
 	// if id specified then read observation from Dao
 	if (obsId != null) {

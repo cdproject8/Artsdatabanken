@@ -23,7 +23,7 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 		
 		//kommenter bort linja under før du laster den opp på telefonen, ellers kræsjer alt.
-		App.init();
+		//App.init();
 		
 		//JQuery ready
 		
@@ -55,7 +55,7 @@ $(document).bind("mobileinit", function() {
 				jQuery(event.target).remove();
 				App.dao.countObservation(observation.id, function(result){
 					if (parseInt(result.item(0).num) == 0) {
-						console.log("removed empty observation "+observation.id);
+						console.log("removing empty observation "+observation.id);
 						observation.deleteObs();
 					}
 				}, null);
@@ -136,3 +136,19 @@ $.extend({
 	    return $.getUrlVars()[name];
 	  }
 });
+
+Android.sendEmail = function(subject, body) { 
+  var extras = {};
+  extras[WebIntent.EXTRA_SUBJECT] = subject;
+  extras[WebIntent.EXTRA_TEXT] = body;
+  window.plugins.webintent.startActivity({ 
+      action: WebIntent.ACTION_SEND,
+      type: 'text/plain', 
+      extras: extras 
+    }, 
+    function() {}, 
+    function() {
+      alert('Failed to send email via Android Intent');
+    }
+  ); 
+};
