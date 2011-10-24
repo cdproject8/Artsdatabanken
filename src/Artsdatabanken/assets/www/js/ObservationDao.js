@@ -66,7 +66,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
-			}, null);
+			}, function() {});
 		}, error);
 	};
 	
@@ -74,11 +74,11 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM species WHERE id = ? AND observation_id = ?', [ id, observation_id ], function(tx, results) {
 				if (results.rows.length == 0) {
-					success(null);
+					success(function() {});
 					return;
 				} 
 				success(results.rows.item(0));
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
@@ -93,7 +93,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
@@ -103,14 +103,14 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.removeEntry = function(id, observation_id, success, error) {
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE id = ? AND observation_id = ?', [id, observation_id], success, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.updateObservation = function(observation, success, error) {
@@ -118,7 +118,7 @@ function ObservationDao() {
 			tx.executeSql('UPDATE observations SET longitude = ?, latitude = ? WHERE id = ?', [observation.longitude, observation.latitude, observation.id], function(tx, results) {
 				success(observation.id);
 			}, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.saveObservation = function(observation, success, error) {
@@ -131,7 +131,7 @@ function ObservationDao() {
 			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date.getTime()], function(tx, results) {
 				success(results.insertId);
 			}, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.findObservation = function(id, success, error) {
@@ -142,7 +142,7 @@ function ObservationDao() {
 					return;
 				} 
 				success(results.rows.item(0));
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
@@ -150,7 +150,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
@@ -158,7 +158,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE observation_id = ?', [ observation_id ], success, error);
 			tx.executeSql('DELETE FROM observations WHERE id = ?', [ observation_id ], success, error);
-		}, null);
+		}, function() {});
 	};
 	
 	// Constructor
