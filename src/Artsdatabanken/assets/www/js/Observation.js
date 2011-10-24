@@ -8,6 +8,7 @@ function Observation(specGroupId, obsId){
 	this.gpsloc;
 	this.location;
 	this.saved = false;
+	this.deleted = false;
 	this.create_date = new Date();
 	
 	this.activeExtended;
@@ -66,11 +67,14 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.deleteObs = function(){
-		if ( confirm("Are you sure you want to delete this observation?")){
+		if ( this.deleted == false && confirm("Are you sure you want to delete this observation?")){
+			//console.log(this.deleted == false);
 			var obsid = this.id;
+			this.deleted = true;
 			App.dao.removeObservation(this.id, function(result) {
 				console.log("deleted observation "+obsid);
 			},null);
+			$.mobile.changePage( "index.html");
 		}
 	}
 	
@@ -158,11 +162,11 @@ function Observation(specGroupId, obsId){
 		}	
 		
 		// Fields to tell the import tool which fields are included
-		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
+		var string = "Art;Antall;Alder;Kjønn;Aktivitet;Startdato;Starttid;Sluttdato;Sluttid;Kommentar\n";
 		
 		$.each(this.species, function(i, val){
 			$.each(val.fields, function(j, fval){
-				string += fval.toString() +"\t"
+				string += fval.toString() +";"
 			});
 			string += "\n";
 		});
@@ -171,7 +175,9 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.exportObservation = function() {
-		this.exportDataString();
+		this.saveAll();
+		var datastring = this.exportDataString();
+		Android.sendEmail("Observation "+this.id, datastring);
 	}
 	// if id specified then read observation from Dao
 	if (obsId != null) {
