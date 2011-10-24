@@ -73,6 +73,7 @@ function Autocomplete(data, success, error) {
 	};
 	
 	this.load = function(inData, success, error) {
+		console.log("loading file");
 		if (inData instanceof Array) {
 			this.suggestions(data);
 			return;
@@ -80,9 +81,6 @@ function Autocomplete(data, success, error) {
 		
 		dao.load(inData, function(data) {
 			me.suggestions(data);
-			if (dao.isMetafile(inData)) {
-				dao.currentPrefix("$");
-			}
 			if (success instanceof Function) {
 				success(data);
 			}
@@ -97,15 +95,20 @@ function Autocomplete(data, success, error) {
 };
 
 (function($) {
+	var instance = new Autocomplete();
+	var curData = null;
 	$.fn.speciesAutocomplete = function(optionsArg) {
 		var options = {
 			data: [ ], // Array or filename
 			success: function(data) {},
-			error: function(data) {},
+			error: function(data) {}
 		};
 		$.extend(options, optionsArg);
-		var ac = new Autocomplete(options.data, options.success, options.error);
-		ac.activate(this);
+		if (curData != options.data) {
+			curData = options.data;
+			instance.load(options.data, options.success, options.error);
+		}
+		instance.activate(this);
 		return this;
 	};
 }(jQuery));

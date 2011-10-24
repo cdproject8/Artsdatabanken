@@ -58,11 +58,20 @@ function Observation(specGroupId, obsId){
 	this.removeSpecies = function(specnum) {
 		$("#species_row"+specnum).remove();
 		var spec = this.getSpecies(specnum);
-		dao.removeEntry(parseInt(specnum), obs.id, function() {
+		App.dao.removeEntry(parseInt(specnum), obs.id, function() {
 			console.log("deleting " + specnum + " from " + obs.id);
 		}, null);
 		this.species.splice(this.species.indexOf(spec),1);
 		delete spec;
+	}
+	
+	this.deleteObs = function(){
+		if ( confirm("Are you sure you want to delete this observation?")){
+			var obsid = this.id;
+			App.dao.removeObservation(this.id, function(result) {
+				console.log("deleted observation "+obsid);
+			},null);
+		}
 	}
 	
 	// For use together with loading from database and unit testing
@@ -140,6 +149,30 @@ function Observation(specGroupId, obsId){
 		}, null);
 	}
 	
+	this.exportDataString = function(){
+		Date.prototype.toString = function(){
+		
+			var date = zero_pad(this.getDate(),2) + "." + zero_pad(this.getMonth()+1,2) + "." + this.getFullYear();
+			date += "\t"+ zero_pad(this.getHours(),2) + ":" + zero_pad(this.getMinutes(),2);
+			return date;
+		}	
+		
+		// Fields to tell the import tool which fields are included
+		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
+		
+		$.each(this.species, function(i, val){
+			$.each(val.fields, function(j, fval){
+				string += fval.toString() +"\t"
+			});
+			string += "\n";
+		});
+		console.log(string);
+		return string;
+	}
+	
+	this.exportObservation = function() {
+		this.exportDataString();
+	}
 	// if id specified then read observation from Dao
 	if (obsId != null) {
 		console.log("loading "+obsId +" from db");

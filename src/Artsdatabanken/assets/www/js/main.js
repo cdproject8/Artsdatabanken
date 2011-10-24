@@ -36,7 +36,7 @@ $(document).bind("mobileinit", function() {
 			// update info on the row that was edited in extended info
 			if (observation.activeExtended != null) observation.updateMainPage();
 		});
-		
+		/* event doesn't work
 		$('#observation').live('pagebeforechange', function(event, data){
 			console.log("changing from observation");
 			if ( !observation.saved && confirm("Are you sure you want to leave the observation page, unsaved information will be lost")) { 
@@ -46,12 +46,20 @@ $(document).bind("mobileinit", function() {
 				event.preventDefault();
 			}
 		});
+		*/
 		// Disable caching of observation page, so that when clicking
 		// new observation, the previous one is not opened and pagecreate is 	
 		// triggered again
 		$('#observation').live('pagehide',function(event, data){
-			if (!data.nextPage.is("#extended_inf"))
+			if (!data.nextPage.is("#extended_inf")) {
 				jQuery(event.target).remove();
+				App.dao.countObservation(observation.id, function(result){
+					if (parseInt(result.item(0).num) == 0) {
+						console.log("removed empty observation "+observation.id);
+						observation.deleteObs();
+					}
+				}, null);
+			}
 		});
 
 		$('#submit').live('pagebeforeshow',function(event){

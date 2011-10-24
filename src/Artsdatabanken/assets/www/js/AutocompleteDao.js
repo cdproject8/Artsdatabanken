@@ -19,13 +19,14 @@ function AutocompleteDao() {
 		if (currentPrefix == null) {
 			currentPrefix = me.currentPrefix();
 		}
-		var pattern = new RegExp("^" + currentPrefix, "i");
+		var pattern = new RegExp("^" + currentPrefix , "i");
 		return pattern.test(term);
 	};
 
 	this.loadByTerm = function(term, success, error) {
 		var prefixFile = me.prefixFile(term, true);
 		me.load(prefixFile.filename, function(suggestions) {
+			state.currentPrefix = prefixFile.prefix;
 			success({prefix: prefixFile.prefix, suggestions: suggestions})
 		}, error);
 	};
@@ -42,6 +43,7 @@ function AutocompleteDao() {
 			success: function(fileData, textStatus) {
 				eval(fileData);
 				if (me.isMetafile(data)) {
+					me.currentPrefix("$");
 					state.prefixMap = autocompleteData();
 					me.prefixMap(state.prefixMap);
 					me.categoryRoot(data);
