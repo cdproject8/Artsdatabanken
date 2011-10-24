@@ -144,7 +144,7 @@ function Observation(specGroupId, obsId){
 		App.dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
 				var newSpec = new ObsSpec(result.item(i).id, obs);
-				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).action, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
+				newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).activity, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment);
 				newSpec.addHTML();
 				newSpec.fillObsListValues();
 				obs.addSpecies(newSpec);
@@ -159,13 +159,16 @@ function Observation(specGroupId, obsId){
 			var date = zero_pad(this.getDate(),2) + "." + zero_pad(this.getMonth()+1,2) + "." + this.getFullYear();
 			date += "\t"+ zero_pad(this.getHours(),2) + ":" + zero_pad(this.getMinutes(),2);
 			return date;
-		}	
+		};
 		
 		// Fields to tell the import tool which fields are included
 		var string = "Art;Antall;Alder;Kjønn;Aktivitet;Startdato;Starttid;Sluttdato;Sluttid;Kommentar\n";
 		
 		$.each(this.species, function(i, val){
-			$.each(val.fields, function(j, fval){
+			var fields = val.fields();
+			console.log(val.fields());
+			$.each(fields, function(j, fval){
+				console.log(j + " " + fval);
 				string += fval.toString() +";"
 			});
 			string += "\n";

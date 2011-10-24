@@ -22,8 +22,8 @@ $(document).bind("mobileinit", function() {
 
 	$(document).ready(function() { 
 		
-		//kommenter bort linja under før du laster den opp på telefonen, ellers kræsjer alt.
-		//App.init();
+		//kommenter bort linja under fï¿½r du laster den opp pï¿½ telefonen, ellers krï¿½sjer alt.
+		App.init();
 		
 		//JQuery ready
 		
