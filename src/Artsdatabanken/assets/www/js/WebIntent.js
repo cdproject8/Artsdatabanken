@@ -7,10 +7,10 @@ var WebIntent = function() {
 
 };
 
-WebIntent.ACTION_SEND = "android.intent.action.SEND";
+WebIntent.ACTION_SEND = "android.content.Intent.ACTION_SEND";
 WebIntent.ACTION_VIEW= "android.intent.action.VIEW";
-WebIntent.EXTRA_TEXT = "android.intent.extra.TEXT";
-WebIntent.EXTRA_SUBJECT = "android.intent.extra.SUBJECT";
+WebIntent.EXTRA_TEXT = "android.content.Intent.EXTRA_TEXT";
+WebIntent.EXTRA_SUBJECT = "android.content.Intent.EXTRA_SUBJECT";
 
 WebIntent.prototype.startActivity = function(params, success, fail) {
 	return PhoneGap.exec(function(args) {
