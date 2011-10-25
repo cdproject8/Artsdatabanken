@@ -144,7 +144,7 @@ function onDeviceReady() {
 	App.init();
 	// alert('phonegap ready')
 	// filetesting
-	writeSomethingSomewhere("HALlLLOOOO");
+//	writeSomethingSomewhere("HALlLLOOOO");
 }
 
 function zero_pad(number, len) {
