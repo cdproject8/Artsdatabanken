@@ -3,11 +3,14 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", "0.3", "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "0.4", "ObservationsDB", 1048576);
 		return me;
 	};
 	
 	this.migrate = function(error) {
+		if (error == null) {error = function() {}};
+		me.install(error);
+		return;
 		if (db.version == "") {
 			db.changeVersion("", "0.3", function(t) {
 				me.uninstall(error);
@@ -23,6 +26,7 @@ function ObservationDao() {
 	}
 
 	this.install = function(errorCallback) {
+		if (errorCallback == null) {errorCallback = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, create_date)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');	
@@ -32,6 +36,7 @@ function ObservationDao() {
 	};
 	
 	this.uninstall = function(error) {
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('DROP TABLE observations');
 			tx.executeSql('DROP TABLE species');	
@@ -48,6 +53,8 @@ function ObservationDao() {
 	};
 	
 	this.saveEntry = function(entry, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		var query = "INSERT OR REPLACE INTO SPECIES VALUES (?,?,?,?,?,?,?,?,?,?)";
 		var values = [
 		    entry.id,
@@ -64,23 +71,27 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
-			}, null);
+			}, function() {});
 		}, error);
 	};
 	
 	this.findEntry = function(id, observation_id, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM species WHERE id = ? AND observation_id = ?', [ id, observation_id ], function(tx, results) {
 				if (results.rows.length == 0) {
-					success(null);
+					success(function() {});
 					return;
 				} 
 				success(results.rows.item(0));
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.findAllEntries = function(criteria, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		var sql = 'SELECT * FROM species WHERE observation_id = ? ORDER BY id';
 		var values = [ criteria.observation_id ];
 		if (criteria.limit != null) {
@@ -91,35 +102,43 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.countObservation = function(obsId, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		var sql = 'SELECT count(*) AS num FROM species WHERE observation_id = ?';
 		var values = [ obsId ];		
 		db.transaction(function(tx) {
 			tx.executeSql(sql, values, function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.removeEntry = function(id, observation_id, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE id = ? AND observation_id = ?', [id, observation_id], success, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.updateObservation = function(observation, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('UPDATE observations SET longitude = ?, latitude = ? WHERE id = ?', [observation.longitude, observation.latitude, observation.id], function(tx, results) {
 				success(observation.id);
 			}, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.saveObservation = function(observation, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		if (observation.id != null) {
 			me.updateObservation(observation, success, error);
 			return;
@@ -129,10 +148,12 @@ function ObservationDao() {
 			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date.getTime()], function(tx, results) {
 				success(results.insertId);
 			}, error);
-		}, null);
+		}, function() {});
 	};
 	
 	this.findObservation = function(id, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations WHERE id = ?', [ id ], function(tx, results) {
 				if (results.rows.length == 0) {
@@ -140,23 +161,27 @@ function ObservationDao() {
 					return;
 				} 
 				success(results.rows.item(0));
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.findAllObservations = function(criteria, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
 				success(results.rows);
-			}, null)
+			}, function() {})
 		}, error);
 	};
 	
 	this.removeObservation = function(observation_id, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('DELETE FROM species WHERE observation_id = ?', [ observation_id ], success, error);
 			tx.executeSql('DELETE FROM observations WHERE id = ?', [ observation_id ], success, error);
-		}, null);
+		}, function() {});
 	};
 	
 	// Constructor

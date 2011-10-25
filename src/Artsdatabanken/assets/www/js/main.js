@@ -23,7 +23,7 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 		
 		//kommenter bort linja under f�r du laster den opp p� telefonen, ellers kr�sjer alt.
-		App.init();
+//		App.init();
 		
 		//JQuery ready
 		
@@ -100,6 +100,8 @@ function onDeviceReady() {
 	//PhoneGap ready
 	App.init();
 //	alert('phonegap ready')
+	//filetesting
+	writeSomethingSomewhere("HALlLLOOOO");	
 }
 
 function zero_pad(number, len) {
@@ -137,6 +139,30 @@ $.extend({
 	  }
 });
 
+
+
+function writeSomethingSomewhere(string) {
+	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+	function gotFS(fileSystem) {
+	    fileSystem.root.getFile("testfile.txt", null, gotFileEntry, fail);
+	}
+
+	function gotFileEntry(fileEntry) {
+	    fileEntry.createWriter(gotFileWriter, fail);
+	}
+
+	function gotFileWriter(writer) {
+		writer.write("something");
+		alert("written!");
+	}	
+
+	function fail(error) {
+		alert(error.message + error);
+	}
+}
+
+
+/*
 Android.sendEmail = function(subject, body) { 
   var extras = {};
   extras[WebIntent.EXTRA_SUBJECT] = subject;
@@ -152,3 +178,4 @@ Android.sendEmail = function(subject, body) {
     }
   ); 
 };
+*/
