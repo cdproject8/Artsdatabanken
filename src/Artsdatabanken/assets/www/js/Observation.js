@@ -162,14 +162,14 @@ function Observation(specGroupId, obsId){
 		};
 		
 		// Fields to tell the import tool which fields are included
-		var string = "Art;Antall;Alder;Kjønn;Aktivitet;Startdato;Starttid;Sluttdato;Sluttid;Kommentar\n";
+		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();
 			console.log(val.fields());
 			$.each(fields, function(j, fval){
 				console.log(j + " " + fval);
-				string += fval.toString() +";"
+				string += fval.toString() +"\t"
 			});
 			string += "\n";
 		});
