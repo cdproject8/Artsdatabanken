@@ -9,6 +9,7 @@
 		<div data-role="content" data-theme="z">
 			<form id="observation_form" action="form.html" onsubmit="return false;" data-ajax="false" method="post">
 				<div data-role="fieldcontain">
+					<!--
 					<label for="location">Lokasjon</label>
 					<select name="location"	id="location">
 						<option value="nide0">Niderø</option>
@@ -16,6 +17,7 @@
 						<option value="nide2">-Niderø nord</option>
 						<option value="nardo0">Nardo</option>
 					</select>
+					-->
 					<a href="" data-role="button" onClick="console.log('geoloc NYI'); return false;">Finn GPS koordinater</a>
 				</div>
 				<div class="ui-grid-a">
@@ -31,8 +33,8 @@
 		</div>
 		<div data-role="footer" data-theme="z">
 			<a href="submit.html" data-icon="check">Lagre</a>
-			<a href="" onClick="observation.exportObservation()" data-icon="check">Eksporter Observasjon</a>
-			<a href="index.html" onClick="observation.deleteObs(); return true;" data-role="button" data-icon="delete">Slett</a>
+			<a href="" onClick="observation.exportObservation(); return false;" data-icon="check">Eksporter Observasjon</a>
+			<a href="" onClick="observation.deleteObs(); return false;" data-role="button" data-icon="delete">Slett</a>
 		</div>
 	</div>
 
