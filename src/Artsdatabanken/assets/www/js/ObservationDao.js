@@ -3,7 +3,7 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", "0.4", "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "0.3", "ObservationsDB", 1048576);
 		return me;
 	};
 	
@@ -19,12 +19,6 @@ function ObservationDao() {
 		}
 		else if (db.version == "0.2") {
 			db.changeVersion("0.2", "0.4", function(t) {
-				me.uninstall(error);
-				me.install(error);
-			});
-		}
-		else if (db.version == "0.3") {
-			db.changeVersion("0.3", "0.4", function(t) {
 				me.uninstall(error);
 				me.install(error);
 			});
