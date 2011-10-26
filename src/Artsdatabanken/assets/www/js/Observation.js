@@ -66,8 +66,8 @@ function Observation(specGroupId, obsId){
 		delete spec;
 	}
 	
-	this.deleteObs = function(){
-		if ( this.deleted == false && confirm("Are you sure you want to delete this observation?")){
+	this.deleteObs = function(silent){
+		if ( this.deleted == false && (silent || confirm("Are you sure you want to delete this observation?"))){
 			//console.log(this.deleted == false);
 			var obsid = this.id;
 			this.deleted = true;

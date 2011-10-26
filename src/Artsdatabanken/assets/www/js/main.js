@@ -56,7 +56,7 @@ $(document).bind("mobileinit", function() {
 				App.dao.countObservation(observation.id, function(result){
 					if (parseInt(result.item(0).num) == 0) {
 						console.log("removing empty observation "+observation.id);
-						observation.deleteObs();
+						observation.deleteObs(true);
 					}
 				}, null);
 			}
