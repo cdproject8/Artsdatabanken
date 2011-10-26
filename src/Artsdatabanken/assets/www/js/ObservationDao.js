@@ -12,13 +12,19 @@ function ObservationDao() {
 		me.install(error);
 		return;
 		if (db.version == "") {
-			db.changeVersion("", "0.3", function(t) {
+			db.changeVersion("", "0.4", function(t) {
 				me.uninstall(error);
 				me.install(error);
 			});
 		}
 		else if (db.version == "0.2") {
-			db.changeVersion("0.2", "0.3", function(t) {
+			db.changeVersion("0.2", "0.4", function(t) {
+				me.uninstall(error);
+				me.install(error);
+			});
+		}
+		else if (db.version == "0.3") {
+			db.changeVersion("0.3", "0.4", function(t) {
 				me.uninstall(error);
 				me.install(error);
 			});
