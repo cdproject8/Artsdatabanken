@@ -7,7 +7,7 @@ Getting semi completed local storage and auto-complete functionalities to be com
 	\subsubsection{Duration}
 Sprint 3 will have a duration of two weeks between October 10 (beginning of week 41) to October 23(end of week 42). The customer meeting was held on Wednesday October 12, 2011 and the advisor meeting was on October 11 and October October 18.
 	\subsection{Requirements}
-Some of the requirements are from sprint 2 and the goal is to make them free from bugs and issues and focus more on exporting the the observation.
+Some of the requirements are from sprint 2 and the goal is to make them free from bugs and issues and focus more on exporting the observation.
 \begin{description}
 
 \item[F3] User must be able to add more species to an observation
@@ -18,6 +18,11 @@ Some of the requirements are from sprint 2 and the goal is to make them free fro
 \end{description}
 
 	\subsection{Implementation}
+    \subsubsection{Storage}
+    We had an issue with Storage not working correctly due to a browser implementation on newer versions of Android. This lead to the application not working on many  phones. In the end, the problem was that Android version >2.1 does not support null-callbacks in storage functions, which lead to a fatal error while creating an observation. 
+
+    \subsubsection{Export}
+    The main target of this sprints implementation was to export the observations in a format readable by Artsdatabasen 2.0. 
 
 	\subsection{Testing}
 
