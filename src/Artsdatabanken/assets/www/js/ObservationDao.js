@@ -29,7 +29,8 @@ function ObservationDao() {
 		if (errorCallback == null) {errorCallback = function() {}};
 		db.transaction(function(tx) {
 			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, create_date)');
-			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');	
+			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, species_id, uri');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 		}, errorCallback);
 		return me;
