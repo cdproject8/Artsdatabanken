@@ -175,7 +175,7 @@ function Observation(specGroupId, obsId){
 	this.exportDataString = function(){
 		
 		// Fields to tell the import tool which fields are included
-		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
+		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tNord koordinat\tØst koordinat\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();

@@ -12,7 +12,11 @@ function ObsSpec(id, observation){
 	this.picture = " ";
 	
 	this.fields = function(){
-		return [this.species_name, this.count, this.age, this.sex, this.activity, this.date_start, this.date_end, this.comment];
+		var north = this.observation.latitude.toString();
+		var east = this.observation.longitude.toString();
+		north = north.substr(0, north.indexOf(".")+8);
+		east = east.substr(0, east.indexOf(".")+8);
+		return [this.species_name, this.count, this.age, this.sex, this.activity, north, east, this.date_start, this.date_end, this.comment];
 	 }
 
 	// the html for the observation list
