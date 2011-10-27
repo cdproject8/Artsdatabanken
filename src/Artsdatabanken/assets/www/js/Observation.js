@@ -142,8 +142,16 @@ function Observation(specGroupId, obsId){
 		}, null);
 	}
 	
-	this.loadFromDao = function() {
+	this.loadFromDao = function(obsId) {
 		this.id = obsId;
+		App.dao.findObservation(this.id, function(result) {
+			obs.longitude = result.longitude;
+			obs.latitude = result.latitude;
+			
+			$("#obs-long").val(obs.longitude);
+			$("#obs-lat").val(obs.latitude);
+		}, null);
+		
 		App.dao.findAllEntries({observation_id: this.id }, function(result){
 			for (var i=0; i < result.length;i++){
 				var newSpec = new ObsSpec(result.item(i).id, obs);
@@ -193,7 +201,7 @@ function Observation(specGroupId, obsId){
 	// if id specified then read observation from Dao
 	if (obsId != null) {
 		console.log("loading "+obsId +" from db");
-		this.loadFromDao();
+		this.loadFromDao(obsId);
 	} // Else then request a new id from the Dao
 	else {
 		App.dao.saveObservation(this, function(newId){
