@@ -22,7 +22,7 @@ Some of the requirements are from sprint 2 and the goal is to make them free fro
     We had an issue with Storage not working correctly due to a browser implementation on newer versions of Android. This lead to the application not working on many  phones. In the end, the problem was that Android version >2.1 does not support null-callbacks in storage functions, which lead to a fatal error while creating an observation. 
 
     \subsubsection{Export}
-    The main target of this sprints implementation was to export the observations in a format readable by Artsdatabasen 2.0. 
+    The main target of this sprints implementation was to export the observations in a format readable by Artsdatabasen 2.0. This was achieved using a format similar to csv, but with tab separated values instead of commas. The data is sent in clear text to an email specified by the user, where the user can easily copy paste the data into a form on Artsdatabanken system. A PhoneGap plugin, WebIntent, was used for triggering the email event on Android phones. No solution for iPhone devices has been found.
 
 	\subsection{Testing}
 
