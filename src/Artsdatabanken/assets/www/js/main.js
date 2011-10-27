@@ -72,7 +72,10 @@ $(document).bind("mobileinit", function() {
 			//populateObservationList();
 			observationList = new ObservationList();
 			observationList.populateList();
-		});		
+		});
+		$('#list_observations').live('pagehide',function(event, data){
+				jQuery(event.target).remove();
+		});
 		$('#view_observation').live('pagebeforeshow',function(event){
 			//populateSpeciesList();
 		});		
