@@ -50,7 +50,9 @@ $(document).ready(function(){
 			id: null,
 			longitude: 34.42,
 			latitude: 85.31,
-			create_date: new Date(1234)
+			create_date: new Date(1234),
+			specGroupId: 2,
+			exported: true			
 		};
 	}
 	
@@ -159,7 +161,7 @@ $(document).ready(function(){
 	});
 	
 	asyncTest("should be able to save and retrieve observations", function() {
-		expect(3);
+		expect(5);
 		var obs = getObservation();
 		var theDao = getDao();
 		theDao.saveObservation(obs, function(id) {
@@ -167,6 +169,8 @@ $(document).ready(function(){
 				ok(id > 0, "id should be set");
 				equals(result.longitude, obs.longitude);
 				equals(result.latitude, obs.latitude);
+				equals(result.specGroupId, obs.specGroupId);
+				equals(result.exported=="true", obs.exported);
 				start();
 			}, function(error) {
 				console.log(error);
@@ -230,3 +234,4 @@ $(document).ready(function(){
 		});
 	});
 });
+

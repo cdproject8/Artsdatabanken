@@ -23,7 +23,7 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 		
 		//kommenter bort linja under f�r du laster den opp p� telefonen, ellers kr�sjer alt.
-		//App.init();
+		App.init();
 		
 		//JQuery ready
 		
@@ -90,6 +90,12 @@ function onDeviceReady() {
 	App.init();
 	// alert('phonegap ready')
 }
+
+Date.prototype.toString = function(){
+	var date = zero_pad(this.getDate(),2) + "." + zero_pad(this.getMonth()+1,2) + "." + this.getFullYear();
+	date += "\t"+ zero_pad(this.getHours(),2) + ":" + zero_pad(this.getMinutes(),2);
+	return date;
+};
 
 function zero_pad(number, len) {
 	var num = number+"";
