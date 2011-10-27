@@ -2,15 +2,20 @@ function Observation(specGroupId, obsId){
 
 	//pointer for jquery functions
 	var obs = this;
+	
+	// Values saved to the Dao
+	this.specGroupId = specGroupId;
 	this.id = null;
-	this.species = new Array();
-
 	this.longitude = " ";
 	this.latitude = " ";
-	this.saved = false;
-	this.deleted = false;
+	this.exported = false;
+
 	this.create_date = new Date();
 	
+	// Other helper values
+	this.species = new Array();
+	this.saved = false;
+	this.deleted = false;
 	this.activeExtended;
 		
 	// TODO make autocomplete loading dynamic for each species group based on specGroupId
@@ -147,7 +152,10 @@ function Observation(specGroupId, obsId){
 		App.dao.findObservation(this.id, function(result) {
 			obs.longitude = result.longitude;
 			obs.latitude = result.latitude;
+			obs.exported = (result.exported == "true");
+			obs.specGroupId = result.specGroupId;
 			
+			$("#export-button .ui-btn-text").text(((obs.exported)?"Eksporter (igjen)":"Eksporter"));
 			$("#obs-long").val(obs.longitude);
 			$("#obs-lat").val(obs.latitude);
 		}, null);
@@ -165,12 +173,6 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.exportDataString = function(){
-		Date.prototype.toString = function(){
-		
-			var date = zero_pad(this.getDate(),2) + "." + zero_pad(this.getMonth()+1,2) + "." + this.getFullYear();
-			date += "\t"+ zero_pad(this.getHours(),2) + ":" + zero_pad(this.getMinutes(),2);
-			return date;
-		};
 		
 		// Fields to tell the import tool which fields are included
 		var string = "Art\tAntall\tAlder\tKjønn\tAktivitet\tStartdato\tStarttid\tSluttdato\tSluttid\tKommentar\n";
@@ -192,6 +194,9 @@ function Observation(specGroupId, obsId){
 		this.saveAll();
 		var datastring = this.exportDataString();
 		Android.sendEmail("Observation "+this.id, datastring);
+		this.exported = true;
+		App.dao.updateObservation(this, null, null);
+		$("#export-button .ui-btn-text").text("Eksporter (igjen)");
 	}
 	
 	this.getGPSLocation = function() {

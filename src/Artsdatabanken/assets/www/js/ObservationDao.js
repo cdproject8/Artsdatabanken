@@ -28,7 +28,7 @@ function ObservationDao() {
 	this.install = function(errorCallback) {
 		if (errorCallback == null) {errorCallback = function() {}};
 		db.transaction(function(tx) {
-			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, create_date)');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, specGroupId, exported, create_date)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, species_id, uri');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
@@ -131,7 +131,7 @@ function ObservationDao() {
 		if (success == null) {success = function() {}};
 		if (error == null) {error = function() {}};
 		db.transaction(function(tx) {
-			tx.executeSql('UPDATE observations SET longitude = ?, latitude = ? WHERE id = ?', [observation.longitude, observation.latitude, observation.id], function(tx, results) {
+			tx.executeSql('UPDATE observations SET longitude = ?, latitude = ?, specGroupId = ?, exported = ? WHERE id = ?', [observation.longitude, observation.latitude, observation.specGroupId, observation.exported, observation.id], function(tx, results) {
 				success(observation.id);
 			}, error);
 		}, function() {});
@@ -146,7 +146,7 @@ function ObservationDao() {
 		}
 		
 		db.transaction(function(tx) {
-			tx.executeSql('INSERT INTO observations (id, longitude, latitude, create_date) VALUES (NULL, ?, ?, ?)', [observation.longitude, observation.latitude, observation.create_date.getTime()], function(tx, results) {
+			tx.executeSql('INSERT INTO observations (id, longitude, latitude, specGroupId, exported, create_date) VALUES (NULL, ?, ?, ?, ?, ?)', [observation.longitude, observation.latitude, observation.specGroupId, observation.exported, observation.create_date.getTime()], function(tx, results) {
 				success(results.insertId);
 			}, error);
 		}, function() {});
