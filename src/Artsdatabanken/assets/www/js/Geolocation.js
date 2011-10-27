@@ -23,8 +23,8 @@ var glError = function(error) {
 
 function getPosition() {
 	$("#obs-long").val("Fetching GPS");
-	$("#obs-lat").val("max 10s");
-	navigator.geolocation.getCurrentPosition(glSuccess, glError, {maximumAge: 2000, enableHighAccuracy: true, timeout: 10000});
+	$("#obs-lat").val("max 60s");
+	navigator.geolocation.getCurrentPosition(glSuccess, glError, {maximumAge: 2000, enableHighAccuracy: true, timeout: 60000});
 }
 
 /*

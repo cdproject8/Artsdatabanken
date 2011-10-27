@@ -137,6 +137,9 @@ function Observation(specGroupId, obsId){
 //				console.log("saving "+i);
 			}, null);
 		});
+		App.dao.updateObservation(this, function(id){
+			console.log("saved obs "+id);
+		}, null);
 	}
 	
 	this.loadFromDao = function() {
