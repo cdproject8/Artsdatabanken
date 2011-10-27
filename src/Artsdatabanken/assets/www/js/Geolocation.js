@@ -22,9 +22,13 @@ var glError = function(error) {
 };
 
 function getPosition() {
-	navigator.geolocation.getCurrentPosition(glSuccess, glError, {maximumAge: 2000, enableHighAccuracy: true});
+	$("#obs-long").val("Fetching GPS");
+	$("#obs-lat").val("max 10s");
+	navigator.geolocation.getCurrentPosition(glSuccess, glError, {maximumAge: 2000, enableHighAccuracy: true, timeout: 10000});
 }
 
+/*
 function watchPosition() {
 	navigator.geolocation.watchPosition(glSuccess, glError, {enableHighAccuracy: true});
 }
+*/
