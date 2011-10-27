@@ -1,5 +1,5 @@
-var glPosition = null
-
+//var glPosition = null
+/*
 var glSuccess = function(position) {
 	glPosition = position
 	$("#lat").attr("value", position.coords.latitude)
@@ -8,6 +8,14 @@ var glSuccess = function(position) {
 	$("#acc").attr("value", position.coords.altitudeAccuracy)
 	$("#time").attr("value", new Date(position.timestamp))
 };
+*/
+
+function glSuccess(position) {
+	observation.longitude = position.coords.longitude;
+	observation.latitude = position.coords.latitude;
+	$("#obs-long").val(observation.longitude);
+	$("#obs-lat").val(observation.latitude);
+}
 
 var glError = function(error) {
 	alert(error.message);

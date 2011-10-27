@@ -7,19 +7,17 @@
 			<h1>Observasjon</h1>
 		</div>
 		<div data-role="content" data-theme="z">
-			<form id="observation_form" action="form.html" onsubmit="return false;" data-ajax="false" method="post">
+			<div data-role="collapsible" data-collapsed="true">
+				<h3> GPS </h3>
 				<div data-role="fieldcontain">
-					<!--
-					<label for="location">Lokasjon</label>
-					<select name="location"	id="location">
-						<option value="nide0">Niderø</option>
-						<option value="nide1">-Artsdatabankens Hage</option>
-						<option value="nide2">-Niderø nord</option>
-						<option value="nardo0">Nardo</option>
-					</select>
-					-->
-					<a href="" data-role="button" onClick="console.log('geoloc NYI'); return false;">Finn GPS koordinater</a>
+					<label for="obs-long">Longitude</label>
+					<input type="text" name="obs-long" id="obs-long" disabled="true" />
+					<label for="obs-lat">Latitude</label>
+					<input type="text" name="obs-lat" id="obs-lat" disabled="true" />
+					<a href="" data-role="button" onClick="observation.getGPSLocation(); return false;">Oppdater GPS</a>
 				</div>
+			</div>
+			<form id="observation_form" action="form.html" onsubmit="return false;" data-ajax="false" method="post">
 				<div class="ui-grid-a">
 					<div class="ui-block-a">Art</div>
 					<div class="ui-block-b">Antall</div>

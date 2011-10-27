@@ -5,8 +5,8 @@ function Observation(specGroupId, obsId){
 	this.id = null;
 	this.species = new Array();
 
-	this.gpsloc;
-	this.location;
+	this.longitude = " ";
+	this.latitude = " ";
 	this.saved = false;
 	this.deleted = false;
 	this.create_date = new Date();
@@ -182,6 +182,11 @@ function Observation(specGroupId, obsId){
 		var datastring = this.exportDataString();
 		Android.sendEmail("Observation "+this.id, datastring);
 	}
+	
+	this.getGPSLocation = function() {
+		getPosition();
+	}
+	
 	// if id specified then read observation from Dao
 	if (obsId != null) {
 		console.log("loading "+obsId +" from db");

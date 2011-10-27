@@ -36,17 +36,6 @@ $(document).bind("mobileinit", function() {
 			// update info on the row that was edited in extended info
 			if (observation.activeExtended != null) observation.updateMainPage();
 		});
-		/* event doesn't work
-		$('#observation').live('pagebeforechange', function(event, data){
-			console.log("changing from observation");
-			if ( !observation.saved && confirm("Are you sure you want to leave the observation page, unsaved information will be lost")) { 
-				console.log("leaving obs");
-			}
-			else {
-				event.preventDefault();
-			}
-		});
-		*/
 		// Disable caching of observation page, so that when clicking
 		// new observation, the previous one is not opened and pagecreate is 	
 		// triggered again
@@ -97,9 +86,9 @@ $(document).bind("mobileinit", function() {
 //phonegap replacement function for $(document).ready
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-	//PhoneGap ready
+	// PhoneGap ready
 	App.init();
-//	alert('phonegap ready')
+	// alert('phonegap ready')
 }
 
 function zero_pad(number, len) {
