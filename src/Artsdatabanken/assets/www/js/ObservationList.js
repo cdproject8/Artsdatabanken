@@ -7,6 +7,7 @@ function ObservationList() {
 	this.populateList = function() {
 		var specgroups = ["bird", "plant", "fish", "crawler", "mammal"];
 		App.dao.findAllObservations( {}, function(result) {
+			if (result.length == 0) $("#observation_list").append("<li>No saved observations</li>");
 			for (var i = 0; i < result.length; i++){
 				var obsId = result.item(i).id;
 				var date = new Date(result.item(i).create_date);
