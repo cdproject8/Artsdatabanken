@@ -9,8 +9,6 @@ function ObservationDao() {
 	
 	this.migrate = function(error) {
 		if (error == null) {error = function() { }};
-		me.install(error);
-		return;
 		if (db.version == "") {
 			db.changeVersion("", "0.4", function(t) {
 				me.uninstall(error);
