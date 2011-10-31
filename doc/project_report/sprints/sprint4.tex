@@ -36,7 +36,22 @@ from bugs and issues and focus more on exporting the the observation.
 
 \subsection{Implementation}
 
+	\subsubsection{Auto-complete}
+
+	Implemented tools for downloading and parsing data from the new API
+	provided by Artsdatabanken. This required us to change some URL's, use
+	literal names instead of ID's. Using literal names was a bit problematic as
+	Artsdatabanken is including some special characters in the literal names that
+	are not actually supported by the API (using commas in a request cause the API
+	to return an SQL error).
+
 \subsection{Testing}
+
+Testing uncovered inconsistencies in the storage API. Initially we planned to
+use a function , Database.changeVersion(..), to migrate database schemas while
+updating the app, unfortunately this only works for some versions of Android.
+Due to preceding comment and time restrictions we dropped support for database
+migration.
 
 \subsection{Customer Feedback}
 
@@ -45,3 +60,4 @@ from bugs and issues and focus more on exporting the the observation.
 F8 was the most challenging requirement other than the exporting functionality.
 We had to roll on exporting functionality across 3 sprint, but the team managed
 to complete that in time... 
+% eh.. what?
