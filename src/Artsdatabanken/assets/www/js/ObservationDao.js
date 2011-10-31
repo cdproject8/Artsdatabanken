@@ -61,6 +61,12 @@ function ObservationDao() {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
 			}, function() {});
+			if(entry.pictures.length > 0) {
+				tx.executeSql("INSERT OR REPLACE INTO pictures VALUES NULL, ?, ?", [entry.id, entry.pictures[0]], function(tx, results) {
+					success(entry.id);
+					console.log("hallo!");
+				}, function() {});				
+			}
 		}, error);
 	};
 	

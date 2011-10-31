@@ -9,7 +9,7 @@ function ObsSpec(id, observation){
 	this.date_start = new Date();
 	this.date_end = new Date();
 	this.comment = " ";
-	this.picture = " ";
+	this.pictures = new Array();
 	
 	this.fields = function(){
 		var north = this.observation.latitude.toString();

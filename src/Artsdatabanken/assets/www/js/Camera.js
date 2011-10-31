@@ -9,6 +9,15 @@ var camError = function(error) {
 	alert(error);
 }
 
+function takePicture(success) {
+	navigator.camera.getPicture(success, camError, {
+		quality: 90, 
+		targetWidth: 640, 
+		targetHeight: 480,
+		destinationType: navigator.camera.DestinationType.FILE_URI
+	});
+}
+
 function takePictureAsData() {
 	navigator.camera.getPicture(camSuccess, camError, {
 		quality: 90, 

@@ -9,7 +9,6 @@ function Observation(specGroupId, obsId){
 	this.longitude = " ";
 	this.latitude = " ";
 	this.exported = false;
-	this pictures = new Array();
 
 	this.create_date = new Date();
 	
@@ -206,12 +205,16 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.addPicture = function() {
-		pic = takePictureAsURI();
-		console.log(pic)
-		if(pic || pic != "" ) {
-			pictures.append(pic);
-			$("#pictures").append('<pic src="' + pic + '"/>');
-		}
+		console.log("begin pic");
+		pic = takePicture(function(uri) {
+			console.log("cam success");
+			console.log(uri)
+			if(uri || uri != "" ) {
+				obs.pictures.push(uri);
+				$("#pics").append('<img src="' + uri + '" width="70%" />');
+			}
+			
+		});
 		
 	}
 	
