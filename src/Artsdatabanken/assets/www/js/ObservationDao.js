@@ -3,14 +3,14 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", "0.3", "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "", "ObservationsDB", 1048576);
 		return me;
 	};
 	
 	this.migrate = function(error) {
-		if (error == null) {error = function() {}};
-		me.install(error);
-		return;
+		if (error == null) {error = function() { }};
+//		me.install(error);
+//		return;
 		if (db.version == "") {
 			db.changeVersion("", "0.4", function(t) {
 				me.uninstall(error);
@@ -23,6 +23,13 @@ function ObservationDao() {
 				me.install(error);
 			});
 		}
+		else if (db.version == "0.3") {
+			db.changeVersion("0.3", "0.4", function(t) {
+				me.uninstall(error);
+				me.install(error);
+			});
+		}
+		console.log(db);
 	}
 
 	this.install = function(errorCallback) {
