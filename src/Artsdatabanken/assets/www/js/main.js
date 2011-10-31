@@ -23,7 +23,7 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 		
 		//kommenter bort linja under f�r du laster den opp p� telefonen, ellers kr�sjer alt.
-		App.init();
+		//App.init();
 		
 		//JQuery ready
 		
@@ -57,8 +57,12 @@ $(document).bind("mobileinit", function() {
 
 		$('#extended_inf').live('pagecreate',function(event){
 			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
+			//console.log($("#spec-activity"));
 			observation.fillExtended();
 		});	
+		$('#extended_inf').live('pageshow',function(event){
+			observation.activeExtended.addActivityBox();
+		});
 		$('#extended_inf').live('pagebeforehide',function(event){
 			observation.saveExtended();
 			
