@@ -3,7 +3,7 @@ function ObservationDao() {
 	var db = null;
 	
 	this.connect = function() {
-		db = window.openDatabase("observations", "0.3", "ObservationsDB", 1048576);
+		db = window.openDatabase("observations", "0.4", "ObservationsDB", 1048576);
 		return me;
 	};
 	
