@@ -8,26 +8,9 @@ function ObservationDao() {
 	};
 	
 	this.migrate = function(error) {
+		// changeVersion does not work properly on all versions of Android
 		if (error == null) {error = function() { }};
-		if (db.version == "") {
-			db.changeVersion("", "0.4", function(t) {
-				me.uninstall(error);
-				me.install(error);
-			});
-		}
-		else if (db.version == "0.2") {
-			db.changeVersion("0.2", "0.4", function(t) {
-				me.uninstall(error);
-				me.install(error);
-			});
-		}
-		else if (db.version == "0.3") {
-			db.changeVersion("0.3", "0.4", function(t) {
-				me.uninstall(error);
-				me.install(error);
-			});
-		}
-		console.log(db);
+		me.install(error);
 	}
 
 	this.install = function(errorCallback) {
