@@ -9,6 +9,7 @@ function Observation(specGroupId, obsId){
 	this.longitude = " ";
 	this.latitude = " ";
 	this.exported = false;
+	this pictures = new Array();
 
 	this.create_date = new Date();
 	
@@ -202,6 +203,16 @@ function Observation(specGroupId, obsId){
 	
 	this.getGPSLocation = function() {
 		getPosition();
+	}
+	
+	this.addPicture = function() {
+		pic = takePictureAsURI();
+		console.log(pic)
+		if(pic || pic != "" ) {
+			pictures.append(pic);
+			$("#pictures").append('<pic src="' + pic + '"/>');
+		}
+		
 	}
 	
 	// if id specified then read observation from Dao
