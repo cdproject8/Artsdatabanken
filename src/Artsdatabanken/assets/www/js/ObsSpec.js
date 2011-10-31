@@ -65,6 +65,9 @@ function ObsSpec(id, observation){
 	
 	// Fill in values in the extended valus form when that window is opened for a species
 	this.fillExtended = function() {
+		// Add autocomplete on name field
+		$(".name").speciesAutocomplete({data: observation.autocompleteFile});
+		
 		$("#extended_inf :input[id=spec-name]").val(this.species_name);
 		$("#extended_inf :input[id=spec-count]").val(this.count);
 		$("#extended_inf :input[id=spec-sex]").val(this.sex);
