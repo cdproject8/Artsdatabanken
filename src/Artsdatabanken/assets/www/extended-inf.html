@@ -25,8 +25,10 @@
 					<select class ="spec" name="spec-sex"
 						id="spec-sex">
 						<option value="na">N/A</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
+						<option value="hunn">Hunn</option>
+						<option value="hann">Hann</option>
+						<option value="hunnfarget">Hunnfarget</option>
+						<option value="i par">I Par</option>
 					</select>
 				</div>
 				<div data-role="fieldcontain">
@@ -34,15 +36,10 @@
 					<input class="spec" type="number" name="spec-age"
 						id="spec-age" value="" />
 				</div>
-				<div data-role="fieldcontain">
-					<label for="spec-activity" class="select">Aktivitet</label> 						<select class="spec" 
-						name="spec-activity" id="spec-activity">
-						<option value="rest">Hviler</option>
-						<option value="nourish">Søker næring</option>
-						<option value="flying">Flyr</option>
-						<option value="swim">Svømmer</option>
-						<!-- TODO add more options etc -->
-					</select>
+				<div data-role="fieldcontain" id="act-select">
+					<label for="spec-activityd" class="select" >Aktivitet</label>
+					<input name="spec-activityd" id="spec-activityd" type="text" style="display:none;"/>
+
 				</div>
 				<div data-role="fieldcontain">
 					<label for="spec-date_start">Start dato</label> 
