@@ -25,5 +25,6 @@ function ObservationList() {
 		}, error);
 	};
 	
+	this.populateList();
 	
 }

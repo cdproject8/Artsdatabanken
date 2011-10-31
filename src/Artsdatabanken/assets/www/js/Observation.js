@@ -122,7 +122,7 @@ function Observation(specGroupId, obsId){
 	this.saveExtended = function() { this.activeExtended.saveExtended(); }
 	
 	this.updateMainPage = function() {
-		this.activeExtended.fillObsListValues();
+		if (this.activeExtended != null) this.activeExtended.fillObsListValues();
 	}
 	
 	// Run this before saving the observation
@@ -214,6 +214,7 @@ function Observation(specGroupId, obsId){
 			obs.id = newId;
 			//console.log("created new obs "+newId);
 		}, null);
+		this.newSpecies();
 	}
 	
 }

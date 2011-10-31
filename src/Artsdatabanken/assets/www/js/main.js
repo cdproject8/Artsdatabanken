@@ -30,11 +30,11 @@ $(document).bind("mobileinit", function() {
 		$('#observation').live('pagecreate',function(event){
 		
 			observation = new Observation(specGroupId, observationId);
-			if (observationId == null) observation.newSpecies();
 		});
 		$('#observation').live('pageshow',function(event){
-			// update info on the row that was edited in extended info
-			if (observation.activeExtended != null) observation.updateMainPage();
+			// if returning from extended info page
+			// update info on the row that was edited
+			observation.updateMainPage();
 		});
 		// Disable caching of observation page, so that when clicking
 		// new observation, the previous one is not opened and pagecreate is 	
@@ -44,7 +44,7 @@ $(document).bind("mobileinit", function() {
 				jQuery(event.target).remove();
 				App.dao.countObservation(observation.id, function(result){
 					if (parseInt(result.item(0).num) == 0) {
-						// console.log("removing empty observation "+observation.id);
+						// Deleting observation after leaving it's page if no entries where saved in it
 						observation.deleteObs(true);
 					}
 				}, null);
@@ -52,16 +52,13 @@ $(document).bind("mobileinit", function() {
 		});
 
 		$('#extended_inf').live('pagecreate',function(event){
-			$(".name").speciesAutocomplete({data: observation.autocompleteFile});
-			//console.log($("#spec-activity"));
 			observation.fillExtended();
 		});	
 		$('#extended_inf').live('pageshow',function(event){
 			observation.activeExtended.addActivityBox();
 		});
 		$('#extended_inf').live('pagebeforehide',function(event){
-			observation.saveExtended();
-			
+			observation.saveExtended();			
 		});
 		// If observationId is null then a new observation is created
 		$('#species_select').live('pagebeforeshow',function(event){
@@ -69,19 +66,12 @@ $(document).bind("mobileinit", function() {
 		});
 		
 		$('#list_observations').live('pagecreate',function(event){
-			//populateObservationList();
 			observationList = new ObservationList();
-			observationList.populateList();
 		});
+		// Make sure the observationList is refreshed every time it loads
 		$('#list_observations').live('pagehide',function(event, data){
-				jQuery(event.target).remove();
+			jQuery(event.target).remove();
 		});
-		$('#view_observation').live('pagebeforeshow',function(event){
-			//populateSpeciesList();
-		});		
-		$('#view_species').live('pagebeforeshow',function(event){
-			//viewSpecies();
-		});		
 	});
 });
 	
