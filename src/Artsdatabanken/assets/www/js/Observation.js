@@ -19,7 +19,7 @@ function Observation(specGroupId, obsId){
 	this.activeExtended;
 		
 	// TODO make autocomplete loading dynamic for each species group based on specGroupId
-	this.autocompleteFile = "data/autocomplete/89/index.js";
+	this.autocompleteFile = "data/autocomplete/"+specGroupId+".js";
 	
 	// Set activeExtended to the species_row selected when clicking "Add More Information" button
  	$('#observation_form').click(function(e) {

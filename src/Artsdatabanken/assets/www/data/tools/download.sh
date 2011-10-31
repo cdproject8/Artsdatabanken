@@ -1,42 +1,37 @@
 #!/bin/bash
 
-#categories="$1"
-#if [ -z "$categories" ]; then
-#	for (( i = 75; i <= 105; i++ )); do
-#		categories="$categories $i"
-#	done
-#fi
-
-download_one() {
-	wget "http://webtjenester.artsdatabanken.no/Artsnavnebase.asmx/Artstre?LatinskNavnID=$1&Dybde=-1" -Odownload/$1.xml
-}
-
 minify() { 
 	sort $1 | uniq
 }
 
-# Download all files
-#for i in $categories; do
-#	download_one "$i"
-#done
+#
+# Download files
+#
 
-# New download files
+download_from_dysfunctional_api() {
+	ROOT="http://meis.artsdatabanken.no/webtjenesterbeta/databank.asmx/TaxonPropertySearch?terms="
+	S="speciesGrouping%3D"
+	wget "${ROOT}${S}fugl" -Odownload/1.xml
+	wget "${ROOT}${S}karplanter ${S}alger {$S}lav" -Odownload/2.xml
+	wget "${ROOT}${S}fisk" -Odownload/3.xml
+	url="${S}Svamper ${S}koralldyr ${S}Leddormer ${S}Krepsdyr ${S}Mangeføttinger ${S}Døgnfluer"
+	url="${url} ${S}øyenstikkere ${S}steinfluer ${S}vårfluer ${S}Rettvinger ${S}kakerlakker"
+	url="${url} ${S}saksedyr ${S}Nebbmunner ${S}Nebbfluer ${S}kamelhalsfluer ${S}mudderfluer"
+	url="${url} ${S}nettvinger ${S}Biller ${S}Sommerfugler ${S}Tovinger ${S}Veps ${S}Spretthaler"
+	url="${url} ${S}Edderkoppdyr ${S}Mosdyr ${S}Armfotinger ${S}pigghuder ${S}kappedyr"
+	wget "${ROOT}${url}" -Odownload/4.xml
+	wget "${ROOT}${S}Amfibier ${S}reptiler ${S}pattedyr" -Odownload/5.xml
+}
 
-URL="http://meis.artsdatabanken.no/webtjenesterbeta/databank.asmx/TaxonPropertySearch?terms="
-wget "${URL}speciesGrouping%3Dfugl" -Odownload/1.xml
-wget "${URL}speciesGrouping%3Dkarplanter+speciesGrouping%3Dalger+speciesGrouping%3Dlav" -Odownload/2.xml
-wget "${URL}speciesGrouping%3Dfisk" -Odownload/3.xml
-wget "${URL}speciesGrouping%3DAmfibier+speciesGrouping%3Dreptiler+speciesGrouping%3Dpattedyr" -Odownload/5.xml
-
-echo "downloaded, will not parse yet.. todo"
-exit
+download_from_dysfunctional_api
+echo "Files downloaded"
 
 # Parse files
 for file in `ls download`; do
-	php tools/parse.php "$file"
+	php parse.php "download/$file"
 done
 
-# Minify and make into array
+# Minify and build array
 for file in `ls tmp`; do
-	echo "var autocompleteData = function() {return [ `minify "tmp/$file"` '' ];}" > "autocomplete/`echo $file | sed 's/\.xml/.jsonp/'`"
+	echo "var autocompleteData = function() {return [ `minify "tmp/$file"` '' ];}" > "autocomplete/`echo $file | sed 's/\.xml/.js/'`"
 done
