@@ -65,7 +65,7 @@ function Observation(specGroupId, obsId){
 		$("#species_row"+specnum).remove();
 		var spec = this.getSpecies(specnum);
 		App.dao.removeEntry(parseInt(specnum), obs.id, function() {
-			console.log("deleting " + specnum + " from " + obs.id);
+			//console.log("deleting " + specnum + " from " + obs.id);
 		}, null);
 		this.species.splice(this.species.indexOf(spec),1);
 		delete spec;
@@ -77,9 +77,9 @@ function Observation(specGroupId, obsId){
 			var obsid = this.id;
 			this.deleted = true;
 			App.dao.removeObservation(this.id, function(result) {
-				console.log("deleted observation "+obsid);
+				//console.log("deleted observation "+obsid);
 			},null);
-			$.mobile.changePage( "index.html");
+			if (!silent) $.mobile.changePage( "index.html");
 		}
 	}
 	
@@ -139,11 +139,11 @@ function Observation(specGroupId, obsId){
 		this.saveAll();
 		$.each(this.species, function(i, val){
 			App.dao.saveEntry(val, function(){
-//				console.log("saving "+i);
+			// console.log("saving "+i);
 			}, null);
 		});
 		App.dao.updateObservation(this, function(id){
-			console.log("saved obs "+id);
+			//console.log("saved obs "+id);
 			alert("Data Saved");
 		}, null);
 	}
@@ -180,14 +180,14 @@ function Observation(specGroupId, obsId){
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();
-			console.log(val.fields());
+			//console.log(val.fields());
 			$.each(fields, function(j, fval){
-				console.log(j + " " + fval);
+				//console.log(j + " " + fval);
 				string += fval.toString() +"\t"
 			});
 			string += "\n";
 		});
-		console.log(string);
+		//console.log(string);
 		return string;
 	}
 	
@@ -206,13 +206,13 @@ function Observation(specGroupId, obsId){
 	
 	// if id specified then read observation from Dao
 	if (obsId != null) {
-		console.log("loading "+obsId +" from db");
+		//console.log("loading "+obsId +" from db");
 		this.loadFromDao(obsId);
 	} // Else then request a new id from the Dao
 	else {
 		App.dao.saveObservation(this, function(newId){
 			obs.id = newId;
-			console.log("created new obs "+newId);
+			//console.log("created new obs "+newId);
 		}, null);
 	}
 	

@@ -44,7 +44,7 @@ $(document).bind("mobileinit", function() {
 				jQuery(event.target).remove();
 				App.dao.countObservation(observation.id, function(result){
 					if (parseInt(result.item(0).num) == 0) {
-						console.log("removing empty observation "+observation.id);
+						// console.log("removing empty observation "+observation.id);
 						observation.deleteObs(true);
 					}
 				}, null);
