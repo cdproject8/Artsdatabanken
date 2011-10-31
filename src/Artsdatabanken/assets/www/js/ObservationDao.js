@@ -9,8 +9,8 @@ function ObservationDao() {
 	
 	this.migrate = function(error) {
 		if (error == null) {error = function() { }};
-//		me.install(error);
-//		return;
+		me.install(error);
+		return;
 		if (db.version == "") {
 			db.changeVersion("", "0.4", function(t) {
 				me.uninstall(error);
@@ -37,7 +37,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, specGroupId, exported, create_date)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');
-			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, species_id, uri');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, species_id, uri)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 		}, errorCallback);
 		return me;
@@ -194,5 +194,5 @@ function ObservationDao() {
 	
 	// Constructor
 	this.connect();
-	this.migrate(function() {});
+	this.migrate(function(err) {console.log(err)});
 }
