@@ -2,7 +2,6 @@
 var specGroupId;
 var observation;
 var observationId = null;
-var observationList;
 // Init jQuery mobile
 
 $(document).bind("mobileinit", function() {
@@ -66,7 +65,7 @@ $(document).bind("mobileinit", function() {
 		});
 		
 		$('#list_observations').live('pagecreate',function(event){
-			observationList = new ObservationList();
+			var observationList = new ObservationList();
 		});
 		// Make sure the observationList is refreshed every time it loads
 		$('#list_observations').live('pagehide',function(event, data){
