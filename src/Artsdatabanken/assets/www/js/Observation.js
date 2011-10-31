@@ -144,6 +144,7 @@ function Observation(specGroupId, obsId){
 		});
 		App.dao.updateObservation(this, function(id){
 			console.log("saved obs "+id);
+			alert("Data Saved");
 		}, null);
 	}
 	
