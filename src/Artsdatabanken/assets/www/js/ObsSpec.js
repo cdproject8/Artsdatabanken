@@ -83,6 +83,9 @@ function ObsSpec(id, observation){
 		$("#extended_inf :input[id=spec-comment]").val(this.comment);
 
 		//	 TODO if picture
+		for(i = 0; i < this.pictures.length; i++) {
+			$("#pics").append('<img src="' + this.pictures[i] + '" width="80%" />');	
+		}
 		
 	}
 	// Save information written on the extended page
@@ -115,7 +118,7 @@ function ObsSpec(id, observation){
 		this.comment = $("#extended_inf :input[id=spec-comment]").val();
 	}
 	
-	this.init = function(s, c, sx, a, ac, ds, de, co) {
+	this.init = function(s, c, sx, a, ac, ds, de, co, pics) {
 		this.species_name = s;
 		this.count = c;
 		this.sex = sx;
@@ -124,6 +127,7 @@ function ObsSpec(id, observation){
 		this.date_start = ds;
 		this.date_end = de;
 		this.comment = co;
+		this.pictures = pics;
 	}
 
 }
