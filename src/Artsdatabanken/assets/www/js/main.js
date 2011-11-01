@@ -125,7 +125,7 @@ $.extend({
 });
 
 var Android = {};
-Android.sendEmail = function(subject, body) {
+Android.sendEmail = function(subject, body, pictures) {
   if (!window.plugins || !window.plugins.webintent) {
 	    alert('Unable to find webintent plugin');
     return false;
@@ -133,9 +133,10 @@ Android.sendEmail = function(subject, body) {
   var extras = {};
   extras[WebIntent.EXTRA_SUBJECT] = subject;
   extras[WebIntent.EXTRA_TEXT] = body;
+  if (pictures != null && pictures != "") extras["images"] = pictures;
   window.plugins.webintent.startActivity({
     action: WebIntent.ACTION_SEND,
-    type: 'text/plain',
+    type: 'jpeg/image',
     extras: extras
   }, function() {}, function() {alert('Failed to send email via Android Intent');});
 };
