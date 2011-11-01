@@ -1,32 +1,87 @@
-\section{Sprint 3 TODO}
+\section{Sprint 3}
 
-	\subsection{Sprint Planning}
-In this sprint, the team worked on rectifying the technical errors in the implementation of sprint two requirements. More work was required to finish the auto-complete, removing names that are not species. Being able to add new species when editing an observation and fixing storage on the phone was one of the modifications required.
-	\subsubsection{Expected results}
-Getting semi completed local storage and auto-complete functionalities to be completed, deciding how to best export locally stored observations, and team is expected to divert its resource more getting the system to work on the android platform, discussing the terms of usability testing with the customer.
-	\subsubsection{Duration}
-Sprint 3 will have a duration of two weeks between October 10 (beginning of week 41) to October 23(end of week 42). The customer meeting was held on Wednesday October 12, 2011 and the advisor meeting was on October 11 and October October 18.
-	\subsection{Requirements}
-Some of the requirements are from sprint 2 and the goal is to make them free from bugs and issues and focus more on exporting the observation.
+\subsection{Sprint Planning}
+
+In this sprint, the team worked on rectifying the technical errors in the
+implementation of sprint two requirements. More work was required to finish the
+auto-complete, removing names that are not species. Being able to add new
+species when editing an observation and fixing storage on the phone was one of
+the modifications required.
+
+\subsubsection{Expected results}
+
+Getting semi completed local storage and auto-complete functionalities to be
+completed, deciding how to best export locally stored observations, and team is
+expected to divert its resource more getting the system to work on the android
+platform, discussing the terms of usability testing with the customer.
+
+\subsubsection{Duration}
+
+Sprint 3 will have a duration of two weeks between October 10 (beginning of
+week 41) to October 23(end of week 42). The customer meeting was held on
+Wednesday October 12, 2011 and the advisor meeting was on October 11 and
+October October 18.
+
+\subsection{Requirements}
+
+Some of the requirements are from sprint 2 and the goal is to make them free
+from bugs and issues and focus more on exporting the observation.
+
 \begin{description}
-
-\item[F3] User must be able to add more species to an observation
-
-\item[F4] User must be able to export stored observation so they can be uploaded to Artsdatabanken later
-
-\item[F7] User must be able to edit a stored observation on the device
+	\item[F3] User must be able to add more species to an observation
+	\item[F4] User must be able to export stored observation so they can be uploaded to Artsdatabanken later
+	\item[F7] User must be able to edit a stored observation on the device
 \end{description}
 
-	\subsection{Implementation}
-    \subsubsection{Storage}
-    We had an issue with Storage not working correctly due to a browser implementation on newer versions of Android. This lead to the application not working on many  phones. In the end, the problem was that Android version >2.1 does not support null-callbacks in storage functions, which lead to a fatal error while creating an observation. 
+\subsection{Implementation}
 
-    \subsubsection{Export}
-    The main target of this sprints implementation was to export the observations in a format readable by Artsdatabasen 2.0. This was achieved using a format similar to csv, but with tab separated values instead of commas. The data is sent in clear text to an email specified by the user, where the user can easily copy paste the data into a form on Artsdatabanken system. A PhoneGap plugin, WebIntent, was used for triggering the email event on Android phones. No solution for iPhone devices has been found.
+\subsubsection{Storage}
 
-	\subsection{Testing}
+\label{sprint3:storage}
 
-	\subsection{Customer Feedback}
-The customer was satisfied with our work and the progress. The customer also stressed that the team make the export system work, and suggested that the team also implement things in less complex and practical manner. The customer considers the exporting functionality a deal breaker or maker of the prototype and the team was advised to complete that as soon as possible according to the schedule and expunge existing errors in the implementation so far.
-	\subsection{Evaluation}
-The sprint generally went well but exporting required a lot of time and resource on the programming department, and later the team had to put it on sprint 4 backlog in front for further work. Sprint 3 has seen about eighty percent completion of the total requirement, the team's progress is considered acceptable by both the advisor and the customer. 
+We had an issue with Storage not working correctly due to a browser
+implementation on newer versions of Android. This lead to the application
+not working on many  phones. In the end, the problem was that Android
+version >2.1 does not support null-callbacks in storage functions, which
+lead to a fatal error while creating an observation. 
+
+	\subsubsection{Export}
+
+	The main target of this sprints implementation was to export the
+	observations in a format readable by Artsdatabasen 2.0. This was achieved
+	using a format similar to csv, but with tab separated values instead of
+	commas. The data is sent in clear text to an email specified by the user,
+	where the user can easily copy paste the data into a form on Artsdatabanken
+	system. A PhoneGap plugin, WebIntent, was used for triggering the email
+	event on Android phones. No solution for iPhone devices has been found.
+
+\label{Auto-complete}
+
+By testing on mobile devices we have ruled out some performance issues and bugs,
+at this point the auto-complete is usable.
+
+\subsection{Testing}
+
+Previously we had done most of our testing on using PCs, in this sprint we
+focused more on mobile devices. We uncovered some problems with the
+storage functionality (see \ref{sprint3:storage}). Additionally we discovered
+a bug in the auto-complete that caused it to load excessive amounts of data from
+the file system.
+
+\subsection{Customer Feedback}
+
+The customer was satisfied with our work and the progress. The customer
+also stressed that the team make the export system work, and suggested that
+the team also implement things in less complex and practical manner. The
+customer considers the exporting functionality a deal breaker or maker of
+the prototype and the team was advised to complete that as soon as possible
+according to the schedule and expunge existing errors in the implementation
+so far.
+
+\subsection{Evaluation}
+
+The sprint generally went well but exporting required a lot of time and
+resource on the programming department, and later the team had to put it on
+sprint 4 backlog in front for further work. Sprint 3 has seen about eighty
+percent completion of the total requirement, the team's progress is considered
+acceptable by both the advisor and the customer. 

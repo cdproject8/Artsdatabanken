@@ -17,9 +17,7 @@ function Observation(specGroupId, obsId){
 	this.saved = false;
 	this.deleted = false;
 	this.activeExtended;
-		
-	// TODO make autocomplete loading dynamic for each species group based on specGroupId
-	this.autocompleteFile = "data/autocomplete/"+specGroupId+".js";
+	this.autocompleteFile = " ";	
 	
 	// Set activeExtended to the species_row selected when clicking "Add More Information" button
  	$('#observation_form').click(function(e) {
@@ -155,6 +153,7 @@ function Observation(specGroupId, obsId){
 			obs.latitude = result.latitude;
 			obs.exported = (result.exported == "true");
 			obs.specGroupId = result.specGroupId;
+			obs.autocompleteFile = "data/autocomplete/"+obs.specGroupId+".js";
 			
 			$("#export-button .ui-btn-text").text(((obs.exported)?"Eksporter (igjen)":"Eksporter"));
 			$("#obs-long").val(obs.longitude);
@@ -228,7 +227,7 @@ function Observation(specGroupId, obsId){
 			obs.id = newId;
 			//console.log("created new obs "+newId);
 		}, null);
+		this.autocompleteFile = "data/autocomplete/"+this.specGroupId+".js";	
 		this.newSpecies();
 	}
-	
 }
