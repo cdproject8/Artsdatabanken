@@ -10,7 +10,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Log;
 
 import com.phonegap.api.Plugin;
 import com.phonegap.api.PluginResult;
@@ -103,21 +106,40 @@ public class WebIntent extends Plugin {
 		for (String key : extras.keySet()) {
 			String value = extras.get(key);
 			if (key.equals("images")) {
-				String filePaths[] = value.split("*");
-				ArrayList<Uri> uris = new ArrayList<Uri>();
-			    //convert from paths to Android friendly Parcelable Uri's
-			    for (String file : filePaths)
-			    {
-			        File fileIn = new File(file);
-			        Uri u = Uri.fromFile(fileIn);
-			        uris.add(u);
-			    }
-				
-				i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+				Log.d("PhoneGapLog", value);
+				String filePaths[] = value.split("\\*");
+				if (filePaths.length != 0) {
+					Log.d("PhoneGapLog", "fp len: "+filePaths.length); 
+					ArrayList<Uri> uris = new ArrayList<Uri>();
+				    //convert from paths to Android friendly Parcelable Uri's
+				    for (String file : filePaths)
+				    {
+				    	Log.d("PhoneGapLog", file);
+				    	Uri contexturi = Uri.parse(file);
+				    	String realPath = getRealPathFromURI(contexturi);
+				    	Log.d("PhoneGapLog", "real "+realPath);
+				        //File fileIn = new File(realPath);
+				        //Uri u = Uri.fromFile(fileIn);
+				        Uri u = Uri.parse("file://"+realPath);
+				    	Log.d("PhoneGapLog", "uri.getpath "+u.getPath());
+				        uris.add(u);
+				    }
+					
+					i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+				}
 			} else {
 				i.putExtra(key, value);
 			}
 		}
 		this.ctx.startActivity(i);
+	}
+	
+	public String getRealPathFromURI(Uri contentUri)
+	{
+        String [] proj={MediaStore.Images.Media.DATA};
+        Cursor cursor = this.ctx.managedQuery( contentUri, proj, null, null, null);
+        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        return cursor.getString(column_index);
 	}
 }

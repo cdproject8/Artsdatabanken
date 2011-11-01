@@ -124,6 +124,12 @@ $.extend({
 	  }
 });
 
+testEmail = function() {
+	retrievePicture(function(uri){
+		Android.sendEmail("test", "testing more\tderp\nlols\tkk", uri+"*");
+	});
+}
+
 var Android = {};
 Android.sendEmail = function(subject, body, pictures) {
   if (!window.plugins || !window.plugins.webintent) {
@@ -135,8 +141,8 @@ Android.sendEmail = function(subject, body, pictures) {
   extras[WebIntent.EXTRA_TEXT] = body;
   if (pictures != null && pictures != "") extras["images"] = pictures;
   window.plugins.webintent.startActivity({
-    action: WebIntent.ACTION_SEND,
-    type: 'jpeg/image',
+    action: WebIntent.ACTION_SEND,	
+    type: 'image/jpeg',
     extras: extras
   }, function() {}, function() {alert('Failed to send email via Android Intent');});
 };
