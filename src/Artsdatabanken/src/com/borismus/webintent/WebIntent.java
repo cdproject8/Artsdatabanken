@@ -1,5 +1,7 @@
 package com.borismus.webintent;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -100,7 +102,21 @@ public class WebIntent extends Plugin {
 		}
 		for (String key : extras.keySet()) {
 			String value = extras.get(key);
-			i.putExtra(key, value);
+			if (key.equals("images")) {
+				String filePaths[] = value.split("*");
+				ArrayList<Uri> uris = new ArrayList<Uri>();
+			    //convert from paths to Android friendly Parcelable Uri's
+			    for (String file : filePaths)
+			    {
+			        File fileIn = new File(file);
+			        Uri u = Uri.fromFile(fileIn);
+			        uris.add(u);
+			    }
+				
+				i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+			} else {
+				i.putExtra(key, value);
+			}
 		}
 		this.ctx.startActivity(i);
 	}

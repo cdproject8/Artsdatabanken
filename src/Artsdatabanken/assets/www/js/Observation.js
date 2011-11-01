@@ -193,7 +193,7 @@ function Observation(specGroupId, obsId){
 	this.exportObservation = function() {
 		this.saveAll();
 		var datastring = this.exportDataString();
-		Android.sendEmail("Observation "+this.id, datastring);
+		Android.sendEmail("Observation "+this.id, datastring, "");
 		this.exported = true;
 		App.dao.updateObservation(this, null, null);
 		$("#export-button .ui-btn-text").text("Eksporter (igjen)");
