@@ -139,10 +139,16 @@ Android.sendEmail = function(subject, body, pictures) {
   var extras = {};
   extras[WebIntent.EXTRA_SUBJECT] = subject;
   extras[WebIntent.EXTRA_TEXT] = body;
-  if (pictures != null && pictures != "") extras["images"] = pictures;
+  var action = WebIntent.ACTION_SEND;
+  var type = 'image/jpeg';
+  if (pictures != null && pictures != "") {
+	  type = 'application/octet-stream';
+	  action = WebIntent.ACTION_SEND_MULTIPLE;
+	  extras["images"] = pictures;
+  }
   window.plugins.webintent.startActivity({
-    action: WebIntent.ACTION_SEND,	
-    type: 'image/jpeg',
+    action: action,	
+    type: type,
     extras: extras
   }, function() {}, function() {alert('Failed to send email via Android Intent');});
 };
