@@ -84,7 +84,7 @@ function ObsSpec(id, observation){
 
 		//	 TODO if picture
 		for(i = 0; i < this.pictures.length; i++) {
-			$("#pics").append('<img src="' + this.pictures[i] + '" width="80%" />');	
+			$("#pics").append('<img src="' + this.pictures[i][0] + '" width="80%" />');	
 		}
 		
 	}
