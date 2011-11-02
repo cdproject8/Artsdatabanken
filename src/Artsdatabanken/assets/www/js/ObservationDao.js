@@ -61,7 +61,9 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
-			}, function() {});
+			}, function() {
+				console.log("error: insert into species")
+			});
 			
 			console.log("pic len " + entry.pictures.length)
 			var pics = new Array();
@@ -207,7 +209,9 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
 				success(results.rows);
-			}, function() {})
+			}, function() {
+				console.log("error: findAllObservations");
+			})
 		}, error);
 	};
 	

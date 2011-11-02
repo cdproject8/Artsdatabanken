@@ -190,21 +190,28 @@ function Observation(specGroupId, obsId){
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();
-			//console.log(val.fields());
+			console.log(val.fields());
 			$.each(fields, function(j, fval){
-				//console.log(j + " " + fval);
+				console.log(j + " " + fval);
 				string += fval.toString() +"\t"
 			});
 			string += "\n";
 		});
-		//console.log(string);
+		console.log(string);
 		return string;
 	}
 	
 	this.exportObservation = function() {
 		this.saveAll();
 		var datastring = this.exportDataString();
-		Android.sendEmail("Observation "+this.id, datastring, "");
+		var picturestring = "";
+		$.each(this.species, function(i, ival){
+			$.each(ival.pictures, function(j, jval){
+				picturestring += jval[0] + "*";
+			});
+		});
+		console.log(picturestring);
+		Android.sendEmail("Observation "+this.id, datastring, picturestring);
 		this.exported = true;
 		App.dao.updateObservation(this, null, null);
 		$("#export-button .ui-btn-text").text("Eksporter (igjen)");
