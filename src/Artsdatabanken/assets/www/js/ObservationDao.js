@@ -61,15 +61,23 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
-			}, function() {});
+			}, function() {
+				console.log("error: insert into species")
+			});
 			
 			console.log("pic len " + entry.pictures.length)
-			for(i = 0; i < entry.pictures.length; i++) {
+			var pics = new Array();
+			for(var i = 0; i < entry.pictures.length; i++) {
+				if(entry.pictures[i][1] == 1)
+					entry.pictures[i][1] = 0;
+					pics.push(entry.pictures[i][0]);
+			}
+			for(var i = 0; i < pics.length; i++) {
 				console.log("hallo!");		
 				console.log("obsid: " + entry.observation.id);
 				console.log("eid: " + entry.id);
 				console.log("url: " + entry.pictures[i]);
-				tx.executeSql("INSERT INTO pictures VALUES (NULL, ?, ?, ?)", [entry.observation.id, entry.id, entry.pictures[i]], function(tx, results) {
+				tx.executeSql("INSERT INTO pictures VALUES (NULL, ?, ?, ?)", [entry.observation.id, entry.id, pics[i]], function(tx, results) {
 					console.log("success");
 					success(entry.id);
 				}, function(error) {
@@ -201,7 +209,9 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
 				success(results.rows);
-			}, function() {})
+			}, function() {
+				console.log("error: findAllObservations");
+			})
 		}, error);
 	};
 	
