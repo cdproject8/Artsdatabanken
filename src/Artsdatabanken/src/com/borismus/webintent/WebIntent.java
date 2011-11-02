@@ -110,7 +110,7 @@ public class WebIntent extends Plugin {
 				String filePaths[] = value.split("\\*");
 				if (filePaths.length != 0) {
 //					Log.d("PhoneGapLog", "fp len: "+filePaths.length); 
-//					ArrayList<Uri> uris = new ArrayList<Uri>();
+					ArrayList<Uri> uris = new ArrayList<Uri>();
 				    //convert from paths to Android friendly Parcelable Uri's
 				    for (String file : filePaths)
 				    {
@@ -122,11 +122,11 @@ public class WebIntent extends Plugin {
 				        //Uri u = Uri.fromFile(fileIn);
 				        Uri u = Uri.parse("file://"+realPath);
 //				    	Log.d("PhoneGapLog", "uri.getpath "+u.getPath());
-//				        uris.add(u);
-				        i.putExtra(Intent.EXTRA_STREAM, u);
+				        uris.add(u);
+				        //i.putExtra(Intent.EXTRA_STREAM, u);
 				    }
 					//i.putExtra(Intent.EXTRA_STREAM, uris.toArray());
-					//i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+					i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
 				}
 			} else {
 				i.putExtra(key, value);
