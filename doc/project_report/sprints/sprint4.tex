@@ -45,6 +45,8 @@ from bugs and issues and focus more on exporting the the observation.
 	literal names that are not actually supported by the API (using commas in a
 	request cause the API to return an SQL error).
 
+  We ran into some problems with the new API however. We could only retrieve 500 species at a time. The logic behind the added requests and the storing of data on the phone as files is very complex, making it a project in itself. We therefore chose a different approach by making the application have periodic updates via the Android Market. We have created a script that can parse the API and create the appropriate JSON-files for use in the application. This will also be included in the finished product. 
+
 \subsection{Testing}
 
 Testing uncovered inconsistencies in the storage API. Initially we planned to
@@ -57,9 +59,8 @@ migration.
 
 \subsection{Customer Feedback}
 
-\subsection{Evaluation} 
+\subsection{Evaluation}
 
 F8 was the most challenging requirement other than the exporting functionality.
 We had to roll on exporting functionality across 3 sprint, but the team managed
-to complete that in time... 
-% eh.. what?
+to complete that in time...

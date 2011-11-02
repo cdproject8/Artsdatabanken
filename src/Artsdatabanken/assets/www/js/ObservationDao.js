@@ -18,7 +18,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('CREATE TABLE IF NOT EXISTS observations (id INTEGER PRIMARY KEY AUTOINCREMENT, longitude, latitude, specGroupId, exported, create_date)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS species (id, observation_id, species_name, count, sex, age, activity, date_start INTEGER, date_end INTEGER, comment, PRIMARY KEY (id, observation_id))');
-			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, species_id, uri)');
+			tx.executeSql('CREATE TABLE IF NOT EXISTS pictures (id INTEGER PRIMARY KEY AUTOINCREMENT, observation_id, species_id, uri)');
 			tx.executeSql('CREATE TABLE IF NOT EXISTS test (data)');
 		}, errorCallback);
 		return me;
@@ -42,6 +42,7 @@ function ObservationDao() {
 	};
 	
 	this.saveEntry = function(entry, success, error) {
+//		console.log("saveEntry");
 		if (success == null) {success = function() {}};
 		if (error == null) {error = function() {}};
 		var query = "INSERT OR REPLACE INTO SPECIES VALUES (?,?,?,?,?,?,?,?,?,?)";
@@ -60,7 +61,29 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql(query, values, function(tx, results) {
 				success(entry.id);
-			}, function() {});
+			}, function() {
+				console.log("error: insert into species")
+			});
+			
+//			console.log("pic len " + entry.pictures.length)
+			var pics = new Array();
+			for(var i = 0; i < entry.pictures.length; i++) {
+				if(entry.pictures[i][1] == 1)
+					entry.pictures[i][1] = 0;
+					pics.push(entry.pictures[i][0]);
+			}
+			for(var i = 0; i < pics.length; i++) {
+//				console.log("hallo!");		
+//				console.log("obsid: " + entry.observation.id);
+//				console.log("eid: " + entry.id);
+//				console.log("url: " + entry.pictures[i]);
+				tx.executeSql("INSERT INTO pictures VALUES (NULL, ?, ?, ?)", [entry.observation.id, entry.id, pics[i]], function(tx, results) {
+					console.log("success");
+					success(entry.id);
+				}, function(error) {
+					console.log("error: " + error);
+				});				
+			}
 		}, error);
 	};
 	
@@ -94,6 +117,32 @@ function ObservationDao() {
 			}, function() {})
 		}, error);
 	};
+	
+	this.findPictures = function(observation_id, success, error) {
+//		console.log("findPictures");
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
+		
+		db.transaction(function(tx) {
+			console.log("findPictures: transaction")
+			console.log(observation_id);
+			tx.executeSql('SELECT * FROM pictures WHERE observation_id = ?', [ observation_id ], function(tx, results) {
+				if (results.rows.length == 0) {
+					console.log("no results");
+					success(function() {});
+					return;
+				} 
+				console.log("findPictures: success");
+				for(var i = 0; i < results.rows.length; i++) {
+					console.log(results.rows.item(i).uri);
+				}
+				success(results.rows);
+			}, function() {
+				console.log("findPictures: error");
+			})
+		}, error);
+		
+	}
 	
 	this.countObservation = function(obsId, success, error) {
 		if (success == null) {success = function() {}};
@@ -160,7 +209,9 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM observations', [], function(tx, results) {
 				success(results.rows);
-			}, function() {})
+			}, function() {
+				console.log("error: findAllObservations");
+			})
 		}, error);
 	};
 	
