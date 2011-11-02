@@ -42,7 +42,7 @@ function ObservationDao() {
 	};
 	
 	this.saveEntry = function(entry, success, error) {
-		console.log("saveEntry");
+//		console.log("saveEntry");
 		if (success == null) {success = function() {}};
 		if (error == null) {error = function() {}};
 		var query = "INSERT OR REPLACE INTO SPECIES VALUES (?,?,?,?,?,?,?,?,?,?)";
@@ -65,7 +65,7 @@ function ObservationDao() {
 				console.log("error: insert into species")
 			});
 			
-			console.log("pic len " + entry.pictures.length)
+//			console.log("pic len " + entry.pictures.length)
 			var pics = new Array();
 			for(var i = 0; i < entry.pictures.length; i++) {
 				if(entry.pictures[i][1] == 1)
@@ -73,10 +73,10 @@ function ObservationDao() {
 					pics.push(entry.pictures[i][0]);
 			}
 			for(var i = 0; i < pics.length; i++) {
-				console.log("hallo!");		
-				console.log("obsid: " + entry.observation.id);
-				console.log("eid: " + entry.id);
-				console.log("url: " + entry.pictures[i]);
+//				console.log("hallo!");		
+//				console.log("obsid: " + entry.observation.id);
+//				console.log("eid: " + entry.id);
+//				console.log("url: " + entry.pictures[i]);
 				tx.executeSql("INSERT INTO pictures VALUES (NULL, ?, ?, ?)", [entry.observation.id, entry.id, pics[i]], function(tx, results) {
 					console.log("success");
 					success(entry.id);
@@ -119,7 +119,7 @@ function ObservationDao() {
 	};
 	
 	this.findPictures = function(observation_id, success, error) {
-		console.log("findPictures");
+//		console.log("findPictures");
 		if (success == null) {success = function() {}};
 		if (error == null) {error = function() {}};
 		

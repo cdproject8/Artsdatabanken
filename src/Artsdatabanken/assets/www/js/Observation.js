@@ -135,7 +135,7 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.saveToDao = function() {
-		console.log("saveToDao");
+//		console.log("saveToDao");
 		this.saveAll();
 		$.each(this.species, function(i, val){
 			App.dao.saveEntry(val, function(){
@@ -190,9 +190,9 @@ function Observation(specGroupId, obsId){
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();
-			console.log(val.fields());
+//			console.log(val.fields());
 			$.each(fields, function(j, fval){
-				console.log(j + " " + fval);
+//				console.log(j + " " + fval);
 				string += fval.toString() +"\t"
 			});
 			string += "\n";
