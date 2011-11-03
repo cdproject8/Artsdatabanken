@@ -169,9 +169,13 @@ function Observation(specGroupId, obsId){
 					var pictures = new Array()
 					for(var j = 0; j < pics.length; j++) {
 						if(pics.item(j).species_id == i ) {
-							pictures.push([pics.item(j).uri, 0]);
+							pictures.push([pics.item(j).uri, pics.item(j).id]);
 						}
 					}
+					for(var j = 0; j < pictures.length; j++) {
+						console.log(pictures[i])
+					}
+					
 					newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).activity, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment, pictures);
 					newSpec.addHTML();
 					newSpec.fillObsListValues();
@@ -225,11 +229,25 @@ function Observation(specGroupId, obsId){
 		pic = takePicture(function(uri) {
 			if(uri && uri != "" ) {
 				console.log("pic success");
-				obs.activeExtended.pictures.push([uri, 1]);
+				index = obs.activeExtended.pictures.length
+				obs.activeExtended.pictures.push([uri, -1]);
 				console.log(obs.activeExtended.pictures.length);
-				$("#pics").append('<img src="' + uri + '" width="80%" />');
+				$("#pics").append('<a href="" onClick="observation.removePicture(' + index + '); return false;"<img src="' + uri + '" id="apic' + index + '" width="80%" />');
 			}
 		});
+	}
+	
+	//remove picture before it is actually added to the database
+	this.removePicture = function(index) {
+		console.log("removing")
+		obs.activeExtended.pictures.splice(index, 1);
+		$("#apic"+index).remove();
+	}
+	
+	//delete picture from observation and database
+	this.deletePicture = function(id) {
+		console.log("deleting");
+		//TODO
 	}
 	
 	// if id specified then read observation from Dao

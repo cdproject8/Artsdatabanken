@@ -68,8 +68,8 @@ function ObservationDao() {
 //			console.log("pic len " + entry.pictures.length)
 			var pics = new Array();
 			for(var i = 0; i < entry.pictures.length; i++) {
-				if(entry.pictures[i][1] == 1)
-					entry.pictures[i][1] = 0;
+				if(entry.pictures[i][1] == -1)
+//					entry.pictures[i][1] = 0;
 					pics.push(entry.pictures[i][0]);
 			}
 			for(var i = 0; i < pics.length; i++) {
@@ -128,7 +128,7 @@ function ObservationDao() {
 			console.log(observation_id);
 			tx.executeSql('SELECT * FROM pictures WHERE observation_id = ?', [ observation_id ], function(tx, results) {
 				if (results.rows.length == 0) {
-					console.log("no results");
+					console.log("findPictures: no results");
 					success(function() {});
 					return;
 				} 
@@ -223,6 +223,14 @@ function ObservationDao() {
 			tx.executeSql('DELETE FROM observations WHERE id = ?', [ observation_id ], success, error);
 		}, function() {});
 	};
+	
+	this.removePicture = function(id, success, error) {
+		if (success == null) {success = function() {}};
+		if (error == null) {error = function() {}};
+		db.transaction(function(tx) {
+			tx.executeSql('DELETE FROM pictures WHERE id = ?', [ id ], success, error);
+		}, function() {});
+	}
 	
 	// Constructor
 	this.connect();
