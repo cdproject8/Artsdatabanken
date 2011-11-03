@@ -135,7 +135,7 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.saveToDao = function() {
-		console.log("saveToDao");
+//		console.log("saveToDao");
 		this.saveAll();
 		$.each(this.species, function(i, val){
 			App.dao.saveEntry(val, function(){
@@ -169,7 +169,7 @@ function Observation(specGroupId, obsId){
 					var pictures = new Array()
 					for(var j = 0; j < pics.length; j++) {
 						if(pics.item(j).species_id == i ) {
-							pictures.push(pics.item(j).uri);
+							pictures.push([pics.item(j).uri, 0]);
 						}
 					}
 					newSpec.init(result.item(i).species_name, result.item(i).count, result.item(i).sex, result.item(i).age, result.item(i).activity, new Date(result.item(i).date_start), new Date(result.item(i).date_end), result.item(i).comment, pictures);
@@ -190,21 +190,28 @@ function Observation(specGroupId, obsId){
 		
 		$.each(this.species, function(i, val){
 			var fields = val.fields();
-			//console.log(val.fields());
+//			console.log(val.fields());
 			$.each(fields, function(j, fval){
-				//console.log(j + " " + fval);
+//				console.log(j + " " + fval);
 				string += fval.toString() +"\t"
 			});
 			string += "\n";
 		});
-		//console.log(string);
+		console.log(string);
 		return string;
 	}
 	
 	this.exportObservation = function() {
 		this.saveAll();
 		var datastring = this.exportDataString();
-		Android.sendEmail("Observation "+this.id, datastring, "");
+		var picturestring = "";
+		$.each(this.species, function(i, ival){
+			$.each(ival.pictures, function(j, jval){
+				picturestring += jval[0] + "*";
+			});
+		});
+		console.log(picturestring);
+		Android.sendEmail("Observation "+this.id, datastring, picturestring);
 		this.exported = true;
 		App.dao.updateObservation(this, null, null);
 		$("#export-button .ui-btn-text").text("Eksporter (igjen)");
@@ -218,7 +225,7 @@ function Observation(specGroupId, obsId){
 		pic = takePicture(function(uri) {
 			if(uri && uri != "" ) {
 				console.log("pic success");
-				obs.activeExtended.pictures.push(uri);
+				obs.activeExtended.pictures.push([uri, 1]);
 				console.log(obs.activeExtended.pictures.length);
 				$("#pics").append('<img src="' + uri + '" width="80%" />');
 			}

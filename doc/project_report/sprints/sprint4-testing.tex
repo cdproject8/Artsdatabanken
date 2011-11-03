@@ -1,0 +1,283 @@
+\newpage
+\subsubsection{Test 1}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirements} & F1 and F10 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Clean install of app on mobile device, no observations stored \\ \hline
+			\textbf{Post-conditions} & A new observation has been saved and the user is directed back to the main menu \\ \hline
+			\textbf{Result} & PASS \\ \hline
+			\textbf{Comments} & Could only choose GPS coordinates in step 3, close locations missing \\ \hline
+		\end{tabular}
+		\caption{Summary of test 1}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+			1. Tap the new observation button & Menu for selecting species group appears & PASS \\ \hline
+			2. Select species type "Fugl" (bird) & Menu for bird observations appears & PASS \\ \hline
+			3. Selects location from list of close locations, or selects GPS location & Location is set & PASS \\ \hline
+			4. Start writing "grågås" in the "Art" (species) field, ensure that
+			auto-complete give useful suggestions, choose "grågås" from list of
+			suggestions. Write 2 in the "Antall" (count) field & Auto-complete
+			suggests bird names, 2 species of type "grågås" is added to observation
+			& PASS \\ \hline 
+			5. Tap "Lagre". & Observatin is saved & PASS \\ \hline
+		\end{tabular}
+		\caption{Execution of test 1}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 2}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F2 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 1 completed in same test environment, app is still in observation view \\ \hline
+			\textbf{Post-conditions} & Additional information about an observation has been saved \\ \hline
+			\textbf{Result} & PASS \\ \hline
+		\end{tabular}
+		\caption{Summary of test 2}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+
+			1. Tap "Detaljer" (details) in the row containing "grågås" &
+			Detailed view for the "grågås" observation is displayed & 
+			PASS \\ \hline
+
+			2. Select "Rugende" in the "Aktivitet" (activity) field &
+			"Aktivitet" field populated with "Rugende" &
+			PASS \\ \hline
+
+			3. Tap back button & 
+			Main observation view is displayed & 
+			PASS \\ \hline
+
+			4. Tap save and go to main screen. Go into the observatin using
+			"Lagrede Observasjoner" (stored observations) and verify that "grågås"
+			still has "Aktivitet" set to "Rugende" in the details view &
+			Grågås has "Aktivitet" set to "Rugende" &
+			PASS \\ \hline
+		\end{tabular}
+		\caption{Execution of test 2}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 3}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F3 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 1 completed in same test environment, app is still in observation view \\ \hline
+			\textbf{Post-conditions} & Observation is stored with two entries, "grågås" ("Antall" of 2) and "blåmeis" ("Antall" of 1) \\ \hline
+			\textbf{Result} & FAIL \\ \hline
+			\textbf{Comments} & Could not perform step 2, no place to select different locations \\ \hline
+		\end{tabular}
+		\caption{Summary of test 3}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+
+			1. Tap "Legg til ny art" &
+			A empty species row is appended &
+			PASS \\ \hline
+			
+			2. Optionally selects another location, otherwise the same one is
+			selected. & 
+			New location chosen for current row &
+			FAIL \\ \hline
+
+			3. Select "blåmeis" with the count ("Antall") of 1 in the same matter 
+			as in test 1. &
+			Row 2 is filled inn with ("Artsnavn" = "blåmes", "Antall" = 1) &
+			PASS \\ \hline
+
+			4. Tap "Lagre" &
+			Observation is saved with two species observations ("grågås" and "blåmeis") &
+			PASS \\ \hline
+		\end{tabular}
+		\caption{Execution of test 3}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 4}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F4 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 2 and 3 completed in same test environment, app is still in observation view \\ \hline
+			\textbf{Post-conditions} & All data from current observation is submitted to the native mail client \\ \hline
+			\textbf{Result} & PASS \\ \hline
+			\textbf{Comments} & This could be more detailed, the export format has not been verified  \\ \hline
+		\end{tabular}
+		\caption{Summary of test 4}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+			1. Taps 'Eksporter' (export) in the observation view &
+			Native email client is launched in "new email"-mode. Date from
+			observation is placed in the message field. &
+			PASS \\ \hline
+		\end{tabular}
+		\caption{Execution of test 4}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 5}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F5 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & App installed on mobile device \\ \hline
+			\textbf{Post-conditions} & Picture is stored on the phone with an easily recognizable filename \\ \hline
+			\textbf{Result} & FAIL \\ \hline
+			\textbf{Comments} & Unable to launch picture functionality \\ \hline
+		\end{tabular}
+		\caption{Summary of test 5}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+			1. Tap "Ta Bilde" (capture image) in the main view &
+			Native image capturing software is started & 
+			FAIL \\ \hline
+
+			2. Take picture using native software &
+			Image is stored and success message is displayed in app &
+			-\\ \hline
+		\end{tabular}
+		\caption{Execution of test 5}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 6}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F6 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 2 completed \\ \hline
+			\textbf{Post-conditions} & App is in same state as before test started \\ \hline
+			\textbf{Result} & PASS \\ \hline
+			\textbf{Comments} & \\ \hline
+		\end{tabular}
+		\caption{Summary of test 6}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+				1. Tap "Lagrede Observasjoner" from the main view &
+				A list containing one observatin (from test 2) is displayed &
+				PASS \\ \hline
+
+				2. Select observation 1 from the list &
+				The observation from test 2 is displayed in the same state as
+				earlier (two species) &
+				PASS \\ \hline
+
+				3. Tap "Detailer" in the row containing "grågås" &
+				Details view for "grågås" observation is displayed, the field "Aktivitet"
+				is filled in with "Rugende" &
+				PASS \\ \hline
+		\end{tabular}
+		\caption{Execution of test 6}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 7}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F7 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 6 completed, still viewing stored observation \\ \hline
+			\textbf{Post-conditions} & Observation is stored on device with an additional row containing ("Art" = "grønnfink", "Antall" = 9) \\ \hline
+			\textbf{Result} & PASS \\ \hline
+			\textbf{Comments} & \\ \hline
+		\end{tabular}
+		\caption{Summary of test 7}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+
+			1. Add a new row with the same procedure as in test 2 &
+			A empty row is appended to the observation &
+			PASS \\ \hline
+
+			2. Fill in ("Art" = "grønnfink" and "Antall" = 9) in the new row
+			using the same procedure as in test 2. &
+			New row is populated with ("grønnfink", 9) &
+			PASS \\ \hline
+
+			3. Tap "Lagre" &
+			Observation stored with an additional row ("grønnfink", 9) &
+			PASS \\ \hline
+
+		\end{tabular}
+		\caption{Execution of test 7}
+	\end{figure}
+
+\newpage
+\subsubsection{Test 8}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{3.5cm}|p{7.0cm}|} \hline
+			\textbf{Requirement} & F9 \\ \hline
+			\textbf{Test environment} & Sony Ericsson Xperia X10 running Android 2.1.1.A.0.6 with kernel: 2.6.29 \\ \hline
+			\textbf{Pre-conditions} & Test 1 completed, still viewing stored observation \\ \hline
+			\textbf{Post-conditions} App is in same state as before test execution &  \\ \hline
+			\textbf{Result} & PASS \\ \hline
+			\textbf{Comments} & It is possible the results came from another
+			source than GPS, it sufficiently close to the current location \\
+			\hline
+		\end{tabular}
+		\caption{Summary of test 8}
+	\end{figure}
+
+	\begin{figure}[htb]
+		\centering
+		\begin{tabular}{|p{5.0cm}|p{5.0cm}|p{1cm}|}
+			\hline \textbf{Action} & \textbf{Expected outcome} & \textbf{Result} \\ \hline
+			
+			1. Tap "GPS" &
+			Longitude and latitude contains coordinates near the current location &
+			PASS \\ \hline
+
+		\end{tabular}
+		\caption{Execution of test 8}
+	\end{figure}
+
+\newpage
