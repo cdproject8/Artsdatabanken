@@ -239,17 +239,35 @@ function Observation(specGroupId, obsId){
 		});
 	}
 	
+	this.getPicture = function() {
+		pic = fetchPicture(function(uri) {
+			if(uri && uri != "" ) {
+				console.log("pic success");
+				index = obs.activeExtended.pictures.length
+				obs.activeExtended.pictures.push([uri, -1]);
+				console.log(obs.activeExtended.pictures.length);
+				$("#pics").append('<a href="" onClick="observation.removePicture(' + index + '); return false;"<img src="' + uri + '" id="apic' + index + '" width="80%" />');
+			}
+		});
+	}
+	
 	//remove picture before it is actually added to the database
 	this.removePicture = function(index) {
-		console.log("removing")
-		obs.activeExtended.pictures.splice(index, 1);
-		$("#apic"+index).remove();
+		if (confirm("Vil du fjerne dette bildet fra observasjonen?")) {
+			console.log("removing")
+			obs.activeExtended.pictures.splice(index, 1);
+			$("#apic"+index).remove();
+		}
 	}
 	
 	//delete picture from observation and database
 	this.deletePicture = function(id) {
-		console.log("deleting");
-		//TODO
+		if (confirm("Vil du fjerne dette bildet fra observasjonen?")) {
+			console.log("deleting");
+			
+			$("#dpic"+id).remove();
+			App.dao.removePicture(id, null, null);
+		}
 	}
 	
 	// if id specified then read observation from Dao
