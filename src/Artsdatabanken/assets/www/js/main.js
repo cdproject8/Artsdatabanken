@@ -1,9 +1,11 @@
-//GLOBAL VARS
-var specGroupId;
+// GLOBAL VARS
 var observation;
+// Variables to hold function arguments when creating or opening an observation
+var specGroupId;
 var observationId = null;
-// Init jQuery mobile
+// GLOBAL VARS END
 
+// Init jQuery mobile
 $(document).bind("mobileinit", function() {
 	// jQuery mobile configuration
 	$.extend($.mobile, {
