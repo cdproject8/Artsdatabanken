@@ -1,6 +1,6 @@
 function Observation(specGroupId, obsId){
 
-	//pointer for jquery functions
+	//pointer to itself for callback functions
 	var obs = this;
 	
 	// Values saved to the Dao
@@ -16,6 +16,8 @@ function Observation(specGroupId, obsId){
 	this.species = new Array();
 	this.saved = false;
 	this.deleted = false;
+	// pointer to the species object that is currently being used in the extended
+	// information page
 	this.activeExtended;
 	this.autocompleteFile = " ";	
 	
@@ -73,11 +75,11 @@ function Observation(specGroupId, obsId){
 		if ( this.deleted == false && (silent || confirm("Are you sure you want to delete this observation?"))){
 			//console.log(this.deleted == false);
 			var obsid = this.id;
-			this.deleted = true;
+			
 			App.dao.removeObservation(this.id, function(result) {
-				//console.log("deleted observation "+obsid);
+				obs.deleted = true;
 			},null);
-			if (!silent) $.mobile.changePage( "index.html");
+			if (!silent) $.mobile.changePage("index.html");
 		}
 	}
 	
