@@ -15,23 +15,23 @@ The start of Sprint 1 is September 12th, and it will last until September 25th (
 Relevant requirements for this sprint are 
 \begin{description}
 	\item[F1] User must be able to create a new observation 
-	\item[F3] User must be able to add more species to a observation
+	\item[F3] User must be able to add more species to an observation
 	\item[F10] Autocomplete 
 \end{description}
 
 \subsection{Implementation}
-In this sprint we started implementing the underlying classes and control, as the use JQuery Mobile already has done most of our GUI work. The App consists primarily of main.js, Observation.js and ObsSepc.js.
+In this sprint we started implementing the underlying classes and control, as the use of JQuery Mobile already has done most of our GUI work. The App consists primarily of main.js, Observation.js and ObsSepc.js.
 
-main.js is responsible for containing code related to startup and transitions between pages as well as static functions.
+\paragraph{main.js} is responsible for containing code related to startup and transitions between pages as well as static functions.
 When the app transitions to the Observation page a new Observation object is created, with a pointer to it stored as a global variable in main.js.
 This is to easily access it through calls from the UI. 
 When the app leaves the Observation page (unless you transition to the extended information page) it's DOM elements are removed to counteract JQuery Mobile's functionality of caching pages, in order to make sure a new observation is created each time that page is loaded.
 
-Observation.js holds the functionality connected to the observation itself.
-It contains such information as when it was created, it's id, GPS coordinates(NYI) and other helper values like it's observed species (ObsSpec.js objects) and states.
+\paragraph{Observation.js} holds the functionality connected to the observation itself.
+It contains such information as when it was created, it's uniqe id, GPS coordinates(NYI) and other helper values like it's observed species (ObsSpec.js objects) and states.
 To add species to an observation, a method in Observation is run which creates a new ObsSpec object, pushes onto a stack stored in Observation and appends HTML code for it with JQuery.
 
-ObsSpec.js holds functionality connected to one species within an observation.
+\paragraph{ObsSpec.js} holds functionality connected to one species within an observation.
 It contains the details stored about a species, along with a unique id within the observation.
 
 \subsection{Testing}
