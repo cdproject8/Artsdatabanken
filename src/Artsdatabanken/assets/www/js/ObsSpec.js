@@ -83,7 +83,7 @@ function ObsSpec(id, observation){
 		$("#extended_inf :input[id=spec-comment]").val(this.comment);
 
 		for(i = 0; i < this.pictures.length; i++) {
-			$("#pics").append('<img src="' + this.pictures[i][0] + '" width="80%" />');	
+			$("#pics").append('<a href="" onClick="observation.deletePicture(' + this.pictures[i][1] + '); return false;"> <img src="' + this.pictures[i][0] + '" id="dpic'+this.pictures[i][1]+'" width="80%" /></a>');	
 		}
 		
 	}
