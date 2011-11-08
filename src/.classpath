@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Artsdatabanken/gen"/>
+	<classpathentry kind="src" path="Artsdatabanken/src"/>
+	<classpathentry kind="src" path="phonegap/Android/Sample/src"/>
+	<classpathentry kind="src" path="sandbox/stianlik/PhoneGap/Android-PhoneGap-AlternativeTo/gen"/>
+	<classpathentry kind="src" path="sandbox/stianlik/PhoneGap/Android-PhoneGap-AlternativeTo/src"/>
+	<classpathentry kind="lib" path="Artsdatabanken/libs/phonegap.jar"/>
+	<classpathentry kind="lib" path="phonegap/Android/phonegap-1.0.0.jar"/>
+	<classpathentry kind="lib" path="phonegap/Android/Sample/libs/phonegap-1.0.0.jar"/>
+	<classpathentry kind="lib" path="phonegap/BlackBerry-WebWorks/sample/lib/ant-contrib/ant-contrib-1.0b3.jar"/>
+	<classpathentry kind="lib" path="phonegap/BlackBerry-WebWorks/sample/lib/phonegap.1.0.0/ext/phonegap.1.0.0.jar"/>
+	<classpathentry kind="lib" path="phonegap/BlackBerry-WebWorks/sample/www/ext/phonegap.1.0.0.jar"/>
+	<classpathentry kind="lib" path="phonegap/BlackBerry-WebWorks/www/ext/phonegap.1.0.0.jar"/>
+	<classpathentry kind="lib" path="sandbox/stianlik/PhoneGap/Android-PhoneGap-AlternativeTo/lib/phonegap-0.9.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="sandbox/stianlik/PhoneGap/Android-PhoneGap-AlternativeTo/bin"/>
+</classpath>

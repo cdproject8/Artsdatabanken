@@ -1,16 +1,3 @@
-\subsection{Testing}
-
-Testing uncovered inconsistencies in the storage API. Initially we planned to
-use a function , Database.changeVersion(..), to migrate database schemas while
-updating the app, unfortunately this only works for some versions of Android.
-Due to preceding comment and time restrictions we dropped support for database
-migration.
-
-Following are functional tests for each of the completed requirements. We tested
-each use case on different devices, after each test bug fixing was done. The
-improvements can be seen in run 1 and run 3, run 3 is a re-test after fixing
-bugs in version 0.9 (done on the same device). At the end all tests passed,
-except test 5 (see comment on under Test 5 (run 3)).
-
 \input{sprints/testing/run1.tex}
+\input{sprints/testing/run2.tex}
 \input{sprints/testing/run3.tex}
