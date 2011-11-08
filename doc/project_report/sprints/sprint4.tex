@@ -65,13 +65,19 @@ updating the app, unfortunately this only works for some versions of Android.
 Due to preceding comment and time restrictions we dropped support for database
 migration.
 
-We ran functional tests for each of the completed requirements (details under
-\ref{sec:testing}). We tested each use case on different devices, after each test bug
-fixing was done. The improvements can be seen in run 1 and run 3, run 3 is a
-re-test after fixing bugs in version 0.9 (done on the same device). At the end
-all tests passed. Test 5 uncovered a weakness in our user interface, we have a
-button named "Ta bilde" (capture image) that is used to choose images from the device
-album, it doesn't allow users to actually capture an image.
+We ran functional tests for each of the completed requirements (details in
+section \ref{sec:testing}). We tested each use case on different devices, after
+each test bug fixing was performed. Some of the improvements can be seen in run
+1 and run 3, run 3 is a re-test after fixing bugs in version 0.9 (done on the
+same device). 
+
+At the end all tests passed. Test 5 uncovered a weakness in our user interface,
+we have a button named "Ta bilde" (capture image) that is used to choose images
+from the device album, it doesn't allow users to actually capture an image.
+Image capturing is actually done from another section in the user interface
+(details in section \ref{sec:testing}. To accomondate this we created an
+additional test "Test 1 Fixed" that verifies the actual image capturing
+functionality.
 
 \subsection{Customer Feedback}
 
