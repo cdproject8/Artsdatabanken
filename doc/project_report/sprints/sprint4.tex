@@ -57,14 +57,6 @@ This functionality has been tested and confirmed to work with the GMail and Sony
 
   We ran into some problems with the new API however. We could only retrieve 500 species at a time. The logic behind the added requests and the storing of data on the phone as files is very complex, making it a project in itself. We therefore chose a different approach by making the application have periodic updates via the Android Market. We have created a script that can parse the API and create the appropriate JSON-files for use in the application. This will also be included in the finished product. 
 
-\subsection{Testing}
-
-Testing uncovered inconsistencies in the storage API. Initially we planned to
-use a function , Database.changeVersion(..), to migrate database schemas while
-updating the app, unfortunately this only works for some versions of Android.
-Due to preceding comment and time restrictions we dropped support for database
-migration.
-
 \input{sprints/sprint4-testing.tex}
 
 \subsection{Customer Feedback}
