@@ -4,35 +4,49 @@
 
 	In sprint 1 we started developing. The customer wanted us to focus on getting autocomplete working for the first sprint. This would allow us to get the basic functionality of the app working as soon as possible. We also focused on creating a preliminary system architecture.
 
-	\subsubsection{Expected results}
-  From this sprint we expect to have auto-complete working for species names. In addition, we will continue improving the documentation.
+\subsubsection{Expected results}
+ From this sprint we expect to have auto-complete working for species names. In addition, we will continue improving the documentation.
 	
-	\subsubsection{Duration}
-	The start of Sprint 1 is September 12th, and it will last until September 25th (weeks 37 and 38). The customer meeting is on September 27th, just after the completion of the sprint. The advisor meetings are on September 13th and September 20th.
+\subsubsection{Duration}
+The start of Sprint 1 is September 12th, and it will last until September 25th (weeks 37 and 38). The customer meeting is on September 27th, just after the completion of the sprint. The advisor meetings are on September 13th and September 20th.
 	
 \subsection{Requirements}
 
-	Relevant requirements for this sprint are 
-  \begin{description}
-  \item[F1] Creating an observation
-  \item[F10] Autocomplete 
-  \end{description}
+Relevant requirements for this sprint are 
+\begin{description}
+	\item[F1] User must be able to create a new observation 
+	\item[F3] User must be able to add more species to an observation
+	\item[F10] Autocomplete 
+\end{description}
 
+\subsection{Implementation}
+In this sprint we started implementing the underlying classes and control, as the use of JQuery Mobile already has done most of our GUI work. The App consists primarily of main.js, Observation.js and ObsSepc.js.
+
+\paragraph{main.js} is responsible for containing code related to startup and transitions between pages as well as static functions.
+When the app transitions to the Observation page a new Observation object is created, with a pointer to it stored as a global variable in main.js.
+This is to easily access it through calls from the UI. 
+When the app leaves the Observation page (unless you transition to the extended information page) it's DOM elements are removed to counteract JQuery Mobile's functionality of caching pages, in order to make sure a new observation is created each time that page is loaded.
+
+\paragraph{Observation.js} holds the functionality connected to the observation itself.
+It contains such information as when it was created, it's uniqe id, GPS coordinates(NYI) and other helper values like it's observed species (ObsSpec.js objects) and states.
+To add species to an observation, a method in Observation is run which creates a new ObsSpec object, pushes onto a stack stored in Observation and appends HTML code for it with JQuery.
+
+\paragraph{ObsSpec.js} holds functionality connected to one species within an observation.
+It contains the details stored about a species, along with a unique id within the observation.
 
 \subsection{Testing}
+Most of the test related effort in this sprint was used to prepare the
+testing framework, consisting of QUnit for unit testing and mockjax for
+mocking AJAX requests / responses. See \ref{sec:qunit}. We decided to run
+the tests on normal (desktop / laptop) computers as it was problematic to
+run directly on mobile devices. Using techniques like mocking we should
+still be able to generate a good test coverage.
 
-	Most of the test related effort in this sprint was used to prepare the
-	testing framework, consisting of QUnit for unit testing and mockjax for
-	mocking AJAX requests / responses. See \ref{sec:qunit}. We decided to run
-	the tests on normal (desktop / laptop) computers as it was problematic to
-	run directly on mobile devices. Using techniques like mocking we should
-	still be able to generate a good test coverage.
-
-	We implemented unit tests for the filtering mechanism involved in our custom
-	auto-complete function. All tests passed (see \ref{sec:unit-tests}).
+We implemented unit tests for the filtering mechanism involved in our custom
+auto-complete function. All tests passed (see \ref{sec:unit-tests}).
 
 \subsection{Customer Feedback}
-The customer is happy with our current progress. However, the customer noticed that we used the wrong API for our species names generation. This API was much slower, and was optimized from writing information instead of reading it. In our next sprint, we will use the new API, and also make some modifications for performance reasons. 
+The customer is happy with our current progress. However, the customer noticed that we used the wrong API for our species names generation. This API was much slower, and was optimized for writing information instead of reading it. In our next sprint, we will use the new API, and also make some modifications for performance reasons. 
 
 \subsection{Evaluation}
 The work was completed on time, and all requirements in the sprint backlog was completed. Both the advisor and customer were happy with our current progress. The group is working well, and except for some sickness slowing down progress somewhat, we completed everything in our workload for this sprint.

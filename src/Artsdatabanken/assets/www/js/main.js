@@ -1,9 +1,11 @@
-//GLOBAL VARS
-var specGroupId;
+// GLOBAL VARS
 var observation;
+// Variables to hold function arguments when creating or opening an observation
+var specGroupId;
 var observationId = null;
-// Init jQuery mobile
+// GLOBAL VARS END
 
+// Init jQuery mobile
 $(document).bind("mobileinit", function() {
 	// jQuery mobile configuration
 	$.extend($.mobile, {
@@ -22,7 +24,7 @@ $(document).bind("mobileinit", function() {
 	$(document).ready(function() { 
 		
 		//kommenter bort linja under f�r du laster den opp p� telefonen, ellers kr�sjer alt.
-//		App.init();
+		//App.init();
 		
 		//JQuery ready
 		
@@ -139,10 +141,16 @@ Android.sendEmail = function(subject, body, pictures) {
   var extras = {};
   extras[WebIntent.EXTRA_SUBJECT] = subject;
   extras[WebIntent.EXTRA_TEXT] = body;
-  if (pictures != null && pictures != "") extras["images"] = pictures;
+  var action = WebIntent.ACTION_SEND;
+  var type = 'image/jpeg';
+  if (pictures != null && pictures != "") {
+	  type = 'application/octet-stream';
+	  action = WebIntent.ACTION_SEND_MULTIPLE;
+	  extras["images"] = pictures;
+  }
   window.plugins.webintent.startActivity({
-    action: WebIntent.ACTION_SEND,	
-    type: 'image/jpeg',
+    action: action,	
+    type: type,
     extras: extras
   }, function() {}, function() {alert('Failed to send email via Android Intent');});
 };

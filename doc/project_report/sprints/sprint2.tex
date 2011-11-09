@@ -12,15 +12,25 @@
 
 \begin{description}
 	\item[F10] Autocomplete should be able to load data based on species category
-	\item[F1] User must be able to create a new observation 
 	\item[F2] User must be able to add more information to a species observation
-	\item[F3] User must be able to add more species to a observation
 	\item[F6] User must be able to view observations stored on the device
-	\item[F7] User must be able to eidt a stored observation on the device
+	\item[F7] User must be able to edit a stored observation on the device
 \end{description}
 
 \subsection{Implementation}
 
+A species in the observation can now have more information added to it via the 'Extended Information' page.
+A click on the details button is caught by JQuery, the id of the species is found by finding the parents of the button in the DOM, where a div contains the id.
+The activeExtended attribute in Observation is set to that species and the application transitions to the Extended Information page, values from the species object is read and filled in with JQuery. 
+When transitioning back to the Observation page all informatin is saved to the object again and the row of the edited species is updated on the Observation page.
+
+The user may now view stored observations, a button for this has been made functional on the main page.
+\paragraph{ObservationList.js} populates a list of saved observations.
+The user can select an observation, identified by which species category it is related to and when it was created as well as it's id.
+When an observation is selected, two global variables related to the id of the observation and it's speciesgroup are set and the user is redirected to the Observation page.
+The observation is read from storage and loaded into the DOM, editable in the same way as when first created in order to create a simple and easily recongnizable interface.
+
+This uses the same code as when a new observation is created, however when a new one is created the global variables are unset and a new observation object is created instead by main.js.
 
 	\subsubsection{Auto-complete}
 

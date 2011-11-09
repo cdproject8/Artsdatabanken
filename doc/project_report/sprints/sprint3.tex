@@ -28,7 +28,6 @@ Some of the requirements are from sprint 2 and the goal is to make them free
 from bugs and issues and focus more on exporting the observation.
 
 \begin{description}
-	\item[F3] User must be able to add more species to an observation
 	\item[F4] User must be able to export stored observation so they can be uploaded to Artsdatabanken later
 	\item[F7] User must be able to edit a stored observation on the device
 \end{description}
@@ -52,8 +51,19 @@ lead to a fatal error while creating an observation.
 	using a format similar to csv, but with tab separated values instead of
 	commas. The data is sent in clear text to an email specified by the user,
 	where the user can easily copy paste the data into a form on Artsdatabanken
-	system. A PhoneGap plugin, WebIntent, was used for triggering the email
-	event on Android phones. No solution for iPhone devices has been found.
+	system. A PhoneGap plugin, WebIntent \cite{library:webintent}, was used for triggering the email
+	event on Android phones. No solution for iPhone devices has been found,
+	however we have observed that several solutions are available.
+	
+	Our export system is based on a simple solution where all the fields of a species
+	is retrieved by the observation object for each of it's species, printed to a string
+	and concatenated.
+	
+	This string is then sendt via the WebIntent plugin which sends a JSON object from
+	JavaScript to the plugin which is written in Java and runs on the android platform.
+	the observation string is sent as metadata with a "SEND" intent which will promt 
+	the user for an appropriate program to handle it. Typically an email client as
+	suggested by the customer.
 
 \label{Auto-complete}
 

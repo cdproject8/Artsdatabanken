@@ -82,9 +82,8 @@ function ObsSpec(id, observation){
 		$("#extended_inf :input[id=spec-time_end]").val(zero_pad(this.date_end.getHours(),2) + ":" + zero_pad(this.date_end.getMinutes(),2) );
 		$("#extended_inf :input[id=spec-comment]").val(this.comment);
 
-		//	 TODO if picture
 		for(i = 0; i < this.pictures.length; i++) {
-			$("#pics").append('<img src="' + this.pictures[i][0] + '" width="80%" />');	
+			$("#pics").append('<a href="" onClick="observation.deletePicture(' + this.pictures[i][1] + '); return false;"> <img src="' + this.pictures[i][0] + '" id="dpic'+this.pictures[i][1]+'" width="80%" /></a>');	
 		}
 		
 	}

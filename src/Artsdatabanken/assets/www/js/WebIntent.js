@@ -8,6 +8,7 @@ var WebIntent = function() {
 };
 
 WebIntent.ACTION_SEND = "android.intent.action.SEND";
+WebIntent.ACTION_SEND_MULTIPLE = "android.intent.action.SEND_MULTIPLE";
 WebIntent.ACTION_VIEW= "android.intent.action.VIEW";
 WebIntent.EXTRA_TEXT = "android.intent.extra.TEXT";
 WebIntent.EXTRA_SUBJECT = "android.intent.extra.SUBJECT";
