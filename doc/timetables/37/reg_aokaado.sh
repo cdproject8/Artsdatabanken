@@ -6,3 +6,5 @@ let reg_requirement=0+0+0+0
 let reg_field_study=0+0+0+0
 let reg_implementation=6+3+4+1
 let reg_lectures=0+0+0+0
+let reg_documentation=0
+let reg_testing=0

@@ -6,3 +6,5 @@ let expected_field_study=2*7
 let expected_requirement=7*7
 let expected_implementation=6*7
 let expected_lectures=0
+let expected_documentation=0
+let expected_testing=0
