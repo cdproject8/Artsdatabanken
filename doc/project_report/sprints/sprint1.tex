@@ -35,15 +35,15 @@ To add species to an observation, a method in Observation is run which creates a
 It contains the details stored about a species, along with a unique id within the observation.
 
 \subsection{Testing}
-Most of the test related effort in this sprint was used to prepare the
-testing framework, consisting of QUnit for unit testing and mockjax for
-mocking AJAX requests / responses. See \ref{sec:qunit}. We decided to run
-the tests on normal (desktop / laptop) computers as it was problematic to
-run directly on mobile devices. Using techniques like mocking we should
+Most of the test related effort in this sprint was used to prepare the testing
+framework, consisting of QUnit for unit testing and mockjax for mocking AJAX
+requests / responses. See section \ref{sec:pre-study_testing_qunit}. We decided
+to run the tests on normal (desktop / laptop) computers as it was problematic
+to run directly on mobile devices. Using techniques like mocking we should
 still be able to generate a good test coverage.
 
 We implemented unit tests for the filtering mechanism involved in our custom
-auto-complete function. All tests passed (see \ref{sec:unit-tests}).
+auto-complete function. Tests can be found in the source code.
 
 \subsection{Customer Feedback}
 The customer is happy with our current progress. However, the customer noticed that we used the wrong API for our species names generation. This API was much slower, and was optimized for writing information instead of reading it. In our next sprint, we will use the new API, and also make some modifications for performance reasons. 
