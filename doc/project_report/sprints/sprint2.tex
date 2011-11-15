@@ -59,8 +59,26 @@ This uses the same code as when a new observation is created, however when a new
 	\end{itemize}
 
 	\subsubsection{Storage}
-	TODO STIAN/ANDERS
+	Storing observations locally on the phone is achieved using the PhoneGap local storage API, which is based on the W3C Web SQL database specification and W3C Web Storage API specification. In short, it uses the SQLite database management system to store data.   
+
+	The database consists of three tables: 
+	\begin{itemize}
+		\item Observations, which contains the observation id, location, create date, and the group of the species (bird, mammal, fish, etc. For identifying the type of observation)
+		\item Species, which contains the actual data of the observation, type of species, age, sex, etc.
+		\item Pictures, which contains an uri to the images attached to each species (The image itself is stored somewhere else on the phone, depending on the model/camera app)
+	\end{itemize}
 	
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width=0.8\textwidth]{sprints/db_diagram.png}
+		\caption{Diagram showing the database tables and their relations}
+		\label{fig:dbdiagram}	
+	\end{figure}
+	
+	The reason the database is split like this is to allow each observation to contain many species, and allow each species to contain many pictures. See figure \ref{fig:dbdiagram} for details. The two latter tables have the primary key(s) of the preceding table as foreign key(s).
+	
+	The storage is implemented in the ObservationDao.js file, which contains methods to initialize the database, as well as various methods to store and retrieve entries for observations, species and pictures.
+				
 \subsection{Testing}
 
 Auto-complete functionality was extended using test driven development, unit
