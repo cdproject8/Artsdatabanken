@@ -66,7 +66,7 @@ This uses the same code as when a new observation is created, however when a new
 	\begin{itemize}
 		\item Observations, which contains the observation id, location, create date, and the group of the species (bird, mammal, fish, etc. For identifying the type of observation)
 		\item Species, which contains the actual data of the observation, type of species, age, sex, etc.
-		\item Pictures, which contains an uri to the images attached to each species (The image itself is stored somewhere else on the phone, depending on the model/camera app)
+		\item Pictures, which contains an uri to the images attached to each species (The image itself is stored somewhere else on the phone, depending on the device/camera app)
 	\end{itemize}
 	
 	\begin{figure}[htb]
@@ -97,4 +97,7 @@ main focus on creating a good storage system and improving the autocomplete from
 the previous sprint. The creation of the storage system also made it possible to
 create sections required in the specifications such as viewing and editing
 observations.
-TODO eval storage/autocomplete
+
+Auto-complete now works with satisfactory speed, even on the slower devices. Splitting the files allowed even the largest files to load sufficiently fast. However, it is not yet using the correct data. This will be rectified in a later sprint.
+
+After this sprint the storage module allows for correctly and reliably storing and retrieving observations and their attached species. PhoneGap's storage API made it a bit simpler than writing to file, which was our initial approach to the problem. 
