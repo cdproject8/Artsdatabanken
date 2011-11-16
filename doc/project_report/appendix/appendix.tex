@@ -5,16 +5,18 @@
 	\subsection{Contact information}
 		\subsubsection{Customer}
 			\begin{itemize}
-				\item {\bf Nils Valland} \newline
-						Telephone: 73 59 23 01 \newline
-						Mobile: 92 41 20 37 \newline
-						Fax: 73 59 22 40 \newline
-						E-mail: nils.valland@artsdatabanken.no
 				\item {\bf Askild Olsen} \newline
 						Telephone: 73 59 21 93 \newline
 						Mobile: 91 78 34 89 \newline
 						Fax: 73 59 22 40 \newline
 						E-mail: askild.olsen@artsdatabanken.no
+				\item {\bf  Helge Sandmark} \newline
+						E-mail: helge.sandmark@artsdatabanken.no
+				\item {\bf Nils Valland} \newline
+						Telephone: 73 59 23 01 \newline
+						Mobile: 92 41 20 37 \newline
+						Fax: 73 59 22 40 \newline
+						E-mail: nils.valland@artsdatabanken.no
 			\end{itemize}
 			
 		\subsubsection{Supervisor}
@@ -192,87 +194,3 @@ Any images linked to the observation will be attached to the email.
 
 \subsubsection{Deleting an observation}
 An observation can be deleted by clicking the "Delete/Slett" button at bottom of an observation.
-
-\section{Developers guide}
-
-This section will in details help maintaining developers understand and use the
-code we have produced during the course of this project. It will also include
-comments about the ideas we have for the further development of this app.
-
-\subsection{Further work}
-At this time this is a simple application for creating and submitting
-observations. Improvements in design and functionality shouldn't be an issue with the current framework,
-and the potential is present. First priorities might be the incorporation of a
-direct submission API towards Artsdatabankens services, to avoid having to
-export through mail and import again. 
-
-The implementation of our final functional requirement that involves being able to update
-the internal database of autocomplete names is also high on the list. In order for this to be
-less demanding on the phone and less of an implementation challenge it is strongly suggested 
-that Artsdatabanken supplies a refined API for this.
-Meaning one that offers the exact data needed so no reparsing of large XML files is needed locally.
-
-Optimizing screen use might also be an
-idea, at the time objects are fairly large and space consuming, but this is
-more of a design philosophy from JQuery Mobile and is debatable.
-
-The current version is also largely focused on the interface prefered by birdobservers, 
-while trying to be universial it might be neccessary to further customize the different 
-layouts or stored fields for observations of different species groups.
-
-Adding a section of the application for viewing species and obtain more
-information about them was a subject from the beginning of the project.  But it
-was of less importance and quickly deemed outside the scope of the original
-application.
-
-At the current time most object methods are implemented functionally and not by
-using the "prototype" construct of JavaScript.  At this point there isn't many
-concurrent objects in use at the same time so it shouldn't be much of an issue.
-However as the application progresses this should most likely be changed to
-improve performance.
-
-\subsubsection{Use of API}
-
-We used Artsdatabankens webtjenesterbeta API to download species names for the
-auto-complete. By inputing species-categories to the API we were able to
-download lists of species names, these were returned in an XML format. To
-simplify the app (and save storage space), we parsed the XML into JSON and
-shipped the data as a part of the app. We used the following XSLT-transformation
-to parse the data:
-
-\begin{lstlisting}
-	<xsl:template match="/">
-		<xsl:apply-templates 
-			select="//adb:scientificName | 
-			//adb:vernacularName" 
-	/>
-	</xsl:template>
-
-	<xsl:template 
-		match="//adb:scientificName | 
-		//adb:vernacularName"
-	>'<xsl:value-of select="." />',
-	</xsl:template>
-\end{lstlisting}
-
-An obvious extension is to parse using javascript in the app itself, so
-that users can "sync" the species listings at their own convenience. It is a
-fairly simple transformation that can be implemented using jQuery-selectors.
-Currently we store one file per category, each file contains a function named
-"autocompleteData" that returns a list of names. These files could be updated
-using PhoneGap's File API.
-
-\subsubsection{Code repository}
-
-The code and documentation from this project can be found in its entirety at
-the following url: \url{https://github.com/cdproject8/Artsdatabanken}. Included
-here is a complete revision history for our entire project, all of our
-documentation excluding meeting minutes and agendas, in addition to the app
-itself. The application is ready to compile from this source.
-
-For further work, we recommend you fork this project. The project is licensed
-under Creative Commons Attribution-ShareAlike 3.0 Unported, and all further
-work should also be licensed under the same or similar licenses.
-
-\subsubsection{Maintenance}
-A short text about maintenance, and the challenges ahead.

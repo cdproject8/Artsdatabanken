@@ -1,0 +1,94 @@
+\subsection{Developers guide}
+
+This section will in details help maintaining developers understand and use the
+code we have produced during the course of this project. It will also include
+comments about the ideas we have for the further development of this app.
+
+\subsubsection{Further work}
+At this time this is a simple application for creating and submitting
+observations. Improvements in design and functionality shouldn't be an issue with the current framework,
+and the potential is present. First priorities might be the incorporation of a
+direct submission API towards Artsdatabankens services, to avoid having to
+export through mail and import again. 
+
+The export function is an Android plugin for PhoneGap, it functions by sending the contents 
+of the observation along with images attached to an email client on the phone. 
+In it's current version if images are added to an observation that is to be 
+exported, the phone will only list email clients that are able to receive multiple attachments.
+This can be circumvented by zipping the images before sending them to the email client, or by the use
+of a direct API as previously mentioned. A different but less preferable solution is to have an option
+to disable exportation of images.
+In order for exporting to be functional on iPhone or other devices, an equivalent
+plugin for those devices are required to be implemented. We have confirmed such plugins exist but have
+not further investigated them.
+
+Optimizing screen use might also be an
+idea, at the time objects are fairly large and space consuming, but this is
+more of a design philosophy from JQuery Mobile and is debatable.
+
+The current version is also largely focused on the interface preferred by bird observers, 
+while trying to be universal it might be necessary to further customize the different 
+layouts or stored fields for observations of different species groups.
+
+Adding a section of the application for viewing species and obtain more
+information about them was a subject from the beginning of the project.  But it
+was of less importance and quickly deemed outside the scope of the original
+application.
+
+At the current time most object methods are implemented functionally and not by
+using the "prototype" construct of JavaScript.  At this point there isn't many
+concurrent objects in use at the same time so it shouldn't be much of an issue.
+However as the application progresses this should most likely be changed to
+improve performance.
+
+\paragraph{Use of API}\hspace{1mm}\newline
+
+We used Artsdatabankens webtjenesterbeta API to download species names for the
+auto-complete. By inputing species-categories to the API we were able to
+download lists of species names, these were returned in an XML format. To
+simplify the app (and save storage space), we parsed the XML into JSON and
+shipped the data as a part of the app. We used the following XSLT-transformation
+to parse the data:
+
+\begin{lstlisting}
+	<xsl:template match="/">
+		<xsl:apply-templates 
+			select="//adb:scientificName | 
+			//adb:vernacularName" 
+	/>
+	</xsl:template>
+
+	<xsl:template 
+		match="//adb:scientificName | 
+		//adb:vernacularName"
+	>'<xsl:value-of select="." />',
+	</xsl:template>
+\end{lstlisting}
+
+The implementation of our final functional requirement that involves being able to update
+the internal database of auto-complete names is also high on the list of further work.
+So that users can "sync" the species listings at their own convenience.
+In order for this to be less demanding on the phone and less of an implementation challenge it is strongly suggested that Artsdatabanken supplies a refined API for this.
+Meaning one that offers the exact data needed so no re-parsing of large XML files is needed locally.
+
+If not, an obvious extension is to parse using JavaScript in the app itself. It is a
+fairly simple transformation that can be implemented using jQuery-selectors.
+Currently we store one file per category, each file contains a function named
+"autocompleteData" that returns a list of names.
+These files could be updated using PhoneGap's File API.
+
+\paragraph{Code repository}\hspace{1mm}\newline
+
+The code and documentation from this project can be found in its entirety at
+the following URL: \url{https://github.com/cdproject8/Artsdatabanken}. Included
+here is a complete revision history for our entire project, all of our
+documentation excluding meeting minutes and agendas, in addition to the app
+itself. The application is ready to compile from this source.
+
+For further work, we recommend you fork this project. The project is licensed
+under Creative Commons Attribution-ShareAlike 3.0 Unported, and all further
+work should also be licensed under the same or similar licenses.
+
+\paragraph{Maintenance}\hspace{1mm}\newline
+
+A short text about maintenance, and the challenges ahead.
