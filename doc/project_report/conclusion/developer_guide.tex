@@ -95,4 +95,26 @@ work should also be licensed under the same or similar licenses.
 
 \paragraph{Maintenance}\hspace{1mm}\newline
 
-A short text about maintenance, and the challenges ahead.
+The primary challenge is to keep the local repository of species names updated,
+when new names arrive the app needs to be updated using methods mentioned in
+"Use of API", this can be avoided by implementing download/parsing-functionality
+in the app itself so that users can update the local repository without changes
+in the app. 
+
+The app is not strictly dependent on any APIs at this stage, so it
+should not be a big issue with changes made in Artsdatabanken's backend.
+Developers should still keep this in mind, the export feature should adhere to
+the Artsdatabanken's import functionality. 
+
+The app use a native wrapper for the image functionality, this is dependent on
+Android and should be considered when new versions of the platform arrives. The
+same applies for export functionality, the app is using the native email client for
+sending observations.
+
+To stay current, the frameworks should be updated on a regular basis (jQuery,
+jQueryUI, PhoneGap, jQueryMobile). As jQuery, Phonegap and jQueryUI is in a more
+or less stable state, upgrading these should not affect the app much. Upgrading
+jQueryMobile may prove difficult, the framework is in a beta state and you
+can expect big changes. Take care to read the change logs and do excessive
+testing if you decide to update jQueryMobile, you may have to change parts of
+the app to adhere with later versions.
