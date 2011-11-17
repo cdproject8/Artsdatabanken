@@ -41,7 +41,8 @@ $(document).ready(function(){
 			activity: "Sleeping",
 			date_start: new Date(1234), 
 			date_end: new Date(4321),
-			comment: "This is a comment"
+			comment: "This is a comment",
+			pictures: []
 		};
 	};
 	

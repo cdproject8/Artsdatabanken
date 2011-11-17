@@ -93,7 +93,7 @@ function ObservationDao() {
 		db.transaction(function(tx) {
 			tx.executeSql('SELECT * FROM species WHERE id = ? AND observation_id = ?', [ id, observation_id ], function(tx, results) {
 				if (results.rows.length == 0) {
-					success(function() {});
+					success(null);
 					return;
 				} 
 				success(results.rows.item(0));

@@ -1,5 +1,5 @@
 function AppClass() {
-	this.VERSION = "1.0";
+	this.VERSION = "1.1";
 	this.dao = null;
 	
 	this.init = function() {
