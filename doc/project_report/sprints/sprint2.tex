@@ -60,7 +60,11 @@ This uses the same code as when a new observation is created, however when a new
 
 	\subsubsection{Storage}
 	\label{sec:storage}
-	Storing observations locally on the phone is achieved using the PhoneGap local storage API, which is based on the W3C Web SQL database specification and W3C Web Storage API specification. In short, it uses the SQLite database management system to store data.   
+
+	Storing observations locally on the phone is achieved using the PhoneGap
+	local storage API, which is based on the W3C Web SQL database specification
+	and W3C Web Storage API specification. In short, it uses the SQLite database
+	management system to store data.   
 
 	The database consists of three tables: 
 	\begin{itemize}
@@ -76,14 +80,56 @@ This uses the same code as when a new observation is created, however when a new
 		\label{fig:dbdiagram}	
 	\end{figure}
 	
-	The reason the database is split like this is to allow each observation to contain many species, and allow each species to contain many pictures. See figure \ref{fig:dbdiagram} for details. The two latter tables have the primary key(s) of the preceding table as foreign key(s).
+	The reason the database is split like this is to allow each observation to
+	contain many species, and allow each species to contain many pictures. See
+	figure \ref{fig:dbdiagram} for details. The two latter tables have the
+	primary key(s) of the preceding table as foreign key(s).
 	
-	The storage is implemented in the ObservationDao.js file, which contains methods to initialize the database, as well as various methods to store and retrieve entries for observations, species and pictures.
+	The storage is implemented in the ObservationDao.js file, which contains
+	methods to initialize the database, as well as various methods to store and
+	retrieve entries for observations, species and pictures.
 				
 \subsection{Testing}
 
-Auto-complete functionality was extended using test driven development, unit
-tests were written before functionality was implemented (red-green).
+We focused primarily on unit testing and informal testing in a "sandbox"
+environment. Informal testing consisted of visual inspection of the user
+interface and unstructured functional testing (i.e. functional testing that we
+did not document). The informal testing gave some ideas as to how we could
+develop and document our functional tests later in the project, it was also
+helpful in verifying that functionality in the frameworks worked as expected.
+By "sandbox" environment we refert to testing on a PC, in addition to using a
+debug-section of the app that will be removed before project completion on
+mobile devices.
+
+By re-running the unit tests from sprint 1 we had efficient regression testing.
+This was very helpful in the process of expanding functionality. We have
+developed a complete set of unit tests for the auto-complete and storage
+functionality. Table \ref{sprint2:unit-testing-table} contains an excert from
+the unit testing.
+
+\begin{table}[htb]
+	\label{sprint2:unit-testing-table}
+	\centering
+    \begin{tabular}{|l|p{5cm}|l|l|}
+		\hline
+		Module & Test description & Number of assertions & Result \\
+		\hline \hline
+		AutocompleteDao & should set categoryRoot to directory above index.js when loaded & 1 & PASS \\ \hline
+		AutocompleteDao & should fail gracefully if loading file by category fails & 1 & PASS \\ \hline
+		AutocompleteDao & should be able to load file based on prefix & 6 & PASS \\ \hline
+		AutocompleteDao & should be able to determine if term can be completed with current prefix & 5 & PASS \\ \hline
+		Autocomplete & should return 0 suggestions on no matches & 2 & PASS \\ \hline
+		Autocomplete & should return 3 ordered suggestions on exactly 3 matches & 5 & PASS \\ \hline
+		Autocomplete & should return 6 ordered suggestions on exactly 6 matches & 16 & PASS \\ \hline
+		Autocomplete & should return 6 ordered suggestions on more than 6 matches & 8 & PASS \\ \hline
+		Autocomplete & should be able to activate autocomplete for input element & 2 & PASS \\ \hline
+    \end{tabular}
+  \caption{Exert from unit testing}
+\end{table}
+
+In conclusion, we used unit testing for functionality that has well defined
+input- and output parameters. Other functionality, like the user interface were
+tested by visual inspection and informal functional testing.
 
 \subsection{Customer Feedback}
 The customer was happy with our current progress. As this was a big sprint for
