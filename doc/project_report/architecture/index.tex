@@ -6,7 +6,7 @@
 	\label{fig:architecture}
 \end{figure}
 
-We use a layered architecture, platform-specific issues are handled using
+We use a layered architecture so platform-specific issues are handled using
 PhoneGap as a platform-independent layer above the operating system. Following
 is a detailed description of each layer, starting at the bottom.
 
@@ -20,7 +20,7 @@ our interface to the hardware.
 \subsection{Layer 2 - Cross-platform framework}
 
 Layer 2 provides device independent abstractions for file operations, camera
-access, geolocation, etc. The primary purpose of this layer is to allow us to
+access, geolocation and other multimedia provisions. The primary purpose of this layer is to allow us to
 make portable code that can be used on Android, iOS, and other operating systems
 with minimal (or no) changes to the code. PhoneGap provides an HTML5,
 JavaScript, and CSS interface for the layer above.
@@ -30,14 +30,14 @@ JavaScript, and CSS interface for the layer above.
 Layer 3 is the actual app, this is where our implementation will be placed.
 This layer is split into an internal structure where we use the MVC pattern combined
 with some layering. In addition to the components shown in the diagram, the
-jQuery-family of frameworks/utilities is used by model, view and controller.
+jQuery-family of frameworks and utilities are used as model, view and controller (MVC) theme.
 
 	\subsubsection{Data access}
 	
 	The data access sub-layer is responsible for all I/O-operations. This is
-	where we access local- and remote storage. The data access layer provides
+	where we access local and remote storage. The data access layer provides
 	domain centric functions for accessing common data sources. E.g.
-	ObservationDAO is used to store/retrieve observations to/from local storage.
+	ObservationDAO is used to store and retrieve observations to or from local storage.
 
 	\subsubsection{Model}
 
@@ -66,3 +66,6 @@ Artsdatabanken's web services with the purpose of uploading observations and
 downloading species information (for the prototype we will use a communication
 format specified by Artsdatabanken, the actual communication will not be
 prioritized as the API for uploading observations is not yet available).
+
+\subsection{Conclusions}
+The architecture was selected with maximum care to take into consideration the constraints of mobile work environments, which are characterized by a relatively limited computing capacity, unpredictable disconnections and mobility of user into and out of connectivity ranges. The architecture tries to balance the load on the mobile device and acceptable performance of the mobile application.
