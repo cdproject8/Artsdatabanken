@@ -43,12 +43,14 @@ improve performance.
 
 \paragraph{Use of API}\hspace{1mm}\newline
 
-We used Artsdatabankens webtjenesterbeta API to download species names for the
-auto-complete. By inputing species-categories to the API we were able to
-download lists of species names, these were returned in an XML format. To
+We used the TaxonomyPropertySearch part of Artsdatabankens webtjenesterbeta API
+\cite{artsdatabanken:api-taxon-property-search} to download species names for
+the auto-complete. By inputing species-categories (using speciesGrouping=NAME,
+where NAME is a Norwegian category name, like "fugl") to the API we were able
+to download lists of species names, these were returned in an XML format. To
 simplify the app (and save storage space), we parsed the XML into JSON and
-shipped the data as a part of the app. We used the following XSLT-transformation
-to parse the data:
+shipped the data as a part of the app. We used the following
+XSLT-transformation to parse the data:
 
 \begin{lstlisting}
 	<xsl:template match="/">
@@ -75,7 +77,7 @@ If not, an obvious extension is to parse using JavaScript in the app itself. It 
 fairly simple transformation that can be implemented using jQuery-selectors.
 Currently we store one file per category, each file contains a function named
 "autocompleteData" that returns a list of names.
-These files could be updated using PhoneGap's File API.
+These files could be updated using PhoneGap's File API \cite{phonegap:api-file}.
 
 \paragraph{Code repository}\hspace{1mm}\newline
 
