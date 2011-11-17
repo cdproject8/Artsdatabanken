@@ -4,7 +4,7 @@
 \label{sec:testing}
 
 This document will focus on agile development and including test driven
-development (i.e. testing early in the development process).  The scope of
+development (i.e. testing early in the development process) plus a usability test on a prototype, to make sense of how the prototype will go down with Artsdatabanken's end users.  The scope of
 software testing includes examination of code as well as execution of that code
 in various environments and conditions.
 
@@ -22,12 +22,12 @@ Non-functional testing refers to other aspects of the software that may not be
 related to a specific function or user action, such as scalability,
 performance, security, usability, etc.  We aim to develop a product that
 non-technical users (i.e.  bird watchers, etc.) can understand and use,
-therefore usability tests need to be prioritized.
+therefore usability tests will be conducted in line with available logistics support.
 
-To achieve an acceptable level of device / operating system compatibility we
+To achieve an acceptable level of device-operating system compatibility we
 plan to test on Android devices of different sizes with different versions of
 the operating system.  Ideally, we would test on all supported devices (i.e.
-Android, iOs, windows mobile, ...).
+Android, iOs, Windows mobile, ...).
 
 Unit testing refers to tests that verify the functionality of a specific
 section of code, usually at the functional level. There exists many frameworks for
@@ -35,7 +35,7 @@ this type of testing, many are a member of the xUnit family, where x is
 replaced by a language specific prefix (jUnit for java, qUnit for jQuery and
 javascript, etc.).  This type of testing is frequently used in test-driven
 development, and is a good way to ensure that each part is working as expected.
-It's important to test edge cases, and with invalid / unexpected parameters.
+It's important to test edge cases, and with invalid and unexpected parameters.
 
 Integration testing is software testing that seeks to verify the interfaces
 between components against a software design. This is typically conducted after
@@ -78,7 +78,7 @@ Test driven development (red-green):
 	(including server-side code). \cite{jquery:qunit}
 
 	QUnit is a member of the xUnit family, and provides a toolkit for automated
-	testing. It's useful for regression testing, and test-driven development in
+	testing. It is useful for regression testing, and test-driven development in
 	general.
 
 	In addition to the traditional xUnit features, QUnit facilitates testing of
@@ -98,7 +98,7 @@ Test driven development (red-green):
 \subsubsection{jQuery Mockjax: AJAX request mocking}
 
 	The jQuery Mockjax plugin provides an interface for mocking or simulating
-	ajax requests and responses. \cite{github:jquery-mockjax}It Can be useful if Artsdatabanken provides us
+	ajax requests and responses\cite{github:jquery-mockjax}. It Can be useful if Artsdatabanken provides us
 	with a specification of their planned API. This will in principle allow us
 	to verify that the application is communicating correctly, even though the
 	API hasn't been published.
@@ -144,7 +144,7 @@ Usability testing is a test in which whether a user achieves the intended functi
         \label{tab:usecaseusability}
     \end{table}
 
-Another method of measuring user attitude towards a system is TAM.
+Another method of measuring user attitude and perception towards a system is TAM.
 TAM, technology acceptance model, is a tool with which users general perceived of use, perceived ease of use and intention to use is measured. While usability testing is more focused on  task based performance of users\cite{tam:doc4}, TAM is a general attitude test based on a twelve question model in which 3 things are measured
 
 \begin{itemize}
@@ -177,7 +177,7 @@ Perception test using a TAM Post questionnaire\cite{tam:doc4, tam:doc6}, each de
         \label{tab:tam}
     \end{table}
 
-The plan is to conduct a formal usability test using one of the fore mentioned methods  but the testing plan will be modified and restructured as our focus, goal and time resource changes. Usability testing can be extremely difficult to plan and make sure the goals are met. Using a pilot test, organizing participants using standard methodology can be unrealistic for this  project. Because of this, we are going to make decisions that will suit the reality of this project and an actual documentation of the usability test result will be documented in section \ref{sec:testresult}.
+The plan is to conduct a formal usability test using one of the fore mentioned methods  but the testing plan will be modified and restructured as our focus, goal and time resource changes. Usability testing can be extremely difficult to plan and to make sure the goals are met. Using a pilot test, organizing participants using standard methodology can be unrealistic for this  project. Because of this, we are going to make decisions that will suit the reality of this project and an actual documentation of the usability test result will be documented in section \ref{sec:testresult}.
 \newpage
 
 \subsubsection{Conclusions}
