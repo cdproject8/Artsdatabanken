@@ -3,7 +3,7 @@
 \subsection{Sprint Planning}
 
 	\subsubsection{Expected results}
-  From this sprint we expect to have a working local storage to the phone working. This will provide persistance of observations in the phone. In addition, the document will be ready for the pre-delivery 6th of October.
+  From this sprint, we expect to have a working local storage on the phone. This will provide persistence of observations in the phone. In addition, the document will be ready for the pre-delivery 6th of October.
 	
 	\subsubsection{Duration}
 	Start of Sprint 2 is September 26th, and it will last until October 9th (weeks 39 and 40). Customer meeting is on October 11th, just after the completion of whole sprint. Advisor meetings are on September 27th and October 4th.
@@ -21,8 +21,8 @@
 
 A species in the observation can now have more information added to it via the 'Extended Information' page.
 A click on the details button is caught by JQuery, the id of the species is found by finding the parents of the button in the DOM, where a div contains the id.
-The activeExtended attribute in Observation is set to that species and the application transitions to the Extended Information page, values from the species object is read and filled in with JQuery. 
-When transitioning back to the Observation page all informatin is saved to the object again and the row of the edited species is updated on the Observation page.
+The activeExtended attribute in Observation is set so that species and the application transitions to the Extended Information page, values from the species object is read and filled in with JQuery.
+When transitioning back to the Observation page, all informations are saved to the object again and the row of the edited species is updated on the Observation page.
 
 The user may now view stored observations, a button for this has been made functional on the main page.
 \paragraph{ObservationList.js} populates a list of saved observations.
@@ -37,7 +37,7 @@ This uses the same code as when a new observation is created, however when a new
 	Auto-complete has been extended to read files based on species category.
 	Initially each category was included in a separate file, but this caused some
 	performance issues due to the large amount of data (browser freeze while reading
-	files). To circumvent this issue, team decided to split the categories into
+	files). To circumvent this issue, the team decided to split the categories into
 	multiple files, keeping one folder per category and one file per prefix see.
 
 	To achieve this, following conventions / specifications will be used:
@@ -64,9 +64,9 @@ This uses the same code as when a new observation is created, however when a new
 	Storing observations locally on the phone is achieved using the PhoneGap
 	local storage API, which is based on the W3C Web SQL database specification
 	and W3C Web Storage API specification. In short, it uses the SQLite database
-	management system to store data.   
+	management system to store data.
 
-	The database consists of three tables: 
+	The database consists of three tables:
 	\begin{itemize}
 		\item Observations, which contains the observation id, location, create date, and the group of the species (bird, mammal, fish, etc. For identifying the type of observation)
 		\item Species, which contains the actual data of the observation, type of species, age, sex, etc.
@@ -97,19 +97,14 @@ interface and unstructured functional testing (i.e. functional testing that we
 did not document). The informal testing gave some ideas as to how we could
 develop and document our functional tests later in the project, it was also
 helpful in verifying that functionality in the frameworks worked as expected.
-By "sandbox" environment we refert to testing on a PC, in addition to using a
-debug-section of the app that will be removed before project completion on
-mobile devices.
 
-By re-running the unit tests from sprint 1 we had efficient regression testing.
-This was very helpful in the process of expanding functionality. We have
-developed a complete set of unit tests for the auto-complete and storage
-functionality. Table \ref{sprint2:unit-testing-table} contains an excerpt from
-the unit testing.
+
+
 
 \begin{table}[htb]
 	\label{sprint2:unit-testing-table}
 	\centering
+    \resizebox{1.0\textwidth}{!}{
     \begin{tabular}{|l|p{5cm}|l|l|}
 		\hline
 		Module & Test description & Number of assertions & Result \\
@@ -123,9 +118,17 @@ the unit testing.
 		Autocomplete & should return 6 ordered suggestions on exactly 6 matches & 16 & PASS \\ \hline
 		Autocomplete & should return 6 ordered suggestions on more than 6 matches & 8 & PASS \\ \hline
 		Autocomplete & should be able to activate autocomplete for input element & 2 & PASS \\ \hline
-    \end{tabular}
+    \end{tabular}}
   \caption{Excerpt from unit testing}
 \end{table}
+By "sandbox" environment we refert to testing on a PC, in addition to using a
+debug-section of the app that will be removed before project completion on
+mobile devices.
+By re-running the unit tests from sprint 1 we had efficient regression testing.
+This was very helpful in the process of expanding functionality. We have
+developed a complete set of unit tests for the auto-complete and storage
+functionality. Table \ref{sprint2:unit-testing-table} contains an excerpt from
+the unit testing.
 
 In conclusion, we used unit testing for functionality that has well defined
 input- and output parameters. Other functionality, like the user interface were
@@ -146,4 +149,4 @@ observations.
 
 Auto-complete now works with satisfactory speed, even on the slower devices. Splitting the files allowed even the largest files to load sufficiently fast. However, it is not yet using the correct data. This will be rectified in a later sprint.
 
-After this sprint the storage module allows for correctly and reliably storing and retrieving observations and their attached species. PhoneGap's storage API made it a bit simpler than writing to file, which was our initial approach to the problem. 
+After this sprint the storage module allows for correctly and reliably storing and retrieving observations and their attached species. PhoneGap's storage API made it a bit simpler than writing to file, which was our initial approach to the problem.
