@@ -100,8 +100,9 @@ function zero_pad(number, len) {
 }
 
 function add_species(){
+	// Maximum number of species for observations, probably unneccessary, as this is a fairly unwieldy number with this version of the app
 	if (observation.len() == 999) {
-		alert("You have reached the maximum amount of species for one observation, please create a new observation instead");
+		alert("Du har nådd maksimum antall arter per observasjon, vennligst lag en ny observasjon istedet.");
 		return;
 	}
 	
@@ -126,12 +127,6 @@ $.extend({
 	  }
 });
 
-testEmail = function() {
-	retrievePicture(function(uri){
-		Android.sendEmail("test", "testing more\tderp\nlols\tkk", uri+"*");
-	});
-}
-
 var Android = {};
 Android.sendEmail = function(subject, body, pictures) {
   if (!window.plugins || !window.plugins.webintent) {
@@ -152,6 +147,6 @@ Android.sendEmail = function(subject, body, pictures) {
     action: action,	
     type: type,
     extras: extras
-  }, function() {}, function() {alert('Failed to send email via Android Intent');});
+  }, function() {}, function() {alert('Kunne ikke sende email via Android Intent');});
 };
 		

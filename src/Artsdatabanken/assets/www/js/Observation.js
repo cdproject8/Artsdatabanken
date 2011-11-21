@@ -54,7 +54,7 @@ function Observation(specGroupId, obsId){
 				obs.getSpecies(idOfSpeciesRow).count = numInput.val();
 			}
 			if (anchor.is(".delete_entry")) {
-				if ( confirm("Are you sure you want to delete "+obs.getSpecies(idOfSpeciesRow).species_name + "from the observation")) {
+				if ( confirm("Er du sikker på at du vil slette "+obs.getSpecies(idOfSpeciesRow).species_name + "fra observasjonen?")) {
 					obs.removeSpecies(idOfSpeciesRow);
 				}
 			}
@@ -72,7 +72,7 @@ function Observation(specGroupId, obsId){
 	}
 	
 	this.deleteObs = function(silent){
-		if ( this.deleted == false && (silent || confirm("Are you sure you want to delete this observation?"))){
+		if ( this.deleted == false && (silent || confirm("Er du sikker på at du vil slette denne observasjonen?"))){
 			//console.log(this.deleted == false);
 			var obsid = this.id;
 			
@@ -146,7 +146,7 @@ function Observation(specGroupId, obsId){
 		});
 		App.dao.updateObservation(this, function(id){
 			//console.log("saved obs "+id);
-			alert("Data Saved");
+			alert("Observasjon lagret");
 		}, null);
 	}
 	
