@@ -10,10 +10,10 @@ the modifications required.
 
 \subsubsection{Expected results}
 
-Getting semi completed local storage and auto-complete functionalities to be
-completed, deciding how to best export locally stored observations, and team is
-expected to divert its resource more getting the system to work on the android
-platform, discussing the terms of usability testing with the customer.
+Getting local storage and auto-complete functionalities completed and
+deciding how to best export locally stored observations. The team is
+expected to divert its resources more towards getting the system to work on the android
+platform and discussing the terms of the usability testing with the customer.
 
 \subsubsection{Duration}
 
@@ -34,7 +34,7 @@ from bugs and issues and focus more on exporting the observation.
 
 \subsection{Implementation}
 
-Editing of observations was undertaken in the previous sprint as this was a very simple and quick extention of the view observations functional requirement.
+Editing of observations was undertaken in the previous sprint as this was a very simple and quick extension of the view observations functional requirement.
 
 \subsubsection{Storage}
 
@@ -48,33 +48,33 @@ lead to a fatal error while creating an observation.
 
 	\subsubsection{Export}
 
-	The main target of this sprints implementation was to export the
-	observations in a format readable by Artsdatabasen 2.0. This was achieved
+	The main target of this sprint's implementation was to export the
+	observations in a format readable by Artsdatabasen 1.0/2.0. This was achieved
 	using a format similar to csv, but with tab separated values instead of
 	commas. The data is sent in clear text to an email specified by the user,
 	where the user can easily copy paste the data into a form on Artsdatabanken
-	system. A PhoneGap plugin, WebIntent \cite{library:webintent}, was used for triggering the email
-	event on Android phones. No solution for iPhone devices has been found,
+	system. A PhoneGap plugin, WebIntent \cite{library:Webintent}, was used for triggering the email
+	event on Android phones. No solution for iPhone devices has been implemented,
 	however we have observed that several solutions are available.
 	
 	Our export system is based on a simple solution where all the fields of a species
 	is retrieved by the observation object for each of it's species, printed to a string
 	and concatenated.
 	
-	This string is then sendt via the WebIntent plugin which sends a JSON object from
+	This string is then sent via the WebIntent plugin which sends a JSON object from
 	JavaScript to the plugin which is written in Java and runs on the android platform.
-	the observation string is sent as metadata with a "SEND" intent which will promt 
+	The observation string is sent as meta-data with a "SEND" intent which will prompt 
 	the user for an appropriate program to handle it. Typically an email client as
 	suggested by the customer.
 
 \label{Auto-complete}
 
 By testing on mobile devices we have ruled out some performance issues and bugs,
-at this point the auto-complete is usable.
+at this point the auto-complete is usable and performing within reasonable delay limits.
 
 \subsection{Testing}
 
-Previously we had done most of our testing on using PCs, in this sprint we
+Previously we had done most of our testing using PCs, in this sprint we
 focused more on mobile devices. We uncovered some problems with the
 storage functionality (see \ref{sprint3:storage}). Additionally we discovered
 a bug in the auto-complete that caused it to load excessive amounts of data from
@@ -92,8 +92,8 @@ so far.
 
 \subsection{Evaluation}
 
-The sprint generally went well but exporting required a lot of time and
-resource on the programming department, and later the team had to put it on
-sprint 4 backlog in front for further work. Sprint 3 has seen about eighty
-percent completion of the total requirement, the team's progress is considered
-acceptable by both the advisor and the customer. 
+The sprint generally went well but exporting required some additional time because our plugin was 
+written for an earlier version of PhoneGap, and including images proved difficult. 
+Later the team had to put it on the sprint 4 backlog in front of further work.
+Sprint 3 has seen about eighty percent completion of the total requirements, 
+the team's progress is considered good by both the advisor and the customer.
